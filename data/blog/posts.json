@@ -1,0 +1,55 @@
+[
+  {
+    "id": "0",
+    "title": "Sep 2025 Term Grading Policy: Declassified",
+    "excerpt": "The official grading policy document for Sep 2025 is out! Key highlights: OPPE dates are set, SCT is mandatory, and course-specific grading formulas have been updated. We break down the complex math for you.",
+    "content": "\n      <h2>The Schedule is Out</h2>\n      <p>Mark your calendars! The major exam dates for the Sep 2025 term are confirmed:</p>\n      <ul>\n        <li><strong>Quiz 1:</strong> Oct 26, 2025</li>\n        <li><strong>Quiz 2:</strong> Nov 23, 2025</li>\n        <li><strong>End Term:</strong> Dec 21, 2025</li>\n      </ul>\n      <h2>Important Policy Changes</h2>\n      <p><strong>OPPE Eligibility:</strong> Completing the System Compatibility Test (SCT) is MANDATORY. Do not skip this, or you will be barred from the OPPE.</p>\n      <p><strong>Grading Formulas:</strong> We noticed a shift in weightage for Python and Java. The GA (Graded Assignment) component has been capped at 10%, putting more pressure on the OPPEs. Make sure you practice coding daily.</p>\n    ",
+    "author": "Admin",
+    "date": "Sep 15, 2025",
+    "readTime": "4 min read",
+    "tags": ["News", "Grading", "Crucial"]
+  },
+  {
+    "id": "placement-2025",
+    "title": "Placement Report 2025: Reality Check",
+    "excerpt": "Is the degree worth it? We analyzed the placement data released by IIC. Average package, top recruiters, and the skills that actually got people hired.",
+    "content": "<p>Data Engineering roles are dominating. 60% of hires were for DE/DA roles.</p>",
+    "author": "Placement_Insider",
+    "date": "Sep 12, 2025",
+    "readTime": "7 min read",
+    "tags": ["Career", "Money"]
+  },
+  {
+    "id": "stats-guide",
+    "title": "How I Scored an S in Stats 2 (Without Losing My Mind)",
+    "excerpt": "Stats 2 is arguably the hardest foundation course. Here is my week-by-week strategy, the YouTube playlists I watched, and the notes I made.",
+    "content": "<p>Don't rely solely on the portal videos. StatQuest is your savior.</p>",
+    "author": "Topper_Rohan",
+    "date": "Aug 28, 2025",
+    "readTime": "6 min read",
+    "tags": ["Study Guide", "Stats"]
+  },
+  {
+    "id": "7",
+    "title": "How to Get an Internship as a BS Student",
+    "excerpt": "The IIC (Industry Interaction Cell) helps, but you need to be proactive. Here is a step-by-step guide to building a resume and applying via LinkedIn.",
+    "content": "<p>Build projects. Join clubs. Network on LinkedIn.</p>",
+    "author": "Career_Rep",
+    "date": "Sep 10, 2025",
+    "readTime": "6 min read",
+    "tags": ["Career", "Internship"]
+  },
+  {
+    "id": "8",
+    "title": "My Journey: From Arts to Data Science",
+    "excerpt": "I had zero math background. 2 years later, I am a Diploma holder with a 9.0 CGPA. Here is how I survived Math 1 and CT.",
+    "content": "<p>Don't give up. Khan Academy is your best friend.</p>",
+    "author": "Student_Story",
+    "date": "Aug 22, 2025",
+    "readTime": "5 min read",
+    "tags": ["Motivation", "Success Story"]
+  },
+  {
+    "id": "3", "title": "Cracking Python OPPE: Speed is Key", "excerpt": "You know the logic, but can you type it fast enough? Tips to improve typing speed and common syntax errors to avoid.", "content": "Speed is key.", "author": "CodeWizard", "date": "Sep 28, 2024", "readTime": "8 min", "tags": ["Python", "Exam Hack"] 
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "ST1002",
+  "title": "Statistics for Data Science II",
+  "description": "Advanced inference. Sampling distributions, Hypothesis Testing, and Regression.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Joint Distributions",
+      "lectures": [
+        {
+          "title": "L1.1 - Joint PMF & PDF",
+          "youtubeId": "Gq3TEgG1Bms",
+          "duration": "18:00"
+        },
+        {
+          "title": "L1.2 - Marginal Distributions",
+          "youtubeId": "Gq3TEgG1Bms",
+          "duration": "15:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Sampling Distributions",
+      "lectures": [
+        {
+          "title": "L2.1 - Central Limit Theorem",
+          "youtubeId": "JNm3M9zqRM0",
+          "duration": "25:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

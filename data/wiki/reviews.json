@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "courseCode": "MA1002",
+    "courseName": "Mathematics for Data Science II",
+    "difficulty": 5,
+    "workload": 4,
+    "tags": ["Linear Algebra", "Math", "Heavy"],
+    "advice": "Do NOT skip week 5 and 6 vectors content. The End Term is 40% Eigenvalues. Practice solving 3x3 matrices by hand for speed."
+  },
+  {
+    "id": "2",
+    "courseCode": "CS1001",
+    "courseName": "Computational Thinking",
+    "difficulty": 3,
+    "workload": 2,
+    "tags": ["Logic", "Pseudocode", "Foundation"],
+    "advice": "It's all about flowcharts and graph theory. The mock tests are exactly like the real exams. Easy S grade if you don't make silly mistakes."
+  },
+  {
+    "id": "3",
+    "courseCode": "CS2001",
+    "courseName": "Python Programming",
+    "difficulty": 2,
+    "workload": 5,
+    "tags": ["Coding", "OPPE", "Essential"],
+    "advice": "The theory is easy, but the OPPE is the real killer. You need to type code fast. Practice on Replit or the OPPE Dojo here every day."
+  },
+  {
+    "id": "4",
+    "courseCode": "ST2001",
+    "courseName": "Statistics II",
+    "difficulty": 5,
+    "workload": 5,
+    "tags": ["Stats", "Inference", "Nightmare"],
+    "advice": "This is arguably the hardest foundation course. Hypothesis testing concepts are confusing. Watch external YouTube playlists (StatQuest) to survive."
+  },
+  {
+    "id": "5",
+    "courseCode": "GN1001",
+    "courseName": "Business Data Management",
+    "difficulty": 1,
+    "workload": 2,
+    "tags": ["Theory", "Business", "Chill"],
+    "advice": "Very theoretical. Good for boosting CGPA. Just read the slides and you'll be fine."
+  }
+]

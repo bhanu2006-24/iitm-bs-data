@@ -1,0 +1,48 @@
+{
+  "id": "CS1001",
+  "title": "Computational Thinking",
+  "description": "The foundation of logic. Flowcharts, pseudocode, and algorithmic problem solving.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Computational Logic",
+      "lectures": [
+        {
+          "title": "L1.1 - What is Computation?",
+          "youtubeId": "fWNaR-rxA4",
+          "duration": "10:00"
+        },
+        {
+          "title": "L1.2 - Flowcharts Basics",
+          "youtubeId": "S1-R95d5-8c",
+          "duration": "15:00"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Flowchart Symbols Guide",
+          "url": "#"
+        }
+      ],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Datasets & Patterns",
+      "lectures": [
+        {
+          "title": "L2.1 - Iterating Data",
+          "youtubeId": "S1-R95d5-8c",
+          "duration": "18:00"
+        },
+        {
+          "title": "L2.2 - Filtering Logic",
+          "youtubeId": "S1-R95d5-8c",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

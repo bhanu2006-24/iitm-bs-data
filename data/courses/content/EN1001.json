@@ -1,0 +1,38 @@
+{
+  "id": "EN1001",
+  "title": "English I",
+  "description": "Master the basics of communication, grammar, and comprehension.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Basic Grammar",
+      "lectures": [
+        {
+          "title": "L1.1 - Parts of Speech",
+          "youtubeId": "Julz6_x5-m4",
+          "duration": "15:00"
+        },
+        {
+          "title": "L1.2 - Sentence Structure",
+          "youtubeId": "Julz6_x5-m4",
+          "duration": "12:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Listening Skills",
+      "lectures": [
+        {
+          "title": "L2.1 - Active Listening",
+          "youtubeId": "H-6W6XezccQ",
+          "duration": "18:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "1", "title": "Calculus 1 Full Playlist", "type": "Video", "subject": "Mathematics", "url": "#", "description": "Complete coverage of limits and derivatives with visual examples." },
+  { "id": "2", "title": "Stats 1 Formula Sheet", "type": "Notes", "subject": "Statistics", "url": "#", "description": "Essential formulas for End Term exam. Cheat sheet format." },
+  { "id": "3", "title": "Python OPP Practice Questions", "type": "PYQ", "subject": "Python", "url": "#", "description": "Previous year questions focused on Classes and Objects." },
+  { "id": "4", "title": "Discrete Math: Logic Gates", "type": "Video", "subject": "Mathematics", "url": "#", "description": "Deep dive into boolean algebra and circuit design." },
+  { "id": "5", "title": "Business Analytics Case Studies", "type": "Book", "subject": "Business Analytics", "url": "#", "description": "Real world examples for BA from industry leaders." },
+  { "id": "6", "title": "English 1 Grammar Rules", "type": "Notes", "subject": "English", "url": "#", "description": "Quick revision guide for common grammatical errors." },
+  { "id": "7", "title": "DBMS Normalization Guide", "type": "Notes", "subject": "DBMS", "url": "#", "description": "Step-by-step guide to 1NF, 2NF, 3NF and BCNF." },
+  { "id": "8", "title": "PDSA Week 1-4 Recap", "type": "Video", "subject": "PDSA", "url": "#", "description": "Crash course on complexity analysis and sorting algorithms." }
+]

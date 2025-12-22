@@ -1,0 +1,191 @@
+{
+  "Mathematics I": {
+    "id": "math1",
+    "name": "Mathematics I",
+    "code": "MA1001",
+    "level": "Foundation",
+    "color": "text-blue-400"
+  },
+  "Statistics I": {
+    "id": "stats1",
+    "name": "Statistics I",
+    "code": "ST1001",
+    "level": "Foundation",
+    "color": "text-green-400"
+  },
+  "Computational Thinking": {
+    "id": "ct",
+    "name": "Computational Thinking",
+    "code": "CS1001",
+    "level": "Foundation",
+    "color": "text-purple-400"
+  },
+  "English I": {
+    "id": "english1",
+    "name": "English I",
+    "code": "EN1001",
+    "level": "Foundation",
+    "color": "text-pink-400"
+  },
+  "Mathematics II": {
+    "id": "math2",
+    "name": "Mathematics II",
+    "code": "MA1002",
+    "level": "Foundation",
+    "color": "text-indigo-400"
+  },
+  "Statistics II": {
+    "id": "stats2",
+    "name": "Statistics II",
+    "code": "ST1002",
+    "level": "Foundation",
+    "color": "text-emerald-400"
+  },
+  "Intro to Python": {
+    "id": "python",
+    "name": "Intro to Python",
+    "code": "CS1002",
+    "level": "Foundation",
+    "color": "text-yellow-400"
+  },
+  "English II": {
+    "id": "english2",
+    "name": "English II",
+    "code": "EN1002",
+    "level": "Foundation",
+    "color": "text-rose-400"
+  },
+  "DBMS": {
+    "id": "dbms",
+    "name": "DBMS",
+    "code": "CS2001",
+    "level": "Diploma",
+    "color": "text-cyan-400"
+  },
+  "PDSA": {
+    "id": "pdsa",
+    "name": "PDSA",
+    "code": "CS2002",
+    "level": "Diploma",
+    "color": "text-orange-400"
+  },
+  "Java Programming": {
+    "id": "java",
+    "name": "Java Programming",
+    "code": "CS2004",
+    "level": "Diploma",
+    "color": "text-red-400"
+  },
+  "App Dev 1": {
+    "id": "appdev1",
+    "name": "App Dev 1",
+    "code": "CS2003",
+    "level": "Diploma",
+    "color": "text-indigo-400"
+  },
+  "App Dev 2": {
+    "id": "appdev2",
+    "name": "App Dev 2",
+    "code": "CS2005",
+    "level": "Diploma",
+    "color": "text-violet-400"
+  },
+  "System Commands": {
+    "id": "sc",
+    "name": "System Commands",
+    "code": "SE2001",
+    "level": "Diploma",
+    "color": "text-slate-400"
+  },
+  "ML Foundations": {
+    "id": "ml",
+    "name": "ML Foundations",
+    "code": "CS2006",
+    "level": "Diploma",
+    "color": "text-teal-400"
+  },
+  "Business Analytics": {
+    "id": "ba",
+    "name": "Business Analytics",
+    "code": "MS2002",
+    "level": "Diploma",
+    "color": "text-emerald-400"
+  },
+  "ML Practice": {
+    "id": "mlp",
+    "name": "ML Practice",
+    "code": "CS2008",
+    "level": "Diploma",
+    "color": "text-rose-400"
+  },
+  "Business Data Mgmt": {
+    "id": "bdm",
+    "name": "Business Data Mgmt",
+    "code": "MS2001",
+    "level": "Diploma",
+    "color": "text-blue-500"
+  },
+  "Tools in Data Science": {
+    "id": "tds",
+    "name": "Tools in Data Science",
+    "code": "SE2002",
+    "level": "Diploma",
+    "color": "text-sky-500"
+  },
+  "Generative AI": {
+    "id": "genai",
+    "name": "Generative AI",
+    "code": "AI2001",
+    "level": "Diploma",
+    "color": "text-fuchsia-500"
+  },
+  "Software Testing": {
+    "id": "st",
+    "name": "Software Testing",
+    "code": "CS3001",
+    "level": "Degree",
+    "color": "text-lime-400"
+  },
+  "Software Engineering": {
+    "id": "se",
+    "name": "Software Engineering",
+    "code": "CS3002",
+    "level": "Degree",
+    "color": "text-sky-400"
+  },
+  "Deep Learning": {
+    "id": "dl",
+    "name": "Deep Learning",
+    "code": "CS3004",
+    "level": "Degree",
+    "color": "text-fuchsia-400"
+  },
+  "AI: Search Methods": {
+    "id": "ai",
+    "name": "AI: Search Methods",
+    "code": "CS3003",
+    "level": "Degree",
+    "color": "text-amber-400"
+  },
+  "Strategies for Pro Growth": {
+    "id": "spg",
+    "name": "Strategies for Pro Growth",
+    "code": "GN3001",
+    "level": "Degree",
+    "color": "text-emerald-300"
+  },
+  "Intro to Big Data": {
+    "id": "ibd",
+    "name": "Intro to Big Data",
+    "code": "DA5001",
+    "level": "Degree",
+    "color": "text-blue-500"
+  },
+  "Programming in C": {
+    "id": "cprog",
+    "name": "Programming in C",
+    "code": "CS3005",
+    "level": "Degree",
+    "color": "text-slate-200"
+  }
+}

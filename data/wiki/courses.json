@@ -1,0 +1,857 @@
+[
+  {
+    "id": "f-ma1",
+    "code": "MA1001",
+    "name": "Mathematics for Data Science I",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 3.5,
+    "workload": 3,
+    "tags": [
+      "Math",
+      "Calculus",
+      "Foundation"
+    ],
+    "description": "The starting point for Math in the degree. Covers basic functions, sets, and introductory calculus.",
+    "prerequisites": [],
+    "syllabus": [
+      "Sets, Relations, Functions",
+      "Polynomials & Equations",
+      "Coordinate Geometry",
+      "Limits & Continuity",
+      "Derivatives"
+    ],
+    "resources": [
+      {
+        "title": "3Blue1Brown - Calculus",
+        "url": "#",
+        "type": "YouTube"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "MathWhiz",
+        "rating": 4,
+        "text": "Focus on the practice assignments.",
+        "date": "Jan 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 15,
+      "a": 20,
+      "b": 25,
+      "c": 20,
+      "d": 10,
+      "f": 10
+    }
+  },
+  {
+    "id": "f-st1",
+    "code": "ST1001",
+    "name": "Statistics for Data Science I",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 3,
+    "workload": 3,
+    "tags": [
+      "Stats",
+      "Probability",
+      "Foundation"
+    ],
+    "description": "Introduction to data description, probability, and distributions.",
+    "prerequisites": [],
+    "syllabus": [
+      "Data Collection",
+      "Probability Basics",
+      "Random Variables",
+      "Distributions"
+    ],
+    "resources": [
+      {
+        "title": "StatQuest",
+        "url": "#",
+        "type": "YouTube"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "DataFan",
+        "rating": 5,
+        "text": "Prof. Andrew's lectures are gold.",
+        "date": "Feb 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 20,
+      "a": 25,
+      "b": 25,
+      "c": 15,
+      "d": 10,
+      "f": 5
+    }
+  },
+  {
+    "id": "f-ct",
+    "code": "CS1001",
+    "name": "Computational Thinking",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 2,
+    "workload": 2,
+    "tags": [
+      "Logic",
+      "Algorithms",
+      "Easy"
+    ],
+    "description": "Builds the algorithmic mindset required for programming.",
+    "prerequisites": [],
+    "syllabus": [
+      "Patterns & Logic",
+      "Flowcharts",
+      "Pseudocode",
+      "Graph Theory"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "LogicMaster",
+        "rating": 4,
+        "text": "Easy S grade if careful.",
+        "date": "Mar 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 30,
+      "a": 30,
+      "b": 20,
+      "c": 15,
+      "d": 3,
+      "f": 2
+    }
+  },
+  {
+    "id": "f-en1",
+    "code": "EN1001",
+    "name": "English I",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 1.5,
+    "workload": 1.5,
+    "tags": [
+      "Language",
+      "Communication"
+    ],
+    "description": "Focuses on basic grammar and comprehension.",
+    "prerequisites": [],
+    "syllabus": [
+      "Grammar",
+      "Vocabulary",
+      "Reading Comprehension"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "Reader",
+        "rating": 3,
+        "text": "Good refresher.",
+        "date": "Jan 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 40,
+      "a": 30,
+      "b": 20,
+      "c": 5,
+      "d": 3,
+      "f": 2
+    }
+  },
+  {
+    "id": "f-ma2",
+    "code": "MA1002",
+    "name": "Mathematics for Data Science II",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 4.8,
+    "workload": 4.5,
+    "tags": [
+      "Linear Algebra",
+      "Vectors",
+      "Hard"
+    ],
+    "description": "Dives deep into Linear Algebra, Matrices, and Vector Spaces.",
+    "prerequisites": [
+      "Math 1"
+    ],
+    "syllabus": [
+      "Linear Equations",
+      "Matrices",
+      "Vector Spaces",
+      "Eigenvalues"
+    ],
+    "resources": [
+      {
+        "title": "Gilbert Strang",
+        "url": "#",
+        "type": "YouTube"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Survivor",
+        "rating": 5,
+        "text": "Toughest foundation course.",
+        "date": "Apr 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 5,
+      "a": 15,
+      "b": 25,
+      "c": 30,
+      "d": 15,
+      "f": 10
+    }
+  },
+  {
+    "id": "f-st2",
+    "code": "ST1002",
+    "name": "Statistics for Data Science II",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 4.5,
+    "workload": 4,
+    "tags": [
+      "Inference",
+      "Hypothesis",
+      "Hard"
+    ],
+    "description": "Advanced stats covering sampling and hypothesis testing.",
+    "prerequisites": [
+      "Stats 1",
+      "Math 1"
+    ],
+    "syllabus": [
+      "Sampling",
+      "Estimation",
+      "Hypothesis Testing",
+      "Linear Regression"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "PValue",
+        "rating": 4,
+        "text": "Hypothesis testing is tricky.",
+        "date": "May 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 8,
+      "a": 15,
+      "b": 25,
+      "c": 25,
+      "d": 15,
+      "f": 12
+    }
+  },
+  {
+    "id": "f-py",
+    "code": "CS1002",
+    "name": "Intro to Python Programming",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 3.5,
+    "workload": 5,
+    "tags": [
+      "Coding",
+      "OPPE",
+      "Essential"
+    ],
+    "description": "Teaches Python from scratch to intermediate level.",
+    "prerequisites": [
+      "CT"
+    ],
+    "syllabus": [
+      "Variables",
+      "Loops",
+      "Functions",
+      "File Handling"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "PyCoder",
+        "rating": 5,
+        "text": "OPPE requires speed.",
+        "date": "Jun 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 15,
+      "a": 25,
+      "b": 30,
+      "c": 20,
+      "d": 5,
+      "f": 5
+    }
+  },
+  {
+    "id": "f-en2",
+    "code": "EN1002",
+    "name": "English II",
+    "level": "Foundation",
+    "credits": 4,
+    "difficulty": 2,
+    "workload": 2,
+    "tags": [
+      "Writing",
+      "Speaking"
+    ],
+    "description": "Focuses on academic writing and critical thinking.",
+    "prerequisites": [
+      "English 1"
+    ],
+    "syllabus": [
+      "Academic Writing",
+      "Critical Reading",
+      "Speaking Skills"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 35,
+      "a": 35,
+      "b": 20,
+      "c": 5,
+      "d": 3,
+      "f": 2
+    }
+  },
+  {
+    "id": "dp-dbms",
+    "code": "CS2001",
+    "name": "DBMS",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.3,
+    "workload": 4,
+    "tags": [
+      "SQL",
+      "Data",
+      "Backend"
+    ],
+    "description": "SQL, Normalization, and Transactions.",
+    "prerequisites": [
+      "Python"
+    ],
+    "syllabus": [
+      "SQL Queries",
+      "Normalization",
+      "Transactions"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "DBAdmin",
+        "rating": 5,
+        "text": "SQL is fun.",
+        "date": "Aug 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 12,
+      "a": 20,
+      "b": 30,
+      "c": 25,
+      "d": 10,
+      "f": 3
+    }
+  },
+  {
+    "id": "dp-pdsa",
+    "code": "CS2002",
+    "name": "PDSA",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 4.4,
+    "workload": 4,
+    "tags": [
+      "Algorithms",
+      "Interview",
+      "Hard"
+    ],
+    "description": "Data Structures and Algorithms in Python.",
+    "prerequisites": [
+      "Python"
+    ],
+    "syllabus": [
+      "Complexity",
+      "Sorting",
+      "Graphs",
+      "DP"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "AlgoGeek",
+        "rating": 5,
+        "text": "Hardest Diploma course.",
+        "date": "Sep 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 8,
+      "a": 15,
+      "b": 25,
+      "c": 30,
+      "d": 15,
+      "f": 7
+    }
+  },
+  {
+    "id": "dp-app1",
+    "code": "CS2003",
+    "name": "App Dev 1",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.2,
+    "workload": 5,
+    "tags": [
+      "Web",
+      "Dev",
+      "Project"
+    ],
+    "description": "HTML, CSS, SQLite, and Flask.",
+    "prerequisites": [
+      "DBMS"
+    ],
+    "syllabus": [
+      "Flask",
+      "SQLAlchemy",
+      "API Basics"
+    ],
+    "resources": [],
+    "reviews": [
+      {
+        "author": "WebDev",
+        "rating": 4,
+        "text": "Project is heavy.",
+        "date": "Oct 2024"
+      }
+    ],
+    "gradeStats": {
+      "s": 20,
+      "a": 30,
+      "b": 30,
+      "c": 15,
+      "d": 5,
+      "f": 0
+    }
+  },
+  {
+    "id": "dp-java",
+    "code": "CS2004",
+    "name": "Java Programming",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.49,
+    "workload": 4.5,
+    "tags": [
+      "OOP",
+      "Enterprise"
+    ],
+    "description": "OOP using Java.",
+    "prerequisites": [
+      "Python"
+    ],
+    "syllabus": [
+      "OOP",
+      "Exception Handling",
+      "Collections"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 10,
+      "a": 20,
+      "b": 30,
+      "c": 25,
+      "d": 10,
+      "f": 5
+    }
+  },
+  {
+    "id": "dp-sc",
+    "code": "SE2001",
+    "name": "System Commands",
+    "level": "Diploma",
+    "credits": 3,
+    "difficulty": 3.57,
+    "workload": 2.5,
+    "tags": [
+      "Linux",
+      "Bash"
+    ],
+    "description": "Linux terminal and scripting.",
+    "prerequisites": [],
+    "syllabus": [
+      "Shell Basics",
+      "Text Processing",
+      "Scripting"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 25,
+      "a": 35,
+      "b": 25,
+      "c": 10,
+      "d": 5,
+      "f": 0
+    }
+  },
+  {
+    "id": "dp-app2",
+    "code": "CS2005",
+    "name": "App Dev 2",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.96,
+    "workload": 5,
+    "tags": [
+      "VueJS",
+      "API"
+    ],
+    "description": "Modern web dev with Vue.js and APIs.",
+    "prerequisites": [
+      "App Dev 1"
+    ],
+    "syllabus": [
+      "Vue.js",
+      "REST APIs",
+      "Redis",
+      "Celery"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 15,
+      "a": 25,
+      "b": 30,
+      "c": 20,
+      "d": 10,
+      "f": 0
+    }
+  },
+  {
+    "id": "dp-app1p",
+    "code": "CS2003P",
+    "name": "Project: App Dev 1",
+    "level": "Diploma",
+    "credits": 2,
+    "difficulty": 3.63,
+    "workload": 4.5,
+    "tags": [
+      "Project",
+      "Dev"
+    ],
+    "description": "Project for App Dev 1.",
+    "prerequisites": [
+      "App Dev 1"
+    ],
+    "syllabus": [
+      "Implementation",
+      "Viva"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 30,
+      "a": 30,
+      "b": 20,
+      "c": 10,
+      "d": 5,
+      "f": 5
+    }
+  },
+  {
+    "id": "dp-app2p",
+    "code": "CS2005P",
+    "name": "Project: App Dev 2",
+    "level": "Diploma",
+    "credits": 2,
+    "difficulty": 4.18,
+    "workload": 5,
+    "tags": [
+      "Project",
+      "Dev"
+    ],
+    "description": "Project for App Dev 2.",
+    "prerequisites": [
+      "App Dev 2"
+    ],
+    "syllabus": [
+      "Advanced Implementation",
+      "Viva"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 20,
+      "a": 30,
+      "b": 30,
+      "c": 10,
+      "d": 5,
+      "f": 5
+    }
+  },
+  {
+    "id": "ds-mlf",
+    "code": "CS2006",
+    "name": "ML Foundations",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.32,
+    "workload": 3.5,
+    "tags": [
+      "ML",
+      "Math"
+    ],
+    "description": "Mathematical basis for ML.",
+    "prerequisites": [
+      "Math 2",
+      "Stats 2"
+    ],
+    "syllabus": [
+      "Linear Regression",
+      "Gradient Descent",
+      "PCA"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 10,
+      "a": 20,
+      "b": 30,
+      "c": 25,
+      "d": 10,
+      "f": 5
+    }
+  },
+  {
+    "id": "ds-mlt",
+    "code": "CS2007",
+    "name": "ML Techniques",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 4.21,
+    "workload": 4,
+    "tags": [
+      "ML",
+      "Algorithms"
+    ],
+    "description": "Core ML algorithms.",
+    "prerequisites": [
+      "ML Foundations"
+    ],
+    "syllabus": [
+      "SVM",
+      "Decision Trees",
+      "Clustering"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 12,
+      "a": 22,
+      "b": 28,
+      "c": 25,
+      "d": 10,
+      "f": 3
+    }
+  },
+  {
+    "id": "ds-mlp",
+    "code": "CS2008",
+    "name": "ML Practice",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 3.7,
+    "workload": 4.5,
+    "tags": [
+      "Hands-on",
+      "Sklearn"
+    ],
+    "description": "Practical ML with Scikit-Learn.",
+    "prerequisites": [
+      "ML Foundations"
+    ],
+    "syllabus": [
+      "Pipelines",
+      "Hyperparameter Tuning"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 20,
+      "a": 30,
+      "b": 30,
+      "c": 15,
+      "d": 5,
+      "f": 0
+    }
+  },
+  {
+    "id": "ds-mlpp",
+    "code": "CS2008P",
+    "name": "Project: ML Practice",
+    "level": "Diploma",
+    "credits": 2,
+    "difficulty": 3.16,
+    "workload": 4,
+    "tags": [
+      "Project",
+      "ML"
+    ],
+    "description": "Capstone project for ML Practice.",
+    "prerequisites": [
+      "ML Practice"
+    ],
+    "syllabus": [
+      "ML Pipeline",
+      "Viva"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 30,
+      "a": 30,
+      "b": 20,
+      "c": 10,
+      "d": 5,
+      "f": 5
+    }
+  },
+  {
+    "id": "ds-bdm",
+    "code": "MS2001",
+    "name": "Business Data Mgmt",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 2.2,
+    "workload": 2,
+    "tags": [
+      "Business",
+      "Theory"
+    ],
+    "description": "Data in business context.",
+    "prerequisites": [],
+    "syllabus": [
+      "Warehousing",
+      "Governance"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 35,
+      "a": 35,
+      "b": 20,
+      "c": 8,
+      "d": 2,
+      "f": 0
+    }
+  },
+  {
+    "id": "ds-bdmp",
+    "code": "MS2001P",
+    "name": "Project: BDM",
+    "level": "Diploma",
+    "credits": 2,
+    "difficulty": 3.53,
+    "workload": 3,
+    "tags": [
+      "Project",
+      "Business"
+    ],
+    "description": "Project for BDM.",
+    "prerequisites": [
+      "BDM"
+    ],
+    "syllabus": [
+      "Data Modeling",
+      "Viva"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 30,
+      "a": 30,
+      "b": 25,
+      "c": 10,
+      "d": 5,
+      "f": 0
+    }
+  },
+  {
+    "id": "ds-ba",
+    "code": "MS2002",
+    "name": "Business Analytics",
+    "level": "Diploma",
+    "credits": 4,
+    "difficulty": 2.44,
+    "workload": 3,
+    "tags": [
+      "Business",
+      "Stats"
+    ],
+    "description": "Applying stats to business problems.",
+    "prerequisites": [
+      "Stats 1"
+    ],
+    "syllabus": [
+      "Time Series",
+      "Optimization"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 15,
+      "a": 25,
+      "b": 35,
+      "c": 15,
+      "d": 5,
+      "f": 5
+    }
+  },
+  {
+    "id": "ds-tds",
+    "code": "SE2002",
+    "name": "Tools in Data Science",
+    "level": "Diploma",
+    "credits": 3,
+    "difficulty": 2.15,
+    "workload": 3.5,
+    "tags": [
+      "Tools",
+      "Visualization"
+    ],
+    "description": "Hands-on with DS tools.",
+    "prerequisites": [],
+    "syllabus": [
+      "Git",
+      "Docker",
+      "Streamlit"
+    ],
+    "resources": [],
+    "reviews": [],
+    "gradeStats": {
+      "s": 25,
+      "a": 30,
+      "b": 25,
+      "c": 15,
+      "d": 5,
+      "f": 0
+    }
+  }
+]

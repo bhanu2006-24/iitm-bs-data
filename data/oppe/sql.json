@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "sql1-lc-1757",
+    "title": "Recyclable Low Fat Products",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find ids of products.",
+    "starterCode": "SELECT product_id FROM Products WHERE ...",
+    "testCases": [
+      {
+        "input": "Products",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Select"
+    ]
+  },
+  {
+    "id": "sql1-lc-584",
+    "title": "Find Customer Referee",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Not referred by 2.",
+    "starterCode": "SELECT name FROM Customer WHERE ...",
+    "testCases": [
+      {
+        "input": "Customer",
+        "output": "names"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Where"
+    ]
+  },
+  {
+    "id": "sql1-lc-595",
+    "title": "Big Countries",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Area > 3M or Pop > 25M.",
+    "starterCode": "SELECT name, population, area FROM World WHERE ...",
+    "testCases": [
+      {
+        "input": "World",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Select"
+    ]
+  },
+  {
+    "id": "sql1-lc-1148",
+    "title": "Article Views I",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Authors viewing own articles.",
+    "starterCode": "SELECT DISTINCT author_id AS id FROM Views WHERE ...",
+    "testCases": [
+      {
+        "input": "Views",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Distinct"
+    ]
+  },
+  {
+    "id": "sql1-lc-1683",
+    "title": "Invalid Tweets",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Content > 15 chars.",
+    "starterCode": "SELECT tweet_id FROM Tweets WHERE LENGTH(content) ...",
+    "testCases": [
+      {
+        "input": "Tweets",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "sql1-lc-1378",
+    "title": "Replace ID",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Unique ID join.",
+    "starterCode": "SELECT unique_id, name FROM Employees LEFT JOIN ...",
+    "testCases": [
+      {
+        "input": "Emp",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1068",
+    "title": "Product Sales Analysis I",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Product name, year, price.",
+    "starterCode": "SELECT product_name, year, price FROM Sales JOIN ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1581",
+    "title": "Customer No Transaction",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Visits without trans.",
+    "starterCode": "SELECT customer_id, COUNT(*) FROM Visits ...",
+    "testCases": [
+      {
+        "input": "Visits",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-197",
+    "title": "Rising Temperature",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Temp > Prev Day.",
+    "starterCode": "SELECT w1.id FROM Weather w1, Weather w2 ...",
+    "testCases": [
+      {
+        "input": "Weather",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1661",
+    "title": "Average Time",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Process time per machine.",
+    "starterCode": "SELECT machine_id, ROUND(AVG(end-start),3) ...",
+    "testCases": [
+      {
+        "input": "Activity",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-577",
+    "title": "Employee Bonus",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Bonus < 1000.",
+    "starterCode": "SELECT name, bonus FROM Employee LEFT JOIN ...",
+    "testCases": [
+      {
+        "input": "Bonus",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1280",
+    "title": "Students and Exams",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Count exams per student.",
+    "starterCode": "SELECT s.student_id, sub.subject_name ...",
+    "testCases": [
+      {
+        "input": "Exams",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-570",
+    "title": "Managers 5 Reports",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "5 direct reports.",
+    "starterCode": "SELECT name FROM Employee WHERE id IN ...",
+    "testCases": [
+      {
+        "input": "Emp",
+        "output": "names"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql1-lc-1934",
+    "title": "Confirmation Rate",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Rate per user.",
+    "starterCode": "SELECT user_id, ROUND(AVG(...), 2) ...",
+    "testCases": [
+      {
+        "input": "Signups",
+        "output": "rates"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-620",
+    "title": "Boring Movies",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Odd id, not boring.",
+    "starterCode": "SELECT * FROM Cinema WHERE id % 2 = 1 ...",
+    "testCases": [
+      {
+        "input": "Cinema",
+        "output": "movies"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Where"
+    ]
+  },
+  {
+    "id": "sql1-lc-1251",
+    "title": "Avg Selling Price",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Price per unit.",
+    "starterCode": "SELECT product_id, IFNULL(...) ...",
+    "testCases": [
+      {
+        "input": "Prices",
+        "output": "avg"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1075",
+    "title": "Project Employees I",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Avg experience.",
+    "starterCode": "SELECT project_id, AVG(experience_years) ...",
+    "testCases": [
+      {
+        "input": "Project",
+        "output": "avg"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1633",
+    "title": "Contest Percentage",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "% registered.",
+    "starterCode": "SELECT contest_id, ROUND(...) ...",
+    "testCases": [
+      {
+        "input": "Reg",
+        "output": "pct"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1211",
+    "title": "Queries Quality",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Quality and poor %.",
+    "starterCode": "SELECT query_name, ROUND(AVG(rating/position), 2) ...",
+    "testCases": [
+      {
+        "input": "Queries",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1193",
+    "title": "Monthly Trans I",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Count and sum.",
+    "starterCode": "SELECT DATE_FORMAT(trans_date, \"%Y-%m\") ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1174",
+    "title": "Food Delivery I",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Immediate orders.",
+    "starterCode": "SELECT ROUND(...) FROM Delivery ...",
+    "testCases": [
+      {
+        "input": "Delivery",
+        "output": "pct"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1141",
+    "title": "User Activity",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "DAU 30 days.",
+    "starterCode": "SELECT activity_date, COUNT(...) ...",
+    "testCases": [
+      {
+        "input": "Activity",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Where"
+    ]
+  },
+  {
+    "id": "sql1-lc-2356",
+    "title": "Unique Subjects",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Count unique.",
+    "starterCode": "SELECT teacher_id, COUNT(DISTINCT ...) ...",
+    "testCases": [
+      {
+        "input": "Teacher",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Count"
+    ]
+  },
+  {
+    "id": "sql1-lc-1729",
+    "title": "Followers Count",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Count followers.",
+    "starterCode": "SELECT user_id, COUNT(follower_id) ...",
+    "testCases": [
+      {
+        "input": "Followers",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-511",
+    "title": "Game Play Analysis I",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "First login.",
+    "starterCode": "SELECT player_id, MIN(event_date) ...",
+    "testCases": [
+      {
+        "input": "Activity",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-586",
+    "title": "Customer Largest Orders",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Most orders.",
+    "starterCode": "SELECT customer_number FROM Orders GROUP BY ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "id"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-596",
+    "title": "Classes > 5 Students",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Big classes.",
+    "starterCode": "SELECT class FROM Courses GROUP BY ...",
+    "testCases": [
+      {
+        "input": "Courses",
+        "output": "classes"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-607",
+    "title": "Sales Person",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "No orders with RED.",
+    "starterCode": "SELECT name FROM SalesPerson WHERE ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "names"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql1-lc-619",
+    "title": "Biggest Single Number",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Max num appearing once.",
+    "starterCode": "SELECT MAX(num) FROM (SELECT num ...) ...",
+    "testCases": [
+      {
+        "input": "Nums",
+        "output": "num"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1050",
+    "title": "Actors Directors",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Cooperated 3 times.",
+    "starterCode": "SELECT actor_id, director_id FROM ...",
+    "testCases": [
+      {
+        "input": "ActorDirector",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1084",
+    "title": "Sales Analysis III",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Sold only in Q1.",
+    "starterCode": "SELECT product_id, product_name FROM ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1113",
+    "title": "Reported Posts",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Report counts.",
+    "starterCode": "SELECT extra, COUNT(DISTINCT post_id) ...",
+    "testCases": [
+      {
+        "input": "Actions",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1142",
+    "title": "User Activity II",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Avg sessions.",
+    "starterCode": "SELECT IFNULL(ROUND(AVG(cnt), 2), 0) ...",
+    "testCases": [
+      {
+        "input": "Activity",
+        "output": "val"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1173",
+    "title": "Immediate Delivery",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Immediate %.",
+    "starterCode": "SELECT ROUND(100 * SUM(...) / COUNT(*), 2) ...",
+    "testCases": [
+      {
+        "input": "Delivery",
+        "output": "pct"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1294",
+    "title": "Weather Type",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Cold/Hot/Warm.",
+    "starterCode": "SELECT country_name, CASE ...",
+    "testCases": [
+      {
+        "input": "Weather",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Case"
+    ]
+  },
+  {
+    "id": "sql1-lc-1303",
+    "title": "Team Size",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Size of team.",
+    "starterCode": "SELECT employee_id, COUNT(*) OVER ...",
+    "testCases": [
+      {
+        "input": "Employee",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql1-lc-1322",
+    "title": "Ads Performance",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "CTR.",
+    "starterCode": "SELECT ad_id, IFNULL(...) ...",
+    "testCases": [
+      {
+        "input": "Ads",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1327",
+    "title": "Products ordered period",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": ">100 units Feb.",
+    "starterCode": "SELECT product_name, sum(unit) ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1350",
+    "title": "Students Invalid Dept",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "No department.",
+    "starterCode": "SELECT id, name FROM Students WHERE ...",
+    "testCases": [
+      {
+        "input": "Students",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql1-lc-1407",
+    "title": "Top Travellers",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Total distance.",
+    "starterCode": "SELECT name, IFNULL(SUM(distance), 0) ...",
+    "testCases": [
+      {
+        "input": "Rides",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1484",
+    "title": "Group Sold Products",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Group concat.",
+    "starterCode": "SELECT sell_date, COUNT(...), GROUP_CONCAT(...)",
+    "testCases": [
+      {
+        "input": "Activities",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-1517",
+    "title": "Users With Valid E-Mails",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Regex check.",
+    "starterCode": "SELECT * FROM Users WHERE mail REGEXP ...",
+    "testCases": [
+      {
+        "input": "Users",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Regex"
+    ]
+  },
+  {
+    "id": "sql1-lc-1527",
+    "title": "Patients Condition",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "DIAB1 prefix.",
+    "starterCode": "SELECT * FROM Patients WHERE conditions LIKE ...",
+    "testCases": [
+      {
+        "input": "Patients",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Regex"
+    ]
+  },
+  {
+    "id": "sql1-lc-1571",
+    "title": "Warehouse Manager",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Volume used.",
+    "starterCode": "SELECT name, SUM(...) ...",
+    "testCases": [
+      {
+        "input": "Warehouse",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql1-lc-1587",
+    "title": "Bank Account Summary",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Balance > 10000.",
+    "starterCode": "SELECT name, SUM(amount) ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1607",
+    "title": "Sellers No Sale",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "No sale in 2020.",
+    "starterCode": "SELECT seller_name FROM Seller ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "names"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql1-lc-1667",
+    "title": "Fix Names",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Capitalize.",
+    "starterCode": "SELECT user_id, CONCAT(...) ...",
+    "testCases": [
+      {
+        "input": "Users",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "sql1-lc-1693",
+    "title": "Daily Leads",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Count distinct.",
+    "starterCode": "SELECT date_id, make_name, COUNT(...) ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql1-lc-1741",
+    "title": "Total Time Spent",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Sum time.",
+    "starterCode": "SELECT event_day, emp_id, SUM(...) ...",
+    "testCases": [
+      {
+        "input": "Employees",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql1-lc-175",
+    "title": "Combine Two Tables",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Left Join.",
+    "starterCode": "SELECT firstName, lastName, city, state ...",
+    "testCases": [
+      {
+        "input": "Person",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-550",
+    "title": "Game Play Analysis IV",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fraction consecutive login.",
+    "starterCode": "SELECT ROUND(...) FROM Activity ...",
+    "testCases": [
+      {
+        "input": "Activity",
+        "output": "frac"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1045",
+    "title": "Customers Bought All",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Bought all products.",
+    "starterCode": "SELECT customer_id FROM Customer GROUP BY ...",
+    "testCases": [
+      {
+        "input": "Customer",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql2-lc-180",
+    "title": "Consecutive Numbers",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Num 3 times row.",
+    "starterCode": "SELECT DISTINCT l1.num FROM Logs l1 ...",
+    "testCases": [
+      {
+        "input": "Logs",
+        "output": "nums"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1164",
+    "title": "Product Price Date",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Price at date.",
+    "starterCode": "SELECT product_id, new_price ...",
+    "testCases": [
+      {
+        "input": "Products",
+        "output": "prices"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1204",
+    "title": "Last Person to Fit",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Running total weight.",
+    "starterCode": "SELECT person_name FROM (SELECT ..., SUM(weight) OVER ...)",
+    "testCases": [
+      {
+        "input": "Queue",
+        "output": "name"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1907",
+    "title": "Count Salary Categories",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Low/Avg/High count.",
+    "starterCode": "SELECT \"Low Salary\" ... UNION ...",
+    "testCases": [
+      {
+        "input": "Accounts",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Union"
+    ]
+  },
+  {
+    "id": "sql2-lc-1341",
+    "title": "Movie Rating",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Union results.",
+    "starterCode": "UNION ALL ...",
+    "testCases": [
+      {
+        "input": "Ratings",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Union"
+    ]
+  },
+  {
+    "id": "sql2-lc-1321",
+    "title": "Restaurant Growth",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Moving avg 7 days.",
+    "starterCode": "SELECT visited_on, amount ... OVER ...",
+    "testCases": [
+      {
+        "input": "Customer",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-602",
+    "title": "Friend Requests II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Most friends.",
+    "starterCode": "SELECT id, num FROM ...",
+    "testCases": [
+      {
+        "input": "Request",
+        "output": "id"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Union"
+    ]
+  },
+  {
+    "id": "sql2-lc-585",
+    "title": "Investments 2016",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sum TIV_2016.",
+    "starterCode": "SELECT ROUND(SUM(tiv_2016), 2) ...",
+    "testCases": [
+      {
+        "input": "Ins",
+        "output": "sum"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql2-lc-185",
+    "title": "Dept Top 3 Salaries",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Dense Rank.",
+    "starterCode": "SELECT d.name, e.name, e.salary ... DENSE_RANK",
+    "testCases": [
+      {
+        "input": "Emp",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-262",
+    "title": "Trips and Users",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Cancellation rate.",
+    "starterCode": "SELECT request_at, ROUND(...) ...",
+    "testCases": [
+      {
+        "input": "Trips",
+        "output": "rates"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-601",
+    "title": "Human Traffic",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Consecutive >= 100.",
+    "starterCode": "SELECT id, visit_date, people ...",
+    "testCases": [
+      {
+        "input": "Stadium",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-176",
+    "title": "Second Highest Salary",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Limit Offset.",
+    "starterCode": "SELECT IFNULL(...) ...",
+    "testCases": [
+      {
+        "input": "Employee",
+        "output": "sal"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Limit"
+    ]
+  },
+  {
+    "id": "sql2-lc-177",
+    "title": "Nth Highest Salary",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Function.",
+    "starterCode": "CREATE FUNCTION getNthHighestSalary(N INT) ...",
+    "testCases": [
+      {
+        "input": "2",
+        "output": "sal"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Function"
+    ]
+  },
+  {
+    "id": "sql2-lc-178",
+    "title": "Rank Scores",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Dense Rank.",
+    "starterCode": "SELECT score, DENSE_RANK() OVER ...",
+    "testCases": [
+      {
+        "input": "Scores",
+        "output": "ranks"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-184",
+    "title": "Dept Highest Salary",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max per group.",
+    "starterCode": "SELECT d.name, e.name, e.salary ...",
+    "testCases": [
+      {
+        "input": "Emp",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-626",
+    "title": "Exchange Seats",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Swap ids.",
+    "starterCode": "SELECT IF(id%2=0, id-1, id+1) ...",
+    "testCases": [
+      {
+        "input": "Seat",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Logic"
+    ]
+  },
+  {
+    "id": "sql2-lc-1070",
+    "title": "Product Sales III",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "First year sales.",
+    "starterCode": "SELECT product_id, first_year ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Subquery"
+    ]
+  },
+  {
+    "id": "sql2-lc-1158",
+    "title": "Market Analysis I",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Orders in 2019.",
+    "starterCode": "SELECT user_id, join_date, COUNT(...)",
+    "testCases": [
+      {
+        "input": "Users",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1193",
+    "title": "Monthly Trans I",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Approved count/sum.",
+    "starterCode": "SELECT month, country ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Group By"
+    ]
+  },
+  {
+    "id": "sql2-lc-1205",
+    "title": "Monthly Trans II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Include chargebacks.",
+    "starterCode": "SELECT month, country ... UNION ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Union"
+    ]
+  },
+  {
+    "id": "sql2-lc-1285",
+    "title": "Consecutive Id",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Find ranges.",
+    "starterCode": "SELECT min(log_id), max(log_id) ...",
+    "testCases": [
+      {
+        "input": "Logs",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1393",
+    "title": "Capital Gain/Loss",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sell - Buy.",
+    "starterCode": "SELECT stock_name, SUM(...) ...",
+    "testCases": [
+      {
+        "input": "Stocks",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Case"
+    ]
+  },
+  {
+    "id": "sql2-lc-1440",
+    "title": "Evaluate Boolean",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Eval expressions.",
+    "starterCode": "SELECT left_operand, operator ...",
+    "testCases": [
+      {
+        "input": "Expr",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1445",
+    "title": "Apples & Oranges",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Difference.",
+    "starterCode": "SELECT sale_date, SUM(...) ...",
+    "testCases": [
+      {
+        "input": "Sales",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Case"
+    ]
+  },
+  {
+    "id": "sql2-lc-1459",
+    "title": "Rectangles Area",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Area > 0.",
+    "starterCode": "SELECT p1.id, p2.id ...",
+    "testCases": [
+      {
+        "input": "Points",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1501",
+    "title": "Countries Invest",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Avg > Global Avg.",
+    "starterCode": "SELECT country.name ... HAVING ...",
+    "testCases": [
+      {
+        "input": "Calls",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1532",
+    "title": "Recent Orders",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Top 3.",
+    "starterCode": "SELECT customer_name, customer_id ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1549",
+    "title": "Recent Orders Product",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Most recent.",
+    "starterCode": "SELECT product_name, product_id ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1555",
+    "title": "Bank Account Summary",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Credit limit.",
+    "starterCode": "SELECT user_id, user_name ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1596",
+    "title": "Most Frequent Product",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Mode per customer.",
+    "starterCode": "SELECT customer_id, product_id ...",
+    "testCases": [
+      {
+        "input": "Orders",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1613",
+    "title": "Missing IDs",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Recursive CTE.",
+    "starterCode": "WITH RECURSIVE seq ...",
+    "testCases": [
+      {
+        "input": "Cust",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "CTE"
+    ]
+  },
+  {
+    "id": "sql2-lc-1709",
+    "title": "Biggest Window",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max gap.",
+    "starterCode": "SELECT user_id, MAX(diff) ...",
+    "testCases": [
+      {
+        "input": "Visits",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1747",
+    "title": "Leetflex Banned",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Simultaneous login.",
+    "starterCode": "SELECT DISTINCT p1.account_id ...",
+    "testCases": [
+      {
+        "input": "LogInfo",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1783",
+    "title": "Grand Slam Titles",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Count championships.",
+    "starterCode": "SELECT player_id, player_name ...",
+    "testCases": [
+      {
+        "input": "Champs",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Unpivot"
+    ]
+  },
+  {
+    "id": "sql2-lc-1831",
+    "title": "Max Transaction",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max per day.",
+    "starterCode": "SELECT transaction_id ... RANK()",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1841",
+    "title": "League Stats",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Points table.",
+    "starterCode": "SELECT team_name, ...",
+    "testCases": [
+      {
+        "input": "Matches",
+        "output": "table"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1843",
+    "title": "Suspicious Accounts",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sum > max_income.",
+    "starterCode": "SELECT account_id ...",
+    "testCases": [
+      {
+        "input": "Trans",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1867",
+    "title": "Orders with Max Qty",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max > All Avg.",
+    "starterCode": "SELECT order_id ...",
+    "testCases": [
+      {
+        "input": "Details",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1875",
+    "title": "Group Employees",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Same salary.",
+    "starterCode": "SELECT * FROM Employees ...",
+    "testCases": [
+      {
+        "input": "Emp",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Window"
+    ]
+  },
+  {
+    "id": "sql2-lc-1917",
+    "title": "Leetcoders",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Power users.",
+    "starterCode": "SELECT user_id ...",
+    "testCases": [
+      {
+        "input": "Users",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1919",
+    "title": "Similar Interests",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Common interests.",
+    "starterCode": "SELECT p1.user_id ...",
+    "testCases": [
+      {
+        "input": "Interests",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1934",
+    "title": "Confirmation Rate",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Rate calculation.",
+    "starterCode": "SELECT user_id, AVG(...)",
+    "testCases": [
+      {
+        "input": "Signups",
+        "output": "rates"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1949",
+    "title": "Strong Friendship",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": ">= 3 common.",
+    "starterCode": "SELECT u1.user_id ...",
+    "testCases": [
+      {
+        "input": "Friends",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Self Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1951",
+    "title": "Max Common Followers",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Pairs with max.",
+    "starterCode": "SELECT u1.user_id ...",
+    "testCases": [
+      {
+        "input": "Relations",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Agg"
+    ]
+  },
+  {
+    "id": "sql2-lc-1988",
+    "title": "Cutoff Score",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Min score for school.",
+    "starterCode": "SELECT school_id, IFNULL(...)",
+    "testCases": [
+      {
+        "input": "Schools",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-1990",
+    "title": "Count Experiments",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Cross join all types.",
+    "starterCode": "SELECT platform, experiment ...",
+    "testCases": [
+      {
+        "input": "Exp",
+        "output": "rows"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Cross Join"
+    ]
+  },
+  {
+    "id": "sql2-lc-2020",
+    "title": "Accounts No Stream",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Active but no stream.",
+    "starterCode": "SELECT count(*) ...",
+    "testCases": [
+      {
+        "input": "Subs",
+        "output": "count"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Set"
+    ]
+  },
+  {
+    "id": "sql2-lc-2041",
+    "title": "Accepted Candidates",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Score > 15 & Exp >= 2.",
+    "starterCode": "SELECT candidate_id ...",
+    "testCases": [
+      {
+        "input": "Cand",
+        "output": "ids"
+      }
+    ],
+    "solution": "pass",
+    "subject": "SQL",
+    "language": "sql",
+    "tags": [
+      "Join"
+    ]
+  }
+]

@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "mlp1-001",
+    "title": "Numpy Array Creation",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Create 1D array of zeros.",
+    "starterCode": "import numpy as np\\ndef create(n):\\n    pass",
+    "testCases": [
+      {
+        "input": "5",
+        "output": "[0,0,0,0,0]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-002",
+    "title": "Numpy Reshape",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Reshape to 2D.",
+    "starterCode": "def reshape(arr, r, c):\\n    pass",
+    "testCases": [
+      {
+        "input": "[1..6], 2, 3",
+        "output": "[[1,2,3],[4,5,6]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-003",
+    "title": "Pandas Read CSV",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Load dataframe.",
+    "starterCode": "import pandas as pd\\ndef load(file):\\n    pass",
+    "testCases": [
+      {
+        "input": "\"data.csv\"",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-004",
+    "title": "Pandas Head",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "First n rows.",
+    "starterCode": "def get_head(df, n):\\n    pass",
+    "testCases": [
+      {
+        "input": "df, 5",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-005",
+    "title": "Pandas Filter",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Rows where col > val.",
+    "starterCode": "def filter_rows(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "df",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-006",
+    "title": "Pandas GroupBy Mean",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Mean per group.",
+    "starterCode": "def group_mean(df, col):\\n    pass",
+    "testCases": [
+      {
+        "input": "df",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-007",
+    "title": "Pandas Merge Inner",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Inner join.",
+    "starterCode": "def merge(df1, df2):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-008",
+    "title": "Numpy Dot Product",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Matrix mult.",
+    "starterCode": "def dot(a, b):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-009",
+    "title": "Numpy Mean Axis",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Col/Row mean.",
+    "starterCode": "def mean_axis(arr, ax):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-010",
+    "title": "Numpy Slicing",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Slice array.",
+    "starterCode": "def slice_arr(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-011",
+    "title": "Pandas Select Cols",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Select specific columns.",
+    "starterCode": "def select_cols(df, cols):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-012",
+    "title": "Pandas Drop Na",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Drop missing values.",
+    "starterCode": "def drop_na(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-013",
+    "title": "Pandas Fill Na",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Fill missing.",
+    "starterCode": "def fill_na(df, val):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-014",
+    "title": "Pandas Sort Values",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Sort by column.",
+    "starterCode": "def sort_df(df, col):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-015",
+    "title": "Pandas Rename",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Rename columns.",
+    "starterCode": "def rename_col(df, old, new):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-016",
+    "title": "Numpy Arange",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Range array.",
+    "starterCode": "def range_arr(start, stop):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-017",
+    "title": "Numpy Linspace",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Linear space.",
+    "starterCode": "def linspace(s, e, n):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-018",
+    "title": "Numpy Random",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Random float.",
+    "starterCode": "def rand_arr(n):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-019",
+    "title": "Pandas Apply",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Apply function.",
+    "starterCode": "def apply_func(df, func):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-020",
+    "title": "Pandas Pivot",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Pivot table.",
+    "starterCode": "def make_pivot(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-021",
+    "title": "Pandas Melt",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Unpivot.",
+    "starterCode": "def melt_df(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-022",
+    "title": "Numpy Transpose",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "T attribute.",
+    "starterCode": "def transpose(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-023",
+    "title": "Numpy Argmax",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Index of max.",
+    "starterCode": "def find_argmax(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "int"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-024",
+    "title": "Numpy Where",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Condition.",
+    "starterCode": "def where_cond(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-025",
+    "title": "Pandas Concat",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Stack DFs.",
+    "starterCode": "def concat_dfs(df1, df2):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-026",
+    "title": "Pandas Unique",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Unique values.",
+    "starterCode": "def unique_vals(df, col):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-027",
+    "title": "Pandas Value Counts",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Frequency.",
+    "starterCode": "def count_vals(df, col):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "ser"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-028",
+    "title": "Pandas Map",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Map values.",
+    "starterCode": "def map_vals(df, map_dict):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-029",
+    "title": "Numpy Std Dev",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Standard Deviation.",
+    "starterCode": "def std_dev(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-030",
+    "title": "Numpy Percentile",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Kth percentile.",
+    "starterCode": "def percentile(arr, k):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-031",
+    "title": "Pandas Loc",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Label selection.",
+    "starterCode": "def select_loc(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-032",
+    "title": "Pandas Iloc",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Index selection.",
+    "starterCode": "def select_iloc(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-033",
+    "title": "Pandas Drop Col",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Drop column.",
+    "starterCode": "def drop_col(df, col):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-034",
+    "title": "Pandas Astype",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Type conversion.",
+    "starterCode": "def convert_type(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-035",
+    "title": "Pandas To DateTime",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Parse dates.",
+    "starterCode": "def parse_dates(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-036",
+    "title": "Numpy Broadcast",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Add scalar.",
+    "starterCode": "def add_scalar(arr, k):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-037",
+    "title": "Numpy Flatten",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "To 1D.",
+    "starterCode": "def flatten(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-038",
+    "title": "Numpy Stack",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Stack arrays.",
+    "starterCode": "def stack_arrs(a, b):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-039",
+    "title": "Pandas Describe",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Summary stats.",
+    "starterCode": "def summary(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-040",
+    "title": "Pandas Corr",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Correlation matrix.",
+    "starterCode": "def correlation(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-041",
+    "title": "Pandas String Methods",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Str lower.",
+    "starterCode": "def to_lower(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-042",
+    "title": "Pandas Replace",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Replace val.",
+    "starterCode": "def replace_val(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-043",
+    "title": "Pandas IsNull",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check nulls.",
+    "starterCode": "def check_nulls(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-044",
+    "title": "Pandas Sample",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Random sample.",
+    "starterCode": "def get_sample(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-045",
+    "title": "Numpy Clip",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Clip values.",
+    "starterCode": "def clip_vals(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-046",
+    "title": "Numpy Diag",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Diagonal elements.",
+    "starterCode": "def get_diag(arr):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-047",
+    "title": "Numpy Eye",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Identity matrix.",
+    "starterCode": "def identity(n):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Numpy"
+    ]
+  },
+  {
+    "id": "mlp1-048",
+    "title": "Pandas Reset Index",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Reset idx.",
+    "starterCode": "def reset_idx(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-049",
+    "title": "Pandas Set Index",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Set col as idx.",
+    "starterCode": "def set_idx(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp1-050",
+    "title": "Pandas Query",
+    "difficulty": "Medium",
+    "examType": "OPPE 1",
+    "description": "Query string.",
+    "starterCode": "def query_str(df):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "df"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Pandas"
+    ]
+  },
+  {
+    "id": "mlp2-001",
+    "title": "Train Test Split",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Split data.",
+    "starterCode": "from sklearn.model_selection import train_test_split\\ndef split(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "split"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-002",
+    "title": "Linear Regression",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit OLS.",
+    "starterCode": "from sklearn.linear_model import LinearRegression\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-003",
+    "title": "Logistic Regression",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit LogReg.",
+    "starterCode": "from sklearn.linear_model import LogisticRegression\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-004",
+    "title": "KMeans Clustering",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Cluster data.",
+    "starterCode": "from sklearn.cluster import KMeans\\ndef cluster(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "labels"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-005",
+    "title": "PCA Reduction",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Reduce dims.",
+    "starterCode": "from sklearn.decomposition import PCA\\ndef reduce(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-006",
+    "title": "Accuracy Score",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Calc accuracy.",
+    "starterCode": "from sklearn.metrics import accuracy_score\\ndef score(y_true, y_pred):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-007",
+    "title": "Standard Scaler",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Scale data.",
+    "starterCode": "from sklearn.preprocessing import StandardScaler\\ndef scale(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-008",
+    "title": "Pipeline Create",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Create pipe.",
+    "starterCode": "from sklearn.pipeline import Pipeline\\ndef make_pipe():\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "pipe"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-009",
+    "title": "Grid Search CV",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Tune params.",
+    "starterCode": "from sklearn.model_selection import GridSearchCV\\ndef tune(model, params, X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "best"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-010",
+    "title": "Cross Validation",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Cross val.",
+    "starterCode": "from sklearn.model_selection import cross_val_score\\ndef eval(model, X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "scores"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-011",
+    "title": "Decision Tree",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit tree.",
+    "starterCode": "from sklearn.tree import DecisionTreeClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-012",
+    "title": "Random Forest",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit forest.",
+    "starterCode": "from sklearn.ensemble import RandomForestClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-013",
+    "title": "SVM Classifier",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit SVC.",
+    "starterCode": "from sklearn.svm import SVC\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-014",
+    "title": "KNN Classifier",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Fit KNN.",
+    "starterCode": "from sklearn.neighbors import KNeighborsClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-015",
+    "title": "Mean Squared Error",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Calc MSE.",
+    "starterCode": "from sklearn.metrics import mean_squared_error\\ndef calc_mse(y_t, y_p):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-016",
+    "title": "R2 Score",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Calc R2.",
+    "starterCode": "from sklearn.metrics import r2_score\\ndef calc_r2(y_t, y_p):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-017",
+    "title": "Confusion Matrix",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Get matrix.",
+    "starterCode": "from sklearn.metrics import confusion_matrix\\ndef get_cm(y_t, y_p):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-018",
+    "title": "Label Encoder",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Encode labels.",
+    "starterCode": "from sklearn.preprocessing import LabelEncoder\\ndef encode(y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-019",
+    "title": "One Hot Encoder",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "OHE.",
+    "starterCode": "from sklearn.preprocessing import OneHotEncoder\\ndef ohe(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-020",
+    "title": "Imputer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Impute missing.",
+    "starterCode": "from sklearn.impute import SimpleImputer\\ndef impute(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-021",
+    "title": "MinMax Scaler",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Normalize.",
+    "starterCode": "from sklearn.preprocessing import MinMaxScaler\\ndef norm(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-022",
+    "title": "Polynomial Features",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Poly feats.",
+    "starterCode": "from sklearn.preprocessing import PolynomialFeatures\\ndef poly(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-023",
+    "title": "Ridge Regression",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "L2 reg.",
+    "starterCode": "from sklearn.linear_model import Ridge\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-024",
+    "title": "Lasso Regression",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "L1 reg.",
+    "starterCode": "from sklearn.linear_model import Lasso\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-025",
+    "title": "SGD Classifier",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "SGD.",
+    "starterCode": "from sklearn.linear_model import SGDClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-026",
+    "title": "Naive Bayes",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Gaussian NB.",
+    "starterCode": "from sklearn.naive_bayes import GaussianNB\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-027",
+    "title": "Silhouette Score",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Cluster quality.",
+    "starterCode": "from sklearn.metrics import silhouette_score\\ndef score(X, labels):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-028",
+    "title": "DBSCAN",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Density cluster.",
+    "starterCode": "from sklearn.cluster import DBSCAN\\ndef cluster(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "labels"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-029",
+    "title": "Gradient Boosting",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "GBM.",
+    "starterCode": "from sklearn.ensemble import GradientBoostingClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-030",
+    "title": "AdaBoost",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Boosting.",
+    "starterCode": "from sklearn.ensemble import AdaBoostClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-031",
+    "title": "ROC AUC",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "AUC score.",
+    "starterCode": "from sklearn.metrics import roc_auc_score\\ndef score(y, prob):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-032",
+    "title": "F1 Score",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "F1 score.",
+    "starterCode": "from sklearn.metrics import f1_score\\ndef score(y, pred):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "float"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-033",
+    "title": "Column Transformer",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Transform cols.",
+    "starterCode": "from sklearn.compose import ColumnTransformer\\ndef transform():\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "trans"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-034",
+    "title": "Feature Selection",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Select K Best.",
+    "starterCode": "from sklearn.feature_selection import SelectKBest\\ndef select(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "X_new"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-035",
+    "title": "Count Vectorizer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Text to vec.",
+    "starterCode": "from sklearn.feature_extraction.text import CountVectorizer\\ndef vec(text):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-036",
+    "title": "Tfidf Vectorizer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "TF-IDF.",
+    "starterCode": "from sklearn.feature_extraction.text import TfidfVectorizer\\ndef vec(text):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-037",
+    "title": "Voting Classifier",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Ensemble.",
+    "starterCode": "from sklearn.ensemble import VotingClassifier\\ndef vote():\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-038",
+    "title": "Bagging Classifier",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Bagging.",
+    "starterCode": "from sklearn.ensemble import BaggingClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-039",
+    "title": "Agglomerative Clustering",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Hierarchical.",
+    "starterCode": "from sklearn.cluster import AgglomerativeClustering\\ndef cluster(X):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "labels"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-040",
+    "title": "Dummy Classifier",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Baseline.",
+    "starterCode": "from sklearn.dummy import DummyClassifier\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-041",
+    "title": "Save Model",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Pickle/Joblib.",
+    "starterCode": "import joblib\\ndef save(model):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "file"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-042",
+    "title": "Load Model",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Load.",
+    "starterCode": "import joblib\\ndef load(file):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-043",
+    "title": "Stratified KFold",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Stratified splits.",
+    "starterCode": "from sklearn.model_selection import StratifiedKFold\\ndef split(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "splits"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-044",
+    "title": "Classification Report",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Text report.",
+    "starterCode": "from sklearn.metrics import classification_report\\ndef report(y, p):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "str"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-045",
+    "title": "Precision Recall",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Metrics.",
+    "starterCode": "from sklearn.metrics import precision_score, recall_score\\ndef scores(y, p):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "tuple"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-046",
+    "title": "Learning Curve",
+    "difficulty": "Hard",
+    "examType": "OPPE 2",
+    "description": "Plot curve.",
+    "starterCode": "from sklearn.model_selection import learning_curve\\ndef curve(model, X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "arr"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-047",
+    "title": "Make Classification",
+    "difficulty": "Easy",
+    "examType": "OPPE 2",
+    "description": "Synthetic data.",
+    "starterCode": "from sklearn.datasets import make_classification\\ndef gen():\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "X,y"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-048",
+    "title": "Linear SVC",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Linear kernel.",
+    "starterCode": "from sklearn.svm import LinearSVC\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-049",
+    "title": "Function Transformer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Custom func.",
+    "starterCode": "from sklearn.preprocessing import FunctionTransformer\\ndef trans(func):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "trans"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  },
+  {
+    "id": "mlp2-050",
+    "title": "Perceptron",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Single neuron.",
+    "starterCode": "from sklearn.linear_model import Perceptron\\ndef train(X, y):\\n    pass",
+    "testCases": [
+      {
+        "input": "",
+        "output": "model"
+      }
+    ],
+    "solution": "pass",
+    "subject": "MLP",
+    "language": "python",
+    "tags": [
+      "Sklearn"
+    ]
+  }
+]

@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "java1-lc-1",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find indices adding to target.",
+    "starterCode": "class Solution { public int[] twoSum(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[2,7,11,15], 9",
+        "output": "[0,1]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-9",
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check integer palindrome.",
+    "starterCode": "class Solution { public boolean isPalindrome(int x) {} }",
+    "testCases": [
+      {
+        "input": "121",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-13",
+    "title": "Roman to Integer",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Convert Roman to int.",
+    "starterCode": "class Solution { public int romanToInt(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"III\"",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-14",
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find common prefix.",
+    "starterCode": "class Solution { public String longestCommonPrefix(String[] strs) {} }",
+    "testCases": [
+      {
+        "input": "[\"flower\",\"flow\"]",
+        "output": "\"fl\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-20",
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check brackets.",
+    "starterCode": "class Solution { public boolean isValid(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"()\"",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Stack"
+    ]
+  },
+  {
+    "id": "java1-lc-21",
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Merge sorted lists.",
+    "starterCode": "class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,4], [1,3,4]",
+        "output": "[1,1,2,3,4,4]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-26",
+    "title": "Remove Duplicates",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Remove dups sorted array.",
+    "starterCode": "class Solution { public int removeDuplicates(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,1,2]",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-27",
+    "title": "Remove Element",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Remove val in-place.",
+    "starterCode": "class Solution { public int removeElement(int[] nums, int val) {} }",
+    "testCases": [
+      {
+        "input": "[3,2,2,3], 3",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-28",
+    "title": "Find Index of Substring",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "StrStr implementation.",
+    "starterCode": "class Solution { public int strStr(String haystack, String needle) {} }",
+    "testCases": [
+      {
+        "input": "\"sadbutsad\", \"sad\"",
+        "output": "0"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-35",
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Index to insert.",
+    "starterCode": "class Solution { public int searchInsert(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[1,3,5,6], 5",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Binary Search"
+    ]
+  },
+  {
+    "id": "java1-lc-58",
+    "title": "Length of Last Word",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Last word length.",
+    "starterCode": "class Solution { public int lengthOfLastWord(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"Hello World\"",
+        "output": "5"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-66",
+    "title": "Plus One",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Add one to array.",
+    "starterCode": "class Solution { public int[] plusOne(int[] digits) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "[1,2,4]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-67",
+    "title": "Add Binary",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Add binary strings.",
+    "starterCode": "class Solution { public String addBinary(String a, String b) {} }",
+    "testCases": [
+      {
+        "input": "\"11\", \"1\"",
+        "output": "\"100\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-69",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Integer sqrt.",
+    "starterCode": "class Solution { public int mySqrt(int x) {} }",
+    "testCases": [
+      {
+        "input": "4",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-70",
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Ways to climb.",
+    "starterCode": "class Solution { public int climbStairs(int n) {} }",
+    "testCases": [
+      {
+        "input": "2",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "DP"
+    ]
+  },
+  {
+    "id": "java1-lc-83",
+    "title": "Remove Duplicates List",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Remove from list.",
+    "starterCode": "class Solution { public ListNode deleteDuplicates(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[1,1,2]",
+        "output": "[1,2]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-88",
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Merge two arrays.",
+    "starterCode": "class Solution { public void merge(int[] nums1, int m, int[] nums2, int n) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,0,0,0], 3",
+        "output": "[1,2,2,3,5,6]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-94",
+    "title": "Binary Tree Inorder",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Inorder traversal.",
+    "starterCode": "class Solution { public List<Integer> inorderTraversal(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[1,null,2,3]",
+        "output": "[1,3,2]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-100",
+    "title": "Same Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check if trees identical.",
+    "starterCode": "class Solution { public boolean isSameTree(TreeNode p, TreeNode q) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3], [1,2,3]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-101",
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check symmetry.",
+    "starterCode": "class Solution { public boolean isSymmetric(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,2,3,4,4,3]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-104",
+    "title": "Max Depth of Binary Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Tree depth.",
+    "starterCode": "class Solution { public int maxDepth(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[3,9,20]",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-108",
+    "title": "Sorted Array to BST",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Convert array to BST.",
+    "starterCode": "class Solution { public TreeNode sortedArrayToBST(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[-10,-3,0,5,9]",
+        "output": "[0,-3,9,-10,null,5]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-110",
+    "title": "Balanced Binary Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check height balanced.",
+    "starterCode": "class Solution { public boolean isBalanced(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[3,9,20]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-111",
+    "title": "Min Depth of Binary Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Min depth.",
+    "starterCode": "class Solution { public int minDepth(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[3,9,20]",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-112",
+    "title": "Path Sum",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Root to leaf sum.",
+    "starterCode": "class Solution { public boolean hasPathSum(TreeNode root, int targetSum) {} }",
+    "testCases": [
+      {
+        "input": "[5,4,8], 22",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-118",
+    "title": "Pascal Triangle",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Generate triangle.",
+    "starterCode": "class Solution { public List<List<Integer>> generate(int numRows) {} }",
+    "testCases": [
+      {
+        "input": "5",
+        "output": "[[1]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-119",
+    "title": "Pascal Triangle II",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Get row.",
+    "starterCode": "class Solution { public List<Integer> getRow(int rowIndex) {} }",
+    "testCases": [
+      {
+        "input": "3",
+        "output": "[1,3,3,1]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-121",
+    "title": "Best Time to Buy Stock",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Max profit.",
+    "starterCode": "class Solution { public int maxProfit(int[] prices) {} }",
+    "testCases": [
+      {
+        "input": "[7,1,5,3,6,4]",
+        "output": "5"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-125",
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "String palindrome.",
+    "starterCode": "class Solution { public boolean isPalindrome(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"A man...\"",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-136",
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find single.",
+    "starterCode": "class Solution { public int singleNumber(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[2,2,1]",
+        "output": "1"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Bitwise"
+    ]
+  },
+  {
+    "id": "java1-lc-141",
+    "title": "Linked List Cycle",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Has cycle?",
+    "starterCode": "class Solution { public boolean hasCycle(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[3,2,0,-4]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-144",
+    "title": "Binary Tree Preorder",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Preorder traversal.",
+    "starterCode": "class Solution { public List<Integer> preorderTraversal(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[1,null,2,3]",
+        "output": "[1,2,3]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-145",
+    "title": "Binary Tree Postorder",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Postorder traversal.",
+    "starterCode": "class Solution { public List<Integer> postorderTraversal(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[1,null,2,3]",
+        "output": "[3,2,1]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-160",
+    "title": "Intersection of Lists",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find intersection.",
+    "starterCode": "class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) {} }",
+    "testCases": [
+      {
+        "input": "8",
+        "output": "8"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-168",
+    "title": "Excel Column Title",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Number to title.",
+    "starterCode": "class Solution { public String convertToTitle(int columnNumber) {} }",
+    "testCases": [
+      {
+        "input": "1",
+        "output": "\"A\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-169",
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Find majority.",
+    "starterCode": "class Solution { public int majorityElement(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[3,2,3]",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-171",
+    "title": "Excel Column Number",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Title to number.",
+    "starterCode": "class Solution { public int titleToNumber(String columnTitle) {} }",
+    "testCases": [
+      {
+        "input": "\"A\"",
+        "output": "1"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-190",
+    "title": "Reverse Bits",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Reverse int bits.",
+    "starterCode": "class Solution { public int reverseBits(int n) {} }",
+    "testCases": [
+      {
+        "input": "43261596",
+        "output": "964176192"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Bitwise"
+    ]
+  },
+  {
+    "id": "java1-lc-191",
+    "title": "Number of 1 Bits",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Count set bits.",
+    "starterCode": "class Solution { public int hammingWeight(int n) {} }",
+    "testCases": [
+      {
+        "input": "11",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Bitwise"
+    ]
+  },
+  {
+    "id": "java1-lc-202",
+    "title": "Happy Number",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Is happy?",
+    "starterCode": "class Solution { public boolean isHappy(int n) {} }",
+    "testCases": [
+      {
+        "input": "19",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-203",
+    "title": "Remove Linked List Elements",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Remove val.",
+    "starterCode": "class Solution { public ListNode removeElements(ListNode head, int val) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,6,3], 6",
+        "output": "[1,2,3]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-205",
+    "title": "Isomorphic Strings",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check mapping.",
+    "starterCode": "class Solution { public boolean isIsomorphic(String s, String t) {} }",
+    "testCases": [
+      {
+        "input": "\"egg\", \"add\"",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-206",
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Reverse list.",
+    "starterCode": "class Solution { public ListNode reverseList(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "[3,2,1]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-217",
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Check duplicate.",
+    "starterCode": "class Solution { public boolean containsDuplicate(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,1]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-219",
+    "title": "Contains Duplicate II",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Nearby duplicate.",
+    "starterCode": "class Solution { public boolean containsNearbyDuplicate(int[] nums, int k) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,1], 3",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java1-lc-225",
+    "title": "Implement Stack using Queues",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Stack via Queues.",
+    "starterCode": "class MyStack {}",
+    "testCases": [
+      {
+        "input": "push, pop",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Stack"
+    ]
+  },
+  {
+    "id": "java1-lc-226",
+    "title": "Invert Binary Tree",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Invert.",
+    "starterCode": "class Solution { public TreeNode invertTree(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[2,1,3]",
+        "output": "[2,3,1]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java1-lc-231",
+    "title": "Power of Two",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Is power of 2.",
+    "starterCode": "class Solution { public boolean isPowerOfTwo(int n) {} }",
+    "testCases": [
+      {
+        "input": "16",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java1-lc-232",
+    "title": "Implement Queue using Stacks",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Queue via Stacks.",
+    "starterCode": "class MyQueue {}",
+    "testCases": [
+      {
+        "input": "push, pop",
+        "output": "1"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Stack"
+    ]
+  },
+  {
+    "id": "java1-lc-234",
+    "title": "Palindrome Linked List",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Is list palindrome.",
+    "starterCode": "class Solution { public boolean isPalindrome(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,2,1]",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java1-lc-242",
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "Is anagram.",
+    "starterCode": "class Solution { public boolean isAnagram(String s, String t) {} }",
+    "testCases": [
+      {
+        "input": "\"anagram\"",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java1-lc-257",
+    "title": "Binary Tree Paths",
+    "difficulty": "Easy",
+    "examType": "OPPE 1",
+    "description": "All root-leaf paths.",
+    "starterCode": "class Solution { public List<String> binaryTreePaths(TreeNode root) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "'[\"1->2\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Tree"
+    ]
+  },
+  {
+    "id": "java2-lc-2",
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Add linked lists.",
+    "starterCode": "class Solution { public ListNode addTwoNumbers(ListNode l1, ListNode l2) {} }",
+    "testCases": [
+      {
+        "input": "[2,4,3]",
+        "output": "[7,0,8]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java2-lc-3",
+    "title": "Longest Substring",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "No repeat char.",
+    "starterCode": "class Solution { public int lengthOfLongestSubstring(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"abcabcbb\"",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-5",
+    "title": "Longest Palindrome",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Substring.",
+    "starterCode": "class Solution { public String longestPalindrome(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"babad\"",
+        "output": "\"bab\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-6",
+    "title": "Zigzag Conversion",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Zigzag string.",
+    "starterCode": "class Solution { public String convert(String s, int numRows) {} }",
+    "testCases": [
+      {
+        "input": "\"PAYPAL...\", 3",
+        "output": "\"PAHN...\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-7",
+    "title": "Reverse Integer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Reverse int.",
+    "starterCode": "class Solution { public int reverse(int x) {} }",
+    "testCases": [
+      {
+        "input": "123",
+        "output": "321"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java2-lc-8",
+    "title": "String to Integer",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Atoi.",
+    "starterCode": "class Solution { public int myAtoi(String s) {} }",
+    "testCases": [
+      {
+        "input": "\"42\"",
+        "output": "42"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-11",
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max water.",
+    "starterCode": "class Solution { public int maxArea(int[] height) {} }",
+    "testCases": [
+      {
+        "input": "[1,8,6...]",
+        "output": "49"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-12",
+    "title": "Integer to Roman",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Int to Roman.",
+    "starterCode": "class Solution { public String intToRoman(int num) {} }",
+    "testCases": [
+      {
+        "input": "3",
+        "output": "\"III\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-15",
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sum to zero.",
+    "starterCode": "class Solution { public List<List<Integer>> threeSum(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-16",
+    "title": "3Sum Closest",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sum closest.",
+    "starterCode": "class Solution { public int threeSumClosest(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[-1,2,1,-4], 1",
+        "output": "2"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-17",
+    "title": "Letter Combinations",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Phone pad.",
+    "starterCode": "class Solution { public List<String> letterCombinations(String digits) {} }",
+    "testCases": [
+      {
+        "input": "\"23\"",
+        "output": "[\"ad\"...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-18",
+    "title": "4Sum",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Target sum.",
+    "starterCode": "class Solution { public List<List<Integer>> fourSum(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[1,0,-1,0,-2,2], 0",
+        "output": "[[-2,-1,1,2]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-19",
+    "title": "Remove Nth Node",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Remove from end.",
+    "starterCode": "class Solution { public ListNode removeNthFromEnd(ListNode head, int n) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,4,5], 2",
+        "output": "[1,2,3,5]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java2-lc-22",
+    "title": "Generate Parentheses",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Valid combos.",
+    "starterCode": "class Solution { public List<String> generateParenthesis(int n) {} }",
+    "testCases": [
+      {
+        "input": "3",
+        "output": "[\"((()))\"...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-24",
+    "title": "Swap Nodes Pairs",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Swap pairs.",
+    "starterCode": "class Solution { public ListNode swapPairs(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,4]",
+        "output": "[2,1,4,3]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java2-lc-29",
+    "title": "Divide Integers",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Divide no operator.",
+    "starterCode": "class Solution { public int divide(int dividend, int divisor) {} }",
+    "testCases": [
+      {
+        "input": "10, 3",
+        "output": "3"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java2-lc-31",
+    "title": "Next Permutation",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Lexicographical next.",
+    "starterCode": "class Solution { public void nextPermutation(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "[1,3,2]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-33",
+    "title": "Search Rotated Array",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Search sorted.",
+    "starterCode": "class Solution { public int search(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[4,5,6,7,0,1,2], 0",
+        "output": "4"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-34",
+    "title": "Find First Last",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Range of target.",
+    "starterCode": "class Solution { public int[] searchRange(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[5,7,7,8,8,10], 8",
+        "output": "[3,4]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-36",
+    "title": "Valid Sudoku",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Check board.",
+    "starterCode": "class Solution { public boolean isValidSudoku(char[][] board) {} }",
+    "testCases": [
+      {
+        "input": "board",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Matrix"
+    ]
+  },
+  {
+    "id": "java2-lc-38",
+    "title": "Count and Say",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Sequence.",
+    "starterCode": "class Solution { public String countAndSay(int n) {} }",
+    "testCases": [
+      {
+        "input": "4",
+        "output": "\"1211\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-39",
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Target sum.",
+    "starterCode": "class Solution { public List<List<Integer>> combinationSum(int[] candidates, int target) {} }",
+    "testCases": [
+      {
+        "input": "[2,3,6,7], 7",
+        "output": "[[2,2,3],[7]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-43",
+    "title": "Multiply Strings",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Multiply big int.",
+    "starterCode": "class Solution { public String multiply(String num1, String num2) {} }",
+    "testCases": [
+      {
+        "input": "\"2\", \"3\"",
+        "output": "\"6\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "String"
+    ]
+  },
+  {
+    "id": "java2-lc-46",
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "All perms.",
+    "starterCode": "class Solution { public List<List<Integer>> permute(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "[[1,2,3]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-47",
+    "title": "Permutations II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Unique perms.",
+    "starterCode": "class Solution { public List<List<Integer>> permuteUnique(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,1,2]",
+        "output": "[[1,1,2]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-48",
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Rotate 90.",
+    "starterCode": "class Solution { public void rotate(int[][] matrix) {} }",
+    "testCases": [
+      {
+        "input": "[[1,2],[3,4]]",
+        "output": "[[3,1],[4,2]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Matrix"
+    ]
+  },
+  {
+    "id": "java2-lc-49",
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Group them.",
+    "starterCode": "class Solution { public List<List<String>> groupAnagrams(String[] strs) {} }",
+    "testCases": [
+      {
+        "input": "[\"eat\",\"tea\"]",
+        "output": "'[[\"eat\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Hash"
+    ]
+  },
+  {
+    "id": "java2-lc-50",
+    "title": "Pow(x, n)",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Power.",
+    "starterCode": "class Solution { public double myPow(double x, int n) {} }",
+    "testCases": [
+      {
+        "input": "2.0, 10",
+        "output": "1024.0"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Math"
+    ]
+  },
+  {
+    "id": "java2-lc-53",
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max sum.",
+    "starterCode": "class Solution { public int maxSubArray(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+        "output": "6"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-54",
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Spiral order.",
+    "starterCode": "class Solution { public List<Integer> spiralOrder(int[][] matrix) {} }",
+    "testCases": [
+      {
+        "input": "[[1,2,3]...]",
+        "output": "[1,2,3,6... ]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Matrix"
+    ]
+  },
+  {
+    "id": "java2-lc-56",
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Merge overlapping.",
+    "starterCode": "class Solution { public int[][] merge(int[][] intervals) {} }",
+    "testCases": [
+      {
+        "input": "[[1,3],[2,6]]",
+        "output": "[[1,6]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-57",
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Insert new.",
+    "starterCode": "class Solution { public int[][] insert(int[][] intervals, int[] newInterval) {} }",
+    "testCases": [
+      {
+        "input": "[[1,3]], [2,5]",
+        "output": "[[1,5]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-59",
+    "title": "Spiral Matrix II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Generate spiral.",
+    "starterCode": "class Solution { public int[][] generateMatrix(int n) {} }",
+    "testCases": [
+      {
+        "input": "3",
+        "output": "[[1,2,3]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Matrix"
+    ]
+  },
+  {
+    "id": "java2-lc-61",
+    "title": "Rotate List",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Rotate k.",
+    "starterCode": "class Solution { public ListNode rotateRight(ListNode head, int k) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,4,5], 2",
+        "output": "[4,5,1,2,3]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java2-lc-62",
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Count paths.",
+    "starterCode": "class Solution { public int uniquePaths(int m, int n) {} }",
+    "testCases": [
+      {
+        "input": "3, 7",
+        "output": "28"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "DP"
+    ]
+  },
+  {
+    "id": "java2-lc-63",
+    "title": "Unique Paths II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Paths with obstacles.",
+    "starterCode": "class Solution { public int uniquePathsWithObstacles(int[][] obstacleGrid) {} }",
+    "testCases": [
+      {
+        "input": "[[0,0],[0,1]]",
+        "output": "0"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "DP"
+    ]
+  },
+  {
+    "id": "java2-lc-64",
+    "title": "Minimum Path Sum",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Min sum path.",
+    "starterCode": "class Solution { public int minPathSum(int[][] grid) {} }",
+    "testCases": [
+      {
+        "input": "[[1,3],[1,5]]",
+        "output": "7"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "DP"
+    ]
+  },
+  {
+    "id": "java2-lc-71",
+    "title": "Simplify Path",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Canonical path.",
+    "starterCode": "class Solution { public String simplifyPath(String path) {} }",
+    "testCases": [
+      {
+        "input": "\"/home/\"",
+        "output": "\"/home\""
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Stack"
+    ]
+  },
+  {
+    "id": "java2-lc-73",
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Zero row/col.",
+    "starterCode": "class Solution { public void setZeroes(int[][] matrix) {} }",
+    "testCases": [
+      {
+        "input": "[[1,1,1],[1,0,1]]",
+        "output": "[[1,0,1],[0,0,0]]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Matrix"
+    ]
+  },
+  {
+    "id": "java2-lc-74",
+    "title": "Search 2D Matrix",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Search target.",
+    "starterCode": "class Solution { public boolean searchMatrix(int[][] matrix, int target) {} }",
+    "testCases": [
+      {
+        "input": "[[1,3]...], 3",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Binary Search"
+    ]
+  },
+  {
+    "id": "java2-lc-75",
+    "title": "Sort Colors",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "0,1,2 sort.",
+    "starterCode": "class Solution { public void sortColors(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[2,0,2,1,1,0]",
+        "output": "[0,0,1,1,2,2]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-77",
+    "title": "Combinations",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "n choose k.",
+    "starterCode": "class Solution { public List<List<Integer>> combine(int n, int k) {} }",
+    "testCases": [
+      {
+        "input": "4, 2",
+        "output": "[[1,2]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-78",
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "All subsets.",
+    "starterCode": "class Solution { public List<List<Integer>> subsets(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3]",
+        "output": "[[],[1]...]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-79",
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Find word.",
+    "starterCode": "class Solution { public boolean exist(char[][] board, String word) {} }",
+    "testCases": [
+      {
+        "input": "board, \"ABCCED\"",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Backtracking"
+    ]
+  },
+  {
+    "id": "java2-lc-80",
+    "title": "Remove Duplicates II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Max 2 dups.",
+    "starterCode": "class Solution { public int removeDuplicates(int[] nums) {} }",
+    "testCases": [
+      {
+        "input": "[1,1,1,2,2,3]",
+        "output": "5"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Array"
+    ]
+  },
+  {
+    "id": "java2-lc-81",
+    "title": "Search Rotated II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Search with dups.",
+    "starterCode": "class Solution { public boolean search(int[] nums, int target) {} }",
+    "testCases": [
+      {
+        "input": "[2,5,6,0,0,1,2], 0",
+        "output": "true"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "Binary Search"
+    ]
+  },
+  {
+    "id": "java2-lc-82",
+    "title": "Remove Duplicates List II",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Keep distinct.",
+    "starterCode": "class Solution { public ListNode deleteDuplicates(ListNode head) {} }",
+    "testCases": [
+      {
+        "input": "[1,2,3,3,4]",
+        "output": "[1,2,4]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  },
+  {
+    "id": "java2-lc-86",
+    "title": "Partition List",
+    "difficulty": "Medium",
+    "examType": "OPPE 2",
+    "description": "Partition x.",
+    "starterCode": "class Solution { public ListNode partition(ListNode head, int x) {} }",
+    "testCases": [
+      {
+        "input": "[1,4,3,2,5,2], 3",
+        "output": "[1,2,2,4,3,5]"
+      }
+    ],
+    "solution": "pass",
+    "subject": "JAVA",
+    "language": "java",
+    "tags": [
+      "LinkedList"
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "id": "ST1001",
+  "title": "Statistics for Data Science I",
+  "description": "The art of learning from data. Covers Data Viz, Probability, and Random Variables.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Data Visualization",
+      "lectures": [
+        {
+          "title": "L1.1 - Types of Data",
+          "youtubeId": "h8EYEJ32oQ8",
+          "duration": "12:00"
+        },
+        {
+          "title": "L1.2 - Histograms & Box Plots",
+          "youtubeId": "2oJ271m7ptE",
+          "duration": "15:00"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Data Types Chart",
+          "url": "#"
+        }
+      ],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Probability Basics",
+      "lectures": [
+        {
+          "title": "L2.1 - Events and Outcomes",
+          "youtubeId": "Kz_yWZK-C6U",
+          "duration": "14:00"
+        },
+        {
+          "title": "L2.2 - Axioms of Probability",
+          "youtubeId": "Kz_yWZK-C6U",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Counting Principles",
+      "lectures": [
+        {
+          "title": "L3.1 - Permutations & Combinations",
+          "youtubeId": "XoM8j-QY7eA",
+          "duration": "25:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

@@ -1,0 +1,2255 @@
+[
+  {
+    "id": "ma1-q1-22",
+    "title": "Math 1 - Quiz 1 (2022)",
+    "subject": "Mathematics I",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m1-q1",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Let f : ℝ → ℝ be defined by f(x) = x² - 3x + 6. Find the number of points where f(x) = f⁻¹(x) given x ≥ 1.5.",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctIndex": 0,
+        "explanation": "Intersection must be on y=x. x²-4x+6=0 has D<0.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q2",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "If A = {1,2,3} and B = {3,4,5}, find n(A ∪ B).",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "A ∪ B = {1,2,3,4,5}. Size is 5.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q3",
+        "subject": "Mathematics I",
+        "type": "MSQ",
+        "text": "Which of the following are functions?",
+        "options": [
+          "f(x) = ±x",
+          "f(x) = x²",
+          "x = y²",
+          "f(x) = sin(x)"
+        ],
+        "correctIndices": [
+          1,
+          3
+        ],
+        "explanation": "One input must have exactly one output.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q4",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Which of the following is the domain of f(x) = log(x-1)?",
+        "options": [
+          "(1, ∞)",
+          "[1, ∞)",
+          "(-∞, 1)",
+          "(-∞, 1]"
+        ],
+        "correctIndex": 0,
+        "explanation": "Log is defined for positive arguments, so x-1 > 0 => x > 1.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q5",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "If f(x) = 2x + 1, find f(f(x)).",
+        "options": [
+          "4x + 3",
+          "4x + 1",
+          "2x + 2",
+          "2x + 3"
+        ],
+        "correctIndex": 0,
+        "explanation": "f(2x+1) = 2(2x+1) + 1 = 4x + 2 + 1 = 4x + 3.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "ma1-q2-22",
+    "title": "Math 1 - Quiz 2 (2022)",
+    "subject": "Mathematics I",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m1-q11",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Limit x→0 of (sin x)/x is:",
+        "options": [
+          "0",
+          "1",
+          "Undefined",
+          "Infinity"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard limit.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q12",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Slope of tangent to y=x² at x=2 is:",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "y' = 2x. At x=2, slope is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q13",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Derivative of log(x) is:",
+        "options": [
+          "1/x",
+          "e^x",
+          "1",
+          "0"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard derivative.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q14",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Evaluate limit x→2 of (x²-4)/(x-2).",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "(x-2)(x+2)/(x-2) = x+2. At x=2, limit is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q21",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Integral of x dx from 0 to 2 is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctIndex": 1,
+        "explanation": "x²/2 from 0 to 2 is 2.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q22",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Number of bijective functions from Set A (size 3) to Set B (size 3):",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "3! = 6.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q23",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Area under y=x from x=0 to x=4 is:",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "2"
+        ],
+        "correctIndex": 1,
+        "explanation": "Triangle area 0.5 * 4 * 4 = 8.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "id": "ma1-et-22",
+    "title": "Math 1 - End Term (2022)",
+    "subject": "Mathematics I",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "m1-q1",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Let f : ℝ → ℝ be defined by f(x) = x² - 3x + 6. Find the number of points where f(x) = f⁻¹(x) given x ≥ 1.5.",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctIndex": 0,
+        "explanation": "Intersection must be on y=x. x²-4x+6=0 has D<0.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q2",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "If A = {1,2,3} and B = {3,4,5}, find n(A ∪ B).",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "A ∪ B = {1,2,3,4,5}. Size is 5.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q3",
+        "subject": "Mathematics I",
+        "type": "MSQ",
+        "text": "Which of the following are functions?",
+        "options": [
+          "f(x) = ±x",
+          "f(x) = x²",
+          "x = y²",
+          "f(x) = sin(x)"
+        ],
+        "correctIndices": [
+          1,
+          3
+        ],
+        "explanation": "One input must have exactly one output.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q4",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Which of the following is the domain of f(x) = log(x-1)?",
+        "options": [
+          "(1, ∞)",
+          "[1, ∞)",
+          "(-∞, 1)",
+          "(-∞, 1]"
+        ],
+        "correctIndex": 0,
+        "explanation": "Log is defined for positive arguments, so x-1 > 0 => x > 1.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q5",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "If f(x) = 2x + 1, find f(f(x)).",
+        "options": [
+          "4x + 3",
+          "4x + 1",
+          "2x + 2",
+          "2x + 3"
+        ],
+        "correctIndex": 0,
+        "explanation": "f(2x+1) = 2(2x+1) + 1 = 4x + 2 + 1 = 4x + 3.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q11",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Limit x→0 of (sin x)/x is:",
+        "options": [
+          "0",
+          "1",
+          "Undefined",
+          "Infinity"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard limit.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q12",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Slope of tangent to y=x² at x=2 is:",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "y' = 2x. At x=2, slope is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q13",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Derivative of log(x) is:",
+        "options": [
+          "1/x",
+          "e^x",
+          "1",
+          "0"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard derivative.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q14",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Evaluate limit x→2 of (x²-4)/(x-2).",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "(x-2)(x+2)/(x-2) = x+2. At x=2, limit is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q21",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Integral of x dx from 0 to 2 is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctIndex": 1,
+        "explanation": "x²/2 from 0 to 2 is 2.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q22",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Number of bijective functions from Set A (size 3) to Set B (size 3):",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "3! = 6.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q23",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Area under y=x from x=0 to x=4 is:",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "2"
+        ],
+        "correctIndex": 1,
+        "explanation": "Triangle area 0.5 * 4 * 4 = 8.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "id": "ma1-q1-23",
+    "title": "Math 1 - Quiz 1 (2023)",
+    "subject": "Mathematics I",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m1-q1",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Let f : ℝ → ℝ be defined by f(x) = x² - 3x + 6. Find the number of points where f(x) = f⁻¹(x) given x ≥ 1.5.",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctIndex": 0,
+        "explanation": "Intersection must be on y=x. x²-4x+6=0 has D<0.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q2",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "If A = {1,2,3} and B = {3,4,5}, find n(A ∪ B).",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "A ∪ B = {1,2,3,4,5}. Size is 5.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q3",
+        "subject": "Mathematics I",
+        "type": "MSQ",
+        "text": "Which of the following are functions?",
+        "options": [
+          "f(x) = ±x",
+          "f(x) = x²",
+          "x = y²",
+          "f(x) = sin(x)"
+        ],
+        "correctIndices": [
+          1,
+          3
+        ],
+        "explanation": "One input must have exactly one output.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q4",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Which of the following is the domain of f(x) = log(x-1)?",
+        "options": [
+          "(1, ∞)",
+          "[1, ∞)",
+          "(-∞, 1)",
+          "(-∞, 1]"
+        ],
+        "correctIndex": 0,
+        "explanation": "Log is defined for positive arguments, so x-1 > 0 => x > 1.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q5",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "If f(x) = 2x + 1, find f(f(x)).",
+        "options": [
+          "4x + 3",
+          "4x + 1",
+          "2x + 2",
+          "2x + 3"
+        ],
+        "correctIndex": 0,
+        "explanation": "f(2x+1) = 2(2x+1) + 1 = 4x + 2 + 1 = 4x + 3.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "ma1-et-23",
+    "title": "Math 1 - End Term (2023)",
+    "subject": "Mathematics I",
+    "year": "2023",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "m1-q1",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Let f : ℝ → ℝ be defined by f(x) = x² - 3x + 6. Find the number of points where f(x) = f⁻¹(x) given x ≥ 1.5.",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Infinite"
+        ],
+        "correctIndex": 0,
+        "explanation": "Intersection must be on y=x. x²-4x+6=0 has D<0.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q2",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "If A = {1,2,3} and B = {3,4,5}, find n(A ∪ B).",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "A ∪ B = {1,2,3,4,5}. Size is 5.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q3",
+        "subject": "Mathematics I",
+        "type": "MSQ",
+        "text": "Which of the following are functions?",
+        "options": [
+          "f(x) = ±x",
+          "f(x) = x²",
+          "x = y²",
+          "f(x) = sin(x)"
+        ],
+        "correctIndices": [
+          1,
+          3
+        ],
+        "explanation": "One input must have exactly one output.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q4",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Which of the following is the domain of f(x) = log(x-1)?",
+        "options": [
+          "(1, ∞)",
+          "[1, ∞)",
+          "(-∞, 1)",
+          "(-∞, 1]"
+        ],
+        "correctIndex": 0,
+        "explanation": "Log is defined for positive arguments, so x-1 > 0 => x > 1.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q5",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "If f(x) = 2x + 1, find f(f(x)).",
+        "options": [
+          "4x + 3",
+          "4x + 1",
+          "2x + 2",
+          "2x + 3"
+        ],
+        "correctIndex": 0,
+        "explanation": "f(2x+1) = 2(2x+1) + 1 = 4x + 2 + 1 = 4x + 3.",
+        "year": "2021",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q11",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Limit x→0 of (sin x)/x is:",
+        "options": [
+          "0",
+          "1",
+          "Undefined",
+          "Infinity"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard limit.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q12",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Slope of tangent to y=x² at x=2 is:",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "y' = 2x. At x=2, slope is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q13",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Derivative of log(x) is:",
+        "options": [
+          "1/x",
+          "e^x",
+          "1",
+          "0"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard derivative.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q14",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Evaluate limit x→2 of (x²-4)/(x-2).",
+        "options": [],
+        "correctValue": "4",
+        "explanation": "(x-2)(x+2)/(x-2) = x+2. At x=2, limit is 4.",
+        "year": "2022",
+        "level": "Foundation",
+        "marks": 2
+      },
+      {
+        "id": "m1-q21",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Integral of x dx from 0 to 2 is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctIndex": 1,
+        "explanation": "x²/2 from 0 to 2 is 2.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q22",
+        "subject": "Mathematics I",
+        "type": "NAT",
+        "text": "Number of bijective functions from Set A (size 3) to Set B (size 3):",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "3! = 6.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      },
+      {
+        "id": "m1-q23",
+        "subject": "Mathematics I",
+        "type": "MCQ",
+        "text": "Area under y=x from x=0 to x=4 is:",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "2"
+        ],
+        "correctIndex": 1,
+        "explanation": "Triangle area 0.5 * 4 * 4 = 8.",
+        "year": "2023",
+        "level": "Foundation",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "id": "ma2-q1-22",
+    "title": "Math 2 - Quiz 1 (2022)",
+    "subject": "Mathematics II",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m2-q1-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+        "options": [
+          "7",
+          "11",
+          "10",
+          "5"
+        ],
+        "correctIndex": 1,
+        "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+      },
+      {
+        "id": "m2-q1-02",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+        "options": [
+          "Yes",
+          "No",
+          "Depends on field",
+          "Cannot determine"
+        ],
+        "correctIndex": 1,
+        "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+      },
+      {
+        "id": "m2-q2-01",
+        "subject": "Mathematics II",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+      },
+      {
+        "id": "m2-et-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 4,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+        "options": [
+          "1, 2",
+          "0, 1",
+          "1, 1",
+          "2, 2"
+        ],
+        "correctIndex": 0,
+        "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+      }
+    ]
+  },
+  {
+    "id": "ma2-q2-22",
+    "title": "Math 2 - Quiz 2 (2022)",
+    "subject": "Mathematics II",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m2-q1-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+        "options": [
+          "7",
+          "11",
+          "10",
+          "5"
+        ],
+        "correctIndex": 1,
+        "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+      },
+      {
+        "id": "m2-q1-02",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+        "options": [
+          "Yes",
+          "No",
+          "Depends on field",
+          "Cannot determine"
+        ],
+        "correctIndex": 1,
+        "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+      },
+      {
+        "id": "m2-q2-01",
+        "subject": "Mathematics II",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+      },
+      {
+        "id": "m2-et-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 4,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+        "options": [
+          "1, 2",
+          "0, 1",
+          "1, 1",
+          "2, 2"
+        ],
+        "correctIndex": 0,
+        "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+      }
+    ]
+  },
+  {
+    "id": "ma2-et-22",
+    "title": "Math 2 - End Term (2022)",
+    "subject": "Mathematics II",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "m2-q1-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+        "options": [
+          "7",
+          "11",
+          "10",
+          "5"
+        ],
+        "correctIndex": 1,
+        "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+      },
+      {
+        "id": "m2-q1-02",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+        "options": [
+          "Yes",
+          "No",
+          "Depends on field",
+          "Cannot determine"
+        ],
+        "correctIndex": 1,
+        "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+      },
+      {
+        "id": "m2-q2-01",
+        "subject": "Mathematics II",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+      },
+      {
+        "id": "m2-et-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 4,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+        "options": [
+          "1, 2",
+          "0, 1",
+          "1, 1",
+          "2, 2"
+        ],
+        "correctIndex": 0,
+        "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+      }
+    ]
+  },
+  {
+    "id": "ma2-q1-23",
+    "title": "Math 2 - Quiz 1 (2023)",
+    "subject": "Mathematics II",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "m2-q1-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+        "options": [
+          "7",
+          "11",
+          "10",
+          "5"
+        ],
+        "correctIndex": 1,
+        "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+      },
+      {
+        "id": "m2-q1-02",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+        "options": [
+          "Yes",
+          "No",
+          "Depends on field",
+          "Cannot determine"
+        ],
+        "correctIndex": 1,
+        "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+      },
+      {
+        "id": "m2-q2-01",
+        "subject": "Mathematics II",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+        "options": [],
+        "correctValue": "5",
+        "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+      },
+      {
+        "id": "m2-et-01",
+        "subject": "Mathematics II",
+        "type": "MCQ",
+        "marks": 4,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+        "options": [
+          "1, 2",
+          "0, 1",
+          "1, 1",
+          "2, 2"
+        ],
+        "correctIndex": 0,
+        "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+      }
+    ]
+  },
+  {
+    "id": "st1-q1-22",
+    "title": "Stats 1 - Quiz 1 (2022)",
+    "subject": "Statistics I",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "s1-q1-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which scale of measurement has a true zero point?",
+        "options": [
+          "Nominal",
+          "Ordinal",
+          "Interval",
+          "Ratio"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ratio scale has an absolute zero."
+      },
+      {
+        "id": "s1-q1-02",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Mean of 2, 4, 6, 8, 10 is:",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "Sum = 30, Count = 5, Mean = 6."
+      },
+      {
+        "id": "s1-q2-01",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If P(A) = 0.3, P(B) = 0.4 and A, B are independent, find P(A ∩ B).",
+        "options": [],
+        "correctValue": "0.12",
+        "explanation": "0.3 * 0.4 = 0.12."
+      },
+      {
+        "id": "s1-et-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "For a standard normal distribution, Mean = ?",
+        "options": [
+          "1",
+          "0",
+          "0.5",
+          "Undefined"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard Normal Z ~ N(0, 1)."
+      }
+    ]
+  },
+  {
+    "id": "st1-et-22",
+    "title": "Stats 1 - End Term (2022)",
+    "subject": "Statistics I",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "s1-q1-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which scale of measurement has a true zero point?",
+        "options": [
+          "Nominal",
+          "Ordinal",
+          "Interval",
+          "Ratio"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ratio scale has an absolute zero."
+      },
+      {
+        "id": "s1-q1-02",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Mean of 2, 4, 6, 8, 10 is:",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "Sum = 30, Count = 5, Mean = 6."
+      },
+      {
+        "id": "s1-q2-01",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If P(A) = 0.3, P(B) = 0.4 and A, B are independent, find P(A ∩ B).",
+        "options": [],
+        "correctValue": "0.12",
+        "explanation": "0.3 * 0.4 = 0.12."
+      },
+      {
+        "id": "s1-et-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "For a standard normal distribution, Mean = ?",
+        "options": [
+          "1",
+          "0",
+          "0.5",
+          "Undefined"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard Normal Z ~ N(0, 1)."
+      }
+    ]
+  },
+  {
+    "id": "st1-q1-23",
+    "title": "Stats 1 - Quiz 1 (2023)",
+    "subject": "Statistics I",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "s1-q1-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which scale of measurement has a true zero point?",
+        "options": [
+          "Nominal",
+          "Ordinal",
+          "Interval",
+          "Ratio"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ratio scale has an absolute zero."
+      },
+      {
+        "id": "s1-q1-02",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Mean of 2, 4, 6, 8, 10 is:",
+        "options": [],
+        "correctValue": "6",
+        "explanation": "Sum = 30, Count = 5, Mean = 6."
+      },
+      {
+        "id": "s1-q2-01",
+        "subject": "Statistics I",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If P(A) = 0.3, P(B) = 0.4 and A, B are independent, find P(A ∩ B).",
+        "options": [],
+        "correctValue": "0.12",
+        "explanation": "0.3 * 0.4 = 0.12."
+      },
+      {
+        "id": "s1-et-01",
+        "subject": "Statistics I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "For a standard normal distribution, Mean = ?",
+        "options": [
+          "1",
+          "0",
+          "0.5",
+          "Undefined"
+        ],
+        "correctIndex": 1,
+        "explanation": "Standard Normal Z ~ N(0, 1)."
+      }
+    ]
+  },
+  {
+    "id": "st2-q1-22",
+    "title": "Stats 2 - Quiz 1 (2022)",
+    "subject": "Statistics II",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "s2-q1-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "The distribution of the sample mean is called:",
+        "options": [
+          "Frequency Distribution",
+          "Sampling Distribution",
+          "Normal Distribution",
+          "Binomial Distribution"
+        ],
+        "correctIndex": 1,
+        "explanation": "It is the Sampling Distribution of the Sample Mean."
+      },
+      {
+        "id": "s2-q2-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Type I error occurs when:",
+        "options": [
+          "We reject H0 when it is true",
+          "We accept H0 when it is true",
+          "We reject H0 when it is false",
+          "We accept H0 when it is false"
+        ],
+        "correctIndex": 0,
+        "explanation": "Type I error is a False Positive (Rejecting true Null)."
+      },
+      {
+        "id": "s2-et-01",
+        "subject": "Statistics II",
+        "type": "NAT",
+        "marks": 5,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+        "options": [],
+        "correctValue": "11",
+        "explanation": "y = 2(4) + 3 = 11."
+      }
+    ]
+  },
+  {
+    "id": "st2-et-22",
+    "title": "Stats 2 - End Term (2022)",
+    "subject": "Statistics II",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "s2-q1-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "The distribution of the sample mean is called:",
+        "options": [
+          "Frequency Distribution",
+          "Sampling Distribution",
+          "Normal Distribution",
+          "Binomial Distribution"
+        ],
+        "correctIndex": 1,
+        "explanation": "It is the Sampling Distribution of the Sample Mean."
+      },
+      {
+        "id": "s2-q2-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Type I error occurs when:",
+        "options": [
+          "We reject H0 when it is true",
+          "We accept H0 when it is true",
+          "We reject H0 when it is false",
+          "We accept H0 when it is false"
+        ],
+        "correctIndex": 0,
+        "explanation": "Type I error is a False Positive (Rejecting true Null)."
+      },
+      {
+        "id": "s2-et-01",
+        "subject": "Statistics II",
+        "type": "NAT",
+        "marks": 5,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+        "options": [],
+        "correctValue": "11",
+        "explanation": "y = 2(4) + 3 = 11."
+      }
+    ]
+  },
+  {
+    "id": "st2-q1-23",
+    "title": "Stats 2 - Quiz 1 (2023)",
+    "subject": "Statistics II",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "s2-q1-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "The distribution of the sample mean is called:",
+        "options": [
+          "Frequency Distribution",
+          "Sampling Distribution",
+          "Normal Distribution",
+          "Binomial Distribution"
+        ],
+        "correctIndex": 1,
+        "explanation": "It is the Sampling Distribution of the Sample Mean."
+      },
+      {
+        "id": "s2-q2-01",
+        "subject": "Statistics II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Type I error occurs when:",
+        "options": [
+          "We reject H0 when it is true",
+          "We accept H0 when it is true",
+          "We reject H0 when it is false",
+          "We accept H0 when it is false"
+        ],
+        "correctIndex": 0,
+        "explanation": "Type I error is a False Positive (Rejecting true Null)."
+      },
+      {
+        "id": "s2-et-01",
+        "subject": "Statistics II",
+        "type": "NAT",
+        "marks": 5,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+        "options": [],
+        "correctValue": "11",
+        "explanation": "y = 2(4) + 3 = 11."
+      }
+    ]
+  },
+  {
+    "id": "ct-q1-22",
+    "title": "CT - Quiz 1 (2022)",
+    "subject": "Computational Thinking",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "ct-q1-01",
+        "subject": "Computational Thinking",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What does the diamond shape represent in a flowchart?",
+        "options": [
+          "Start/End",
+          "Process",
+          "Decision",
+          "Input/Output"
+        ],
+        "correctIndex": 2,
+        "explanation": "Diamond is used for Decision (Yes/No)."
+      },
+      {
+        "id": "ct-q1-02",
+        "subject": "Computational Thinking",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If X=5, Y=10. X = X+Y; Y = X-Y; X = X-Y. What is X?",
+        "options": [],
+        "correctValue": "10",
+        "explanation": "This is the swap algorithm. X becomes 10."
+      }
+    ]
+  },
+  {
+    "id": "ct-et-22",
+    "title": "CT - End Term (2022)",
+    "subject": "Computational Thinking",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "ct-q1-01",
+        "subject": "Computational Thinking",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What does the diamond shape represent in a flowchart?",
+        "options": [
+          "Start/End",
+          "Process",
+          "Decision",
+          "Input/Output"
+        ],
+        "correctIndex": 2,
+        "explanation": "Diamond is used for Decision (Yes/No)."
+      },
+      {
+        "id": "ct-q1-02",
+        "subject": "Computational Thinking",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If X=5, Y=10. X = X+Y; Y = X-Y; X = X-Y. What is X?",
+        "options": [],
+        "correctValue": "10",
+        "explanation": "This is the swap algorithm. X becomes 10."
+      }
+    ]
+  },
+  {
+    "id": "ct-q1-23",
+    "title": "CT - Quiz 1 (2023)",
+    "subject": "Computational Thinking",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "ct-q1-01",
+        "subject": "Computational Thinking",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What does the diamond shape represent in a flowchart?",
+        "options": [
+          "Start/End",
+          "Process",
+          "Decision",
+          "Input/Output"
+        ],
+        "correctIndex": 2,
+        "explanation": "Diamond is used for Decision (Yes/No)."
+      },
+      {
+        "id": "ct-q1-02",
+        "subject": "Computational Thinking",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If X=5, Y=10. X = X+Y; Y = X-Y; X = X-Y. What is X?",
+        "options": [],
+        "correctValue": "10",
+        "explanation": "This is the swap algorithm. X becomes 10."
+      }
+    ]
+  },
+  {
+    "id": "py-q1-22",
+    "title": "Python - Quiz 1 (2022)",
+    "subject": "Intro to Python",
+    "year": "2022",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "py-q1-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What is the output of print(type([]))?",
+        "options": [
+          "<class \"list\">",
+          "<class \"tuple\">",
+          "<class \"dict\">",
+          "<class \"int\">"
+        ],
+        "correctIndex": 0,
+        "explanation": "[] denotes a list."
+      },
+      {
+        "id": "py-q1-02",
+        "subject": "Intro to Python",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "x = 10; y = 3; print(x // y)",
+        "options": [],
+        "correctValue": "3",
+        "explanation": "Integer division."
+      },
+      {
+        "id": "py-q2-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which function is used to read a file line by line?",
+        "options": [
+          "read()",
+          "readline()",
+          "readlines()",
+          "readall()"
+        ],
+        "correctIndex": 1,
+        "explanation": "readline() reads a single line."
+      }
+    ]
+  },
+  {
+    "id": "py-et-22",
+    "title": "Python - End Term (2022)",
+    "subject": "Intro to Python",
+    "year": "2022",
+    "duration": 90,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "py-q1-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What is the output of print(type([]))?",
+        "options": [
+          "<class \"list\">",
+          "<class \"tuple\">",
+          "<class \"dict\">",
+          "<class \"int\">"
+        ],
+        "correctIndex": 0,
+        "explanation": "[] denotes a list."
+      },
+      {
+        "id": "py-q1-02",
+        "subject": "Intro to Python",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "x = 10; y = 3; print(x // y)",
+        "options": [],
+        "correctValue": "3",
+        "explanation": "Integer division."
+      },
+      {
+        "id": "py-q2-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which function is used to read a file line by line?",
+        "options": [
+          "read()",
+          "readline()",
+          "readlines()",
+          "readall()"
+        ],
+        "correctIndex": 1,
+        "explanation": "readline() reads a single line."
+      }
+    ]
+  },
+  {
+    "id": "py-q1-23",
+    "title": "Python - Quiz 1 (2023)",
+    "subject": "Intro to Python",
+    "year": "2023",
+    "duration": 45,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "py-q1-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What is the output of print(type([]))?",
+        "options": [
+          "<class \"list\">",
+          "<class \"tuple\">",
+          "<class \"dict\">",
+          "<class \"int\">"
+        ],
+        "correctIndex": 0,
+        "explanation": "[] denotes a list."
+      },
+      {
+        "id": "py-q1-02",
+        "subject": "Intro to Python",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "x = 10; y = 3; print(x // y)",
+        "options": [],
+        "correctValue": "3",
+        "explanation": "Integer division."
+      },
+      {
+        "id": "py-q2-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which function is used to read a file line by line?",
+        "options": [
+          "read()",
+          "readline()",
+          "readlines()",
+          "readall()"
+        ],
+        "correctIndex": 1,
+        "explanation": "readline() reads a single line."
+      }
+    ]
+  },
+  {
+    "id": "py-mock-24",
+    "title": "Python - Mock Exam (2024)",
+    "subject": "Intro to Python",
+    "year": "2024",
+    "duration": 60,
+    "marks": 50,
+    "questions": [
+      {
+        "id": "py-q1-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What is the output of print(type([]))?",
+        "options": [
+          "<class \"list\">",
+          "<class \"tuple\">",
+          "<class \"dict\">",
+          "<class \"int\">"
+        ],
+        "correctIndex": 0,
+        "explanation": "[] denotes a list."
+      },
+      {
+        "id": "py-q1-02",
+        "subject": "Intro to Python",
+        "type": "NAT",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "x = 10; y = 3; print(x // y)",
+        "options": [],
+        "correctValue": "3",
+        "explanation": "Integer division."
+      },
+      {
+        "id": "py-q2-01",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which function is used to read a file line by line?",
+        "options": [
+          "read()",
+          "readline()",
+          "readlines()",
+          "readall()"
+        ],
+        "correctIndex": 1,
+        "explanation": "readline() reads a single line."
+      }
+    ]
+  },
+  {
+    "id": "en1-q1-22",
+    "title": "English 1 - Quiz 1 (2022)",
+    "subject": "English I",
+    "year": "2022",
+    "duration": 30,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "en1-q1-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Choose the correct synonym for \"Benevolent\".",
+        "options": [
+          "Cruel",
+          "Kind",
+          "Angry",
+          "Sad"
+        ],
+        "correctIndex": 1,
+        "explanation": "Benevolent means well meaning and kindly."
+      },
+      {
+        "id": "en1-q2-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Identify the subject: \"The cat slept on the mat.\"",
+        "options": [
+          "The cat",
+          "slept",
+          "on",
+          "the mat"
+        ],
+        "correctIndex": 0,
+        "explanation": "The cat is the doer of the action."
+      },
+      {
+        "id": "en1-et-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Read the passage... (Context). What is the main idea?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correctIndex": 0,
+        "context": "<p>Climate change is accelerating...</p>",
+        "explanation": "Refers to the first sentence."
+      }
+    ]
+  },
+  {
+    "id": "en1-et-22",
+    "title": "English 1 - End Term (2022)",
+    "subject": "English I",
+    "year": "2022",
+    "duration": 60,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "en1-q1-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Choose the correct synonym for \"Benevolent\".",
+        "options": [
+          "Cruel",
+          "Kind",
+          "Angry",
+          "Sad"
+        ],
+        "correctIndex": 1,
+        "explanation": "Benevolent means well meaning and kindly."
+      },
+      {
+        "id": "en1-q2-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Identify the subject: \"The cat slept on the mat.\"",
+        "options": [
+          "The cat",
+          "slept",
+          "on",
+          "the mat"
+        ],
+        "correctIndex": 0,
+        "explanation": "The cat is the doer of the action."
+      },
+      {
+        "id": "en1-et-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Read the passage... (Context). What is the main idea?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correctIndex": 0,
+        "context": "<p>Climate change is accelerating...</p>",
+        "explanation": "Refers to the first sentence."
+      }
+    ]
+  },
+  {
+    "id": "en1-q1-23",
+    "title": "English 1 - Quiz 1 (2023)",
+    "subject": "English I",
+    "year": "2023",
+    "duration": 30,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "en1-q1-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Choose the correct synonym for \"Benevolent\".",
+        "options": [
+          "Cruel",
+          "Kind",
+          "Angry",
+          "Sad"
+        ],
+        "correctIndex": 1,
+        "explanation": "Benevolent means well meaning and kindly."
+      },
+      {
+        "id": "en1-q2-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Identify the subject: \"The cat slept on the mat.\"",
+        "options": [
+          "The cat",
+          "slept",
+          "on",
+          "the mat"
+        ],
+        "correctIndex": 0,
+        "explanation": "The cat is the doer of the action."
+      },
+      {
+        "id": "en1-et-01",
+        "subject": "English I",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "Read the passage... (Context). What is the main idea?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correctIndex": 0,
+        "context": "<p>Climate change is accelerating...</p>",
+        "explanation": "Refers to the first sentence."
+      }
+    ]
+  },
+  {
+    "id": "en2-q1-22",
+    "title": "English 2 - Quiz 1 (2022)",
+    "subject": "English II",
+    "year": "2022",
+    "duration": 30,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "en2-q1-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which of these is a transition word?",
+        "options": [
+          "However",
+          "Cat",
+          "Run",
+          "Blue"
+        ],
+        "correctIndex": 0,
+        "explanation": "However is used to transition between contrasting ideas."
+      },
+      {
+        "id": "en2-et-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In an academic essay, the thesis statement usually appears:",
+        "options": [
+          "At the end of intro",
+          "In the conclusion",
+          "In the title",
+          "Nowhere"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard academic structure places thesis at the end of the introduction."
+      }
+    ]
+  },
+  {
+    "id": "en2-et-22",
+    "title": "English 2 - End Term (2022)",
+    "subject": "English II",
+    "year": "2022",
+    "duration": 60,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "en2-q1-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which of these is a transition word?",
+        "options": [
+          "However",
+          "Cat",
+          "Run",
+          "Blue"
+        ],
+        "correctIndex": 0,
+        "explanation": "However is used to transition between contrasting ideas."
+      },
+      {
+        "id": "en2-et-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In an academic essay, the thesis statement usually appears:",
+        "options": [
+          "At the end of intro",
+          "In the conclusion",
+          "In the title",
+          "Nowhere"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard academic structure places thesis at the end of the introduction."
+      }
+    ]
+  },
+  {
+    "id": "en2-q1-23",
+    "title": "English 2 - Quiz 1 (2023)",
+    "subject": "English II",
+    "year": "2023",
+    "duration": 30,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "en2-q1-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "Which of these is a transition word?",
+        "options": [
+          "However",
+          "Cat",
+          "Run",
+          "Blue"
+        ],
+        "correctIndex": 0,
+        "explanation": "However is used to transition between contrasting ideas."
+      },
+      {
+        "id": "en2-et-01",
+        "subject": "English II",
+        "type": "MCQ",
+        "marks": 3,
+        "year": "2023",
+        "level": "Foundation",
+        "text": "In an academic essay, the thesis statement usually appears:",
+        "options": [
+          "At the end of intro",
+          "In the conclusion",
+          "In the title",
+          "Nowhere"
+        ],
+        "correctIndex": 0,
+        "explanation": "Standard academic structure places thesis at the end of the introduction."
+      }
+    ]
+  },
+  {
+    "id": "dbms-q1",
+    "title": "DBMS - Quiz 1",
+    "subject": "DBMS",
+    "year": "2022",
+    "duration": 45,
+    "marks": 25,
+    "questions": [
+      {
+        "id": "dbms-q1",
+        "subject": "DBMS",
+        "type": "MCQ",
+        "text": "Which normal form eliminates partial dependency?",
+        "options": [
+          "1NF",
+          "2NF",
+          "3NF",
+          "BCNF"
+        ],
+        "correctIndex": 1,
+        "explanation": "2NF eliminates partial dependencies where a non-prime attribute depends on part of a candidate key.",
+        "year": "2022",
+        "level": "Diploma",
+        "marks": 2
+      },
+      {
+        "id": "dbms-q2",
+        "subject": "DBMS",
+        "type": "NAT",
+        "text": "Consider a relation R(A, B, C) with FDs {A->B, B->C}. How many candidate keys does R have?",
+        "options": [],
+        "correctValue": "1",
+        "correctIndex": -1,
+        "explanation": "A determines B, B determines C. So A determines {A, B, C}. A is the only candidate key.",
+        "year": "2022",
+        "level": "Diploma",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "id": "java-q1",
+    "title": "Java - Quiz 1",
+    "subject": "Java Programming",
+    "year": "2023",
+    "duration": 45,
+    "marks": 25,
+    "questions": [
+      {
+        "id": "java-q1",
+        "subject": "Java Programming",
+        "type": "MCQ",
+        "text": "What is the output of \"1\" + 2 + 3 in Java?",
+        "options": [
+          "123",
+          "6",
+          "15",
+          "Error"
+        ],
+        "correctIndex": 0,
+        "explanation": "String concatenation happens from left to right. \"1\" + 2 becomes \"12\", then \"12\" + 3 becomes \"123\".",
+        "year": "2023",
+        "level": "Diploma",
+        "marks": 2
+      },
+      {
+        "id": "java-q2",
+        "subject": "Java Programming",
+        "type": "MSQ",
+        "text": "Which of the following are valid access modifiers in Java?",
+        "options": [
+          "public",
+          "friend",
+          "protected",
+          "private"
+        ],
+        "correctIndices": [
+          0,
+          2,
+          3
+        ],
+        "correctIndex": -1,
+        "explanation": "friend is a concept in C++, not Java. Java has public, private, protected, and default (package-private).",
+        "year": "2023",
+        "level": "Diploma",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "pdsa-et",
+    "title": "PDSA - End Term",
+    "subject": "PDSA",
+    "year": "2022",
+    "duration": 120,
+    "marks": 100,
+    "questions": [
+      {
+        "id": "pdsa-q1",
+        "subject": "PDSA",
+        "type": "MCQ",
+        "text": "What is the worst-case time complexity of Quick Sort?",
+        "options": [
+          "O(n)",
+          "O(n log n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "correctIndex": 2,
+        "explanation": "Worst case occurs when the pivot is the smallest or largest element always (sorted array), leading to O(n²).",
+        "year": "2022",
+        "level": "Diploma",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "mlf-q1",
+    "title": "MLF - Quiz 1",
+    "subject": "ML Foundations",
+    "year": "2023",
+    "duration": 60,
+    "marks": 30,
+    "questions": [
+      {
+        "id": "mlf-q1",
+        "subject": "ML Foundations",
+        "type": "MCQ",
+        "text": "Which matrix decomposition is used in PCA?",
+        "options": [
+          "LU Decomposition",
+          "QR Decomposition",
+          "Eigendecomposition",
+          "Cholesky Decomposition"
+        ],
+        "correctIndex": 2,
+        "explanation": "PCA involves finding the eigenvectors and eigenvalues of the covariance matrix, which is Eigendecomposition (or SVD).",
+        "year": "2023",
+        "level": "Diploma",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "bdm-q1",
+    "title": "BDM - Quiz 1",
+    "subject": "Business Analytics",
+    "year": "2022",
+    "duration": 45,
+    "marks": 20,
+    "questions": [
+      {
+        "id": "bdm-q1",
+        "subject": "Business Analytics",
+        "type": "MCQ",
+        "text": "The 3 Vs of Big Data usually refer to?",
+        "options": [
+          "Volume, Velocity, Variety",
+          "Value, Vision, Vibe",
+          "Video, Voice, Verification",
+          "Volume, Value, Velocity"
+        ],
+        "correctIndex": 0,
+        "explanation": "The standard 3 Vs definition by Gartner is Volume, Velocity, and Variety.",
+        "year": "2022",
+        "level": "Diploma",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "st-q1",
+    "title": "Software Testing - Quiz 1",
+    "subject": "Software Testing",
+    "year": "2024",
+    "duration": 45,
+    "marks": 25,
+    "questions": [
+      {
+        "id": "st-q1",
+        "subject": "Intro to Python",
+        "type": "MCQ",
+        "text": "Which of the following is a White Box Testing technique?",
+        "options": [
+          "Equivalence Partitioning",
+          "Boundary Value Analysis",
+          "Statement Coverage",
+          "Usability Testing"
+        ],
+        "correctIndex": 2,
+        "explanation": "Statement Coverage requires looking at the internal code structure, making it White Box. Others are Black Box.",
+        "year": "2024",
+        "level": "Degree",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "id": "mock-24-gen",
+    "title": "General Mock 2024",
+    "subject": "Computational Thinking",
+    "year": "2024",
+    "duration": 60,
+    "marks": 50,
+    "questions": [
+      {
+        "id": "ct-q1-01",
+        "subject": "Computational Thinking",
+        "type": "MCQ",
+        "marks": 2,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "What does the diamond shape represent in a flowchart?",
+        "options": [
+          "Start/End",
+          "Process",
+          "Decision",
+          "Input/Output"
+        ],
+        "correctIndex": 2,
+        "explanation": "Diamond is used for Decision (Yes/No)."
+      },
+      {
+        "id": "ct-q1-02",
+        "subject": "Computational Thinking",
+        "type": "NAT",
+        "marks": 3,
+        "year": "2022",
+        "level": "Foundation",
+        "text": "If X=5, Y=10. X = X+Y; Y = X-Y; X = X-Y. What is X?",
+        "options": [],
+        "correctValue": "10",
+        "explanation": "This is the swap algorithm. X becomes 10."
+      }
+    ]
+  }
+]
