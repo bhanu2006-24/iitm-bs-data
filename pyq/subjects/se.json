@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "se",
+    "name": "Software Engineering",
+    "code": "CS3002",
+    "level": "Degree",
+    "color": "text-sky-400"
+  },
+  "exams": []
+}

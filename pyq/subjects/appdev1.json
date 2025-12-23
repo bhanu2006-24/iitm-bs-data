@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "appdev1",
+    "name": "App Dev 1",
+    "code": "CS2003",
+    "level": "Diploma",
+    "color": "text-indigo-400"
+  },
+  "exams": []
+}

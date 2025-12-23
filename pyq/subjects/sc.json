@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "sc",
+    "name": "System Commands",
+    "code": "SE2001",
+    "level": "Diploma",
+    "color": "text-slate-400"
+  },
+  "exams": []
+}

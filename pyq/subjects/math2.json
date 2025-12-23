@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "id": "math2",
+    "name": "Mathematics II",
+    "code": "MA1002",
+    "level": "Foundation",
+    "color": "text-indigo-400"
+  },
+  "exams": [
+    {
+      "id": "ma2-q1-22",
+      "title": "Math 2 - Quiz 1 (2022)",
+      "subject": "Mathematics II",
+      "year": "2022",
+      "duration": 45,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "m2-q1-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+          "options": [
+            "7",
+            "11",
+            "10",
+            "5"
+          ],
+          "correctIndex": 1,
+          "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+        },
+        {
+          "id": "m2-q1-02",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends on field",
+            "Cannot determine"
+          ],
+          "correctIndex": 1,
+          "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+        },
+        {
+          "id": "m2-q2-01",
+          "subject": "Mathematics II",
+          "type": "NAT",
+          "marks": 3,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+          "options": [],
+          "correctValue": "5",
+          "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+        },
+        {
+          "id": "m2-et-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 4,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+          "options": [
+            "1, 2",
+            "0, 1",
+            "1, 1",
+            "2, 2"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+        }
+      ]
+    },
+    {
+      "id": "ma2-q2-22",
+      "title": "Math 2 - Quiz 2 (2022)",
+      "subject": "Mathematics II",
+      "year": "2022",
+      "duration": 45,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "m2-q1-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+          "options": [
+            "7",
+            "11",
+            "10",
+            "5"
+          ],
+          "correctIndex": 1,
+          "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+        },
+        {
+          "id": "m2-q1-02",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends on field",
+            "Cannot determine"
+          ],
+          "correctIndex": 1,
+          "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+        },
+        {
+          "id": "m2-q2-01",
+          "subject": "Mathematics II",
+          "type": "NAT",
+          "marks": 3,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+          "options": [],
+          "correctValue": "5",
+          "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+        },
+        {
+          "id": "m2-et-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 4,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+          "options": [
+            "1, 2",
+            "0, 1",
+            "1, 1",
+            "2, 2"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+        }
+      ]
+    },
+    {
+      "id": "ma2-et-22",
+      "title": "Math 2 - End Term (2022)",
+      "subject": "Mathematics II",
+      "year": "2022",
+      "duration": 90,
+      "marks": 100,
+      "questions": [
+        {
+          "id": "m2-q1-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+          "options": [
+            "7",
+            "11",
+            "10",
+            "5"
+          ],
+          "correctIndex": 1,
+          "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+        },
+        {
+          "id": "m2-q1-02",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends on field",
+            "Cannot determine"
+          ],
+          "correctIndex": 1,
+          "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+        },
+        {
+          "id": "m2-q2-01",
+          "subject": "Mathematics II",
+          "type": "NAT",
+          "marks": 3,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+          "options": [],
+          "correctValue": "5",
+          "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+        },
+        {
+          "id": "m2-et-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 4,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+          "options": [
+            "1, 2",
+            "0, 1",
+            "1, 1",
+            "2, 2"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+        }
+      ]
+    },
+    {
+      "id": "ma2-q1-23",
+      "title": "Math 2 - Quiz 1 (2023)",
+      "subject": "Mathematics II",
+      "year": "2023",
+      "duration": 45,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "m2-q1-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Given vectors u = [1, 2] and v = [3, 4], calculate u · v.",
+          "options": [
+            "7",
+            "11",
+            "10",
+            "5"
+          ],
+          "correctIndex": 1,
+          "explanation": "1*3 + 2*4 = 3 + 8 = 11."
+        },
+        {
+          "id": "m2-q1-02",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Is the set of vectors {[1,0], [0,1], [1,1]} linearly independent?",
+          "options": [
+            "Yes",
+            "No",
+            "Depends on field",
+            "Cannot determine"
+          ],
+          "correctIndex": 1,
+          "explanation": "[1,1] = [1,0] + [0,1], so they are dependent."
+        },
+        {
+          "id": "m2-q2-01",
+          "subject": "Mathematics II",
+          "type": "NAT",
+          "marks": 3,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Find the trace of the matrix A = [[2, 1], [0, 3]].",
+          "options": [],
+          "correctValue": "5",
+          "explanation": "Sum of diagonal elements: 2 + 3 = 5."
+        },
+        {
+          "id": "m2-et-01",
+          "subject": "Mathematics II",
+          "type": "MCQ",
+          "marks": 4,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Find the eigenvalues of A = [[1, 0], [0, 2]].",
+          "options": [
+            "1, 2",
+            "0, 1",
+            "1, 1",
+            "2, 2"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a diagonal matrix, eigenvalues are the diagonal entries."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "mlp",
+    "name": "ML Practice",
+    "code": "CS2008",
+    "level": "Diploma",
+    "color": "text-rose-400"
+  },
+  "exams": []
+}

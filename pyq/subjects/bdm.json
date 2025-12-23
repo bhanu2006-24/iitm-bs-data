@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "bdm",
+    "name": "Business Data Mgmt",
+    "code": "MS2001",
+    "level": "Diploma",
+    "color": "text-blue-500"
+  },
+  "exams": []
+}

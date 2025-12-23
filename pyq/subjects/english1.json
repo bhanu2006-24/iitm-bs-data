@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "id": "english1",
+    "name": "English I",
+    "code": "EN1001",
+    "level": "Foundation",
+    "color": "text-pink-400"
+  },
+  "exams": [
+    {
+      "id": "en1-q1-22",
+      "title": "English 1 - Quiz 1 (2022)",
+      "subject": "English I",
+      "year": "2022",
+      "duration": 30,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "en1-q1-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Choose the correct synonym for \"Benevolent\".",
+          "options": [
+            "Cruel",
+            "Kind",
+            "Angry",
+            "Sad"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benevolent means well meaning and kindly."
+        },
+        {
+          "id": "en1-q2-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Identify the subject: \"The cat slept on the mat.\"",
+          "options": [
+            "The cat",
+            "slept",
+            "on",
+            "the mat"
+          ],
+          "correctIndex": 0,
+          "explanation": "The cat is the doer of the action."
+        },
+        {
+          "id": "en1-et-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 3,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Read the passage... (Context). What is the main idea?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctIndex": 0,
+          "context": "<p>Climate change is accelerating...</p>",
+          "explanation": "Refers to the first sentence."
+        }
+      ]
+    },
+    {
+      "id": "en1-et-22",
+      "title": "English 1 - End Term (2022)",
+      "subject": "English I",
+      "year": "2022",
+      "duration": 60,
+      "marks": 100,
+      "questions": [
+        {
+          "id": "en1-q1-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Choose the correct synonym for \"Benevolent\".",
+          "options": [
+            "Cruel",
+            "Kind",
+            "Angry",
+            "Sad"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benevolent means well meaning and kindly."
+        },
+        {
+          "id": "en1-q2-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Identify the subject: \"The cat slept on the mat.\"",
+          "options": [
+            "The cat",
+            "slept",
+            "on",
+            "the mat"
+          ],
+          "correctIndex": 0,
+          "explanation": "The cat is the doer of the action."
+        },
+        {
+          "id": "en1-et-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 3,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Read the passage... (Context). What is the main idea?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctIndex": 0,
+          "context": "<p>Climate change is accelerating...</p>",
+          "explanation": "Refers to the first sentence."
+        }
+      ]
+    },
+    {
+      "id": "en1-q1-23",
+      "title": "English 1 - Quiz 1 (2023)",
+      "subject": "English I",
+      "year": "2023",
+      "duration": 30,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "en1-q1-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Choose the correct synonym for \"Benevolent\".",
+          "options": [
+            "Cruel",
+            "Kind",
+            "Angry",
+            "Sad"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benevolent means well meaning and kindly."
+        },
+        {
+          "id": "en1-q2-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Identify the subject: \"The cat slept on the mat.\"",
+          "options": [
+            "The cat",
+            "slept",
+            "on",
+            "the mat"
+          ],
+          "correctIndex": 0,
+          "explanation": "The cat is the doer of the action."
+        },
+        {
+          "id": "en1-et-01",
+          "subject": "English I",
+          "type": "MCQ",
+          "marks": 3,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "Read the passage... (Context). What is the main idea?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctIndex": 0,
+          "context": "<p>Climate change is accelerating...</p>",
+          "explanation": "Refers to the first sentence."
+        }
+      ]
+    }
+  ]
+}

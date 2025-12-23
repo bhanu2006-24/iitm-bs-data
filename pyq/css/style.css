@@ -1,0 +1,302 @@
+:root {
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hover: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-blue: #3b82f6;
+  --accent-blue-hover: #2563eb;
+  --success: #22c55e;
+  --error: #ef4444;
+  --border: #334155;
+
+  --font-main: "Outfit", "Inter", system-ui, -apple-system, sans-serif;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--bg-card-hover);
+}
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--accent-blue-hover);
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-family: inherit;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Parser Styles */
+.editor-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: calc(100vh - 4rem);
+}
+.preview-pane {
+  overflow-y: auto;
+  background: #000;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+/* Question Styles */
+.question-block {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.option-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.option-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+.option-row.selected {
+  border: 1px solid var(--accent-blue);
+  background: rgba(59, 130, 246, 0.1);
+}
+.option-marker {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--text-secondary);
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.option-row.selected .option-marker {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue);
+  color: white;
+}
+.katex-display {
+  margin: 0.5em 0 !important;
+}
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Subject Grid */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.badge-foundation {
+  background: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+}
+.badge-diploma {
+  background: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+}
+.badge-degree {
+  background: rgba(168, 85, 247, 0.1);
+  color: #c084fc;
+}
+
+/* Colors based on user json */
+.text-blue-400 {
+  color: #60a5fa;
+}
+.text-green-400 {
+  color: #4ade80;
+}
+.text-purple-400 {
+  color: #c084fc;
+}
+.text-pink-400 {
+  color: #f472b6;
+}
+/* ... add others as needed or handle via inline style */
+
+/* Parser Specific */
+.pdf-drop-zone {
+  border: 2px dashed var(--border);
+  padding: 3rem;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+.pdf-drop-zone:hover {
+  border-color: var(--accent-blue);
+}
+
+.tool-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background: var(--bg-card);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Formatter */
+.image-editor-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.image-editor-content {
+  background: var(--bg-dark);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

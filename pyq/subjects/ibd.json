@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "ibd",
+    "name": "Intro to Big Data",
+    "code": "DA5001",
+    "level": "Degree",
+    "color": "text-blue-500"
+  },
+  "exams": []
+}

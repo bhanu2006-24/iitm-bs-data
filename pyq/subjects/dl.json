@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "dl",
+    "name": "Deep Learning",
+    "code": "CS3004",
+    "level": "Degree",
+    "color": "text-fuchsia-400"
+  },
+  "exams": []
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "tds",
+    "name": "Tools in Data Science",
+    "code": "SE2002",
+    "level": "Diploma",
+    "color": "text-sky-500"
+  },
+  "exams": []
+}

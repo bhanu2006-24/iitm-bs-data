@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "pdsa",
+    "name": "PDSA",
+    "code": "CS2002",
+    "level": "Diploma",
+    "color": "text-orange-400"
+  },
+  "exams": [
+    {
+      "id": "pdsa-et",
+      "title": "PDSA - End Term",
+      "subject": "PDSA",
+      "year": "2022",
+      "duration": 120,
+      "marks": 100,
+      "questions": [
+        {
+          "id": "pdsa-q1",
+          "subject": "PDSA",
+          "type": "MCQ",
+          "text": "What is the worst-case time complexity of Quick Sort?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(log n)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Worst case occurs when the pivot is the smallest or largest element always (sorted array), leading to O(n²).",
+          "year": "2022",
+          "level": "Diploma",
+          "marks": 2
+        }
+      ]
+    }
+  ]
+}

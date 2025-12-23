@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "cprog",
+    "name": "Programming in C",
+    "code": "CS3005",
+    "level": "Degree",
+    "color": "text-slate-200"
+  },
+  "exams": []
+}

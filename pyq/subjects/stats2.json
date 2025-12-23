@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "id": "stats2",
+    "name": "Statistics II",
+    "code": "ST1002",
+    "level": "Foundation",
+    "color": "text-emerald-400"
+  },
+  "exams": [
+    {
+      "id": "st2-q1-22",
+      "title": "Stats 2 - Quiz 1 (2022)",
+      "subject": "Statistics II",
+      "year": "2022",
+      "duration": 45,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "s2-q1-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "The distribution of the sample mean is called:",
+          "options": [
+            "Frequency Distribution",
+            "Sampling Distribution",
+            "Normal Distribution",
+            "Binomial Distribution"
+          ],
+          "correctIndex": 1,
+          "explanation": "It is the Sampling Distribution of the Sample Mean."
+        },
+        {
+          "id": "s2-q2-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Type I error occurs when:",
+          "options": [
+            "We reject H0 when it is true",
+            "We accept H0 when it is true",
+            "We reject H0 when it is false",
+            "We accept H0 when it is false"
+          ],
+          "correctIndex": 0,
+          "explanation": "Type I error is a False Positive (Rejecting true Null)."
+        },
+        {
+          "id": "s2-et-01",
+          "subject": "Statistics II",
+          "type": "NAT",
+          "marks": 5,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+          "options": [],
+          "correctValue": "11",
+          "explanation": "y = 2(4) + 3 = 11."
+        }
+      ]
+    },
+    {
+      "id": "st2-et-22",
+      "title": "Stats 2 - End Term (2022)",
+      "subject": "Statistics II",
+      "year": "2022",
+      "duration": 90,
+      "marks": 100,
+      "questions": [
+        {
+          "id": "s2-q1-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "The distribution of the sample mean is called:",
+          "options": [
+            "Frequency Distribution",
+            "Sampling Distribution",
+            "Normal Distribution",
+            "Binomial Distribution"
+          ],
+          "correctIndex": 1,
+          "explanation": "It is the Sampling Distribution of the Sample Mean."
+        },
+        {
+          "id": "s2-q2-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Type I error occurs when:",
+          "options": [
+            "We reject H0 when it is true",
+            "We accept H0 when it is true",
+            "We reject H0 when it is false",
+            "We accept H0 when it is false"
+          ],
+          "correctIndex": 0,
+          "explanation": "Type I error is a False Positive (Rejecting true Null)."
+        },
+        {
+          "id": "s2-et-01",
+          "subject": "Statistics II",
+          "type": "NAT",
+          "marks": 5,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+          "options": [],
+          "correctValue": "11",
+          "explanation": "y = 2(4) + 3 = 11."
+        }
+      ]
+    },
+    {
+      "id": "st2-q1-23",
+      "title": "Stats 2 - Quiz 1 (2023)",
+      "subject": "Statistics II",
+      "year": "2023",
+      "duration": 45,
+      "marks": 30,
+      "questions": [
+        {
+          "id": "s2-q1-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "The distribution of the sample mean is called:",
+          "options": [
+            "Frequency Distribution",
+            "Sampling Distribution",
+            "Normal Distribution",
+            "Binomial Distribution"
+          ],
+          "correctIndex": 1,
+          "explanation": "It is the Sampling Distribution of the Sample Mean."
+        },
+        {
+          "id": "s2-q2-01",
+          "subject": "Statistics II",
+          "type": "MCQ",
+          "marks": 2,
+          "year": "2022",
+          "level": "Foundation",
+          "text": "Type I error occurs when:",
+          "options": [
+            "We reject H0 when it is true",
+            "We accept H0 when it is true",
+            "We reject H0 when it is false",
+            "We accept H0 when it is false"
+          ],
+          "correctIndex": 0,
+          "explanation": "Type I error is a False Positive (Rejecting true Null)."
+        },
+        {
+          "id": "s2-et-01",
+          "subject": "Statistics II",
+          "type": "NAT",
+          "marks": 5,
+          "year": "2023",
+          "level": "Foundation",
+          "text": "In a linear regression y = 2x + 3, if x=4, what is the predicted y?",
+          "options": [],
+          "correctValue": "11",
+          "explanation": "y = 2(4) + 3 = 11."
+        }
+      ]
+    }
+  ]
+}
