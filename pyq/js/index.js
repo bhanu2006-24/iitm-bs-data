@@ -1,4 +1,5 @@
-import { Utils } from './utils.js'; // We'll create a Utils helper if needed, or just inline.
+// No external utils needed for now
+// import { Utils } from './utils.js'; 
 
 document.addEventListener('DOMContentLoaded', async () => {
     const subjectsContainer = document.getElementById('subjects-container');
@@ -8,39 +9,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     const navBar = document.getElementById('nav-bar');
     const backBtn = document.getElementById('back-to-subjects');
     const subjectTitle = document.getElementById('subject-title');
-    const subjectCode = document.getElementById('subject-code');
-
-    let allSubjects = [];
+    const subjectBadge = document.getElementById('subject-code-badge');
 
     // Fetch Manifest
     try {
         const response = await fetch('manifest.json');
-        allSubjects = await response.json();
-        renderSubjects(allSubjects);
+        if (!response.ok) throw new Error('Manifest not found');
+        const subjects = await response.json();
+        renderSubjects(subjects);
     } catch (e) {
         console.error('Failed to load subjects:', e);
-        subjectsContainer.innerHTML = '<p class="text-error">Failed to load subjects.</p>';
+        if(subjectsContainer) {
+            subjectsContainer.innerHTML = `
+                <div class="col-span-full text-center py-12">
+                    <p class="text-red-400 mb-2">Failed to load subjects data.</p>
+                    <p class="text-slate-500 text-sm">Ensure 'manifest.json' exists in the root.</p>
+                    <button onclick="location.reload()" class="underline text-sm text-blue-400 mt-4">Retry</button>
+                </div>
+            `;
+        }
     }
 
-    // Render Function
     function renderSubjects(subjects) {
+        if(!subjectsContainer) return;
         subjectsContainer.innerHTML = '';
         subjects.forEach(sub => {
             const card = document.createElement('div');
-            card.className = 'card cursor-pointer'; // Add cursor-pointer class if not in CSS
-            card.style.cursor = 'pointer';
+            // Tailwind Card Style
+            card.className = "bg-card hover:bg-card-hover border border-slate-700/50 hover:border-blue-500/50 rounded-xl p-6 cursor-pointer transition-all duration-200 group relative overflow-hidden";
             
-            // Badge style based on level
-            const badgeClass = `badge-${sub.level.toLowerCase().split(' ')[0]}`; // simple heuristic
-            
+            // Level Badge Colors
+            let badgeBg = 'bg-slate-700';
+            let badgeText = 'text-slate-300';
+            if (sub.level === 'Foundation') { badgeBg = 'bg-emerald-500/10'; badgeText = 'text-emerald-400'; }
+            if (sub.level === 'Diploma') { badgeBg = 'bg-blue-500/10'; badgeText = 'text-blue-400'; }
+            if (sub.level === 'Degree') { badgeBg = 'bg-purple-500/10'; badgeText = 'text-purple-400'; }
+
             card.innerHTML = `
-                <div class="flex justify-between items-start" style="margin-bottom: 1rem;">
-                    <span class="badge ${badgeClass}" style="background:rgba(255,255,255,0.1); color: #fff;">${sub.level}</span>
-                    <i class="fas fa-chevron-right text-secondary"></i>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="${badgeBg} ${badgeText} px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wide">${sub.level}</span>
+                    <i class="fas fa-chevron-right text-slate-600 group-hover:text-blue-400 transition-colors"></i>
                 </div>
-                <h3 class="${sub.color || 'text-primary'}" style="margin-bottom: 0.5rem;">${sub.name}</h3>
-                <p class="text-secondary text-sm">${sub.id.toUpperCase()}</p>
-                <!-- We could show paper count if we had it, for now we skip -->
+                <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">${sub.name}</h3>
+                <p class="text-slate-500 text-sm font-mono">${sub.id.toUpperCase()}</p>
+                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             `;
             
             card.addEventListener('click', () => loadSubject(sub));
@@ -49,18 +61,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function loadSubject(subject) {
-        // Show Loading state?
-        
         try {
             const response = await fetch(`subjects/${subject.id}.json`);
-            if (!response.ok) throw new Error('Subject data not found');
+            if (!response.ok) {
+                // If subject file doesn't exist, show empty view logic
+                console.warn(`Subject file subjects/${subject.id}.json not found.`);
+                showExamsView(subject, []); 
+                return;
+            }
             const data = await response.json();
-            
-            // Render Exams
-            showExamsView(subject, data.exams);
+            showExamsView(subject, data.exams || []);
         } catch (e) {
-            console.error(e);
-            alert('Could not load exams for this subject.');
+            console.warn(e);
+            showExamsView(subject, []);
         }
     }
 
@@ -70,51 +83,59 @@ document.addEventListener('DOMContentLoaded', async () => {
         navBar.classList.remove('hidden');
 
         subjectTitle.textContent = subject.name;
-        // subjectCode.textContent = subject.code || subject.id; // Code might be in meta
-        subjectCode.textContent = subject.id;
+        subjectBadge.textContent = (subject.code || subject.id).toUpperCase();
+        
+        // Colorize badge
+        const colorClass = subject.color ? subject.color.replace('text-', 'bg-') + '/10 ' + subject.color : 'bg-blue-500/10 text-blue-400';
+        subjectBadge.className = `px-2 py-0.5 rounded text-xs font-bold ${colorClass}`;
 
         examsContainer.innerHTML = '';
-        
+
         if (!exams || exams.length === 0) {
-            examsContainer.innerHTML = '<p class="text-secondary">No exams available yet.</p>';
+            examsContainer.innerHTML = `
+                <div class="text-center py-12 bg-card rounded-xl border border-dashed border-slate-700">
+                    <i class="far fa-folder-open text-slate-600 text-4xl mb-4"></i>
+                    <p class="text-secondary mb-2">No exams found for this subject.</p>
+                    <a href="parser.html" class="text-sm text-blue-400 hover:text-blue-300 underline">Add one using the Parser</a>
+                </div>
+            `;
             return;
         }
 
-        // Sort exams?
-        // exams.sort((a, b) => b.year - a.year);
+        // Sort by year desc
+        exams.sort((a,b) => (b.year || 0) - (a.year || 0));
 
         exams.forEach(exam => {
             const row = document.createElement('div');
-            row.className = 'card flex justify-between items-center';
-            row.style.padding = '1rem 1.5rem';
+            row.className = "bg-card hover:bg-card-hover border border-slate-700/50 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group";
             
             row.innerHTML = `
                 <div class="flex items-center gap-4">
-                    <div style="background: rgba(59, 130, 246, 0.1); padding: 0.75rem; border-radius: 0.5rem;">
-                         <span class="text-blue-400 font-bold">${exam.year || 'N/A'}</span>
+                    <div class="bg-blue-500/10 text-blue-400 w-12 h-12 rounded-lg flex items-center justify-center font-bold text-sm shrink-0">
+                        ${exam.year || 'NA'}
                     </div>
                     <div>
-                        <h3 style="margin:0; font-size: 1.1rem;">${exam.title || 'Exam'}</h3>
-                        <p class="text-secondary text-sm">
-                            <i class="far fa-clock"></i> ${exam.duration || 60} mins  &bull; 
-                            <i class="fas fa-list"></i> ${exam.questions ? exam.questions.length : 0} Questions &bull;
-                            <i class="fas fa-trophy"></i> ${exam.marks || 0} Marks
-                        </p>
+                        <h3 class="font-bold text-white text-lg group-hover:text-blue-400 transition-colors">${exam.title || 'Untitled Exam'}</h3>
+                        <div class="flex items-center gap-4 mt-1 text-sm text-secondary">
+                            <span class="flex items-center gap-1.5"><i class="far fa-clock text-slate-500"></i> ${exam.duration || 60}m</span>
+                            <span class="flex items-center gap-1.5"><i class="fas fa-list-ol text-slate-500"></i> ${exam.questions ? exam.questions.length : 0} Qs</span>
+                            <span class="flex items-center gap-1.5"><i class="fas fa-trophy text-slate-500"></i> ${exam.marks || 0}</span>
+                        </div>
                     </div>
                 </div>
-                <div>
-                   <a href="practice.html?subject=${subject.id}&examId=${exam.id}" class="btn btn-primary">
-                        <i class="fas fa-play" style="margin-right: 0.5rem;"></i> Start Exam
-                   </a>
-                </div>
+                <a href="practice.html?subject=${subject.id}&examId=${exam.id}" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-900/20 whitespace-nowrap text-center">
+                    Start Exam
+                </a>
             `;
             examsContainer.appendChild(row);
         });
     }
 
-    backBtn.addEventListener('click', () => {
-        examsView.classList.add('hidden');
-        navBar.classList.add('hidden');
-        subjectsView.classList.remove('hidden');
-    });
+    if(backBtn) {
+        backBtn.addEventListener('click', () => {
+            examsView.classList.add('hidden');
+            navBar.classList.add('hidden');
+            subjectsView.classList.remove('hidden');
+        });
+    }
 });

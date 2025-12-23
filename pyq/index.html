@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PYQ Practice - IITM BS</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header
-        class="flex justify-between items-center"
-        style="margin-bottom: 3rem"
-      >
-        <div class="flex items-center gap-4">
-          <i
-            class="fas fa-graduation-cap fa-2x"
-            style="color: var(--accent-blue)"
-          ></i>
-          <div>
-            <h2 style="margin: 0">PYQ Practice</h2>
-            <p class="text-secondary text-sm">Master Your BS Degree Exams</p>
-          </div>
-        </div>
-        <div>
-          <a href="parser.html" class="btn"
-            ><i class="fas fa-tools" style="margin-right: 0.5rem"></i> Parser
-            Tool</a
-          >
-        </div>
-      </header>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        'card-hover': '#334155',
+                        primary: '#3b82f6',
+                        success: '#22c55e',
+                        secondary: '#94a3b8'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-slate-200 min-h-screen font-sans">
+    
+    <div class="container mx-auto px-6 py-8">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500">
+                    <i class="fas fa-graduation-cap fa-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight text-white mb-0.5">PYQ Practice</h1>
+                    <p class="text-secondary text-sm font-medium">Master Your BS Degree Exams</p>
+                </div>
+            </div>
+            <a href="parser.html" class="bg-card hover:bg-card-hover border border-slate-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition flex items-center gap-2 group">
+                <i class="fas fa-tools text-slate-400 group-hover:text-blue-400 transition"></i> Tooling
+            </a>
+        </header>
 
-      <!-- Breadcrumbs / Navigation -->
-      <div id="nav-bar" class="hidden" style="margin-bottom: 2rem">
-        <button id="back-to-subjects" class="btn">
-          <i class="fas fa-arrow-left" style="margin-right: 0.5rem"></i> Back to
-          Subjects
-        </button>
-      </div>
-
-      <!-- Section: Subjects (Home) -->
-      <div id="subjects-view">
-        <div
-          class="flex justify-between items-center"
-          style="margin-bottom: 2rem"
-        >
-          <h1>All Subjects</h1>
-          <!-- Search could go here -->
+        <!-- Navigation (Breadcrumbs) -->
+        <div id="nav-bar" class="hidden mb-8">
+            <button id="back-to-subjects" class="text-secondary hover:text-white flex items-center gap-2 text-sm font-medium transition">
+                <i class="fas fa-arrow-left"></i> Back to Subjects
+            </button>
         </div>
 
-        <div class="subjects-grid" id="subjects-container">
-          <!-- Cards injected here -->
+        <!-- Subjects Grid -->
+        <div id="subjects-view" class="animate-fade-in">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-white">All Subjects</h2>
+                    <p class="text-secondary text-sm mt-1">Select a subject to view available papers</p>
+                </div>
+                <!-- Search could go here -->
+            </div>
+            
+            <div id="subjects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Cards Injected Here -->
+                <div class="animate-pulse flex flex-col gap-4">
+                    <div class="h-32 bg-card rounded-xl"></div>
+                    <div class="h-32 bg-card rounded-xl"></div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Section: Exams List (Hidden initially) -->
-      <div id="exams-view" class="hidden">
-        <div
-          class="flex justify-between items-center"
-          style="margin-bottom: 2rem"
-        >
-          <div>
-            <h1 id="subject-title">Subject Name</h1>
-            <p class="text-secondary" id="subject-code">CODE</p>
-          </div>
-          <div class="flex gap-2">
-            <!-- Filters could go here -->
-          </div>
-        </div>
+        <!-- Exams List (Hidden) -->
+        <div id="exams-view" class="hidden animate-fade-in">
+            <div class="flex justify-between items-start mb-8 bg-card/50 p-6 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <span id="subject-code-badge" class="px-2 py-0.5 rounded text-xs font-bold bg-blue-500/10 text-blue-400">CODE</span>
+                        <h2 id="subject-title" class="text-2xl font-bold text-white">Subject Name</h2>
+                    </div>
+                    <p class="text-secondary text-sm">Select an exam to start practicing.</p>
+                </div>
+                <div class="flex gap-2">
+                    <!-- Filters or Stats -->
+                </div>
+            </div>
 
-        <div class="flex flex-col gap-4" id="exams-container">
-          <!-- Exam rows injected here -->
+            <div id="exams-container" class="grid gap-4">
+                <!-- Exam Rows Injected Here -->
+            </div>
         </div>
-      </div>
     </div>
 
     <script type="module" src="js/index.js"></script>
-  </body>
+    <style>
+        .animate-fade-in { animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</body>
 </html>
