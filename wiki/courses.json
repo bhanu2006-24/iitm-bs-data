@@ -118,6 +118,12 @@
         "rating": 4,
         "text": "Easy S grade if careful.",
         "date": "Mar 2024"
+      },
+      {
+        "author": "Reviewer",
+        "rating": 3,
+        "text": "It's all about flowcharts and graph theory. The mock tests are exactly like the real exams. Easy S grade if you don't make silly mistakes.",
+        "date": "Jan 2025"
       }
     ],
     "gradeStats": {
@@ -202,6 +208,12 @@
         "rating": 5,
         "text": "Toughest foundation course.",
         "date": "Apr 2024"
+      },
+      {
+        "author": "Reviewer",
+        "rating": 5,
+        "text": "Do NOT skip week 5 and 6 vectors content. The End Term is 40% Eigenvalues. Practice solving 3x3 matrices by hand for speed.",
+        "date": "Jan 2025"
       }
     ],
     "gradeStats": {
@@ -244,6 +256,12 @@
         "rating": 4,
         "text": "Hypothesis testing is tricky.",
         "date": "May 2024"
+      },
+      {
+        "author": "Reviewer",
+        "rating": 5,
+        "text": "This is arguably the hardest foundation course. Hypothesis testing concepts are confusing. Watch external YouTube playlists (StatQuest) to survive.",
+        "date": "Jan 2025"
       }
     ],
     "gradeStats": {
@@ -285,6 +303,12 @@
         "rating": 5,
         "text": "OPPE requires speed.",
         "date": "Jun 2024"
+      },
+      {
+        "author": "Reviewer",
+        "rating": 4,
+        "text": "The theory is easy, but the OPPE is the real killer. You need to type code fast. Practice on Replit or the OPPE Dojo here every day.",
+        "date": "Jan 2025"
       }
     ],
     "gradeStats": {
@@ -752,7 +776,14 @@
       "Governance"
     ],
     "resources": [],
-    "reviews": [],
+    "reviews": [
+      {
+        "author": "Reviewer",
+        "rating": 4,
+        "text": "Very theoretical. Good for boosting CGPA. Just read the slides and you'll be fine.",
+        "date": "Jan 2025"
+      }
+    ],
     "gradeStats": {
       "s": 35,
       "a": 35,
