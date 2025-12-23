@@ -15,9 +15,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -40,9 +38,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -65,9 +61,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -90,9 +84,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -115,9 +107,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Stack"
-    ],
+    "tags": "Stack",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -140,9 +130,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -165,9 +153,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -190,9 +176,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -215,9 +199,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -240,9 +222,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Binary Search"
-    ],
+    "tags": "Binary Search",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -265,9 +245,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -290,9 +268,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -315,9 +291,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -340,9 +314,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -365,9 +337,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "DP"
-    ],
+    "tags": "DP",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -390,9 +360,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -415,9 +383,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -440,9 +406,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -465,9 +429,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -490,9 +452,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -515,9 +475,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -540,9 +498,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -565,9 +521,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -590,9 +544,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -615,9 +567,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -640,9 +590,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -665,9 +613,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -690,9 +636,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -715,9 +659,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -740,9 +682,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Bitwise"
-    ],
+    "tags": "Bitwise",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -765,9 +705,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -790,9 +728,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -815,9 +751,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -840,9 +774,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -865,9 +797,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -890,9 +820,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -915,9 +843,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -940,9 +866,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Bitwise"
-    ],
+    "tags": "Bitwise",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -965,9 +889,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Bitwise"
-    ],
+    "tags": "Bitwise",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -990,9 +912,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1015,9 +935,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1040,9 +958,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1065,9 +981,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1090,9 +1004,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1115,9 +1027,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1140,9 +1050,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Stack"
-    ],
+    "tags": "Stack",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1165,9 +1073,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1190,9 +1096,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1215,9 +1119,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Stack"
-    ],
+    "tags": "Stack",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1240,9 +1142,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1265,9 +1165,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1290,9 +1188,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Tree"
-    ],
+    "tags": "Tree",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1315,9 +1211,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1340,9 +1234,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1365,9 +1257,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1390,9 +1280,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1415,9 +1303,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1440,9 +1326,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1465,9 +1349,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1490,9 +1372,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1515,9 +1395,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1540,9 +1418,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1565,9 +1441,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1590,9 +1464,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1615,9 +1487,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1640,9 +1510,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1665,9 +1533,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1690,9 +1556,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1715,9 +1579,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1740,9 +1602,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1765,9 +1625,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1790,9 +1648,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Matrix"
-    ],
+    "tags": "Matrix",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1815,9 +1671,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1840,9 +1694,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1865,9 +1717,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "String"
-    ],
+    "tags": "String",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1890,9 +1740,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1915,9 +1763,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1940,9 +1786,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Matrix"
-    ],
+    "tags": "Matrix",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1965,9 +1809,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Hash"
-    ],
+    "tags": "Hash",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -1990,9 +1832,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Math"
-    ],
+    "tags": "Math",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2015,9 +1855,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2040,9 +1878,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Matrix"
-    ],
+    "tags": "Matrix",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2065,9 +1901,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2090,9 +1924,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2115,9 +1947,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Matrix"
-    ],
+    "tags": "Matrix",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2140,9 +1970,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2165,9 +1993,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "DP"
-    ],
+    "tags": "DP",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2190,9 +2016,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "DP"
-    ],
+    "tags": "DP",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2215,9 +2039,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "DP"
-    ],
+    "tags": "DP",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2240,9 +2062,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Stack"
-    ],
+    "tags": "Stack",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2265,9 +2085,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Matrix"
-    ],
+    "tags": "Matrix",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2290,9 +2108,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Binary Search"
-    ],
+    "tags": "Binary Search",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2315,9 +2131,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2340,9 +2154,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2365,9 +2177,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2390,9 +2200,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Backtracking"
-    ],
+    "tags": "Backtracking",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2415,9 +2223,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Array"
-    ],
+    "tags": "Array",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2440,9 +2246,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "Binary Search"
-    ],
+    "tags": "Binary Search",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2465,9 +2269,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",
@@ -2490,9 +2292,7 @@
     "solution": "pass",
     "subject": "JAVA",
     "language": "java",
-    "tags": [
-      "LinkedList"
-    ],
+    "tags": "LinkedList",
     "setupCode": "",
     "functionName": "",
     "hint": "",

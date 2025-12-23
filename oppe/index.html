@@ -208,6 +208,35 @@
                          <input v-model="currentQuestion.hint" class="input-base text-xs" placeholder="Provides a clue to the student...">
                     </div>
 
+                    <!-- Examples Edit -->
+                    <div>
+                         <div class="flex justify-between items-center mb-3">
+                             <label class="label">Examples (for Description)</label>
+                             <button @click="currentQuestion.examples.push({input:'', output:'', explanation:''})" class="text-xs px-2 py-1 bg-gray-800 hover:bg-white/10 rounded transition">+ Add Example</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div v-for="(ex, idx) in currentQuestion.examples" :key="idx" class="bg-[#111] p-3 rounded border border-gray-800 relative group transition hover:border-gray-600">
+                                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition z-10">
+                                    <button @click="currentQuestion.examples.splice(idx, 1)" class="text-xs text-gray-500 hover:text-red-500 bg-gray-900 border border-gray-700 px-1.5 py-0.5 rounded shadow"><i class="fa-solid fa-trash"></i></button>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2 mb-2">
+                                     <div>
+                                         <label class="text-[9px] text-gray-600 uppercase font-bold">Input</label>
+                                         <input v-model="ex.input" class="input-base text-xs font-mono bg-[#0a0a0a]">
+                                     </div>
+                                     <div>
+                                        <label class="text-[9px] text-gray-600 uppercase font-bold">Output</label>
+                                        <input v-model="ex.output" class="input-base text-xs font-mono bg-[#0a0a0a]">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="text-[9px] text-gray-600 uppercase font-bold">Explanation (Optional)</label>
+                                    <textarea v-model="ex.explanation" class="input-base h-10 text-xs bg-[#0a0a0a] resize-y"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Test Cases Edit -->
                     <div>
                         <div class="flex justify-between items-center mb-3">

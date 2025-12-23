@@ -1,4 +1,4 @@
-export async function executeCode(code, subject, setupCode = '') {
+export async function executeCode(code, subject, setupCode = '', footerCode = '') {
     let lang = 'python';
     let version = '3.10.0';
 
@@ -19,11 +19,8 @@ export async function executeCode(code, subject, setupCode = '') {
         [lang, version] = map[subject];
     }
 
-    // Combine setup code and user code
-    // For SQL, setup code creates tables, user code queries them.
-    // For Python, setup code might be helper functions.
-    // We strictly prepend setupCode.
-    const fullCode = setupCode ? `${setupCode}\n\n${code}` : code;
+    // Combine setup code, user code, and footer code
+    const fullCode = [setupCode, code, footerCode].filter(Boolean).join('\n\n');
 
     try {
         const response = await fetch('https://emkc.org/api/v2/piston/execute', {

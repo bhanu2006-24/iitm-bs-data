@@ -125,8 +125,49 @@ createApp({
             const code = this.editor.getValue();
             // Pass Setup Code if exists
             const setup = this.currentQuestion.setupCode || '';
+            let footer = '';
+
+            // Auto-generate Python Test Runner
+            if (this.selectedSubject === 'python' && this.currentQuestion.functionName && this.currentQuestion.testCases) {
+                footer += `\n\n# --- Test Runner (Auto Generated) ---\nprint("-" * 20)`;
+                this.currentQuestion.testCases.forEach((tc, idx) => {
+                     if (!tc.hidden) {
+                         const inputWithParens = tc.input.trim().startsWith('(') ? tc.input : `(${tc.input})`;
+                         footer += `\ntry:\n    print(f"Test ${idx+1}: Input: ${tc.input.replace(/"/g, "'")}")\n    print(f"Output: {${this.currentQuestion.functionName}(${tc.input})}")\nexcept Exception as e:\n    print(f"Error: {e}")\nprint("-" * 20)`;
+                     }
+                });
+            } else if (this.selectedSubject === 'java' && this.currentQuestion.functionName && this.currentQuestion.testCases && this.currentQuestion.starterCode.includes('class Solution')) {
+                 // Java Test Runner Wrapper
+                 // We need to wrap the Solution class and a Main class that calls it.
+                 // Piston runs the file. If we just append Main class, it works if Solution is non-public or separate.
+                 // We assume User types "class Solution { ... }"
+                 
+                 let runner = `\n\npublic class Main {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        System.out.println("--------------------");
+`;
+                 this.currentQuestion.testCases.forEach((tc, idx) => {
+                     if(!tc.hidden) {
+                         // Java input parsing is hard (arrays, strings). 
+                         // We will attempt minimal injection. 
+                         // LIMITATION: Users might need to parse args if inputs are complex objects.
+                         // But for LeetCode style "twoSum(int[], int)", we need valid Java syntax in input.
+                         // e.g. "new int[]{2,7,11,15}, 9"
+                         runner += `
+        try {
+            System.out.println("Test ${idx+1}: Input: ${tc.input.replace(/"/g, "\\\"")}");
+            System.out.println("Output: " + sol.${this.currentQuestion.functionName}(${tc.input}));
+        } catch(Exception e) { System.out.println("Error: " + e); }
+        System.out.println("--------------------");
+`;
+                     }
+                 });
+                 runner += "    }\n}";
+                 footer = runner;
+            }
             
-            const res = await executeCode(code, this.selectedSubject, setup);
+            const res = await executeCode(code, this.selectedSubject, setup, footer);
             
             this.consoleOutput = res.output.split('\n')
                 .map(l => ({ type: res.isError ? 'error' : 'normal', text: l }))
