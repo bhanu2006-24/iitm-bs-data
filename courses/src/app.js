@@ -1,3 +1,4 @@
+import { MarkdownUtils } from './utils.js';
 const { createApp } = Vue;
 
 createApp({
@@ -60,10 +61,27 @@ createApp({
                     
                     // Normalize Weeks Data
                     this.selectedCourse.weeks.forEach(w => {
-                        if(!w.practice) w.practice = [];
-                        if(!w.notes) w.notes = [];
-                        // Set defaults for notes
-                        w.notes.forEach(n => { if(!n.type) n.type = 'url'; });
+                        // Migration: Unified Content Model
+                        if (!w.content) {
+                            w.content = [];
+                            
+                            // Migrate Lectures
+                            if (w.lectures) {
+                                w.content.push(...w.lectures.map(l => ({ ...l, type: 'lecture', id: Date.now() + Math.random() })));
+                            }
+                            
+                            // Migrate Resources (Notes)
+                            if (w.notes) {
+                                w.content.push(...w.notes.map(n => ({ ...n, type: 'resource', resourceType: n.type || 'url', id: Date.now() + Math.random() })));
+                            }
+                            
+                            // Migrate Practice
+                            if (w.practice) {
+                                w.content.push(...w.practice.map(p => ({ ...p, type: 'quiz', id: Date.now() + Math.random() })));
+                            }
+
+                            // Sort by order if available? For now, append in sequence: Lectures -> Resources -> Practice is the old standard.
+                        }
                     });
 
                     if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].weekNum];
@@ -126,8 +144,7 @@ createApp({
 
         // Markdown Renderer
         renderMarkdown(text) {
-            if (!text) return '';
-            return marked.parse(text);
+             return MarkdownUtils.parse(text);
         },
 
         // Add a new Question to a specific Practice Item
