@@ -253,7 +253,7 @@
                     </div>
 
                     <!-- EDITOR MODE -->
-                    <div v-else class="max-w-6xl mx-auto p-8 pb-40">
+                    <div v-else-if="viewMode === 'edit'" class="max-w-6xl mx-auto p-8 pb-40">
                          
                          <!-- Meta Cards -->
                          <div class="grid grid-cols-12 gap-6 mb-8">
@@ -361,7 +361,7 @@
                                          <div class="w-px bg-[#333] my-1"></div>
                                          <button @click="collapseAllWeeks" class="px-3 py-1.5 text-[10px] text-gray-400 hover:text-white transition"><i class="fa-solid fa-compress mr-1"></i> Collapse</button>
                                      </div>
-                                     <button @click="selectedCourse.weeks.push({weekNum: selectedCourse.weeks.length+1, title: 'New Week', lectures: [], notes: []})" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-xs font-bold transition shadow-lg shadow-indigo-900/20">
+                                     <button @click="selectedCourse.weeks.push({weekNum: selectedCourse.weeks.length+1, title: 'New Week', content: []})" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-xs font-bold transition shadow-lg shadow-indigo-900/20">
                                          <i class="fa-solid fa-plus mr-1"></i> Add Week
                                      </button>
                                  </div>
@@ -380,13 +380,14 @@
                                          <div class="flex-1">
                                              <input v-model="week.title" @click.stop class="bg-transparent text-sm font-medium text-white focus:outline-none w-full placeholder-gray-700 py-1 border-b border-transparent focus:border-indigo-500/50 transition-colors" placeholder="Week Title (e.g. Introduction to Vectors)">
                                              <div class="flex gap-4 text-[10px] text-gray-500 mt-1">
-                                                 <span class="flex items-center gap-1"><i class="fa-solid fa-video"></i> {{ week.lectures.length }} Lectures</span>
-                                                 <span class="flex items-center gap-1"><i class="fa-solid fa-file"></i> {{ week.notes.length }} Resources</span>
+                                                 <span class="flex items-center gap-1"><i class="fa-solid fa-video"></i> {{ week.content ? week.content.filter(x => x.type === 'lecture').length : 0 }} Lectures</span>
+                                                 <span class="flex items-center gap-1"><i class="fa-solid fa-file"></i> {{ week.content ? week.content.filter(x => x.type === 'resource').length : 0 }} Resources</span>
+                                                 <span class="flex items-center gap-1"><i class="fa-solid fa-list-check"></i> {{ week.content ? week.content.filter(x => x.type === 'quiz').length : 0 }} Quizzes</span>
                                              </div>
                                          </div>
 
                                          <div class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                                             <button @click.stop="week.lectures.push({title:'', duration:'', youtubeId:''}); if(!editOpenWeeks.includes(idx)) toggleEditWeek(idx)" class="w-8 h-8 flex items-center justify-center rounded bg-[#111] hover:bg-indigo-600 hover:text-white text-gray-500 transition" title="Quick Add Lecture"><i class="fa-solid fa-video"></i></button>
+                                             <button @click.stop="week.content.push({type:'lecture', title:'New Lecture', duration:'10:00', youtubeId:'', id: Date.now()}); if(!editOpenWeeks.includes(idx)) toggleEditWeek(idx)" class="w-8 h-8 flex items-center justify-center rounded bg-[#111] hover:bg-indigo-600 hover:text-white text-gray-500 transition" title="Quick Add Lecture"><i class="fa-solid fa-video"></i></button>
                                              <button @click.stop="deleteItem(selectedCourse.weeks, idx, 'Week')" class="w-8 h-8 flex items-center justify-center rounded bg-[#111] hover:bg-red-900/50 hover:text-red-400 text-gray-500 transition"><i class="fa-solid fa-trash"></i></button>
                                              <i :class="['fa-solid text-gray-600 ml-2 transition-transform duration-300', editOpenWeeks.includes(idx) ? 'fa-chevron-up rotate-180' : 'fa-chevron-down']"></i>
                                          </div>
@@ -562,10 +563,11 @@
 
         <!-- Video Preview Modal -->
         <div v-if="videoPreviewId" class="fixed inset-0 z-50 flex items-center justify-center p-8 bg-black/90 backdrop-blur-sm" @click.self="closeVideo">
-            <div class="bg-[#111] w-full max-w-7xl aspect-video rounded-2xl overflow-hidden shadow-2xl relative border border-[#333]">
-                <button @click="closeVideo" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/50 hover:bg-white hover:text-black text-white flex items-center justify-center transition z-10">
+            <div class="bg-[#111] w-[95vw] h-[85vh] rounded-2xl overflow-hidden shadow-2xl relative border border-[#333] flex flex-col">
+                <button @click="closeVideo" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 hover:bg-white hover:text-black text-white flex items-center justify-center transition z-50 text-lg">
                     <i class="fa-solid fa-times"></i>
                 </button>
+                <div class="flex-1 w-full h-full relative">
                 <iframe 
                     class="w-full h-full" 
                     :src="`https://www.youtube.com/embed/${videoPreviewId}?autoplay=1&rel=0`" 
@@ -573,6 +575,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
+                </div>
             </div>
         </div>
 

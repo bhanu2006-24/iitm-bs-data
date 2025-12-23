@@ -17,214 +17,142 @@
     {
       "weekNum": 1,
       "title": "Set Theory & Relations",
-      "lectures": [
+      "content": [
         {
+          "type": "resource",
+          "resourceType": "url",
+          "title": "Complete Course Playlist (YouTube)",
+          "url": "https://www.youtube.com/playlist?list=PLZ2ps__7DhBb1AyRNidKBrk_N5eTpVQRA",
+          "id": 1672531200000
+        },
+        {
+          "type": "lecture",
           "title": "Number System",
-          "duration": "10:00"
+          "duration": "10:00",
+          "youtubeId": "",
+          "id": 1672531200001
         },
         {
+          "type": "lecture",
           "title": "Sets and operations",
-          "duration": "15:00"
+          "duration": "15:00",
+          "youtubeId": "",
+          "id": 1672531200002
         },
         {
+          "type": "lecture",
           "title": "Relations and Functions",
-          "duration": "20:00"
+          "duration": "20:00",
+          "youtubeId": "",
+          "id": 1672531200003
         }
       ],
+      "lectures": [],
       "notes": [],
       "practice": []
     },
     {
       "weekNum": 2,
       "title": "Coordinate Geometry & Lines",
-      "lectures": [
-        {
-          "title": "Rectangular coordinate system",
-          "duration": "12:00"
-        },
-        {
-          "title": "Slope and Equations of Lines",
-          "duration": "18:00"
-        },
-        {
-          "title": "Parallel and Perpendicular lines",
-          "duration": "15:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Rectangular coordinate system", "duration": "12:00", "youtubeId": "", "id": 1672531200004 },
+        { "type": "lecture", "title": "Slope and Equations of Lines", "duration": "18:00", "youtubeId": "", "id": 1672531200005 },
+        { "type": "lecture", "title": "Parallel and Perpendicular lines", "duration": "15:00", "youtubeId": "", "id": 1672531200006 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 3,
       "title": "Quadratic Functions",
-      "lectures": [
-        {
-          "title": "Quadratic functions basics",
-          "duration": "15:00"
-        },
-        {
-          "title": "Minima, Maxima, Vertex",
-          "duration": "20:00"
-        },
-        {
-          "title": "Quadratic Equations",
-          "duration": "15:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Quadratic functions basics", "duration": "15:00", "youtubeId": "", "id": 1672531200007 },
+        { "type": "lecture", "title": "Minima, Maxima, Vertex", "duration": "20:00", "youtubeId": "", "id": 1672531200008 },
+        { "type": "lecture", "title": "Quadratic Equations", "duration": "15:00", "youtubeId": "", "id": 1672531200009 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 4,
       "title": "Polynomials",
-      "lectures": [
-        {
-          "title": "Algebra of Polynomials",
-          "duration": "20:00"
-        },
-        {
-          "title": "Graphs of Polynomials",
-          "duration": "25:00"
-        },
-        {
-          "title": "X-intercepts and turning points",
-          "duration": "15:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Algebra of Polynomials", "duration": "20:00", "youtubeId": "", "id": 1672531200010 },
+        { "type": "lecture", "title": "Graphs of Polynomials", "duration": "25:00", "youtubeId": "", "id": 1672531200011 },
+        { "type": "lecture", "title": "X-intercepts and turning points", "duration": "15:00", "youtubeId": "", "id": 1672531200012 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 5,
       "title": "Functions & Graphs",
-      "lectures": [
-        {
-          "title": "Horizontal/Vertical Line Tests",
-          "duration": "10:00"
-        },
-        {
-          "title": "Graphing Functions",
-          "duration": "20:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Horizontal/Vertical Line Tests", "duration": "10:00", "youtubeId": "", "id": 1672531200013 },
+        { "type": "lecture", "title": "Graphing Functions", "duration": "20:00", "youtubeId": "", "id": 1672531200014 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 6,
       "title": "Exponential Functions",
-      "lectures": [
-        {
-          "title": "Exponents Review",
-          "duration": "15:00"
-        },
-        {
-          "title": "Exponential Growth & Decay",
-          "duration": "20:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Exponents Review", "duration": "15:00", "youtubeId": "", "id": 1672531200015 },
+        { "type": "lecture", "title": "Exponential Growth & Decay", "duration": "20:00", "youtubeId": "", "id": 1672531200016 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 7,
       "title": "Logarithms",
-      "lectures": [
-        {
-          "title": "Logarithm Definition",
-          "duration": "15:00"
-        },
-        {
-          "title": "Properties of Logs",
-          "duration": "18:00"
-        },
-        {
-          "title": "Logarithmic Functions",
-          "duration": "20:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Logarithm Definition", "duration": "15:00", "youtubeId": "", "id": 1672531200017 },
+        { "type": "lecture", "title": "Properties of Logs", "duration": "18:00", "youtubeId": "", "id": 1672531200018 },
+        { "type": "lecture", "title": "Logarithmic Functions", "duration": "20:00", "youtubeId": "", "id": 1672531200019 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 8,
       "title": "Inverse Functions",
-      "lectures": [
-        {
-          "title": "One-to-one functions",
-          "duration": "12:00"
-        },
-        {
-          "title": "Finding Inverses",
-          "duration": "20:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "One-to-one functions", "duration": "12:00", "youtubeId": "", "id": 1672531200020 },
+        { "type": "lecture", "title": "Finding Inverses", "duration": "20:00", "youtubeId": "", "id": 1672531200021 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 9,
       "title": "Introduction to Calculus",
-      "lectures": [
-        {
-          "title": "Limits Concept",
-          "duration": "20:00"
-        },
-        {
-          "title": "Continuity",
-          "duration": "15:00"
-        }
+      "content": [
+         { "type": "lecture", "title": "Limits Concept", "duration": "20:00", "youtubeId": "", "id": 1672531200022 },
+         { "type": "lecture", "title": "Continuity", "duration": "15:00", "youtubeId": "", "id": 1672531200023 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 10,
       "title": "Discrete Math: Basics",
-      "lectures": [
-        {
-          "title": "Intro to Combinatorics",
-          "duration": "15:00"
-        },
-        {
-          "title": "Permutations",
-          "duration": "18:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Intro to Combinatorics", "duration": "15:00", "youtubeId": "", "id": 1672531200024 },
+        { "type": "lecture", "title": "Permutations", "duration": "18:00", "youtubeId": "", "id": 1672531200025 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 11,
       "title": "Combinations",
-      "lectures": [
-        {
-          "title": "Combinations Formula",
-          "duration": "15:00"
-        },
-        {
-          "title": "Real world counting problems",
-          "duration": "25:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Combinations Formula", "duration": "15:00", "youtubeId": "", "id": 1672531200026 },
+        { "type": "lecture", "title": "Real world counting problems", "duration": "25:00", "youtubeId": "", "id": 1672531200027 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     },
     {
       "weekNum": 12,
       "title": "Graph Theory Intro",
-      "lectures": [
-        {
-          "title": "Nodes and Edges",
-          "duration": "15:00"
-        },
-        {
-          "title": "Types of Graphs",
-          "duration": "20:00"
-        }
+      "content": [
+        { "type": "lecture", "title": "Nodes and Edges", "duration": "15:00", "youtubeId": "", "id": 1672531200028 },
+        { "type": "lecture", "title": "Types of Graphs", "duration": "20:00", "youtubeId": "", "id": 1672531200029 }
       ],
-      "notes": [],
-      "practice": []
+       "lectures": [], "notes": [], "practice": []
     }
   ]
 }
