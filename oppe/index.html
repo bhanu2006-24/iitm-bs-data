@@ -16,29 +16,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/shell/shell.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
         .glass { background: #111; border-right: 1px solid #333; }
         .editor-container .CodeMirror { height: 100%; font-family: 'JetBrains Mono', monospace; font-size: 14px; background: #0a0a0a; }
-        .split-grid { display: grid; grid-template-columns: 280px 1fr 1fr; height: 100vh; }
+        .split-grid { display: grid; grid-template-columns: 280px 1fr 1fr; height: 100vh; transition: 0.3s; }
+        .split-grid-admin { grid-template-columns: 280px 1fr; } 
         .scroll-smooth::-webkit-scrollbar { width: 6px; }
         .scroll-smooth::-webkit-scrollbar-track { background: #111; }
         .scroll-smooth::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+        .input-base { background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; padding: 0.5rem; width: 100%; outline: none; }
+        .input-base:focus { border-color: #6366f1; }
     </style>
 </head>
 <body class="overflow-hidden">
 
-    <div id="app" class="split-grid">
+    <div id="app" class="split-grid" :class="{'split-grid-admin': isAdminMode}">
         
         <!-- Sidebar: Questions -->
         <div class="glass flex flex-col h-full border-r border-gray-800">
             <div class="p-4 border-b border-gray-800">
-                <h1 class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent flex items-center gap-2">
-                    <span class="text-2xl">&lt;/&gt;</span> Dojo
-                </h1>
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent flex items-center gap-2">
+                        <span class="text-2xl">&lt;/&gt;</span> Dojo
+                    </h1>
+                    <button @click="toggleAdmin" class="text-xs px-2 py-1 rounded bg-gray-800 hover:bg-gray-700 transition" :class="{'text-indigo-400 border border-indigo-500/50': isAdminMode}">
+                        {{ isAdminMode ? 'Editor Mode' : 'Practice' }}
+                    </button>
+                </div>
                 
                 <!-- Subject Selector -->
-                <div class="mt-4">
+                <div>
                      <select v-model="selectedSubject" @change="loadSubject" class="w-full bg-[#1a1a1a] border border-gray-800 rounded px-3 py-2 text-sm text-gray-300 outline-none">
                         <option value="python">Python</option>
                         <option value="java">Java</option>
@@ -54,8 +63,11 @@
                 </div>
             </div>
             
-            <div class="p-3">
-                <input v-model="searchQuery" type="text" placeholder="Search questions..." class="w-full bg-[#1a1a1a] border border-gray-800 rounded px-3 py-2 text-sm text-gray-300 focus:border-blue-500 outline-none">
+            <div class="p-3 flex gap-2">
+                <input v-model="searchQuery" type="text" placeholder="Search..." class="w-full bg-[#1a1a1a] border border-gray-800 rounded px-3 py-2 text-sm text-gray-300 focus:border-blue-500 outline-none">
+                <button v-if="isAdminMode" @click="addNewQuestion" class="px-3 py-2 bg-indigo-600 hover:bg-indigo-500 rounded text-white" title="Add Question">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
             </div>
 
             <div class="flex-1 overflow-y-auto scroll-smooth p-2 space-y-1">
@@ -75,8 +87,8 @@
             </div>
         </div>
 
-        <!-- Middle: Problem Statement -->
-        <div class="flex flex-col h-full border-r border-gray-800 bg-[#0a0a0a] overflow-y-auto scroll-smooth relative">
+        <!-- Middle: Problem Statement OR Editor Form -->
+        <div v-if="!isAdminMode" class="flex flex-col h-full border-r border-gray-800 bg-[#0a0a0a] overflow-y-auto scroll-smooth relative">
             <div v-if="currentQuestion" class="p-8">
                 <div class="flex justify-between items-start mb-6">
                     <div>
@@ -91,9 +103,9 @@
                 <div class="prose prose-invert prose-sm max-w-none text-gray-300">
                     <p class="whitespace-pre-line leading-relaxed">{{ currentQuestion.description }}</p>
                     
-                    <div v-if="currentQuestion.testCases || currentQuestion.examples">
-                        <h4 class="text-gray-400 font-bold mt-6 mb-3 uppercase text-xs tracking-wider">Example Cases</h4>
-                        <div v-for="(ex, idx) in (currentQuestion.testCases || currentQuestion.examples).slice(0,3)" :key="idx" class="bg-[#151515] border border-gray-800 rounded-lg p-4 mb-4 font-mono text-sm">
+                     <div v-if="currentQuestion.testCases && currentQuestion.testCases.length">
+                        <h4 class="text-gray-400 font-bold mt-6 mb-3 uppercase text-xs tracking-wider">Test Cases</h4>
+                        <div v-for="(ex, idx) in currentQuestion.testCases.slice(0,3)" :key="idx" class="bg-[#151515] border border-gray-800 rounded-lg p-4 mb-4 font-mono text-sm">
                             <div class="mb-2"><span class="text-gray-500">Input:</span> <span class="text-yellow-500">{{ ex.input }}</span></div>
                             <div><span class="text-gray-500">Output:</span> <span class="text-emerald-500">{{ ex.output }}</span></div>
                         </div>
@@ -103,8 +115,70 @@
             <div v-else class="flex items-center justify-center h-full text-gray-600">Select a question to start</div>
         </div>
 
-        <!-- Right: Editor & Console -->
-        <div class="flex flex-col h-full bg-[#0a0a0a]">
+        <!-- ADMIN EDITOR MODE MIDDLE PANE -->
+        <div v-else class="flex flex-col h-full bg-[#0a0a0a] border-r border-gray-800 overflow-y-auto p-8">
+            <div v-if="currentQuestion">
+                <h2 class="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">Editing Question</h2>
+                
+                <div class="space-y-6 max-w-3xl">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Title</label>
+                            <input v-model="currentQuestion.title" class="input-base">
+                        </div>
+                         <div>
+                            <label class="block text-xs text-gray-500 mb-1">Difficulty</label>
+                             <select v-model="currentQuestion.difficulty" class="input-base">
+                                 <option>Easy</option>
+                                 <option>Medium</option>
+                                 <option>Hard</option>
+                             </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Description (Markdown Supported)</label>
+                        <textarea v-model="currentQuestion.description" class="input-base h-40 font-mono text-sm"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                             <label class="block text-xs text-gray-500">Starter Code</label>
+                             <span class="text-[10px] text-gray-600">Displays in user editor initially</span>
+                        </div>
+                        <textarea v-model="currentQuestion.starterCode" class="input-base h-32 font-mono text-sm bg-[#111] text-gray-300"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                             <label class="block text-xs text-gray-500">Test Cases</label>
+                             <button @click="addTestCase" class="text-indigo-400 text-xs">+ Add Case</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div v-for="(tc, idx) in currentQuestion.testCases" :key="idx" class="flex gap-3 items-start bg-[#151515] p-3 rounded border border-gray-800">
+                                <span class="text-gray-500 text-xs pt-2">#{{ idx+1 }}</span>
+                                <div class="flex-1 space-y-2">
+                                    <textarea v-model="tc.input" placeholder="Input" class="input-base h-16 text-xs font-mono"></textarea>
+                                    <textarea v-model="tc.output" placeholder="Output" class="input-base h-16 text-xs font-mono"></textarea>
+                                </div>
+                                <button @click="currentQuestion.testCases.splice(idx, 1)" class="text-gray-600 hover:text-red-500"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6 flex gap-4">
+                        <button @click="saveQuestions" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded font-bold shadow-lg shadow-indigo-500/20">Save All Changes</button>
+                        <button @click="deleteQuestion" class="px-6 py-2 text-red-500 hover:text-red-400">Delete Question</button>
+                    </div>
+
+                </div>
+            </div>
+            <div v-else class="flex items-center justify-center h-full text-gray-600">Select or create a question to edit</div>
+        </div>
+
+        <!-- Right: Editor & Console (Hidden in Admin Mode or reused?) -->
+        <!-- Logic: In Admin Mode, right pane could be hidden or used for preview. Let's hide it to give more space to form. -->
+        <div v-if="!isAdminMode" class="flex flex-col h-full bg-[#0a0a0a] border-l border-gray-800">
             <!-- Toolbar -->
             <div class="flex justify-between items-center p-2 border-b border-gray-800 bg-[#111]">
                 <div class="flex gap-2 text-xs text-gray-500">
@@ -120,7 +194,7 @@
                         <span v-if="!isRunning">▶ Run Code</span>
                         <span v-else>Running...</span>
                     </button>
-                     <button @click="saveQuestions" class="px-4 py-1.5 bg-gray-700 hover:bg-gray-600 text-white text-xs rounded transition" title="Save Progress Locally">Save</button>
+                    <button @click="saveQuestions" class="px-4 py-1.5 bg-gray-700 hover:bg-gray-600 text-white text-xs rounded transition" title="Save Progress Locally">Save</button>
                 </div>
             </div>
 
@@ -160,7 +234,8 @@
                     consoleOutput: [],
                     isRunning: false,
                     fontSize: '14px',
-                    loading: false
+                    loading: false,
+                    isAdminMode: false
                 }
             },
             computed: {
@@ -173,18 +248,32 @@
                 this.loadSubject(); // Load initial
             },
             methods: {
+                toggleAdmin() {
+                    this.isAdminMode = !this.isAdminMode;
+                    // Force Layout Refresh if needed
+                },
                 initEditor() {
-                    this.editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
-                        mode: 'python',
-                        theme: 'dracula',
-                        lineNumbers: true,
-                        autoCloseBrackets: true,
-                        indentUnit: 4,
-                        tabSize: 4,
-                        scrollbarStyle: "null"
-                    });
-                    this.editor.on('change', () => {
-                         if(this.currentQuestion) this.currentQuestion.userCode = this.editor.getValue(); 
+                    if(this.editor) return; // Already init
+                    // Ideally we only init editor if !isAdminMode, but toggling complicates it. 
+                    // Let's keep it running but hidden when in admin mode (since v-if removes it from DOM, we need to handle that)
+                    // Actually with v-if, the element is gone. We need check.
+                    
+                    this.$nextTick(() => {
+                        const el = document.getElementById('code-editor');
+                        if(el && !this.editor) {
+                             this.editor = CodeMirror.fromTextArea(el, {
+                                mode: 'python',
+                                theme: 'dracula',
+                                lineNumbers: true,
+                                autoCloseBrackets: true,
+                                indentUnit: 4,
+                                tabSize: 4,
+                                scrollbarStyle: "null"
+                            });
+                            this.editor.on('change', () => {
+                                 if(this.currentQuestion) this.currentQuestion.userCode = this.editor.getValue(); 
+                            });
+                        }
                     });
                 },
                 getFileName() {
@@ -192,6 +281,7 @@
                     return `main.${extMap[this.selectedSubject] || 'txt'}`;
                 },
                 setEditorMode() {
+                    if(!this.editor) return;
                     const modeMap = { 
                         'python': 'python', 'pdsa': 'python', 'mlp': 'python',
                         'java': 'text/x-java', 'sql': 'text/x-sql', 'system_commands': 'shell'
@@ -200,30 +290,35 @@
                 },
                 async loadSubject() {
                     this.loading = true;
+                    // Save changes to currentSubject before switching? (Too complex for now)
+                    
                     this.questions = [];
                     this.currentQuestion = null;
-                    this.setEditorMode();
+                    if(this.editor) this.setEditorMode();
                     
                     try {
                         const res = await fetch(`./${this.selectedSubject}.json`);
                         if(res.ok) {
                             this.questions = await res.json();
                             if(this.questions.length > 0) this.loadQuestion(this.questions[0]);
-                            else this.editor.setValue("# No questions found in this file.");
-                        } else {
-                            throw new Error("File not found");
+                            else if(this.editor) this.editor.setValue("# No questions found.");
                         }
-                    } catch(e) {
-                         console.error(e);
-                         this.consoleOutput = [{type:'error', text:`Failed to load ${this.selectedSubject}.json. Make sure the file exists.`}];
-                    } finally {
-                        this.loading = false;
-                    }
+                    } catch(e) { console.error(e); } 
+                    finally { this.loading = false; }
                 },
                 loadQuestion(q) {
                     this.currentQuestion = q;
-                    const code = q.userCode || q.starterCode || '';
-                    this.editor.setValue(code);
+                    if(!this.isAdminMode) {
+                        // Ensure editor exists
+                        this.$nextTick(() => {
+                             if(!this.editor) this.initEditor();
+                             if(this.editor) {
+                                 const code = q.userCode || q.starterCode || '';
+                                 this.editor.setValue(code);
+                                 setTimeout(() => this.editor.refresh(), 100);
+                             }
+                        });
+                    }
                 },
                 getStatusColor(status) {
                     if (status === 'passed') return 'bg-green-500';
@@ -239,7 +334,6 @@
                     let lang = 'python';
                     let version = '3.10.0';
 
-                    // Language Mapping for Piston
                     if(this.selectedSubject === 'java') { lang = 'java'; version = '15.0.2'; }
                     else if(this.selectedSubject === 'system_commands') { lang = 'bash'; version = '5.0.0'; }
                     else if(this.selectedSubject === 'sql') { lang = 'sqlite3'; version = '3.36.0'; }
@@ -268,14 +362,61 @@
                         this.isRunning = false;
                     }
                 },
+                
+                // Admin Ops
+                addNewQuestion() {
+                    const newQ = {
+                        id: Date.now().toString(),
+                        title: 'New Question',
+                        description: 'Enter problem description here.',
+                        difficulty: 'Easy',
+                        starterCode: '# Write your code here',
+                        testCases: [{input: '', output: ''}],
+                        status: 'pending'
+                    };
+                    this.questions.push(newQ);
+                    this.currentQuestion = newQ;
+                    if(!this.isAdminMode) this.toggleAdmin(); // Auto switch to edit
+                },
+                addTestCase() {
+                    if(!this.currentQuestion.testCases) this.currentQuestion.testCases = [];
+                    this.currentQuestion.testCases.push({input: '', output: ''});
+                },
+                deleteQuestion() {
+                   if(confirm("Delete this question?")) {
+                       this.questions = this.questions.filter(q => q.id !== this.currentQuestion.id);
+                       this.currentQuestion = null;
+                   }
+                },
                 async saveQuestions() {
                      try {
-                        const h = await window.showSaveFilePicker({ suggestedName: `${this.selectedSubject}.json` });
-                        const w = await h.createWritable();
-                        await w.write(JSON.stringify(this.questions, null, 2));
-                        await w.close();
-                        alert("File saved!");
+                        if (window.showSaveFilePicker) {
+                            const h = await window.showSaveFilePicker({ suggestedName: `${this.selectedSubject}.json` });
+                            const w = await h.createWritable();
+                            await w.write(JSON.stringify(this.questions, null, 2));
+                            await w.close();
+                            alert("File saved!");
+                        } else {
+                            // Fallback
+                            const blob = new Blob([JSON.stringify(this.questions, null, 2)], {type: 'application/json'});
+                            const a = document.createElement('a');
+                            a.href = URL.createObjectURL(blob);
+                            a.download = `${this.selectedSubject}.json`;
+                            a.click();
+                        }
                     } catch (e) { alert("Could not save file."); }
+                },
+                // Watch logic to re-init editor when switching back from admin
+            },
+            watch: {
+                isAdminMode(newVal) {
+                    if(!newVal) {
+                         // Switched back to Practice Mode, re-render Editor
+                         this.editor = null; // force re-init
+                         this.$nextTick(() => {
+                             this.loadQuestion(this.currentQuestion);
+                         });
+                    }
                 }
             }
         }).mount('#app');

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenZ | Grade Engine</title>
+    <title>GenZ | Grade Engine & Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
         .glass { background: #111; border: 1px solid #222; }
@@ -17,6 +18,9 @@
         
         .score-box { background: #0f0f0f; border: 1px solid #222; border-radius: 8px; transition: 0.2s; }
         .score-box:focus-within { border-color: #6366f1; background: #151515; }
+        
+        .input-base { background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 0.375rem; width: 100%; outline: none; transition: 0.2s; padding: 0.5rem; font-size: 0.875rem; }
+        .input-base:focus { border-color: #6366f1; }
     </style>
 </head>
 <body class="min-h-screen p-4 md:p-8 relative">
@@ -26,10 +30,10 @@
         <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
             <div>
                 <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Grade Engine</h1>
-                <p class="text-gray-400 text-sm mt-1">Real-time CGPA Predictor - Sep 2025 Term</p>
+                <p class="text-gray-400 text-sm mt-1">Real-time CGPA Predictor & Course Manager</p>
             </div>
-            <div class="w-full md:w-auto">
-                 <select v-model="selectedCourseId" @change="loadCourse" class="bg-[#1a1a1a] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-300 outline-none w-full md:w-80 shadow-lg">
+            <div class="flex gap-3 w-full md:w-auto">
+                 <select v-model="selectedCourseId" @change="loadCourse" class="bg-[#1a1a1a] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-300 outline-none w-full md:w-64 shadow-lg">
                     <optgroup label="Foundation">
                         <option v-for="c in courses.filter(x=>x.level==='Foundation')" :key="c.id" :value="c.id">{{ c.subject }}</option>
                     </optgroup>
@@ -40,6 +44,16 @@
                         <option v-for="c in courses.filter(x=>x.level==='Degree')" :key="c.id" :value="c.id">{{ c.subject }}</option>
                     </optgroup>
                 </select>
+                
+                <button @click="openEditModal" class="bg-gray-800 hover:bg-gray-700 text-white rounded-lg px-3 py-2 border border-gray-700 transition" title="Edit Course Config">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                 <button @click="openAddModal" class="bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg px-3 py-2 transition shadow-lg shadow-indigo-500/20" title="Add New Course">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button @click="saveFile" class="bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg px-3 py-2 transition shadow-lg shadow-indigo-500/20" title="Save All Changes">
+                    <i class="fa-solid fa-save"></i>
+                </button>
             </div>
         </header>
 
@@ -133,6 +147,80 @@
             </div>
 
         </div>
+
+        <!-- Edit Modal -->
+        <div v-if="editingCourse" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
+            <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl">
+                <!-- Modal Header -->
+                <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-[#0d0d0d]">
+                    <h2 class="text-xl font-bold text-white">{{ isNew ? 'Create New Grading Schema' : 'Edit Grading Schema' }}</h2>
+                    <div class="flex gap-2">
+                        <button @click="deleteCourse" v-if="!isNew" class="text-red-500 hover:text-red-400 px-3 py-1 text-sm font-medium">Delete</button>
+                        <button @click="editingCourse = null" class="text-gray-400 hover:text-white px-3 py-1 text-sm font-medium">Cancel</button>
+                        <button @click="saveCourse" class="bg-indigo-600 hover:bg-indigo-500 text-white rounded px-4 py-2 text-sm font-bold shadow-lg shadow-indigo-500/20">Save Schema</button>
+                    </div>
+                </div>
+
+                <!-- Modal Content -->
+                <div class="flex-1 overflow-y-auto p-8 bg-[#0a0a0a]">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-500 mb-2">Subject Name</label>
+                            <input v-model="editingCourse.subject" class="input-base" placeholder="e.g. Mathematics II">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-500 mb-2">Course Level</label>
+                            <select v-model="editingCourse.level" class="input-base">
+                                <option>Foundation</option>
+                                <option>Diploma</option>
+                                <option>Degree</option>
+                            </select>
+                        </div>
+                         <div>
+                            <label class="block text-xs font-medium text-gray-500 mb-2">Unique ID (e.g. ma2)</label>
+                            <input v-model="editingCourse.id" class="input-base" :disabled="!isNew">
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest">Grading Components (Inputs)</h3>
+                            <button @click="addInput" class="text-indigo-400 hover:text-indigo-300 text-xs font-bold">+ Add Component</button>
+                        </div>
+                        <div class="space-y-3">
+                            <div v-for="(inp, idx) in editingCourse.inputs" :key="idx" class="flex gap-3 bg-[#151515] p-3 rounded-lg border border-gray-800 items-start">
+                                <div class="w-24">
+                                     <label class="text-[10px] text-gray-600 block mb-1">ID (Variable)</label>
+                                     <input v-model="inp.id" class="input-base p-1 text-xs font-mono" placeholder="GA">
+                                </div>
+                                <div class="flex-1">
+                                     <label class="text-[10px] text-gray-600 block mb-1">Display Label</label>
+                                     <input v-model="inp.label" class="input-base p-1 text-xs" placeholder="Graded Assignments">
+                                </div>
+                                <div class="w-20">
+                                     <label class="text-[10px] text-gray-600 block mb-1">Max Score</label>
+                                     <input v-model.number="inp.max" type="number" class="input-base p-1 text-xs">
+                                </div>
+                                <div class="w-20">
+                                     <label class="text-[10px] text-gray-600 block mb-1">Weight</label>
+                                     <input v-model.number="inp.weight" type="number" step="0.01" class="input-base p-1 text-xs">
+                                </div>
+                                <button @click="editingCourse.inputs.splice(idx, 1)" class="text-gray-600 hover:text-red-500 p-2 mt-4"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                         <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Calculation Formula (JS Expression)</h3>
+                         <p class="text-xs text-gray-600 mb-2">Use the IDs defined above as variables. Example: <code class="bg-[#1a1a1a] px-1 rounded text-gray-400">0.1*GA + 0.3*Q1 + 0.6*F</code></p>
+                         <textarea v-model="editingCourse.formula" class="input-base h-24 font-mono text-sm leading-relaxed" placeholder="Enter JavaScript Formula..."></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
@@ -144,7 +232,9 @@
                     courses: [],
                     selectedCourseId: null,
                     currentCourse: null,
-                    scores: {} // Dynamic object { ID: value }
+                    scores: {}, // Dynamic object { ID: value }
+                    editingCourse: null, // For modal
+                    isNew: false
                 }
             },
             computed: {
@@ -161,17 +251,12 @@
                     // 2. Evaluate Formula
                     let T = 0;
                     try {
-                        // Safe evaluation: create function with keys as args
                         const keys = Object.keys(context);
                         const values = Object.values(context);
-                        // Using Function constructor to parse valid JS math expression
-                        // We must interpret Math directly or destructure it? 
-                        // Actually new Function runs in global scope usually, so Math is available.
-                        // But local vars aren't. We pass them as args.
                         const calcFn = new Function(...keys, `return ${this.currentCourse.formula}`);
                         T = calcFn(...values);
                     } catch(e) {
-                         console.error("Formula Error", e);
+                         // console.error("Formula Error", e);
                          T = 0;
                     }
 
@@ -183,9 +268,7 @@
                     let hasEndTermCheck = false;
                     if(finalExam) {
                          const fScore = context['F'] || 0;
-                         // Check if F < 40/100 equivalent
-                         // Use finalExam.max to normalize
-                         const ratio = fScore / finalExam.max;
+                         const ratio = fScore / (finalExam.max || 100);
                          if(ratio < 0.4) hasEndTermCheck = true;
                     }
                     
@@ -194,7 +277,6 @@
 
                     // 5. Grade
                     let grade = 'U';
-                    // Note: SEP 2025 doc mostly says S, A, B, C, D, E, U.
                     if(!pass) grade = 'U';
                     else if(T >= 90) grade = 'S';
                     else if(T >= 80) grade = 'A';
@@ -225,8 +307,7 @@
                     try {
                         const res = await fetch('./data.json');
                         this.courses = await res.json();
-                        if(this.courses.length > 0) {
-                            // Default to first foundation course
+                        if(this.courses.length > 0 && !this.selectedCourseId) {
                             this.selectedCourseId = this.courses[0].id;
                             this.loadCourse();
                         }
@@ -235,19 +316,93 @@
                 loadCourse() {
                     this.currentCourse = this.courses.find(c => c.id === this.selectedCourseId);
                     this.scores = {};
-                    this.currentCourse.inputs.forEach(inp => {
-                        // Smart defaults
-                        if(inp.id.startsWith('Bonus')) this.scores[inp.id] = 0;
-                        else if(inp.id === 'F' || inp.id.includes('Qz') || inp.id.includes('OP')) this.scores[inp.id] = Math.floor(inp.max * 0.7);
-                        else this.scores[inp.id] = inp.max; // Full score for assignments default
-                    });
+                    if(this.currentCourse) {
+                        this.currentCourse.inputs.forEach(inp => {
+                            if(inp.id.startsWith('Bonus')) this.scores[inp.id] = 0;
+                            else if(inp.id === 'F' || inp.id.includes('Qz') || inp.id.includes('OP')) this.scores[inp.id] = Math.floor(inp.max * 0.7);
+                            else this.scores[inp.id] = inp.max;
+                        });
+                    }
                 },
                 resetScores() {
                      this.currentCourse.inputs.forEach(inp => {
                         this.scores[inp.id] = 0;
                     });
                 },
-                formatNum(n) { return (n || 0).toFixed(1); }
+                formatNum(n) { return (n || 0).toFixed(1); },
+                
+                // Editor Methods
+                openEditModal() {
+                    if(!this.currentCourse) return;
+                    this.isNew = false;
+                    // Deep copy
+                    this.editingCourse = JSON.parse(JSON.stringify(this.currentCourse));
+                },
+                openAddModal() {
+                    this.isNew = true;
+                    this.editingCourse = {
+                        id: 'new_course_' + Date.now(),
+                        subject: 'New Subject',
+                        level: 'Foundation',
+                        inputs: [
+                            { id: 'GA', label: 'Graded Assignments', max: 100, weight: 0.1 },
+                            { id: 'Q1', label: 'Quiz 1', max: 100, weight: 0.3 },
+                            { id: 'F', label: 'End Term', max: 100, weight: 0.6 }
+                        ],
+                        formula: '0.1*GA + 0.3*Q1 + 0.6*F'
+                    };
+                },
+                addInput() {
+                    this.editingCourse.inputs.push({ id: 'X', label: 'New Comp', max: 100, weight: 0 });
+                },
+                saveCourse() {
+                    if(this.isNew) {
+                        this.courses.push(this.editingCourse);
+                        this.selectedCourseId = this.editingCourse.id; // Switch to new
+                    } else {
+                        const idx = this.courses.findIndex(c => c.id === this.editingCourse.id);
+                        if(idx !== -1) {
+                            this.courses[idx] = this.editingCourse;
+                            // Update currentView if we edited the active one
+                            if(this.currentCourse.id === this.editingCourse.id) {
+                                this.loadCourse(); 
+                            }
+                        }
+                    }
+                    this.editingCourse = null;
+                    // Trigger simple notification or log?
+                    // User requested persist only on explicit save generally, but here we update local state.
+                },
+                deleteCourse() {
+                    if(confirm("Are you sure you want to delete this course schema?")) {
+                        this.courses = this.courses.filter(c => c.id !== this.editingCourse.id);
+                        this.editingCourse = null;
+                        if(this.courses.length > 0) {
+                            this.selectedCourseId = this.courses[0].id;
+                            this.loadCourse();
+                        } else {
+                            this.currentCourse = null;
+                            this.selectedCourseId = null;
+                        }
+                    }
+                },
+                async saveFile() {
+                    try {
+                        if (window.showSaveFilePicker) {
+                            const handle = await window.showSaveFilePicker({ suggestedName: 'data.json' });
+                            const writable = await handle.createWritable();
+                            await writable.write(JSON.stringify(this.courses, null, 2));
+                            await writable.close();
+                            alert("Configurations saved!");
+                        } else {
+                            const blob = new Blob([JSON.stringify(this.courses, null, 2)], {type: 'application/json'});
+                            const a = document.createElement('a');
+                            a.href = URL.createObjectURL(blob);
+                            a.download = 'data.json';
+                            a.click();
+                        }
+                    } catch (e) { console.error(e); }
+                }
             }
         }).mount('#app');
     </script>
