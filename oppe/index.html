@@ -26,8 +26,8 @@
     <div id="app" class="split-grid">
         
         <!-- Sidebar: Questions -->
-        <div class="glass flex flex-col h-full border-r border-gray-800 bg-[#0a0a0a]">
-            <div class="p-5 border-b border-gray-800 bg-[#050505]">
+        <div class="glass flex flex-col h-full border-r border-gray-800 bg-[#0a0a0a] min-h-0">
+            <div class="p-5 border-b border-gray-800 bg-[#050505] flex-shrink-0">
                 <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent flex items-center gap-2 mb-4">
                     <i class="fa-solid fa-code-branch"></i> Dojo Ultimate
                 </h1>
@@ -45,7 +45,7 @@
                 </select>
             </div>
             
-            <div class="p-3 bg-[#0a0a0a] flex gap-2 border-b border-gray-800">
+            <div class="p-3 bg-[#0a0a0a] flex gap-2 border-b border-gray-800 flex-shrink-0">
                 <div class="relative flex-1">
                     <i class="fa-solid fa-search absolute left-3 top-2.5 text-gray-600 text-xs"></i>
                     <input v-model="searchQuery" type="text" placeholder="Search..." class="input-base pl-8 py-2 text-xs rounded-full bg-[#111]">
@@ -55,7 +55,8 @@
                 </button>
             </div>
 
-            <div class="flex-1 overflow-y-auto scroll-smooth p-2 space-y-1">
+            <!-- SCROLLABLE LIST -->
+            <div class="flex-1 min-h-0 overflow-y-auto scroll-smooth p-2 space-y-1">
                 <div v-for="q in filteredQuestions" :key="q.id" 
                      @click="loadQuestion(q)"
                      class="question-item p-3 rounded-lg cursor-pointer group border border-transparent hover:border-gray-800 transition-all"
@@ -71,9 +72,12 @@
                          <span v-if="q.tags" class="text-[10px] text-gray-600 truncate max-w-[100px]">{{ q.tags }}</span>
                     </div>
                 </div>
+                <div v-if="filteredQuestions.length === 0" class="text-center text-gray-600 text-xs py-10 italic">
+                    No questions found.
+                </div>
             </div>
             
-            <div class="p-4 border-t border-gray-800 bg-[#050505]">
+            <div class="p-4 border-t border-gray-800 bg-[#050505] flex-shrink-0">
                 <button @click="saveFile" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/20 transform active:scale-95">
                     <i class="fa-solid fa-floppy-disk"></i> Save Changes to File
                 </button>
@@ -81,10 +85,10 @@
         </div>
 
         <!-- Middle: Properties Editor (With Tabs) -->
-        <div class="flex flex-col h-full bg-[#0a0a0a] border-r border-gray-800 overflow-hidden relative">
+        <div class="flex flex-col h-full bg-[#0a0a0a] border-r border-gray-800 overflow-hidden relative min-h-0">
             
             <!-- Context Tab Bar -->
-            <div v-if="currentQuestion" class="flex items-center gap-1 p-2 border-b border-gray-800 bg-[#0d0d0d]">
+            <div v-if="currentQuestion" class="flex items-center gap-1 p-2 border-b border-gray-800 bg-[#0d0d0d] flex-shrink-0">
                 <button @click="viewMode = 'preview'" class="px-3 py-1.5 rounded text-xs font-bold transition flex items-center gap-2" :class="viewMode==='preview' ? 'bg-indigo-500/10 text-indigo-400' : 'text-gray-500 hover:text-gray-300'">
                     <i class="fa-solid fa-eye"></i> Preview
                 </button>
@@ -92,11 +96,13 @@
                     <i class="fa-solid fa-pen-to-square"></i> Edit
                 </button>
                 <div class="flex-1"></div>
-                <button @click="deleteQuestion" class="w-7 h-7 flex items-center justify-center rounded hover:bg-red-500/10 text-gray-500 hover:text-red-500 transition"><i class="fa-solid fa-trash text-xs"></i></button>
+                <!-- Delete & Duplicate -->
+                <button @click="duplicateQuestion" class="w-7 h-7 flex items-center justify-center rounded hover:bg-gray-800 text-gray-500 hover:text-white transition" title="Duplicate"><i class="fa-solid fa-copy text-xs"></i></button>
+                <button @click="deleteQuestion" class="w-7 h-7 flex items-center justify-center rounded hover:bg-red-500/10 text-gray-500 hover:text-red-500 transition" title="Delete"><i class="fa-solid fa-trash text-xs"></i></button>
             </div>
 
-            <!-- Content Area -->
-            <div v-if="currentQuestion" class="flex-1 overflow-y-auto scroll-smooth p-6">
+            <!-- Content Area - SCROLLABLE -->
+            <div v-if="currentQuestion" class="flex-1 min-h-0 overflow-y-auto scroll-smooth p-6">
                 
                 <!-- PREVIEW MODE -->
                 <div v-if="viewMode === 'preview'" class="fade-in space-y-6">
@@ -113,22 +119,22 @@
 
                     <div v-if="currentQuestion.testCases?.length" class="mt-8">
                         <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Sample Test Cases</h4>
-                        <div v-for="(tc, idx) in currentQuestion.testCases.slice(0,3)" :key="idx" class="bg-[#111] border border-gray-800 rounded-lg p-4 mb-3 font-mono text-xs relative overflow-hidden">
+                        <div v-for="(tc, idx) in currentQuestion.testCases.filter(t => !t.hidden).slice(0,3)" :key="idx" class="bg-[#111] border border-gray-800 rounded-lg p-4 mb-3 font-mono text-xs relative overflow-hidden">
                              <div class="grid grid-cols-1 gap-2">
-                                 <div><span class="text-gray-500">In:</span> <span class="text-yellow-500">{{ tc.input }}</span></div>
-                                 <div class="border-t border-gray-800 pt-2 mt-1"><span class="text-gray-500">Out:</span> <span class="text-emerald-500">{{ tc.output }}</span></div>
+                                 <div><span class="text-gray-500">In:</span> <span class="text-yellow-500 whitespace-pre-wrap">{{ tc.input }}</span></div>
+                                 <div class="border-t border-gray-800 pt-2 mt-1"><span class="text-gray-500">Out:</span> <span class="text-emerald-500 whitespace-pre-wrap">{{ tc.output }}</span></div>
                              </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- EDIT MODE -->
-                <div v-else class="fade-in space-y-6">
+                <div v-else class="fade-in space-y-6 pb-20">
                     <!-- Metadata Edit -->
                     <div class="grid grid-cols-2 gap-4">
                         <div class="col-span-2">
                             <label class="label">Title</label>
-                            <input v-model="currentQuestion.title" class="input-base font-bold">
+                            <input v-model="currentQuestion.title" class="input-base font-bold text-lg">
                         </div>
                         <div>
                              <label class="label">Exam Type (e.g. OPPE1)</label>
@@ -158,42 +164,49 @@
                     <div>
                         <label class="label flex justify-between">
                             <span>Description (Markdown)</span>
-                            <span class="text-[10px] text-gray-500 font-normal">Supports **bold**, `code`</span>
+                            <span class="text-[10px] text-gray-500 font-normal">Preview with <i class="fa-solid fa-eye"></i></span>
                         </label>
-                        <textarea v-model="currentQuestion.description" class="input-base h-40 font-mono text-xs leading-relaxed"></textarea>
+                        <textarea v-model="currentQuestion.description" class="input-base h-40 font-mono text-xs leading-relaxed resize-y"></textarea>
                     </div>
 
                     <!-- Starter Code Edit -->
                     <div class="bg-[#151515] p-4 rounded-xl border border-gray-800">
                         <div class="flex justify-between items-center mb-2">
                             <label class="label text-indigo-400">Definition / Starter Code</label>
-                            <button @click="copyToStarter" class="text-[10px] px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded hover:bg-indigo-500/20 transition">Copy from Playground Area</button>
+                            <button @click="copyToStarter" class="text-[10px] px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded hover:bg-indigo-500/20 transition">Copy from Playground</button>
                         </div>
-                        <textarea v-model="currentQuestion.starterCode" class="input-base h-32 font-mono text-[11px] bg-[#0a0a0a] text-gray-400 border-gray-700/50"></textarea>
+                        <textarea v-model="currentQuestion.starterCode" class="input-base h-32 font-mono text-[11px] bg-[#0a0a0a] text-gray-400 border-gray-700/50 resize-y"></textarea>
                     </div>
 
                     <!-- Test Cases Edit -->
                     <div>
                         <div class="flex justify-between items-center mb-3">
                              <label class="label">Test Cases</label>
-                             <button @click="addTestCase" class="text-xs px-2 py-1 bg-gray-800 hover:bg-white/10 rounded transition">+ Add Case</button>
+                             <div class="flex gap-2">
+                                <button @click="addTestCase" class="text-xs px-2 py-1 bg-gray-800 hover:bg-white/10 rounded transition">+ Add Case</button>
+                             </div>
                         </div>
                         <div class="space-y-3">
                             <div v-for="(tc, idx) in currentQuestion.testCases" :key="idx" class="bg-[#111] p-3 rounded border border-gray-800 relative group transition hover:border-gray-600">
-                                <div class="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition">
-                                    <button @click="tc.hidden = !tc.hidden" class="text-xs text-gray-500 hover:text-white" :title="tc.hidden ? 'Hidden Case' : 'Public Case'">
-                                        <i class="fa-solid" :class="tc.hidden ? 'fa-eye-slash' : 'fa-eye'"></i>
+                                <div class="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition z-10">
+                                    <button @click="tc.hidden = !tc.hidden" class="text-xs text-gray-500 hover:text-white bg-gray-900 border border-gray-700 px-1.5 py-0.5 rounded shadow" :title="tc.hidden ? 'Hidden Case (Not visible in preview)' : 'Public Case'">
+                                        <i class="fa-solid" :class="tc.hidden ? 'fa-eye-slash text-yellow-500' : 'fa-eye'"></i>
                                     </button>
-                                    <button @click="currentQuestion.testCases.splice(idx, 1)" class="text-xs text-gray-500 hover:text-red-500"><i class="fa-solid fa-trash"></i></button>
+                                    <button @click="currentQuestion.testCases.splice(idx, 1)" class="text-xs text-gray-500 hover:text-red-500 bg-gray-900 border border-gray-700 px-1.5 py-0.5 rounded shadow"><i class="fa-solid fa-trash"></i></button>
                                 </div>
                                 
-                                <span class="text-[10px] text-gray-600 font-bold mb-2 block">Case #{{ idx+1 }}</span>
+                                <div class="flex justify-between mb-2">
+                                     <span class="text-[10px] text-gray-600 font-bold">Case #{{ idx+1 }}</span>
+                                     <span v-if="tc.hidden" class="text-[9px] text-yellow-600 uppercase font-bold tracking-wider">Hidden</span>
+                                </div>
                                 <div class="grid grid-cols-1 gap-2">
-                                    <div>
-                                        <textarea v-model="tc.input" placeholder="Input" class="input-base h-10 text-xs font-mono bg-[#0a0a0a] resize-y"></textarea>
+                                    <div class="relative">
+                                         <label class="text-[9px] text-gray-600 absolute top-2 right-2 pointer-events-none">Input</label>
+                                         <textarea v-model="tc.input" class="input-base h-16 text-xs font-mono bg-[#0a0a0a] resize-y pt-2"></textarea>
                                     </div>
-                                    <div>
-                                        <textarea v-model="tc.output" placeholder="Expected Output" class="input-base h-10 text-xs font-mono bg-[#0a0a0a] resize-y"></textarea>
+                                    <div class="relative">
+                                        <label class="text-[9px] text-gray-600 absolute top-2 right-2 pointer-events-none">Output</label>
+                                        <textarea v-model="tc.output" class="input-base h-16 text-xs font-mono bg-[#0a0a0a] resize-y pt-2"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -203,16 +216,17 @@
                 </div>
 
             </div>
-            <div v-else class="flex flex-col items-center justify-center h-full text-gray-500 text-xs">
-                <i class="fa-regular fa-file-code text-4xl mb-3 opacity-20"></i>
-                <p>Select a question to view or edit details.</p>
+            <div v-else class="flex flex-col items-center justify-center h-full text-gray-500 text-xs text-center p-8">
+                <i class="fa-regular fa-file-code text-5xl mb-4 opacity-10"></i>
+                <p>Select a question from the sidebar to view details.</p>
+                <p class="opacity-50 mt-2">or press <strong class="text-indigo-400">+</strong> to create one.</p>
             </div>
         </div>
 
         <!-- Right: Playground Editor -->
-        <div class="flex flex-col h-full bg-[#0a0a0a] border-l border-gray-800">
+        <div class="flex flex-col h-full bg-[#0a0a0a] border-l border-gray-800 min-h-0">
             <!-- Toolbar -->
-            <div class="flex justify-between items-center p-3 border-b border-gray-800 bg-[#111]">
+            <div class="flex justify-between items-center p-3 border-b border-gray-800 bg-[#111] flex-shrink-0">
                 <div class="flex gap-2 text-xs text-gray-500 items-center">
                     <i class="fa-solid fa-terminal"></i>
                     <span class="font-mono">{{ getFileName() }}</span>
@@ -228,22 +242,22 @@
             </div>
 
             <!-- Editor -->
-            <div class="flex-1 relative editor-container text-sm">
+            <div class="flex-1 relative editor-container text-sm min-h-0 overflow-hidden">
                 <textarea id="code-editor"></textarea>
             </div>
 
             <!-- Console -->
-            <div class="h-1/3 border-t border-gray-800 bg-[#0f0f0f] flex flex-col transition-all" :class="consoleExpanded ? 'h-2/3' : 'h-1/3'">
-                <div class="px-4 py-2 bg-[#151515] border-b border-gray-800 text-[10px] font-bold text-gray-500 uppercase flex justify-between items-center cursor-pointer" @dblclick="consoleExpanded = !consoleExpanded">
+            <div class="flex-shrink-0 border-t border-gray-800 bg-[#0f0f0f] flex flex-col transition-all duration-300" :class="consoleExpanded ? 'h-2/3 absolute bottom-0 left-0 right-0 z-50 border-t-2 border-indigo-500 shadow-2xl' : 'h-1/3 relative'">
+                <div class="px-4 py-2 bg-[#151515] border-b border-gray-800 text-[10px] font-bold text-gray-500 uppercase flex justify-between items-center cursor-pointer select-none" @dblclick="consoleExpanded = !consoleExpanded">
                     <span>Terminal / Output</span>
                     <div class="flex gap-3">
                         <button @click="consoleExpanded = !consoleExpanded" class="hover:text-white"><i class="fa-solid" :class="consoleExpanded ? 'fa-chevron-down' : 'fa-chevron-up'"></i></button>
                         <button @click="consoleOutput = []" class="hover:text-white">Clear</button>
                     </div>
                 </div>
-                <div class="flex-1 p-4 font-mono text-[11px] overflow-y-auto whitespace-pre-wrap leading-relaxed select-text">
+                <div class="flex-1 p-4 font-mono text-[11px] overflow-y-auto whitespace-pre-wrap leading-relaxed select-text min-h-0">
                      <div v-if="consoleOutput.length === 0" class="text-gray-700 italic">Ready to execute...</div>
-                     <div v-for="(line, idx) in consoleOutput" :key="idx" :class="line.type === 'error' ? 'text-red-400' : line.type === 'success' ? 'text-green-400' : 'text-gray-300'" class="mb-0.5">
+                     <div v-for="(line, idx) in consoleOutput" :key="idx" :class="line.type === 'error' ? 'text-red-400' : line.type === 'success' ? 'text-green-400' : 'text-gray-300'" class="mb-0.5 font-medium">
                         <span v-if="line.type==='error'" class="mr-2">✖</span>
                         <span v-if="line.type==='success'" class="mr-2">✔</span>
                         {{ line.text }}
