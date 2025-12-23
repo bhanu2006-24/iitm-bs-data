@@ -1,0 +1,234 @@
+{
+  "code": "BSGN3001",
+  "name": "Strategies for Professional Growth",
+  "credits": 4,
+  "pre": [],
+  "co": [],
+  "id": "BSGN3001",
+  "level": "degree",
+  "type": "Theory",
+  "exams": {
+    "q1": true,
+    "q2": true,
+    "et": true
+  },
+  "description": "Strategies for Professional Growth - Part of the DEGREE curriculum.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Week 1 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Week 2 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Week 3 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 4,
+      "title": "Week 4 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 5,
+      "title": "Week 5 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 6,
+      "title": "Week 6 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 7,
+      "title": "Week 7 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 8,
+      "title": "Week 8 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 9,
+      "title": "Week 9 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 10,
+      "title": "Week 10 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 11,
+      "title": "Week 11 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 12,
+      "title": "Week 12 - Strategies for Professional Growth Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

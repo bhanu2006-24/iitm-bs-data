@@ -1,0 +1,234 @@
+{
+  "code": "BSCS4001",
+  "name": "Data Visualization Design",
+  "credits": 4,
+  "pre": [],
+  "co": [],
+  "id": "BSCS4001",
+  "level": "degree",
+  "type": "Theory",
+  "exams": {
+    "q1": true,
+    "q2": true,
+    "et": true
+  },
+  "description": "Data Visualization Design - Part of the DEGREE curriculum.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Week 1 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Week 2 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Week 3 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 4,
+      "title": "Week 4 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 5,
+      "title": "Week 5 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 6,
+      "title": "Week 6 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 7,
+      "title": "Week 7 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 8,
+      "title": "Week 8 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 9,
+      "title": "Week 9 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 10,
+      "title": "Week 10 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 11,
+      "title": "Week 11 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 12,
+      "title": "Week 12 - Data Visualization Design Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

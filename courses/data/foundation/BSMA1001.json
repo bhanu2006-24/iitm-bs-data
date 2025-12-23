@@ -1,0 +1,234 @@
+{
+  "code": "BSMA1001",
+  "name": "Mathematics for Data Science I",
+  "credits": 4,
+  "pre": [],
+  "co": [],
+  "id": "BSMA1001",
+  "level": "foundation",
+  "type": "Theory",
+  "exams": {
+    "q1": true,
+    "q2": true,
+    "et": true
+  },
+  "description": "Mathematics for Data Science I - Part of the FOUNDATION curriculum.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Week 1 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Week 2 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Week 3 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 4,
+      "title": "Week 4 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 5,
+      "title": "Week 5 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 6,
+      "title": "Week 6 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 7,
+      "title": "Week 7 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 8,
+      "title": "Week 8 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 9,
+      "title": "Week 9 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 10,
+      "title": "Week 10 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 11,
+      "title": "Week 11 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 12,
+      "title": "Week 12 - Mathematics for Data Science I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "code": "BSHS1001",
+  "name": "English I",
+  "credits": 4,
+  "pre": [],
+  "co": [],
+  "id": "BSHS1001",
+  "level": "foundation",
+  "type": "Theory",
+  "exams": {
+    "q1": true,
+    "q2": true,
+    "et": true
+  },
+  "description": "English I - Part of the FOUNDATION curriculum.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Week 1 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Week 2 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Week 3 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 4,
+      "title": "Week 4 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 5,
+      "title": "Week 5 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 6,
+      "title": "Week 6 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 7,
+      "title": "Week 7 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 8,
+      "title": "Week 8 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 9,
+      "title": "Week 9 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 10,
+      "title": "Week 10 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 11,
+      "title": "Week 11 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 12,
+      "title": "Week 12 - English I Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}

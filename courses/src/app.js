@@ -3,131 +3,118 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            currentLevel: 'foundation',
-            courses: [],
-            loading: false,
+            currentLevel: 'foundation', // foundation | diploma | degree | pg_diploma | mtech
+            catalog: { foundation: [], diploma: [], degree: [], pg_diploma: [], mtech: [] },
             searchQuery: '',
             selectedCourse: null,
-            activeTab: 'meta', // 'meta' | 'syllabus' | 'content'
-            openWeeks: [0], // Array of open week indices
-            unsavedChanges: false
+            viewMode: 'preview', // preview | edit
+            previewOpenWeeks: [],
+            editOpenWeeks: [0], // Default open week 1
+            loading: false
         }
     },
     computed: {
         filteredCourses() {
-            if(!this.searchQuery) return this.courses;
+            const list = this.catalog[this.currentLevel] || [];
+            if (!this.searchQuery) return list;
             const q = this.searchQuery.toLowerCase();
-            return this.courses.filter(c => 
+            return list.filter(c => 
                 c.name.toLowerCase().includes(q) || 
                 c.code.toLowerCase().includes(q)
             );
         }
     },
-    watch: {
-        selectedCourse: {
-            handler() { this.unsavedChanges = true; },
-            deep: true
-        }
-    },
-    mounted() {
-        this.loadLevel('foundation');
-        // Handle unsaved changes warning? 
-        // For simplicity, just manual save.
+    created() {
+        this.loadCatalog();
     },
     methods: {
-        async loadLevel(level) {
+        async loadCatalog() {
+            try {
+                const res = await fetch('./data/catalog.json');
+                if (res.ok) {
+                    this.catalog = await res.json();
+                }
+            } catch (e) { console.error("Failed to load catalog", e); }
+        },
+
+        async loadCourse(catalogEntry) {
             this.loading = true;
-            this.currentLevel = level;
-            this.courses = [];
-            this.selectedCourse = null;
+             // Close previous state
+            this.previewOpenWeeks = [];
             
             try {
-                const res = await fetch(`./data/${level}.json`);
-                if(res.ok) {
-                    this.courses = await res.json();
-                } else {
-                    console.error("Failed to load level data");
+                // Determine path. catalogEntry.path is relative to data/ e.g. "foundation/MA1001.json"
+                const res = await fetch(`./data/${catalogEntry.path}`);
+                if (res.ok) {
+                    this.selectedCourse = await res.json();
+                    // Ensure structure exists
+                    if (!this.selectedCourse.weeks) this.selectedCourse.weeks = [];
+                    // Default open preview week 1 if exists
+                    if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].weekNum];
+                    this.viewMode = 'preview'; // Reset to preview on load
+                    this.editOpenWeeks = [0];
                 }
-            } catch(e) {
+            } catch (e) {
                 console.error(e);
+                alert("Error loading course data");
             } finally {
                 this.loading = false;
             }
         },
 
-        selectCourse(c) {
-            // Deep copy to separate from list until save? 
-            // Actually, binding directly to list object is fine if we save the whole list.
-            this.selectedCourse = c;
-            this.activeTab = 'meta';
-            // ensure exams object
-            if(!this.selectedCourse.exams) this.selectedCourse.exams = { q1: false, q2: false, et: false };
-            // ensure pre array
-            if(!this.selectedCourse.pre) this.selectedCourse.pre = [];
-            // ensure syllabus
-            if(!this.selectedCourse.syllabus) this.selectedCourse.syllabus = [];
-            // ensure content structure
-            if(this.selectedCourse.weeks && this.selectedCourse.weeks.length > 0) {
-                 this.openWeeks = [0]; // Open first week by default
-            }
-        },
-
-        addPre(e) {
-            const val = e.target.value.trim().toUpperCase();
-            if(val) {
-                if(!this.selectedCourse.pre.includes(val)) {
-                    this.selectedCourse.pre.push(val);
-                }
-                e.target.value = '';
-            }
-        },
-
-        addSyllabusItem() {
-            this.selectedCourse.syllabus.push('');
-        },
-
-        initWeeks() {
-            this.selectedCourse.weeks = Array.from({length: 12}, (_, i) => ({
-                weekNum: i + 1,
-                title: `Week ${i + 1}`,
-                lectures: [],
-                notes: [],
-                practice: []
-            }));
-            this.openWeeks = [0];
-        },
-
-        toggleWeek(idx) {
-            if(this.openWeeks.includes(idx)) {
-                this.openWeeks = this.openWeeks.filter(i => i !== idx);
+        togglePreviewWeek(num) {
+            if (this.previewOpenWeeks.includes(num)) {
+                this.previewOpenWeeks = this.previewOpenWeeks.filter(n => n !== num);
             } else {
-                this.openWeeks.push(idx);
+                this.previewOpenWeeks.push(num);
             }
+        },
+
+        toggleEditWeek(idx) {
+             if (this.editOpenWeeks.includes(idx)) {
+                this.editOpenWeeks = this.editOpenWeeks.filter(n => n !== idx);
+            } else {
+                this.editOpenWeeks.push(idx);
+            }
+        },
+        
+        expandAllWeeks() {
+            if(!this.selectedCourse) return;
+            this.editOpenWeeks = this.selectedCourse.weeks.map((_, i) => i);
+        },
+        
+        collapseAllWeeks() {
+            this.editOpenWeeks = [];
         },
 
         async saveFile() {
-             try {
-                // Determine filename based on current level
-                const fileName = `${this.currentLevel}.json`;
+            if (!this.selectedCourse) return;
+            
+            try {
+                // We need to save to the specific file.
+                // In a browser with File System Access API, we can ask the user to pick the file.
+                // Or we download it.
+                // Since this is a "Manager", ideally we overwrite the local file if possible (not possible in pure web without permission).
+                // We will use the standard "Save As" flow but suggest the correct filename.
+                
+                const fileName = `${this.selectedCourse.code}.json`;
                 
                 if (window.showSaveFilePicker) {
                     const h = await window.showSaveFilePicker({ suggestedName: fileName });
                     const w = await h.createWritable();
-                    await w.write(JSON.stringify(this.courses, null, 2));
+                    await w.write(JSON.stringify(this.selectedCourse, null, 2));
                     await w.close();
-                    this.unsavedChanges = false;
-                    alert("Saved successfully!");
+                    alert("Course saved!");
                 } else {
-                    // Fallback download
-                    const blob = new Blob([JSON.stringify(this.courses, null, 2)], {type: 'application/json'});
+                    const blob = new Blob([JSON.stringify(this.selectedCourse, null, 2)], {type: 'application/json'});
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
                     a.download = fileName;
                     a.click();
                 }
-            } catch (e) { 
+            } catch (e) {
                 console.error(e);
-                alert("Error saving"); 
+                alert("Save cancelled or failed");
             }
         }
     }

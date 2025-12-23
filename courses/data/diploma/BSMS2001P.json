@@ -1,0 +1,236 @@
+{
+  "code": "BSMS2001P",
+  "name": "Business Data Management - Project",
+  "credits": 2,
+  "pre": [],
+  "co": [
+    "BSMS2001"
+  ],
+  "id": "BSMS2001P",
+  "level": "diploma",
+  "type": "Theory",
+  "exams": {
+    "q1": true,
+    "q2": true,
+    "et": true
+  },
+  "description": "Business Data Management - Project - Part of the DIPLOMA curriculum.",
+  "weeks": [
+    {
+      "weekNum": 1,
+      "title": "Week 1 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 2,
+      "title": "Week 2 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 3,
+      "title": "Week 3 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 4,
+      "title": "Week 4 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 5,
+      "title": "Week 5 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 6,
+      "title": "Week 6 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 7,
+      "title": "Week 7 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 8,
+      "title": "Week 8 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 9,
+      "title": "Week 9 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 10,
+      "title": "Week 10 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 11,
+      "title": "Week 11 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    },
+    {
+      "weekNum": 12,
+      "title": "Week 12 - Business Data Management - Project Topic",
+      "lectures": [
+        {
+          "title": "Introduction",
+          "youtubeId": "",
+          "duration": "10:00"
+        },
+        {
+          "title": "Core Concept",
+          "youtubeId": "",
+          "duration": "20:00"
+        }
+      ],
+      "notes": [],
+      "practice": []
+    }
+  ]
+}
