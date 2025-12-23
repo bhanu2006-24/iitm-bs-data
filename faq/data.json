@@ -12,30 +12,26 @@
     },
     {
       "id": "section-admissions",
-      "title": "Admissions & Basics",
+      "title": "Admissions, JEE & Re-Entry",
       "icon": "fa-user-plus",
       "questions": [
         { "q": "What is the basic eligibility?", "a": "Anyone who has passed Class 12 (or equivalent) with Mathematics and English in Class 10. There is <strong>no age limit</strong> (17-80+ years enrolled) and no stream restriction." },
-        { "q": "Can I join if I am from Arts/Commerce?", "a": "Yes! The program starts from scratch. Math 1 covers basics like sets and functions. However, you must put in extra effort in the first term if you haven't done Math in Class 11/12." },
-        { "q": "Is JEE required?", "a": "No. Regular Entry is through the <strong>Qualifier Exam</strong>. JEE-based entry is only for those who qualified for JEE Advanced in the current year (Direct Admission)." },
-        { "q": "How does the Qualifier Process work?", "a": "1. Register & Pay Fee.<br>2. Study 4 weeks of content (Math, Stats, English, CT).<br>3. Submit weekly assignments (online).<br>4. Write the In-Person Qualifier Exam.<br>5. Score >50% (General) overall and >40% in each subject." },
-        { "q": "Qualifier Score Validity?", "a": "If passed, valid for <strong>1 year (3 terms)</strong>. For current Class 12 students, valid for 2 years (6 terms)." },
-        { "q": "Can I do this with another degree?", "a": "Yes, UGC allows dual degrees. You can pursue this online while doing a regular BTech/BSc/BA on-campus." },
-        { "q": "Is this a real IIT Degree?", "a": "Yes. It is a BS Degree from IIT Madras. You become an alumnus of IIT Madras upon graduation. The only difference is the mode of delivery (Online vs Campus)." }
+        { "q": "Is JEE required?", "a": "No. Regular Entry is through the <strong>Qualifier Exam</strong>. JEE-based entry is only for those who qualified for JEE Advanced in the current year. <br><em>New:</em> JEE validity is for 3 terms from eligibility list release." },
+        { "q": "Re-attempting the Qualifier?", "a": "If absent or failed, you can re-attempt in the same term (if eligible) or next term. <br><strong>Re-attempt Fee:</strong> ₹1500 (Gen/OBC), ₹750 (SC/ST/PwD)." },
+        { "q": "Can I re-join if I exited earlier?", "a": "Yes! If you quit with a Diploma/Degree, you can re-enter. <br><strong>Requirement:</strong> You must clear 'Re-admission Final Exams' (e.g., MAD2, PDSA for Diploma holders) to continue. Fee: ₹5000 per exam." },
+        { "q": "Can I do this with another degree?", "a": "Yes, UGC allows dual degrees. You can pursue this online while doing a regular BTech/BSc/BA on-campus." }
       ]
     },
     {
       "id": "section-academics",
-      "title": "Academics, CCC & Grades",
+      "title": "Academics: Grades & Certificates",
       "icon": "fa-book-open",
       "questions": [
         { "q": "What is the new Diploma in DS Pathway?", "a": "From Sep 2025, you have two options for the remaining 6 credits in Diploma DS:<br><strong>Option 1:</strong> Business Analytics (4 Cr) + BDM Project (2 Cr).<br><strong>Option 2:</strong> Intro to Deep Learning & GenAI (4 Cr) + DL/GenAI Project (2 Cr)." },
-        { "q": "What is CCC (Credit Clearing Capability)?", "a": "CCC limits how many courses you can take.<br><strong>Default:</strong> 4 courses.<br><strong>Reduced:</strong> If you fail courses or get low grades, CCC drops to 3 or 2.<br><strong>Calculation:</strong> Based on the previous term's T-score and failures." },
+        { "q": "What is the 'Advanced Certificate'?", "a": "A new certificate for students who complete all 6 Theory courses in a Diploma but haven't finished the projects. <br><em>Note:</em> It's awarded automatically in the dashboard." },
+        { "q": "What is CCC (Credit Clearing Capability)?", "a": "CCC limits how many courses you can take. <br><strong>Foundation Level:</strong> Now a <em>recommendation</em> rather than strict enforcement, to help students improve pace.<br><strong>Diploma/Degree:</strong> Calculated based on previous term performance (M)." },
         { "q": "What is the I_OP Grade?", "a": "<strong>I_OP</strong> (Incomplete - Option to Pass).<br>Given if internal score (Assignments + Quizzes) is good (>40%) but you missed/failed the End Term.<br><strong>Benefit:</strong> You don't repeat assignments. You only write the End Term exam in the next term." },
-        { "q": "What is the difference between U and W?", "a": "<strong>U (Unqualified):</strong> You failed the course. Must repeat everything and pay full fees.<br><strong>W (Withdrawn):</strong> You dropped the course before the deadline. Counts as an attempt but doesn't affect CGPA. No refund." },
-        { "q": "How is the Final Grade calculated?", "a": "Standard Formula (varies by course):<br><code>T = 0.1(Avg Assignments) + 0.3(Quiz 1) + 0.3(Quiz 2) + 0.4(End Term)</code><br><em>Note: Often 'Best of Q1 or Q2' logic is applied in some courses, but never rely on it. Assume both count.</em>" },
-        { "q": "What is the Passing Criteria?", "a": "1. Total Score (T) >= 40/100.<br>2. End Term Score >= 40% (i.e., 20/50 marks typically).<br>3. Attend at least one Quiz." },
-        { "q": "Can I drop a course?", "a": "Yes. You can drop a course after registering. If dropped early (first few weeks), you might get a partial refund (wallet adjustment). Late drops result in 'W' grade and no refund." }
+        { "q": "New Minors available?", "a": "Yes! Sep 2025 introduces exciting minors:<br>- <strong>Generative AI</strong> (LLM, DL Practice, Math for GenAI)<br>- <strong>Cloud Computing for AI</strong><br>- <strong>Multimodal AI Systems</strong><br>- <strong>Algorithmic Decision Making</strong>" }
       ]
     },
     {
@@ -44,20 +40,30 @@
       "icon": "fa-pen-to-square",
       "questions": [
         { "q": "What is the SCT for OPPE?", "a": "<strong>System Compatibility Test (SCT)</strong>. It is MANDATORY. You must pass this test (usually a simple check of your camera, mic, and environment) before the actual OPPE. If you miss SCT, you will <strong>NOT</strong> be allowed to write the OPPE." },
-        { "q": "Do Mock Tests give extra marks?", "a": "<strong>NO.</strong> Mock tests are purely for practice. However, attending them ensures your system is ready and you know the interface." },
-        { "q": "What are Bonus Marks?", "a": "Bonus marks are awarded ONLY if there is an error in the question paper OR for specific extra activities in some courses (like Stats 1/2)." },
+        { "q": "Do Mock Tests give extra marks?", "a": "<strong>Bonus:</strong> If Avg of Mocks >= 40/100, you can get up to 2 bonus marks in some courses. Check course grading doc." },
         { "q": "What happens if I miss a Quiz?", "a": "If you miss one Quiz, the other Quiz score is usually considered with a penalty or specific formula adjustment. If you miss <strong>BOTH</strong> quizzes, you are ineligible for the End Term." },
-        { "q": "Can I change my Exam City?", "a": "You select preferences before every term. Once the Hall Ticket is released, changes are rare and usually require a medical emergency + fee." }
+        { "q": "Can I change my Exam City?", "a": "You select preferences before every term. <strong>Strict Rule:</strong> You must report ONLY to the assigned center. Unauthorized center entry is strictly prohibited." }
       ]
     },
     {
-      "id": "section-advanced",
-      "title": "PG Diploma & MTech",
+      "id": "section-alumni",
+      "title": "Alumni, Fees & Policies",
+      "icon": "fa-id-card",
+      "questions": [
+        { "q": "How do I become an Alumnus?", "a": "Complete the BSc (114 credits) or BS (142 credits) requirements. You MUST register with IITMAA." },
+        { "q": "What is the Alumni Fee?", "a": "<strong>₹7080</strong> (one-time). Paid in two installments (50% in first Degree term, 50% in next). Includes Alumni Card and lifetime IITMAA membership." },
+        { "q": "What are the Alumni Benefits?", "a": "1. <strong>Campus Access:</strong> Entry to IITM, Library, Gymkhana, Swimming Pool.<br>2. <strong>Guest House:</strong> Booking privileges at Taramani Guest House.<br>3. <strong>Networking:</strong> Access to Job Portal, Mentorship, and Global Chapters." },
+        { "q": "Fee Waivers?", "a": "<strong>Family Income < 1 LPA:</strong> 75% Waiver.<br><strong>1-5 LPA:</strong> 50% Waiver.<br>Also applies to SC/ST/PwD categories as per norms." }
+      ]
+    },
+    {
+      "id": "section-higher-ed",
+      "title": "PG Diploma, MTech & Research",
       "icon": "fa-graduation-cap",
       "questions": [
         { "q": "How to enter PG Diploma?", "a": "Complete the BS Degree (142 credits) with a CGPA > 8.0. You can then register for the PG Diploma level (20 credits)." },
-        { "q": "Is MTech direct?", "a": "No. You must first complete the PG Diploma level. Then you can register for the MTech level (20 credit Project). The MTech degree is awarded upon completion of the project." },
-        { "q": "What is the MTech duration?", "a": "Flexible timeline, up to 5 years. It is designed for working professionals." }
+        { "q": "Pathway to MS (Research)?", "a": "Students with CGPA >= 8.0 (Campus) or via GATE can apply for MS (Research) at IITM. <br><em>New:</em> 'Project Staff' route also available (CGPA >= 7.5 in 2 campus courses)." },
+        { "q": "Gate Exam Integration?", "a": "You can credit 'Comprehensive Exam' courses (Level 4) if you are in the top 1% of GATE-DA or GATE-CS papers." }
       ]
     },
     {
@@ -66,18 +72,7 @@
       "icon": "fa-laptop-code",
       "questions": [
         { "q": "Do I need a powerful laptop?", "a": "Not really. A basic laptop with 4GB+ RAM is enough. However, a <strong>working webcam and microphone</strong> are mandatory for proctored exams and some sessions." },
-        { "q": "Can I use LLMs/ChatGPT?", "a": "<strong>Strictly NO.</strong> Using ChatGPT/Gemini for graded assignments or OPPEs is considered Malpractice. The program uses advanced detection. Penalties include grade reduction or expulsion." },
-        { "q": "Which browser should I use?", "a": "Google Chrome is the recommended browser for the exam portal and assignment submission." }
-      ]
-    },
-    {
-      "id": "section-fees",
-      "title": "Fees & Hidden Costs",
-      "icon": "fa-coins",
-      "questions": [
-        { "q": "Are there any hidden fees?", "a": "Mostly no, but be aware of:<br>1. <strong>Facilitation Fee:</strong> Extra cost if writing exams outside India.<br>2. <strong>Exam Fee:</strong> Small fee for re-attempting only the exam (I_OP grade).<br>3. <strong>Paradox Fee:</strong> Tickets for the on-campus fest are paid." },
-        { "q": "How much is the Deferral Fee?", "a": "If you want to take a break for a term, you don't 'pay' a fee, you just don't register. However, keep in mind the maximum duration (years) allowed to complete the degree." },
-        { "q": "Scholarship Income Proof?", "a": "You need valid EWS/OBC-NCL certificates updated annually. Income verification is strict." }
+        { "q": "Can I use LLMs/ChatGPT?", "a": "<strong>Strictly NO.</strong> Using ChatGPT/Gemini for graded assignments or OPPEs is considered Malpractice. The program uses advanced detection. Penalties include grade reduction or expulsion." }
       ]
     }
   ],
