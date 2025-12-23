@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
         .glass { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
@@ -18,9 +19,10 @@
 <body class="min-h-screen p-6 relative overflow-x-hidden">
 
     <div id="app" class="max-w-4xl mx-auto pb-20">
-        <header class="flex justify-between items-center mb-8 sticky top-0 z-50 glass p-4 rounded-xl -mx-4">
+        <header class="flex justify-between items-center mb-8 sticky top-0 z-50 glass p-4 rounded-xl -mx-4 bg-[#0a0a0a]/90">
             <div>
                 <h1 class="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">About Manager</h1>
+                <p class="text-gray-500 text-xs">Edit & Preview 'Gen-Z' Data</p>
             </div>
             <div class="flex gap-3">
                 <button @click="loadFile" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-sm">Reload</button>
@@ -52,6 +54,10 @@
                         <input v-model="data.brand.tagline" class="input-field">
                     </div>
                      <div class="col-span-2">
+                        <label class="text-xs text-gray-500 block mb-1">Hero Image URL</label>
+                        <input v-model="data.brand.images.hero" class="input-field">
+                    </div>
+                     <div class="col-span-2">
                          <label class="text-xs text-gray-500 block mb-1">Mission</label>
                         <textarea v-model="data.brand.mission" class="input-field h-24"></textarea>
                     </div>
@@ -69,6 +75,10 @@
                      <div class="col-span-2 md:col-span-1">
                         <label class="text-xs text-gray-500 block mb-1">Title</label>
                         <input v-model="data.founder.title" class="input-field">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="text-xs text-gray-500 block mb-1">Image URL</label>
+                        <input v-model="data.founder.image" class="input-field">
                     </div>
                     <div class="col-span-2">
                          <label class="text-xs text-gray-500 block mb-1">Bio</label>
@@ -93,27 +103,55 @@
                          <label class="text-xs text-gray-500 block mb-1">Headline</label>
                         <input v-model="data.developer.headline" class="input-field">
                     </div>
-                    <!-- Tech Stack -->
-                    <div class="col-span-2">
-                        <label class="text-xs text-gray-500 block mb-1">Tech Stack (Languages)</label>
-                         <input :value="data.developer.techStack.languages.join(', ')" @input="data.developer.techStack.languages = $event.target.value.split(',').map(t=>t.trim())" class="input-field" type="text">
-                    </div>
                 </div>
+            </div>
+
+            <!-- List Preview (Stats) -->
+             <div class="glass rounded-xl p-6">
+                <h2 class="section-title">Stats</h2>
+                 <div v-for="(stat, idx) in data.stats" :key="idx" class="flex gap-4 mb-2">
+                     <input v-model="stat.label" class="input-field w-1/2" placeholder="Label">
+                     <input v-model="stat.value" class="input-field w-1/2" placeholder="Value">
+                 </div>
             </div>
 
             <!-- Testimonials -->
              <div class="glass rounded-xl p-6">
                 <h2 class="section-title">Testimonials</h2>
                 <div class="space-y-4">
-                    <div v-for="(t, idx) in data.testimonials" :key="idx" class="bg-gray-900/50 p-4 rounded relative group">
-                         <button @click="data.testimonials.splice(idx, 1)" class="absolute top-2 right-2 text-red-500 opacity-0 group-hover:opacity-100">Remove</button>
-                         <div class="mb-2">
-                             <input v-model="t.author" class="bg-transparent font-bold w-full outline-none" placeholder="Author">
-                             <input v-model="t.role" class="bg-transparent text-xs text-gray-500 w-full outline-none" placeholder="Role">
+                    <div v-for="(t, idx) in data.testimonials" :key="idx" class="bg-gray-900/50 p-4 rounded relative group border border-gray-800">
+                         <button @click="data.testimonials.splice(idx, 1)" class="absolute top-2 right-2 text-red-500 text-xs hover:underline">Remove</button>
+                         <div class="mb-2 grid grid-cols-2 gap-2">
+                             <input v-model="t.author" class="bg-transparent border-b border-gray-700 w-full outline-none text-sm p-1" placeholder="Author">
+                             <input v-model="t.role" class="bg-transparent border-b border-gray-700 text-xs text-gray-500 w-full outline-none p-1" placeholder="Role">
                          </div>
-                         <textarea v-model="t.text" class="bg-transparent w-full text-sm text-gray-300 outline-none resize-none" placeholder="Testimonial text..."></textarea>
+                         <textarea v-model="t.text" class="bg-transparent w-full text-sm text-gray-300 outline-none resize-none h-16" placeholder="Testimonial text..."></textarea>
                     </div>
                      <button @click="data.testimonials.push({text:'', author:'', role:'', color: 'bg-blue-500'})" class="w-full py-2 border border-dashed border-gray-700 rounded text-xs text-gray-500 hover:border-emerald-500 hover:text-emerald-400 transition">+ Add Testimonial</button>
+                </div>
+            </div>
+
+            <!-- Preview Section -->
+            <div class="glass rounded-xl p-8 mt-10 border-emerald-900/50 bg-[#080808]">
+                <h2 class="text-center font-bold text-emerald-500 uppercase tracking-widest mb-8">Live Preview</h2>
+                
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent mb-2">{{ data.brand.subBrand }}</h1>
+                    <p class="text-white text-xl">{{ data.brand.tagline }}</p>
+                    <p class="text-gray-500 text-sm mt-4 max-w-2xl mx-auto">{{ data.brand.mission }}</p>
+                    
+                    <div class="mt-8 flex justify-center gap-8">
+                         <div v-for="stat in data.stats" class="text-center">
+                             <div class="text-2xl font-bold text-white">{{ stat.value }}</div>
+                             <div class="text-xs text-gray-500 uppercase">{{ stat.label }}</div>
+                         </div>
+                    </div>
+
+                    <div class="mt-12 flex flex-col items-center">
+                        <img :src="data.founder.image" class="w-20 h-20 rounded-full border-2 border-emerald-500 mb-4 object-cover">
+                        <h3 class="font-bold text-white">{{ data.founder.name }}</h3>
+                        <p class="text-xs text-emerald-400">{{ data.founder.title }}</p>
+                    </div>
                 </div>
             </div>
 
@@ -128,8 +166,23 @@
             methods: {
                 async loadFile() { try { const res = await fetch('./data.json'); if(res.ok) this.data = await res.json(); } catch(e){} },
                 async saveFile() {
-                     try { const h = await window.showSaveFilePicker({ suggestedName: 'data.json' }); const w = await h.createWritable(); await w.write(JSON.stringify(this.data, null, 2)); await w.close(); this.showNotification('Saved to data.json'); }
-                    catch(e) { const blob = new Blob([JSON.stringify(this.data,null,2)],{type:'application/json'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download='data.json'; a.click(); }
+                     try { 
+                        if (window.showSaveFilePicker) {
+                            const h = await window.showSaveFilePicker({ suggestedName: 'data.json' }); 
+                            const w = await h.createWritable(); 
+                            await w.write(JSON.stringify(this.data, null, 2)); 
+                            await w.close(); 
+                            this.showNotification('Saved to data.json');
+                        } else {
+                            throw new Error("FS API Not Supported");
+                        }
+                     }
+                    catch(e) { 
+                        const blob = new Blob([JSON.stringify(this.data,null,2)],{type:'application/json'}); 
+                        const a = document.createElement('a'); a.href = URL.createObjectURL(blob); 
+                        a.download='data.json'; a.click(); 
+                        this.showNotification('Downloaded JSON');
+                    }
                 },
                 showNotification(msg) { this.notification = msg; setTimeout(()=>this.notification=null, 3000); }
             }

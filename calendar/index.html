@@ -3,148 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenZ | Calendar Manager</title>
+    <title>Academic Calendar | IITM BS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
-        .glass { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .input-field { background: #1a1a1a; border: 1px solid #333; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; width: 100%; outline: none; transition: all 0.3s; }
-        .input-field:focus { border-color: #eab308; box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2); }
+        .glass { background: #111; border: 1px solid #222; }
+        /* Calendar Grid */
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: #222; border: 1px solid #333; border-radius: 12px; overflow: hidden; }
+        .calendar-cell { background: #0a0a0a; min-height: 100px; padding: 8px; position: relative; transition: background 0.2s; }
+        .calendar-cell:hover { background: #151515; }
+        .calendar-header { background: #151515; padding: 12px; text-align: center; font-weight: 600; font-size: 0.875rem; color: #888; }
+        
+        /* Event Pills */
+        .event-pill { font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; border-left-width: 3px; margin-bottom: 4px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: 0.9; transition: opacity 0.2s; }
+        .event-pill:hover { opacity: 1; transform: scale(1.02); }
+        
     </style>
 </head>
-<body class="min-h-screen p-6 relative overflow-x-hidden">
+<body class="min-h-screen p-4 md:p-8 flex flex-col">
 
-    <div id="app" class="max-w-7xl mx-auto">
-        <header class="flex justify-between items-center mb-8">
+    <div id="app" class="max-w-7xl mx-auto w-full flex-1 flex flex-col">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-center mb-8 gap-6">
             <div>
-                <h1 class="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Calendar Manager</h1>
-                <p class="text-gray-400 text-sm mt-1">Manage Deadlines & Events</p>
+                <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-500">Academic Calendar</h1>
+                <p class="text-gray-500 text-sm mt-1 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i> Deadlines, Exams & Registration
+                </p>
             </div>
+            
+            <div class="flex items-center gap-6 bg-[#111] border border-[#222] p-2 rounded-xl">
+                 <button @click="changeMonth(-1)" class="w-10 h-10 rounded-lg hover:bg-[#222] text-gray-400 flex items-center justify-center transition">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="text-center min-w-[140px]">
+                    <h2 class="text-lg font-bold text-white">{{ currentMonthName }} {{ currentYear }}</h2>
+                </div>
+                <button @click="changeMonth(1)" class="w-10 h-10 rounded-lg hover:bg-[#222] text-gray-400 flex items-center justify-center transition">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
             <div class="flex gap-3">
-                <button @click="loadFile" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-sm">Reload</button>
-                <button @click="saveFile" class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-sm font-medium shadow-lg shadow-orange-500/20">Save JSON</button>
-                <button @click="openNewModal" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-sm font-medium shadow-lg shadow-emerald-500/20">Add Event</button>
+                 <button @click="jumpToToday" class="px-4 py-2 bg-[#1a1a1a] text-gray-300 border border-[#333] rounded-lg text-sm hover:text-white transition">Today</button>
+                 <button @click="openAddModal" class="px-4 py-2 bg-orange-600 hover:bg-orange-500 text-white rounded-lg text-sm shadow-lg shadow-orange-900/20 flex items-center gap-2">
+                    <i class="fa-solid fa-plus"></i> Add Event
+                </button>
             </div>
         </header>
 
-        <!-- Notification -->
-        <div v-if="notification" class="fixed top-6 right-6 z-50 px-4 py-3 rounded-lg shadow-xl border border-gray-700 bg-gray-900 text-white flex items-center gap-3 animate-bounce-in">
-            <span class="text-emerald-400">✓</span> {{ notification }}
-        </div>
-
-        <!-- List View -->
-        <div class="glass rounded-xl overflow-hidden">
-            <table class="w-full text-left border-collapse">
-                <thead>
-                    <tr class="bg-gray-900/50 text-gray-400 text-xs uppercase tracking-wider">
-                        <th class="p-4">Date</th>
-                        <th class="p-4">Event</th>
-                        <th class="p-4">Type</th>
-                        <th class="p-4 text-right">Actions</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-800">
-                    <tr v-for="event in sortedEvents" :key="event.id" class="hover:bg-white/5 transition group">
-                        <td class="p-4 font-mono text-sm text-yellow-500">{{ event.date }}</td>
-                        <td class="p-4 font-bold">{{ event.title }}</td>
-                        <td class="p-4">
-                            <span :class="getTypeColor(event.type)" class="px-2 py-1 rounded text-xs border bg-opacity-20">{{ event.type }}</span>
-                        </td>
-                        <td class="p-4 text-right opacity-0 group-hover:opacity-100 transition">
-                            <button @click="editEvent(event)" class="text-gray-400 hover:text-white mr-2">Edit</button>
-                             <button @click="deleteEvent(event.id)" class="text-red-500 hover:text-red-400">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Modal -->
-        <div v-if="editingEvent" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-            <div class="bg-[#111] border border-gray-800 rounded-xl w-full max-w-md p-8 shadow-2xl relative">
-                <h2 class="text-xl font-bold mb-6 text-orange-500">{{ isNew ? 'Add Event' : 'Edit Event' }}</h2>
-                
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-medium text-gray-500 mb-1">Title</label>
-                        <input v-model="editingEvent.title" class="input-field" type="text">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-gray-500 mb-1">Date</label>
-                        <input v-model="editingEvent.date" class="input-field" type="date">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-gray-500 mb-1">Type</label>
-                         <select v-model="editingEvent.type" class="input-field">
-                            <option>Quiz</option>
-                            <option>EndTerm</option>
-                            <option>Registration</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                     <div>
-                        <label class="block text-xs font-medium text-gray-500 mb-1">ID</label>
-                        <input v-model="editingEvent.id" class="input-field" type="text">
-                    </div>
+        <!-- Calendar UI -->
+        <div class="calendar-grid mb-8">
+            <!-- Headers -->
+            <div class="calendar-header" v-for="day in ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']">{{ day }}</div>
+            
+            <!-- Days -->
+            <div v-for="(cell, index) in calendarCells" :key="index" class="calendar-cell" :class="{'opacity-30': !cell.isCurrentMonth}">
+                <div class="flex justify-between items-start mb-1">
+                    <span class="text-sm font-medium" :class="isToday(cell.date) ? 'bg-orange-600 text-white w-6 h-6 rounded-full flex items-center justify-center' : 'text-gray-400'">{{ cell.day }}</span>
                 </div>
-
-                <div class="mt-8 flex justify-end gap-3">
-                    <button @click="editingEvent = null" class="px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-800">Cancel</button>
-                     <button @click="saveEvent" class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-white">Save</button>
+                
+                <!-- Events -->
+                <div class="flex flex-col gap-1">
+                    <div v-for="evt in getEventsForDate(cell.dateString)" :key="evt.id" 
+                         @click="editEvent(evt)"
+                         class="event-pill" 
+                         :class="getEventColor(evt.type)">
+                         {{ evt.title }}
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Upcoming List -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-gray-400 uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-clock"></i> Upcoming Deadlines
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div v-for="evt in upcomingEvents.slice(0, 6)" :key="evt.id" class="bg-[#151515] p-4 rounded-lg border border-[#222] flex items-center gap-4 hover:border-orange-500/30 transition group cursor-pointer" @click="editEvent(evt)">
+                     <div class="w-12 h-12 rounded-lg flex flex-col items-center justify-center bg-[#0a0a0a] border border-[#333] text-gray-300 group-hover:text-orange-400 group-hover:border-orange-500/50 transition">
+                         <span class="text-[10px] uppercase font-bold">{{ new Date(evt.date).toLocaleString('default', { month: 'short' }) }}</span>
+                         <span class="text-lg font-bold leading-none">{{ new Date(evt.date).getDate() }}</span>
+                     </div>
+                     <div>
+                         <h4 class="font-bold text-gray-200 text-sm mb-1">{{ evt.title }}</h4>
+                         <span class="text-[10px] px-2 py-0.5 rounded border" :class="getEventBadgeStyle(evt.type)">{{ evt.type }}</span>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add/Edit Modal -->
+        <div v-if="editingEvent" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" @click.self="editingEvent = null">
+            <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-md p-8 shadow-2xl relative animate-fade-in">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold text-white">{{ isNew ? 'Add Event' : 'Edit Event' }}</h2>
+                    <button @click="deleteEvent(editingEvent.id)" v-if="!isNew" class="text-red-500 text-sm hover:underline">Delete</button>
+                </div>
+                
+                <div class="space-y-4">
+                    <input v-model="editingEvent.title" placeholder="Event Title" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none focus:border-orange-500 transition">
+                    <input v-model="editingEvent.date" type="date" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none focus:border-orange-500 transition">
+                    <select v-model="editingEvent.type" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none focus:border-orange-500 transition">
+                        <option value="Quiz">Quiz</option>
+                        <option value="EndTerm">End Term</option>
+                        <option value="Registration">Registration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="mt-8 flex justify-end gap-3">
+                    <button @click="editingEvent = null" class="px-5 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-[#222]">Cancel</button>
+                    <button @click="saveEvent" class="px-5 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium">Save</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
         const { createApp } = Vue;
+
         createApp({
             data() {
-                return { events: [], editingEvent: null, isNew: false, notification: null }
-            },
-            computed: {
-                sortedEvents() {
-                    return this.events.slice().sort((a,b) => new Date(a.date) - new Date(b.date));
+                return {
+                    events: [],
+                     currentDate: new Date(), // Set to simulated 'now' or real now
+                     editingEvent: null,
+                     isNew: false
                 }
             },
-            mounted() { this.loadFile(); },
+            computed: {
+                currentYear() { return this.currentDate.getFullYear(); },
+                currentMonth() { return this.currentDate.getMonth(); },
+                currentMonthName() { return this.currentDate.toLocaleString('default', { month: 'long' }); },
+                calendarCells() {
+                    const year = this.currentYear;
+                    const month = this.currentMonth;
+                    
+                    const firstDayOfMonth = new Date(year, month, 1).getDay();
+                    const daysInMonth = new Date(year, month + 1, 0).getDate();
+                    const daysInPrevMonth = new Date(year, month, 0).getDate();
+                    
+                    const cells = [];
+                    
+                    // Prev Month Filler
+                    for (let i = firstDayOfMonth - 1; i >= 0; i--) {
+                        const d = daysInPrevMonth - i;
+                        cells.push({ 
+                            day: d, 
+                            date: new Date(year, month - 1, d),
+                            dateString: new Date(year, month - 1, d).toISOString().split('T')[0],
+                            isCurrentMonth: false 
+                        });
+                    }
+                    
+                    // Current Month
+                    for (let i = 1; i <= daysInMonth; i++) {
+                        const date = new Date(year, month, i); // Local time
+                        // Adjust for string format to avoid timezone shifts
+                        const y = date.getFullYear();
+                        const m = String(date.getMonth() + 1).padStart(2, '0');
+                        const day = String(date.getDate()).padStart(2, '0');
+                        const dateString = `${y}-${m}-${day}`;
+                        
+                        cells.push({ day: i, date: date, dateString: dateString, isCurrentMonth: true });
+                    }
+                    
+                    // Next Month Filler (to complete 42 cells grid usually)
+                    const remaining = 42 - cells.length;
+                    for (let i = 1; i <= remaining; i++) {
+                        cells.push({ 
+                            day: i, 
+                            date: new Date(year, month + 1, i),
+                            dateString: new Date(year, month + 1, i).toISOString().split('T')[0],
+                            isCurrentMonth: false 
+                        });
+                    }
+                    
+                    return cells;
+                },
+                upcomingEvents() {
+                    const today = new Date().toISOString().split('T')[0];
+                    return this.events
+                        .filter(e => e.date >= today)
+                        .sort((a,b) => new Date(a.date) - new Date(b.date));
+                }
+            },
+            mounted() {
+                // Set initial date to late 2025/early 2026 for context
+                this.currentDate = new Date('2025-12-23');
+                this.loadFile();
+            },
             methods: {
                 async loadFile() {
-                    try { const res = await fetch('./events.json'); if(res.ok) this.events = await res.json(); } catch(e){}
-                },
-                getTypeColor(type) {
-                    const map = { 'Quiz': 'bg-red-500 text-red-200 border-red-500', 'EndTerm': 'bg-purple-500 text-purple-200 border-purple-500', 'Registration': 'bg-blue-500 text-blue-200 border-blue-500' };
-                    return map[type] || 'bg-gray-500 text-gray-200 border-gray-500';
-                },
-                openNewModal() {
-                    this.isNew = true;
-                    this.editingEvent = { id: '', title: '', date: '', type: 'Quiz' };
-                },
-                editEvent(e) { this.isNew = false; this.editingEvent = JSON.parse(JSON.stringify(e)); },
-                saveEvent() {
-                    if(this.isNew) this.events.push(this.editingEvent);
-                    else {
-                        const idx = this.events.findIndex(e => e.id === this.editingEvent.id);
-                        if(idx !== -1) this.events[idx] = this.editingEvent;
-                    }
-                    this.editingEvent = null;
-                    this.showNotification('Event saved locally!');
-                },
-                deleteEvent(id) { if(confirm("Delete?")) this.events = this.events.filter(e => e.id !== id); },
-                async saveFile() {
                     try {
-                        const handle = await window.showSaveFilePicker({ suggestedName: 'events.json' });
-                        const w = await handle.createWritable(); await w.write(JSON.stringify(this.events, null, 2)); await w.close();
-                        this.showNotification('Saved to events.json');
-                    } catch(e) {
-                         const blob = new Blob([JSON.stringify(this.events, null, 2)], {type: 'application/json'});
-                        const url = URL.createObjectURL(blob);
-                        const a = document.createElement('a'); a.href = url; a.download = 'events.json'; a.click();
+                        const res = await fetch('./events.json');
+                        if(res.ok) this.events = await res.json();
+                    } catch(e) {}
+                },
+                changeMonth(delta) {
+                    this.currentDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth() + delta, 1);
+                },
+                jumpToToday() {
+                    this.currentDate = new Date(); // Reset to actual Today
+                },
+                isToday(date) {
+                    const today = new Date(); // Or simulated today
+                    return date.getDate() === today.getDate() && 
+                           date.getMonth() === today.getMonth() && 
+                           date.getFullYear() === today.getFullYear();
+                },
+                getEventsForDate(dateString) {
+                    return this.events.filter(e => e.date === dateString);
+                },
+                getEventColor(type) {
+                      switch(type) {
+                          case 'Quiz': return 'bg-red-900/40 text-red-200 border-red-500/50 hover:bg-red-800/60';
+                          case 'EndTerm': return 'bg-purple-900/40 text-purple-200 border-purple-500/50 hover:bg-purple-800/60';
+                          case 'Registration': return 'bg-blue-900/40 text-blue-200 border-blue-500/50 hover:bg-blue-800/60';
+                          default: return 'bg-gray-800 text-gray-300 border-gray-600 hover:bg-gray-700';
+                      }
+                },
+                getEventBadgeStyle(type) {
+                      switch(type) {
+                          case 'Quiz': return 'border-red-500/30 text-red-400 bg-red-500/10';
+                          case 'EndTerm': return 'border-purple-500/30 text-purple-400 bg-purple-500/10';
+                          case 'Registration': return 'border-blue-500/30 text-blue-400 bg-blue-500/10';
+                          default: return 'border-gray-500/30 text-gray-400 bg-gray-500/10';
+                      }
+                },
+                openAddModal() {
+                    this.isNew = true;
+                    this.editingEvent = { id: Date.now().toString(), title: '', date: new Date().toISOString().split('T')[0], type: 'Quiz' };
+                },
+                editEvent(evt) {
+                    this.isNew = false;
+                    this.editingEvent = JSON.parse(JSON.stringify(evt));
+                },
+                saveEvent() {
+                     if (this.isNew) {
+                         this.events.push(this.editingEvent);
+                     } else {
+                         const idx = this.events.findIndex(e => e.id === this.editingEvent.id);
+                         if (idx !== -1) this.events[idx] = this.editingEvent;
+                     }
+                     this.editingEvent = null;
+                     this.saveFile(true);
+                },
+                deleteEvent(id) {
+                    if(confirm("Delete this event?")) {
+                        this.events = this.events.filter(e => e.id !== id);
+                        this.editingEvent = null;
+                        this.saveFile(true);
                     }
                 },
-                showNotification(msg) { this.notification = msg; setTimeout(()=>this.notification=null, 3000); }
+                async saveFile(silent = false) {
+                     // Persistence Logic
+                     try {
+                         if (window.showSaveFilePicker) {
+                             const handle = await window.showSaveFilePicker({ suggestedName: 'events.json' });
+                             const w = await handle.createWritable();
+                             await w.write(JSON.stringify(this.events, null, 2));
+                             await w.close();
+                             if(!silent) alert("Saved!");
+                         }
+                     } catch(e) { console.log(e); }
+                }
             }
         }).mount('#app');
     </script>

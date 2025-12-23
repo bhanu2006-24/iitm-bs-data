@@ -14,15 +14,15 @@
         "telegram": "https://t.me/iitmadras_bsdegree"
     },
     "images": {
-        "hero": "IMAGES.brand.hero",
-        "community": "IMAGES.brand.community"
+        "hero": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
+        "community": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
     },
     "disclaimer": "GenZ IITian is a personal initiative and is not officially affiliated with, associated with, or endorsed by IIT Madras. All content is created for educational purposes to support students."
   },
   "founder": {
     "name": "Sriram (Sriram R)",
     "title": "Founder & Lead Instructor",
-    "image": "IMAGES.brand.founder", 
+    "image": "https://i.postimg.cc/xdKj8x4m/Gen-Z.png", 
     "background": [
         "Student at VIT Vellore (Software Engineering)",
         "Student at IIT Madras (BS in Data Science)",
