@@ -12,21 +12,23 @@
     "q2": true,
     "et": true
   },
-  "description": "Computational Thinking - Part of the FOUNDATION curriculum.",
+  "description": "Computational thinking is the ability to think about a problem distinctively so that it can be solved by a computer. Covers logic, flowcharts, and basic algorithms.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - Computational Thinking Topic",
+      "title": "Basics of Computation",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Flowcharts",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Variables & Datatypes",
+          "duration": "15:00"
+        },
+        {
+          "title": "Iterators",
+          "duration": "10:00"
         }
       ],
       "notes": [],
@@ -34,16 +36,18 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - Computational Thinking Topic",
+      "title": "Logic & Selection",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Pseudocode",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "If/Else Logic",
+          "duration": "15:00"
+        },
+        {
+          "title": "Finding Max/Min",
           "duration": "20:00"
         }
       ],
@@ -52,17 +56,15 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - Computational Thinking Topic",
+      "title": "Procedures & Operators",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Procedures & Parameters",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Boolean Operators (AND/OR)",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -70,17 +72,19 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - Computational Thinking Topic",
+      "title": "Nested Logic",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Nested Iterations",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Birthday Paradox",
+          "duration": "15:00"
+        },
+        {
+          "title": "Binning",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -88,17 +92,15 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - Computational Thinking Topic",
+      "title": "Lists & Sorting",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Introduction to Lists",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Insertion Sort",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -106,17 +108,15 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - Computational Thinking Topic",
+      "title": "Advanced Data Structures",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Dictionaries / Maps",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Tables",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -124,16 +124,14 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - Computational Thinking Topic",
+      "title": "Graphs & Matrices",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Matrix Representation",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Intro to Graphs",
           "duration": "20:00"
         }
       ],
@@ -142,16 +140,14 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - Computational Thinking Topic",
+      "title": "Graph Algorithms",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Adjacency Matrix",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Graph Traversal",
           "duration": "20:00"
         }
       ],
@@ -160,17 +156,19 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - Computational Thinking Topic",
+      "title": "Recursion & Trees",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Concept of Recursion",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Backtracking",
           "duration": "20:00"
+        },
+        {
+          "title": "Trees Intro",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -178,16 +176,14 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - Computational Thinking Topic",
+      "title": "Algorithmic Efficiency",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Counting Operations",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Basic Complexity",
           "duration": "20:00"
         }
       ],
@@ -196,17 +192,15 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - Computational Thinking Topic",
+      "title": "Problem Decomposition",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Top-down Design",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Divide and Conquer",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -214,16 +208,14 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - Computational Thinking Topic",
+      "title": "Review & Case Studies",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Case Study 1",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Final Review",
           "duration": "20:00"
         }
       ],

@@ -12,21 +12,19 @@
     "q2": true,
     "et": true
   },
-  "description": "English I - Part of the FOUNDATION curriculum.",
+  "description": "Builds a strong foundation in English language skills reading, writing, listening and speaking.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - English I Topic",
+      "title": "Sounds & Words",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Vowel Sounds",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Consonant Sounds",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -34,16 +32,14 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - English I Topic",
+      "title": "Parts of Speech",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Nouns & Pronouns",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Verbs & Adjectives",
           "duration": "20:00"
         }
       ],
@@ -52,16 +48,14 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - English I Topic",
+      "title": "Sentence Structures",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Phrases & Idioms",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Simple, Compound, Complex",
           "duration": "20:00"
         }
       ],
@@ -70,17 +64,15 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - English I Topic",
+      "title": "Basic Speaking Skills",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Introductions",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Speaking Clearly",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -88,17 +80,19 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - English I Topic",
+      "title": "Tenses",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Present Tenses",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Past & Future",
           "duration": "20:00"
+        },
+        {
+          "title": "Subject-Verb Agreement",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -106,17 +100,15 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - English I Topic",
+      "title": "Reading Skills",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Skimming & Scanning",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Reading Comprehension",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -124,17 +116,15 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - English I Topic",
+      "title": "Listening Skills",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Active Listening",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Note Taking",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -142,17 +132,15 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - English I Topic",
+      "title": "Pronunciation",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Word Stress",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Intonation",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -160,16 +148,14 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - English I Topic",
+      "title": "Presentation Skills",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Structuring a Speech",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Group Discussions",
           "duration": "20:00"
         }
       ],
@@ -178,17 +164,15 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - English I Topic",
+      "title": "Grammar & Common Errors",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Common Mistakes",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Punctuation",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -196,16 +180,14 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - English I Topic",
+      "title": "Writing Basics",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Paragraph Writing",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Essay Structure",
           "duration": "20:00"
         }
       ],
@@ -214,17 +196,15 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - English I Topic",
+      "title": "Professional Writing",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Email Etiquette",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Formal Letters",
+          "duration": "15:00"
         }
       ],
       "notes": [],

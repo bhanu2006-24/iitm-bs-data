@@ -12,21 +12,23 @@
     "q2": true,
     "et": true
   },
-  "description": "Statistics for Data Science I - Part of the FOUNDATION curriculum.",
+  "description": "Introduces large datasets and insights from them. Covers basic probability and random variables. Focus is on applications and conceptual understanding.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - Statistics for Data Science I Topic",
+      "title": "Data & Measurement",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Types of Data",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Scales of Measurement",
+          "duration": "15:00"
+        },
+        {
+          "title": "Descriptive vs Inferential",
+          "duration": "12:00"
         }
       ],
       "notes": [],
@@ -34,17 +36,19 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - Statistics for Data Science I Topic",
+      "title": "Categorical Data",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Frequency Distributions",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Bar Charts & Pie Charts",
+          "duration": "15:00"
+        },
+        {
+          "title": "Mode & Median for Categorical",
+          "duration": "10:00"
         }
       ],
       "notes": [],
@@ -52,17 +56,23 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - Statistics for Data Science I Topic",
+      "title": "Numerical Data",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Measures of Central Tendency",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Percentiles & Quartiles",
+          "duration": "15:00"
+        },
+        {
+          "title": "Variance & Standard Deviation",
           "duration": "20:00"
+        },
+        {
+          "title": "Box Plots",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -70,17 +80,19 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - Statistics for Data Science I Topic",
+      "title": "Association of Variables",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Contingency Tables",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Scatterplots & Correlation",
           "duration": "20:00"
+        },
+        {
+          "title": "Covariance",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -88,17 +100,15 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - Statistics for Data Science I Topic",
+      "title": "Basic Probability",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Experiments & Sample Spaces",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Events & Operations",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -106,16 +116,14 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - Statistics for Data Science I Topic",
+      "title": "Probability Rules",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Axioms of Probability",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Conditional Probability",
           "duration": "20:00"
         }
       ],
@@ -124,17 +132,15 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - Statistics for Data Science I Topic",
+      "title": "Random Variables",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Discrete Random Variables",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Probability Mass Functions",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -142,17 +148,15 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - Statistics for Data Science I Topic",
+      "title": "Expected Value",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Expectation",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Variance of RVs",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -160,16 +164,14 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - Statistics for Data Science I Topic",
+      "title": "Binomial Distribution",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
+          "title": "Bernoulli Trials",
           "duration": "10:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Binomial formula",
           "duration": "20:00"
         }
       ],
@@ -178,17 +180,15 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - Statistics for Data Science I Topic",
+      "title": "Continuous Distributions",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "PDF & CDF",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Uniform Distribution",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -196,17 +196,15 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - Statistics for Data Science I Topic",
+      "title": "Normal Distribution",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Standard Normal",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Z-scores",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -214,17 +212,15 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - Statistics for Data Science I Topic",
+      "title": "Sampling",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Sampling Distributions",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Central Limit Theorem Intro",
+          "duration": "25:00"
         }
       ],
       "notes": [],

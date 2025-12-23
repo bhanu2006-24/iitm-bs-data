@@ -14,20 +14,14 @@
     "q2": true,
     "et": true
   },
-  "description": "Mathematics for Data Science II - Part of the FOUNDATION curriculum.",
+  "description": "Focuses on Linear Algebra: Vectors, Matrices and Vector Spaces.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - Mathematics for Data Science II Topic",
+      "title": "Vectors & Matrices",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Systems of Linear Equations",
           "duration": "20:00"
         }
       ],
@@ -36,17 +30,11 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - Mathematics for Data Science II Topic",
+      "title": "Linear Systems",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Gaussian Elimination",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -54,16 +42,10 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - Mathematics for Data Science II Topic",
+      "title": "Vector Spaces",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Linear Independence",
           "duration": "20:00"
         }
       ],
@@ -72,16 +54,10 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - Mathematics for Data Science II Topic",
+      "title": "Basis & Dimension",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Finding Basis",
           "duration": "20:00"
         }
       ],
@@ -90,16 +66,10 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - Mathematics for Data Science II Topic",
+      "title": "Linear Transformations",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Matrix of Transformation",
           "duration": "20:00"
         }
       ],
@@ -108,17 +78,11 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - Mathematics for Data Science II Topic",
+      "title": "Inner Product Spaces",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Dot Product & Norm",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -126,17 +90,11 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - Mathematics for Data Science II Topic",
+      "title": "Orthogonality",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Gram-Schmidt Process",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -144,16 +102,10 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - Mathematics for Data Science II Topic",
+      "title": "Eigenvalues",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Characteristic Equation",
           "duration": "20:00"
         }
       ],
@@ -162,16 +114,10 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - Mathematics for Data Science II Topic",
+      "title": "Diagonalization",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Diagonalizing Matrices",
           "duration": "20:00"
         }
       ],
@@ -180,17 +126,11 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - Mathematics for Data Science II Topic",
+      "title": "SVD",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Singular Value Decomposition Intro",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -198,17 +138,11 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - Mathematics for Data Science II Topic",
+      "title": "PCA",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Principal Component Analysis",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -216,17 +150,11 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - Mathematics for Data Science II Topic",
+      "title": "Applications",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Linear Algebra in ML",
+          "duration": "30:00"
         }
       ],
       "notes": [],

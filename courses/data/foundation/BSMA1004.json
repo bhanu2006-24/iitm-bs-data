@@ -17,20 +17,14 @@
     "q2": true,
     "et": true
   },
-  "description": "Statistics for Data Science II - Part of the FOUNDATION curriculum.",
+  "description": "Inferential Statistics and Hypothesis Testing.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - Statistics for Data Science II Topic",
+      "title": "Multiple RVs",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Joint Distributions",
           "duration": "20:00"
         }
       ],
@@ -39,16 +33,10 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - Statistics for Data Science II Topic",
+      "title": "Independence",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Marginal Distributions",
           "duration": "20:00"
         }
       ],
@@ -57,16 +45,10 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - Statistics for Data Science II Topic",
+      "title": "Expectations & Covariance",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Covariance Matrix",
           "duration": "20:00"
         }
       ],
@@ -75,16 +57,10 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - Statistics for Data Science II Topic",
+      "title": "Continuous RVs",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Density Functions",
           "duration": "20:00"
         }
       ],
@@ -93,16 +69,10 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - Statistics for Data Science II Topic",
+      "title": "Sampling Distributions",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Properties of Estimators",
           "duration": "20:00"
         }
       ],
@@ -111,16 +81,10 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - Statistics for Data Science II Topic",
+      "title": "Estimation",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Confidence Intervals",
           "duration": "20:00"
         }
       ],
@@ -129,16 +93,10 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - Statistics for Data Science II Topic",
+      "title": "Hypothesis Testing I",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Null & Alternative Hypotheses",
           "duration": "20:00"
         }
       ],
@@ -147,16 +105,10 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - Statistics for Data Science II Topic",
+      "title": "Hypothesis Testing II",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "P-values & Significance",
           "duration": "20:00"
         }
       ],
@@ -165,16 +117,10 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - Statistics for Data Science II Topic",
+      "title": "Testing Means",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "T-tests",
           "duration": "20:00"
         }
       ],
@@ -183,16 +129,10 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - Statistics for Data Science II Topic",
+      "title": "Testing Variance",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Chi-Square Tests",
           "duration": "20:00"
         }
       ],
@@ -201,17 +141,11 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - Statistics for Data Science II Topic",
+      "title": "Linear Regression",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Simple Linear Regression",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -219,16 +153,10 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - Statistics for Data Science II Topic",
+      "title": "Review",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
-        },
-        {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Final Exam Prep",
           "duration": "20:00"
         }
       ],

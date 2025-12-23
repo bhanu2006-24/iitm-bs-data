@@ -14,21 +14,19 @@
     "q2": true,
     "et": true
   },
-  "description": "Programming in Python - Part of the FOUNDATION curriculum.",
+  "description": "Comprehensive introduction to Python programming language. Emphasizes problem solving and algorithmic concepts.",
   "weeks": [
     {
       "weekNum": 1,
-      "title": "Week 1 - Programming in Python Topic",
+      "title": "Intro to Algorithms",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Variables & Values",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Basic IO",
+          "duration": "10:00"
         }
       ],
       "notes": [],
@@ -36,16 +34,14 @@
     },
     {
       "weekNum": 2,
-      "title": "Week 2 - Programming in Python Topic",
+      "title": "Conditionals",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Boolean Logic",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "If/Elif/Else",
           "duration": "20:00"
         }
       ],
@@ -54,17 +50,15 @@
     },
     {
       "weekNum": 3,
-      "title": "Week 3 - Programming in Python Topic",
+      "title": "More Conditionals",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Nested Conditionals",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Flow Control Examples",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -72,16 +66,14 @@
     },
     {
       "weekNum": 4,
-      "title": "Week 4 - Programming in Python Topic",
+      "title": "Loops",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "While Loops",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "For Loops & Range",
           "duration": "20:00"
         }
       ],
@@ -90,16 +82,14 @@
     },
     {
       "weekNum": 5,
-      "title": "Week 5 - Programming in Python Topic",
+      "title": "Control Flow",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Break & Continue",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Loop Patterns",
           "duration": "20:00"
         }
       ],
@@ -108,17 +98,15 @@
     },
     {
       "weekNum": 6,
-      "title": "Week 6 - Programming in Python Topic",
+      "title": "Collections: Lists",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "List Operations",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Slicing",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -126,17 +114,15 @@
     },
     {
       "weekNum": 7,
-      "title": "Week 7 - Programming in Python Topic",
+      "title": "Collections: Strings",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "String Methods",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Formatting",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -144,17 +130,15 @@
     },
     {
       "weekNum": 8,
-      "title": "Week 8 - Programming in Python Topic",
+      "title": "Dictionaries & Tuples",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Dictionary Basics",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Tuples vs Lists",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -162,16 +146,14 @@
     },
     {
       "weekNum": 9,
-      "title": "Week 9 - Programming in Python Topic",
+      "title": "Functions",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Defining Functions",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Scope & Returns",
           "duration": "20:00"
         }
       ],
@@ -180,17 +162,15 @@
     },
     {
       "weekNum": 10,
-      "title": "Week 10 - Programming in Python Topic",
+      "title": "File Operations",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Reading Files",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Writing Files",
+          "duration": "15:00"
         }
       ],
       "notes": [],
@@ -198,17 +178,15 @@
     },
     {
       "weekNum": 11,
-      "title": "Week 11 - Programming in Python Topic",
+      "title": "Modules & Libraries",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Importing Modules",
+          "duration": "15:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
-          "duration": "20:00"
+          "title": "Standard Library Tour",
+          "duration": "25:00"
         }
       ],
       "notes": [],
@@ -216,16 +194,14 @@
     },
     {
       "weekNum": 12,
-      "title": "Week 12 - Programming in Python Topic",
+      "title": "Data Analysis Intro",
       "lectures": [
         {
-          "title": "Introduction",
-          "youtubeId": "",
-          "duration": "10:00"
+          "title": "Intro to NumPy",
+          "duration": "20:00"
         },
         {
-          "title": "Core Concept",
-          "youtubeId": "",
+          "title": "Intro to Pandas",
           "duration": "20:00"
         }
       ],

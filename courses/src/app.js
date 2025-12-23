@@ -30,33 +30,34 @@ createApp({
     methods: {
         async loadCatalog() {
             try {
-                const res = await fetch('./data/catalog.json');
+                const res = await fetch(`./data/catalog.json?t=${Date.now()}`);
                 if (res.ok) {
                     this.catalog = await res.json();
+                } else {
+                    console.error("Failed to load catalog:", res.status);
                 }
             } catch (e) { console.error("Failed to load catalog", e); }
         },
 
         async loadCourse(catalogEntry) {
             this.loading = true;
-             // Close previous state
             this.previewOpenWeeks = [];
             
             try {
-                // Determine path. catalogEntry.path is relative to data/ e.g. "foundation/MA1001.json"
-                const res = await fetch(`./data/${catalogEntry.path}`);
+                const res = await fetch(`./data/${catalogEntry.path}?t=${Date.now()}`);
                 if (res.ok) {
                     this.selectedCourse = await res.json();
-                    // Ensure structure exists
                     if (!this.selectedCourse.weeks) this.selectedCourse.weeks = [];
-                    // Default open preview week 1 if exists
+                    // Open first week by default if exists
                     if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].weekNum];
-                    this.viewMode = 'preview'; // Reset to preview on load
+                    this.viewMode = 'preview';
                     this.editOpenWeeks = [0];
+                } else {
+                    alert("Failed to load course details. File might be missing.");
                 }
             } catch (e) {
                 console.error(e);
-                alert("Error loading course data");
+                alert("Error loading course data. Check console.");
             } finally {
                 this.loading = false;
             }

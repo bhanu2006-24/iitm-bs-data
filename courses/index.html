@@ -69,17 +69,17 @@
                 <template v-if="filteredCourses.length > 0">
                     <div v-for="c in filteredCourses" :key="c.code" 
                          @click="loadCourse(c)"
-                         :class="['p-3 rounded-xl cursor-pointer transition border border-transparent group relative overflow-hidden', 
-                                  selectedCourse && selectedCourse.code === c.code ? 'active-course' : 'hover:bg-[#111] border-[#111] hover:border-[#222]']">
+                         :class="['p-4 rounded-xl cursor-pointer transition-all duration-300 border group relative overflow-hidden', 
+                                  selectedCourse && selectedCourse.code === c.code ? 'active-course border-indigo-500/30' : 'bg-[#0f0f0f] border-[#1a1a1a] hover:border-[#333] hover:bg-[#141414]']">
                         
                         <div class="flex justify-between items-start relative z-10">
-                            <span class="text-[10px] font-mono tracking-wider px-1.5 py-0.5 rounded bg-white/5 text-gray-400 group-hover:text-indigo-400 transition-colors">{{ c.code }}</span>
-                            <span class="text-[10px] text-gray-600 group-hover:text-gray-400">{{ c.credits }} Cr</span>
+                            <span :class="['text-[10px] font-mono tracking-wider px-2 py-0.5 rounded transition-colors', selectedCourse && selectedCourse.code === c.code ? 'bg-indigo-500/20 text-indigo-300' : 'bg-white/5 text-gray-400 group-hover:text-indigo-400']">{{ c.code }}</span>
+                            <span class="text-[10px] text-gray-600 font-medium group-hover:text-gray-400">{{ c.credits }} Cr</span>
                         </div>
-                        <div class="font-medium text-gray-300 mt-2 truncate group-hover:text-white transition-colors relative z-10">{{ c.name }}</div>
+                        <div class="font-medium text-gray-300 mt-3 text-sm truncate group-hover:text-white transition-colors relative z-10">{{ c.name }}</div>
                         
                         <!-- Hover Glow -->
-                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/0 via-indigo-500/5 to-indigo-500/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-700 pointer-events-none"></div>
                     </div>
                 </template>
                 <div v-else class="text-center py-10 text-gray-600">
