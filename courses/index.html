@@ -141,7 +141,7 @@
                         <div class="mb-12">
                              <span class="text-indigo-400 font-bold tracking-wider text-xs uppercase mb-2 block">{{ selectedCourse.level }} • {{ selectedCourse.credits }} Credits</span>
                              <h1 class="text-4xl md:text-5xl mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">{{ selectedCourse.name }}</h1>
-                             <p class="text-lg text-gray-400 max-w-2xl">{{ selectedCourse.description }}</p>
+                             <div class="text-lg text-gray-400 max-w-2xl prose prose-invert math-content" v-html="renderMarkdown(selectedCourse.description)"></div>
                              
                              <div class="flex gap-4 mt-6">
                                  <div class="flex flex-col">
@@ -169,15 +169,15 @@
                         <div v-if="selectedCourse.weeks && selectedCourse.weeks.length">
                             <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2"><i class="fa-solid fa-list-check text-indigo-500"></i> Course Content</h3>
                             <div class="space-y-4">
-                                <div v-for="week in selectedCourse.weeks" :key="week.weekNum" class="border border-[#222] bg-[#0a0a0a] rounded-xl overflow-hidden">
-                                     <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-[#111] transition" @click="togglePreviewWeek(week.weekNum)">
+                                <div v-for="(week, idx) in selectedCourse.weeks" :key="week.id" class="border border-[#222] bg-[#0a0a0a] rounded-xl overflow-hidden">
+                                     <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-[#111] transition" @click="togglePreviewWeek(week.id)">
                                          <div class="flex items-center gap-4">
-                                             <div class="w-10 h-10 rounded-full bg-[#151515] flex items-center justify-center text-gray-500 font-mono text-xs font-bold border border-[#222]">W{{ week.weekNum }}</div>
+                                             <div class="w-10 h-10 rounded-full bg-[#151515] flex items-center justify-center text-gray-500 font-mono text-xs font-bold border border-[#222]">W{{ idx + 1 }}</div>
                                              <h4 class="font-medium text-gray-200">{{ week.title }}</h4>
                                          </div>
-                                         <i :class="['fa-solid text-gray-600 transition', previewOpenWeeks.includes(week.weekNum) ? 'fa-minus' : 'fa-plus']"></i>
+                                         <i :class="['fa-solid text-gray-600 transition', previewOpenWeeks.includes(week.id) ? 'fa-minus' : 'fa-plus']"></i>
                                      </div>
-                                     <div v-if="previewOpenWeeks.includes(week.weekNum)" class="p-4 pt-0 border-t border-[#222] bg-[#0c0c0c]">
+                                     <div v-if="previewOpenWeeks.includes(week.id)" class="p-4 pt-0 border-t border-[#222] bg-[#0c0c0c]">
                                          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
                                              <!-- Unified Preview Render -->
                                              <div class="space-y-6">
@@ -216,9 +216,9 @@
                                                           <!-- Markdown Note -->
                                                           <div v-else-if="item.resourceType === 'markdown'" class="bg-[#111] border border-[#222] p-6 rounded-2xl relative overflow-hidden group/md">
                                                               <div class="absolute top-0 left-0 w-1 h-full bg-pink-500/50"></div>
-                                                              <h4 class="text-sm font-bold text-pink-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-note-sticky"></i> {{ item.title }}</h4>
-                                                              <div class="prose prose-invert prose-sm max-w-none text-gray-400" v-html="renderMarkdown(item.content)"></div>
-                                                          </div>
+                                                               <h4 class="text-sm font-bold text-pink-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-note-sticky"></i> {{ item.title }}</h4>
+                                                               <div class="prose prose-invert prose-sm max-w-none text-gray-400 math-content" v-html="renderMarkdown(item.content)"></div>
+                                                           </div>
                                                      </div>
 
                                                      <!-- Quiz -->
@@ -247,10 +247,12 @@
 
                                                  </div>
                                              </div>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    </div> <!-- Closes 169 (weeks) -->
+                    </div> <!-- Closes 139 (preview viewmode) -->
 
                     <!-- EDITOR MODE -->
                     <div v-else-if="viewMode === 'edit'" class="max-w-6xl mx-auto p-8 pb-40">
@@ -361,7 +363,7 @@
                                          <div class="w-px bg-[#333] my-1"></div>
                                          <button @click="collapseAllWeeks" class="px-3 py-1.5 text-[10px] text-gray-400 hover:text-white transition"><i class="fa-solid fa-compress mr-1"></i> Collapse</button>
                                      </div>
-                                     <button @click="selectedCourse.weeks.push({weekNum: selectedCourse.weeks.length+1, title: 'New Week', content: []})" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-xs font-bold transition shadow-lg shadow-indigo-900/20">
+                                     <button @click="selectedCourse.weeks.push({weekNum: selectedCourse.weeks.length+1, id: Date.now(), title: 'New Week', content: []})" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-xs font-bold transition shadow-lg shadow-indigo-900/20">
                                          <i class="fa-solid fa-plus mr-1"></i> Add Week
                                      </button>
                                  </div>
@@ -373,7 +375,7 @@
                                      <div class="p-4 flex items-center gap-4 group cursor-pointer select-none" @click="toggleEditWeek(idx)">
                                          <div class="flex flex-col items-center gap-1 text-gray-600 group-hover:text-indigo-500 transition-colors">
                                              <button @click.stop="moveItem(selectedCourse.weeks, idx, -1)" class="hover:text-white"><i class="fa-solid fa-caret-up"></i></button>
-                                             <span class="font-mono font-bold text-xs bg-[#151515] px-2 py-1 rounded border border-[#222] min-w-[3rem] text-center">W{{ week.weekNum }}</span>
+                                             <span class="font-mono font-bold text-xs bg-[#151515] px-2 py-1 rounded border border-[#222] min-w-[3rem] text-center">W{{ idx + 1 }}</span>
                                              <button @click.stop="moveItem(selectedCourse.weeks, idx, 1)" class="hover:text-white"><i class="fa-solid fa-caret-down"></i></button>
                                          </div>
                                          

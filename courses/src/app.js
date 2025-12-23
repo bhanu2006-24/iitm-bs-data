@@ -30,6 +30,19 @@ createApp({
     created() {
         this.loadCatalog();
     },
+    updated() {
+        this.$nextTick(() => {
+            // Only render math in specific containers to avoid breaking Vue's DOM tracking
+            const elements = document.querySelectorAll('.math-content');
+            elements.forEach(el => {
+                // Check if already rendered to avoid double-processing (optional optimization)
+                if(!el.hasAttribute('data-math-rendered')) {
+                    MarkdownUtils.renderMath(el);
+                    el.setAttribute('data-math-rendered', 'true');
+                }
+            });
+        });
+    },
     methods: {
         async loadCatalog() {
             try {
@@ -60,7 +73,10 @@ createApp({
                     }
                     
                     // Normalize Weeks Data
-                    this.selectedCourse.weeks.forEach(w => {
+                    this.selectedCourse.weeks.forEach((w, index) => {
+                        // Ensure unique ID
+                        if(!w.id) w.id = Date.now() + Math.random() + index;
+
                         // Migration: Unified Content Model
                         if (!w.content) {
                             w.content = [];
@@ -84,7 +100,7 @@ createApp({
                         }
                     });
 
-                    if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].weekNum];
+                    if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].id];
                     this.viewMode = 'preview';
                     this.editOpenWeeks = [0];
                 } else {
