@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ | Calendar Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .input-field { background: #1a1a1a; border: 1px solid #333; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; width: 100%; outline: none; transition: all 0.3s; }
+        .input-field:focus { border-color: #eab308; box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2); }
+    </style>
+</head>
+<body class="min-h-screen p-6 relative overflow-x-hidden">
+
+    <div id="app" class="max-w-7xl mx-auto">
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Calendar Manager</h1>
+                <p class="text-gray-400 text-sm mt-1">Manage Deadlines & Events</p>
+            </div>
+            <div class="flex gap-3">
+                <button @click="loadFile" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 border border-gray-700 text-sm">Reload</button>
+                <button @click="saveFile" class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-sm font-medium shadow-lg shadow-orange-500/20">Save JSON</button>
+                <button @click="openNewModal" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-sm font-medium shadow-lg shadow-emerald-500/20">Add Event</button>
+            </div>
+        </header>
+
+        <!-- Notification -->
+        <div v-if="notification" class="fixed top-6 right-6 z-50 px-4 py-3 rounded-lg shadow-xl border border-gray-700 bg-gray-900 text-white flex items-center gap-3 animate-bounce-in">
+            <span class="text-emerald-400">✓</span> {{ notification }}
+        </div>
+
+        <!-- List View -->
+        <div class="glass rounded-xl overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-900/50 text-gray-400 text-xs uppercase tracking-wider">
+                        <th class="p-4">Date</th>
+                        <th class="p-4">Event</th>
+                        <th class="p-4">Type</th>
+                        <th class="p-4 text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-800">
+                    <tr v-for="event in sortedEvents" :key="event.id" class="hover:bg-white/5 transition group">
+                        <td class="p-4 font-mono text-sm text-yellow-500">{{ event.date }}</td>
+                        <td class="p-4 font-bold">{{ event.title }}</td>
+                        <td class="p-4">
+                            <span :class="getTypeColor(event.type)" class="px-2 py-1 rounded text-xs border bg-opacity-20">{{ event.type }}</span>
+                        </td>
+                        <td class="p-4 text-right opacity-0 group-hover:opacity-100 transition">
+                            <button @click="editEvent(event)" class="text-gray-400 hover:text-white mr-2">Edit</button>
+                             <button @click="deleteEvent(event.id)" class="text-red-500 hover:text-red-400">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal -->
+        <div v-if="editingEvent" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+            <div class="bg-[#111] border border-gray-800 rounded-xl w-full max-w-md p-8 shadow-2xl relative">
+                <h2 class="text-xl font-bold mb-6 text-orange-500">{{ isNew ? 'Add Event' : 'Edit Event' }}</h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Title</label>
+                        <input v-model="editingEvent.title" class="input-field" type="text">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Date</label>
+                        <input v-model="editingEvent.date" class="input-field" type="date">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Type</label>
+                         <select v-model="editingEvent.type" class="input-field">
+                            <option>Quiz</option>
+                            <option>EndTerm</option>
+                            <option>Registration</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                     <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">ID</label>
+                        <input v-model="editingEvent.id" class="input-field" type="text">
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-end gap-3">
+                    <button @click="editingEvent = null" class="px-4 py-2 rounded-lg border border-gray-700 hover:bg-gray-800">Cancel</button>
+                     <button @click="saveEvent" class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-500 text-white">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return { events: [], editingEvent: null, isNew: false, notification: null }
+            },
+            computed: {
+                sortedEvents() {
+                    return this.events.slice().sort((a,b) => new Date(a.date) - new Date(b.date));
+                }
+            },
+            mounted() { this.loadFile(); },
+            methods: {
+                async loadFile() {
+                    try { const res = await fetch('./events.json'); if(res.ok) this.events = await res.json(); } catch(e){}
+                },
+                getTypeColor(type) {
+                    const map = { 'Quiz': 'bg-red-500 text-red-200 border-red-500', 'EndTerm': 'bg-purple-500 text-purple-200 border-purple-500', 'Registration': 'bg-blue-500 text-blue-200 border-blue-500' };
+                    return map[type] || 'bg-gray-500 text-gray-200 border-gray-500';
+                },
+                openNewModal() {
+                    this.isNew = true;
+                    this.editingEvent = { id: '', title: '', date: '', type: 'Quiz' };
+                },
+                editEvent(e) { this.isNew = false; this.editingEvent = JSON.parse(JSON.stringify(e)); },
+                saveEvent() {
+                    if(this.isNew) this.events.push(this.editingEvent);
+                    else {
+                        const idx = this.events.findIndex(e => e.id === this.editingEvent.id);
+                        if(idx !== -1) this.events[idx] = this.editingEvent;
+                    }
+                    this.editingEvent = null;
+                    this.showNotification('Event saved locally!');
+                },
+                deleteEvent(id) { if(confirm("Delete?")) this.events = this.events.filter(e => e.id !== id); },
+                async saveFile() {
+                    try {
+                        const handle = await window.showSaveFilePicker({ suggestedName: 'events.json' });
+                        const w = await handle.createWritable(); await w.write(JSON.stringify(this.events, null, 2)); await w.close();
+                        this.showNotification('Saved to events.json');
+                    } catch(e) {
+                         const blob = new Blob([JSON.stringify(this.events, null, 2)], {type: 'application/json'});
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a'); a.href = url; a.download = 'events.json'; a.click();
+                    }
+                },
+                showNotification(msg) { this.notification = msg; setTimeout(()=>this.notification=null, 3000); }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

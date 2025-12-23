@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ | Wiki Course Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .input-field { background: #1a1a1a; border: 1px solid #333; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; width: 100%; outline: none; transition: all 0.3s; }
+        .input-field:focus { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+</head>
+<body class="min-h-screen p-6 relative overflow-x-hidden relative">
+
+    <div id="app" class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Wiki Manager</h1>
+                <p class="text-gray-400 text-sm mt-1">Manage Course Data</p>
+            </div>
+            <div class="flex gap-3">
+                <button @click="loadFile" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition flex items-center gap-2 text-sm font-medium border border-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Reload JSON
+                </button>
+                <button @click="saveFile" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition flex items-center gap-2 text-sm font-medium shadow-lg shadow-indigo-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                    Save Changes
+                </button>
+                <button @click="openNewModal" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 transition flex items-center gap-2 text-sm font-medium shadow-lg shadow-emerald-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Add Course
+                </button>
+            </div>
+        </header>
+
+        <!-- Notification -->
+        <div v-if="notification" class="fixed top-6 right-6 z-50 px-4 py-3 rounded-lg shadow-xl border border-gray-700 bg-gray-900 text-white flex items-center gap-3 animate-bounce-in">
+            <span class="text-emerald-400">✓</span> {{ notification }}
+        </div>
+
+        <!-- Search & Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="col-span-3 glass rounded-xl p-4 flex gap-4 items-center">
+                <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input v-model="searchQuery" type="text" placeholder="Search courses by name, code or ID..." class="bg-transparent border-none outline-none text-white w-full placeholder-gray-500">
+            </div>
+            <div class="glass rounded-xl p-4 flex flex-col justify-center items-center">
+                 <span class="text-xs text-gray-400 uppercase tracking-widest">Total Courses</span>
+                 <span class="text-2xl font-bold">{{ filteredCourses.length }}</span>
+            </div>
+        </div>
+
+        <!-- Course Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div v-for="course in filteredCourses" :key="course.id" class="glass rounded-xl p-6 hover:border-indigo-500/50 transition duration-300 group relative">
+                
+                <!-- Actions -->
+                <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition">
+                    <button @click="editCourse(course)" class="p-2 rounded bg-gray-800 hover:text-indigo-400 transition" title="Edit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon></svg>
+                    </button>
+                    <button @click="deleteCourse(course.id)" class="p-2 rounded bg-gray-800 hover:text-red-400 transition" title="Delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    </button>
+                </div>
+
+                <div class="flex justify-between items-start mb-4">
+                    <span class="px-2 py-1 rounded text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">{{ course.code }}</span>
+                    <span class="text-xs text-gray-500">{{ course.level }}</span>
+                </div>
+                
+                <h3 class="text-lg font-bold mb-2 line-clamp-1" :title="course.name">{{ course.name }}</h3>
+                <p class="text-sm text-gray-400 mb-4 line-clamp-2">{{ course.description }}</p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-2 text-xs text-gray-400 mb-4">
+                    <div class="flex justify-between"><span>Credits:</span> <span class="text-white">{{ course.credits }}</span></div>
+                    <div class="flex justify-between"><span>Diff:</span> <span class="text-white">{{ course.difficulty }}</span></div>
+                    <div class="flex justify-between"><span>Workload:</span> <span class="text-white">{{ course.workload }}</span></div>
+                </div>
+
+                <!-- Tags -->
+                <div class="flexflex-wrap gap-2 mt-auto">
+                    <span v-for="tag in course.tags.slice(0,3)" :key="tag" class="text-[10px] px-2 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700 mr-2">{{ tag }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div v-if="editingCourse" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+            <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-8 shadow-2xl relative">
+                <button @click="editingCourse = null" class="absolute top-6 right-6 text-gray-500 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
+                <h2 class="text-2xl font-bold mb-6 mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    {{ isNew ? 'Add New Course' : 'Edit Course' }}
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Course Code</label>
+                        <input v-model="editingCourse.code" class="input-field" type="text" placeholder="CS1001">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Course Name</label>
+                        <input v-model="editingCourse.name" class="input-field" type="text" placeholder="Computational Thinking">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">ID (Slug)</label>
+                        <input v-model="editingCourse.id" class="input-field" type="text" placeholder="f-ct">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Level</label>
+                         <select v-model="editingCourse.level" class="input-field">
+                            <option>Foundation</option>
+                            <option>Diploma</option>
+                            <option>Degree</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 col-span-2 md:col-span-2">
+                        <div>
+                             <label class="block text-xs font-medium text-gray-500 mb-1">Credits</label>
+                             <input v-model.number="editingCourse.credits" class="input-field" type="number">
+                        </div>
+                        <div>
+                             <label class="block text-xs font-medium text-gray-500 mb-1">Difficulty</label>
+                             <input v-model.number="editingCourse.difficulty" class="input-field" type="number" step="0.1">
+                        </div>
+                        <div>
+                             <label class="block text-xs font-medium text-gray-500 mb-1">Workload</label>
+                             <input v-model.number="editingCourse.workload" class="input-field" type="number" step="0.5">
+                        </div>
+                    </div>
+                    
+                    <div class="col-span-2 md:col-span-2">
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Description</label>
+                        <textarea v-model="editingCourse.description" class="input-field h-24 resize-none"></textarea>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="col-span-2">
+                         <label class="block text-xs font-medium text-gray-500 mb-1">Tags (comma separated)</label>
+                         <input :value="editingCourse.tags.join(', ')" @input="editingCourse.tags = $event.target.value.split(',').map(t=>t.trim())" class="input-field" type="text">
+                    </div>
+
+                    <!-- Syllabus Array Editing (Simplified as specific lines) -->
+                     <div class="col-span-2">
+                         <label class="block text-xs font-medium text-gray-500 mb-1">Syllabus (One per line)</label>
+                         <textarea :value="editingCourse.syllabus.join('\n')" @input="editingCourse.syllabus = $event.target.value.split('\n')" class="input-field h-32"></textarea>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-end gap-4">
+                    <button @click="editingCourse = null" class="px-6 py-2 rounded-lg border border-gray-700 hover:bg-gray-800 transition">Cancel</button>
+                    <button @click="saveCourse" class="px-6 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-lg shadow-indigo-500/25">
+                        {{ isNew ? 'Create Course' : 'Save Changes' }}
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    courses: [],
+                    searchQuery: '',
+                    editingCourse: null,
+                    isNew: false,
+                    fileHandle: null,
+                    notification: null
+                }
+            },
+            computed: {
+                filteredCourses() {
+                    const q = this.searchQuery.toLowerCase();
+                    return this.courses.filter(c => 
+                        c.name.toLowerCase().includes(q) || 
+                        c.code.toLowerCase().includes(q) ||
+                        c.id.toLowerCase().includes(q)
+                    );
+                }
+            },
+            mounted() {
+                this.loadFile();
+            },
+            methods: {
+                async loadFile() {
+                    try {
+                        // Attempt relative fetch
+                        const res = await fetch('./courses.json');
+                        if (res.ok) {
+                            this.courses = await res.json();
+                        } else {
+                            throw new Error('Not found');
+                        }
+                    } catch (e) {
+                        console.log("Could not auto-load. User might need to pick file.", e);
+                        // Optional fallback: Prompt user to pick/open? 
+                        // For now we just wait for user action or manual load if auto-fetch fails.
+                    }
+                },
+                openNewModal() {
+                    this.isNew = true;
+                    this.editingCourse = {
+                        id: '', code: '', name: '', level: 'Foundation', credits: 4, difficulty: 1, workload: 1,
+                        tags: [], description: '', syllabus: [], resources: [], reviews: [], gradeStats: {}
+                    };
+                },
+                editCourse(course) {
+                    this.isNew = false;
+                    // Deep copy to avoid mutating direct reference until save
+                    this.editingCourse = JSON.parse(JSON.stringify(course));
+                },
+                saveCourse() {
+                    if (this.isNew) {
+                        this.courses.push(this.editingCourse);
+                    } else {
+                        const idx = this.courses.findIndex(c => c.id === this.editingCourse.id);
+                        if (idx !== -1) {
+                            this.courses[idx] = this.editingCourse;
+                        }
+                    }
+                    this.editingCourse = null;
+                    this.showNotification('Course saved locally! Remember to save file.');
+                },
+                deleteCourse(id) {
+                    if(confirm("Are you sure?")) {
+                        this.courses = this.courses.filter(c => c.id !== id);
+                        this.showNotification('Course deleted.');
+                    }
+                },
+                async saveFile() {
+                    // Try File System Access API
+                    try {
+                        if (!window.showSaveFilePicker) {
+                            throw new Error("FS API not supported");
+                        }
+                        const handle = await window.showSaveFilePicker({
+                            suggestedName: 'courses.json',
+                            types: [{
+                                description: 'JSON File',
+                                accept: {'application/json': ['.json']},
+                            }],
+                        });
+                        const writable = await handle.createWritable();
+                        await writable.write(JSON.stringify(this.courses, null, 2));
+                        await writable.close();
+                        this.showNotification('File saved successfully!');
+                    } catch (err) {
+                        // Fallback to Blob download
+                        const blob = new Blob([JSON.stringify(this.courses, null, 2)], {type: 'application/json'});
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'courses.json'; // Force same name
+                        a.click();
+                        this.showNotification('Downloaded Data. Overwrite the file manually.');
+                    }
+                },
+                showNotification(msg) {
+                    this.notification = msg;
+                    setTimeout(() => this.notification = null, 3000);
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

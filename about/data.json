@@ -1,0 +1,89 @@
+{
+  "brand": {
+    "name": "Gen-Z IITian",
+    "subBrand": "IIT Pathshala",
+    "tagline": "Your Complete Resource Hub for IIT Madras Success",
+    "secondaryTag": "We transform you into GenZ IITians",
+    "mission": "To provide affordable, high-quality education and mentorship for the IIT Madras BS Degree program. We bridge the gap between complex academic requirements and student success through simplified notes, live guidance, and a supportive community—at a fraction of the standard cost.",
+    "email": "contact@iitpathshala.in",
+    "socials": {
+        "youtube": "https://www.youtube.com/@Gen-ZIITian",
+        "instagram": "https://www.instagram.com/genz_iitian/",
+        "personalIg": "https://www.instagram.com/curious_sri/",
+        "linkedin": "https://www.linkedin.com/in/hustlewithsriram/",
+        "telegram": "https://t.me/iitmadras_bsdegree"
+    },
+    "images": {
+        "hero": "IMAGES.brand.hero",
+        "community": "IMAGES.brand.community"
+    },
+    "disclaimer": "GenZ IITian is a personal initiative and is not officially affiliated with, associated with, or endorsed by IIT Madras. All content is created for educational purposes to support students."
+  },
+  "founder": {
+    "name": "Sriram (Sriram R)",
+    "title": "Founder & Lead Instructor",
+    "image": "IMAGES.brand.founder", 
+    "background": [
+        "Student at VIT Vellore (Software Engineering)",
+        "Student at IIT Madras (BS in Data Science)",
+        "Content Creator 'Gen-Z IITian' (YouTube)"
+    ],
+    "bio": "Sriram is a 'Gen-Z' educator who understands the struggles of modern students. Balancing dual degrees himself, he cracked the code to the IIT Madras BS curriculum and now shares those secrets with thousands of students. He is known for his energy, relatability, and ability to simplify complex math and coding concepts."
+  },
+  "stats": [
+    { "label": "Students Impacted", "value": "30k+" },
+    { "label": "Resources", "value": "100+" },
+    { "label": "Community", "value": "24/7" },
+    { "label": "Courses Aced", "value": "8+" }
+  ],
+  "testimonials": [
+    {
+        "text": "IIT Pathshala ke CT, Maths 1, aur Stats 1 ke courses ekdum mind-blowing hain! Concepts itne clear ho jaate hain.",
+        "author": "Aditya R.",
+        "role": "Foundation Student",
+        "color": "bg-blue-500"
+    },
+    {
+        "text": "GenZ IITian's resources helped me ace my programming exams. The video lectures are particularly helpful for complex algorithms.",
+        "author": "Priya Sharma",
+        "role": "Diploma Level",
+        "color": "bg-purple-500"
+    },
+    {
+        "text": "The study notes are concise yet comprehensive. They've been my go-to resource for last-minute revisions.",
+        "author": "Rahul Patel",
+        "role": "BSc Degree",
+        "color": "bg-green-500"
+    }
+  ],
+  "developer": {
+    "name": "Bhanu Pratap Saini",
+    "role": "Full-Stack Developer",
+    "headline": "Data Science Student @ IIT Madras | AI Enthusiast",
+    "image": "https://github.com/bhanu2006-24.png",
+    "about": [
+        "I am a developer and researcher passionate about bridging the gap between complex data and intuitive user experiences. Currently pursuing a BS in Data Science and Applications at IIT Madras, I focus on building intelligent systems that blend robust engineering with modern design principles.",
+        "My work sits at the intersection of creativity and logic—whether it's crafting immersive 3D web environments, developing real-time analytical dashboards, or architecting scalable web applications. I am driven by curiosity and a commitment to open-source innovation."
+    ],
+    "competencies": [
+        { "title": "Full-Stack Engineering", "desc": "Building responsive, high-performance web apps with the React ecosystem." },
+        { "title": "Data Intelligence", "desc": "Transforming raw data into actionable insights via Python analytics." },
+        { "title": "Interactive Design", "desc": "Creating engaging UI/UX with glassmorphism and 3D tech." }
+    ],
+    "techStack": {
+        "languages": ["TypeScript", "Python", "JavaScript", "SQL"],
+        "frontend": ["React 19", "Vite", "TailwindCSS", "Three.js"],
+        "data": ["Streamlit", "Pandas", "NumPy", "OpenAI API"],
+        "tools": ["Git", "GitHub Actions", "VS Code"]
+    },
+    "education": {
+        "degree": "BS in Data Science and Applications",
+        "institution": "Indian Institute of Technology, Madras"
+    },
+    "socials": {
+        "github": "https://github.com/bhanu2006-24",
+        "linkedin": "https://www.linkedin.com/in/bhanu-saini-3bb251391",
+        "email": "mailto:bhanupsaini2024@gmail.com"
+    }
+  }
+}

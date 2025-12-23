@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ | Blog Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
+        .glass { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .input-field { background: #1a1a1a; border: 1px solid #333; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem; width: 100%; outline: none; transition: all 0.3s; }
+        .input-field:focus { border-color: #f43f5e; box-shadow: 0 0 0 2px rgba(244, 63, 94, 0.2); }
+    </style>
+</head>
+<body class="min-h-screen p-6 relative overflow-x-hidden">
+
+    <div id="app" class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">Blog Manager</h1>
+                <p class="text-gray-400 text-sm mt-1">Manage News & Posts</p>
+            </div>
+            <div class="flex gap-3">
+                <button @click="loadFile" class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition flex items-center gap-2 text-sm font-medium border border-gray-700">Reload</button>
+                <button @click="saveFile" class="px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 transition flex items-center gap-2 text-sm font-medium shadow-lg shadow-rose-500/20">Save JSON</button>
+                <button @click="openNewModal" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 transition flex items-center gap-2 text-sm font-medium shadow-lg shadow-emerald-500/20">Add Post</button>
+            </div>
+        </header>
+
+        <!-- Notification -->
+        <div v-if="notification" class="fixed top-6 right-6 z-50 px-4 py-3 rounded-lg shadow-xl border border-gray-700 bg-gray-900 text-white flex items-center gap-3 animate-bounce-in">
+            <span class="text-emerald-400">✓</span> {{ notification }}
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div v-for="post in posts" :key="post.id" class="glass rounded-xl p-6 hover:border-rose-500/50 transition duration-300 group relative flex flex-col">
+                <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition">
+                    <button @click="editPost(post)" class="p-2 rounded bg-gray-800 hover:text-indigo-400 transition"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon></svg></button>
+                    <button @click="deletePost(post.id)" class="p-2 rounded bg-gray-800 hover:text-red-400 transition"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></button>
+                </div>
+                <div class="text-xs text-rose-400 font-bold mb-2">{{ post.date }} • {{ post.author }}</div>
+                <h3 class="text-xl font-bold mb-2 line-clamp-2">{{ post.title }}</h3>
+                <p class="text-sm text-gray-400 mb-4 line-clamp-3">{{ post.excerpt }}</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                     <span v-for="tag in post.tags" :key="tag" class="text-[10px] px-2 py-1 rounded-full bg-gray-800 text-gray-300 border border-gray-700">{{ tag }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div v-if="editingPost" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+            <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto p-8 shadow-2xl relative">
+                <button @click="editingPost = null" class="absolute top-6 right-6 text-gray-500 hover:text-white">✕</button>
+                <h2 class="text-2xl font-bold mb-6 text-rose-500">{{ isNew ? 'New Post' : 'Edit Post' }}</h2>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="col-span-2">
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Title</label>
+                        <input v-model="editingPost.title" class="input-field text-lg font-bold" type="text">
+                    </div>
+                     <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Date</label>
+                        <input v-model="editingPost.date" class="input-field" type="text" placeholder="Sep 15, 2025">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Author</label>
+                        <input v-model="editingPost.author" class="input-field" type="text">
+                    </div>
+                    
+                    <div class="col-span-2">
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Excerpt</label>
+                        <textarea v-model="editingPost.excerpt" class="input-field h-20"></textarea>
+                    </div>
+                    
+                    <div class="col-span-2">
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Content (HTML)</label>
+                        <textarea v-model="editingPost.content" class="input-field h-64 font-mono text-sm leading-relaxed"></textarea>
+                    </div>
+
+                    <div>
+                         <label class="block text-xs font-medium text-gray-500 mb-1">Tags (comma separated)</label>
+                         <input :value="editingPost.tags.join(', ')" @input="editingPost.tags = $event.target.value.split(',').map(t=>t.trim())" class="input-field" type="text">
+                    </div>
+                    <div>
+                         <label class="block text-xs font-medium text-gray-500 mb-1">Read Time</label>
+                         <input v-model="editingPost.readTime" class="input-field" type="text">
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-end gap-4">
+                    <button @click="editingPost = null" class="px-6 py-2 rounded-lg border border-gray-700 hover:bg-gray-800 transition">Cancel</button>
+                    <button @click="savePost" class="px-6 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-medium">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    posts: [],
+                    editingPost: null,
+                    isNew: false,
+                    notification: null
+                }
+            },
+            mounted() { this.loadFile(); },
+            methods: {
+                async loadFile() {
+                    try {
+                        const res = await fetch('./posts.json');
+                        if (res.ok) this.posts = await res.json();
+                    } catch (e) { console.error(e); }
+                },
+                openNewModal() {
+                    this.isNew = true;
+                    this.editingPost = { id: Date.now().toString(), title: '', excerpt: '', content: '', author: 'Admin', date: '', tags: [], readTime: '5 min read' };
+                },
+                editPost(post) {
+                    this.isNew = false;
+                    this.editingPost = JSON.parse(JSON.stringify(post));
+                },
+                savePost() {
+                    if (this.isNew) this.posts.push(this.editingPost);
+                    else {
+                        const idx = this.posts.findIndex(p => p.id === this.editingPost.id);
+                        if (idx !== -1) this.posts[idx] = this.editingPost;
+                    }
+                    this.editingPost = null;
+                    this.showNotification('Post saved locally!');
+                },
+                deletePost(id) {
+                    if(confirm("Delete this post?")) this.posts = this.posts.filter(p => p.id !== id);
+                },
+                async saveFile() {
+                     try {
+                        const handle = await window.showSaveFilePicker({ suggestedName: 'posts.json' });
+                        const writable = await handle.createWritable();
+                        await writable.write(JSON.stringify(this.posts, null, 2));
+                        await writable.close();
+                        this.showNotification('Saved to posts.json');
+                    } catch (err) {
+                        const blob = new Blob([JSON.stringify(this.posts, null, 2)], {type: 'application/json'});
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a'); a.href = url; a.download = 'posts.json'; a.click();
+                    }
+                },
+                showNotification(msg) {
+                    this.notification = msg;
+                    setTimeout(() => this.notification = null, 3000);
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
