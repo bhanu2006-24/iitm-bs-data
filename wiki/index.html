@@ -24,6 +24,9 @@
 
         .grade-bar-container { height: 8px; background: #222; border-radius: 4px; overflow: hidden; }
         .grade-bar { height: 100%; border-radius: 4px; transition: width 1s ease-out; }
+
+        .input-base { background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 0.5rem; width: 100%; outline: none; transition: 0.2s; }
+        .input-base:focus { border-color: #6366f1; }
     </style>
 </head>
 <body class="min-h-screen p-4 md:p-8 relative">
@@ -56,6 +59,11 @@
                 </button>
             </div>
         </header>
+        
+        <!-- Notification -->
+        <div v-if="notification" class="fixed top-6 right-6 z-[60] px-4 py-3 rounded-lg shadow-xl border border-gray-700 bg-gray-900 text-white flex items-center gap-3 animate-bounce-in">
+            <span class="text-emerald-400">✓</span> {{ notification }}
+        </div>
 
         <!-- Course Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -78,9 +86,6 @@
                     </div>
                     <div class="flex items-center gap-1.5" title="Workload">
                         <i class="fa-solid fa-clock text-amber-400"></i> {{ course.workload }}/5
-                    </div>
-                    <div class="flex items-center gap-1.5" title="Credits">
-                        <i class="fa-solid fa-star text-emerald-400"></i> {{ course.credits }} Credits
                     </div>
                 </div>
 
@@ -111,7 +116,7 @@
                     </div>
                     <div class="flex gap-3">
                         <button @click="openEditModal(selectedCourse)" class="p-2 rounded-lg bg-[#1a1a1a] hover:bg-[#222] text-gray-400 hover:text-white transition">
-                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-pen"></i> Edit
                         </button>
                         <button @click="selectedCourse = null" class="p-2 rounded-lg bg-[#1a1a1a] hover:bg-[#222] text-gray-400 hover:text-white transition">
                             <i class="fa-solid fa-xmark"></i>
@@ -173,9 +178,6 @@
                             <div class="w-8 h-8 rounded-full bg-[#1a1a1a] flex items-center justify-center text-sm font-bold text-gray-400 border border-[#333]">{{ idx + 1 }}</div>
                             <span class="text-gray-200 font-medium">{{ module }}</span>
                          </div>
-                         <div v-if="!selectedCourse.syllabus || !selectedCourse.syllabus.length" class="text-center text-gray-500 py-10">
-                            Syllabus details not contributed yet.
-                         </div>
                     </div>
 
                     <!-- View: Resources -->
@@ -196,23 +198,15 @@
                                 <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-indigo-400"></i>
                             </div>
                         </a>
-                         <button @click="addResource" class="w-full py-4 border border-dashed border-[#333] rounded-xl text-gray-500 hover:text-gray-300 hover:border-gray-500 transition text-sm">
-                            + Add Resource Link
-                        </button>
                     </div>
 
                     <!-- View: Reviews -->
                     <div v-if="activeTab === 'Reviews'" class="space-y-6">
                         <div v-for="(review, idx) in selectedCourse.reviews" :key="idx" class="glass p-6 rounded-2xl">
                             <div class="flex justify-between items-start mb-3">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold text-white">
-                                        {{ review.author.charAt(0) }}
-                                    </div>
-                                    <div>
-                                        <h4 class="text-sm font-bold text-gray-200">{{ review.author }}</h4>
-                                        <p class="text-[10px] text-gray-500">{{ review.date }}</p>
-                                    </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-200">{{ review.author }}</h4>
+                                    <p class="text-[10px] text-gray-500">{{ review.date }}</p>
                                 </div>
                                 <div class="flex gap-1">
                                     <i v-for="n in 5" :key="n" class="fa-solid fa-star text-xs" :class="n <= review.rating ? 'text-amber-400' : 'text-gray-700'"></i>
@@ -220,51 +214,136 @@
                             </div>
                             <p class="text-gray-400 text-sm leading-relaxed">"{{ review.text }}"</p>
                         </div>
-                        <div v-if="!selectedCourse.reviews || !selectedCourse.reviews.length" class="text-center text-gray-500 py-10">
-                            No reviews yet. Be the first!
-                        </div>
-                         <div class="glass p-6 rounded-2xl border-t-4 border-indigo-500">
-                            <h4 class="text-white font-bold mb-4">Write a Review</h4>
-                            <textarea v-model="newReviewText" class="w-full bg-[#111] border border-[#222] rounded-xl p-4 text-sm text-gray-300 outline-none focus:border-indigo-500 mb-4 h-24 resize-none" placeholder="Share your experience..."></textarea>
-                            <div class="flex justify-between items-center">
-                                <div class="flex gap-2 text-gray-500 text-sm">
-                                    Rating: 
-                                    <select v-model="newReviewRating" class="bg-[#111] border border-[#222] rounded px-2 outline-none">
-                                        <option value="5">5 Stars</option>
-                                        <option value="4">4 Stars</option>
-                                        <option value="3">3 Stars</option>
-                                        <option value="2">2 Stars</option>
-                                        <option value="1">1 Star</option>
-                                    </select>
-                                </div>
-                                <button @click="submitReview" class="px-6 py-2 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition text-sm">Submit</button>
-                            </div>
-                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <!-- Edit Modal (Simplified for "Admin/Contribute") -->
-        <div v-if="editingCourse" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
-             <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8">
-                 <h2 class="text-xl font-bold text-white mb-6">{{ isNew ? 'Add New Course' : 'Edit Course Data' }}</h2>
-                 <div class="space-y-4">
-                     <input v-model="editingCourse.code" placeholder="Course Code (e.g. CS1001)" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none">
-                     <input v-model="editingCourse.name" placeholder="Course Name" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none">
-                     <div class="grid grid-cols-2 gap-4">
-                         <input v-model="editingCourse.level" placeholder="Level" class="bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none">
-                         <input v-model.number="editingCourse.credits" type="number" placeholder="Credits" class="bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none">
-                     </div>
-                     <textarea v-model="editingCourse.description" placeholder="Description" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none h-24"></textarea>
-                     <!-- Syllabus Simple Edit -->
-                     <textarea :value="editingCourse.syllabus.join('\n')" @input="editingCourse.syllabus = $event.target.value.split('\n')" placeholder="Syllabus Modules (One per line)" class="w-full bg-[#1a1a1a] border border-[#333] p-3 rounded-lg text-white outline-none h-32"></textarea>
+        <!-- FULL EDIT EDITOR MODAL -->
+        <div v-if="editingCourse" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/95 backdrop-blur-md">
+             <div class="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl relative">
+                 
+                 <!-- Editor Header -->
+                 <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-[#0d0d0d]">
+                    <h2 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
+                        {{ isNew ? 'Create New Course' : 'Edit Course: ' + editingCourse.code }}
+                    </h2>
+                    <div class="flex gap-3">
+                        <button @click="editingCourse = null" class="px-4 py-2 text-sm text-gray-400 hover:text-white">Cancel</button>
+                        <button @click="saveCourse" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 text-sm font-medium shadow-lg shadow-indigo-900/40">Save Changes</button>
+                    </div>
+                 </div>
+
+                 <!-- Editor Tabs -->
+                 <div class="flex border-b border-gray-800 bg-[#0f0f0f] px-6">
+                     <button v-for="tab in ['General', 'Syllabus', 'Resources', 'Stats']" :key="tab" 
+                        @click="editTab = tab" 
+                        class="px-6 py-3 text-xs font-bold uppercase tracking-wider transition border-b-2" 
+                        :class="editTab === tab ? 'border-indigo-500 text-white' : 'border-transparent text-gray-500 hover:text-gray-300'">
+                        {{ tab }}
+                    </button>
+                 </div>
+
+                 <!-- Editor Content -->
+                 <div class="flex-1 overflow-y-auto p-8 bg-[#0a0a0a]">
                      
-                     <div class="flex justify-end gap-3 mt-4">
-                         <button @click="editingCourse = null" class="px-6 py-2 text-gray-400 hover:text-white">Cancel</button>
-                         <button @click="saveCourse" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500">Save</button>
+                     <!-- Tab: General -->
+                     <div v-if="editTab === 'General'" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                         <div class="col-span-1">
+                             <label class="block text-xs font-medium text-gray-500 mb-2">Course Code</label>
+                             <input v-model="editingCourse.code" class="input-base p-3" placeholder="e.g. CS2001">
+                         </div>
+                         <div class="col-span-1">
+                             <label class="block text-xs font-medium text-gray-500 mb-2">Course Name</label>
+                             <input v-model="editingCourse.name" class="input-base p-3" placeholder="e.g. Data Structures">
+                         </div>
+                         <div class="col-span-2 grid grid-cols-3 gap-4">
+                             <div>
+                                 <label class="block text-xs font-medium text-gray-500 mb-2">Level</label>
+                                 <select v-model="editingCourse.level" class="input-base p-3">
+                                     <option>Foundation</option>
+                                     <option>Diploma</option>
+                                     <option>Degree</option>
+                                 </select>
+                             </div>
+                             <div>
+                                 <label class="block text-xs font-medium text-gray-500 mb-2">Credits</label>
+                                 <input v-model.number="editingCourse.credits" type="number" class="input-base p-3">
+                             </div>
+                             <div>
+                                  <label class="block text-xs font-medium text-gray-500 mb-2">ID (Slug)</label>
+                                 <input v-model="editingCourse.id" class="input-base p-3">
+                             </div>
+                         </div>
+                         <div class="col-span-2 grid grid-cols-2 gap-4">
+                             <div>
+                                 <label class="block text-xs font-medium text-gray-500 mb-2">Difficulty (1-5)</label>
+                                 <input v-model.number="editingCourse.difficulty" type="number" step="0.1" class="input-base p-3">
+                             </div>
+                             <div>
+                                 <label class="block text-xs font-medium text-gray-500 mb-2">Workload (1-5)</label>
+                                 <input v-model.number="editingCourse.workload" type="number" step="0.1" class="input-base p-3">
+                             </div>
+                         </div>
+                          <div class="col-span-2">
+                             <label class="block text-xs font-medium text-gray-500 mb-2">Description</label>
+                             <textarea v-model="editingCourse.description" class="input-base p-3 h-32"></textarea>
+                         </div>
+                         <div class="col-span-2">
+                             <label class="block text-xs font-medium text-gray-500 mb-2">Tags (comma separated)</label>
+                             <input :value="editingCourse.tags.join(', ')" @input="editingCourse.tags = $event.target.value.split(',').map(t=>t.trim())" class="input-base p-3">
+                         </div>
                      </div>
+
+                     <!-- Tab: Syllabus -->
+                     <div v-if="editTab === 'Syllabus'" class="max-w-3xl mx-auto">
+                         <h3 class="text-sm font-bold text-gray-400 mb-4 uppercase">Course Modules</h3>
+                         <div class="space-y-3">
+                             <div v-for="(mod, idx) in editingCourse.syllabus" :key="idx" class="flex gap-3">
+                                 <span class="w-8 h-10 flex items-center justify-center bg-[#1a1a1a] text-gray-500 rounded font-mono text-sm">{{ idx + 1 }}</span>
+                                 <input v-model="editingCourse.syllabus[idx]" class="input-base p-2">
+                                 <button @click="editingCourse.syllabus.splice(idx, 1)" class="w-10 text-gray-600 hover:text-red-500 text-sm"><i class="fa-solid fa-trash"></i></button>
+                             </div>
+                         </div>
+                         <button @click="editingCourse.syllabus.push('')" class="mt-4 px-4 py-2 rounded border border-dashed border-gray-700 text-sm text-gray-500 hover:border-indigo-500 hover:text-indigo-400">+ Add Module</button>
+                     </div>
+
+                     <!-- Tab: Resources -->
+                     <div v-if="editTab === 'Resources'" class="max-w-3xl mx-auto">
+                        <h3 class="text-sm font-bold text-gray-400 mb-4 uppercase">Learning Resources</h3>
+                        <div class="space-y-4">
+                             <div v-for="(res, idx) in editingCourse.resources" :key="idx" class="bg-[#1a1a1a] p-4 rounded-lg flex gap-4 items-start border border-[#333]">
+                                 <div class="flex-1 grid grid-cols-2 gap-3">
+                                     <input v-model="res.title" placeholder="Title" class="input-base p-2 text-sm col-span-2">
+                                     <input v-model="res.url" placeholder="URL" class="input-base p-2 text-sm">
+                                     <select v-model="res.type" class="input-base p-2 text-sm">
+                                         <option>YouTube</option>
+                                         <option>PDF</option>
+                                         <option>Website</option>
+                                         <option>Other</option>
+                                     </select>
+                                 </div>
+                                 <button @click="editingCourse.resources.splice(idx, 1)" class="text-gray-600 hover:text-red-500 p-2"><i class="fa-solid fa-trash"></i></button>
+                             </div>
+                        </div>
+                        <button @click="editingCourse.resources.push({title:'', url:'', type:'YouTube'})" class="mt-4 px-4 py-2 rounded border border-dashed border-gray-700 text-sm text-gray-500 hover:border-indigo-500 hover:text-indigo-400">+ Add Resource</button>
+                     </div>
+
+                     <!-- Tab: Stats -->
+                     <div v-if="editTab === 'Stats'" class="max-w-2xl mx-auto">
+                         <h3 class="text-sm font-bold text-gray-400 mb-6 uppercase">Grade Distribution (%)</h3>
+                         <div class="grid grid-cols-2 gap-6">
+                             <div v-for="grade in ['s', 'a', 'b', 'c', 'd', 'e', 'f']" :key="grade" class="flex items-center gap-4">
+                                 <div class="w-12 h-12 rounded-lg bg-[#1a1a1a] flex items-center justify-center font-bold text-xl text-gray-300 uppercase">{{ grade }}</div>
+                                 <div class="flex-1">
+                                     <input v-model.number="editingCourse.gradeStats[grade]" type="number" class="input-base p-3 text-right font-mono" placeholder="0">
+                                 </div>
+                                 <span class="text-gray-500">%</span>
+                             </div>
+                         </div>
+                     </div>
+
                  </div>
              </div>
         </div>
@@ -280,12 +359,14 @@
                     courses: [],
                     searchQuery: '',
                     selectedCourse: null,
-                    editingCourse: null,
+                    editingCourse: null, // Makes edit modal active
+                    editTab: 'General',
                     activeTab: 'Overview',
                     tabs: ['Overview', 'Syllabus', 'Resources', 'Reviews'],
                     isNew: false,
                     newReviewText: '',
-                    newReviewRating: 5
+                    newReviewRating: 5,
+                    notification: null
                 }
             },
             computed: {
@@ -317,17 +398,33 @@
                      return 'border-indigo-500/20 text-indigo-400 bg-indigo-500/10';
                 },
                 getGradePercentage(count) {
-                    // Simple max normalization for visualization
-                    const max = Math.max(...Object.values(this.selectedCourse.gradeStats));
+                    const max = Math.max(...Object.values(this.selectedCourse.gradeStats || {}));
                     return (count / (max || 1)) * 100;
                 },
                 openEditModal(course) {
                     this.isNew = !course;
                     this.selectedCourse = null; // Close detail view
-                    this.editingCourse = course ? JSON.parse(JSON.stringify(course)) : {
-                         id: Date.now().toString(), code: '', name: '', level: 'Foundation', credits: 4, difficulty: 3, workload: 3,
-                         tags: [], description: '', syllabus: [], resources: [], reviews: [], gradeStats: {s:0,a:0,b:0,c:0,d:0,f:0}
-                    };
+                    
+                    if (course) {
+                         // Deep clone
+                         this.editingCourse = JSON.parse(JSON.stringify(course));
+                         // Ensure arrays exist
+                         if(!this.editingCourse.gradeStats) this.editingCourse.gradeStats = {s:0,a:0,b:0,c:0,d:0,f:0};
+                         if(!this.editingCourse.resources) this.editingCourse.resources = [];
+                         if(!this.editingCourse.syllabus) this.editingCourse.syllabus = [];
+                    } else {
+                        // New Course Template
+                        this.editingCourse = {
+                             id: Date.now().toString(), 
+                             code: '', name: '', level: 'Foundation', credits: 4, difficulty: 3, workload: 3,
+                             tags: [], description: '', 
+                             syllabus: [], 
+                             resources: [], 
+                             reviews: [], 
+                             gradeStats: {s:0,a:0,b:0,c:0,d:0,f:0, e:0}
+                        };
+                    }
+                    this.editTab = 'General';
                 },
                 saveCourse() {
                     if (this.isNew) {
@@ -340,30 +437,8 @@
                     // Auto-save concept (in real app would trigger API)
                     this.saveFile(true);
                 },
-                submitReview() {
-                    if(!this.newReviewText) return;
-                    this.selectedCourse.reviews.unshift({
-                        author: 'You',
-                        rating: parseInt(this.newReviewRating),
-                        text: this.newReviewText,
-                        date: 'Just Now'
-                    });
-                    this.newReviewText = '';
-                    // Update in main list
-                    const idx = this.courses.findIndex(c => c.id === this.selectedCourse.id);
-                    if(idx !== -1) this.courses[idx] = this.selectedCourse;
-                },
-                addResource() {
-                    const url = prompt("Enter URL:");
-                    if(url) {
-                        const title = prompt("Enter Title (e.g. YouTube Playlist):") || "Resource";
-                        this.selectedCourse.resources.push({
-                             title, url, type: 'External'
-                        });
-                    }
-                },
                 async saveFile(silent = false) {
-                     try {
+                    try {
                         if (window.showSaveFilePicker) {
                             const handle = await window.showSaveFilePicker({
                                 suggestedName: 'courses.json',
@@ -372,16 +447,21 @@
                             const writable = await handle.createWritable();
                             await writable.write(JSON.stringify(this.courses, null, 2));
                             await writable.close();
-                            if(!silent) alert('Saved!');
+                            if(!silent) this.showNotification('Data Saved Successfully!');
                         } else {
-                            // Blob fallback
+                             // Fallback
                             const blob = new Blob([JSON.stringify(this.courses, null, 2)], {type: 'application/json'});
                             const a = document.createElement('a');
                             a.href = URL.createObjectURL(blob);
                             a.download = 'courses.json';
                             a.click();
+                            this.showNotification('Downloaded Data File');
                         }
                     } catch (e) { console.error(e); }
+                },
+                showNotification(msg) {
+                    this.notification = msg;
+                    setTimeout(() => this.notification = null, 3000);
                 }
             }
         }).mount('#app');
