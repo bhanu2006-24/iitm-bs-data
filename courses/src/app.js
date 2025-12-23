@@ -80,6 +80,25 @@ createApp({
             }
         },
         
+        moveItem(array, index, direction) {
+            if (direction === -1 && index > 0) {
+                [array[index], array[index - 1]] = [array[index - 1], array[index]];
+            } else if (direction === 1 && index < array.length - 1) {
+                [array[index], array[index + 1]] = [array[index + 1], array[index]];
+            }
+        },
+
+        deleteItem(array, index, type = 'item') {
+            if(confirm(`Are you sure you want to remove this ${type}?`)) {
+                array.splice(index, 1);
+            }
+        },
+
+        getYtThumbnail(id) {
+            if (!id) return '';
+            return `https://img.youtube.com/vi/${id}/mqdefault.jpg`;
+        },
+
         expandAllWeeks() {
             if(!this.selectedCourse) return;
             this.editOpenWeeks = this.selectedCourse.weeks.map((_, i) => i);
