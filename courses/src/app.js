@@ -3,11 +3,12 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            currentLevel: 'foundation', // foundation | diploma | degree | pg_diploma | mtech
-            catalog: { foundation: [], diploma: [], degree: [], pg_diploma: [], mtech: [] },
+            currentLevel: 'foundation', // foundation | diploma | degree
+            catalog: { foundation: [], diploma: [], degree: [] },
             searchQuery: '',
             selectedCourse: null,
             sidebarOpen: true,
+            videoPreviewId: null, // For modal
             viewMode: 'preview', // preview | edit
             previewOpenWeeks: [],
             editOpenWeeks: [0], // Default open week 1
@@ -49,7 +50,22 @@ createApp({
                 if (res.ok) {
                     this.selectedCourse = await res.json();
                     if (!this.selectedCourse.weeks) this.selectedCourse.weeks = [];
-                    // Open first week by default if exists
+                    // Ensure new fields exist
+                    if (!this.selectedCourse.grading) {
+                        this.selectedCourse.grading = { q1: 20, q2: 30, endTerm: 40, assignments: 10 };
+                    }
+                    if (!this.selectedCourse.books) {
+                        this.selectedCourse.books = [];
+                    }
+                    
+                    // Normalize Weeks Data
+                    this.selectedCourse.weeks.forEach(w => {
+                        if(!w.practice) w.practice = [];
+                        if(!w.notes) w.notes = [];
+                        // Set defaults for notes
+                        w.notes.forEach(n => { if(!n.type) n.type = 'url'; });
+                    });
+
                     if(this.selectedCourse.weeks.length > 0) this.previewOpenWeeks = [this.selectedCourse.weeks[0].weekNum];
                     this.viewMode = 'preview';
                     this.editOpenWeeks = [0];
@@ -62,6 +78,14 @@ createApp({
             } finally {
                 this.loading = false;
             }
+        },
+
+        playVideo(id) {
+            this.videoPreviewId = id;
+        },
+
+        closeVideo() {
+            this.videoPreviewId = null;
         },
 
         togglePreviewWeek(num) {
@@ -94,9 +118,29 @@ createApp({
             }
         },
 
+        // Helper to get youtube thumb
         getYtThumbnail(id) {
             if (!id) return '';
             return `https://img.youtube.com/vi/${id}/mqdefault.jpg`;
+        },
+
+        // Markdown Renderer
+        renderMarkdown(text) {
+            if (!text) return '';
+            return marked.parse(text);
+        },
+
+        // Add a new Question to a specific Practice Item
+        addQuestion(practiceItem) {
+            if(!practiceItem.questions) practiceItem.questions = [];
+            practiceItem.questions.push({
+                id: Date.now(),
+                type: 'mcq', // mcq, msq, nat, boolean
+                text: 'New Question',
+                options: ['Option A', 'Option B'],
+                answer: '',
+                explanation: ''
+            });
         },
 
         expandAllWeeks() {

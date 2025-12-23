@@ -8,6 +8,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Markdown & Math Support -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
     <style>
         body { font-family: 'Space Grotesk', sans-serif; background: #000; color: #e5e5e5; height: 100vh; overflow: hidden; }
         .glass { background: rgba(20, 20, 20, 0.4); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.05); }
@@ -40,16 +45,16 @@
             <!-- Header -->
             <div class="p-5 border-b border-[#1a1a1a]">
                 <div class="flex items-center gap-3 mb-6">
-                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-900/50">G</div>
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-900/50">C</div>
                     <div>
-                        <h1 class="font-bold text-lg leading-tight text-white">GenZ CM</h1>
-                        <p class="text-[10px] text-gray-500 font-mono">v2.1 • Data Studio</p>
+                        <h1 class="font-bold text-lg leading-tight text-white">Course Editor</h1>
+                        <p class="text-[10px] text-gray-500 font-mono">v3.0 • Curriculum Studio</p>
                     </div>
                 </div>
 
                 <!-- Tabs -->
                 <div class="flex bg-[#111] p-1 rounded-lg mb-4 overflow-x-auto no-scrollbar gap-1">
-                     <button v-for="level in ['foundation', 'diploma', 'degree', 'pg_diploma', 'mtech']" 
+                     <button v-for="level in ['foundation', 'diploma', 'degree']" 
                         @click="currentLevel = level"
                         :class="['flex-1 whitespace-nowrap px-3 py-1.5 text-xs font-medium rounded-md capitalize transition-all duration-300', 
                                 currentLevel === level ? 'bg-[#222] text-white shadow-sm' : 'text-gray-500 hover:text-gray-300']">
@@ -185,16 +190,52 @@
                                                  </ul>
                                              </div>
                                              <!-- Resources -->
-                                             <div>
-                                                 <span class="label text-emerald-400 mb-2">Resources</span>
-                                                 <div class="flex flex-wrap gap-2">
-                                                     <span v-for="note in week.notes" class="px-3 py-1.5 bg-[#151515] hover:bg-[#202020] border border-[#222] rounded text-xs text-gray-400 flex items-center gap-2 cursor-pointer transition">
-                                                         <i class="fa-regular fa-file-pdf"></i> {{ note.title }}
-                                                     </span>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
+                                              <div>
+                                                  <span class="label text-emerald-400 mb-2">Resources</span>
+                                                  <div class="flex flex-wrap gap-2">
+                                                      <div v-for="note in week.notes" class="group relative">
+                                                          <!-- Link/PDF -->
+                                                          <a v-if="note.type === 'url' || note.type === 'pdf'" :href="note.url" target="_blank" class="px-3 py-1.5 bg-[#151515] hover:bg-[#202020] border border-[#222] rounded text-xs text-gray-400 flex items-center gap-2 cursor-pointer transition">
+                                                              <i class="fa-regular fa-file-pdf"></i> {{ note.title }}
+                                                          </a>
+
+                                                          <!-- Markdown Note Modal Trigger (simplified as tooltip/popover for now or expandable) -->
+                                                          <div v-if="note.type === 'markdown'" class="px-3 py-1.5 bg-[#151515] hover:bg-[#202020] border border-[#222] rounded text-xs text-pink-400 flex items-center gap-2 cursor-pointer transition relative group/md">
+                                                              <i class="fa-regular fa-file-lines"></i> {{ note.title }}
+                                                              <!-- Hover Preview -->
+                                                              <div class="absolute bottom-full left-0 mb-2 w-64 bg-[#111] border border-[#333] p-4 rounded-lg shadow-xl z-50 text-gray-300 text-xs hidden group-hover/md:block pointer-events-none" v-html="renderMarkdown(note.content)"></div>
+                                                          </div>
+                                                          
+                                                          <!-- Image -->
+                                                           <a v-if="note.type === 'image'" :href="note.url" target="_blank" class="px-3 py-1.5 bg-[#151515] hover:bg-[#202020] border border-[#222] rounded text-xs text-blue-400 flex items-center gap-2 cursor-pointer transition">
+                                                              <i class="fa-regular fa-image"></i> {{ note.title }}
+                                                          </a>
+                                                      </div>
+                                                  </div>
+
+                                                  <!-- Practice Section -->
+                                                  <div v-if="week.practice && week.practice.length > 0" class="mt-6">
+                                                      <span class="label text-orange-400 mb-2">Practice</span>
+                                                      <div class="space-y-2">
+                                                          <div v-for="quiz in week.practice" class="bg-[#151515] border border-[#222] p-3 rounded-lg">
+                                                              <div class="flex justify-between items-center mb-2">
+                                                                  <h5 class="text-sm font-bold text-gray-200">{{ quiz.title }}</h5>
+                                                                  <span class="text-[10px] bg-orange-900/20 text-orange-400 px-2 py-0.5 rounded">{{ quiz.questions.length }} Questions</span>
+                                                              </div>
+                                                              <div class="space-y-4">
+                                                                  <div v-for="(q, qi) in quiz.questions" class="text-xs text-gray-400">
+                                                                      <p class="mb-1 text-gray-300 font-medium"><span class="text-orange-500 mr-1">{{ qi+1 }}.</span> {{ q.text }}</p>
+                                                                      <ul v-if="q.type === 'mcq' || q.type === 'msq'" class="pl-4 space-y-1">
+                                                                          <li v-for="opt in q.options" class="list-disc">{{ opt }}</li>
+                                                                      </ul>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -239,19 +280,46 @@
 
                              <!-- Config Side Panel -->
                              <div class="col-span-4 space-y-6">
-                                 <!-- Stats -->
+                                 <!-- Grading Scheme -->
                                  <div class="bg-[#0a0a0a] border border-[#222] p-6 rounded-2xl">
-                                     <h3 class="text-gray-400 font-bold mb-4 text-xs uppercase tracking-wider">Configuration</h3>
-                                     <div class="grid grid-cols-2 gap-3 mb-4">
-                                         <div><label class="label">Credits</label><input v-model.number="selectedCourse.credits" type="number" class="input-base text-center"></div>
-                                         <div><label class="label">Hours/Week</label><input type="number" class="input-base text-center" placeholder="10"></div>
+                                     <h3 class="text-gray-400 font-bold mb-4 text-xs uppercase tracking-wider">Grading Scheme (Weights)</h3>
+                                     <div class="space-y-3">
+                                         <div>
+                                            <div class="flex justify-between text-[10px] mb-1 text-gray-500"><span>Quiz 1</span><span>{{selectedCourse.grading.q1}}%</span></div>
+                                            <input type="range" v-model.number="selectedCourse.grading.q1" class="w-full accent-indigo-500 bg-[#222] h-1 rounded-lg appearance-none cursor-pointer">
+                                         </div>
+                                         <div>
+                                            <div class="flex justify-between text-[10px] mb-1 text-gray-500"><span>Quiz 2</span><span>{{selectedCourse.grading.q2}}%</span></div>
+                                            <input type="range" v-model.number="selectedCourse.grading.q2" class="w-full accent-indigo-500 bg-[#222] h-1 rounded-lg appearance-none cursor-pointer">
+                                         </div>
+                                         <div>
+                                            <div class="flex justify-between text-[10px] mb-1 text-gray-500"><span>End Term</span><span>{{selectedCourse.grading.endTerm}}%</span></div>
+                                            <input type="range" v-model.number="selectedCourse.grading.endTerm" class="w-full accent-purple-500 bg-[#222] h-1 rounded-lg appearance-none cursor-pointer">
+                                         </div>
+                                         <div>
+                                            <div class="flex justify-between text-[10px] mb-1 text-gray-500"><span>Assignments</span><span>{{selectedCourse.grading.assignments}}%</span></div>
+                                            <input type="range" v-model.number="selectedCourse.grading.assignments" class="w-full accent-green-500 bg-[#222] h-1 rounded-lg appearance-none cursor-pointer">
+                                         </div>
+                                         <div class="pt-2 border-t border-[#222] flex justify-between text-xs font-bold" :class="(selectedCourse.grading.q1 + selectedCourse.grading.q2 + selectedCourse.grading.endTerm + selectedCourse.grading.assignments) === 100 ? 'text-green-400' : 'text-red-400'">
+                                             <span>Total:</span>
+                                             <span>{{ selectedCourse.grading.q1 + selectedCourse.grading.q2 + selectedCourse.grading.endTerm + selectedCourse.grading.assignments }}%</span>
+                                         </div>
                                      </div>
-                                     <div>
-                                         <label class="label mb-2">Examination Scheme</label>
-                                         <div class="flex flex-col gap-2 bg-[#111] p-3 rounded-lg border border-[#222]">
-                                             <label class="flex items-center gap-3 text-xs text-gray-400 cursor-pointer hover:text-white"><input type="checkbox" v-model="selectedCourse.exams.q1" class="accent-indigo-500"> Quiz 1</label>
-                                             <label class="flex items-center gap-3 text-xs text-gray-400 cursor-pointer hover:text-white"><input type="checkbox" v-model="selectedCourse.exams.q2" class="accent-indigo-500"> Quiz 2</label>
-                                             <label class="flex items-center gap-3 text-xs text-gray-400 cursor-pointer hover:text-white"><input type="checkbox" v-model="selectedCourse.exams.et" class="accent-purple-500"> End Term</label>
+                                 </div>
+                                 
+                                 <!-- Books & References -->
+                                 <div class="bg-[#0a0a0a] border border-[#222] p-6 rounded-2xl">
+                                     <div class="flex justify-between items-end mb-3">
+                                         <label class="text-gray-400 font-bold text-xs uppercase tracking-wider">Textbooks</label>
+                                         <button @click="selectedCourse.books.push({title: '', author: ''})" class="text-[10px] text-indigo-400 hover:text-white">+ Add</button>
+                                     </div>
+                                     <div class="space-y-2">
+                                         <div v-for="(book, bi) in selectedCourse.books" :key="bi" class="bg-[#111] p-2 rounded border border-[#222] flex gap-2 relative group">
+                                             <div class="flex-1 space-y-1">
+                                                <input v-model="book.title" class="input-base text-xs py-1 h-auto" placeholder="Book Title">
+                                                <input v-model="book.author" class="input-base text-[10px] py-1 h-auto text-gray-500" placeholder="Author">
+                                             </div>
+                                             <button @click="selectedCourse.books.splice(bi, 1)" class="absolute top-1 right-1 text-gray-600 hover:text-red-500 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-times"></i></button>
                                          </div>
                                      </div>
                                  </div>
@@ -352,9 +420,12 @@
                                                             </div>
 
                                                             <!-- Thumbnail Preview -->
-                                                            <div class="w-24 h-16 bg-black rounded overflow-hidden border border-[#222] flex-shrink-0 relative">
-                                                                <img v-if="lec.youtubeId" :src="getYtThumbnail(lec.youtubeId)" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
+                                                            <div class="w-24 h-16 bg-black rounded overflow-hidden border border-[#222] flex-shrink-0 relative group/thumb cursor-pointer hover:border-indigo-500/50 transition-colors" @click="playVideo(lec.youtubeId)" title="Preview Video">
+                                                                <img v-if="lec.youtubeId" :src="getYtThumbnail(lec.youtubeId)" class="w-full h-full object-cover opacity-70 group-hover/thumb:opacity-100 transition">
                                                                 <div v-else class="w-full h-full flex items-center justify-center text-gray-800"><i class="fa-solid fa-image"></i></div>
+                                                                <div v-if="lec.youtubeId" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/thumb:opacity-100 transition-opacity bg-black/40 backdrop-blur-[1px]">
+                                                                    <i class="fa-solid fa-play text-white text-xs"></i>
+                                                                </div>
                                                             </div>
                                                             
                                                             <!-- Actions -->
@@ -367,42 +438,136 @@
                                              <!-- Resources Section -->
                                               <div>
                                                 <div class="flex justify-between items-end mb-3">
-                                                    <label class="text-xs font-bold text-gray-400 uppercase tracking-wider">Study Materials & Notes</label>
-                                                    <button @click="week.notes.push({title:'New Resource', type:'pdf'})" class="text-[10px] bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white px-2 py-1 rounded transition">+ Add Resource</button>
+                                                    <label class="text-xs font-bold text-gray-400 uppercase tracking-wider">Resources & Notes</label>
+                                                    <button @click="week.notes.push({title:'New Item', type:'url', content:''})" class="text-[10px] bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white px-2 py-1 rounded transition">+ Add Resource</button>
                                                 </div>
-                                                <div class="grid grid-cols-2 gap-3">
-                                                    <div v-for="(note, ni) in week.notes" class="flex gap-3 items-center bg-[#111] p-2 rounded border border-[#222] group hover:border-emerald-900/30 transition">
-                                                        <div class="flex flex-col gap-0.5 text-gray-700">
-                                                            <button @click="moveItem(week.notes, ni, -1)" class="hover:text-emerald-400 text-[8px]"><i class="fa-solid fa-caret-up"></i></button>
-                                                            <button @click="moveItem(week.notes, ni, 1)" class="hover:text-emerald-400 text-[8px]"><i class="fa-solid fa-caret-down"></i></button>
+                                                <div class="space-y-2">
+                                                    <div v-for="(note, ni) in week.notes" class="bg-[#111] p-3 rounded border border-[#222] group hover:border-emerald-900/30 transition flex flex-col gap-2">
+                                                        <div class="flex gap-3 items-center">
+                                                            <div class="flex flex-col gap-0.5 text-gray-700">
+                                                                <button @click="moveItem(week.notes, ni, -1)" class="hover:text-emerald-400 text-[8px]"><i class="fa-solid fa-caret-up"></i></button>
+                                                                <i :class="['fa-solid text-lg', note.type === 'markdown' ? 'fa-file-lines text-pink-400' : note.type === 'image' ? 'fa-image text-blue-400' : 'fa-link text-emerald-400']"></i>
+                                                                <button @click="moveItem(week.notes, ni, 1)" class="hover:text-emerald-400 text-[8px]"><i class="fa-solid fa-caret-down"></i></button>
+                                                            </div>
+                                                            <div class="flex-1 min-w-0 flex gap-2">
+                                                                <select v-model="note.type" class="bg-[#000] border border-[#222] rounded text-[10px] text-gray-400 px-1 py-1 focus:outline-none">
+                                                                    <option value="url">Link/PDF</option>
+                                                                    <option value="markdown">Note (MD)</option>
+                                                                    <option value="image">Image</option>
+                                                                </select>
+                                                                <input v-model="note.title" class="bg-transparent text-xs text-gray-300 flex-1 focus:outline-none" placeholder="Resource Name">
+                                                            </div>
+                                                            <button @click="deleteItem(week.notes, ni, 'Resource')" class="text-gray-700 hover:text-red-500 px-1 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-times"></i></button>
                                                         </div>
-                                                        <div class="flex-1 min-w-0">
-                                                            <input v-model="note.title" class="bg-transparent text-xs text-gray-300 w-full focus:outline-none mb-1 block" placeholder="Resource Name">
-                                                            <input v-model="note.url" class="bg-transparent text-[10px] text-emerald-600 w-full focus:outline-none font-mono block truncate" placeholder="https://...">
+                                                        
+                                                        <!-- Content based on type -->
+                                                        <div class="pl-8">
+                                                            <input v-if="note.type === 'url' || note.type === 'pdf'" v-model="note.url" class="bg-[#050505] rounded px-2 py-1.5 w-full text-[10px] text-emerald-600 font-mono border border-[#222] focus:border-emerald-900/50 placeholder-gray-800" placeholder="https://example.com/file.pdf">
+                                                            <input v-if="note.type === 'image'" v-model="note.url" class="bg-[#050505] rounded px-2 py-1.5 w-full text-[10px] text-blue-400 font-mono border border-[#222] focus:border-blue-900/50 placeholder-gray-800" placeholder="Image URL">
+                                                            <textarea v-if="note.type === 'markdown'" v-model="note.content" class="bg-[#050505] rounded px-2 py-1.5 w-full text-xs text-gray-300 font-mono border border-[#222] focus:border-pink-900/50 h-24 resize-y leading-relaxed" placeholder="# Valid Markdown Supported&#10;- Note 1&#10;- Note 2"></textarea>
+                                                            
+                                                            <!-- Image Preview -->
+                                                            <div v-if="note.type === 'image' && note.url" class="mt-2 h-20 w-auto inline-block rounded border border-[#222] overflow-hidden">
+                                                                <img :src="note.url" class="h-full object-contain">
+                                                            </div>
                                                         </div>
-                                                        <button @click="deleteItem(week.notes, ni, 'Resource')" class="text-gray-700 hover:text-red-500 px-1 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-times"></i></button>
                                                     </div>
                                                 </div>
                                              </div>
+
+                                             <!-- Practice & Quizzes Section -->
+                                             <div>
+                                                <div class="flex justify-between items-end mb-3">
+                                                    <label class="text-xs font-bold text-gray-400 uppercase tracking-wider">Practice & Quizzes</label>
+                                                    <button @click="week.practice.push({title:'Week Quiz', questions:[]})" class="text-[10px] bg-orange-500/10 text-orange-400 hover:bg-orange-500 hover:text-white px-2 py-1 rounded transition">+ Add Practice</button>
+                                                </div>
+                                                <div class="space-y-4">
+                                                    <div v-for="(quiz, qi) in week.practice" class="bg-[#111] border border-[#222] rounded-lg overflow-hidden group">
+                                                        <div class="p-3 bg-[#151515] flex items-center justify-between border-b border-[#222]">
+                                                            <div class="flex items-center gap-2">
+                                                                <i class="fa-solid fa-list-check text-orange-500 text-xs"></i>
+                                                                <input v-model="quiz.title" class="bg-transparent text-xs font-bold text-gray-300 focus:outline-none" placeholder="Quiz Title">
+                                                            </div>
+                                                            <div class="flex items-center gap-2">
+                                                                 <span class="text-[10px] text-gray-500">{{ quiz.questions ? quiz.questions.length : 0 }} Qs</span>
+                                                                 <button @click="deleteItem(week.practice, qi, 'Quiz')" class="text-gray-700 hover:text-red-500 px-1 opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-times"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="p-3">
+                                                            <div class="space-y-3">
+                                                                <div v-for="(q, k) in quiz.questions" :key="k" class="pl-3 border-l-2 border-orange-500/20">
+                                                                    <div class="flex justify-between mb-1">
+                                                                        <div class="flex gap-2">
+                                                                            <select v-model="q.type" class="bg-[#000] text-[9px] text-gray-500 uppercase font-bold border border-[#333] rounded">
+                                                                                <option value="mcq">MCQ</option>
+                                                                                <option value="msq">MSQ</option>
+                                                                                <option value="nat">NAT</option>
+                                                                                <option value="boolean">Bool</option>
+                                                                            </select>
+                                                                            <input v-model="q.text" class="bg-transparent text-xs text-white focus:outline-none w-64" placeholder="Question Text...">
+                                                                        </div>
+                                                                         <button @click="quiz.questions.splice(k, 1)" class="text-gray-600 hover:text-red-400 text-[10px]"><i class="fa-solid fa-trash"></i></button>
+                                                                    </div>
+                                                                    
+                                                                    <!-- Options Editor -->
+                                                                    <div v-if="q.type === 'mcq' || q.type === 'msq'" class="space-y-1 mt-2">
+                                                                        <div v-for="(opt, oi) in q.options" class="flex gap-2 items-center">
+                                                                            <i class="fa-regular fa-circle text-[8px] text-gray-600"></i>
+                                                                            <input v-model="q.options[oi]" class="bg-[#050505] text-[10px] text-gray-400 w-full rounded border border-[#222] px-1 py-0.5" placeholder="Option">
+                                                                            <button @click="q.options.splice(oi, 1)" class="text-gray-700 hover:text-red-500 text-[9px]"><i class="fa-solid fa-times"></i></button>
+                                                                        </div>
+                                                                        <button @click="q.options.push('New Option')" class="text-[9px] text-orange-400 mt-1 hover:underline">+ Add Option</button>
+                                                                    </div>
+                                                                    
+                                                                    <input v-model="q.answer" class="mt-2 text-[10px] bg-[#050505] text-green-500 w-full px-2 py-1 rounded border border-[#222] placeholder-gray-700" placeholder="Correct Answer (Exact match)">
+                                                                </div>
+                                                            </div>
+                                                            <button @click="addQuestion(quiz)" class="mt-3 w-full py-1.5 text-[10px] font-bold text-gray-500 bg-[#151515] hover:bg-[#202020] hover:text-white rounded border border-[#222] border-dashed transition">+ Add Question</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+
                                          </div>
                                      </div>
                                  </div>
                              </div>
                          </div>
                     </div>
-
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Empty State -->
-            <div v-else class="h-full flex flex-col items-center justify-center text-center p-12">
-                 <div class="w-24 h-24 bg-indigo-500/10 rounded-full flex items-center justify-center mb-6 ring-4 ring-indigo-500/5">
-                     <i class="fa-solid fa-layer-group text-4xl text-indigo-500"></i>
+            <div v-else class="h-full flex flex-col items-center justify-center text-center p-12 relative z-10">
+                 <div class="w-24 h-24 bg-[#111] rounded-full flex items-center justify-center mb-6 ring-1 ring-[#222]">
+                     <i class="fa-solid fa-layer-group text-4xl text-[#333]"></i>
                  </div>
                  <h2 class="text-2xl font-bold text-white mb-2">Select a Course</h2>
                  <p class="text-gray-500 max-w-md">Browse the catalog on the left to view details, course structure, and edit content.</p>
             </div>
         </div>
+
+        <!-- Video Preview Modal -->
+        <div v-if="videoPreviewId" class="fixed inset-0 z-50 flex items-center justify-center p-8 bg-black/90 backdrop-blur-sm" @click.self="closeVideo">
+            <div class="bg-[#111] w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl relative border border-[#333]">
+                <button @click="closeVideo" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/50 hover:bg-white hover:text-black text-white flex items-center justify-center transition z-10">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <iframe 
+                    class="w-full h-full" 
+                    :src="`https://www.youtube.com/embed/${videoPreviewId}?autoplay=1&rel=0`" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
     </div>
     <script src="./src/app.js" type="module"></script>
 </body>
