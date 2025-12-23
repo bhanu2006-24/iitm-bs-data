@@ -23,25 +23,27 @@ body {
     transition: grid-template-columns 0.3s ease; 
 }
 
-.split-grid-admin { 
-    grid-template-columns: 280px 1fr; 
+/* UI Utilities */
+.label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
 }
 
-/* Scrollbars */
-.scroll-smooth::-webkit-scrollbar { width: 6px; height: 6px; }
-.scroll-smooth::-webkit-scrollbar-track { background: #0a0a0a; }
-.scroll-smooth::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-.scroll-smooth::-webkit-scrollbar-thumb:hover { background: #555; }
-
-/* Editor Specifics */
-.editor-container .CodeMirror { 
-    height: 100%; 
-    font-family: 'JetBrains Mono', monospace; 
-    font-size: 14px; 
-    background: #0a0a0a; 
+.badge {
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
-/* Input Base Styles */
 .input-base { 
     background: #1a1a1a; 
     border: 1px solid #333; 
@@ -50,37 +52,36 @@ body {
     padding: 0.6rem; 
     width: 100%; 
     outline: none; 
-    font-size: 0.9rem;
-    transition: border-color 0.2s;
+    font-size: 0.85rem;
+    transition: all 0.2s;
 }
 .input-base:focus { 
     border-color: #6366f1; 
+    background: #1f1f1f;
 }
 
-/* Question List Item */
-.question-item {
-    transition: all 0.2s;
-    border-left: 2px solid transparent;
-}
-.question-item.active {
-    background: rgba(59, 130, 246, 0.1);
-    border-left-color: #3b82f6;
-}
-.question-item:hover:not(.active) {
-    background: #151515;
+/* CodeMirror Override */
+.editor-container .CodeMirror { 
+    height: 100%; 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 13px; 
+    background: #0a0a0a; 
 }
 
-/* Markdown Content */
-.prose-custom p { margin-bottom: 1rem; line-height: 1.6; color: #d1d5db; }
-.prose-custom pre { background: #151515; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; border: 1px solid #333; }
-.prose-custom code { font-family: 'JetBrains Mono', monospace; background: #222; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
+/* Scrollbars */
+.scroll-smooth::-webkit-scrollbar { width: 5px; height: 5px; }
+.scroll-smooth::-webkit-scrollbar-track { background: #0a0a0a; }
+.scroll-smooth::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+.scroll-smooth::-webkit-scrollbar-thumb:hover { background: #555; }
 
-/* Utility Animations */
-.fade-in { animation: fadeIn 0.3s ease-in; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+/* Markdown Styles */
+.prose-custom h1, .prose-custom h2, .prose-custom h3 { color: #fff; font-weight: 700; margin-bottom: 1rem; }
+.prose-custom p { margin-bottom: 1rem; line-height: 1.7; color: #d1d5db; }
+.prose-custom strong { color: #fff; font-weight: 600; }
+.prose-custom ul { list-style: disc; margin-left: 1.5rem; margin-bottom: 1rem; color: #d1d5db; }
+.prose-custom code { font-family: 'JetBrains Mono', monospace; background: #222; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.9em; color: #e5e5e5; border: 1px solid #333; }
+.prose-custom pre { background: #111; padding: 1rem; border-radius: 8px; overflow-x: auto; border: 1px solid #333; margin-bottom: 1rem; }
+.prose-custom pre code { background: transparent; padding: 0; border: none; color: #a5b4fc; }
 
-/* Admin Editor Tweaks */
-.h-editor-admin .CodeMirror {
-    height: 200px;
-    background: #0a0a0a;
-}
+.fade-in { animation: fadeIn 0.2s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }

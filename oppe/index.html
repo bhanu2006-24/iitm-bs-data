@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenZ | Dojo - Mix Edit Mode</title>
+    <title>GenZ | Dojo - Ultimate</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- CodeMirror -->
@@ -25,18 +26,18 @@
     <div id="app" class="split-grid">
         
         <!-- Sidebar: Questions -->
-        <div class="glass flex flex-col h-full border-r border-gray-800">
-            <div class="p-5 border-b border-gray-800 bg-[#0d0d0d]">
-                <h1 class="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent flex items-center gap-3 mb-4">
-                    <i class="fa-solid fa-layer-group"></i> Dojo Mix
+        <div class="glass flex flex-col h-full border-r border-gray-800 bg-[#0a0a0a]">
+            <div class="p-5 border-b border-gray-800 bg-[#050505]">
+                <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-code-branch"></i> Dojo Ultimate
                 </h1>
-                <select v-model="selectedSubject" @change="loadSubject" class="input-base text-sm font-medium">
+                <select v-model="selectedSubject" @change="loadSubject" class="input-base text-sm font-medium border-gray-800 focus:border-indigo-500">
                     <option value="python">Python</option>
                     <option value="java">Java</option>
                     <option value="pdsa">PDSA</option>
                     <option value="sql">SQL</option>
                     <option value="system_commands">Sys Commands</option>
-                    <option value="mlp">MLP</option>
+                    <option value="mlp">ML Practice</option>
                     <option value="c_prog">C Programming</option>
                     <option value="big_data">Big Data</option>
                     <option value="mlops">MLOPS</option>
@@ -45,8 +46,11 @@
             </div>
             
             <div class="p-3 bg-[#0a0a0a] flex gap-2 border-b border-gray-800">
-                <input v-model="searchQuery" type="text" placeholder="Search..." class="input-base py-2 text-xs rounded-full">
-                <button @click="addNewQuestion()" class="w-8 h-8 flex-shrink-0 bg-purple-600 hover:bg-purple-500 rounded-full text-white flex items-center justify-center transition" title="Add Question">
+                <div class="relative flex-1">
+                    <i class="fa-solid fa-search absolute left-3 top-2.5 text-gray-600 text-xs"></i>
+                    <input v-model="searchQuery" type="text" placeholder="Search..." class="input-base pl-8 py-2 text-xs rounded-full bg-[#111]">
+                </div>
+                <button @click="addNewQuestion()" class="w-8 h-8 flex-shrink-0 bg-indigo-600 hover:bg-indigo-500 rounded-full text-white flex items-center justify-center transition shadow-lg shadow-indigo-500/20" title="Add Question">
                     <i class="fa-solid fa-plus text-xs"></i>
                 </button>
             </div>
@@ -54,83 +58,154 @@
             <div class="flex-1 overflow-y-auto scroll-smooth p-2 space-y-1">
                 <div v-for="q in filteredQuestions" :key="q.id" 
                      @click="loadQuestion(q)"
-                     class="question-item p-3 rounded cursor-pointer group"
-                     :class="currentQuestion?.id === q.id ? 'active' : ''">
-                    <div class="flex justify-between items-center">
-                        <h3 class="font-medium text-sm truncate pr-2 text-gray-300">{{ q.title || 'Untitled' }}</h3>
-                        <span class="text-[10px] px-1.5 rounded bg-gray-800 text-gray-500">{{ q.difficulty }}</span>
+                     class="question-item p-3 rounded-lg cursor-pointer group border border-transparent hover:border-gray-800 transition-all"
+                     :class="currentQuestion?.id === q.id ? 'active bg-[#111] border-indigo-500/30' : ''">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="font-bold text-sm truncate pr-2" :class="currentQuestion?.id === q.id ? 'text-indigo-400' : 'text-gray-400 group-hover:text-gray-200'">{{ q.title || 'Untitled' }}</h3>
+                        <div class="flex gap-1">
+                             <span v-if="q.examType" class="text-[9px] px-1.5 py-0.5 rounded bg-blue-900/30 text-blue-400 border border-blue-500/20">{{ q.examType }}</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 opacity-60 group-hover:opacity-100 transition items-center">
+                         <span class="text-[10px] px-1.5 py-0.5 rounded bg-gray-800 text-gray-500 border border-gray-700">{{ q.difficulty }}</span>
+                         <span v-if="q.tags" class="text-[10px] text-gray-600 truncate max-w-[100px]">{{ q.tags }}</span>
                     </div>
                 </div>
             </div>
             
-            <div class="p-4 border-t border-gray-800">
-                <button @click="saveFile" class="w-full py-2 bg-gray-800 hover:bg-gray-700 text-white rounded text-xs font-bold transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-floppy-disk"></i> Save All Changes
+            <div class="p-4 border-t border-gray-800 bg-[#050505]">
+                <button @click="saveFile" class="w-full py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/20 transform active:scale-95">
+                    <i class="fa-solid fa-floppy-disk"></i> Save Changes to File
                 </button>
             </div>
         </div>
 
-        <!-- Middle: Editable Properties -->
-        <div class="flex flex-col h-full bg-[#0a0a0a] border-r border-gray-800 overflow-y-auto p-6 scroll-smooth">
-            <div v-if="currentQuestion" class="space-y-6 fade-in">
-                
-                <div class="flex justify-between items-center border-b border-gray-800 pb-4">
-                    <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest">Definition</h2>
-                    <button @click="deleteQuestion" class="text-red-500 hover:text-red-400 text-xs"><i class="fa-solid fa-trash"></i></button>
-                </div>
+        <!-- Middle: Properties Editor (With Tabs) -->
+        <div class="flex flex-col h-full bg-[#0a0a0a] border-r border-gray-800 overflow-hidden relative">
+            
+            <!-- Context Tab Bar -->
+            <div v-if="currentQuestion" class="flex items-center gap-1 p-2 border-b border-gray-800 bg-[#0d0d0d]">
+                <button @click="viewMode = 'preview'" class="px-3 py-1.5 rounded text-xs font-bold transition flex items-center gap-2" :class="viewMode==='preview' ? 'bg-indigo-500/10 text-indigo-400' : 'text-gray-500 hover:text-gray-300'">
+                    <i class="fa-solid fa-eye"></i> Preview
+                </button>
+                <button @click="viewMode = 'edit'" class="px-3 py-1.5 rounded text-xs font-bold transition flex items-center gap-2" :class="viewMode==='edit' ? 'bg-indigo-500/10 text-indigo-400' : 'text-gray-500 hover:text-gray-300'">
+                    <i class="fa-solid fa-pen-to-square"></i> Edit
+                </button>
+                <div class="flex-1"></div>
+                <button @click="deleteQuestion" class="w-7 h-7 flex items-center justify-center rounded hover:bg-red-500/10 text-gray-500 hover:text-red-500 transition"><i class="fa-solid fa-trash text-xs"></i></button>
+            </div>
 
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-[10px] text-gray-600 font-bold uppercase mb-1">Question Title</label>
-                        <input v-model="currentQuestion.title" class="input-base bg-[#111] font-bold text-lg text-white">
+            <!-- Content Area -->
+            <div v-if="currentQuestion" class="flex-1 overflow-y-auto scroll-smooth p-6">
+                
+                <!-- PREVIEW MODE -->
+                <div v-if="viewMode === 'preview'" class="fade-in space-y-6">
+                    <div class="border-b border-gray-800 pb-4">
+                        <h2 class="text-3xl font-bold text-white mb-3">{{ currentQuestion.title }}</h2>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="badge bg-green-900/20 text-green-400 border-green-500/20">{{ currentQuestion.difficulty }}</span>
+                            <span v-if="currentQuestion.examType" class="badge bg-blue-900/20 text-blue-400 border-blue-500/20">{{ currentQuestion.examType }}</span>
+                            <span v-if="currentQuestion.tags" class="badge bg-gray-800 text-gray-400 border-gray-700">{{ currentQuestion.tags }}</span>
+                        </div>
                     </div>
                     
-                    <div>
-                        <label class="block text-[10px] text-gray-600 font-bold uppercase mb-1">Difficulty</label>
-                        <select v-model="currentQuestion.difficulty" class="input-base bg-[#111] text-xs w-1/2">
-                            <option>Easy</option>
-                            <option>Medium</option>
-                            <option>Hard</option>
-                        </select>
-                    </div>
+                    <div class="prose-custom text-sm text-gray-300 leading-relaxed" v-html="renderMarkdown(currentQuestion.description)"></div>
 
-                    <div>
-                        <label class="block text-[10px] text-gray-600 font-bold uppercase mb-1">Description (Markdown)</label>
-                        <textarea v-model="currentQuestion.description" class="input-base h-32 font-mono text-xs bg-[#111] leading-relaxed"></textarea>
-                    </div>
-
-                    <div class="pt-4 border-t border-gray-800">
-                         <div class="flex justify-between items-center mb-2">
-                            <label class="block text-[10px] text-gray-600 font-bold uppercase">Starter Code</label>
-                            <button @click="copyToStarter" class="text-[10px] text-indigo-400 hover:underline" title="Copy from Editor">
-                                <i class="fa-solid fa-arrow-left"></i> Fetch from Editor
-                            </button>
+                    <div v-if="currentQuestion.testCases?.length" class="mt-8">
+                        <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Sample Test Cases</h4>
+                        <div v-for="(tc, idx) in currentQuestion.testCases.slice(0,3)" :key="idx" class="bg-[#111] border border-gray-800 rounded-lg p-4 mb-3 font-mono text-xs relative overflow-hidden">
+                             <div class="grid grid-cols-1 gap-2">
+                                 <div><span class="text-gray-500">In:</span> <span class="text-yellow-500">{{ tc.input }}</span></div>
+                                 <div class="border-t border-gray-800 pt-2 mt-1"><span class="text-gray-500">Out:</span> <span class="text-emerald-500">{{ tc.output }}</span></div>
+                             </div>
                         </div>
-                        <textarea v-model="currentQuestion.starterCode" class="input-base h-32 font-mono text-[11px] bg-[#0f0f0f] text-gray-400"></textarea>
-                        <p class="text-[10px] text-gray-600 mt-1">This is the code users will start with.</p>
+                    </div>
+                </div>
+
+                <!-- EDIT MODE -->
+                <div v-else class="fade-in space-y-6">
+                    <!-- Metadata Edit -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <label class="label">Title</label>
+                            <input v-model="currentQuestion.title" class="input-base font-bold">
+                        </div>
+                        <div>
+                             <label class="label">Exam Type (e.g. OPPE1)</label>
+                             <select v-model="currentQuestion.examType" class="input-base">
+                                 <option value="">None</option>
+                                 <option>OPPE 1</option>
+                                 <option>OPPE 2</option>
+                                 <option>End Term</option>
+                                 <option>Quiz</option>
+                             </select>
+                        </div>
+                        <div>
+                             <label class="label">Difficulty</label>
+                             <select v-model="currentQuestion.difficulty" class="input-base">
+                                 <option>Easy</option>
+                                 <option>Medium</option>
+                                 <option>Hard</option>
+                             </select>
+                        </div>
+                        <div class="col-span-2">
+                            <label class="label">Tags (comma separated)</label>
+                            <input v-model="currentQuestion.tags" class="input-base" placeholder="e.g. loops, arrays, optimization">
+                        </div>
                     </div>
 
-                    <div class="pt-4 border-t border-gray-800">
+                    <!-- Description Edit -->
+                    <div>
+                        <label class="label flex justify-between">
+                            <span>Description (Markdown)</span>
+                            <span class="text-[10px] text-gray-500 font-normal">Supports **bold**, `code`</span>
+                        </label>
+                        <textarea v-model="currentQuestion.description" class="input-base h-40 font-mono text-xs leading-relaxed"></textarea>
+                    </div>
+
+                    <!-- Starter Code Edit -->
+                    <div class="bg-[#151515] p-4 rounded-xl border border-gray-800">
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="label text-indigo-400">Definition / Starter Code</label>
+                            <button @click="copyToStarter" class="text-[10px] px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded hover:bg-indigo-500/20 transition">Copy from Playground Area</button>
+                        </div>
+                        <textarea v-model="currentQuestion.starterCode" class="input-base h-32 font-mono text-[11px] bg-[#0a0a0a] text-gray-400 border-gray-700/50"></textarea>
+                    </div>
+
+                    <!-- Test Cases Edit -->
+                    <div>
                         <div class="flex justify-between items-center mb-3">
-                             <label class="block text-[10px] text-gray-600 font-bold uppercase">Test Cases</label>
-                             <button @click="addTestCase" class="text-purple-400 text-xs">+ Case</button>
+                             <label class="label">Test Cases</label>
+                             <button @click="addTestCase" class="text-xs px-2 py-1 bg-gray-800 hover:bg-white/10 rounded transition">+ Add Case</button>
                         </div>
                         <div class="space-y-3">
-                            <div v-for="(tc, idx) in currentQuestion.testCases" :key="idx" class="flex gap-2 items-start bg-[#111] p-2 rounded border border-gray-800 group">
-                                <span class="text-[10px] text-gray-600 pt-2">#{{ idx+1 }}</span>
-                                <div class="flex-1 space-y-1">
-                                    <input v-model="tc.input" placeholder="Input" class="input-base py-1 px-2 text-xs font-mono bg-[#0a0a0a]">
-                                    <input v-model="tc.output" placeholder="Output" class="input-base py-1 px-2 text-xs font-mono bg-[#0a0a0a]">
+                            <div v-for="(tc, idx) in currentQuestion.testCases" :key="idx" class="bg-[#111] p-3 rounded border border-gray-800 relative group transition hover:border-gray-600">
+                                <div class="absolute top-2 right-2 flex gap-2 opacity-0 group-hover:opacity-100 transition">
+                                    <button @click="tc.hidden = !tc.hidden" class="text-xs text-gray-500 hover:text-white" :title="tc.hidden ? 'Hidden Case' : 'Public Case'">
+                                        <i class="fa-solid" :class="tc.hidden ? 'fa-eye-slash' : 'fa-eye'"></i>
+                                    </button>
+                                    <button @click="currentQuestion.testCases.splice(idx, 1)" class="text-xs text-gray-500 hover:text-red-500"><i class="fa-solid fa-trash"></i></button>
                                 </div>
-                                <button @click="currentQuestion.testCases.splice(idx, 1)" class="text-gray-600 hover:text-red-500 text-xs opacity-0 group-hover:opacity-100"><i class="fa-solid fa-times"></i></button>
+                                
+                                <span class="text-[10px] text-gray-600 font-bold mb-2 block">Case #{{ idx+1 }}</span>
+                                <div class="grid grid-cols-1 gap-2">
+                                    <div>
+                                        <textarea v-model="tc.input" placeholder="Input" class="input-base h-10 text-xs font-mono bg-[#0a0a0a] resize-y"></textarea>
+                                    </div>
+                                    <div>
+                                        <textarea v-model="tc.output" placeholder="Expected Output" class="input-base h-10 text-xs font-mono bg-[#0a0a0a] resize-y"></textarea>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
-            <div v-else class="flex flex-col items-center justify-center h-full text-gray-600 text-xs">
-                Select a question to edit
+            <div v-else class="flex flex-col items-center justify-center h-full text-gray-500 text-xs">
+                <i class="fa-regular fa-file-code text-4xl mb-3 opacity-20"></i>
+                <p>Select a question to view or edit details.</p>
             </div>
         </div>
 
@@ -141,12 +216,13 @@
                 <div class="flex gap-2 text-xs text-gray-500 items-center">
                     <i class="fa-solid fa-terminal"></i>
                     <span class="font-mono">{{ getFileName() }}</span>
+                    <span v-if="unsavedChanges" class="w-1.5 h-1.5 rounded-full bg-yellow-500 ml-2" title="Unsaved Playground Changes"></span>
                 </div>
                 <div class="flex gap-3">
-                    <button @click="runCode" :disabled="isRunning" class="px-4 py-1.5 bg-green-600 hover:bg-green-500 text-white text-xs font-bold rounded flex items-center gap-2 transition disabled:opacity-50">
+                    <button @click="runCode" :disabled="isRunning" class="px-5 py-1.5 bg-green-600 hover:bg-green-500 text-white text-xs font-bold rounded flex items-center gap-2 transition disabled:opacity-50 shadow-lg shadow-green-900/20">
                         <i v-if="!isRunning" class="fa-solid fa-play"></i>
                         <i v-else class="fa-solid fa-circle-notch fa-spin"></i>
-                        Test Run
+                        Run Code
                     </button>
                 </div>
             </div>
@@ -157,13 +233,19 @@
             </div>
 
             <!-- Console -->
-            <div class="h-1/3 border-t border-gray-800 bg-[#0f0f0f] flex flex-col">
-                <div class="px-4 py-2 bg-[#151515] border-b border-gray-800 text-[10px] font-bold text-gray-500 uppercase flex justify-between">
-                    <span>Output</span>
-                    <button @click="consoleOutput = []" class="hover:text-white">Clear</button>
+            <div class="h-1/3 border-t border-gray-800 bg-[#0f0f0f] flex flex-col transition-all" :class="consoleExpanded ? 'h-2/3' : 'h-1/3'">
+                <div class="px-4 py-2 bg-[#151515] border-b border-gray-800 text-[10px] font-bold text-gray-500 uppercase flex justify-between items-center cursor-pointer" @dblclick="consoleExpanded = !consoleExpanded">
+                    <span>Terminal / Output</span>
+                    <div class="flex gap-3">
+                        <button @click="consoleExpanded = !consoleExpanded" class="hover:text-white"><i class="fa-solid" :class="consoleExpanded ? 'fa-chevron-down' : 'fa-chevron-up'"></i></button>
+                        <button @click="consoleOutput = []" class="hover:text-white">Clear</button>
+                    </div>
                 </div>
-                <div class="flex-1 p-4 font-mono text-xs overflow-y-auto whitespace-pre-wrap">
-                     <div v-for="(line, idx) in consoleOutput" :key="idx" :class="line.type === 'error' ? 'text-red-400' : line.type === 'success' ? 'text-green-400' : 'text-gray-300'" class="mb-1">
+                <div class="flex-1 p-4 font-mono text-[11px] overflow-y-auto whitespace-pre-wrap leading-relaxed select-text">
+                     <div v-if="consoleOutput.length === 0" class="text-gray-700 italic">Ready to execute...</div>
+                     <div v-for="(line, idx) in consoleOutput" :key="idx" :class="line.type === 'error' ? 'text-red-400' : line.type === 'success' ? 'text-green-400' : 'text-gray-300'" class="mb-0.5">
+                        <span v-if="line.type==='error'" class="mr-2">✖</span>
+                        <span v-if="line.type==='success'" class="mr-2">✔</span>
                         {{ line.text }}
                      </div>
                 </div>

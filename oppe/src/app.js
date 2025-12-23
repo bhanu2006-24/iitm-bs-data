@@ -9,11 +9,14 @@ createApp({
             questions: [],
             searchQuery: '',
             currentQuestion: null,
+            viewMode: 'preview', // 'preview' | 'edit'
+            
             editor: null,
             consoleOutput: [],
             isRunning: false,
-            fontSize: '14px',
-            loading: false
+            loading: false,
+            unsavedChanges: false,
+            consoleExpanded: false
         }
     },
     computed: {
@@ -23,8 +26,17 @@ createApp({
     },
     mounted() {
         this.loadSubject();
+        window.addEventListener('keydown', this.handleShortcuts);
+    },
+    beforeUnmount() {
+        window.removeEventListener('keydown', this.handleShortcuts);
     },
     methods: {
+        // --- Markdown ---
+        renderMarkdown(text) {
+            return marked.parse(text || '');
+        },
+
         // --- Editors ---
         initEditor() {
             if(this.editor) return;
@@ -41,9 +53,7 @@ createApp({
                         scrollbarStyle: "null"
                     });
                     this.editor.on('change', () => {
-                         // We don't auto-save to 'userCode' property to avoid polluting the definition instantly
-                         // But we can tracked it if needed.
-                         // For now, this is the "Playground" area.
+                         this.unsavedChanges = true;
                     });
                 }
             });
@@ -57,20 +67,26 @@ createApp({
             return map[this.selectedSubject] || 'python';
         },
 
+        handleShortcuts(e) {
+            if((e.metaKey || e.ctrlKey) && e.key === 's') {
+                e.preventDefault();
+                this.saveFile();
+            }
+        },
+
         // --- Data ---
         async loadSubject() {
             this.loading = true;
             this.questions = [];
             this.currentQuestion = null;
             this.consoleOutput = [];
-            if(this.editor) this.editor.setValue("");
             
             try {
                 const res = await fetch(`./data/${this.selectedSubject}.json`);
                 if(res.ok) {
                     this.questions = await res.json();
                     if(this.questions.length > 0) this.loadQuestion(this.questions[0]);
-                    else this.addNewQuestion(true); // Auto-create first if empty
+                    else this.addNewQuestion(true); 
                 } else {
                     this.questions = [];
                     this.addNewQuestion(true);
@@ -84,14 +100,15 @@ createApp({
 
         loadQuestion(q) {
             this.currentQuestion = q;
+            this.viewMode = 'preview'; // Reset to preview on new selection
+            this.unsavedChanges = false;
             this.initEditor();
             this.$nextTick(() => {
                 if(this.editor) {
-                    // Load Starter Code into Editor by default so user can test it
-                    // Or load userCode if we want to persist session? 
-                    // Let's load starterCode as base.
                     this.editor.setValue(q.starterCode || '');
+                    this.editor.clearHistory();
                     this.editor.refresh();
+                    this.unsavedChanges = false;
                 }
             });
         },
@@ -111,20 +128,24 @@ createApp({
                 
             if(!res.isError) this.consoleOutput.push({type: 'success', text: '✔ Finished'});
             this.isRunning = false;
+            this.consoleExpanded = true;
         },
 
         addNewQuestion(silent=false) {
             const newQ = {
                 id: Date.now().toString(),
-                title: 'Untitled Question',
+                title: 'New Problem',
                 difficulty: 'Easy',
-                description: 'Describe the problem here...',
+                examType: 'OPPE 1',
+                tags: '',
+                description: '## Problem Description\n\nWrite a solution that...',
                 starterCode: '# Write code here',
-                testCases: [{input: '', output: ''}],
+                testCases: [{input: '', output: '', hidden: false}],
                 status: 'pending'
             };
             this.questions.push(newQ);
             this.loadQuestion(newQ);
+            if(!silent) this.viewMode = 'edit';
         },
 
         deleteQuestion() {
@@ -138,14 +159,13 @@ createApp({
         
         addTestCase() {
             if(!this.currentQuestion.testCases) this.currentQuestion.testCases = [];
-            this.currentQuestion.testCases.push({input:'', output:''});
+            this.currentQuestion.testCases.push({input:'', output:'', hidden: false});
         },
 
         copyToStarter() {
             if(this.editor && this.currentQuestion) {
-                if(confirm("Overwrite the Definition Starter Code with content from the Editor?")) {
-                    this.currentQuestion.starterCode = this.editor.getValue();
-                }
+                 this.currentQuestion.starterCode = this.editor.getValue();
+                 alert("Playground code copied to Starter Code Definition.");
             }
         },
 
@@ -156,6 +176,7 @@ createApp({
                     const w = await h.createWritable();
                     await w.write(JSON.stringify(this.questions, null, 2));
                     await w.close();
+                    this.unsavedChanges = false;
                     alert("Saved!");
                 } else {
                     const blob = new Blob([JSON.stringify(this.questions, null, 2)], {type: 'application/json'});
