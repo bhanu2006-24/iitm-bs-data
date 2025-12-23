@@ -1,6 +1,4 @@
 
-import { IMAGES } from '../img/images';
-
 export const BRAND = {
     name: "Gen-Z IITian",
     subBrand: "IIT Pathshala",
