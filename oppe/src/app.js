@@ -1,3 +1,5 @@
+import { executeCode } from './compiler.js';
+
 const { createApp } = Vue;
 
 createApp({
@@ -11,8 +13,7 @@ createApp({
             consoleOutput: [],
             isRunning: false,
             fontSize: '14px',
-            loading: false,
-            isAdminMode: false
+            loading: false
         }
     },
     computed: {
@@ -21,23 +22,17 @@ createApp({
         }
     },
     mounted() {
-        this.initEditor();
-        this.loadSubject(); // Load initial
+        this.loadSubject();
     },
     methods: {
-        toggleAdmin() {
-            this.isAdminMode = !this.isAdminMode;
-            // Force Layout Refresh if needed
-        },
+        // --- Editors ---
         initEditor() {
-            if(this.editor) return; 
-            
-            // Wait for DOM
+            if(this.editor) return;
             this.$nextTick(() => {
                 const el = document.getElementById('code-editor');
-                if(el && !this.editor) {
-                        this.editor = CodeMirror.fromTextArea(el, {
-                        mode: 'python',
+                if(el) {
+                    this.editor = CodeMirror.fromTextArea(el, {
+                        mode: this.getMode(),
                         theme: 'dracula',
                         lineNumbers: true,
                         autoCloseBrackets: true,
@@ -46,155 +41,135 @@ createApp({
                         scrollbarStyle: "null"
                     });
                     this.editor.on('change', () => {
-                            if(this.currentQuestion) this.currentQuestion.userCode = this.editor.getValue(); 
+                         // We don't auto-save to 'userCode' property to avoid polluting the definition instantly
+                         // But we can tracked it if needed.
+                         // For now, this is the "Playground" area.
                     });
                 }
             });
         },
-        getFileName() {
-            const extMap = { 'python': 'py', 'pdsa': 'py', 'mlp': 'py', 'java': 'java', 'sql': 'sql', 'system_commands': 'sh', 'c_prog': 'c', 'big_data': 'py', 'mlops': 'py' };
-            return `main.${extMap[this.selectedSubject] || 'txt'}`;
-        },
-        setEditorMode() {
-            if(!this.editor) return;
-            const modeMap = { 
-                'python': 'python', 'pdsa': 'python', 'mlp': 'python', 'big_data': 'python', 'mlops': 'python',
+        
+        getMode() {
+            const map = { 
+                'python': 'python', 'pdsa': 'python', 'mlp': 'python', 'big_data': 'python', 'mlops': 'python', 'tds': 'python',
                 'java': 'text/x-java', 'sql': 'text/x-sql', 'system_commands': 'shell', 'c_prog': 'text/x-csrc'
             };
-            this.editor.setOption('mode', modeMap[this.selectedSubject] || 'python');
+            return map[this.selectedSubject] || 'python';
         },
+
+        // --- Data ---
         async loadSubject() {
             this.loading = true;
             this.questions = [];
             this.currentQuestion = null;
-            if(this.editor) this.setEditorMode();
+            this.consoleOutput = [];
+            if(this.editor) this.editor.setValue("");
             
             try {
-                // FIXED: Now fetching from ./data/
                 const res = await fetch(`./data/${this.selectedSubject}.json`);
                 if(res.ok) {
                     this.questions = await res.json();
                     if(this.questions.length > 0) this.loadQuestion(this.questions[0]);
-                    else if(this.editor) this.editor.setValue("# No questions found.");
+                    else this.addNewQuestion(true); // Auto-create first if empty
                 } else {
-                     // Handle new subjects with empty files
-                    if(this.editor) this.editor.setValue("# No questions loaded.");
+                    this.questions = [];
+                    this.addNewQuestion(true);
                 }
             } catch(e) { console.error(e); } 
-            finally { this.loading = false; }
+            finally { 
+                this.loading = false;
+                if(this.editor) this.editor.setOption('mode', this.getMode());
+            }
         },
+
         loadQuestion(q) {
             this.currentQuestion = q;
-            if(!this.isAdminMode) {
-                // Ensure editor exists
-                this.$nextTick(() => {
-                        if(!this.editor) this.initEditor();
-                        if(this.editor) {
-                            const code = q.userCode || q.starterCode || '';
-                            this.editor.setValue(code);
-                            setTimeout(() => this.editor.refresh(), 100);
-                        }
-                });
-            }
-        },
-        getStatusColor(status) {
-            if (status === 'passed') return 'bg-green-500';
-            if (status === 'failed') return 'bg-red-500';
-            return 'bg-gray-600';
-        },
-        async runCode() {
-            if (!this.currentQuestion) return;
-            this.isRunning = true;
-            this.consoleOutput = [{type: 'info', text: 'Running tests...'}];
-
-            const code = this.editor.getValue();
-            let lang = 'python';
-            let version = '3.10.0';
-
-            // Extended Mapping
-            if(this.selectedSubject === 'java') { lang = 'java'; version = '15.0.2'; }
-            else if(this.selectedSubject === 'system_commands') { lang = 'bash'; version = '5.0.0'; }
-            else if(this.selectedSubject === 'sql') { lang = 'sqlite3'; version = '3.36.0'; }
-            else if(this.selectedSubject === 'c_prog') { lang = 'c'; version = '10.2.0'; }
-
-            try {
-                const response = await fetch('https://emkc.org/api/v2/piston/execute', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        language: lang,
-                        version: version,
-                        files: [{ content: code }]
-                    })
-                });
-                const result = await response.json();
-                
-                if (result.run) {
-                    const output = result.run.output;
-                    const isError = result.run.code !== 0;
-                    this.consoleOutput = output.split('\n').map(l => ({ type: isError ? 'error' : 'normal', text: l })).filter(l => l.text);
-                    if(!isError) this.consoleOutput.push({type: 'success', text: '✔ Execution finished.'});
+            this.initEditor();
+            this.$nextTick(() => {
+                if(this.editor) {
+                    // Load Starter Code into Editor by default so user can test it
+                    // Or load userCode if we want to persist session? 
+                    // Let's load starterCode as base.
+                    this.editor.setValue(q.starterCode || '');
+                    this.editor.refresh();
                 }
-            } catch (err) {
-                this.consoleOutput = [{type: 'error', text: 'Error connecting to Piston API.'}];
-            } finally {
-                this.isRunning = false;
-            }
+            });
         },
-        
-        // Admin Ops
-        addNewQuestion() {
+
+        // --- Operations ---
+        async runCode() {
+            if (!this.editor) return;
+            this.isRunning = true;
+            this.consoleOutput = [{type: 'info', text: 'Compiling...'}];
+            
+            const code = this.editor.getValue();
+            const res = await executeCode(code, this.selectedSubject);
+            
+            this.consoleOutput = res.output.split('\n')
+                .map(l => ({ type: res.isError ? 'error' : 'normal', text: l }))
+                .filter(l => l.text);
+                
+            if(!res.isError) this.consoleOutput.push({type: 'success', text: '✔ Finished'});
+            this.isRunning = false;
+        },
+
+        addNewQuestion(silent=false) {
             const newQ = {
                 id: Date.now().toString(),
-                title: 'New Question',
-                description: 'Enter problem description here.',
+                title: 'Untitled Question',
                 difficulty: 'Easy',
-                starterCode: '# Write your code here',
+                description: 'Describe the problem here...',
+                starterCode: '# Write code here',
                 testCases: [{input: '', output: ''}],
                 status: 'pending'
             };
             this.questions.push(newQ);
-            this.currentQuestion = newQ;
-            if(!this.isAdminMode) this.toggleAdmin(); // Auto switch to edit
+            this.loadQuestion(newQ);
         },
-        addTestCase() {
-            if(!this.currentQuestion.testCases) this.currentQuestion.testCases = [];
-            this.currentQuestion.testCases.push({input: '', output: ''});
-        },
+
         deleteQuestion() {
             if(confirm("Delete this question?")) {
-                this.questions = this.questions.filter(q => q.id !== this.currentQuestion.id);
-                this.currentQuestion = null;
+                const idx = this.questions.findIndex(q => q.id === this.currentQuestion.id);
+                this.questions.splice(idx, 1);
+                if(this.questions.length > 0) this.loadQuestion(this.questions[0]);
+                else this.currentQuestion = null;
             }
         },
-        async saveQuestions() {
-                try {
+        
+        addTestCase() {
+            if(!this.currentQuestion.testCases) this.currentQuestion.testCases = [];
+            this.currentQuestion.testCases.push({input:'', output:''});
+        },
+
+        copyToStarter() {
+            if(this.editor && this.currentQuestion) {
+                if(confirm("Overwrite the Definition Starter Code with content from the Editor?")) {
+                    this.currentQuestion.starterCode = this.editor.getValue();
+                }
+            }
+        },
+
+        async saveFile() {
+             try {
                 if (window.showSaveFilePicker) {
                     const h = await window.showSaveFilePicker({ suggestedName: `${this.selectedSubject}.json` });
                     const w = await h.createWritable();
                     await w.write(JSON.stringify(this.questions, null, 2));
                     await w.close();
-                    alert("File saved!");
+                    alert("Saved!");
                 } else {
-                    // Fallback
                     const blob = new Blob([JSON.stringify(this.questions, null, 2)], {type: 'application/json'});
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
                     a.download = `${this.selectedSubject}.json`;
                     a.click();
                 }
-            } catch (e) { alert("Could not save file."); }
-        }
-    },
-    watch: {
-        isAdminMode(newVal) {
-            if(!newVal) {
-                    // Switched back to Practice Mode, re-render Editor
-                    this.editor = null; // force re-init
-                    this.$nextTick(() => {
-                        this.loadQuestion(this.currentQuestion);
-                    });
-            }
-        }
+            } catch (e) { alert("Error saving"); }
+        },
+        
+        getFileName() {
+            const extMap = { 'python': 'py', 'pdsa': 'py', 'mlp': 'py', 'java': 'java', 'sql': 'sql', 'system_commands': 'sh', 'c_prog': 'c', 'big_data': 'py', 'mlops': 'py' };
+            return `main.${extMap[this.selectedSubject] || 'txt'}`;
+        },
     }
 }).mount('#app');
