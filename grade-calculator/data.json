@@ -1,0 +1,100 @@
+[
+    {
+        "id": "math1", "subject": "Mathematics I", "level": "Foundation",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.6,
+        "qs": ["Quiz 1", "Quiz 2"],
+        "strategy": "sep25_theory", "formula_text": "0.1GA + Max(0.6F + 0.2Max(Q1,Q2), 0.4F + 0.2Q1 + 0.3Q2)"
+    },
+    {
+        "id": "stats1", "subject": "Statistics I", "level": "Foundation",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.6,
+        "qs": ["Quiz 1", "Quiz 2"],
+        "strategy": "sep25_theory_bonus", "formula_text": "0.1GA + Max(0.6F + 0.2Max(Q1,Q2), 0.4F + 0.2Q1 + 0.3Q2) + Bonus"
+    },
+    {
+        "id": "python", "subject": "Intro to Python", "level": "Foundation",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.4,
+        "qs": ["Quiz 1", "OPPE 1", "OPPE 2"],
+        "strategy": "sep25_python", "formula_text": "0.1GA_Obj + 0.1GA_Prog + 0.1Q1 + 0.4F + 0.25Max(PE1,PE2) + 0.15Min(PE1,PE2)"
+    },
+    {
+        "id": "math2", "subject": "Mathematics II", "level": "Foundation",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.6,
+        "qs": ["Quiz 1", "Quiz 2"],
+        "strategy": "math2", "formula_text": "Standard Formula * (1 + 0.01*Bonus)"
+    },
+    {
+        "id": "dbms", "subject": "DBMS", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.4, 
+        "qs": ["Quiz 1", "Quiz 2", "OPPE"],
+        "strategy": "custom", "formula_text": "0.04GA1 + 0.03GA2 + 0.03GA3 + 0.2OP + Max(0.45F+0.15MaxQ, 0.4F+0.1Q1+0.2Q2)"
+    },
+    {
+        "id": "pdsa", "subject": "PDSA", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.4,
+        "qs": ["Quiz 1", "Quiz 2", "OPPE"],
+        "strategy": "custom", "formula_text": "0.1GA + 0.4F + 0.2OP + Max(0.2MaxQ, 0.15(Q1+Q2))"
+    },
+    {
+        "id": "java", "subject": "Java Programming", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10, 
+        "ga_weight": 0.1, "f_weight": 0.3,
+        "qs": ["Quiz 1", "Quiz 2", "OPPE 1", "OPPE 2"],
+        "strategy": "sep25_java", "formula_text": "0.1GA + 0.3F + 0.2Max(PE) + 0.1Min(PE) + Max(0.25MaxQ, 0.15Q1+0.25Q2)"
+    },
+    {
+        "id": "appdev1", "subject": "App Dev 1", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.05, "f_weight": 0.4, 
+        "qs": ["Quiz 1", "Quiz 2", "Project"],
+        "strategy": "custom", "formula_text": "0.15GLA + 0.05GA + Max(0.35F+0.2Q1+0.25Q2, 0.4F+0.3BestQ)"
+    },
+    {
+        "id": "sc", "subject": "System Commands", "level": "Diploma",
+        "total_weeks": 10, "best_of_weeks": 9,
+        "ga_weight": 0.1, "f_weight": 0.3,
+        "qs": ["Quiz 1", "OPPE", "Project"],
+        "strategy": "custom", "formula_text": "0.1GA + 0.2Q1 + 0.3OPE + 0.3F + 0.1BPTA"
+    },
+    {
+        "id": "mlf", "subject": "ML Foundations", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.6,
+        "qs": ["Quiz 1", "Quiz 2"],
+        "strategy": "sep25_theory", "formula_text": "Standard Theory Formula"
+    },
+    {
+        "id": "mlt", "subject": "ML Techniques", "level": "Diploma",
+        "total_weeks": 12, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.4,
+        "qs": ["Quiz 1", "Quiz 2"],
+        "strategy": "custom", "formula_text": "0.1GA + 0.4F + Max(0.25(Q1+Q2), 0.4Max(Q1,Q2))"
+    },
+    {
+        "id": "mlp", "subject": "ML Practice", "level": "Diploma",
+        "total_weeks": 10, "best_of_weeks": 10,
+        "ga_weight": 0.1, "f_weight": 0.3,
+        "qs": ["OPPE 1", "OPPE 2", "Project"],
+        "strategy": "custom", "formula_text": "0.1GAA + 0.3F + 0.2OPPE1 + 0.2OPPE2 + 0.2Kaggle"
+    },
+    {
+        "id": "bdm", "subject": "Business Data Mgmt", "level": "Diploma",
+        "total_weeks": 4, "best_of_weeks": 3, 
+        "ga_weight": 0.3, "f_weight": 0.3,
+        "qs": ["Quiz 2", "Project", "Timed"],
+        "strategy": "custom", "formula_text": "0.3GA(Best 3/4) + 0.2Q2 + 0.2Timed + 0.3F"
+    },
+    {
+        "id": "genai", "subject": "Intro to DL & GenAI", "level": "Diploma",
+        "total_weeks": 9, "best_of_weeks": 9,
+        "ga_weight": 0.2, "f_weight": 0.2,
+        "qs": ["Quiz 1", "Quiz 2", "NPPE 1", "NPPE 2"],
+        "strategy": "custom", "formula_text": "0.2GA + 0.15Q1 + 0.15Q2 + 0.2F + 0.15NPPE1 + 0.15NPPE2"
+    }
+]
