@@ -19,8 +19,7 @@
     "setupCode": "",
     "functionName": "twoSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-9",
@@ -42,8 +41,7 @@
     "setupCode": "",
     "functionName": "isPalindrome",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-13",
@@ -65,8 +63,7 @@
     "setupCode": "",
     "functionName": "romanToInt",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-14",
@@ -88,8 +85,7 @@
     "setupCode": "",
     "functionName": "longestCommonPrefix",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-20",
@@ -111,8 +107,7 @@
     "setupCode": "",
     "functionName": "isValid",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-26",
@@ -134,8 +129,7 @@
     "setupCode": "",
     "functionName": "removeDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-27",
@@ -157,8 +151,7 @@
     "setupCode": "",
     "functionName": "removeElement",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-28",
@@ -180,8 +173,7 @@
     "setupCode": "",
     "functionName": "strStr",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-35",
@@ -203,8 +195,7 @@
     "setupCode": "",
     "functionName": "searchInsert",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-58",
@@ -226,8 +217,7 @@
     "setupCode": "",
     "functionName": "lengthOfLastWord",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-66",
@@ -249,8 +239,7 @@
     "setupCode": "",
     "functionName": "plusOne",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-67",
@@ -272,8 +261,7 @@
     "setupCode": "",
     "functionName": "addBinary",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-69",
@@ -295,8 +283,7 @@
     "setupCode": "",
     "functionName": "mySqrt",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-70",
@@ -318,8 +305,7 @@
     "setupCode": "",
     "functionName": "climbStairs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-83",
@@ -341,8 +327,7 @@
     "setupCode": "",
     "functionName": "deleteDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-88",
@@ -364,8 +349,7 @@
     "setupCode": "",
     "functionName": "merge",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-118",
@@ -387,8 +371,7 @@
     "setupCode": "",
     "functionName": "generate",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-121",
@@ -410,8 +393,7 @@
     "setupCode": "",
     "functionName": "maxProfit",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-125",
@@ -433,8 +415,7 @@
     "setupCode": "",
     "functionName": "isPalindrome",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-136",
@@ -456,8 +437,7 @@
     "setupCode": "",
     "functionName": "singleNumber",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-169",
@@ -479,8 +459,7 @@
     "setupCode": "",
     "functionName": "majorityElement",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-171",
@@ -502,8 +481,7 @@
     "setupCode": "",
     "functionName": "titleToNumber",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-190",
@@ -525,8 +503,7 @@
     "setupCode": "",
     "functionName": "reverseBits",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-191",
@@ -548,8 +525,7 @@
     "setupCode": "",
     "functionName": "hammingWeight",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-202",
@@ -571,8 +547,7 @@
     "setupCode": "",
     "functionName": "isHappy",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-205",
@@ -594,8 +569,7 @@
     "setupCode": "",
     "functionName": "isIsomorphic",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-217",
@@ -617,8 +591,7 @@
     "setupCode": "",
     "functionName": "containsDuplicate",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-242",
@@ -640,8 +613,7 @@
     "setupCode": "",
     "functionName": "isAnagram",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-268",
@@ -663,8 +635,7 @@
     "setupCode": "",
     "functionName": "missingNumber",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-283",
@@ -686,8 +657,7 @@
     "setupCode": "",
     "functionName": "moveZeroes",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-290",
@@ -709,8 +679,7 @@
     "setupCode": "",
     "functionName": "wordPattern",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-326",
@@ -732,8 +701,7 @@
     "setupCode": "",
     "functionName": "isPowerOfThree",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-342",
@@ -755,8 +723,7 @@
     "setupCode": "",
     "functionName": "isPowerOfFour",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-344",
@@ -778,8 +745,7 @@
     "setupCode": "",
     "functionName": "reverseString",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-345",
@@ -801,8 +767,7 @@
     "setupCode": "",
     "functionName": "reverseVowels",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-350",
@@ -824,8 +789,7 @@
     "setupCode": "",
     "functionName": "intersect",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-383",
@@ -847,8 +811,7 @@
     "setupCode": "",
     "functionName": "canConstruct",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-387",
@@ -870,8 +833,7 @@
     "setupCode": "",
     "functionName": "firstUniqChar",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-389",
@@ -893,8 +855,7 @@
     "setupCode": "",
     "functionName": "findTheDifference",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-412",
@@ -916,8 +877,7 @@
     "setupCode": "",
     "functionName": "fizzBuzz",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-414",
@@ -939,8 +899,7 @@
     "setupCode": "",
     "functionName": "thirdMax",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-415",
@@ -962,8 +921,7 @@
     "setupCode": "",
     "functionName": "addStrings",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-434",
@@ -985,8 +943,7 @@
     "setupCode": "",
     "functionName": "countSegments",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-448",
@@ -1008,8 +965,7 @@
     "setupCode": "",
     "functionName": "findDisappearedNumbers",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-459",
@@ -1031,8 +987,7 @@
     "setupCode": "",
     "functionName": "repeatedSubstringPattern",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-485",
@@ -1054,8 +1009,7 @@
     "setupCode": "",
     "functionName": "findMaxConsecutiveOnes",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-500",
@@ -1077,8 +1031,7 @@
     "setupCode": "",
     "functionName": "findWords",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-509",
@@ -1100,8 +1053,7 @@
     "setupCode": "",
     "functionName": "fib",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-520",
@@ -1123,8 +1075,7 @@
     "setupCode": "",
     "functionName": "detectCapitalUse",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-541",
@@ -1146,8 +1097,7 @@
     "setupCode": "",
     "functionName": "reverseStr",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py1-lc-557",
@@ -1169,8 +1119,7 @@
     "setupCode": "",
     "functionName": "reverseWords",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-2",
@@ -1192,8 +1141,7 @@
     "setupCode": "",
     "functionName": "addTwoNumbers",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-3",
@@ -1215,8 +1163,7 @@
     "setupCode": "",
     "functionName": "lengthOfLongestSubstring",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-5",
@@ -1238,8 +1185,7 @@
     "setupCode": "",
     "functionName": "longestPalindrome",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-6",
@@ -1261,8 +1207,7 @@
     "setupCode": "",
     "functionName": "convert",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-7",
@@ -1284,8 +1229,7 @@
     "setupCode": "",
     "functionName": "reverse",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-8",
@@ -1307,8 +1251,7 @@
     "setupCode": "",
     "functionName": "myAtoi",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-11",
@@ -1330,8 +1273,7 @@
     "setupCode": "",
     "functionName": "maxArea",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-12",
@@ -1353,8 +1295,7 @@
     "setupCode": "",
     "functionName": "intToRoman",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-15",
@@ -1376,8 +1317,7 @@
     "setupCode": "",
     "functionName": "threeSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-16",
@@ -1399,8 +1339,7 @@
     "setupCode": "",
     "functionName": "threeSumClosest",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-17",
@@ -1422,8 +1361,7 @@
     "setupCode": "",
     "functionName": "letterCombinations",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-18",
@@ -1445,8 +1383,7 @@
     "setupCode": "",
     "functionName": "fourSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-19",
@@ -1468,8 +1405,7 @@
     "setupCode": "",
     "functionName": "removeNthFromEnd",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-22",
@@ -1491,8 +1427,7 @@
     "setupCode": "",
     "functionName": "generateParenthesis",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-24",
@@ -1514,8 +1449,7 @@
     "setupCode": "",
     "functionName": "swapPairs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-29",
@@ -1537,8 +1471,7 @@
     "setupCode": "",
     "functionName": "divide",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-31",
@@ -1560,8 +1493,7 @@
     "setupCode": "",
     "functionName": "nextPermutation",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-33",
@@ -1583,8 +1515,7 @@
     "setupCode": "",
     "functionName": "search",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-34",
@@ -1606,8 +1537,7 @@
     "setupCode": "",
     "functionName": "searchRange",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-36",
@@ -1629,8 +1559,7 @@
     "setupCode": "",
     "functionName": "isValidSudoku",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-38",
@@ -1652,8 +1581,7 @@
     "setupCode": "",
     "functionName": "countAndSay",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-39",
@@ -1675,8 +1603,7 @@
     "setupCode": "",
     "functionName": "combinationSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-43",
@@ -1698,8 +1625,7 @@
     "setupCode": "",
     "functionName": "multiply",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-46",
@@ -1721,8 +1647,7 @@
     "setupCode": "",
     "functionName": "permute",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-47",
@@ -1744,8 +1669,7 @@
     "setupCode": "",
     "functionName": "permuteUnique",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-48",
@@ -1767,8 +1691,7 @@
     "setupCode": "",
     "functionName": "rotate",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-49",
@@ -1790,8 +1713,7 @@
     "setupCode": "",
     "functionName": "groupAnagrams",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-50",
@@ -1813,8 +1735,7 @@
     "setupCode": "",
     "functionName": "myPow",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-53",
@@ -1836,8 +1757,7 @@
     "setupCode": "",
     "functionName": "maxSubArray",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-54",
@@ -1859,8 +1779,7 @@
     "setupCode": "",
     "functionName": "spiralOrder",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-56",
@@ -1882,8 +1801,7 @@
     "setupCode": "",
     "functionName": "merge",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-57",
@@ -1905,8 +1823,7 @@
     "setupCode": "",
     "functionName": "insert",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-59",
@@ -1928,8 +1845,7 @@
     "setupCode": "",
     "functionName": "generateMatrix",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-61",
@@ -1951,8 +1867,7 @@
     "setupCode": "",
     "functionName": "rotateRight",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-62",
@@ -1974,8 +1889,7 @@
     "setupCode": "",
     "functionName": "uniquePaths",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-63",
@@ -1997,8 +1911,7 @@
     "setupCode": "",
     "functionName": "uniquePathsWithObstacles",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-64",
@@ -2020,8 +1933,7 @@
     "setupCode": "",
     "functionName": "minPathSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-71",
@@ -2043,8 +1955,7 @@
     "setupCode": "",
     "functionName": "simplifyPath",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-73",
@@ -2066,8 +1977,7 @@
     "setupCode": "",
     "functionName": "setZeroes",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-74",
@@ -2089,8 +1999,7 @@
     "setupCode": "",
     "functionName": "searchMatrix",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-75",
@@ -2112,8 +2021,7 @@
     "setupCode": "",
     "functionName": "sortColors",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-77",
@@ -2135,8 +2043,7 @@
     "setupCode": "",
     "functionName": "combine",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-78",
@@ -2158,8 +2065,7 @@
     "setupCode": "",
     "functionName": "subsets",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-79",
@@ -2181,8 +2087,7 @@
     "setupCode": "",
     "functionName": "exist",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-80",
@@ -2204,8 +2109,7 @@
     "setupCode": "",
     "functionName": "removeDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-81",
@@ -2227,8 +2131,7 @@
     "setupCode": "",
     "functionName": "search",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-82",
@@ -2250,8 +2153,7 @@
     "setupCode": "",
     "functionName": "deleteDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py2-lc-86",
@@ -2273,8 +2175,7 @@
     "setupCode": "",
     "functionName": "partition",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "py-oppe1-set1-p1",
@@ -2312,8 +2213,7 @@
     "hint": "Return (a**2 + b**2, abs(a**2 - b**2))",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p2",
@@ -2363,8 +2263,7 @@
     "hint": "Check s == s[::-1] and len(s) % 2 != 0",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p3",
@@ -2402,8 +2301,7 @@
     "hint": "Remove larger index first to avoid shifting issues.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p4",
@@ -2441,8 +2339,7 @@
     "hint": "Sum x**2 for x in nums if x % 2 == 0",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p5",
@@ -2476,8 +2373,7 @@
     "hint": "Iterate chars, check if in \"aeiou\".",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p6",
@@ -2515,8 +2411,7 @@
     "hint": "Calculate average first.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set1-p7",
@@ -2554,8 +2449,7 @@
     "hint": "Use loops and spacing.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p1",
@@ -2597,8 +2491,7 @@
     "hint": "Check a**2 + b**2 == c**2 and a%2==0 and b%2==0",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p2",
@@ -2640,8 +2533,7 @@
     "hint": "Enumerate and check types.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p3",
@@ -2679,8 +2571,7 @@
     "hint": "set(str(s1)) - set(str(s2))",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p4",
@@ -2718,8 +2609,7 @@
     "hint": "Return tuple([a]*b + [b]*a)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p5",
@@ -2757,8 +2647,7 @@
     "hint": "Loop with step 2.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p6",
@@ -2792,8 +2681,7 @@
     "hint": "{i: i**2 for i in range(1, n+1)}",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p7",
@@ -2831,8 +2719,7 @@
     "hint": "Use max with key counting zeros.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p8",
@@ -2870,8 +2757,7 @@
     "hint": "Aggregate runs per team then sort.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set2-p9",
@@ -2909,8 +2795,7 @@
     "hint": "Dynamic programming or greedy if simple.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p1",
@@ -2952,8 +2837,7 @@
     "hint": "min(x**2, threshold)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p2",
@@ -2991,8 +2875,7 @@
     "hint": "Slice and convert.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p3",
@@ -3030,8 +2913,7 @@
     "hint": "Find middle index len(l)//2.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p4",
@@ -3069,8 +2951,7 @@
     "hint": "dist(a,b) + dist(b,c)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p5",
@@ -3108,8 +2989,7 @@
     "hint": "set(str(n1)) & set(str(n2))",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p6",
@@ -3147,8 +3027,7 @@
     "hint": "dict(enumerate(names))",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p7",
@@ -3186,8 +3065,7 @@
     "hint": "Map digits to words.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p8",
@@ -3225,8 +3103,7 @@
     "hint": "Count course occurrences then sort.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-set3-p9",
@@ -3260,8 +3137,7 @@
     "hint": "Track running balance.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-sq-diff",
@@ -3300,8 +3176,7 @@
     "hint": "Use the abs() function for absolute difference and ** operator for power.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-palindrome",
@@ -3343,8 +3218,7 @@
     "hint": "Check two conditions: s == s[::-1] AND len(s) % 2 != 0",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-factorial",
@@ -3386,8 +3260,7 @@
     "hint": "You can use a simple while or for loop, or recursion.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-rotate-list",
@@ -3425,8 +3298,7 @@
     "hint": "Effective rotation is k % len(L). Slicing L[-k:] + L[:-k] helps.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-count-vowels",
@@ -3464,8 +3336,7 @@
     "hint": "Iterate through the string and check if character.lower() in \"aeiou\".",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-reverse-words",
@@ -3503,8 +3374,7 @@
     "hint": "Split the string by spaces to get a list, reverse the list, then join them back.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-sum-digits",
@@ -3542,8 +3412,7 @@
     "hint": "Convert to string or use modulo 10 loop.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-armstrong",
@@ -3581,8 +3450,7 @@
     "hint": "Sum of int(digit)**len(str(n)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-is-prime",
@@ -3620,8 +3488,7 @@
     "hint": "Check divisibility from 2 to sqrt(n).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-fib-seq",
@@ -3659,8 +3526,7 @@
     "hint": "Start with [0, 1] and append sum of last two.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-gcd",
@@ -3698,8 +3564,7 @@
     "hint": "Use Euclidean algorithm or math.gcd.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-lcm",
@@ -3737,8 +3602,7 @@
     "hint": "LCM(a, b) = abs(a*b) // GCD(a, b).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-pal-num",
@@ -3776,8 +3640,7 @@
     "hint": "Convert to string and reverse.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-rev-int",
@@ -3815,8 +3678,7 @@
     "hint": "Handle sign separately. Reverse string of abs(n).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-count-digits",
@@ -3854,8 +3716,7 @@
     "hint": "len(str(n)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-check-sub",
@@ -3893,8 +3754,7 @@
     "hint": "Use \"in\" operator.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-count-char",
@@ -3932,8 +3792,7 @@
     "hint": "s.count(c).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-replace-char",
@@ -3971,8 +3830,7 @@
     "hint": "s.replace(old, new).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-remove-vowels",
@@ -4010,8 +3868,7 @@
     "hint": "List comprehension or loop checking \"aeiou\".",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-cap-words",
@@ -4049,8 +3906,7 @@
     "hint": "s.title().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-snake-camel",
@@ -4088,8 +3944,7 @@
     "hint": "Split by \"_\", capitalize subsequent words, join.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-anagram",
@@ -4127,8 +3982,7 @@
     "hint": "sorted(s1) == sorted(s2).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-pangram",
@@ -4166,8 +4020,7 @@
     "hint": "Check if set of lowercase s contains all \"a-z\".",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-longest-word",
@@ -4205,8 +4058,7 @@
     "hint": "Split by space, max(words, key=len).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-count-words-len",
@@ -4244,8 +4096,7 @@
     "hint": "len(s.split()).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-remove-dup-str",
@@ -4283,8 +4134,7 @@
     "hint": "Iterate and build new string if char not seen.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-list-sum",
@@ -4322,8 +4172,7 @@
     "hint": "sum(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-list-avg",
@@ -4361,8 +4210,7 @@
     "hint": "sum(L) / len(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-max-elem",
@@ -4400,8 +4248,7 @@
     "hint": "max(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-min-elem",
@@ -4439,8 +4286,7 @@
     "hint": "min(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-second-largest",
@@ -4478,8 +4324,7 @@
     "hint": "Remove duplicates, sort, take second from last.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-remove-dup-list",
@@ -4517,8 +4362,7 @@
     "hint": "Use a set to track seen elements.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-count-even-odd",
@@ -4556,8 +4400,7 @@
     "hint": "Iterate and count.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-merge-lists",
@@ -4595,8 +4438,7 @@
     "hint": "L1 + L2.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-is-sorted",
@@ -4634,8 +4476,7 @@
     "hint": "L == sorted(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-rotate-left",
@@ -4673,8 +4514,7 @@
     "hint": "L[k:] + L[:k].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-list-intersection",
@@ -4712,8 +4552,7 @@
     "hint": "list(set(L1) & set(L2)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-list-union",
@@ -4751,8 +4590,7 @@
     "hint": "list(set(L1) | set(L2)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-list-diff",
@@ -4790,8 +4628,7 @@
     "hint": "list(set(L1) - set(L2)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-cum-sum",
@@ -4829,8 +4666,7 @@
     "hint": "Loop and maintain running sum.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-elem-freq",
@@ -4868,8 +4704,7 @@
     "hint": "Iterate and update dict.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-dict-lists",
@@ -4907,8 +4742,7 @@
     "hint": "dict(zip(keys, values)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-invert-dict-simple",
@@ -4946,8 +4780,7 @@
     "hint": "{v: k for k, v in d.items()}.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-merge-dicts",
@@ -4985,8 +4818,7 @@
     "hint": "d1.update(d2) or {**d1, **d2}.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-check-key",
@@ -5024,8 +4856,7 @@
     "hint": "k in d.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-sum-values",
@@ -5063,8 +4894,7 @@
     "hint": "sum(d.values()).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-max-val-dict",
@@ -5102,8 +4932,7 @@
     "hint": "max(d, key=d.get).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-sort-key",
@@ -5141,8 +4970,7 @@
     "hint": "sorted(d.items()).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-sort-value",
@@ -5180,8 +5008,7 @@
     "hint": "sorted(d.items(), key=lambda x: x[1]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-word-freq",
@@ -5219,8 +5046,7 @@
     "hint": "Split and count.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-grade-calc",
@@ -5258,8 +5084,7 @@
     "hint": "Use if-elif-else.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-leap-year",
@@ -5301,8 +5126,7 @@
     "hint": "Divisible by 4 but not 100, unless divisible by 400.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-triangle-valid",
@@ -5340,8 +5164,7 @@
     "hint": "Sum of any two sides > third side.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-simple-interest",
@@ -5379,8 +5202,7 @@
     "hint": "Formula application.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-compound-interest",
@@ -5418,8 +5240,7 @@
     "hint": "Use ** for power.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-c-to-f",
@@ -5457,8 +5278,7 @@
     "hint": "Formula application.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-count-lines",
@@ -5496,8 +5316,7 @@
     ],
     "hint": "Split by newline and count.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-count-words",
@@ -5535,8 +5354,7 @@
     ],
     "hint": "Split by whitespace and count.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-longest-line",
@@ -5574,8 +5392,7 @@
     ],
     "hint": "Use max with key=len on lines.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-search",
@@ -5613,8 +5430,7 @@
     ],
     "hint": "Check if word in content.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-word-count",
@@ -5652,8 +5468,7 @@
     "hint": "Split content and count word.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-stats",
@@ -5691,8 +5506,7 @@
     ],
     "hint": "Count lines, words, and characters.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-filter",
@@ -5730,8 +5544,7 @@
     "hint": "Filter lines containing keyword.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-remove-empty",
@@ -5769,8 +5582,7 @@
     "hint": "Filter out empty lines and join.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-avg-numbers",
@@ -5808,8 +5620,7 @@
     "hint": "Split, convert to numbers, calculate average.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-replace",
@@ -5847,8 +5658,7 @@
     ],
     "hint": "Use string replace method.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-reverse-lines",
@@ -5886,8 +5696,7 @@
     ],
     "hint": "Split, reverse list, join.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-parse-csv",
@@ -5925,8 +5734,7 @@
     "hint": "Split by comma.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-blank-lines",
@@ -5964,8 +5772,7 @@
     "hint": "Check if stripped line is empty.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe1-file-merge",
@@ -6003,8 +5810,7 @@
     ],
     "hint": "Join with newline.",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe1-file-extract-nums",
@@ -6042,8 +5848,7 @@
     "hint": "Use regex or check if word.isdigit().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p1",
@@ -6085,8 +5890,7 @@
     "hint": "Check len(str(n)) == 10 and n % 2 == 0",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p2",
@@ -6128,8 +5932,7 @@
     "hint": "((new - original) / original) * 100",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p3",
@@ -6167,8 +5970,7 @@
     "hint": "Enumerate and collect indices.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p4",
@@ -6206,8 +6008,7 @@
     "hint": "Iterate with step 2.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p5",
@@ -6245,8 +6046,7 @@
     "hint": "\"\".join(sorted(set(word1) & set(word2)))",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p6",
@@ -6284,8 +6084,7 @@
     "hint": "Count values using a loop or Counter.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p7",
@@ -6323,8 +6122,7 @@
     "hint": "Sort list, compare first and last strings.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p8",
@@ -6362,8 +6160,7 @@
     "hint": "Calculate points per team, sort by points then goals.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set1-p9",
@@ -6401,8 +6198,7 @@
     ],
     "hint": "Read CSV, parse rows, check condition, count by region.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-set2-p1",
@@ -6444,8 +6240,7 @@
     "hint": "Multiply digits.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p2",
@@ -6483,8 +6278,7 @@
     "hint": "Split, modify each word, join.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p3",
@@ -6522,8 +6316,7 @@
     "hint": "Slice tuple in loop.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p4",
@@ -6561,8 +6354,7 @@
     "hint": "Sort by length desc, take index k-1.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p5",
@@ -6604,8 +6396,7 @@
     "hint": "Check duplicates in letters.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p6",
@@ -6643,8 +6434,7 @@
     "hint": "Iterate copy of keys (list(d.keys())), del if value <= threshold. Return d.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p7",
@@ -6682,8 +6472,7 @@
     "hint": "Helper function for is_happy.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p8",
@@ -6721,8 +6510,7 @@
     "hint": "Calculate stats per bowler.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set2-p9",
@@ -6752,8 +6540,7 @@
     ],
     "hint": "Read both CSVs, join on Product ID/Name.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-set3-p1",
@@ -6791,8 +6578,7 @@
     "hint": "Return (a+b, a-b, a*b, a//b)",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p2",
@@ -6830,8 +6616,7 @@
     "hint": "Sort and pick second last.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p3",
@@ -6865,8 +6650,7 @@
     "hint": "sorted(list(set(lst1) ^ set(lst2)))",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p4",
@@ -6900,8 +6684,7 @@
     "hint": "Split by comma, then by equals.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p5",
@@ -6939,8 +6722,7 @@
     "hint": "s[::2] + s[1::2][::-1]",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p6",
@@ -6974,8 +6756,7 @@
     "hint": "Iterate items, append to list in new dict.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p7",
@@ -7013,8 +6794,7 @@
     "hint": "Filter numbers, sum/count.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p8",
@@ -7052,8 +6832,7 @@
     "hint": "Sort with key lambda x: (x[1], x[0]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-set3-p9",
@@ -7087,8 +6866,7 @@
     ],
     "hint": "Read file, count chars, filter alpha.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-matrix-mult",
@@ -7126,8 +6904,7 @@
     "hint": "Result dimensions will be Rows(A) x Cols(B). Check if Cols(A) == Rows(B) first.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-dict-invert",
@@ -7165,8 +6942,7 @@
     "hint": "Iterate items. If value exists in new dict, append key; else create new list.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-lcp",
@@ -7204,8 +6980,7 @@
     "hint": "Sort the list and compare only the first and last strings.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-flatten",
@@ -7243,8 +7018,7 @@
     "hint": "Use recursion. If element is a list, extend result with flatten(element).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-spiral",
@@ -7282,8 +7056,7 @@
     "hint": "Maintain boundaries (top, bottom, left, right) and shrink them as you traverse.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-factorial",
@@ -7321,8 +7094,7 @@
     "hint": "Base case: n=0 return 1. Else n * f(n-1).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-fib",
@@ -7360,8 +7132,7 @@
     "hint": "f(n) = f(n-1) + f(n-2).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-gcd",
@@ -7399,8 +7170,7 @@
     "hint": "gcd(b, a % b) if b else a.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-sum-list",
@@ -7438,8 +7208,7 @@
     "hint": "L[0] + f(L[1:]) if L else 0.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-str-rev",
@@ -7477,8 +7246,7 @@
     "hint": "f(s[1:]) + s[0] if s else \"\".",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-power",
@@ -7516,8 +7284,7 @@
     "hint": "x * f(x, n-1).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-pal",
@@ -7555,8 +7322,7 @@
     "hint": "s[0] == s[-1] and f(s[1:-1]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-bin-search",
@@ -7594,8 +7360,7 @@
     "hint": "Compare mid with x.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-count-vowels",
@@ -7633,8 +7398,7 @@
     "hint": "(1 if s[0] in vowels else 0) + f(s[1:]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-matrix-add",
@@ -7672,8 +7436,7 @@
     "hint": "Nested loop or list comprehension.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-matrix-transpose",
@@ -7711,8 +7474,7 @@
     "hint": "[[row[i] for row in M] for i in range(cols)].",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-diag-sum",
@@ -7750,8 +7512,7 @@
     "hint": "Sum M[i][i].",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-is-symmetric",
@@ -7789,8 +7550,7 @@
     "hint": "Check if M[i][j] == M[j][i].",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-row-sums",
@@ -7828,8 +7588,7 @@
     "hint": "[sum(row) for row in M].",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-col-sums",
@@ -7867,8 +7626,7 @@
     "hint": "Compute transpose then row sums.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-saddle-point",
@@ -7906,8 +7664,7 @@
     "hint": "Check all elements.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rotate-matrix",
@@ -7945,8 +7702,7 @@
     "hint": "Transpose then reverse rows.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-longest-pal-sub",
@@ -7984,8 +7740,7 @@
     "hint": "Expand around center.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-group-anagrams",
@@ -8023,8 +7778,7 @@
     "hint": "Use dict with sorted string as key.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-valid-parens",
@@ -8062,8 +7816,7 @@
     "hint": "Use a stack.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-str-compress",
@@ -8101,8 +7854,7 @@
     "hint": "Iterate and count consecutive chars.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-permutations",
@@ -8140,8 +7892,7 @@
     "hint": "Use itertools.permutations or recursion.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-subsets",
@@ -8179,8 +7930,7 @@
     "hint": "Iterative approach: start with [[]], add element to existing subsets.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-merge-intervals",
@@ -8218,8 +7968,7 @@
     "hint": "Sort by start time, then merge.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-prod-except-self",
@@ -8257,8 +8006,7 @@
     "hint": "Use prefix and suffix products.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-count-lines",
@@ -8296,8 +8044,7 @@
     ],
     "hint": "content.split(\"\\n\") or count \"\\n\" + 1.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-file-count-words",
@@ -8335,8 +8082,7 @@
     ],
     "hint": "len(content.split()).",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-file-longest-line",
@@ -8374,8 +8120,7 @@
     "hint": "max(content.splitlines(), key=len).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-search-word",
@@ -8405,8 +8150,7 @@
     ],
     "hint": "word in content.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-file-avg-nums",
@@ -8444,8 +8188,7 @@
     ],
     "hint": "Split, convert to float, average.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-dict-group",
@@ -8483,8 +8226,7 @@
     "hint": "Iterate and append to list in dict.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-dict-deep-merge",
@@ -8522,8 +8264,7 @@
     "hint": "If value is dict, recurse.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-jaccard",
@@ -8561,8 +8302,7 @@
     "hint": "Use sets.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-sym-diff",
@@ -8600,8 +8340,7 @@
     "hint": "set(L1) ^ set(L2).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-sort-tuple",
@@ -8639,8 +8378,7 @@
     "hint": "L.sort(key=lambda x: x[1]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rec-flatten-deep",
@@ -8678,8 +8416,7 @@
     "hint": "Recursion.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-zero-matrix",
@@ -8717,8 +8454,7 @@
     "hint": "Track rows and cols to zero first.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-is-subsequence",
@@ -8756,8 +8492,7 @@
     "hint": "Two pointers.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-move-zeroes",
@@ -8795,8 +8530,7 @@
     "hint": "Track insert position.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-plus-one",
@@ -8834,8 +8568,7 @@
     "hint": "Handle carry.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-add-binary",
@@ -8873,8 +8606,7 @@
     "hint": "bin(int(a, 2) + int(b, 2)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-sqrt",
@@ -8912,8 +8644,7 @@
     "hint": "Binary search or math.isqrt.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-majority-elem",
@@ -8951,8 +8682,7 @@
     "hint": "Sort and take middle or Boyer-Moore.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-isomorphic",
@@ -8990,8 +8720,7 @@
     "hint": "Map chars from s to t and t to s.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-contains-dup",
@@ -9029,8 +8758,7 @@
     "hint": "len(set(nums)) != len(nums).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-missing-num",
@@ -9068,8 +8796,7 @@
     "hint": "Sum(0..n) - Sum(nums).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-rev-vowels",
@@ -9107,8 +8834,7 @@
     "hint": "Two pointers.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-intersect-ii",
@@ -9138,8 +8864,7 @@
     "hint": "Counter.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-first-unique",
@@ -9177,8 +8902,7 @@
     "hint": "Count frequency then find first with count 1.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-ransom-note",
@@ -9216,8 +8940,7 @@
     "hint": "Check counts.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-parse-json",
@@ -9255,8 +8978,7 @@
     "hint": "Use json.loads() with try-except.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-compare",
@@ -9294,8 +9016,7 @@
     ],
     "hint": "Simple comparison.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-file-parse-logs",
@@ -9333,8 +9054,7 @@
     "hint": "Filter lines containing \"ERROR\".",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-checksum",
@@ -9372,8 +9092,7 @@
     "hint": "Sum ord(c) for all characters.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-extract-emails",
@@ -9411,8 +9130,7 @@
     "hint": "Use regex or find patterns with @ and . characters.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-validate-csv",
@@ -9450,8 +9168,7 @@
     "hint": "Count commas in each line.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-word-freq",
@@ -9489,8 +9206,7 @@
     ],
     "hint": "Convert to lowercase, split, count.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "py-oppe2-file-top-words",
@@ -9528,8 +9244,7 @@
     "hint": "Count words, sort by frequency, take top n.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-format-table",
@@ -9563,8 +9278,7 @@
     "hint": "Parse CSV, calculate column widths, format.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "py-oppe2-file-count-types",
@@ -9602,7 +9316,6 @@
     ],
     "hint": "Extract extensions and count.",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   }
 ]

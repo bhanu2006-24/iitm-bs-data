@@ -17,10 +17,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "create",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-002",
@@ -40,10 +39,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "reshape",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-003",
@@ -63,10 +61,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "load",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-004",
@@ -86,10 +83,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "get_head",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-005",
@@ -109,10 +105,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "filter_rows",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-006",
@@ -132,10 +127,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "group_mean",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-007",
@@ -155,10 +149,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "merge",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-008",
@@ -178,10 +171,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "dot",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-009",
@@ -201,10 +193,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "mean_axis",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-010",
@@ -224,10 +215,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "slice_arr",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-011",
@@ -247,10 +237,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "select_cols",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-012",
@@ -270,10 +259,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "drop_na",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-013",
@@ -293,10 +281,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "fill_na",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-014",
@@ -316,10 +303,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "sort_df",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-015",
@@ -339,10 +325,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rename_col",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-016",
@@ -362,10 +347,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "range_arr",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-017",
@@ -385,10 +369,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "linspace",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-018",
@@ -408,10 +391,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rand_arr",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-019",
@@ -431,10 +413,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "apply_func",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-020",
@@ -454,10 +435,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "make_pivot",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-021",
@@ -477,10 +457,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "melt_df",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-022",
@@ -500,10 +479,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "transpose",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-023",
@@ -523,10 +501,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "find_argmax",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-024",
@@ -546,10 +523,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "where_cond",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-025",
@@ -569,10 +545,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "concat_dfs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-026",
@@ -592,10 +567,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "unique_vals",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-027",
@@ -615,10 +589,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "count_vals",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-028",
@@ -638,10 +611,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "map_vals",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-029",
@@ -661,10 +633,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "std_dev",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-030",
@@ -684,10 +655,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "percentile",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-031",
@@ -707,10 +677,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "select_loc",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-032",
@@ -730,10 +699,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "select_iloc",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-033",
@@ -753,10 +721,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "drop_col",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-034",
@@ -776,10 +743,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "convert_type",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-035",
@@ -799,10 +765,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "parse_dates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-036",
@@ -822,10 +787,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "add_scalar",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-037",
@@ -845,10 +809,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "flatten",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-038",
@@ -868,10 +831,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "stack_arrs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-039",
@@ -891,10 +853,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "summary",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-040",
@@ -914,10 +875,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "correlation",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-041",
@@ -937,10 +897,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "to_lower",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-042",
@@ -960,10 +919,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "replace_val",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-043",
@@ -983,10 +941,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "check_nulls",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-044",
@@ -1006,10 +963,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "get_sample",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-045",
@@ -1029,10 +985,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "clip_vals",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-046",
@@ -1052,10 +1007,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "get_diag",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-047",
@@ -1075,10 +1029,9 @@
     "language": "python",
     "tags": "Numpy",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "identity",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-048",
@@ -1098,10 +1051,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "reset_idx",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-049",
@@ -1121,10 +1073,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "set_idx",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp1-050",
@@ -1144,10 +1095,9 @@
     "language": "python",
     "tags": "Pandas",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "query_str",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-001",
@@ -1167,10 +1117,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "split",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-002",
@@ -1190,10 +1139,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-003",
@@ -1213,10 +1161,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-004",
@@ -1236,10 +1183,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "cluster",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-005",
@@ -1259,10 +1205,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "reduce",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-006",
@@ -1282,10 +1227,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "score",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-007",
@@ -1305,10 +1249,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "scale",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-008",
@@ -1328,10 +1271,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "make_pipe",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-009",
@@ -1351,10 +1293,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "tune",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-010",
@@ -1374,10 +1315,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "eval",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-011",
@@ -1397,10 +1337,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-012",
@@ -1420,10 +1359,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-013",
@@ -1443,10 +1381,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-014",
@@ -1466,10 +1403,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-015",
@@ -1489,10 +1425,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "calc_mse",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-016",
@@ -1512,10 +1447,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "calc_r2",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-017",
@@ -1535,10 +1469,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "get_cm",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-018",
@@ -1558,10 +1491,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "encode",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-019",
@@ -1581,10 +1513,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "ohe",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-020",
@@ -1604,10 +1535,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "impute",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-021",
@@ -1627,10 +1557,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "norm",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-022",
@@ -1650,10 +1579,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "poly",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-023",
@@ -1673,10 +1601,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-024",
@@ -1696,10 +1623,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-025",
@@ -1719,10 +1645,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-026",
@@ -1742,10 +1667,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-027",
@@ -1765,10 +1689,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "score",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-028",
@@ -1788,10 +1711,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "cluster",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-029",
@@ -1811,10 +1733,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-030",
@@ -1834,10 +1755,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-031",
@@ -1857,10 +1777,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "score",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-032",
@@ -1880,10 +1799,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "score",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-033",
@@ -1903,10 +1821,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "transform",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-034",
@@ -1926,10 +1843,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "select",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-035",
@@ -1949,10 +1865,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "vec",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-036",
@@ -1972,10 +1887,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "vec",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-037",
@@ -1995,10 +1909,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "vote",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-038",
@@ -2018,10 +1931,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-039",
@@ -2041,10 +1953,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "cluster",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-040",
@@ -2064,10 +1975,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-041",
@@ -2087,10 +1997,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "save",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-042",
@@ -2110,10 +2019,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "load",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-043",
@@ -2133,10 +2041,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "split",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-044",
@@ -2156,10 +2063,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "report",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-045",
@@ -2179,10 +2085,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "scores",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-046",
@@ -2202,10 +2107,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "curve",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-047",
@@ -2225,10 +2129,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "gen",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-048",
@@ -2248,10 +2151,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-049",
@@ -2271,10 +2173,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "trans",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp2-050",
@@ -2294,10 +2195,9 @@
     "language": "python",
     "tags": "Sklearn",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "train",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "mlp-oppe1-vector-add",
@@ -2323,8 +2223,7 @@
     "hint": "Use a list comprehension: [x + y for x, y in zip(v1, v2)]",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-dot-prod",
@@ -2350,8 +2249,7 @@
     "hint": "Sum of products of zip(v1, v2).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-euclidean",
@@ -2377,8 +2275,7 @@
     "hint": "sqrt(sum((x-y)**2)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-create",
@@ -2404,8 +2301,7 @@
     "hint": "np.array(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-shape",
@@ -2431,8 +2327,7 @@
     "hint": "np.array(L).shape.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-zeros",
@@ -2458,8 +2353,7 @@
     "hint": "np.zeros(n).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-ones",
@@ -2485,8 +2379,7 @@
     "hint": "np.ones((r, c)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-reshape",
@@ -2512,8 +2405,7 @@
     "hint": "np.array(L).reshape(r, c).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-mean",
@@ -2539,8 +2431,7 @@
     "hint": "np.mean(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-median",
@@ -2566,8 +2457,7 @@
     "hint": "np.median(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-std",
@@ -2593,8 +2483,7 @@
     "hint": "np.std(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-matmul",
@@ -2620,8 +2509,7 @@
     "hint": "np.dot(A, B) or A @ B.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-transpose",
@@ -2647,8 +2535,7 @@
     "hint": "np.array(A).T.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-create",
@@ -2674,8 +2561,7 @@
     "hint": "pd.DataFrame(data).columns.tolist().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-select",
@@ -2701,8 +2587,7 @@
     "hint": "df[col].tolist().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-filter",
@@ -2728,8 +2613,7 @@
     "hint": "df[df[col] > val].to_dict(\"records\").",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-head",
@@ -2755,8 +2639,7 @@
     "hint": "df.head(n).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-describe",
@@ -2782,8 +2665,7 @@
     "hint": "df[\"a\"].mean().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-minmax",
@@ -2809,8 +2691,7 @@
     "hint": "Compute min, max then apply formula.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-standard",
@@ -2836,8 +2717,7 @@
     "hint": "Use np.mean and np.std.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-label-enc",
@@ -2863,8 +2743,7 @@
     "hint": "Map sorted unique labels to index.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-onehot",
@@ -2890,8 +2769,7 @@
     "hint": "Create identity matrix based on unique sorted labels.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-tt-split",
@@ -2917,8 +2795,7 @@
     "hint": "Slice list.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-vec-mag",
@@ -2944,8 +2821,7 @@
     "hint": "np.linalg.norm(v).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-cosine",
@@ -2975,8 +2851,7 @@
     "hint": "Use dot and norm.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-argmax",
@@ -3002,8 +2877,7 @@
     "hint": "np.argmax(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-argmin",
@@ -3029,8 +2903,7 @@
     "hint": "np.argmin(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-flatten",
@@ -3056,8 +2929,7 @@
     "hint": "np.array(M).flatten().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-sort",
@@ -3083,8 +2955,7 @@
     "hint": "df.sort_values(\"a\")[\"a\"].tolist().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-drop",
@@ -3110,8 +2981,7 @@
     "hint": "df.drop(columns=[\"b\"]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-fillna",
@@ -3137,8 +3007,7 @@
     "hint": "df.fillna(0).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-rename",
@@ -3164,8 +3033,7 @@
     "hint": "df.rename(columns={\"a\": \"A\"}).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-linspace",
@@ -3191,8 +3059,7 @@
     "hint": "np.linspace(start, stop, num).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-arange",
@@ -3218,8 +3085,7 @@
     "hint": "np.arange(n).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-concat",
@@ -3245,8 +3111,7 @@
     "hint": "np.concatenate([a, b]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-vstack",
@@ -3272,8 +3137,7 @@
     "hint": "np.vstack([a, b]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-hstack",
@@ -3299,8 +3163,7 @@
     "hint": "np.hstack([a, b]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-sum",
@@ -3326,8 +3189,7 @@
     "hint": "np.sum(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-max",
@@ -3353,8 +3215,7 @@
     "hint": "np.max(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-min",
@@ -3380,8 +3241,7 @@
     "hint": "np.min(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-unique",
@@ -3407,8 +3267,7 @@
     "hint": "np.unique(L).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-value-counts",
@@ -3434,8 +3293,7 @@
     "hint": "df[\"a\"].value_counts().to_dict().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-groupby",
@@ -3461,8 +3319,7 @@
     "hint": "df.groupby(\"g\")[\"v\"].mean().to_dict().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-imputer",
@@ -3488,8 +3345,7 @@
     "hint": "Calc mean of non-None, fill None.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-poly",
@@ -3515,8 +3371,7 @@
     "hint": "[1, x, x**2].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-det",
@@ -3542,8 +3397,7 @@
     "hint": "np.linalg.det(M) or ad-bc.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-inv",
@@ -3569,8 +3423,7 @@
     "hint": "np.linalg.inv(M).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-clip",
@@ -3596,8 +3449,7 @@
     "hint": "np.clip(L, min_val, max_val).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-where",
@@ -3623,8 +3475,7 @@
     "hint": "np.where(np.array(L) > 0, 1, 0).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-apply",
@@ -3650,8 +3501,7 @@
     "hint": "df[\"a\"].apply(lambda x: x**2).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-pd-merge",
@@ -3677,8 +3527,7 @@
     "hint": "pd.merge(df1, df2, on=\"id\")[\"val_x\"].tolist().",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-np-random",
@@ -3704,8 +3553,7 @@
     "hint": "np.random.seed(42); return round(np.random.rand(), 4).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe1-binarizer",
@@ -3731,8 +3579,7 @@
     "hint": "1 if x > 0.5 else 0.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-lin-reg",
@@ -3758,8 +3605,7 @@
     "hint": "Use least squares formula or np.polyfit(x, y, 1).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-mse",
@@ -3789,8 +3635,7 @@
     "hint": "mean((y_true - y_pred)**2).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-accuracy",
@@ -3816,8 +3661,7 @@
     "hint": "sum(t==p)/len.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-r2-score",
@@ -3843,8 +3687,7 @@
     "hint": "1 - (SS_res / SS_tot).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-precision",
@@ -3870,8 +3713,7 @@
     "hint": "Count TP and FP.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-recall",
@@ -3897,8 +3739,7 @@
     "hint": "Count TP and FN.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-f1",
@@ -3924,8 +3765,7 @@
     "hint": "Calculate Precision and Recall first.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-conf-matrix",
@@ -3951,8 +3791,7 @@
     "hint": "Count TN, FP, FN, TP.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-log-loss",
@@ -3978,8 +3817,7 @@
     "hint": "-mean(y*log(p) + (1-y)*log(1-p)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-mae",
@@ -4005,8 +3843,7 @@
     "hint": "mean(abs(y_true - y_pred)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-rmse",
@@ -4032,8 +3869,7 @@
     "hint": "sqrt(MSE).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-knn",
@@ -4059,8 +3895,7 @@
     "hint": "Find nearest neighbor in X_train.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-kmeans",
@@ -4086,8 +3921,7 @@
     "hint": "Calc dist to each centroid.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-perceptron",
@@ -4113,8 +3947,7 @@
     "hint": "w + eta * (y - y_hat) * x.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-sigmoid",
@@ -4140,8 +3973,7 @@
     "hint": "1 / (1 + exp(-z)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-softmax",
@@ -4167,8 +3999,7 @@
     "hint": "exp(z) / sum(exp(z)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-gd-step",
@@ -4194,8 +4025,7 @@
     "hint": "Calc gradients dm, dc.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-ridge-cost",
@@ -4221,8 +4051,7 @@
     "hint": "MSE + alpha * sum(w**2).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-lasso-cost",
@@ -4248,8 +4077,7 @@
     "hint": "MSE + alpha * sum(abs(w)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-entropy",
@@ -4275,8 +4103,7 @@
     "hint": "-sum(p * log2(p)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-gini",
@@ -4302,8 +4129,7 @@
     "hint": "1 - sum(p**2).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-bagging",
@@ -4329,8 +4155,7 @@
     "hint": "Mode of preds.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-adaboost",
@@ -4356,8 +4181,7 @@
     "hint": "w * exp(-alpha * y * y_pred) / Z.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-corr",
@@ -4383,8 +4207,7 @@
     "hint": "df.corr().values.tolist().",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-cov",
@@ -4410,8 +4233,7 @@
     "hint": "np.cov(M).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-pca",
@@ -4437,8 +4259,7 @@
     "hint": "dot(X, components.T).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-silhouette",
@@ -4464,8 +4285,7 @@
     "hint": "(b-a)/max(a,b).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-train-val",
@@ -4491,8 +4311,7 @@
     "hint": "Index slicing.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-kfold",
@@ -4518,8 +4337,7 @@
     "hint": "Generate train/test indices.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-stratified",
@@ -4545,8 +4363,7 @@
     "hint": "Split each class separately.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-bootstrap",
@@ -4572,8 +4389,7 @@
     "hint": "np.random.choice(data, n, replace=True).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-feature-scale",
@@ -4599,8 +4415,7 @@
     "hint": "(col - mean) / std.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-normalize",
@@ -4626,8 +4441,7 @@
     "hint": "col / norm(col).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-ovr",
@@ -4653,8 +4467,7 @@
     "hint": "argmax(scores).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-multilabel",
@@ -4680,8 +4493,7 @@
     "hint": "Fill zeros matrix.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-moving-avg",
@@ -4707,8 +4519,7 @@
     "hint": "Convolve or loop.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-lag-features",
@@ -4734,8 +4545,7 @@
     "hint": "s.shift(1).tolist().",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-bow",
@@ -4761,8 +4571,7 @@
     "hint": "Count occurrences.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-tf",
@@ -4788,8 +4597,7 @@
     "hint": "count(term) / len(text.split()).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-img-flatten",
@@ -4815,8 +4623,7 @@
     "hint": "np.array(img).flatten().",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-grayscale",
@@ -4842,8 +4649,7 @@
     "hint": "Apply formula.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-pipeline",
@@ -4869,8 +4675,7 @@
     "hint": "Scale then return.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-grid-search",
@@ -4896,8 +4701,7 @@
     "hint": "itertools.product.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-read-csv",
@@ -4923,8 +4727,7 @@
     "hint": "csv.DictReader(io.StringIO(content)).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-write-csv",
@@ -4950,8 +4753,7 @@
     "hint": "csv.DictWriter.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-json-parse",
@@ -4977,8 +4779,7 @@
     "hint": "json.loads(s).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-json-dump",
@@ -5004,8 +4805,7 @@
     "hint": "json.dumps(d, separators=(\",\", \":\")).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-date-parse",
@@ -5031,8 +4831,7 @@
     "hint": "int(date_str.split(\"-\")[0]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-date-diff",
@@ -5058,8 +4857,7 @@
     "hint": "(dt1 - dt2).days.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-dist-matrix",
@@ -5085,8 +4883,7 @@
     "hint": "cdist(X, X).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-zscore",
@@ -5112,8 +4909,7 @@
     "hint": "(x - mean) / std.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-variance",
@@ -5139,8 +4935,7 @@
     "hint": "np.var(L).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "mlp-oppe2-percentile",
@@ -5166,7 +4961,6 @@
     "hint": "np.percentile(L, p).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   }
 ]

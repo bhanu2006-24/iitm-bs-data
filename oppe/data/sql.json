@@ -19,8 +19,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-584",
@@ -42,8 +41,7 @@
     "setupCode": "CREATE TABLE Customer (id int, name varchar(25), referee_id int); INSERT INTO Customer (id, name, referee_id) VALUES (1, 'Will', NULL), (2, 'Jane', NULL), (3, 'Alex', 2), (4, 'Bill', NULL), (5, 'Zack', 1), (6, 'Mark', 2);",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-595",
@@ -65,8 +63,7 @@
     "setupCode": "CREATE TABLE World (name varchar(255), continent varchar(255), area int, population int, gdp bigint); INSERT INTO World (name, continent, area, population, gdp) VALUES ('Afghanistan', 'Asia', 652230, 25500100, 20343000000), ('Albania', 'Europe', 28748, 2831741, 12960000000), ('Algeria', 'Africa', 2381741, 37100000, 188681000000), ('Andorra', 'Europe', 468, 78115, 3712000000), ('Angola', 'Africa', 1246700, 20609294, 100990000000);",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1148",
@@ -88,8 +85,7 @@
     "setupCode": "CREATE TABLE Views (article_id int, author_id int, viewer_id int, view_date date); INSERT INTO Views (article_id, author_id, viewer_id, view_date) VALUES (1, 3, 5, '2019-08-01'), (1, 3, 6, '2019-08-02'), (2, 7, 7, '2019-08-01'), (2, 7, 6, '2019-08-02'), (4, 7, 1, '2019-07-22'), (3, 4, 4, '2019-07-21'), (3, 4, 4, '2019-07-21');",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1683",
@@ -111,8 +107,7 @@
     "setupCode": "CREATE TABLE Tweets (tweet_id int, content varchar(50)); INSERT INTO Tweets (tweet_id, content) VALUES (1, 'Vote for Biden'), (2, 'Let us make America great again!');",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1378",
@@ -134,8 +129,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1068",
@@ -157,8 +151,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1581",
@@ -180,8 +173,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-197",
@@ -203,8 +195,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1661",
@@ -226,8 +217,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-577",
@@ -249,8 +239,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1280",
@@ -272,8 +261,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-570",
@@ -295,8 +283,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1934",
@@ -318,8 +305,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-620",
@@ -341,8 +327,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1251",
@@ -364,8 +349,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1075",
@@ -387,8 +371,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1633",
@@ -410,8 +393,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1211",
@@ -433,8 +415,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1193",
@@ -456,8 +437,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1174",
@@ -479,8 +459,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1141",
@@ -502,8 +481,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-2356",
@@ -525,8 +503,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1729",
@@ -548,8 +525,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-511",
@@ -571,8 +547,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-586",
@@ -594,8 +569,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-596",
@@ -617,8 +591,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-607",
@@ -640,8 +613,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-619",
@@ -663,8 +635,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1050",
@@ -686,8 +657,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1084",
@@ -709,8 +679,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1113",
@@ -732,8 +701,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1142",
@@ -755,8 +723,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1173",
@@ -778,8 +745,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1294",
@@ -801,8 +767,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1303",
@@ -824,8 +789,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1322",
@@ -847,8 +811,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1327",
@@ -870,8 +833,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1350",
@@ -893,8 +855,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1407",
@@ -916,8 +877,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1484",
@@ -939,8 +899,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1517",
@@ -962,8 +921,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1527",
@@ -985,8 +943,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1571",
@@ -1008,8 +965,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1587",
@@ -1031,8 +987,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1607",
@@ -1054,8 +1009,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1667",
@@ -1077,8 +1031,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1693",
@@ -1100,8 +1053,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-1741",
@@ -1123,8 +1075,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql1-lc-175",
@@ -1146,8 +1097,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-550",
@@ -1169,8 +1119,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1045",
@@ -1192,8 +1141,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-180",
@@ -1215,8 +1163,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1164",
@@ -1238,8 +1185,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1204",
@@ -1261,8 +1207,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1907",
@@ -1284,8 +1229,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1341",
@@ -1307,8 +1251,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1321",
@@ -1330,8 +1273,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-602",
@@ -1353,8 +1295,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-585",
@@ -1376,8 +1317,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-185",
@@ -1399,8 +1339,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-262",
@@ -1422,8 +1361,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-601",
@@ -1445,8 +1383,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-176",
@@ -1468,8 +1405,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-177",
@@ -1491,8 +1427,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-178",
@@ -1514,8 +1449,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-184",
@@ -1537,8 +1471,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-626",
@@ -1560,8 +1493,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1070",
@@ -1583,8 +1515,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1158",
@@ -1606,8 +1537,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1193",
@@ -1629,8 +1559,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1205",
@@ -1652,8 +1581,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1285",
@@ -1675,8 +1603,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1393",
@@ -1698,8 +1625,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1440",
@@ -1721,8 +1647,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1445",
@@ -1744,8 +1669,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1459",
@@ -1767,8 +1691,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1501",
@@ -1790,8 +1713,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1532",
@@ -1813,8 +1735,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1549",
@@ -1836,8 +1757,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1555",
@@ -1859,8 +1779,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1596",
@@ -1882,8 +1801,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1613",
@@ -1905,8 +1823,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1709",
@@ -1928,8 +1845,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1747",
@@ -1951,8 +1867,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1783",
@@ -1974,8 +1889,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1831",
@@ -1997,8 +1911,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1841",
@@ -2020,8 +1933,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1843",
@@ -2043,8 +1955,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1867",
@@ -2066,8 +1977,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1875",
@@ -2089,8 +1999,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1917",
@@ -2112,8 +2021,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1919",
@@ -2135,8 +2043,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1934",
@@ -2158,8 +2065,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1949",
@@ -2181,8 +2087,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1951",
@@ -2204,8 +2109,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1988",
@@ -2227,8 +2131,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-1990",
@@ -2250,8 +2153,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-2020",
@@ -2273,8 +2175,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "sql2-lc-2041",
@@ -2296,8 +2197,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "dbms1-create-pk",
@@ -2323,8 +2223,7 @@
     "hint": "id INT PRIMARY KEY",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-create-fk",
@@ -2350,8 +2249,7 @@
     ],
     "hint": "FOREIGN KEY (user_id) REFERENCES users(id)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-unique",
@@ -2377,8 +2275,7 @@
     "hint": "UNIQUE constraint",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-not-null",
@@ -2404,8 +2301,7 @@
     "hint": "NOT NULL constraint",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-check",
@@ -2431,8 +2327,7 @@
     "hint": "CHECK(val >= 18)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-default",
@@ -2458,8 +2353,7 @@
     "hint": "DEFAULT 1",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-composite-pk",
@@ -2485,8 +2379,7 @@
     "hint": "PRIMARY KEY (sid, cid)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-alter-add",
@@ -2512,8 +2405,7 @@
     ],
     "hint": "ALTER TABLE ... ADD COLUMN",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-drop-table",
@@ -2539,8 +2431,7 @@
     ],
     "hint": "DROP TABLE",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-truncate",
@@ -2566,8 +2457,7 @@
     ],
     "hint": "DELETE FROM logs",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-update-where",
@@ -2593,8 +2483,7 @@
     ],
     "hint": "UPDATE ... SET ... WHERE",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-delete-where",
@@ -2620,8 +2509,7 @@
     ],
     "hint": "DELETE FROM ... WHERE",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-select-distinct",
@@ -2647,8 +2535,7 @@
     ],
     "hint": "SELECT DISTINCT",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-order-by",
@@ -2674,8 +2561,7 @@
     ],
     "hint": "ORDER BY age DESC",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-group-by",
@@ -2701,8 +2587,7 @@
     ],
     "hint": "GROUP BY country",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-having",
@@ -2728,8 +2613,7 @@
     ],
     "hint": "HAVING count(*) > 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-join",
@@ -2755,8 +2639,7 @@
     ],
     "hint": "JOIN ... ON",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-left-join",
@@ -2782,8 +2665,7 @@
     ],
     "hint": "LEFT JOIN",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-union",
@@ -2809,8 +2691,7 @@
     ],
     "hint": "UNION",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-intersect",
@@ -2836,8 +2717,7 @@
     ],
     "hint": "INTERSECT",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-except",
@@ -2863,8 +2743,7 @@
     ],
     "hint": "EXCEPT",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-subquery",
@@ -2890,8 +2769,7 @@
     ],
     "hint": "WHERE id IN (...)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-exists",
@@ -2917,8 +2795,7 @@
     ],
     "hint": "WHERE EXISTS (...)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-view",
@@ -2944,8 +2821,7 @@
     ],
     "hint": "CREATE VIEW",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-index",
@@ -2971,8 +2847,7 @@
     ],
     "hint": "CREATE INDEX",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-transaction",
@@ -2998,8 +2873,7 @@
     ],
     "hint": "BEGIN; ... COMMIT;",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-rollback",
@@ -3025,8 +2899,7 @@
     ],
     "hint": "ROLLBACK",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-grant",
@@ -3052,8 +2925,7 @@
     "hint": "GRANT SELECT ON T TO user",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-revoke",
@@ -3079,8 +2951,7 @@
     "hint": "REVOKE SELECT ON T FROM user",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-like",
@@ -3106,8 +2977,7 @@
     ],
     "hint": "LIKE \"A%\"",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-glob",
@@ -3133,8 +3003,7 @@
     ],
     "hint": "GLOB \"A*\"",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-limit",
@@ -3160,8 +3029,7 @@
     ],
     "hint": "LIMIT 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-offset",
@@ -3187,8 +3055,7 @@
     ],
     "hint": "LIMIT 1 OFFSET 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-null",
@@ -3214,8 +3081,7 @@
     ],
     "hint": "IS NULL",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-not-null-check",
@@ -3241,8 +3107,7 @@
     ],
     "hint": "IS NOT NULL",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-between",
@@ -3268,8 +3133,7 @@
     ],
     "hint": "BETWEEN 1 AND 3",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-in",
@@ -3295,8 +3159,7 @@
     ],
     "hint": "IN (1, 2)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-case",
@@ -3322,8 +3185,7 @@
     ],
     "hint": "CASE WHEN",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-coalesce",
@@ -3349,8 +3211,7 @@
     ],
     "hint": "COALESCE",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms1-cast",
@@ -3376,8 +3237,7 @@
     "hint": "CAST",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-round",
@@ -3403,8 +3263,7 @@
     "hint": "ROUND",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-random",
@@ -3430,8 +3289,7 @@
     "hint": "RANDOM",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-abs",
@@ -3457,8 +3315,7 @@
     "hint": "ABS",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-upper",
@@ -3484,8 +3341,7 @@
     "hint": "UPPER",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-lower",
@@ -3511,8 +3367,7 @@
     "hint": "LOWER",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-length",
@@ -3538,8 +3393,7 @@
     "hint": "LENGTH",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-substr",
@@ -3565,8 +3419,7 @@
     "hint": "SUBSTR",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-replace",
@@ -3592,8 +3445,7 @@
     "hint": "REPLACE",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-trim",
@@ -3619,8 +3471,7 @@
     "hint": "TRIM",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms1-max",
@@ -3646,8 +3497,7 @@
     ],
     "hint": "MAX",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-transaction-commit",
@@ -3673,8 +3523,7 @@
     ],
     "hint": "BEGIN; UPDATE ... COMMIT;",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-transaction-rollback",
@@ -3700,8 +3549,7 @@
     ],
     "hint": "ROLLBACK",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-savepoint",
@@ -3727,8 +3575,7 @@
     ],
     "hint": "SAVEPOINT",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-trigger-insert",
@@ -3754,8 +3601,7 @@
     ],
     "hint": "CREATE TRIGGER",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-trigger-update",
@@ -3781,8 +3627,7 @@
     ],
     "hint": "OLD.val",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-trigger-delete",
@@ -3808,8 +3653,7 @@
     ],
     "hint": "RAISE(ABORT, ...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-view-update",
@@ -3835,8 +3679,7 @@
     ],
     "hint": "UPDATE V",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-index-unique",
@@ -3862,8 +3705,7 @@
     ],
     "hint": "CREATE UNIQUE INDEX",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-grant-role",
@@ -3889,8 +3731,7 @@
     "hint": "GRANT",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-revoke-role",
@@ -3916,8 +3757,7 @@
     "hint": "REVOKE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-cte-recursive",
@@ -3943,8 +3783,7 @@
     "hint": "WITH RECURSIVE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-window-lag",
@@ -3970,8 +3809,7 @@
     ],
     "hint": "LAG(val)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-window-lead",
@@ -3997,8 +3835,7 @@
     ],
     "hint": "LEAD(val)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-window-sum",
@@ -4024,8 +3861,7 @@
     ],
     "hint": "SUM(val) OVER (ORDER BY val)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-window-avg",
@@ -4051,8 +3887,7 @@
     ],
     "hint": "AVG(val) OVER (ORDER BY val)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-explain",
@@ -4078,8 +3913,7 @@
     ],
     "hint": "EXPLAIN QUERY PLAN",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-analyze",
@@ -4105,8 +3939,7 @@
     ],
     "hint": "ANALYZE",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-vacuum",
@@ -4132,8 +3965,7 @@
     "hint": "VACUUM",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-attach",
@@ -4159,8 +3991,7 @@
     "hint": "ATTACH DATABASE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-detach",
@@ -4186,8 +4017,7 @@
     "hint": "DETACH DATABASE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-pragma",
@@ -4213,8 +4043,7 @@
     "hint": "PRAGMA",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-integrity-check",
@@ -4240,8 +4069,7 @@
     "hint": "PRAGMA integrity_check",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-foreign-key-check",
@@ -4267,8 +4095,7 @@
     "hint": "PRAGMA foreign_key_check",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-table-info",
@@ -4294,8 +4121,7 @@
     ],
     "hint": "PRAGMA table_info",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-index-list",
@@ -4321,8 +4147,7 @@
     ],
     "hint": "PRAGMA index_list",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-index-info",
@@ -4348,8 +4173,7 @@
     ],
     "hint": "PRAGMA index_info",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-case-insensitive",
@@ -4375,8 +4199,7 @@
     "hint": "LIKE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-json-extract",
@@ -4402,8 +4225,7 @@
     "hint": "json_extract",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-json-array",
@@ -4429,8 +4251,7 @@
     "hint": "json_array",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-json-object",
@@ -4456,8 +4277,7 @@
     "hint": "json_object",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-json-type",
@@ -4483,8 +4303,7 @@
     "hint": "json_type",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-json-valid",
@@ -4510,8 +4329,7 @@
     "hint": "json_valid",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-rtree",
@@ -4537,8 +4355,7 @@
     "hint": "VIRTUAL TABLE ... USING rtree",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-fts",
@@ -4564,8 +4381,7 @@
     "hint": "VIRTUAL TABLE ... USING fts5",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-geopoly",
@@ -4591,8 +4407,7 @@
     "hint": "VIRTUAL TABLE ... USING geopoly",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-upsert",
@@ -4618,8 +4433,7 @@
     ],
     "hint": "ON CONFLICT DO UPDATE",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-returning",
@@ -4645,8 +4459,7 @@
     ],
     "hint": "RETURNING",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-generated-col",
@@ -4672,8 +4485,7 @@
     ],
     "hint": "GENERATED ALWAYS AS",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-filter-clause",
@@ -4699,8 +4511,7 @@
     ],
     "hint": "FILTER (WHERE ...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-nulls-first",
@@ -4726,8 +4537,7 @@
     ],
     "hint": "NULLS FIRST",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-nulls-last",
@@ -4753,8 +4563,7 @@
     ],
     "hint": "NULLS LAST",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-values",
@@ -4780,8 +4589,7 @@
     "hint": "VALUES",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-materialized-view",
@@ -4807,8 +4615,7 @@
     "hint": "CREATE MATERIALIZED VIEW",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-drop-view",
@@ -4834,8 +4641,7 @@
     ],
     "hint": "DROP VIEW",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-reindex",
@@ -4861,8 +4667,7 @@
     ],
     "hint": "REINDEX",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-strict",
@@ -4888,8 +4693,7 @@
     ],
     "hint": "STRICT",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-without-rowid",
@@ -4915,8 +4719,7 @@
     ],
     "hint": "WITHOUT ROWID",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "dbms2-temp-table",
@@ -4942,8 +4745,7 @@
     "hint": "TEMP TABLE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-temp-view",
@@ -4969,8 +4771,7 @@
     "hint": "TEMP VIEW",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "dbms2-savepoint-release",
@@ -4996,8 +4797,7 @@
     "hint": "RELEASE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-select-all",
@@ -5023,8 +4823,7 @@
     ],
     "hint": "SELECT * FROM students;",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-select-col",
@@ -5050,8 +4849,7 @@
     ],
     "hint": "SELECT name FROM students;",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-where-eq",
@@ -5077,8 +4875,7 @@
     ],
     "hint": "WHERE id = 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-where-gt",
@@ -5104,8 +4901,7 @@
     ],
     "hint": "WHERE score > 50",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-order-asc",
@@ -5131,8 +4927,7 @@
     ],
     "hint": "ORDER BY score ASC",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-order-desc",
@@ -5158,8 +4953,7 @@
     ],
     "hint": "ORDER BY score DESC",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-limit",
@@ -5185,8 +4979,7 @@
     ],
     "hint": "LIMIT 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-distinct",
@@ -5212,8 +5005,7 @@
     ],
     "hint": "SELECT DISTINCT city",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-count",
@@ -5239,8 +5031,7 @@
     ],
     "hint": "COUNT(*)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-sum",
@@ -5266,8 +5057,7 @@
     ],
     "hint": "SUM(score)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-avg",
@@ -5293,8 +5083,7 @@
     ],
     "hint": "AVG(score)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-min",
@@ -5320,8 +5109,7 @@
     ],
     "hint": "MIN(score)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-max",
@@ -5347,8 +5135,7 @@
     ],
     "hint": "MAX(score)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-and",
@@ -5374,8 +5161,7 @@
     ],
     "hint": "AND operator",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-or",
@@ -5401,8 +5187,7 @@
     ],
     "hint": "OR operator",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-not",
@@ -5428,8 +5213,7 @@
     ],
     "hint": "NOT or <> or !=",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-in",
@@ -5455,8 +5239,7 @@
     ],
     "hint": "WHERE id IN (1, 3)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-between",
@@ -5482,8 +5265,7 @@
     ],
     "hint": "BETWEEN 40 AND 60",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-like",
@@ -5509,8 +5291,7 @@
     ],
     "hint": "LIKE 'A%'",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-is-null",
@@ -5536,8 +5317,7 @@
     ],
     "hint": "IS NULL",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-is-not-null",
@@ -5563,8 +5343,7 @@
     ],
     "hint": "IS NOT NULL",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-alias",
@@ -5590,8 +5369,7 @@
     ],
     "hint": "AS keyword",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-concat",
@@ -5617,8 +5395,7 @@
     ],
     "hint": "|| operator",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-upper",
@@ -5644,8 +5421,7 @@
     ],
     "hint": "UPPER(name)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-lower",
@@ -5671,8 +5447,7 @@
     ],
     "hint": "LOWER(name)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-length",
@@ -5698,8 +5473,7 @@
     ],
     "hint": "LENGTH(name)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-substr",
@@ -5725,8 +5499,7 @@
     ],
     "hint": "SUBSTR(name, 1, 3)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-round",
@@ -5752,8 +5525,7 @@
     ],
     "hint": "ROUND(score)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-arithmetic",
@@ -5779,8 +5551,7 @@
     ],
     "hint": "*",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-group-by",
@@ -5806,8 +5577,7 @@
     ],
     "hint": "GROUP BY city",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-having",
@@ -5833,8 +5603,7 @@
     ],
     "hint": "HAVING COUNT(*) > 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-create-table",
@@ -5860,8 +5629,7 @@
     "hint": "CREATE TABLE ... INSERT ... SELECT",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-drop-table",
@@ -5887,8 +5655,7 @@
     ],
     "hint": "DROP TABLE T",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-insert",
@@ -5914,8 +5681,7 @@
     ],
     "hint": "INSERT INTO T VALUES (1)",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-update",
@@ -5941,8 +5707,7 @@
     ],
     "hint": "UPDATE T SET A=2",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-delete",
@@ -5968,8 +5733,7 @@
     ],
     "hint": "DELETE FROM T",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-alter",
@@ -5995,8 +5759,7 @@
     ],
     "hint": "ALTER TABLE T ADD COLUMN B INT",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-select-expr",
@@ -6022,8 +5785,7 @@
     "hint": "SELECT 1+1",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-cast",
@@ -6049,8 +5811,7 @@
     "hint": "CAST('1' AS INT)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-coalesce",
@@ -6076,8 +5837,7 @@
     "hint": "COALESCE(NULL, 1)",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-case",
@@ -6103,8 +5863,7 @@
     "hint": "CASE WHEN ... END",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-limit-offset",
@@ -6130,8 +5889,7 @@
     ],
     "hint": "LIMIT 1 OFFSET 1",
     "examType": "OPPE 1",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql1-union",
@@ -6157,8 +5915,7 @@
     "hint": "UNION",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-union-all",
@@ -6184,8 +5941,7 @@
     "hint": "UNION ALL",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-intersect",
@@ -6211,8 +5967,7 @@
     "hint": "INTERSECT",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-except",
@@ -6238,8 +5993,7 @@
     "hint": "EXCEPT",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-abs",
@@ -6265,8 +6019,7 @@
     "hint": "ABS()",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-random",
@@ -6292,8 +6045,7 @@
     "hint": "RANDOM()",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-date",
@@ -6319,8 +6071,7 @@
     "hint": "DATE()",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql1-time",
@@ -6346,8 +6097,7 @@
     "hint": "TIME()",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-inner-join",
@@ -6373,8 +6123,7 @@
     ],
     "hint": "JOIN ON students.id = courses.student_id",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-left-join",
@@ -6400,8 +6149,7 @@
     ],
     "hint": "LEFT JOIN",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-right-join",
@@ -6427,8 +6175,7 @@
     ],
     "hint": "FROM courses LEFT JOIN students",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-full-join",
@@ -6454,8 +6201,7 @@
     ],
     "hint": "LEFT JOIN UNION ... LEFT JOIN",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-cross-join",
@@ -6481,8 +6227,7 @@
     ],
     "hint": "CROSS JOIN",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-self-join",
@@ -6508,8 +6253,7 @@
     ],
     "hint": "JOIN students s1, students s2",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-subquery-scalar",
@@ -6535,8 +6279,7 @@
     ],
     "hint": "WHERE score > (SELECT AVG(score)...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-subquery-in",
@@ -6562,8 +6305,7 @@
     ],
     "hint": "WHERE id IN (SELECT student_id ...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-subquery-exists",
@@ -6589,8 +6331,7 @@
     ],
     "hint": "WHERE EXISTS (SELECT 1 ...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-subquery-from",
@@ -6616,8 +6357,7 @@
     ],
     "hint": "FROM (SELECT AVG(score)...)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-correlated-subquery",
@@ -6643,8 +6383,7 @@
     ],
     "hint": "WHERE score > (SELECT AVG(score) FROM students s2 WHERE s1.city = s2.city)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-view",
@@ -6670,8 +6409,7 @@
     ],
     "hint": "CREATE VIEW V AS ...",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-cte",
@@ -6697,8 +6435,7 @@
     ],
     "hint": "WITH CTE AS ...",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-window-rank",
@@ -6724,8 +6461,7 @@
     ],
     "hint": "RANK() OVER (ORDER BY score DESC)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-window-dense-rank",
@@ -6751,8 +6487,7 @@
     ],
     "hint": "DENSE_RANK()",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-window-row-number",
@@ -6778,8 +6513,7 @@
     ],
     "hint": "ROW_NUMBER()",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-partition-by",
@@ -6805,8 +6539,7 @@
     ],
     "hint": "PARTITION BY city",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-case-when",
@@ -6832,8 +6565,7 @@
     ],
     "hint": "CASE WHEN score >= 50 THEN ...",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-nullif",
@@ -6859,8 +6591,7 @@
     ],
     "hint": "NULLIF(score, 0)",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-transaction",
@@ -6886,8 +6617,7 @@
     ],
     "hint": "BEGIN TRANSACTION; ... COMMIT;",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-rollback",
@@ -6913,8 +6643,7 @@
     ],
     "hint": "ROLLBACK;",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-savepoint",
@@ -6940,8 +6669,7 @@
     ],
     "hint": "SAVEPOINT S; ROLLBACK TO S;",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-index",
@@ -6967,8 +6695,7 @@
     ],
     "hint": "CREATE INDEX",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-drop-index",
@@ -6994,8 +6721,7 @@
     ],
     "hint": "DROP INDEX",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-unique-constraint",
@@ -7021,8 +6747,7 @@
     "hint": "UNIQUE",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-check-constraint",
@@ -7048,8 +6773,7 @@
     "hint": "CHECK",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-default-constraint",
@@ -7075,8 +6799,7 @@
     "hint": "DEFAULT",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-not-null-constraint",
@@ -7102,8 +6825,7 @@
     "hint": "NOT NULL",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-primary-key",
@@ -7129,8 +6851,7 @@
     "hint": "PRIMARY KEY",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-foreign-key",
@@ -7156,8 +6877,7 @@
     "hint": "FOREIGN KEY",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-trigger",
@@ -7183,8 +6903,7 @@
     ],
     "hint": "CREATE TRIGGER",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-drop-trigger",
@@ -7210,8 +6929,7 @@
     ],
     "hint": "DROP TRIGGER",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-glob",
@@ -7237,8 +6955,7 @@
     ],
     "hint": "GLOB 'A*'",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-replace",
@@ -7264,8 +6981,7 @@
     ],
     "hint": "REPLACE(name, 'l', 'L')",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-trim",
@@ -7291,8 +7007,7 @@
     "hint": "TRIM()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-ltrim",
@@ -7318,8 +7033,7 @@
     "hint": "LTRIM()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-rtrim",
@@ -7345,8 +7059,7 @@
     "hint": "RTRIM()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-instr",
@@ -7372,8 +7085,7 @@
     "hint": "INSTR()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-unicode",
@@ -7399,8 +7111,7 @@
     "hint": "UNICODE()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-char",
@@ -7426,8 +7137,7 @@
     "hint": "CHAR()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-hex",
@@ -7453,8 +7163,7 @@
     "hint": "HEX()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-quote",
@@ -7480,8 +7189,7 @@
     "hint": "QUOTE()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-typeof",
@@ -7507,8 +7215,7 @@
     "hint": "TYPEOF()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-last-insert-rowid",
@@ -7534,8 +7241,7 @@
     ],
     "hint": "last_insert_rowid()",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-changes",
@@ -7561,8 +7267,7 @@
     ],
     "hint": "changes()",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-total-changes",
@@ -7588,8 +7293,7 @@
     ],
     "hint": "total_changes()",
     "examType": "OPPE 2",
-    "tags": "",
-    "status": "pending"
+    "tags": ""
   },
   {
     "id": "sql2-sqlite-version",
@@ -7615,8 +7319,7 @@
     "hint": "sqlite_version()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-ifnull",
@@ -7642,8 +7345,7 @@
     "hint": "IFNULL()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-nullif-2",
@@ -7669,8 +7371,7 @@
     "hint": "NULLIF()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "sql2-likelihood",
@@ -7696,7 +7397,6 @@
     "hint": "likelihood()",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   }
 ]

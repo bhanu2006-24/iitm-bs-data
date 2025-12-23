@@ -17,10 +17,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "reverseList",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-21",
@@ -40,10 +39,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "mergeTwoLists",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-141",
@@ -63,10 +61,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "hasCycle",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-160",
@@ -86,10 +83,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "getIntersectionNode",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-234",
@@ -109,10 +105,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isPalindrome",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-83",
@@ -132,10 +127,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "deleteDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-203",
@@ -155,10 +149,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "removeElements",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-876",
@@ -178,10 +171,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "middleNode",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-1290",
@@ -201,10 +193,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "getDecimalValue",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-704",
@@ -224,10 +215,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "search",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-278",
@@ -247,10 +237,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "firstBadVersion",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-35",
@@ -270,10 +259,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "searchInsert",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-69",
@@ -293,10 +281,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "mySqrt",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-367",
@@ -316,10 +303,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isPerfectSquare",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-374",
@@ -339,10 +325,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "guessNumber",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-20",
@@ -362,10 +347,9 @@
     "language": "python",
     "tags": "Stack",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isValid",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-155",
@@ -387,8 +371,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-232",
@@ -410,8 +393,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-225",
@@ -433,8 +415,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-1047",
@@ -454,10 +435,9 @@
     "language": "python",
     "tags": "Stack",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "removeDuplicates",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-682",
@@ -477,10 +457,9 @@
     "language": "python",
     "tags": "Stack",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "calPoints",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-844",
@@ -500,10 +479,9 @@
     "language": "python",
     "tags": "Stack",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "backspaceCompare",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-1544",
@@ -523,10 +501,9 @@
     "language": "python",
     "tags": "Stack",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "makeGood",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-933",
@@ -548,8 +525,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-88",
@@ -569,10 +545,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "merge",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-217",
@@ -592,10 +567,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "containsDuplicate",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-53",
@@ -615,10 +589,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "maxSubArray",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-1",
@@ -638,10 +611,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "twoSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-169",
@@ -661,10 +633,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "majorityElement",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-121",
@@ -684,10 +655,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "maxProfit",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-350",
@@ -707,10 +677,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "intersect",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-566",
@@ -730,10 +699,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "matrixReshape",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-118",
@@ -753,10 +721,9 @@
     "language": "python",
     "tags": "Array",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "generate",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-74",
@@ -776,10 +743,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "searchMatrix",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-153",
@@ -799,10 +765,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findMin",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-33",
@@ -822,10 +787,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "search",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-34",
@@ -845,10 +809,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "searchRange",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-162",
@@ -868,10 +831,9 @@
     "language": "python",
     "tags": "Search",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findPeakElement",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-75",
@@ -891,10 +853,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "sortColors",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-912",
@@ -914,10 +875,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "sortArray",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-215",
@@ -937,10 +897,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findKthLargest",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-347",
@@ -960,10 +919,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "topKFrequent",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-56",
@@ -983,10 +941,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "merge",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-49",
@@ -1006,10 +963,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "groupAnagrams",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-242",
@@ -1029,10 +985,9 @@
     "language": "python",
     "tags": "Sort",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isAnagram",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-2",
@@ -1052,10 +1007,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "addTwoNumbers",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-19",
@@ -1075,10 +1029,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "removeNthFromEnd",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-142",
@@ -1098,10 +1051,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "detectCycle",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-24",
@@ -1121,10 +1073,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "swapPairs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa1-lc-61",
@@ -1144,10 +1095,9 @@
     "language": "python",
     "tags": "LinkedList",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rotateRight",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-144",
@@ -1167,10 +1117,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "preorderTraversal",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-94",
@@ -1190,10 +1139,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "inorderTraversal",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-145",
@@ -1213,10 +1161,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "postorderTraversal",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-104",
@@ -1236,10 +1183,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "maxDepth",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-101",
@@ -1259,10 +1205,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isSymmetric",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-226",
@@ -1282,10 +1227,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "invertTree",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-112",
@@ -1305,10 +1249,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "hasPathSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-700",
@@ -1328,10 +1271,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "searchBST",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-701",
@@ -1351,10 +1293,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "insertIntoBST",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-98",
@@ -1374,10 +1315,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isValidBST",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-653",
@@ -1397,10 +1337,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findTarget",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-235",
@@ -1420,10 +1359,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "lowestCommonAncestor",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-102",
@@ -1443,10 +1381,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "levelOrder",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-100",
@@ -1466,10 +1403,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isSameTree",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-108",
@@ -1489,10 +1425,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "sortedArrayToBST",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-236",
@@ -1512,10 +1447,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "lowestCommonAncestor",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-199",
@@ -1535,10 +1469,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rightSideView",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-113",
@@ -1558,10 +1491,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "pathSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-450",
@@ -1581,10 +1513,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "deleteNode",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-230",
@@ -1604,10 +1535,9 @@
     "language": "python",
     "tags": "Tree",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "kthSmallest",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-200",
@@ -1627,10 +1557,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "numIslands",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-733",
@@ -1650,10 +1579,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "floodFill",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-542",
@@ -1673,10 +1601,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "updateMatrix",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-994",
@@ -1696,10 +1623,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "orangesRotting",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-207",
@@ -1719,10 +1645,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "canFinish",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-210",
@@ -1742,10 +1667,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findOrder",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-547",
@@ -1765,10 +1689,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findCircleNum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-785",
@@ -1788,10 +1711,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "isBipartite",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-797",
@@ -1811,10 +1733,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "allPathsSourceTarget",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-841",
@@ -1834,10 +1755,9 @@
     "language": "python",
     "tags": "Graph",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "canVisitAllRooms",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-70",
@@ -1857,10 +1777,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "climbStairs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-746",
@@ -1880,10 +1799,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "minCostClimbingStairs",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-198",
@@ -1903,10 +1821,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rob",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-213",
@@ -1926,10 +1843,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "rob",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-5",
@@ -1949,10 +1865,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "longestPalindrome",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-647",
@@ -1972,10 +1887,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "countSubstrings",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-322",
@@ -1995,10 +1909,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "coinChange",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-139",
@@ -2018,10 +1931,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "wordBreak",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-300",
@@ -2041,10 +1953,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "lengthOfLIS",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-1143",
@@ -2064,10 +1975,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "longestCommonSubsequence",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-62",
@@ -2087,10 +1997,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "uniquePaths",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-63",
@@ -2110,10 +2019,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "uniquePathsWithObstacles",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-64",
@@ -2133,10 +2041,9 @@
     "language": "python",
     "tags": "DP",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "minPathSum",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-215",
@@ -2156,10 +2063,9 @@
     "language": "python",
     "tags": "Heap",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "findKthLargest",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-347",
@@ -2179,10 +2085,9 @@
     "language": "python",
     "tags": "Heap",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "topKFrequent",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-973",
@@ -2202,10 +2107,9 @@
     "language": "python",
     "tags": "Heap",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "kClosest",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-1046",
@@ -2225,10 +2129,9 @@
     "language": "python",
     "tags": "Heap",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "lastStoneWeight",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-23",
@@ -2248,10 +2151,9 @@
     "language": "python",
     "tags": "Heap",
     "setupCode": "",
-    "functionName": "",
+    "functionName": "mergeKLists",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-295",
@@ -2273,8 +2175,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa2-lc-208",
@@ -2296,8 +2197,7 @@
     "setupCode": "",
     "functionName": "",
     "hint": "",
-    "examples": [],
-    "status": "pending"
+    "examples": []
   },
   {
     "id": "pdsa-oppe1-binary-search",
@@ -2339,8 +2239,7 @@
     "hint": "Base case: if low > high return -1. Else compare mid.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-valid-parens",
@@ -2382,8 +2281,7 @@
     "hint": "Push opening brackets to stack. For closing brackets, check if stack top matches.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-find-peak",
@@ -2421,8 +2319,7 @@
     "hint": "You can do this in O(log n) using binary search logic.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-merge-sorted",
@@ -2464,8 +2361,7 @@
     "hint": "Use two pointers starting at 0 for both lists.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-linear-search",
@@ -2503,8 +2399,7 @@
     "hint": "Iterate through the list.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-bin-search-iter",
@@ -2542,8 +2437,7 @@
     "hint": "While low <= high.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-bubble-sort",
@@ -2581,8 +2475,7 @@
     "hint": "Nested loops, swap if L[j] > L[j+1].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-selection-sort",
@@ -2620,8 +2513,7 @@
     "hint": "Find min in unsorted part and swap.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-insertion-sort",
@@ -2659,8 +2551,7 @@
     "hint": "Insert element into sorted sublist.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-is-sorted-rec",
@@ -2702,8 +2593,7 @@
     "hint": "L[0] <= L[1] and f(L[1:]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-stack-ops",
@@ -2741,8 +2631,7 @@
     "hint": "Use append and pop.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-queue-ops",
@@ -2780,8 +2669,7 @@
     "hint": "Use append and pop(0).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-rev-list-rec",
@@ -2819,8 +2707,7 @@
     "hint": "f(L[1:]) + [L[0]].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-fact-rec",
@@ -2858,8 +2745,7 @@
     "hint": "n * f(n-1).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-fib-rec",
@@ -2901,8 +2787,7 @@
     "hint": "f(n-1) + f(n-2).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-gcd-rec",
@@ -2940,8 +2825,7 @@
     "hint": "gcd(b, a%b).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-hanoi",
@@ -2979,8 +2863,7 @@
     "hint": "2^n - 1 or 2*f(n-1) + 1.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-ll-count",
@@ -3018,8 +2901,7 @@
     "hint": "(1 if L[0]==x else 0) + f(L[1:]).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-search-rotated",
@@ -3057,8 +2939,7 @@
     "hint": "Modified binary search.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-first-bad",
@@ -3096,8 +2977,7 @@
     "hint": "Binary search for first True.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-two-sum-sorted",
@@ -3135,8 +3015,7 @@
     "hint": "Two pointers.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-remove-elem",
@@ -3174,8 +3053,7 @@
     "hint": "List comprehension.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-search-insert",
@@ -3217,8 +3095,7 @@
     "hint": "Binary search.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-max-subarray",
@@ -3256,8 +3133,7 @@
     "hint": "Kadane's Algorithm.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-merge-intervals",
@@ -3291,8 +3167,7 @@
     "hint": "Sort and merge.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-climbing-stairs",
@@ -3330,8 +3205,7 @@
     "hint": "Fibonacci.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-pascals",
@@ -3357,8 +3231,7 @@
     "hint": "DP.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-stock",
@@ -3384,8 +3257,7 @@
     "hint": "Track min price and max profit.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-single-number",
@@ -3411,8 +3283,7 @@
     "hint": "XOR all elements.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-ll-cycle",
@@ -3454,8 +3325,7 @@
     "hint": "Visited set or Floyd's cycle finding.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-min-stack",
@@ -3493,8 +3363,7 @@
     "hint": "Use auxiliary stack for mins.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-ll-intersect",
@@ -3532,8 +3401,7 @@
     "hint": "Align lengths or use set.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-majority",
@@ -3571,8 +3439,7 @@
     "hint": "Boyer-Moore Voting.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-reverse-bits",
@@ -3610,8 +3477,7 @@
     "hint": "Bit manipulation.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-hamming-weight",
@@ -3649,8 +3515,7 @@
     "hint": "bin(n).count(\"1\").",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-power-two",
@@ -3696,8 +3561,7 @@
     "hint": "n > 0 and (n & (n-1)) == 0.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-ll-palindrome",
@@ -3735,8 +3599,7 @@
     "hint": "L == L[::-1].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-move-zeroes",
@@ -3762,8 +3625,7 @@
     "hint": "Two pointers.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-nim-game",
@@ -3789,8 +3651,7 @@
     "hint": "n % 4 != 0.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-reverse-string",
@@ -3816,8 +3677,7 @@
     "hint": "s[::-1].",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-intersection",
@@ -3843,8 +3703,7 @@
     "hint": "list(set(nums1) & set(nums2)).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-perfect-square",
@@ -3870,8 +3729,7 @@
     "hint": "Binary search.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-fizz-buzz",
@@ -3897,8 +3755,7 @@
     "hint": "Modulo operator.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-third-max",
@@ -3928,8 +3785,7 @@
     "hint": "Use set to remove dups.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-add-strings",
@@ -3955,8 +3811,7 @@
     "hint": "Convert to int or column addition.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-coins",
@@ -3982,8 +3837,7 @@
     "hint": "Solve k(k+1)/2 <= n.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-disappeared",
@@ -4009,8 +3863,7 @@
     "hint": "set(range(1, len(nums)+1)) - set(nums).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-hamming-dist",
@@ -4036,8 +3889,7 @@
     "hint": "bin(x ^ y).count(\"1\").",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-max-ones",
@@ -4075,8 +3927,7 @@
     "hint": "Iterate and count.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-next-greater",
@@ -4114,8 +3965,7 @@
     "hint": "Stack and map.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-keyboard-row",
@@ -4153,8 +4003,7 @@
     "hint": "Set intersection with row sets.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-rev-words-iii",
@@ -4192,8 +4041,7 @@
     "hint": "Split, reverse each, join.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-reshape",
@@ -4231,8 +4079,7 @@
     "hint": "Flatten and reconstruct.",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe1-candies",
@@ -4270,8 +4117,7 @@
     "hint": "min(len(set(candyType)), len(candyType)//2).",
     "examType": "OPPE 1",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-kth-largest",
@@ -4309,8 +4155,7 @@
     "hint": "Sort the list and take element at index -k.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-sort-colors",
@@ -4348,8 +4193,7 @@
     "hint": "Use 3 pointers: low (0s), mid (1s), high (2s).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-bst-val",
@@ -4391,8 +4235,7 @@
     "hint": "Check if the list is strictly increasing.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-bst-insert",
@@ -4430,8 +4273,7 @@
     "hint": "Sort the list (property of BST inorder).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-bst-search",
@@ -4469,8 +4311,7 @@
     "hint": "Binary search.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-level-order",
@@ -4508,8 +4349,7 @@
     "hint": "Use queue.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-max-depth",
@@ -4547,8 +4387,7 @@
     "hint": "Recursion.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-symmetric-tree",
@@ -4586,8 +4425,7 @@
     "hint": "Recursive check left.left==right.right.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-invert-tree",
@@ -4625,8 +4463,7 @@
     "hint": "Swap left and right children recursively.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-path-sum",
@@ -4664,8 +4501,7 @@
     "hint": "Subtract val from sum, check leaf.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-lca-bst",
@@ -4703,8 +4539,7 @@
     "hint": "If both < root, go left. If both > root, go right.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-kth-smallest",
@@ -4742,8 +4577,7 @@
     "hint": "Inorder traversal gives sorted list.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-inorder",
@@ -4781,8 +4615,7 @@
     "hint": "Left, Root, Right.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-preorder",
@@ -4820,8 +4653,7 @@
     "hint": "Root, Left, Right.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-postorder",
@@ -4859,8 +4691,7 @@
     "hint": "Left, Right, Root.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-subtree",
@@ -4898,8 +4729,7 @@
     "hint": "Check identical at each node.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-diameter",
@@ -4937,8 +4767,7 @@
     "hint": "Max(left_depth + right_depth).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-balanced",
@@ -4976,8 +4805,7 @@
     "hint": "Check height diff at each node.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-merge-trees",
@@ -5015,8 +4843,7 @@
     "hint": "New node val = r1.val + r2.val.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-sorted-to-bst",
@@ -5054,8 +4881,7 @@
     "hint": "Mid element is root.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-path-sum-ii",
@@ -5093,8 +4919,7 @@
     "hint": "DFS with path list.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-flatten-tree",
@@ -5132,8 +4957,7 @@
     "hint": "Move left subtree to right.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-build-tree",
@@ -5171,8 +4995,7 @@
     "hint": "Preorder[0] is root.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-num-islands",
@@ -5210,8 +5033,7 @@
     "hint": "DFS/BFS to mark visited.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-max-area-island",
@@ -5249,8 +5071,7 @@
     "hint": "DFS count.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-flood-fill",
@@ -5288,8 +5109,7 @@
     "hint": "DFS from (sr, sc).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-01-matrix",
@@ -5327,8 +5147,7 @@
     "hint": "BFS from all 0s.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-rotting-oranges",
@@ -5366,8 +5185,7 @@
     "hint": "BFS level count.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-course-schedule",
@@ -5405,8 +5223,7 @@
     "hint": "Topological sort or DFS cycle.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-course-schedule-ii",
@@ -5444,8 +5261,7 @@
     "hint": "Topological sort.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-network-delay",
@@ -5483,8 +5299,7 @@
     "hint": "Dijkstra's algorithm.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-town-judge",
@@ -5522,8 +5337,7 @@
     "hint": "Indegree - Outdegree = n-1.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-keys-rooms",
@@ -5561,8 +5375,7 @@
     "hint": "BFS/DFS from room 0.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-min-cost-stairs",
@@ -5600,8 +5413,7 @@
     "hint": "DP: dp[i] = cost[i] + min(dp[i-1], dp[i-2]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-house-robber",
@@ -5639,8 +5451,7 @@
     "hint": "DP: max(dp[i-1], dp[i-2] + nums[i]).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-coin-change",
@@ -5678,8 +5489,7 @@
     "hint": "DP: dp[i] = min(dp[i], dp[i-coin] + 1).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-lis",
@@ -5717,8 +5527,7 @@
     "hint": "DP O(n^2) or Binary Search O(n log n).",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-max-sub-dp",
@@ -5756,8 +5565,7 @@
     "hint": "Kadane is DP.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-unique-paths",
@@ -5795,8 +5603,7 @@
     "hint": "DP: dp[i][j] = dp[i-1][j] + dp[i][j-1].",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-lcs",
@@ -5834,8 +5641,7 @@
     "hint": "DP 2D array.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-edit-distance",
@@ -5873,8 +5679,7 @@
     "hint": "DP 2D array.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-kth-stream",
@@ -5904,8 +5709,7 @@
     "hint": "Min-heap of size k.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-top-k-freq",
@@ -5943,8 +5747,7 @@
     "hint": "Heap or Bucket Sort.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-k-smallest-pairs",
@@ -5982,8 +5785,7 @@
     "hint": "Min-heap.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-merge-k-lists",
@@ -6021,8 +5823,7 @@
     "hint": "Min-heap.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-sort-char-freq",
@@ -6060,8 +5861,7 @@
     "hint": "Counter and sort.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-k-closest",
@@ -6099,8 +5899,7 @@
     "hint": "Sort by distance or Heap.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-task-scheduler",
@@ -6138,8 +5937,7 @@
     "hint": "Greedy with frequency.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-reorganize",
@@ -6177,8 +5975,7 @@
     "hint": "Heap with counts.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-mst",
@@ -6216,8 +6013,7 @@
     "hint": "Kruskal's or Prim's.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-shortest-path-matrix",
@@ -6255,8 +6051,7 @@
     "hint": "BFS.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-word-ladder",
@@ -6294,8 +6089,7 @@
     "hint": "BFS.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   },
   {
     "id": "pdsa-oppe2-read-graph",
@@ -6333,7 +6127,6 @@
     "hint": "Split lines, parse ints.",
     "examType": "OPPE 2",
     "tags": "",
-    "setupCode": "",
-    "status": "pending"
+    "setupCode": ""
   }
 ]
