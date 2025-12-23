@@ -16,7 +16,8 @@ createApp({
             isRunning: false,
             loading: false,
             unsavedChanges: false,
-            consoleExpanded: false
+            consoleExpanded: false,
+            showHint: false
         }
     },
     computed: {
@@ -100,8 +101,10 @@ createApp({
 
         loadQuestion(q) {
             this.currentQuestion = q;
-            this.viewMode = 'preview'; // Reset to preview on new selection
+            this.viewMode = 'preview';
             this.unsavedChanges = false;
+            this.showHint = false;
+            
             this.initEditor();
             this.$nextTick(() => {
                 if(this.editor) {
@@ -120,7 +123,10 @@ createApp({
             this.consoleOutput = [{type: 'info', text: 'Compiling...'}];
             
             const code = this.editor.getValue();
-            const res = await executeCode(code, this.selectedSubject);
+            // Pass Setup Code if exists
+            const setup = this.currentQuestion.setupCode || '';
+            
+            const res = await executeCode(code, this.selectedSubject, setup);
             
             this.consoleOutput = res.output.split('\n')
                 .map(l => ({ type: res.isError ? 'error' : 'normal', text: l }))
@@ -140,12 +146,25 @@ createApp({
                 tags: '',
                 description: '## Problem Description\n\nWrite a solution that...',
                 starterCode: '# Write code here',
-                testCases: [{input: '', output: '', hidden: false}],
+                setupCode: '',
+                functionName: '',
+                testCases: [{input: '', expected: '', hidden: false}],
+                examples: [],
+                hint: '',
                 status: 'pending'
             };
             this.questions.push(newQ);
             this.loadQuestion(newQ);
             if(!silent) this.viewMode = 'edit';
+        },
+        
+        duplicateQuestion() {
+            if(!this.currentQuestion) return;
+            const newQ = JSON.parse(JSON.stringify(this.currentQuestion));
+            newQ.id = Date.now().toString();
+            newQ.title = newQ.title + " (Copy)";
+            this.questions.push(newQ);
+            this.loadQuestion(newQ);
         },
 
         deleteQuestion() {
@@ -159,7 +178,7 @@ createApp({
         
         addTestCase() {
             if(!this.currentQuestion.testCases) this.currentQuestion.testCases = [];
-            this.currentQuestion.testCases.push({input:'', output:'', hidden: false});
+            this.currentQuestion.testCases.push({input:'', expected:'', hidden: false});
         },
 
         copyToStarter() {

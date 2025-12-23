@@ -1,4 +1,4 @@
-export async function executeCode(code, subject) {
+export async function executeCode(code, subject, setupCode = '') {
     let lang = 'python';
     let version = '3.10.0';
 
@@ -19,6 +19,12 @@ export async function executeCode(code, subject) {
         [lang, version] = map[subject];
     }
 
+    // Combine setup code and user code
+    // For SQL, setup code creates tables, user code queries them.
+    // For Python, setup code might be helper functions.
+    // We strictly prepend setupCode.
+    const fullCode = setupCode ? `${setupCode}\n\n${code}` : code;
+
     try {
         const response = await fetch('https://emkc.org/api/v2/piston/execute', {
             method: 'POST',
@@ -26,13 +32,17 @@ export async function executeCode(code, subject) {
             body: JSON.stringify({
                 language: lang,
                 version: version,
-                files: [{ content: code }]
+                files: [{ content: fullCode }]
             })
         });
         const result = await response.json();
+        
+        let output = result.run ? result.run.output : 'No output';
+        const isError = result.run ? result.run.code !== 0 : true;
+
         return {
-            output: result.run ? result.run.output : 'No output',
-            isError: result.run ? result.run.code !== 0 : true
+            output: output,
+            isError: isError
         };
     } catch (e) {
         return { output: 'Error connecting to execution engine.', isError: true };
