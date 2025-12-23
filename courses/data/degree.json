@@ -1,0 +1,2857 @@
+[
+  {
+    "id": "BSCS3001",
+    "code": "CS3001",
+    "name": "Software Engineering",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "q1": false,
+      "q2": true,
+      "et": true
+    },
+    "pre": [
+      "BSCS2003"
+    ],
+    "syllabus": [
+      "SDLC",
+      "Agile",
+      "Design Patterns"
+    ],
+    "description": "Principles of building scalable and maintainable software.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "Software Process Models",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Requirements Engineering",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "System Modeling",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Architectural Design",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "Design Patterns",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Object-Oriented Design",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Agile Methodologies (Scrum)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "Software Testing Strategies",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Software Evolution",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Project Management",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "Quality Assurance",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Ethics in SE",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSCS3004",
+    "code": "CS3004",
+    "name": "Deep Learning",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "q1": true,
+      "q2": true,
+      "et": true
+    },
+    "pre": [
+      "BSCS2007"
+    ],
+    "syllabus": [
+      "CNN",
+      "RNN",
+      "LSTM",
+      "Transformers"
+    ],
+    "description": "Neural networks and modern deep learning architectures.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "Neural Networks Review",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Optimization Algorithms",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "Hyperparameter Tuning",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Convolutional Neural Networks (CNN)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "CNN Architectures (ResNet, VGG)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Computer Vision Applications",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Recurrent Neural Networks (RNN)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "LSTMs & GRUs",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "NLP Basics",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Attention Mechanism",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "Transformers & BERT",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Generative Models (GANs)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSDA5004",
+    "code": "DA5004",
+    "name": "Large Language Models",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "q1": true,
+      "q2": true,
+      "et": true
+    },
+    "pre": [
+      "BSCS3004"
+    ],
+    "syllabus": [
+      "Transformers",
+      "GPT",
+      "Fine-tuning",
+      "Prompt Engineering"
+    ],
+    "description": "Cutting edge course on LLMs and Generative AI.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "Language Modeling Basics",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Transformer Architecture Deep Dive",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "BERT vs GPT",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Pre-training Strategies",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "Fine-tuning Techniques",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Parameter Efficient Fine Tuning (PEFT)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Prompt Engineering",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "Reinforcement Learning from Human Feedback (RLHF)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Applications of LLMs",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Evaluation Metrics",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "Ethics & Bias in LLMs",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Future of GenAI",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSCS4022",
+    "code": "CS4022",
+    "name": "Operating Systems",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "q1": true,
+      "q2": true,
+      "et": true
+    },
+    "pre": [],
+    "syllabus": [
+      "OS Structures",
+      "Processes",
+      "Memory Management"
+    ],
+    "description": "Core Operating System concepts.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "OS Overview",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "System Structure",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "Process Management",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Threads",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "CPU Scheduling",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Synchronization",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Deadlocks",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "Memory Management",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Virtual Memory",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "File System Interface",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "File System Implementation",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "I/O Systems",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSDA5001",
+    "code": "DA5001",
+    "name": "Big Data Analytics",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "oppe": 2,
+      "et": true
+    },
+    "pre": [],
+    "syllabus": [
+      "Hadoop",
+      "Spark",
+      "MapReduce"
+    ],
+    "description": "Processing massive datasets using distributd computing.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "Big Data Landscape",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Hadoop Ecosystem",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "HDFS",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "MapReduce Programming",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "NoSQL Databases (Cassandra)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Apache Spark Intro",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Spark RDDs",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "Spark SQL",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Streaming Data",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Machine Learning on Big Data",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "Graph Processing",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Cloud Big Data Tools",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSCS3003",
+    "code": "CS3003",
+    "name": "AI: Search Methods",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "q1": true,
+      "q2": true,
+      "et": true
+    },
+    "pre": [],
+    "syllabus": [
+      "Search",
+      "Logic",
+      "Planning"
+    ],
+    "description": "Classical Artificial Intelligence focusing on search and logic.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "Intro to AI Agents",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Uninformed Search (BFS, DFS)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "Heuristic Search (A*)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Adversarial Search (Minimax)",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "Constraint Satisfaction Problems",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Logical Agents",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Propositional Logic",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "First Order Logic",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Knowledge Representation",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Planning",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "Probabilistic Reasoning",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Expert Systems",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  },
+  {
+    "id": "BSCS3005",
+    "code": "CS3005",
+    "name": "Programming in C",
+    "credits": 4,
+    "fee": 10000,
+    "level": "Degree (BSc)",
+    "type": "Theory",
+    "exams": {
+      "oppe": 2,
+      "et": true
+    },
+    "pre": [],
+    "syllabus": [
+      "Pointers",
+      "Memory",
+      "System Calls"
+    ],
+    "description": "Low level programming and system interaction.",
+    "weeks": [
+      {
+        "weekNum": 1,
+        "title": "C Lang Intro",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 1 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 2,
+        "title": "Types & Operators",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 2 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 3,
+        "title": "Control Flow",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 3 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 4,
+        "title": "Functions",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 4 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 5,
+        "title": "Arrays & Strings",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 5 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 6,
+        "title": "Pointers & Memory",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 6 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 7,
+        "title": "Structs & Unions",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 7 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 8,
+        "title": "File Handling",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 8 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 9,
+        "title": "Dynamic Memory Management",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 9 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 10,
+        "title": "Preprocessor Directives",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 10 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 11,
+        "title": "System Calls",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 11 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      },
+      {
+        "weekNum": 12,
+        "title": "Advanced C Patterns",
+        "lectures": [
+          {
+            "title": "Concept Introduction",
+            "youtubeId": "",
+            "duration": "15:00"
+          },
+          {
+            "title": "Detailed Analysis",
+            "youtubeId": "",
+            "duration": "25:00"
+          },
+          {
+            "title": "Worked Examples",
+            "youtubeId": "",
+            "duration": "20:00"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Week 12 Slides",
+            "url": "#"
+          },
+          {
+            "title": "Lecture Notes",
+            "url": "#"
+          }
+        ],
+        "practice": []
+      }
+    ]
+  }
+]
