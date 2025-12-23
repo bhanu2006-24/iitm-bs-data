@@ -7,6 +7,7 @@ createApp({
             catalog: { foundation: [], diploma: [], degree: [], pg_diploma: [], mtech: [] },
             searchQuery: '',
             selectedCourse: null,
+            sidebarOpen: true,
             viewMode: 'preview', // preview | edit
             previewOpenWeeks: [],
             editOpenWeeks: [0], // Default open week 1
@@ -86,6 +87,10 @@ createApp({
         
         collapseAllWeeks() {
             this.editOpenWeeks = [];
+        },
+
+        toggleSidebar() {
+            this.sidebarOpen = !this.sidebarOpen;
         },
 
         async saveFile() {

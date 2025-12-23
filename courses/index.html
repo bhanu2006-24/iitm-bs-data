@@ -36,14 +36,14 @@
 <body>
     <div id="app" class="flex h-full text-sm">
         <!-- Sidebar Navigation -->
-        <div class="w-72 bg-[#050505] flex flex-col h-full border-r border-[#1a1a1a] flex-shrink-0">
+        <div :class="['bg-[#050505] flex flex-col h-full border-r border-[#1a1a1a] flex-shrink-0 transition-all duration-300 ease-in-out', sidebarOpen ? 'w-72 translate-x-0' : 'w-0 -translate-x-full opacity-0 border-none overflow-hidden']">
             <!-- Header -->
             <div class="p-5 border-b border-[#1a1a1a]">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-900/50">G</div>
                     <div>
-                        <h1 class="font-bold text-lg leading-tight text-white">GenZ Course Manager</h1>
-                        <p class="text-[10px] text-gray-500 font-mono">v2.0 • Data Studio</p>
+                        <h1 class="font-bold text-lg leading-tight text-white">GenZ CM</h1>
+                        <p class="text-[10px] text-gray-500 font-mono">v2.1 • Data Studio</p>
                     </div>
                 </div>
 
@@ -104,11 +104,16 @@
             <div v-if="selectedCourse" class="h-full flex flex-col relative z-10">
                 <!-- Toolbar -->
                 <div class="h-16 border-b border-[#1a1a1a] flex justify-between items-center px-6 bg-[#000]/80 backdrop-blur-sm sticky top-0 z-20">
-                    <div>
-                        <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-3">
-                            {{ selectedCourse.name }}
-                            <span class="text-xs font-normal px-2 py-0.5 rounded-full bg-white/10 text-gray-300 font-mono">{{ selectedCourse.code }}</span>
-                        </h2>
+                    <div class="flex items-center gap-4">
+                        <button @click="toggleSidebar" class="w-8 h-8 rounded-md bg-[#111] hover:bg-[#222] flex items-center justify-center text-gray-400 hover:text-white transition border border-[#222]">
+                            <i :class="['fa-solid transition-transform', sidebarOpen ? 'fa-angles-left' : 'fa-angles-right']"></i>
+                        </button>
+                        <div>
+                            <h2 class="text-xl font-bold text-white tracking-tight flex items-center gap-3">
+                                {{ selectedCourse.name }}
+                                <span class="text-xs font-normal px-2 py-0.5 rounded-full bg-white/10 text-gray-300 font-mono">{{ selectedCourse.code }}</span>
+                            </h2>
+                        </div>
                     </div>
                     
                     <div class="flex bg-[#111] rounded-lg p-1 border border-[#222]">

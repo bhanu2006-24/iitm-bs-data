@@ -1,0 +1,424 @@
+{
+  "foundation": [
+    {
+      "code": "BSCS1001",
+      "name": "Computational Thinking",
+      "credits": 4,
+      "path": "foundation/BSCS1001.json"
+    },
+    {
+      "code": "BSCS1002",
+      "name": "Programming in Python",
+      "credits": 4,
+      "path": "foundation/BSCS1002.json"
+    },
+    {
+      "code": "BSHS1001",
+      "name": "English I",
+      "credits": 4,
+      "path": "foundation/BSHS1001.json"
+    },
+    {
+      "code": "BSHS1002",
+      "name": "English II",
+      "credits": 4,
+      "path": "foundation/BSHS1002.json"
+    },
+    {
+      "code": "BSMA1001",
+      "name": "Mathematics for Data Science I",
+      "credits": 4,
+      "path": "foundation/BSMA1001.json"
+    },
+    {
+      "code": "BSMA1002",
+      "name": "Statistics for Data Science I",
+      "credits": 4,
+      "path": "foundation/BSMA1002.json"
+    },
+    {
+      "code": "BSMA1003",
+      "name": "Mathematics for Data Science II",
+      "credits": 4,
+      "path": "foundation/BSMA1003.json"
+    },
+    {
+      "code": "BSMA1004",
+      "name": "Statistics for Data Science II",
+      "credits": 4,
+      "path": "foundation/BSMA1004.json"
+    }
+  ],
+  "diploma": [
+    {
+      "code": "BSCS2001",
+      "name": "Database Management Systems",
+      "credits": 4,
+      "path": "diploma/BSCS2001.json"
+    },
+    {
+      "code": "BSCS2002",
+      "name": "Programming, Data Structures and Algorithms using Python",
+      "credits": 4,
+      "path": "diploma/BSCS2002.json"
+    },
+    {
+      "code": "BSCS2003",
+      "name": "Modern Application Development I",
+      "credits": 4,
+      "path": "diploma/BSCS2003.json"
+    },
+    {
+      "code": "BSCS2003P",
+      "name": "PROJECT Modern Application Development I",
+      "credits": 2,
+      "path": "diploma/BSCS2003P.json"
+    },
+    {
+      "code": "BSCS2004",
+      "name": "Machine Learning Foundations",
+      "credits": 4,
+      "path": "diploma/BSCS2004.json"
+    },
+    {
+      "code": "BSCS2005",
+      "name": "Programming Concepts using Java",
+      "credits": 4,
+      "path": "diploma/BSCS2005.json"
+    },
+    {
+      "code": "BSCS2006",
+      "name": "Modern Application Development II",
+      "credits": 4,
+      "path": "diploma/BSCS2006.json"
+    },
+    {
+      "code": "BSCS2006P",
+      "name": "PROJECT Modern Application Development II",
+      "credits": 2,
+      "path": "diploma/BSCS2006P.json"
+    },
+    {
+      "code": "BSCS2007",
+      "name": "Machine Learning Techniques",
+      "credits": 4,
+      "path": "diploma/BSCS2007.json"
+    },
+    {
+      "code": "BSCS2008",
+      "name": "Machine Learning Practice",
+      "credits": 4,
+      "path": "diploma/BSCS2008.json"
+    },
+    {
+      "code": "BSCS2008P",
+      "name": "Machine Learning Practice - Project",
+      "credits": 2,
+      "path": "diploma/BSCS2008P.json"
+    },
+    {
+      "code": "BSDA2001",
+      "name": "Introduction to Deep Learning and Generative AI",
+      "credits": 4,
+      "path": "diploma/BSDA2001.json"
+    },
+    {
+      "code": "BSDA2001P",
+      "name": "Deep Learning and Generative AI - Project",
+      "credits": 2,
+      "path": "diploma/BSDA2001P.json"
+    },
+    {
+      "code": "BSMS2001",
+      "name": "Business Data Management",
+      "credits": 4,
+      "path": "diploma/BSMS2001.json"
+    },
+    {
+      "code": "BSMS2001P",
+      "name": "Business Data Management - Project",
+      "credits": 2,
+      "path": "diploma/BSMS2001P.json"
+    },
+    {
+      "code": "BSMS2002",
+      "name": "Business Analytics",
+      "credits": 4,
+      "path": "diploma/BSMS2002.json"
+    },
+    {
+      "code": "BSSE2001",
+      "name": "System Commands",
+      "credits": 3,
+      "path": "diploma/BSSE2001.json"
+    },
+    {
+      "code": "BSSE2002",
+      "name": "Tools in Data Science",
+      "credits": 3,
+      "path": "diploma/BSSE2002.json"
+    }
+  ],
+  "degree": [
+    {
+      "code": "BSBT4001",
+      "name": "Algorithmic Thinking in Bioinformatics",
+      "credits": 4,
+      "path": "degree/BSBT4001.json"
+    },
+    {
+      "code": "BSBT4002",
+      "name": "Big Data and Biological Networks",
+      "credits": 4,
+      "path": "degree/BSBT4002.json"
+    },
+    {
+      "code": "BSCS3001",
+      "name": "Software Engineering",
+      "credits": 4,
+      "path": "degree/BSCS3001.json"
+    },
+    {
+      "code": "BSCS3002",
+      "name": "Software Testing",
+      "credits": 4,
+      "path": "degree/BSCS3002.json"
+    },
+    {
+      "code": "BSCS3003",
+      "name": "AI: Search Methods for Problem Solving",
+      "credits": 4,
+      "path": "degree/BSCS3003.json"
+    },
+    {
+      "code": "BSCS3004",
+      "name": "Deep Learning",
+      "credits": 4,
+      "path": "degree/BSCS3004.json"
+    },
+    {
+      "code": "BSCS3005",
+      "name": "Programming in C",
+      "credits": 4,
+      "path": "degree/BSCS3005.json"
+    },
+    {
+      "code": "BSCS3031",
+      "name": "Computer Systems Design",
+      "credits": 4,
+      "path": "degree/BSCS3031.json"
+    },
+    {
+      "code": "BSCS4001",
+      "name": "Data Visualization Design",
+      "credits": 4,
+      "path": "degree/BSCS4001.json"
+    },
+    {
+      "code": "BSCS4003",
+      "name": "Privacy & Security in Online Social Media",
+      "credits": 4,
+      "path": "degree/BSCS4003.json"
+    },
+    {
+      "code": "BSCS4010",
+      "name": "App Dev Lab",
+      "credits": 4,
+      "path": "degree/BSCS4010.json"
+    },
+    {
+      "code": "BSCS4021",
+      "name": "Advanced Algorithms",
+      "credits": 4,
+      "path": "degree/BSCS4021.json"
+    },
+    {
+      "code": "BSCS4022",
+      "name": "Operating Systems",
+      "credits": 4,
+      "path": "degree/BSCS4022.json"
+    },
+    {
+      "code": "BSCS4024",
+      "name": "Computer Networks",
+      "credits": 4,
+      "path": "degree/BSCS4024.json"
+    },
+    {
+      "code": "BSDA4001",
+      "name": "Data Science and AI Lab",
+      "credits": 4,
+      "path": "degree/BSDA4001.json"
+    },
+    {
+      "code": "BSDA5001",
+      "name": "Introduction to Big Data",
+      "credits": 4,
+      "path": "degree/BSDA5001.json"
+    },
+    {
+      "code": "BSDA5002",
+      "name": "Generative AI",
+      "credits": 4,
+      "path": "degree/BSDA5002.json"
+    },
+    {
+      "code": "BSDA5003",
+      "name": "Algorithms for Data Science",
+      "credits": 4,
+      "path": "degree/BSDA5003.json"
+    },
+    {
+      "code": "BSDA5004",
+      "name": "Large Language Models",
+      "credits": 4,
+      "path": "degree/BSDA5004.json"
+    },
+    {
+      "code": "BSDA5005",
+      "name": "Introduction to Natural Language Processing (i-NLP)",
+      "credits": 4,
+      "path": "degree/BSDA5005.json"
+    },
+    {
+      "code": "BSDA5006",
+      "name": "Deep Learning for Computer Vision",
+      "credits": 4,
+      "path": "degree/BSDA5006.json"
+    },
+    {
+      "code": "BSDA5007",
+      "name": "Reinforcement Learning",
+      "credits": 4,
+      "path": "degree/BSDA5007.json"
+    },
+    {
+      "code": "BSDA5013",
+      "name": "Deep Learning Practice",
+      "credits": 4,
+      "path": "degree/BSDA5013.json"
+    },
+    {
+      "code": "BSDA5014",
+      "name": "ML Ops",
+      "credits": 4,
+      "path": "degree/BSDA5014.json"
+    },
+    {
+      "code": "BSDA6001",
+      "name": "Responsible AI",
+      "credits": 4,
+      "path": "degree/BSDA6001.json"
+    },
+    {
+      "code": "BSDA6002",
+      "name": "Statistical Learning Theory",
+      "credits": 4,
+      "path": "degree/BSDA6002.json"
+    },
+    {
+      "code": "BSDA6003",
+      "name": "Deploybility Aspects of AI",
+      "credits": 4,
+      "path": "degree/BSDA6003.json"
+    },
+    {
+      "code": "BSDA6004",
+      "name": "Sequential Decision Making",
+      "credits": 4,
+      "path": "degree/BSDA6004.json"
+    },
+    {
+      "code": "BSDA6005",
+      "name": "Information Theory and Learning",
+      "credits": 4,
+      "path": "degree/BSDA6005.json"
+    },
+    {
+      "code": "BSDA6006",
+      "name": "Research Project",
+      "credits": 4,
+      "path": "degree/BSDA6006.json"
+    },
+    {
+      "code": "BSEE4001",
+      "name": "Speech Technology",
+      "credits": 4,
+      "path": "degree/BSEE4001.json"
+    },
+    {
+      "code": "BSEE5001",
+      "name": "Speech Technology",
+      "credits": 4,
+      "path": "degree/BSEE5001.json"
+    },
+    {
+      "code": "BSGN3001",
+      "name": "Strategies for Professional Growth",
+      "credits": 4,
+      "path": "degree/BSGN3001.json"
+    },
+    {
+      "code": "BSMA2001",
+      "name": "Mathematical Thinking",
+      "credits": 4,
+      "path": "degree/BSMA2001.json"
+    },
+    {
+      "code": "BSMA3012",
+      "name": "Linear Statistical Models",
+      "credits": 4,
+      "path": "degree/BSMA3012.json"
+    },
+    {
+      "code": "BSMA3014",
+      "name": "Statistical Computing",
+      "credits": 4,
+      "path": "degree/BSMA3014.json"
+    },
+    {
+      "code": "BSMS3002",
+      "name": "Market Research",
+      "credits": 4,
+      "path": "degree/BSMS3002.json"
+    },
+    {
+      "code": "BSMS3033",
+      "name": "Managerial Economics",
+      "credits": 4,
+      "path": "degree/BSMS3033.json"
+    },
+    {
+      "code": "BSMS3034",
+      "name": "Corporate Finance",
+      "credits": 4,
+      "path": "degree/BSMS3034.json"
+    },
+    {
+      "code": "BSMS4001",
+      "name": "Industry 4.0",
+      "credits": 4,
+      "path": "degree/BSMS4001.json"
+    },
+    {
+      "code": "BSMS4002",
+      "name": "Design Thinking for Data-Driven App Development",
+      "credits": 4,
+      "path": "degree/BSMS4002.json"
+    },
+    {
+      "code": "BSMS4003",
+      "name": "Financial Forensics",
+      "credits": 4,
+      "path": "degree/BSMS4003.json"
+    },
+    {
+      "code": "BSMS4023",
+      "name": "Game Theory and Strategy",
+      "credits": 4,
+      "path": "degree/BSMS4023.json"
+    }
+  ],
+  "pg_diploma": [],
+  "mtech": []
+}
