@@ -7,137 +7,126 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #050505; color: #e5e5e5; }
         .glass { background: #111; border: 1px solid #222; }
-        .input-score { background: transparent; text-align: center; border-bottom: 2px solid #333; outline: none; transition: 0.3s; }
-        .input-score:focus { border-color: #6366f1; }
         /* Custom Range Slider */
-        input[type=range] { -webkit-appearance: none; background: transparent; }
-        input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px; width: 16px; border-radius: 50%; background: #6366f1; cursor: pointer; margin-top: -6px; }
-        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: #333; border-radius: 2px; }
+        input[type=range] { -webkit-appearance: none; background: transparent; height: 6px; border-radius: 5px; background: #222; }
+        input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 18px; width: 18px; border-radius: 50%; background: #6366f1; cursor: pointer; margin-top: -6px; border: 2px solid #000; box-shadow: 0 0 10px rgba(99, 102, 241, 0.5); }
+        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 6px; cursor: pointer; background: #333; border-radius: 5px; }
+        
+        .score-box { background: #0f0f0f; border: 1px solid #222; border-radius: 8px; transition: 0.2s; }
+        .score-box:focus-within { border-color: #6366f1; background: #151515; }
     </style>
 </head>
 <body class="min-h-screen p-4 md:p-8 relative">
 
     <div id="app" class="max-w-6xl mx-auto">
         <!-- Header -->
-        <header class="flex justify-between items-center mb-10">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
             <div>
                 <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Grade Engine</h1>
-                <p class="text-gray-400 text-sm mt-1">Predict Your CGPA</p>
+                <p class="text-gray-400 text-sm mt-1">Real-time CGPA Predictor - Sep 2025 Term</p>
             </div>
-            <div class="flex gap-4">
-                 <select v-model="selectedCourseId" @change="loadCourse" class="bg-[#1a1a1a] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-300 outline-none w-64">
-                    <option v-for="c in courses" :key="c.id" :value="c.id">{{ c.subject }} ({{ c.level }})</option>
+            <div class="w-full md:w-auto">
+                 <select v-model="selectedCourseId" @change="loadCourse" class="bg-[#1a1a1a] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-300 outline-none w-full md:w-80 shadow-lg">
+                    <optgroup label="Foundation">
+                        <option v-for="c in courses.filter(x=>x.level==='Foundation')" :key="c.id" :value="c.id">{{ c.subject }}</option>
+                    </optgroup>
+                    <optgroup label="Diploma">
+                        <option v-for="c in courses.filter(x=>x.level==='Diploma')" :key="c.id" :value="c.id">{{ c.subject }}</option>
+                    </optgroup>
+                    <optgroup label="Degree">
+                        <option v-for="c in courses.filter(x=>x.level==='Degree')" :key="c.id" :value="c.id">{{ c.subject }}</option>
+                    </optgroup>
                 </select>
             </div>
         </header>
 
         <div v-if="currentCourse" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            <!-- Left: Controls -->
+            <!-- Left: Inputs -->
             <div class="lg:col-span-2 space-y-6">
                 
-                <!-- Grading Logic Card -->
-                <div class="glass p-6 rounded-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl">%</div>
-                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">Grading Logic</h3>
-                     <div class="flex gap-4 flex-wrap mb-4 text-sm">
-                        <div class="bg-blue-900/20 border border-blue-500/30 px-3 py-1 rounded text-blue-400">GA: {{ Math.round(currentCourse.ga_weight*100) }}%</div>
-                        <div class="bg-purple-900/20 border border-purple-500/30 px-3 py-1 rounded text-purple-400">Final (F): {{ Math.round(currentCourse.f_weight*100) }}%</div>
-                        <div class="bg-gray-800 border border-gray-700 px-3 py-1 rounded text-gray-400 font-mono text-xs">{{ currentCourse.strategy }}</div>
-                    </div>
-                    <div class="bg-[#0a0a0a] p-3 rounded-lg border border-gray-800 font-mono text-xs text-gray-400">
-                        {{ currentCourse.formula_text }}
-                    </div>
-                </div>
-
-                <!-- Input: Assignments -->
+                <!-- Dynamic Inputs Grid -->
                 <div class="glass p-6 rounded-2xl">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-lg font-bold">Assignments (Week 1-12)</h3>
-                         <span class="text-xs text-gray-500">Best {{ currentCourse.best_of_weeks }} of {{ currentCourse.total_weeks }}</span>
+                        <h3 class="text-lg font-bold flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                            Score Components
+                        </h3>
+                         <button @click="resetScores" class="text-xs text-gray-500 hover:text-white transition">Reset</button>
                     </div>
-                    <div class="grid grid-cols-6 md:grid-cols-12 gap-3 mb-4">
-                        <div v-for="w in currentCourse.total_weeks" :key="w" class="flex flex-col items-center">
-                            <label class="text-[10px] text-gray-600 mb-1">W{{w}}</label>
-                            <input type="number" v-model.number="scores.ga[w-1]" min="0" max="100" class="w-full bg-[#151515] border border-gray-800 rounded text-center text-sm py-1 focus:border-indigo-500 outline-none text-white">
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center text-sm bg-[#151515] p-3 rounded-lg">
-                        <span class="text-gray-400">Calculated Average (Best {{ currentCourse.best_of_weeks }}):</span>
-                        <span class="font-bold text-indigo-400">{{ formatNum(avgGA) }}%</span>
-                    </div>
-                </div>
 
-                <!-- Input: Exams -->
-                 <div class="glass p-6 rounded-2xl">
-                    <h3 class="text-lg font-bold mb-6">Proctored Exams</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Quizzes/OPPEs Dynamic -->
-                        <div v-for="(qName, idx) in currentCourse.qs" :key="idx">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div v-for="inp in currentCourse.inputs" :key="inp.id" class="relative group">
+                            
                             <div class="flex justify-between mb-2">
-                                <label class="text-sm text-gray-400">{{ qName }}</label>
-                                <span class="text-sm font-bold">{{ scores.exams[idx] || 0 }}</span>
+                                <label class="text-sm text-gray-400 font-medium group-hover:text-indigo-300 transition">{{ inp.label }}</label>
+                                <span class="font-mono text-sm font-bold text-white">{{ scores[inp.id] }} <span class="text-gray-600 text-xs text-normal">/{{ inp.max }}</span></span>
                             </div>
-                             <input type="range" v-model.number="scores.exams[idx]" min="0" max="100" class="w-full">
-                        </div>
+                            
+                            <!-- Slider + Input Combo -->
+                            <div class="flex items-center gap-4">
+                                <input type="range" v-model.number="scores[inp.id]" :min="0" :max="inp.max" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer">
+                                
+                                <input type="number" v-model.number="scores[inp.id]" :min="0" :max="inp.max" class="w-20 bg-[#151515] border border-gray-700 rounded-md px-2 py-1 text-sm text-center focus:border-indigo-500 outline-none">
+                            </div>
 
-                         <!-- End Term -->
-                        <div class="md:col-span-2 mt-4 pt-4 border-t border-gray-800">
-                             <div class="flex justify-between mb-2">
-                                <label class="text-sm text-emerald-400 font-bold">End Term Exam</label>
-                                <span class="text-emerald-400 font-bold">{{ scores.et }}</span>
+                            <!-- Weight Badge -->
+                            <div v-if="inp.weight" class="absolute -top-1 -right-2 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 transition">
+                                Weight: {{ Math.round(inp.weight * 100) }}%
                             </div>
-                            <input type="range" v-model.number="scores.et" min="0" max="100" class="w-full bg-emerald-900">
-                        </div>
-                        
-                         <!-- Bonus -->
-                         <div v-if="currentCourse.strategy.includes('bonus')" class="md:col-span-2">
-                             <div class="flex justify-between mb-2">
-                                <label class="text-sm text-yellow-400">Bonus Marks</label>
-                                <span class="text-yellow-400 font-bold">{{ scores.bonus }}</span>
-                            </div>
-                            <input type="range" v-model.number="scores.bonus" min="0" max="10" class="w-full">
                         </div>
                     </div>
                 </div>
+
+                <!-- Grading Formula Reference -->
+                 <div class="glass p-6 rounded-2xl relative overflow-hidden group">
+                    <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Applied Formula</h3>
+                    <div class="bg-[#0a0a0a] p-3 rounded-lg border border-gray-800 font-mono text-xs text-gray-400 leading-relaxed overflow-x-auto whitespace-pre-wrap">
+                        {{ currentCourse.formula }}
+                    </div>
+                 </div>
 
             </div>
 
             <!-- Right: Result -->
             <div class="lg:col-span-1">
                 <div class="sticky top-6">
-                    <div class="glass p-8 rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl shadow-indigo-500/10 border-indigo-500/20">
+                    <div class="glass p-8 rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl shadow-indigo-500/10 border-indigo-500/20 relative overflow-hidden">
                         
-                         <div class="w-32 h-32 rounded-full flex items-center justify-center text-6xl font-black mb-4 relative" :class="gradeColor">
-                            {{ finalGrade }}
-                            <div class="absolute inset-0 rounded-full border-4 opacity-20" :class="gradeBorder"></div>
-                        </div>
-                        <div class="text-2xl font-bold text-white mb-1">{{ formatNum(finalScore) }} <span class="text-sm text-gray-500 font-normal">/ 100</span></div>
-                        <div class="text-xs text-gray-500 uppercase tracking-widest mb-8">Total Score</div>
+                        <!-- Background Glow -->
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-900/10 pointer-events-none"></div>
 
-                        <!-- Breakdown -->
-                        <div class="w-full space-y-3">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Assignments</span>
-                                <span>{{ formatNum(breakdown.ga) }}</span>
+                        <div class="relative z-10">
+                            <div class="w-40 h-40 rounded-full flex items-center justify-center text-7xl font-black mb-4 relative mx-auto transition-all duration-500" :class="gradeColor">
+                                {{ finalGrade }}
+                                <div class="absolute inset-0 rounded-full border-[6px] opacity-20 border-current animate-pulse"></div>
+                                <div class="absolute inset-0 rounded-full border-[6px] opacity-60 border-t-current animate-spin" style="animation-duration: 3s;"></div>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">End Term</span>
-                                <span>{{ formatNum(breakdown.et) }}</span>
+                            
+                            <div class="text-4xl font-bold text-white mb-1 transition-all">{{ formatNum(finalScore) }}<span class="text-lg text-gray-500">%</span></div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest mb-8">Total Weighted Score</div>
+
+                            <!-- Status -->
+                            <div class="flex items-center justify-center gap-2 mb-6">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold border" :class="passStatus ? 'bg-green-500/10 border-green-500/30 text-green-400' : 'bg-red-500/10 border-red-500/30 text-red-400'">
+                                    {{ passStatus ? 'PASSED' : 'FAILED' }}
+                                </span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Others (Quiz/OPPE)</span>
-                                <span>{{ formatNum(breakdown.others) }}</span>
-                            </div>
-                             <div class="flex justify-between text-sm pt-2 border-t border-gray-800">
-                                <span class="text-gray-400">Pass Status</span>
-                                <span :class="passStatus ? 'text-green-500' : 'text-red-500'">{{ passStatus ? 'PASS' : 'FAIL' }}</span>
-                            </div>
+                            
+                            <!-- Mini Graph/Bars for Components -->
+                             <div class="w-full space-y-2 mt-4 pt-4 border-t border-gray-800">
+                                <div v-for="inp in currentCourse.inputs.filter(x => x.weight)" :key="inp.id" class="flex items-center gap-2 text-xs">
+                                    <span class="w-16 text-right text-gray-500 truncate">{{ inp.id }}</span>
+                                    <div class="flex-1 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                                        <div class="h-full bg-indigo-500" :style="{ width: ((scores[inp.id]/inp.max)*100) + '%' }"></div>
+                                    </div>
+                                    <span class="w-8 text-right text-gray-400">{{ scores[inp.id] }}</span>
+                                </div>
+                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -155,48 +144,77 @@
                     courses: [],
                     selectedCourseId: null,
                     currentCourse: null,
-                    scores: {
-                        ga: Array(12).fill(0),
-                        exams: [0, 0, 0, 0], // Stores Q1, Q2, OPPE1 etc in order
-                        et: 0,
-                        bonus: 0
-                    }
+                    scores: {} // Dynamic object { ID: value }
                 }
             },
             computed: {
-                avgGA() {
-                    if(!this.currentCourse) return 0;
-                    // Sort descending, take top N
-                    const validScores = this.scores.ga.slice(0, this.currentCourse.total_weeks);
-                    const sorted = [...validScores].sort((a,b) => b-a);
-                    const best = sorted.slice(0, this.currentCourse.best_of_weeks);
-                    const sum = best.reduce((a,b)=>a+b, 0);
-                    return sum / this.currentCourse.best_of_weeks;
-                },
+                // Calculate T using the formula string
                 result() {
-                    if(!this.currentCourse) return { total: 0, grade: 'U', breakdown: {ga:0, et:0, others:0}, pass: false };
-                    return this.calculateScore();
+                    if(!this.currentCourse) return { total: 0, grade: 'U', pass: false };
+
+                    // 1. Prepare Variables
+                    const context = {};
+                    this.currentCourse.inputs.forEach(i => {
+                        context[i.id] = this.scores[i.id] || 0;
+                    });
+                    
+                    // 2. Evaluate Formula
+                    let T = 0;
+                    try {
+                        // Safe evaluation: create function with keys as args
+                        const keys = Object.keys(context);
+                        const values = Object.values(context);
+                        // Using Function constructor to parse valid JS math expression
+                        // We must interpret Math directly or destructure it? 
+                        // Actually new Function runs in global scope usually, so Math is available.
+                        // But local vars aren't. We pass them as args.
+                        const calcFn = new Function(...keys, `return ${this.currentCourse.formula}`);
+                        T = calcFn(...values);
+                    } catch(e) {
+                         console.error("Formula Error", e);
+                         T = 0;
+                    }
+
+                    // 3. Round T
+                    T = Math.min(100, Math.max(0, T)); // Cap at 100
+
+                    // 4. Pass Logic (Simplified General Rule: T >= 40 AND F >= 40% of max F)
+                    const finalExam = this.currentCourse.inputs.find(i => i.id === 'F');
+                    let hasEndTermCheck = false;
+                    if(finalExam) {
+                         const fScore = context['F'] || 0;
+                         // Check if F < 40/100 equivalent
+                         // Use finalExam.max to normalize
+                         const ratio = fScore / finalExam.max;
+                         if(ratio < 0.4) hasEndTermCheck = true;
+                    }
+                    
+                    let pass = T >= 40;
+                    if(hasEndTermCheck) pass = false;
+
+                    // 5. Grade
+                    let grade = 'U';
+                    // Note: SEP 2025 doc mostly says S, A, B, C, D, E, U.
+                    if(!pass) grade = 'U';
+                    else if(T >= 90) grade = 'S';
+                    else if(T >= 80) grade = 'A';
+                    else if(T >= 70) grade = 'B';
+                    else if(T >= 60) grade = 'C';
+                    else if(T >= 50) grade = 'D';
+                    else if(T >= 40) grade = 'E';
+                    
+                    return { total: T, grade, pass };
                 },
                 finalScore() { return this.result.total; },
                 finalGrade() { return this.result.grade; },
-                breakdown() { return this.result.breakdown; },
                 passStatus() { return this.result.pass; },
                 gradeColor() {
                     const g = this.finalGrade;
                     if(g === 'S') return 'text-yellow-400';
                     if(g === 'A') return 'text-emerald-400';
-                    if(g === 'B') return 'text-blue-400';
-                    if(g === 'C') return 'text-purple-400';
+                    if(['B','C'].includes(g)) return 'text-blue-400';
                     if(g === 'D') return 'text-orange-400';
                     return 'text-red-500';
-                },
-                gradeBorder() {
-                     const g = this.finalGrade;
-                    if(g === 'S') return 'border-yellow-400';
-                    if(g === 'A') return 'border-emerald-400';
-                    if(['B','C'].includes(g)) return 'border-blue-400';
-                    if(g === 'D') return 'border-orange-400';
-                    return 'border-red-500';
                 }
             },
             mounted() {
@@ -208,6 +226,7 @@
                         const res = await fetch('./data.json');
                         this.courses = await res.json();
                         if(this.courses.length > 0) {
+                            // Default to first foundation course
                             this.selectedCourseId = this.courses[0].id;
                             this.loadCourse();
                         }
@@ -215,114 +234,20 @@
                 },
                 loadCourse() {
                     this.currentCourse = this.courses.find(c => c.id === this.selectedCourseId);
-                    // Reset scores but keep reasonable defaults
-                    this.scores.exams = new Array(this.currentCourse.qs.length).fill(0);
-                    this.scores.ga = new Array(12).fill(100); // Optimistic default
-                    this.scores.et = 50;
+                    this.scores = {};
+                    this.currentCourse.inputs.forEach(inp => {
+                        // Smart defaults
+                        if(inp.id.startsWith('Bonus')) this.scores[inp.id] = 0;
+                        else if(inp.id === 'F' || inp.id.includes('Qz') || inp.id.includes('OP')) this.scores[inp.id] = Math.floor(inp.max * 0.7);
+                        else this.scores[inp.id] = inp.max; // Full score for assignments default
+                    });
                 },
-                formatNum(n) { return (n || 0).toFixed(1); },
-                calculateScore() {
-                    const C = this.currentCourse;
-                    const GA = this.avgGA;
-                    const ET = this.scores.et;
-                    const E = this.scores.exams; // Array of exam scores
-                    
-                    let T = 0;
-                    let breakdown = { ga: 0, et: 0, others: 0 };
-
-                    // --- STRATEGIES ---
-                    // Helper: E[0] is usually Quiz1, E[1] is Quiz2.
-                    const Q1 = E[0] || 0;
-                    const Q2 = E[1] || 0;
-
-                    if (C.strategy.includes('theory')) {
-                        // Max(0.6F + 0.2Max(Q1,Q2), 0.4F + 0.2Q1 + 0.3Q2)
-                        const opt1 = 0.6 * ET + 0.2 * Math.max(Q1, Q2);
-                        const opt2 = 0.4 * ET + 0.2 * Q1 + 0.3 * Q2;
-                        
-                        const termComp = Math.max(opt1, opt2);
-                        T = (C.ga_weight * GA) + termComp;
-                        
-                        breakdown.ga = C.ga_weight * GA;
-                        breakdown.others = termComp - (Math.max(0.6, 0.4) * ET); // Approx breakdown
-                        breakdown.et = T - breakdown.ga - breakdown.others; // Remainder is ET component roughly
-
-                    } else if (C.strategy === 'sep25_python') {
-                        // 0.1GA_Obj + 0.1GA_Prog ... Simplified here as just 0.2GA total for now since we have one GA input
-                         // We will assume GA input covers both.
-                         // Formula: 0.1GA + 0.1Q1 + 0.4F + ...
-                         // E[0]=Q1, E[1]=OPPE1, E[2]=OPPE2
-                         const OPPE1 = E[1] || 0;
-                         const OPPE2 = E[2] || 0;
-                         
-                         // GA is practically 0.2 weight in Python usually (10 obj + 10 prog)
-                         // But data.json says ga_weight 0.1. Let's stick to data.json weights essentially.
-                         // But for python specifically, let's use the custom logic:
-                         // T = 0.1avgGA + 0.1Q1 + 0.4ET + 0.25Max(OP1,OP2) + 0.15Min(OP1,OP2)
-                         // Note: The data.json had "0.1GA_Obj + 0.1GA_Prog". We only have one GA input. Let's treat it as total GA.
-                         
-                         T = (0.2 * GA) + (0.1 * Q1) + (0.4 * ET) + (0.25 * Math.max(OPPE1,OPPE2)) + (0.15 * Math.min(OPPE1,OPPE2));
-                         breakdown.ga = 0.2 * GA;
-                         breakdown.et = 0.4 * ET;
-                         breakdown.others = T - breakdown.ga - breakdown.et;
-
-                    } else if (C.strategy === 'custom') {
-                        // Generic Fallback: Weighted Sum effectively
-                        // For Custom, we try to interpret "Max(Q1, Q2)" naively or just fallback to a standard distribution
-                        // Let's implement a "Standard max logic" used in many Dip courses:
-                        // 0.1GA + 0.4F + ...
-                        // Let's just do a rough approximation for 'custom' to avoid writing a parser.
-                        // We will assume: GA + ET + Average of Exams
-                        // This is NOT perfect but 'custom' varies too much.
-                        // BETTER APPROACH: specific overrides for common IDs if possible.
-                        
-                        // ID: mlt -> 0.1GA + 0.4F + Max(0.25(Q1+Q2), 0.4Max(Q1,Q2))
-                        if(C.id === 'mlt') {
-                             const term = Math.max(0.25*(Q1+Q2), 0.4*Math.max(Q1,Q2));
-                             T = 0.1*GA + 0.4*ET + term;
-                        }
-                        // ID: java -> 0.1GA + 0.3F + 0.2Max(PE) + 0.1Min(PE) + Max(...)
-                        else if(C.id === 'java') {
-                            const [Q1, Q2, PE1, PE2] = E; // Assuming order
-                            const peTerm = 0.2*Math.max(PE1, PE2) + 0.1*Math.min(PE1, PE2);
-                            const qTerm = Math.max(0.25*Math.max(Q1, Q2), 0.15*Q1 + 0.25*Q2);
-                            T = 0.1*GA + 0.3*ET + peTerm + qTerm;
-                        }
-                        else {
-                            // Default Fallback
-                            const remainingWeight = 1 - C.ga_weight - C.f_weight;
-                            // Distribute remaining evenly among exams
-                            const examAvg = E.reduce((a,b)=>a+b,0) / (E.length||1);
-                            T = (C.ga_weight * GA) + (C.f_weight * ET) + (remainingWeight * examAvg);
-                        }
-                    } else {
-                        // Fallback
-                         T = (C.ga_weight * GA) + (C.f_weight * ET) + ((1-C.ga_weight-C.f_weight) * 80);
-                    }
-
-                    // Bonus
-                    if(C.strategy.includes('bonus')) {
-                        T += (this.scores.bonus || 0);
-                    }
-
-                    // Pass Criteria
-                    // 1. T >= 40 (General)
-                    // 2. ET >= 40% of max ET marks (usually >= 40/100 scale here)
-                    const pass = T >= 40 && ET >= 40; // Simplified
-                    
-                    // Grade
-                    let grade = 'U';
-                    if(!pass) grade = 'U';
-                    else if(T >= 90) grade = 'S';
-                    else if(T >= 80) grade = 'A';
-                    else if(T >= 70) grade = 'B';
-                    else if(T >= 60) grade = 'C';
-                    else if(T >= 50) grade = 'D';
-                    else if(T >= 40) grade = 'E'; // Some courses use E
-                    else grade = 'U';
-
-                    return { total: T, grade, breakdown, pass };
-                }
+                resetScores() {
+                     this.currentCourse.inputs.forEach(inp => {
+                        this.scores[inp.id] = 0;
+                    });
+                },
+                formatNum(n) { return (n || 0).toFixed(1); }
             }
         }).mount('#app');
     </script>
