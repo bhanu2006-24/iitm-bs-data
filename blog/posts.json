@@ -7,7 +7,11 @@
     "author": "Admin",
     "date": "Sep 20, 2025",
     "readTime": "6 min read",
-    "tags": ["News", "Policy", "2025"]
+    "tags": [
+      "News",
+      "Policy",
+      "2025"
+    ]
   },
   {
     "id": "0",
@@ -17,7 +21,11 @@
     "author": "Admin",
     "date": "Sep 15, 2025",
     "readTime": "4 min read",
-    "tags": ["News", "Grading", "Crucial"]
+    "tags": [
+      "News",
+      "Grading",
+      "Crucial"
+    ]
   },
   {
     "id": "placement-2025",
@@ -27,7 +35,10 @@
     "author": "Placement_Insider",
     "date": "Sep 12, 2025",
     "readTime": "7 min read",
-    "tags": ["Career", "Money"]
+    "tags": [
+      "Career",
+      "Money"
+    ]
   },
   {
     "id": "stats-guide",
@@ -37,7 +48,10 @@
     "author": "Topper_Rohan",
     "date": "Aug 28, 2025",
     "readTime": "6 min read",
-    "tags": ["Study Guide", "Stats"]
+    "tags": [
+      "Study Guide",
+      "Stats"
+    ]
   },
   {
     "id": "7",
@@ -47,7 +61,10 @@
     "author": "Career_Rep",
     "date": "Sep 10, 2025",
     "readTime": "6 min read",
-    "tags": ["Career", "Internship"]
+    "tags": [
+      "Career",
+      "Internship"
+    ]
   },
   {
     "id": "8",
@@ -57,9 +74,35 @@
     "author": "Student_Story",
     "date": "Aug 22, 2025",
     "readTime": "5 min read",
-    "tags": ["Motivation", "Success Story"]
+    "tags": [
+      "Motivation",
+      "Success Story"
+    ]
   },
   {
-    "id": "3", "title": "Cracking Python OPPE: Speed is Key", "excerpt": "You know the logic, but can you type it fast enough? Tips to improve typing speed and common syntax errors to avoid.", "content": "Speed is key.", "author": "CodeWizard", "date": "Sep 28, 2024", "readTime": "8 min", "tags": ["Python", "Exam Hack"] 
+    "id": "3",
+    "title": "Cracking Python OPPE: Speed is Key",
+    "excerpt": "You know the logic, but can you type it fast enough? Tips to improve typing speed and common syntax errors to avoid.",
+    "content": "Speed is key.",
+    "author": "CodeWizard",
+    "date": "Sep 28, 2024",
+    "readTime": "8 min",
+    "tags": [
+      "Python",
+      "Exam Hack"
+    ]
+  },
+  {
+    "id": "1766557547822",
+    "title": "Checking is the ?? Data working",
+    "excerpt": "kyu batao",
+    "content": "<p> kaise ho bhai<p/>",
+    "author": "developer",
+    "date": "",
+    "tags": [
+      "bhaluu",
+      "sher"
+    ],
+    "readTime": "5 min read"
   }
 ]
