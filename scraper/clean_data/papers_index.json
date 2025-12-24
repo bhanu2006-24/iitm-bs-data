@@ -1,0 +1,16 @@
+[
+  {
+    "path": "clean_data/Quiz_1/CT/IIT_M_IMPROVEMENT_AN_EXAM_QIP4_13_July.json",
+    "name": "IIT M IMPROVEMENT AN EXAM QIP4 13 July",
+    "subject": "CT",
+    "exam": "Quiz 1",
+    "year": 2025
+  },
+  {
+    "path": "clean_data/Quiz_1/Maths2/IIT_M_IMPROVEMENT_AN_EXAM_QIP4_13_July.json",
+    "name": "IIT M IMPROVEMENT AN EXAM QIP4 13 July",
+    "subject": "Maths2",
+    "exam": "Quiz 1",
+    "year": 2025
+  }
+]

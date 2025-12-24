@@ -1,0 +1,452 @@
+{
+  "metadata": {
+    "exam": "Quiz 1",
+    "paper_name": "IIT M IMPROVEMENT AN EXAM QIP4 13 July",
+    "subject": "CT",
+    "total_marks": "1.00",
+    "duration": 4,
+    "year": 2025
+  },
+  "questions": [
+    {
+      "id": 95776,
+      "type": "MCQ",
+      "marks": "0.00",
+      "text": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"FOUNDATION LEVEL : COMPUTATIONAL </b><b>THINKING (COMPUTER BASED EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+      "images": [],
+      "options": [
+        {
+          "id": 253127,
+          "text": "YES",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253128,
+          "text": "NO",
+          "image": null,
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95777,
+      "type": "MCQ",
+      "marks": "0.00",
+      "text": "       ",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/40yCksqCbx80WOhTlAE83LwTfIr9YesvEMOGx78QbT6069C9Cr.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/ZWYKaPqMmV37aql6RlBPJm8fgbwBWMVzVjEWCYyPv22QIoqXZH.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/40yCksqCbx80WOhTlAE83LwTfIr9YesvEMOGx78QbT6069C9Cr.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/ZWYKaPqMmV37aql6RlBPJm8fgbwBWMVzVjEWCYyPv22QIoqXZH.png"
+      ],
+      "options": [
+        {
+          "id": 253129,
+          "text": "Useful Data has been mentioned above.",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253130,
+          "text": "This data attachment is just for a reference & not for an evaluation.",
+          "image": null,
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95778,
+      "type": "MCQ",
+      "marks": "5.00",
+      "text": "Consider the flowchart shown below: \n Consider the flowchart shown below: \n  Which of the following pseudocode is correct for the given flowchart?",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/8LmRqkfdn3K1hM9XdE8mWfeubzAN5xdB82yMaIeU6t1MChrM21.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/8LmRqkfdn3K1hM9XdE8mWfeubzAN5xdB82yMaIeU6t1MChrM21.png"
+      ],
+      "options": [
+        {
+          "id": 253131,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/7JErjkNlDLjKSmG2i61gDzFCUhO3jjpL0hvehzkOtN6Et3Gy5F.png",
+          "is_correct": false
+        },
+        {
+          "id": 253132,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/kUaSd2GFjEl84pRXtBrOAY3RubwX1gJrLPHjpmAdXAzmUnHLY9.png",
+          "is_correct": false
+        },
+        {
+          "id": 253133,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/p4Dc22S87bVNET5mciMghuD7YaqwR7OPEccv4VL8w4b63MC6RN.png",
+          "is_correct": true
+        },
+        {
+          "id": 253134,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/XXnjMJvoFveTG2lVRW23wJBBdKhUzkX5GH2BUpAaMZDCL0Eo95.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95779,
+      "type": "MCQ",
+      "marks": "5.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/gkFpgAq3z3w4sJch1kAwysZPhkMdfbhnQAODEVGD7aix2d9Cpz.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/gkFpgAq3z3w4sJch1kAwysZPhkMdfbhnQAODEVGD7aix2d9Cpz.png"
+      ],
+      "options": [
+        {
+          "id": 253135,
+          "text": "The number of sentences in which at least one word has the highest vowel-to-letter ratio.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253136,
+          "text": "The number of sentences in which the last word has the lowest vowel-to-letterratio.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253137,
+          "text": "The number of sentences that contain exactly one word with a vowel-to-letterratio equal to the minimum ratio found in the entire dataset.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253138,
+          "text": "The number of sentences that end with a word whose vowel-to-letter ratioequals the minimum ratio found in the dataset.",
+          "image": null,
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95780,
+      "type": "MCQ",
+      "marks": "4.00",
+      "text": "Consider the \"Scores\" dataset. The procedure <b>AvgMarks(gen)</b> computes the average Chemistry marks of all students who belong to the gender <b>gen</b>.  \nWhich of the following is the correct implementation of the procedure <b>AvgMarks(gen)</b>?",
+      "images": [],
+      "options": [
+        {
+          "id": 253139,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/wPJDhpXDUhhp0t7QcHzHoCnDy8cMVGzO2vptCoVOADRWFGjomT.png",
+          "is_correct": false
+        },
+        {
+          "id": 253140,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/EJQ2ZumbO1jk073HZCZVMuWG8xytAUWTUoYiunKef4isqV0bPk.png",
+          "is_correct": true
+        },
+        {
+          "id": 253141,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/6gXgZKslxxZU06oNTj43pGnxAyIRMb1RqP7ic12dPuSh2Ndfmc.png",
+          "is_correct": false
+        },
+        {
+          "id": 253142,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/KVCNTIUAB8J7OubOomqt5Rn78f9HJqaDUYT1vOL81m75C7Th5v.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95781,
+      "type": "MCQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/eOgVgDMkfpoZOYRwESPj7RiYpM4jwcRboz77JWdTtU12Q8JhI7.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/eOgVgDMkfpoZOYRwESPj7RiYpM4jwcRboz77JWdTtU12Q8JhI7.png"
+      ],
+      "options": [
+        {
+          "id": 253143,
+          "text": "<b>count</b> represents the number of words starting with 'mo' in the first sentenceof the dataset.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253144,
+          "text": "<b>count</b> represents the number of words starting with 'mo' in the entire dataset.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253145,
+          "text": "<b>count</b> represents the number of sentences in which the first word starts with'mo'.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253146,
+          "text": "<b>count</b> represents the number of sentences in which the first word starts with'mo', except the first sentence of the dataset.",
+          "image": null,
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95782,
+      "type": "MCQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/73fvDsXOb1FEgZN7hh6P5RQs2xHu2toUtT36lBSWNfgMtSmzg2.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/73fvDsXOb1FEgZN7hh6P5RQs2xHu2toUtT36lBSWNfgMtSmzg2.png"
+      ],
+      "options": [
+        {
+          "id": 253147,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/vtjahZVWLGjrHSMAKHXTBo29DrNHOGwQYaRi4PE0PMYDmcP52x.png",
+          "is_correct": false
+        },
+        {
+          "id": 253148,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/tgwwIBQ9A1U5IXWrZrddo1Jx2s9h7ywXOHCcPX7Fu0AF5Sc9bE.png",
+          "is_correct": false
+        },
+        {
+          "id": 253149,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/9YZKMvdgBWTEMzaSvollLjyzJFJNh6QkSsqk1ZbIOZ3SQMsbCJ.png",
+          "is_correct": true
+        },
+        {
+          "id": 253150,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/wILiDZf3Mxy3Qijo03AINVroMlHWktXTPRJQ2U0uPT5JxmlxLp.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95783,
+      "type": "MSQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/xiFwvUiDGA2zPHkvpg9I8TtfqECprcVAz7h4QSSm4SssXkULLx.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/xiFwvUiDGA2zPHkvpg9I8TtfqECprcVAz7h4QSSm4SssXkULLx.png"
+      ],
+      "options": [
+        {
+          "id": 253151,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/SQlSR8A91FlrCkWavPrKYXDWwabThS7cPu6vrYync117HpGdeA.png",
+          "is_correct": true
+        },
+        {
+          "id": 253152,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/bQZp6sV7h41YxO3Np2lom11aeZoQk2rhHV6cGVr1iaPw9EJlCn.png",
+          "is_correct": false
+        },
+        {
+          "id": 253153,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/QdK4JIY9U9JM7D2jmRsgG0M36iALGwvzVlY5yGJKCGAq5Vzet3.png",
+          "is_correct": false
+        },
+        {
+          "id": 253154,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/QVeFYiAOHrgzYnAC043zkrBPEyHcZ4BdrUIl7Xx9OdqRtOPVkS.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95784,
+      "type": "MSQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/uGuC69E17PrEqqt1CYfbr5fsX7ls3lGRw7cRkDv4D1NeqILSnj.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/uGuC69E17PrEqqt1CYfbr5fsX7ls3lGRw7cRkDv4D1NeqILSnj.png"
+      ],
+      "options": [
+        {
+          "id": 253155,
+          "text": "<b>A</b> represents number of male students whose total marks are greater than250.",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253156,
+          "text": "<b>A</b> represents number of students whose total marks are greater than 250.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253157,
+          "text": "<b>B</b> represents number of male students whose total marks are less than 200.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253158,
+          "text": "The value of <b>B</b> will always be 0.",
+          "image": null,
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95785,
+      "type": "MSQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/jKm9YeOvUMycdKxh1HTHUsZsaWND1QdraLjVOG8SVdnCqrpj1C.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/jKm9YeOvUMycdKxh1HTHUsZsaWND1QdraLjVOG8SVdnCqrpj1C.png"
+      ],
+      "options": [
+        {
+          "id": 253159,
+          "text": "Line 1: Incorrect initialization of count",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253160,
+          "text": "Line 9: Incorrect assignment of Flag",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253161,
+          "text": "Line 16: Incorrect conditional statement",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253162,
+          "text": "No error",
+          "image": null,
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95786,
+      "type": "MSQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/WXWXCnZa1Hr7pgDKhz9yzTaHYKT8KzjywGraNE5T45AFBmbW4d.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/WXWXCnZa1Hr7pgDKhz9yzTaHYKT8KzjywGraNE5T45AFBmbW4d.png"
+      ],
+      "options": [
+        {
+          "id": 253163,
+          "text": "<b>silver_count</b> will equal the number of silver medals that were awarded whenthe host country was not the USA.",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253164,
+          "text": "If <b>gender_check</b> is equal to silver_count, then all silver medal winners inevents not hosted by the USA were male.",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253165,
+          "text": "<b>silver_count</b> counts the total number of silver medals won by athletes who donot belong to the USA.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253166,
+          "text": "<b>silver_count</b> counts the total number of silver medals won by male athletes inevents hosted in the USA.",
+          "image": null,
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95787,
+      "type": "MSQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/MAaGBIHSkGXZ17WEspeqeoYNZzh90ZbJwO5iBi4Jy98uKc8yZw.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/MAaGBIHSkGXZ17WEspeqeoYNZzh90ZbJwO5iBi4Jy98uKc8yZw.png"
+      ],
+      "options": [
+        {
+          "id": 253167,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/Jpt1WHhzOjZoE8Xzf1bh7UMDNSsLm2T1XmGOduv8e7ERUgyHmT.png",
+          "is_correct": true
+        },
+        {
+          "id": 253168,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/YgWmut73XgfKfJRRj4oKIzioBUwngQWcYnj0WF4uAtVsx01XEf.png",
+          "is_correct": false
+        },
+        {
+          "id": 253169,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/8T1pDkRPNjZzYOSb7xwqqCnQzt7CiVfxgCAZtrUpXR4JouqK5u.png",
+          "is_correct": false
+        },
+        {
+          "id": 253170,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/rUAy3ls89uaq8EGgM2dLmpYVhdBx65kRK0MbpIFvBXsxYp1R0X.png",
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95788,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "The following pseudocode is executed using the \u201cWords\u201d dataset. \n The following pseudocode is executed using the \u201cWords\u201d dataset. \n",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/EozZCf78jtw40ZXpY75MjkBngKBoACTssJEGJaE7fJH0ZUjRTQ.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/EozZCf78jtw40ZXpY75MjkBngKBoACTssJEGJaE7fJH0ZUjRTQ.png"
+      ],
+      "options": [],
+      "correct_answer": "3"
+    },
+    {
+      "id": 95789,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/qcAnBZMe2JCFo013rebjWvCCzF7pBQWaoT3WqN1PRahC3dIw5R.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/qcAnBZMe2JCFo013rebjWvCCzF7pBQWaoT3WqN1PRahC3dIw5R.png"
+      ],
+      "options": [],
+      "correct_answer": "14"
+    }
+  ]
+}

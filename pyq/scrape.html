@@ -118,6 +118,16 @@
         const loading = document.getElementById('loading-overlay');
         const statusMsg = document.getElementById('status-msg');
 
+        // Automatic Environment Detection
+        const API_BASE = window.location.port === '5000' ? '' : 'http://localhost:5000';
+        
+        if (window.location.port !== '5000') {
+            const banner = document.createElement('div');
+            banner.className = 'bg-yellow-500/10 border-b border-yellow-500/20 text-yellow-400 text-xs px-4 py-2 text-center';
+            banner.innerHTML = `<i class="fas fa-exclamation-triangle mr-2"></i> You are running via Live Server (${window.location.port}). For best results, use <code class="bg-yellow-500/20 px-1 rounded">python app.py</code> and open <a href="http://localhost:5000/scrape.html" class="underline hover:text-white">localhost:5000</a>. API calls will be redirected to localhost:5000.`;
+            document.body.prepend(banner);
+        }
+
         // Scrape Handler
         scrapeBtn.addEventListener('click', async () => {
             const url = urlInput.value.trim();
@@ -125,7 +135,7 @@
 
             setLoading(true);
             try {
-                const res = await fetch('/api/scrape', {
+                const res = await fetch(`${API_BASE}/api/scrape`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({ url })
@@ -157,7 +167,7 @@
 
                 setLoading(true);
                 
-                const res = await fetch('/api/save', {
+                const res = await fetch(`${API_BASE}/api/save`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({ data: jsonData })

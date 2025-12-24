@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 import os
 import json
 import scraper
@@ -7,6 +8,7 @@ import time
 import glob
 
 app = Flask(__name__, static_folder='.', static_url_path='')
+CORS(app) # Enable CORS for development flexibility
 
 @app.route('/')
 def root():

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Practice CBT</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent: #2196F3; /* Blue for selection */
+            --success: #10b981; /* Green for submit/correct */
+            --danger: #ef4444; /* Red for wrong */
+            --review: #8b5cf6; /* Purple for review */
+            --border: #333;
+            --secondary-text: #b0b0b0;
+            --hover-bg: #2c2c2c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            flex-shrink: 0;
+        }
+
+        .brand { 
+            font-weight: bold; 
+            font-size: 1.1rem; 
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .exam-meta {
+            font-size: 0.9em;
+            color: var(--secondary-text);
+            margin-left: 15px;
+            padding-left: 15px;
+            border-left: 1px solid var(--border);
+        }
+
+        .timer-box {
+            background: #000;
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            border: 1px solid var(--border);
+        }
+
+        .submit-btn {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .submit-btn:hover { opacity: 0.9; }
+
+        /* --- Layout --- */
+        #main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        #dashboard {
+            width: 100%;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        /* --- Question Area (Left) --- */
+        #question-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .q-header-strip {
+            padding: 15px 30px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-color);
+        }
+
+        .q-scroll-content {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .q-text { font-size: 1.15rem; line-height: 1.6; margin-bottom: 20px; }
+        .q-img { max-width: 100%; border: 1px solid var(--border); border-radius: 4px; margin: 10px 0; }
+
+        .options-list { display: flex; flex-direction: column; gap: 12px; margin-top: 25px; }
+        
+        .option-item {
+            display: flex;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            min-height: 50px;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+        
+        .option-item:hover { border-color: #666; }
+        
+        .option-item.selected {
+            border-color: var(--accent);
+            background: rgba(33, 150, 243, 0.1);
+        }
+
+        .option-key {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-right: 1px solid var(--border);
+            background: rgba(255,255,255,0.03);
+        }
+        .option-item.selected .option-key { background: var(--accent); color: white; border-color: var(--accent); }
+        
+        .option-val { flex: 1; padding: 15px; display: flex; align-items: center; }
+
+        /* Review Mode Styling */
+        .option-item.correct-answer { border-color: var(--success); background: rgba(16, 185, 129, 0.1); }
+        .option-item.wrong-answer { border-color: var(--danger); background: rgba(239, 68, 68, 0.1); }
+
+
+        .sa-input {
+            width: 100%;
+            padding: 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .sa-input:focus { outline: none; border-color: var(--accent); }
+
+
+        /* --- Sidebar (Right) --- */
+        #sidebar {
+            width: 320px;
+            background: var(--card-bg);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-header {
+            padding: 15px;
+            background: #252526;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .palette-container {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .p-item {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        
+        .p-item:hover { opacity: 0.8; }
+        
+        /* Palette States */
+        .p-item.current { border: 2px solid white; }
+        .p-item.answered { background: var(--success); color: white; clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); /* Rough shape */ border-radius: 4px 4px 20px 20px;}
+        .p-item.not-answered { background: var(--danger); color: white; border-radius: 4px 4px 20px 20px; }
+        .p-item.review { background: var(--review); color: white; border-radius: 50%; }
+        .p-item.ans-review { background: var(--review); color: white; border-radius: 50%; position: relative; }
+        .p-item.ans-review::after { content:''; position: absolute; bottom: 2px; right: 50%; transform: translateX(50%); width: 4px; height: 4px; background: var(--success); border-radius: 50%; }
+
+        .legend {
+            padding: 15px;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .l-item { display: flex; align-items: center; gap: 6px; }
+        .dot { width: 12px; height: 12px; border-radius: 2px; }
+
+        /* --- Footer Controls --- */
+        footer {
+            height: 70px;
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            background: #333;
+            color: white;
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .btn:hover { background: #444; }
+        
+        .btn-primary { background: var(--accent); border-color: var(--accent); }
+        .btn-primary:active { transform: translateY(1px); }
+
+        /* Dashboard Card */
+        .paper-card {
+            background: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+        }
+        .paper-card:hover { border-color: var(--accent); }
+
+        /* Helper Classes */
+        .hidden { display: none !important; }
+        .badge { background: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; margin-left: 10px; }
+
+        /* Result View */
+        .result-overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: rgba(16, 185, 129, 0.9);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="brand">
+        <button id="back-home-btn" class="btn hidden" style="padding: 5px 10px;">←</button>
+        <span style="background:var(--accent); color:white; padding: 2px 6px; border-radius: 4px;">QP</span>
+        <span>Quiz Practice</span>
+        <span id="exam-meta" class="exam-meta hidden"></span>
+    </div>
+
+    <div id="active-exam-controls" class="hidden" style="display: flex; align-items: center;">
+        <div class="timer-box" id="timer">00:00:00</div>
+        <button class="submit-btn" onclick="submitExam()">Submit</button>
+    </div>
+</header>
+
+
+<!-- Dashboard (Library) -->
+<div id="dashboard">
+    <h2 style="margin-bottom: 20px;">Library</h2>
+    <div id="paper-list">Loading...</div>
+</div>
+
+
+<!-- CBT Interface -->
+<div id="cbt-container" class="hidden" style="flex: 1; display: flex; overflow: hidden;">
+    
+    <!-- Left: Question -->
+    <div id="question-area">
+        <div class="q-header-strip">
+            <div style="font-weight: bold;">Question <span id="q-num-disp">1</span></div>
+            <div>
+                <span class="badge" id="q-type-badge">MCQ</span>
+                <span class="badge" id="q-marks-badge">+4, -0</span>
+                <span class="badge" style="background:transparent; border:1px solid #666; cursor:pointer;" onclick="toggleSolution()" id="sol-toggle-btn">Show Solution</span>
+            </div>
+        </div>
+        
+        <div class="q-scroll-content">
+            <div id="q-content">
+                <!-- Question Text/Img injected here -->
+            </div>
+            
+            <div id="input-area">
+                <!-- Options or Text Input injected here -->
+            </div>
+
+            <div id="solution-box" class="hidden" style="margin-top: 30px; padding: 20px; background: #222; border: 1px dashed #666; border-radius: 6px;">
+                <h4 style="margin-top:0; color: var(--success);">Correct Answer</h4>
+                <div id="sol-content"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn" onclick="clearResponse()">Clear Response</button>
+                <button class="btn" onclick="markReview()">Mark for Review</button>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn" onclick="prevQuestion()" id="btn-prev">Previous</button>
+                <button class="btn btn-primary" onclick="nextQuestion()" id="btn-next">Save & Next</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Right: Sidebar -->
+    <div id="sidebar">
+        <div class="side-header">Question Palette</div>
+        <div class="palette-container">
+            <div class="palette-grid" id="palette-grid">
+                <!-- Grid items -->
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="l-item"><div class="dot" style="background:#10b981"></div> Answered</div>
+            <div class="l-item"><div class="dot" style="background:#ef4444"></div> Not Answered</div>
+            <div class="l-item"><div class="dot" style="background:#333"></div> Not Visited</div>
+            <div class="l-item"><div class="dot" style="background:#8b5cf6"></div> Mark Review</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // --- STATE ---
+    let allPapers = [];
+    let currentPaper = null;
+    let questions = [];
+    let currentQIndex = 0;
+    
+    // User response state
+    // responses[qIndex] = { 
+    //   status: 'visited'|'answered'|'review'|'ans-review', 
+    //   value: [optIndex] or "text",
+    //   type: 'MCQ'|'MSQ'|'SA'
+    // }
+    let responses = {};
+    let isReviewMode = false;
+    let timerInterval = null;
+    let secondsElapsed = 0;
+
+    // --- INIT ---
+    fetchPapers();
+
+    async function fetchPapers() {
+        try {
+            const res = await fetch('clean_data/papers_index.json');
+            allPapers = await res.json();
+            renderDashboard();
+        } catch (e) {
+            document.getElementById('paper-list').innerHTML = "Error loading library.";
+        }
+    }
+
+    function renderDashboard() {
+        if(allPapers.length === 0) {
+            document.getElementById('paper-list').innerHTML = "No papers found.";
+            return;
+        }
+        const html = allPapers.map(p => `
+            <div class="paper-card" onclick="startExam('${p.path}')">
+                <div style="font-weight:bold; font-size:1.1rem; margin-bottom:5px;">${p.name}</div>
+                <div style="color:#aaa;">${p.subject} • ${p.exam} • ${p.year || ''}</div>
+            </div>
+        `).join('');
+        document.getElementById('paper-list').innerHTML = html;
+    }
+
+    async function startExam(path) {
+        try {
+            const res = await fetch(path);
+            currentPaper = await res.json();
+            questions = currentPaper.questions;
+            
+            // Reset State
+            currentQIndex = 0;
+            responses = {};
+            isReviewMode = false;
+            secondsElapsed = 0;
+            questions.forEach((q, i) => {
+                responses[i] = { status: 'not-visited', value: null, type: q.type };
+            });
+
+            // UI Switch
+            document.getElementById('dashboard').style.display = 'none';
+            document.getElementById('cbt-container').classList.remove('hidden');
+            document.getElementById('cbt-container').style.display = 'flex'; // override hidden class nature if conflict
+            document.getElementById('active-exam-controls').classList.remove('hidden');
+            document.getElementById('back-home-btn').classList.remove('hidden');
+            document.getElementById('exam-meta').innerText = currentPaper.metadata.paper_name;
+            document.getElementById('exam-meta').classList.remove('hidden');
+            document.querySelector('.submit-btn').innerText = "Submit";
+            document.querySelector('.submit-btn').disabled = false;
+            document.getElementById('sol-toggle-btn').style.display = 'none'; // Hide solution button initially
+
+            // Start Timer
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                secondsElapsed++;
+                const h = Math.floor(secondsElapsed / 3600).toString().padStart(2,0);
+                const m = Math.floor((secondsElapsed % 3600) / 60).toString().padStart(2,0);
+                const s = (secondsElapsed % 60).toString().padStart(2,0);
+                document.getElementById('timer').innerText = `${h}:${m}:${s}`;
+            }, 1000);
+
+            loadQuestion(0);
+            updatePalette();
+
+        } catch (e) {
+            console.error(e);
+            alert("Failed to load paper.");
+        }
+    }
+
+    document.getElementById('back-home-btn').onclick = () => {
+        if(confirm("Exit exam? Progress will be lost.")) {
+            location.reload(); 
+        }
+    };
+
+    // --- CORE EXAM LOGIC ---
+
+    function loadQuestion(index) {
+        currentQIndex = index;
+        const q = questions[index];
+        const resp = responses[index];
+
+        // Update Visit Status if not answered
+        if(resp.status === 'not-visited') {
+            resp.status = 'not-answered';
+        }
+
+        // Header
+        document.getElementById('q-num-disp').innerText = index + 1;
+        document.getElementById('q-type-badge').innerText = q.type;
+        document.getElementById('q-marks-badge').innerText = `${q.marks || 0} Marks`;
+
+        // Content
+        let contentHtml = `<div class="q-text">${q.text || ''}</div>`;
+        if(q.images && q.images.length) {
+            contentHtml += q.images.map(src => `<img src="${src}" class="q-img">`).join('');
+        }
+        document.getElementById('q-content').innerHTML = contentHtml;
+
+        // Input Area
+        let inputHtml = '';
+        
+        if (q.type === 'MCQ' || q.type === 'MSQ') {
+            inputHtml = `<div class="options-list">`;
+            q.options.forEach((opt, idx) => {
+                const isSelected = Array.isArray(resp.value) && resp.value.includes(idx);
+                
+                // Review Mode Coloring
+                let extraClass = '';
+                if(isReviewMode) {
+                    if(opt.is_correct) extraClass += ' correct-answer';
+                    else if(isSelected && !opt.is_correct) extraClass += ' wrong-answer';
+                }
+
+                inputHtml += `
+                <div class="option-item ${isSelected ? 'selected' : ''} ${extraClass}" onclick="handleOptionClick(${idx})">
+                    <div class="option-key">${String.fromCharCode(65 + idx)}</div>
+                    <div class="option-val">
+                        ${opt.text ? `<div>${opt.text}</div>` : ''}
+                        ${opt.image ? `<div style="margin-left:10px;"><img src="${opt.image}" style="max-height:100px;"></div>` : ''}
+                    </div>
+                </div>`;
+            });
+            inputHtml += `</div>`;
+        } else {
+            // SA / Numeric
+            let storedVal = resp.value || '';
+            let extraStyle = '';
+            if(isReviewMode) {
+                // Show Correct Answer in placeholder or below
+                 // handled by solution box
+            }
+            inputHtml = `<input type="text" class="sa-input" placeholder="Type your answer..." value="${storedVal}" oninput="handleTextInput(this.value)" ${isReviewMode ? 'disabled' : ''}>`;
+        }
+        
+        document.getElementById('input-area').innerHTML = inputHtml;
+
+        // Solution Box (Review Mode)
+        const solBox = document.getElementById('solution-box');
+        const solContent = document.getElementById('sol-content');
+        
+        if(isReviewMode) {
+            // Populate solution logic
+            let solTxt = '';
+            if(q.correct_answer) solTxt = q.correct_answer; // From SA logic
+            else if(q.options) {
+                const correctIndices = q.options.map((o,i)=>o.is_correct ? String.fromCharCode(65+i) : null).filter(x=>x);
+                solTxt = "Option " + correctIndices.join(', ');
+            }
+            solContent.innerHTML = `<strong>${solTxt}</strong>`;
+            
+            // Only show if toggled or default? Let's hide by default and let toggle work
+             solBox.classList.add('hidden'); // Reset
+        } else {
+            solBox.classList.add('hidden');
+        }
+
+        // Nav Buttons
+        document.getElementById('btn-prev').disabled = (index === 0);
+        document.getElementById('btn-next').innerText = (index === questions.length - 1) ? "Submit" : "Save & Next";
+        
+        updatePalette();
+    }
+
+    function handleOptionClick(optIdx) {
+        if(isReviewMode) return;
+
+        const q = questions[currentQIndex];
+        const resp = responses[currentQIndex];
+        
+        if (q.type === 'MCQ') {
+            resp.value = [optIdx];
+        } else if (q.type === 'MSQ') {
+            if(!resp.value) resp.value = [];
+            if(resp.value.includes(optIdx)) {
+                resp.value = resp.value.filter(i => i !== optIdx);
+            } else {
+                 resp.value.push(optIdx);
+            }
+        }
+        
+        if(resp.value && resp.value.length > 0) resp.status = 'answered';
+        else resp.status = 'not-answered';
+
+        loadQuestion(currentQIndex); // Re-render to show selection
+    }
+
+    function handleTextInput(val) {
+        if(isReviewMode) return;
+        const resp = responses[currentQIndex];
+        resp.value = val;
+        
+        if(val && val.trim().length > 0) resp.status = 'answered';
+        else resp.status = 'not-answered';
+        
+        updatePalette();
+    }
+
+    function nextQuestion() {
+        if(currentQIndex < questions.length - 1) {
+            loadQuestion(currentQIndex + 1);
+        } else {
+            submitExam();
+        }
+    }
+
+    function prevQuestion() {
+        if(currentQIndex > 0) {
+            loadQuestion(currentQIndex - 1);
+        }
+    }
+
+    function clearResponse() {
+        if(isReviewMode) return;
+        responses[currentQIndex].value = null;
+        responses[currentQIndex].status = 'not-answered';
+        loadQuestion(currentQIndex);
+    }
+
+    function markReview() {
+        if(isReviewMode) return;
+        const resp = responses[currentQIndex];
+        if(resp.status === 'answered') resp.status = 'ans-review';
+        else resp.status = 'review';
+        updatePalette();
+        if(currentQIndex < questions.length - 1) loadQuestion(currentQIndex + 1);
+    }
+
+    function updatePalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = questions.map((q, i) => {
+            const r = responses[i];
+            let classes = 'p-item';
+            if(i === currentQIndex) classes += ' current';
+            if(r.status) classes += ' ' + r.status;
+            
+            return `<div class="${classes}" onclick="loadQuestion(${i})">${i+1}</div>`;
+        }).join('');
+    }
+
+    // --- SUBMISSION ---
+
+    function submitExam() {
+        if(isReviewMode) return;
+        if(!confirm("Are you sure you want to submit?")) return;
+
+        clearInterval(timerInterval);
+        isReviewMode = true;
+        
+        // Calculate Score
+        let correctCount = 0;
+        let score = 0;
+        
+        questions.forEach((q, i) => {
+            const userVal = responses[i].value;
+            let isCorrect = false;
+
+            if(q.type === 'MCQ' || q.type === 'MSQ') {
+                 // Get correct opt indices
+                 const correctIndices = q.options.map((o, idx) => o.is_correct ? idx : -1).filter(x => x !== -1);
+                 
+                 if(userVal && Array.isArray(userVal)) {
+                     // Sort both and compare stringified
+                     const u = [...userVal].sort().toString();
+                     const c = [...correctIndices].sort().toString();
+                     if(u === c) isCorrect = true;
+                 }
+            } else if (q.type === 'SA') {
+                // simple string check matches correct_answer
+                if(userVal && q.correct_answer && userVal.trim() === q.correct_answer.toString().trim()) {
+                    isCorrect = true;
+                }
+                // Handle range logic if we stored it? Currently clean_data stores string "3 - 5" or "3"
+                // This exact match is a bit brittle for ranges but fine for now.
+            }
+            
+            if(isCorrect) {
+                 correctCount++;
+                 score += parseFloat(q.marks || 0);
+                 responses[i].status = 'answered'; // Use Green for correct interpretation visually? 
+                 // Actually palette logic is strict about 'answered', we shouldn't change status key semantics.
+                 // We will repurpose palette colors for result view maybe?
+                 // Let's just keep palette as "what user did".
+            }
+        });
+
+        alert(`Exam Submitted!\nScore: ${score}\nCorrect: ${correctCount}/${questions.length}`);
+        
+        // Update UI for Review
+        document.querySelector('.submit-btn').innerText = "Result Mode";
+        document.querySelector('.submit-btn').disabled = true;
+        document.getElementById('sol-toggle-btn').style.display = 'inline-block';
+        loadQuestion(currentQIndex); // Reload to show coloring
+    }
+    
+    function toggleSolution() {
+        document.getElementById('solution-box').classList.toggle('hidden');
+    }
+
+</script>
+
+</body>
+</html>

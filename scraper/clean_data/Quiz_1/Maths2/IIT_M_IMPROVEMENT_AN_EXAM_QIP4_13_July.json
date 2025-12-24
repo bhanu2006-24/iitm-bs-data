@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "exam": "Quiz 1",
+    "paper_name": "IIT M IMPROVEMENT AN EXAM QIP4 13 July",
+    "subject": "Maths2",
+    "total_marks": "1.00",
+    "duration": 4,
+    "year": 2025
+  },
+  "questions": [
+    {
+      "id": 95986,
+      "type": "MCQ",
+      "marks": "0.00",
+      "text": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"FOUNDATION LEVEL : MATHEMATICS FOR DATA </b><b>SCIENCE II (COMPUTER BASED EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+      "images": [],
+      "options": [
+        {
+          "id": 253610,
+          "text": "YES",
+          "image": null,
+          "is_correct": true
+        },
+        {
+          "id": 253611,
+          "text": "NO",
+          "image": null,
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95987,
+      "type": "MCQ",
+      "marks": "2.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/n0uzuyQ1dKmi8JU2x0s34CxpG5B8qDosFCUhTmcMU7Ytdy4ulX.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/n0uzuyQ1dKmi8JU2x0s34CxpG5B8qDosFCUhTmcMU7Ytdy4ulX.png"
+      ],
+      "options": [
+        {
+          "id": 253612,
+          "text": "Both P and Q are true.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253613,
+          "text": "P is true and Q is false.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253614,
+          "text": "P is false and Q is true.",
+          "image": null,
+          "is_correct": false
+        },
+        {
+          "id": 253615,
+          "text": "Both P and Q are false.",
+          "image": null,
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95988,
+      "type": "MCQ",
+      "marks": "3.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/SsuHrexXTV4n9etME5g5y1lWbFxnDvyos2eiRba52vd4lod2ri.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/SsuHrexXTV4n9etME5g5y1lWbFxnDvyos2eiRba52vd4lod2ri.png"
+      ],
+      "options": [
+        {
+          "id": 253616,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/Q65ugcc5SMfwQhsb0ZfET53DgSSduDAbvjBUNSIj5JHjm4ZSdS.png",
+          "is_correct": false
+        },
+        {
+          "id": 253617,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/hkNyzWJOhBLCJRXhq7WmnUMzXgrs2ScDSLXh01gGJtDTAGAF6P.png",
+          "is_correct": false
+        },
+        {
+          "id": 253618,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/5D8gnwBLfStdPq7dQqXdHlGb0L4ZCkpE4YZ2OCjeAoG6z87O7I.png",
+          "is_correct": true
+        },
+        {
+          "id": 253619,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/Pl00QEP8iru013syXvb3WdlSyzN8hrXGLGBxN69dqW9PdiuLxq.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95989,
+      "type": "MCQ",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/633lH1dG7H6iBuICtWBkp8FhOaNqbFGFi944fxLXPG128BvAQZ.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/633lH1dG7H6iBuICtWBkp8FhOaNqbFGFi944fxLXPG128BvAQZ.png"
+      ],
+      "options": [
+        {
+          "id": 253620,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/6VCUmeBHnfVd0UQafZfZMAoHuuDHgboLu0Pdkpp6GW1bqDQREm.png",
+          "is_correct": false
+        },
+        {
+          "id": 253621,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/bkzo8MFwfZMuRVUSkbitphTkvxFJtg5vkOToNY2UJMKiTUVywH.png",
+          "is_correct": false
+        },
+        {
+          "id": 253622,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/SO1Cqi0Lhy7nb2cR0qpTYMfhus1qmO5yCcwM0AWhYUMyxHz3nh.png",
+          "is_correct": true
+        },
+        {
+          "id": 253623,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/UIxKqb22UZfCTxPefKHE7EdEFLRxKHPSKFkskPmMIxfGvV7lNe.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95990,
+      "type": "MSQ",
+      "marks": "3.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/dyS2FHvg8W552DTSDXpHegPw0s7g79oPZOr62XSh6XE9OC7yUc.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/dyS2FHvg8W552DTSDXpHegPw0s7g79oPZOr62XSh6XE9OC7yUc.png"
+      ],
+      "options": [
+        {
+          "id": 253624,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/zyslCuTAvMtBRzYGb4GUVNdx745J2lA53IzdCagyTNphchxOpJ.png",
+          "is_correct": true
+        },
+        {
+          "id": 253625,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/mp6fp4s0jm5iFjMMK6CrGNztAE5LCee3grugroLaotpB9irQwP.png",
+          "is_correct": false
+        },
+        {
+          "id": 253626,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/ZWcq9VvigRG1hXIJLDchOekyjjNvgkLai9gFXajo2CbuUtlyFD.png",
+          "is_correct": false
+        },
+        {
+          "id": 253627,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/mXP1D6MBUC4bQOKMwZunWhXMt85A0yZfGCqMd5bSr8UTKxKGqt.png",
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95991,
+      "type": "MSQ",
+      "marks": "5.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/GmtoPb4VZ5lEijJ7SPwyhCLW1WNI81hWXhdkbBUBVhwmslrvab.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/GmtoPb4VZ5lEijJ7SPwyhCLW1WNI81hWXhdkbBUBVhwmslrvab.png"
+      ],
+      "options": [
+        {
+          "id": 253628,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/JRCznU0VbU9CReIrpjPzmFWcwGDSfRyfrejlrAao43Q5WpDlU6.png",
+          "is_correct": true
+        },
+        {
+          "id": 253629,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/uOBBc2pj0YrgSnvtjZXkpiqho2tpHSMm6B3OAprm4Ff693bMmX.png",
+          "is_correct": false
+        },
+        {
+          "id": 253630,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/oMXa4g86iDfvglMtVZnqjUVQkxuqRdL2LQ7REZVshDAL8Dv3rJ.png",
+          "is_correct": true
+        },
+        {
+          "id": 253631,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/NnxAlTkCOidLA7MfH8S2ITr1rAf1nqpsM55bitumVkFg3dqKPu.png",
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95992,
+      "type": "MSQ",
+      "marks": "5.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/h6HyzHBWrSdTKuCWHPzS0SYCNK7EfGhp6De4dct7fyvZFrwhjO.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/h6HyzHBWrSdTKuCWHPzS0SYCNK7EfGhp6De4dct7fyvZFrwhjO.png"
+      ],
+      "options": [
+        {
+          "id": 253632,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/cidj8BfDG8Ux7BS0w8aF9CWzk7pcRf0uY18J6pzNz137obom1C.png",
+          "is_correct": true
+        },
+        {
+          "id": 253633,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/LdXtPTPz42duXur6WBRx2020ekTe4HZNzAMnSG9FKYpXWM2rj4.png",
+          "is_correct": true
+        },
+        {
+          "id": 253634,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/4AKu21flzMhZARshSRHi6uEYzav2G0BuzvFrBif3fUEng7hMz5.png",
+          "is_correct": false
+        },
+        {
+          "id": 253635,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/8Eeuyi457VzLH3PUmzMvRGPTEjh8pkGrFxzqVK0oJtXXg2ctXt.png",
+          "is_correct": true
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 95993,
+      "type": "COMPREHENSION",
+      "marks": "0.00",
+      "text": "  Based on the above data, answer the given subquestions.",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/nTeAowDYyqi11EEqc9vPCZoDWcQ69dXfj1UITWhmOqr9S1wIXz.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/nTeAowDYyqi11EEqc9vPCZoDWcQ69dXfj1UITWhmOqr9S1wIXz.png"
+      ],
+      "options": [],
+      "correct_answer": null
+    },
+    {
+      "id": 95994,
+      "type": "SA",
+      "marks": "1.00",
+      "text": "Find the rank of A.",
+      "images": [],
+      "options": [],
+      "correct_answer": "1"
+    },
+    {
+      "id": 95995,
+      "type": "SA",
+      "marks": "3.00",
+      "text": "Find the number of zero rows of M.",
+      "images": [],
+      "options": [],
+      "correct_answer": "3"
+    },
+    {
+      "id": 95996,
+      "type": "COMPREHENSION",
+      "marks": "0.00",
+      "text": "  Based on the above data, answer the given subquestions.",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/i0ddSF5NrtWyTvub0ke9BePUz126l9Jonr68VCxqZ5MzUQ8kDU.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/i0ddSF5NrtWyTvub0ke9BePUz126l9Jonr68VCxqZ5MzUQ8kDU.png"
+      ],
+      "options": [],
+      "correct_answer": null
+    },
+    {
+      "id": 95997,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/sw5BylPJeIRG0il8brKAOLfQLKNV7yUnFgCQVeLg7w8eMZt3iO.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/sw5BylPJeIRG0il8brKAOLfQLKNV7yUnFgCQVeLg7w8eMZt3iO.png"
+      ],
+      "options": [],
+      "correct_answer": "3"
+    },
+    {
+      "id": 95998,
+      "type": "SA",
+      "marks": "2.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/bjHfyAmaBv1GVH77aZYHyKaqaOGxY3PbGgDZ8BUBL2D1GGEV4N.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/bjHfyAmaBv1GVH77aZYHyKaqaOGxY3PbGgDZ8BUBL2D1GGEV4N.png"
+      ],
+      "options": [],
+      "correct_answer": "5"
+    },
+    {
+      "id": 95999,
+      "type": "COMPREHENSION",
+      "marks": "0.00",
+      "text": "  Based on the above data, answer the given subquestions.",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/yTjDWqOltZUJm0krhIGrR7XUkPvlL4WE4L63VE4NZI1GJcH2s7.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/yTjDWqOltZUJm0krhIGrR7XUkPvlL4WE4L63VE4NZI1GJcH2s7.png"
+      ],
+      "options": [],
+      "correct_answer": null
+    },
+    {
+      "id": 96000,
+      "type": "SA",
+      "marks": "2.00",
+      "text": "Find the maximum possible rank of the matrix A.",
+      "images": [],
+      "options": [],
+      "correct_answer": "3"
+    },
+    {
+      "id": 96001,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "Find the maximum possible nullity of the matrix A.",
+      "images": [],
+      "options": [],
+      "correct_answer": "2"
+    },
+    {
+      "id": 96002,
+      "type": "SA",
+      "marks": "2.00",
+      "text": "Find the value of k for which rank of the matrix A is equal to 2.",
+      "images": [],
+      "options": [],
+      "correct_answer": "-2"
+    },
+    {
+      "id": 96003,
+      "type": "COMPREHENSION",
+      "marks": "0.00",
+      "text": "  Based on the above data, answer the given subquestions.",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/57v4AOFET9OaOXWn7lJ0uGNJ4TxRzeSH3n4gkkT4710JNJ3l3A.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/57v4AOFET9OaOXWn7lJ0uGNJ4TxRzeSH3n4gkkT4710JNJ3l3A.png"
+      ],
+      "options": [],
+      "correct_answer": null
+    },
+    {
+      "id": 96004,
+      "type": "MCQ",
+      "marks": "2.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/l9Clj2WJrsHYPeWaxOlGU6x6U9ynjXsomu65cDgy2iBLO5ezVY.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/l9Clj2WJrsHYPeWaxOlGU6x6U9ynjXsomu65cDgy2iBLO5ezVY.png"
+      ],
+      "options": [
+        {
+          "id": 253636,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/1rOFp8HgqjeOG0lQxTpMSKBPQ4umcciWdeGJiiEOVylZ9brU6E.png",
+          "is_correct": false
+        },
+        {
+          "id": 253637,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/WFxUjlBgWlIdQsGsBqPHxGISqZJD9WlDWze0lJwjhTKR7QsMxP.png",
+          "is_correct": true
+        },
+        {
+          "id": 253638,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/X9cv3TA6WmzzRCOWs7DUzB7EbbML2q7oU6x8hBSv576WJ6DdUx.png",
+          "is_correct": false
+        },
+        {
+          "id": 253639,
+          "text": "",
+          "image": "https://saram.blr1.cdn.digitaloceanspaces.com/option_images/OCi69FGpqJrmczQgxxb5xtjRsCOHGSzR4WkagEEhSa2ujvwWJd.png",
+          "is_correct": false
+        }
+      ],
+      "correct_answer": null
+    },
+    {
+      "id": 96005,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/3lyNpFA6RKaOd4zO3kFtQB43OcF8Gv2Qdq4M0oQofEUQMtR9Vn.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/3lyNpFA6RKaOd4zO3kFtQB43OcF8Gv2Qdq4M0oQofEUQMtR9Vn.png"
+      ],
+      "options": [],
+      "correct_answer": "4"
+    },
+    {
+      "id": 96006,
+      "type": "SA",
+      "marks": "4.00",
+      "text": "",
+      "images": [
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/khJ0w9LHO7cXq54nYcp4e448fOUK5fpovAsSPnSALAhQjJgJay.png",
+        "https://saram.blr1.cdn.digitaloceanspaces.com/question_images/khJ0w9LHO7cXq54nYcp4e448fOUK5fpovAsSPnSALAhQjJgJay.png"
+      ],
+      "options": [],
+      "correct_answer": "5"
+    }
+  ]
+}

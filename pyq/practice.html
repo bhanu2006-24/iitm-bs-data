@@ -121,6 +121,14 @@
         </div>
     </footer>
 
+    <script>
+        if (window.location.port !== '5000') {
+            const banner = document.createElement('div');
+            banner.className = 'fixed top-0 left-0 right-0 z-50 bg-yellow-500/90 text-black text-xs px-4 py-1 text-center font-bold';
+            banner.innerHTML = `<i class="fas fa-exclamation-triangle mr-2"></i> Running on non-standard port (${window.location.port}). Use 'python app.py' and localhost:5000 for full functionality.`;
+            document.body.prepend(banner);
+        }
+    </script>
     <script type="module" src="js/practice.js"></script>
 </body>
 </html>
