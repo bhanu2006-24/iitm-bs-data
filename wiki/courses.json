@@ -62,7 +62,7 @@
     "level": "Foundation",
     "credits": 4,
     "difficulty": 3,
-    "workload": 3,
+    "workload": 4,
     "tags": [
       "Stats",
       "Probability",
@@ -111,7 +111,7 @@
     "name": "Computational Thinking",
     "level": "Foundation",
     "credits": 4,
-    "difficulty": 2,
+    "difficulty": 3,
     "workload": 2,
     "tags": [
       "Logic",
@@ -204,7 +204,7 @@
     "name": "Mathematics for Data Science II",
     "level": "Foundation",
     "credits": 4,
-    "difficulty": 4.8,
+    "difficulty": 5,
     "workload": 4.5,
     "tags": [
       "Linear Algebra",
