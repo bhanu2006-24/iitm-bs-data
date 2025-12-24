@@ -1,213 +1,377 @@
 /**
- * Advanced Parsing Logic (Smart Parser)
+ * Advanced PDF Processor with Image Extraction & Layout Analysis
  */
 export const PDFProcessor = {
+
     /**
-     * Extracts text and images from a PDF page.
+     * Extracts all content (text + images) from a PDF page, sorted by vertical position.
      */
-    getPageContent: async (pdfPage) => {
-        // 1. Get Text Items
-        const textContent = await pdfPage.getTextContent();
-        const items = textContent.items.map(item => ({
+    getPageContent: async (page) => {
+        // 1. Get Text Content
+        const textContent = await page.getTextContent();
+        const textItems = textContent.items.map(item => ({
             type: 'text',
             str: item.str,
+            // PDF coordinates: (0,0) is bottom-left usually, but visual top-left is what we want for sorting?
+            // Usually we sort by 'y' descending (PDF coordinates).
             x: item.transform[4],
             y: item.transform[5], 
+            w: item.width,
             h: item.height,
-            w: item.width
+            hasEOL: item.hasEOL
         }));
 
-        // 2. Get Images (Basic OpList extraction)
-        // Note: Real extraction requires processing XObjects. 
-        // For this demo, we can't easily extract binary data without more complex ops.
-        // We will assume text-based extraction is primary, and images are secondary markers.
-        // If we really need image extraction, we'd need to render the page to canvas and crop (Snapshot).
+        // 2. Get Images via Operator List
+        const opList = await page.getOperatorList();
+        const imgItems = [];
         
-        // Sorting: Top to Bottom
-        items.sort((a, b) => b.y - a.y);
-        return items;
+        for (let i = 0; i < opList.fnArray.length; i++) {
+            const fn = opList.fnArray[i];
+            
+            // Check for image painting operators
+            if (fn === pdfjsLib.OPS.paintImageXObject || fn === pdfjsLib.OPS.paintInlineImageXObject) {
+                const imgName = opList.argsArray[i][0];
+                
+                // transform matrix is usually set by previous 'cm' (concatenate matrix) operator
+                // We assume the last 'cm' before this paint op defines the position
+                let transform = [1, 0, 0, 1, 0, 0];
+                // Search backwards for the transformation matrix
+                for (let j = i - 1; j >= 0; j--) {
+                    if (opList.fnArray[j] === pdfjsLib.OPS.dependency) continue;
+                    if (opList.fnArray[j] === pdfjsLib.OPS.transform) {
+                        transform = opList.argsArray[j];
+                        break;
+                    }
+                }
+                
+                try {
+                    // Extract image data
+                    // Note: This is an async operation in PDF.js, but page.objs.get might return a promise or value depending on version.
+                    // safely handle it.
+                    let imgObj = null;
+                    if (fn === pdfjsLib.OPS.paintImageXObject) {
+                        imgObj = await page.objs.get(imgName);
+                    } else {
+                        imgObj = imgName; // inline image data
+                    }
+
+                    if (imgObj) {
+                        // Convert to DataURL for easy display
+                        const dataUrl = await imageToDataUrl(imgObj);
+                        if (dataUrl) {
+                            imgItems.push({
+                                type: 'image',
+                                src: dataUrl,
+                                x: transform[4],
+                                y: transform[5],
+                                w: transform[0],
+                                h: transform[3]
+                            });
+                        }
+                    }
+                } catch (e) {
+                    console.warn("Failed to extract image: " + imgName, e);
+                }
+            }
+        }
+
+        // 3. Merge & Sort
+        // Sort by Y descending (Top of page -> Bottom of page)
+        const allItems = [...textItems, ...imgItems];
+        allItems.sort((a, b) => b.y - a.y);
+        
+        return allItems;
     },
 
     /**
-     * Smart Parser logic to identify questions, types, and parent contexts.
+     * Heuristic Parser
      */
     parseQuestions: (allItems) => {
         const questions = [];
         let currentQ = null;
-        let parentContext = ''; 
-        let currentSectionId = '';
         
-        // Group by Lines
-        const lines = toLines(allItems);
+        // Group items into lines to handle text fragments
+        const lines = groupIntoLines(allItems);
+        
+        // Regex Patterns
+        const patterns = {
+            qStart: /(?:Question\s+(?:Number|No|Id)|Q)\s*[:.]?\s*(\d+)/i,
+            qStartSimple: /^\s*Q\.?\s*(\d+)\s*[:.]/i, // Q.1 or Q1
+            marks: /(?:Correct\s+)?Marks\s*[:.]?\s*(\d+(\.\d+)?)/i,
+            type: /Question\s+Type\s*[:.]?\s*(\w+)/i,
+            label: /Question\s+Label\s*[:.]?\s*(.+)/i,
+            // Options: 1. Content, (A) Content, A. Content, a) Content
+            option: /^(?:\d+|[A-Za-z])(?:[.)]|\s)\s*([*✔✓x])?\s*(.*)/
+        };
+
+        let state = 'SCANNING'; // SCANNING, HEADER, BODY, OPTIONS
         
         for (let i = 0; i < lines.length; i++) {
-            const line = lines[i].text.trim();
-            if (!line) continue;
+            const lineObj = lines[i];
+            let text = cleanText(lineObj.text);
+            const images = lineObj.images;
 
-            // Detect Section / Parent content
-            // Usage: If we see "Section Id :", we might be entering a new section.
-            if (line.match(/^Section\s+iId\s*:/i) || line.match(/^Section\s+Id\s*:/i)) {
-                parentContext = ''; // Reset parent context on new section?
-                // Maybe capture section header info if needed
-                continue;
-            }
+            if (!text && (!images || images.length === 0)) continue;
 
-            // Detect Question Start
-            const qNumMatch = line.match(/Question\s+Number\s*:\s*(\d+)/i);
+            // 1. Detect New Question Start
+            // Priorities: Explicit "Question Number : X", then "Q.X"
+            let qNumMatch = text.match(patterns.qStart) || text.match(patterns.qStartSimple);
             
             if (qNumMatch) {
                 if (currentQ) {
                     finalizeQuestion(currentQ);
                     questions.push(currentQ);
                 }
-
+                
                 currentQ = {
-                    id: `gen-${Date.now()}-${Math.floor(Math.random()*10000)}`,
+                    id: `q-${Date.now()}-${Math.floor(Math.random()*10000)}`,
                     number: qNumMatch[1],
+                    type: 'MCQ', // Default
+                    marks: 1,
                     text: '',
-                    options: [],
-                    type: 'MCQ',
-                    marks: 1, // Default, will update
-                    parent: parentContext // Attach current parent context
+                    options: [], 
+                    correctIndex: -1,
+                    correctIndices: [],
+                    images: []
                 };
-
-                // ID Parsing
-                const idMatch = line.match(/Question\s+Id\s*:\s*(\d+)/i);
+                
+                // If the line has more text after the question number (e.g. "Q1. Solve this..."), valid body text
+                // Remove the match part
+                const matchStr = qNumMatch[0];
+                const remain = text.substring(matchStr.length).trim();
+                
+                state = 'HEADER';
+                
+                // Parse metadata on same line
+                const idMatch = text.match(/Question\s+Id\s*:\s*(\d+)/i);
                 if (idMatch) currentQ.metaId = idMatch[1];
-
-                // Type Parsing
-                const typeMatch = line.match(/Question\s+Type\s*:\s*(\w+\s*\w*)/i);
+                
+                const typeMatch = text.match(patterns.type);
                 if (typeMatch) currentQ.type = mapType(typeMatch[1]);
 
+                if (remain && !idMatch && !typeMatch) {
+                    // It's likely the question text starting immediately
+                    state = 'BODY';
+                    currentQ.text = remain;
+                }
+                
                 continue;
             }
 
-            // Parsing Metadata/Content for Current Question
-            if (currentQ) {
-                // Correct Marks
-                if (line.match(/^Correct\s+Marks\s*:/i)) {
-                    const m = line.match(/Marks\s*:\s*(\d+(\.\d+)?)/i);
-                    if (m) currentQ.marks = parseFloat(m[1]);
-                    continue;
-                }
+            if (!currentQ) continue;
 
-                // Question Label overrides Type
-                if (line.match(/^Question\s+Label\s*:/i)) {
-                    const label = line.split(':')[1].trim().toLowerCase();
-                    if (label.includes('multiple choice')) currentQ.type = 'MCQ';
-                    else if (label.includes('multiple select')) currentQ.type = 'MSQ';
-                    else if (label.includes('short answer')) {
-                        currentQ.type = 'NAT';
-                        currentQ.isSA = true;
-                    }
+            // 2. Parse Header Info
+            if (state === 'HEADER') {
+                // Correct Marks
+                const markMatch = text.match(patterns.marks);
+                if (markMatch) {
+                    currentQ.marks = parseFloat(markMatch[1]);
+                }
+                
+                // Question Label
+                const labelMatch = text.match(patterns.label);
+                if (labelMatch) {
+                    const label = labelMatch[1].toLowerCase();
+                    if (label.includes('multiple select')) currentQ.type = 'MSQ';
+                    else if (label.includes('short answer') || label.includes('numeric')) currentQ.type = 'NAT';
+                    else if (label.includes('multiple choice')) currentQ.type = 'MCQ';
+                    
+                    state = 'BODY';
+                    continue; 
+                }
+                
+                // Transition triggers
+                if (text.match(/^(Options|Possible Answers)\s*:/i)) {
+                    state = 'OPTIONS';
                     continue;
                 }
                 
-                // Response Type overrides Type (e.g. Numeric)
-                if (line.match(/^Response\s+Type\s*:\s*Numeric/i)) {
-                    currentQ.type = 'NAT';
+                // If we see text that isn't metadata, it's body
+                if (!text.match(/Question\s+(Id|Type)|Marks\s*:/i) && text.length > 2) {
+                    state = 'BODY';
+                    // Don't continue, fall through to body parser
+                } else {
                     continue;
                 }
+            }
 
-                // Options Start
-                if (line.match(/^Options\s*:/i)) continue;
-
-                // Ignore Fluff
-                if (line.match(/^(Mandatory|Display Number Panel|Group|Section|Question Number|Question Type|Question Id)/i)) continue;
-
-                // Possible Answers (for NAT)
-                // "Possible Answers : 12367" or "245"
-                if (line.match(/^Possible\s+Answers\s*:/i)) {
-                    const val = line.split(':')[1].trim(); 
-                    if (val) currentQ.correctValue = val;
+            // 3. Parse Body
+            if (state === 'BODY') {
+                if (text.match(/^(Options|Possible Answers)\s*:/i)) {
+                    state = 'OPTIONS';
                     continue;
                 }
-                // Standalone number matching a NAT answer pattern (green text usually) if we are in NAT mode?
-                // Hard to detect color here. But if we see a number at the end, it might be the answer.
-                // Rely on "Possible Answers" label if present.
+                
+                // Avoid re-capturing metadata if it appears late (rare)
+                if(!text.match(/^Question\s+(Id|Type|Label)|Correct\s+Marks/i)) {
+                    currentQ.text += (currentQ.text ? '\n' : '') + text;
+                }
+                
+                if (images && images.length > 0) {
+                    images.forEach(imgSrc => {
+                        currentQ.text += `\n\n![Image](${imgSrc})\n\n`;
+                    });
+                }
+            }
 
-                // Detect Option
-                // Regex for ID + Marker + Text
-                // 6406531926616. ✔ Speak up 
-                // 6406531926617. * Speak out
-                // 6406531926618. x Call back (Assume x is wrong)
-                const optMatch = line.match(/^(\d+)\.\s*([*✔✓x])?\s*(.+)/);
-
+            // 4. Parse Options
+            if (state === 'OPTIONS') {
+                // Check for Option Pattern
+                const optMatch = text.match(patterns.option);
+                
                 if (optMatch) {
-                    const marker = optMatch[2]; // * or ✔ or x
-                    const content = optMatch[3].trim();
-                    const isCorrect = (marker === '✔' || marker === '✓');
-                    // Note: If no marker, might be SA text or simple option list? 
-                    // Usually SA doesn't have options.
+                    const marker = optMatch[1]; // * or ✔ or undefined
+                    const content = optMatch[2].trim();
+                    const isCorrect = (marker === '✔' || marker === '✓' || marker === '*' || text.includes('(Correct)'));
                     
-                    if (currentQ.type !== 'NAT') {
-                        currentQ.options.push({
-                            text: content,
-                            isCorrect: isCorrect
+                    let optText = content;
+                    if (images && images.length) {
+                        images.forEach(imgSrc => {
+                            optText += `\n![Option Image](${imgSrc})`;
+                        });
+                    }
+
+                    // If text is empty but image exists, it's valid
+                    if (optText || (images && images.length)) {
+                         currentQ.options.push({
+                            text: optText,
+                            isCorrect: isCorrect,
+                            id: currentQ.options.length + 1
                         });
                     }
                 } else {
-                    // Just text line
-                    // If we haven't seen options yet, it's Question Text
-                    // If we have seen options, it's option continuation?
-                    // Actually "Options :" header usually separates. 
-                    // But we might not catch it if it's not on new line.
-                    // Heuristic: If we have options, append to last option. Else append to question.
-                    
-                    // Specific check for "Possible Answers :" being multiline
-                    if (line.match(/^\d+$/) && currentQ.type === 'NAT') {
-                         // Likely the answer if it stands alone at bottom
-                         currentQ.correctValue = line;
-                    } else if (currentQ.options.length > 0) {
-                        currentQ.options[currentQ.options.length - 1].text += ' ' + line;
-                    } else {
-                        currentQ.text += (currentQ.text ? '\n' : '') + line;
+                    // Continuation or NAT
+                    if (text.match(/Possible\s+Answers\s*:/i) || (currentQ.type === 'NAT' && text.match(/^Answer\s*:/))) {
+                        // NAT Answer
+                        const parts = text.split(':');
+                        const val = parts[1] ? parts[1].trim() : '';
+                        if (val) currentQ.correctValue = val;
+                    } 
+                    else if (currentQ.type === 'NAT' && text.match(/^[\d.]+$/)) {
+                         currentQ.correctValue = text;
+                    } 
+                    // Continuation of previous option
+                    else if (currentQ.options.length > 0) {
+                        const lastOpt = currentQ.options[currentQ.options.length - 1];
+                        if (text) lastOpt.text += '\n' + text;
+                        if (images && images.length) {
+                             images.forEach(imgSrc => {
+                                lastOpt.text += `\n![Option Image](${imgSrc})`;
+                            });
+                        }
                     }
-                }
-
-            } else {
-                // No current question => Parent Context / Comprehension Text
-                // Accumulate text that looks like content (not headers)
-                if (!line.match(/^(Section|Group|Mandatory|Display)/i)) {
-                    parentContext += (parentContext? '\n' : '') + line;
                 }
             }
         }
-
-        if (currentQ) {
-            finalizeQuestion(currentQ);
-            questions.push(currentQ);
-        }
-
+        
         return questions;
     }
 };
 
-function toLines(items) {
-    const lines = [];
-    let currentLine = { y: -1, textParts: [] };
-    
-    // Sort by Y desc
-    items.sort((a,b) => b.y - a.y);
+function cleanText(txt) {
+    if (!txt) return '';
+    // Fix common PDF ligature issues or spacing
+    return txt.replace(/\s+/g, ' ').trim();
+}
 
-    items.forEach(item => {
-        if (currentLine.y !== -1 && Math.abs(item.y - currentLine.y) > 8) {
-             // Sort X asc
-             currentLine.textParts.sort((a,b) => a.x - b.x);
-             lines.push({ text: currentLine.textParts.map(p => p.str).join(' ') });
-             currentLine = { y: item.y, textParts: [] };
+/**
+ * Helper: Convert PDF Image Object to Data URL
+ */
+async function imageToDataUrl(imgObj) {
+    if (!imgObj || !imgObj.data) return null;
+    
+    // Create an off-screen canvas
+    const canvas = document.createElement('canvas');
+    canvas.width = imgObj.width;
+    canvas.height = imgObj.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Create ImageData
+    // PDF image data is typically RGBA or RGB. 
+    // We might need to handle different kinds (gray, cmyk - simple rgb assumed for now)
+    // If it's a raw array, we assume simple RGBA (4 bytes) or RGB (3 bytes)
+    
+    const dataLen = imgObj.data.length;
+    const pixelCount = imgObj.width * imgObj.height;
+    const newImageData = ctx.createImageData(imgObj.width, imgObj.height);
+    const newParams = newImageData.data;
+
+    let i = 0, j = 0, k = 0;
+    
+    if (dataLen === pixelCount * 3) {
+        // RGB
+        while (i < dataLen) {
+            newParams[j++] = imgObj.data[i++]; // R
+            newParams[j++] = imgObj.data[i++]; // G
+            newParams[j++] = imgObj.data[i++]; // B
+            newParams[j++] = 255; // Alpha
         }
+    } else if (dataLen === pixelCount * 4) {
+        // RGBA
+        while (i < dataLen) {
+            newParams[j++] = imgObj.data[i++];
+            newParams[j++] = imgObj.data[i++];
+            newParams[j++] = imgObj.data[i++];
+            newParams[j++] = imgObj.data[i++];
+        }
+    } else if (dataLen === pixelCount) {
+        // Grayscale
+        while (i < dataLen) {
+            const val = imgObj.data[i++];
+            newParams[j++] = val;
+            newParams[j++] = val;
+            newParams[j++] = val;
+            newParams[j++] = 255;
+        }
+    }
+    
+    ctx.putImageData(newImageData, 0, 0);
+    return canvas.toDataURL('image/jpeg', 0.8);
+}
+
+/**
+ * Helper: Group Items by vertical line proximity
+ */
+function groupIntoLines(items) {
+    const lines = [];
+    let currentLine = { y: -1, textParts: [], images: [] };
+    
+    items.forEach(item => {
+        // If y difference is large (> 5), meaningful new line
+        // Note: PDF Y is bottom-up, but we sorted Descending, so we are going down the page.
+        // item.y is smaller as we go down? No, (0,0) is bottom-left.
+        // Top is High Y. Bottom is Low Y.
+        // So sorted desc: 800, 780, 760...
+        
+        if (currentLine.y !== -1 && Math.abs(item.y - currentLine.y) > 8) {
+             finalizeLine(lines, currentLine);
+             currentLine = { y: item.y, textParts: [], images: [] };
+        }
+        
         if (currentLine.y === -1) currentLine.y = item.y;
-        currentLine.textParts.push(item);
+        
+        if (item.type === 'text') currentLine.textParts.push(item);
+        else if (item.type === 'image') currentLine.images.push(item);
     });
     
-    if (currentLine.textParts.length) {
-         currentLine.textParts.sort((a,b) => a.x - b.x);
-         lines.push({ text: currentLine.textParts.map(p => p.str).join(' ') });
+    if (currentLine.textParts.length || currentLine.images.length) {
+         finalizeLine(lines, currentLine);
     }
     
     return lines;
 }
+
+function finalizeLine(lines, lineObj) {
+    // Sort text parts by X asc (Left to Right)
+    lineObj.textParts.sort((a,b) => a.x - b.x);
+    // Join text
+    const text = lineObj.textParts.map(p => p.str).join(' ');
+    // Images URLs
+    const images = lineObj.images.map(img => img.src);
+    
+    lines.push({ text, images, y: lineObj.y });
+}
+
 
 function mapType(raw) {
     if (!raw) return 'MCQ';
@@ -220,12 +384,10 @@ function mapType(raw) {
 }
 
 function finalizeQuestion(q) {
-    // If NAT, clean up "Possible Answers" from text if it leaked
-    if (q.type === 'NAT' && q.correctValue) {
-         q.text = q.text.replace(/Possible\s+Answers\s*:?/i, '').trim();
-    }
+    // Clean text
+    q.text = q.text.trim();
     
-    // Set Correct Indices for MCQ/MSQ
+    // Set Correct Indices
     if (q.type === 'MCQ') {
         const idx = q.options.findIndex(o => o.isCorrect);
         q.correctIndex = idx >= 0 ? idx : -1;
@@ -235,9 +397,8 @@ function finalizeQuestion(q) {
             .filter(i => i !== -1);
     }
     
-    // Convert Option Objects to Strings for current data model
-    // Data Model expects: q.options = ["Opt A", "Opt B"]
-    // so we strip metadata but keep order.
-    // If we want to preserve images, we assume markdown text.
+    // Strip internal ID from options (keep only text)
+    // The View expects arrays of strings. 
+    // If we have images in options, they are now part of the markdown string.
     q.options = q.options.map(o => o.text);
 }

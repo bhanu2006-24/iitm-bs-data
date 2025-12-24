@@ -86,6 +86,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('page-num').textContent = `Page ${num} of ${pdfDoc.numPages}`;
     }
 
+    // Clear All
+    const clearBtn = document.getElementById('clear-all-btn');
+    if(clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            if(confirm('Clear all questions?')) {
+                questions = [];
+                renderQuestions();
+                log('Cleared all questions.');
+            }
+        });
+    }
+
+    // Logging
+    function log(msg, type='info') {
+        const c = document.getElementById('logs-container');
+        if(!c) return;
+        const d = document.createElement('div');
+        d.textContent = `> ${msg}`;
+        if(type === 'error') d.className = 'text-red-400';
+        else if(type === 'success') d.className = 'text-blue-400';
+        c.appendChild(d);
+        c.scrollTop = c.scrollHeight;
+    }
+
     // Auto Parse Logic
     async function autoParse() {
         if (!pdfDoc) {
@@ -97,29 +121,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         const originalText = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Parsing...';
         btn.disabled = true;
+        
+        log('Starting auto-parse...');
 
         try {
             let allItems = [];
             // Parse all pages
-            // Optimization: Parse in chunks if too large? 
             for (let i = 1; i <= pdfDoc.numPages; i++) {
+                log(`Reading page ${i}...`);
                 const page = await pdfDoc.getPage(i);
                 const items = await PDFProcessor.getPageContent(page);
                 allItems = allItems.concat(items);
             }
 
+            log(`Extracted ${allItems.length} content items. Processing...`);
             const parsedQs = PDFProcessor.parseQuestions(allItems);
 
             if (parsedQs.length === 0) {
-                alert('No questions found using key heuristic ("Question Number :").\nEnsure the PDF follows the standard exam format.');
+                log('No questions found. check regex heuristics.', 'error');
+                alert('No questions found using key heuristic ("Question Number :" or "Q.").\nEnsure the PDF follows the standard exam format.');
             } else {
                 questions = questions.concat(parsedQs);
                 renderQuestions();
+                log(`Successfully parsed ${parsedQs.length} questions!`, 'success');
                 alert(`Successfully parsed ${parsedQs.length} questions!`);
             }
 
         } catch (e) {
             console.error(e);
+            log(`Error: ${e.message}`, 'error');
             alert('Error parsing PDF: ' + e.message);
         } finally {
             btn.innerHTML = originalText;
@@ -130,58 +160,76 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Question Management
     function renderQuestions() {
         questionsList.innerHTML = '';
+        
+        // Update Stats
+        const stats = document.getElementById('stats-bar');
+        if(stats) stats.innerHTML = `<span>${questions.length} Questions</span>`;
+
         if (questions.length === 0) {
-            questionsList.innerHTML = `<p class="text-slate-500 text-center mt-10">No questions yet. Use Auto Parse or Add Manually.</p>`;
+            questionsList.innerHTML = `
+                <div class="text-center text-slate-500 mt-20 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-file-pdf text-2xl opacity-50"></i>
+                    </div>
+                    <p class="text-lg font-medium text-slate-400">Ready to Parse</p>
+                    <p class="text-sm opacity-60 mt-1">Load a PDF or add questions manually</p>
+                </div>`;
             return;
         }
 
         questions.forEach((q, idx) => {
             const block = document.createElement('div');
-            block.className = 'bg-card border border-slate-700 rounded-lg p-4 animate-fade-in group';
+            block.className = 'bg-card border border-slate-700 rounded-lg p-4 animate-fade-in group shadow-sm hover:border-slate-600 transition';
             
             // Badge Logic
             let typeBadgeColor = 'bg-slate-700 text-slate-300';
-            if (q.type === 'MCQ') typeBadgeColor = 'bg-blue-500/20 text-blue-400';
-            if (q.type === 'MSQ') typeBadgeColor = 'bg-purple-500/20 text-purple-400';
-            if (q.type === 'NAT') typeBadgeColor = 'bg-green-500/20 text-green-400';
+            if (q.type === 'MCQ') typeBadgeColor = 'bg-blue-500/20 text-blue-400 border border-blue-500/30';
+            if (q.type === 'MSQ') typeBadgeColor = 'bg-purple-500/20 text-purple-400 border border-purple-500/30';
+            if (q.type === 'NAT') typeBadgeColor = 'bg-green-500/20 text-green-400 border border-green-500/30';
 
             block.innerHTML = `
                 <div class="flex justify-between items-start mb-3">
                     <div class="flex items-center gap-3">
-                        <span class="font-bold text-white">Q${idx + 1}</span>
-                        <span class="px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider cursor-pointer ${typeBadgeColor}" 
+                        <span class="font-bold text-white bg-slate-800 w-8 h-8 flex items-center justify-center rounded-full text-sm">${idx + 1}</span>
+                        <span class="px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider cursor-pointer ${typeBadgeColor} transition hover:opacity-80" 
                               onclick="window.toggleType(${idx})">
                               ${q.type} <i class="fas fa-chevron-down ml-1 text-[8px]"></i>
                         </span>
-                        <input type="text" value="${q.metaId || q.id}" 
-                               class="bg-transparent border-none text-xs text-slate-500 w-24 focus:text-white"
-                               placeholder="ID">
+                        <div class="flex items-center gap-1 bg-slate-900 rounded px-2 py-0.5 border border-slate-700">
+                             <span class="text-[10px] text-slate-500">ID:</span>
+                             <input type="text" value="${q.metaId || q.id}" 
+                                class="bg-transparent border-none text-xs text-slate-400 w-24 focus:text-white outline-none"
+                                placeholder="ID">
+                        </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <input type="number" value="${q.marks}" 
-                               class="bg-slate-800 border border-slate-600 rounded w-12 text-center text-xs py-1"
+                        <div class="flex items-center gap-1 bg-slate-900 rounded px-2 py-0.5 border border-slate-700">
+                            <span class="text-[10px] text-slate-500">Marks:</span>
+                            <input type="number" value="${q.marks}" 
+                               class="bg-transparent border-none w-8 text-center text-xs py-0 text-white outline-none"
                                onchange="window.updateQ(${idx}, 'marks', this.value)">
-                        <button class="text-slate-500 hover:text-red-400 transition" onclick="window.removeQuestion(${idx})">
+                        </div>
+                        <button class="text-slate-500 hover:text-red-400 transition w-8 h-8 flex items-center justify-center hover:bg-slate-800 rounded" onclick="window.removeQuestion(${idx})">
                             <i class="fas fa-trash"></i>
                         </button>
                     </div>
                 </div>
 
                 <!-- Text Area -->
-                <textarea class="w-full bg-slate-900 border border-slate-700 rounded p-3 text-sm text-slate-300 focus:border-blue-500 outline-none mb-3 font-mono leading-relaxed" 
-                    rows="3" 
-                    placeholder="Question Text..." 
-                    onchange="window.updateQ(${idx}, 'text', this.value)">${q.text||''}</textarea>
-                
-                <div class="flex justify-between items-center mb-3">
-                     <span class="text-xs text-slate-500">Supports Markdown & LaTeX</span>
-                     <button class="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1" onclick="window.openImgModal(${idx}, 'text')">
-                        <i class="fas fa-image"></i> Add Image
-                     </button>
+                <div class="relative group/text">
+                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded p-3 text-sm text-slate-300 focus:border-blue-500 outline-none mb-3 font-mono leading-relaxed transition" 
+                        rows="3" 
+                        placeholder="Question Text..." 
+                        onchange="window.updateQ(${idx}, 'text', this.value)">${q.text||''}</textarea>
+                    <div class="absolute top-2 right-2 opacity-0 group-hover/text:opacity-100 transition">
+                         <button class="text-xs bg-slate-800 text-blue-400 hover:text-blue-300 px-2 py-1 rounded shadow border border-slate-700 flex items-center gap-1" onclick="window.openImgModal(${idx}, 'text')">
+                            <i class="fas fa-image"></i> Image
+                         </button>
+                    </div>
                 </div>
 
                 <!-- Options Area -->
-                <div id="options-area-${idx}" class="space-y-2 border-l-2 border-slate-700 pl-3">
+                <div id="options-area-${idx}" class="space-y-2 border-l-2 border-slate-700/50 pl-3">
                     ${renderOptionsInputs(q, idx)}
                 </div>
             `;
@@ -197,7 +245,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             opts.forEach((opt, oIdx) => {
                 const isChk = isCorrect(q, oIdx);
                 const marker = q.type === 'MCQ' ? 'rounded-full' : 'rounded';
-                const activeMarker = isChk ? 'bg-blue-500 border-blue-500 text-white' : 'border-slate-600 hover:border-slate-500';
+                const activeMarker = isChk ? 'bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-900/20' : 'border-slate-600 hover:border-slate-500 bg-slate-800';
 
                 html += `
                     <div class="flex gap-3 items-start group/opt">
@@ -205,31 +253,31 @@ document.addEventListener('DOMContentLoaded', async () => {
                              onclick="window.toggleCorrect(${idx}, ${oIdx})">
                              ${isChk ? '<i class="fas fa-check text-[10px]"></i>' : ''}
                         </div>
-                        <div class="flex-1">
-                            <textarea rows="1" class="w-full bg-transparent border-b border-transparent hover:border-slate-700 focus:border-slate-600 outline-none text-sm text-slate-300 resize-none overflow-hidden" 
+                        <div class="flex-1 relative">
+                            <textarea rows="1" class="w-full bg-transparent border-b border-transparent hover:border-slate-700 focus:border-slate-600 outline-none text-sm text-slate-300 resize-none overflow-hidden py-1" 
                                 oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"
                                 onchange="window.updateOption(${idx}, ${oIdx}, this.value)" 
                                 placeholder="Option ${oIdx+1}">${opt}</textarea>
-                        </div>
-                        <div class="opacity-0 group-hover/opt:opacity-100 flex gap-2">
-                             <button class="text-slate-500 hover:text-blue-400" onclick="window.openImgModal(${idx}, 'option', ${oIdx})"><i class="fas fa-image"></i></button>
-                             <button class="text-slate-500 hover:text-red-400" onclick="window.removeOption(${idx}, ${oIdx})"><i class="fas fa-times"></i></button>
+                             <div class="absolute right-0 top-0 opacity-0 group-hover/opt:opacity-100 flex gap-1 bg-slate-900/80 backdrop-blur rounded px-1">
+                                 <button class="text-slate-400 hover:text-blue-400 p-1" onclick="window.openImgModal(${idx}, 'option', ${oIdx})"><i class="fas fa-image text-xs"></i></button>
+                                 <button class="text-slate-400 hover:text-red-400 p-1" onclick="window.removeOption(${idx}, ${oIdx})"><i class="fas fa-times text-xs"></i></button>
+                             </div>
                         </div>
                     </div>
                 `;
             });
             html += `
-                <button class="text-xs text-slate-500 hover:text-blue-400 mt-2 flex items-center gap-1" onclick="window.addOption(${idx})">
+                <button class="text-[11px] font-medium text-slate-500 hover:text-blue-400 mt-2 flex items-center gap-1 uppercase tracking-wider pl-1" onclick="window.addOption(${idx})">
                     <i class="fas fa-plus"></i> Add Option
                 </button>
             `;
             return html;
         } else if (q.type === 'NAT') {
             return `
-                <div class="flex items-center gap-2">
-                    <span class="text-sm text-green-400 font-bold">Answer:</span>
-                    <input type="text" class="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-sm text-white focus:border-green-500 outline-none"
-                           placeholder="Correct Value (e.g. 5 or 5.2)" 
+                <div class="flex items-center gap-2 mt-2">
+                    <span class="text-sm text-green-400 font-bold bg-green-500/10 px-2 py-1 rounded">Answer:</span>
+                    <input type="text" class="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-sm text-white focus:border-green-500 outline-none w-32"
+                           placeholder="Value (e.g. 5)" 
                            value="${q.correctValue || ''}" 
                            onchange="window.updateQ(${idx}, 'correctValue', this.value)">
                 </div>
@@ -305,22 +353,40 @@ document.addEventListener('DOMContentLoaded', async () => {
             marks: 2
         });
         renderQuestions();
+        // Scroll to bottom
+        setTimeout(() => {
+            questionsList.scrollTop = questionsList.scrollHeight;
+        }, 100);
     });
 
     saveJsonBtn.addEventListener('click', () => {
+        const subjText = subjectSelect.options[subjectSelect.selectedIndex]?.text || 'Unknown Subject';
+        const yearVal = document.getElementById('exam-year').value || '2023';
+        
+        // Inject Metadata into each question
+        const processedQuestions = questions.map(q => ({
+            ...q,
+            subject: subjText,
+            year: yearVal,
+            level: 'Foundation', // Default or add a selector if needed
+        }));
+
         const examData = {
             id: document.getElementById('exam-id').value || 'exam',
             title: document.getElementById('exam-title-input').value || 'Untitled Exam',
-            subject: subjectSelect.options[subjectSelect.selectedIndex]?.text,
-            year: document.getElementById('exam-year').value,
+            subject: subjText,
+            year: yearVal,
             duration: 60,
-            questions: questions
+            marks: questions.reduce((sum, q) => sum + (parseFloat(q.marks)||0), 0),
+            questions: processedQuestions
         };
+        
         const blob = new Blob([JSON.stringify(examData, null, 2)], {type: 'application/json'});
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = `${examData.id}.json`;
         a.click();
+        log('JSON Saved!', 'success');
     });
 
     // Image Modal
@@ -361,11 +427,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             a.click();
 
             // Insert Markdown
-            // Note: Since we only download, user has to place it in 'img/' folder manually or we instruct them.
              const textToInsert = `\n![${fName}](img/${fName})\n`;
             
             if (imgContext.type === 'text') {
                 questions[imgContext.qIdx].text += textToInsert;
+                // Force update UI
+                renderQuestions();
             } else {
                 questions[imgContext.qIdx].options[imgContext.oIdx] += textToInsert;
             }
