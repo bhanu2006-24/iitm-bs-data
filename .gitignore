@@ -1,0 +1,29 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+
+# JavaScript/Node
+node_modules/
+dist/
+build/
+.npm
+.yarn
+
+# IDE
+.vscode/
+.idea/
+
+# Project Specific
+pyq/scraped_data/
+pyq/clean_data/
+*.log
