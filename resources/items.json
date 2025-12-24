@@ -6,5 +6,15 @@
   { "id": "5", "title": "Business Analytics Case Studies", "type": "Book", "subject": "Business Analytics", "url": "#", "description": "Real world examples for BA from industry leaders." },
   { "id": "6", "title": "English 1 Grammar Rules", "type": "Notes", "subject": "English", "url": "#", "description": "Quick revision guide for common grammatical errors." },
   { "id": "7", "title": "DBMS Normalization Guide", "type": "Notes", "subject": "DBMS", "url": "#", "description": "Step-by-step guide to 1NF, 2NF, 3NF and BCNF." },
-  { "id": "8", "title": "PDSA Week 1-4 Recap", "type": "Video", "subject": "PDSA", "url": "#", "description": "Crash course on complexity analysis and sorting algorithms." }
+  { "id": "8", "title": "PDSA Week 1-4 Recap", "type": "Video", "subject": "PDSA", "url": "#", "description": "Crash course on complexity analysis and sorting algorithms." },
+  { "id": "9", "title": "Official Student Handbook", "type": "PDF", "subject": "General", "url": "#", "description": "The bible for all academic policies, grading, and rules." },
+  { "id": "10", "title": "StatQuest with Josh Starmer", "type": "Channel", "subject": "Statistics", "url": "https://www.youtube.com/@statquest", "description": "The best resource for understanding statistical concepts intuitively." },
+  { "id": "11", "title": "3Blue1Brown", "type": "Channel", "subject": "Mathematics", "url": "https://www.youtube.com/@3blue1brown", "description": "Visualizing calculus and linear algebra. Essential for Math 1 & 2." },
+  { "id": "12", "title": "Neso Academy", "type": "Channel", "subject": "CT / DBMS", "url": "https://www.youtube.com/@nesoacademy", "description": "Great for Digital Logic (CT) and DBMS concepts." },
+  { "id": "13", "title": "Corey Schafer", "type": "Channel", "subject": "Python", "url": "https://www.youtube.com/@coreyms", "description": "Deep dive into Python specifics for the OPPE." },
+  { "id": "14", "title": "Kaggle Datasets", "type": "Website", "subject": "Data Science", "url": "https://www.linkedin.com/school/iit-madras-bs-degree-program/", "description": "Practice your ML and Data skills on real-world datasets." },
+  { "id": "15", "title": "Student Handbook (Sep 2025)", "type": "PDF", "subject": "Official", "url": "#", "description": "The updated handbook with new fees, minors, and grading rules." },
+  { "id": "16", "title": "Grading Document (Sep 2025)", "type": "PDF", "subject": "Official", "url": "#", "description": "Specifics on OPPE schedules, quiz dates, and bonus marks." },
+  { "id": "17", "title": "Exam Cities List", "type": "Link", "subject": "Exam", "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vT6KKXyQjldD7sUVpinTd9oW1dpaDhkm3cq1b2RM5wqGNHrComOQbXR3C9jh14arLmxhnxc9jNUbC8O/pubhtml", "description": "Updated list of exam centers in India and abroad." },
+  { "id": "18", "title": "OPPE SCT SoP", "type": "Link", "subject": "Exam", "url": "#", "description": "Standard Operating Procedure for the mandatory System Compatibility Test." }
 ]

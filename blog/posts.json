@@ -93,16 +93,31 @@
     ]
   },
   {
-    "id": "1766557547822",
-    "title": "Checking is the ?? Data working",
-    "excerpt": "kyu batao",
-    "content": "<p> kaise ho bhai<p/>",
-    "author": "developer",
-    "date": "",
+    "id": "qualifier-101",
+    "title": "Qualifier Exam 101: How to Crack It",
+    "excerpt": "The first hurdle. Here is how to clear the Qualifier Exam with flying colors and zero stress. Focus on the 4 core subjects and manage your time.",
+    "content": "<h2>1. The Four Pillars</h2><p>Math 1, Stats 1, Computational Thinking, and English 1. These are your targets.</p><h2>2. The Secret Sauce</h2><p>Do NOT skip the activity questions. They are often direct indicators of exam questions.</p><h2>3. Mock Tests</h2><p>The mock tests released 1 week before the exam are gold. Solve them in a timed environment.</p><h2>4. Resources</h2><p>Check out <strong>We4AI</strong> and <strong>Let's Learn</strong> for specialized prep material.</p>",
+    "author": "Qualifier_Vet",
+    "date": "Oct 05, 2025",
+    "readTime": "5 min read",
     "tags": [
-      "bhaluu",
-      "sher"
-    ],
-    "readTime": "5 min read"
+      "Guide",
+      "Qualifier",
+      "New Student"
+    ]
+  },
+  {
+    "id": "community-resources",
+    "title": "Best Community Resources for IITM BS Students",
+    "excerpt": "You are not alone. Discover the vibrant student communities that help you solve clear doubts and stay motivated.",
+    "content": "<p>Studying online can be lonely, but it doesn't have to be.</p><ul><li><strong>Discourse:</strong> The official forum for doubt clearing.</li><li><strong>r/IITM_BS_DataScience:</strong> The unofficial subreddit for memes, rants, and advice.</li><li><strong>Discord Servers:</strong> Live study rooms and peer support.</li></ul>",
+    "author": "Community_Lead",
+    "date": "Oct 10, 2025",
+    "readTime": "4 min read",
+    "tags": [
+      "Community",
+      "Resources",
+      "Social"
+    ]
   }
 ]

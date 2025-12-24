@@ -28,10 +28,20 @@
       "icon": "fa-book-open",
       "questions": [
         { "q": "What is the new Diploma in DS Pathway?", "a": "From Sep 2025, you have two options for the remaining 6 credits in Diploma DS:<br><strong>Option 1:</strong> Business Analytics (4 Cr) + BDM Project (2 Cr).<br><strong>Option 2:</strong> Intro to Deep Learning & GenAI (4 Cr) + DL/GenAI Project (2 Cr)." },
-        { "q": "What is the 'Advanced Certificate'?", "a": "A new certificate for students who complete all 6 Theory courses in a Diploma but haven't finished the projects. <br><em>Note:</em> It's awarded automatically in the dashboard." },
-        { "q": "What is CCC (Credit Clearing Capability)?", "a": "CCC limits how many courses you can take. <br><strong>Foundation Level:</strong> Now a <em>recommendation</em> rather than strict enforcement, to help students improve pace.<br><strong>Diploma/Degree:</strong> Calculated based on previous term performance (M)." },
+        { "q": "What is the 'Advanced Certificate'?", "a": "A new certificate for students who complete all 6 Theory courses in a Diploma but haven't finished the projects." },
+        { "q": "What is CCC (Credit Clearing Capability)?", "a": "CCC limits how many courses you can take. <br><strong>Foundation Level:</strong> Now a <em>recommendation</em> rather than strict enforcement.<br><strong>Diploma/Degree:</strong> Calculated based on previous term performance (M)." },
         { "q": "What is the I_OP Grade?", "a": "<strong>I_OP</strong> (Incomplete - Option to Pass).<br>Given if internal score (Assignments + Quizzes) is good (>40%) but you missed/failed the End Term.<br><strong>Benefit:</strong> You don't repeat assignments. You only write the End Term exam in the next term." },
         { "q": "New Minors available?", "a": "Yes! Sep 2025 introduces exciting minors:<br>- <strong>Generative AI</strong> (LLM, DL Practice, Math for GenAI)<br>- <strong>Cloud Computing for AI</strong><br>- <strong>Multimodal AI Systems</strong><br>- <strong>Algorithmic Decision Making</strong>" }
+      ]
+    },
+    {
+      "id": "section-fees",
+      "title": "Fees & Financials (Revised Jan 2026)",
+      "icon": "fa-indian-rupee-sign",
+      "questions": [
+        { "q": "What are the Revised Fees (Jan 2026)?", "a": "<strong>Foundation:</strong> ₹48,000 (was ₹32k)<br><strong>Diploma Level:</strong> ₹1,38,000 (Theory ₹3000/cr)<br><strong>BSc Degree:</strong> ₹2.86L - ₹3.10L<br><strong>BS Degree:</strong> ₹3.86L - ₹4.50L" },
+        { "q": "Are there Fee Waivers?", "a": "Yes. <br><strong>< 1 LPA:</strong> 75% Waiver<br><strong>1-5 LPA:</strong> 50% Waiver<br><strong>SC/ST:</strong> 50% or 75% waiver depending on income/PwD status." },
+        { "q": "Fee for Credit Transfer (NPTEL)?", "a": "₹1000 per credit. For Apprenticeship, it is ₹5000 per credit." }
       ]
     },
     {
@@ -40,30 +50,9 @@
       "icon": "fa-pen-to-square",
       "questions": [
         { "q": "What is the SCT for OPPE?", "a": "<strong>System Compatibility Test (SCT)</strong>. It is MANDATORY. You must pass this test (usually a simple check of your camera, mic, and environment) before the actual OPPE. If you miss SCT, you will <strong>NOT</strong> be allowed to write the OPPE." },
-        { "q": "Do Mock Tests give extra marks?", "a": "<strong>Bonus:</strong> If Avg of Mocks >= 40/100, you can get up to 2 bonus marks in some courses. Check course grading doc." },
-        { "q": "What happens if I miss a Quiz?", "a": "If you miss one Quiz, the other Quiz score is usually considered with a penalty or specific formula adjustment. If you miss <strong>BOTH</strong> quizzes, you are ineligible for the End Term." },
+        { "q": "Direct Admission to Diploma (DAD)?", "a": "YES. You can enter Diploma directly if you have completed 2 years of UG degree.<br><strong>Exam:</strong> 3 hrs (Programming) or 4 hrs (Data Science).<br><strong>Fee:</strong> ₹6000 (Gen/OBC)." },
+        { "q": "What happens if I miss a Quiz?", "a": "If you miss one Quiz, the other Quiz score is considered. If you miss <strong>BOTH</strong> quizzes, you are ineligible for the End Term." },
         { "q": "Can I change my Exam City?", "a": "You select preferences before every term. <strong>Strict Rule:</strong> You must report ONLY to the assigned center. Unauthorized center entry is strictly prohibited." }
-      ]
-    },
-    {
-      "id": "section-alumni",
-      "title": "Alumni, Fees & Policies",
-      "icon": "fa-id-card",
-      "questions": [
-        { "q": "How do I become an Alumnus?", "a": "Complete the BSc (114 credits) or BS (142 credits) requirements. You MUST register with IITMAA." },
-        { "q": "What is the Alumni Fee?", "a": "<strong>₹7080</strong> (one-time). Paid in two installments (50% in first Degree term, 50% in next). Includes Alumni Card and lifetime IITMAA membership." },
-        { "q": "What are the Alumni Benefits?", "a": "1. <strong>Campus Access:</strong> Entry to IITM, Library, Gymkhana, Swimming Pool.<br>2. <strong>Guest House:</strong> Booking privileges at Taramani Guest House.<br>3. <strong>Networking:</strong> Access to Job Portal, Mentorship, and Global Chapters." },
-        { "q": "Fee Waivers?", "a": "<strong>Family Income < 1 LPA:</strong> 75% Waiver.<br><strong>1-5 LPA:</strong> 50% Waiver.<br>Also applies to SC/ST/PwD categories as per norms." }
-      ]
-    },
-    {
-      "id": "section-higher-ed",
-      "title": "PG Diploma, MTech & Research",
-      "icon": "fa-graduation-cap",
-      "questions": [
-        { "q": "How to enter PG Diploma?", "a": "Complete the BS Degree (142 credits) with a CGPA > 8.0. You can then register for the PG Diploma level (20 credits)." },
-        { "q": "Pathway to MS (Research)?", "a": "Students with CGPA >= 8.0 (Campus) or via GATE can apply for MS (Research) at IITM. <br><em>New:</em> 'Project Staff' route also available (CGPA >= 7.5 in 2 campus courses)." },
-        { "q": "Gate Exam Integration?", "a": "You can credit 'Comprehensive Exam' courses (Level 4) if you are in the top 1% of GATE-DA or GATE-CS papers." }
       ]
     },
     {
@@ -71,7 +60,7 @@
       "title": "System & Tech Requirements",
       "icon": "fa-laptop-code",
       "questions": [
-        { "q": "Do I need a powerful laptop?", "a": "Not really. A basic laptop with 4GB+ RAM is enough. However, a <strong>working webcam and microphone</strong> are mandatory for proctored exams and some sessions." },
+        { "q": "Do I need a powerful laptop?", "a": "<strong>Minimum:</strong> 8GB RAM, Intel 8th Gen/AMD 4th Gen, 500GB Storage.<br><strong>OS:</strong> Windows 10/Ubuntu 20.04/MacOS Mojave.<br><strong>Webcam:</strong> MANDATORY for proctored exams." },
         { "q": "Can I use LLMs/ChatGPT?", "a": "<strong>Strictly NO.</strong> Using ChatGPT/Gemini for graded assignments or OPPEs is considered Malpractice. The program uses advanced detection. Penalties include grade reduction or expulsion." }
       ]
     }
