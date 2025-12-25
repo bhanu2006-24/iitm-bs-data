@@ -1,0 +1,282 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 259,
+            "group_id": 27,
+            "exam_id": 3,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-04-17T15:54:27.000000Z",
+            "updated_at": "2025-04-17T15:54:27.000000Z",
+            "question_paper_name": "IIT M ES FOUNDATION FN EXAM QEF2 13",
+            "question_paper_description": "2025 Apr13: IIT M FN EXAM QEF2",
+            "uuid": "1418cd52-e91",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 3,
+                "exam_name": "End Term Quiz",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "7a6ff569-f50c-40e7-a08b-f5c334392600",
+                "en_id": "eyJpdiI6Ii80QmtWOFUrWTVCUTBvd2xMWjdlL0E9PSIsInZhbHVlIjoiMFRDMDNQRzIzTEoydURDVW1tT1plQT09IiwibWFjIjoiNzk3OGI4MjYwODRjMDEyMjA1OTE5NDg4MzEzMzRkMTkyY2FlODE3OTVhZmE1MDg0ZWQyNDY4YzQ1ZWMyZDJhNCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 82168,
+                    "exam_id": 3,
+                    "question_paper_id": 259,
+                    "question_number": 271,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : ANALOG ELECTRONIC SYSTEMS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:54:29.000000Z",
+                    "updated_at": "2025-04-17T15:54:29.000000Z",
+                    "question_num_long": 6406531239118,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "e19626de4762895b04f30ee0db6b400e",
+                    "course_id": 104,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "37465076-45d5-4394-88ce-c19a0b994772",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : ANALOG ELECTRONIC SYSTEMS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 104,
+                        "course_name": "AES",
+                        "course_code": "AES",
+                        "created_at": "2025-04-17T15:54:19.000000Z",
+                        "updated_at": "2025-04-17T15:54:19.000000Z",
+                        "program_id": 2,
+                        "uuid": "22927823-fc89-45a4-87ef-f60de2d33506"
+                    },
+                    "options": [
+                        {
+                            "id": 220072,
+                            "question_id": 82168,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181366,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 220073,
+                            "question_id": 82168,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181367,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 82169,
+                    "exam_id": 3,
+                    "question_paper_id": 259,
+                    "question_number": 272,
+                    "question_text_1": "  ",
+                    "question_image_1": "pAzFry93aXsQNMN9aempC7FaM8OkPxxEr1spkpkvMPcQ1qDb7G.png",
+                    "question_type": "MCQ",
+                    "total_mark": "20.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:54:29.000000Z",
+                    "updated_at": "2025-04-17T15:54:29.000000Z",
+                    "question_num_long": 6406531239119,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "16390a9f981a80ff2ff2d02163c2826b",
+                    "course_id": 104,
+                    "is_markdown": 0,
+                    "question_text_2": "    ",
+                    "question_image_2": "48L8hJ3jOGrFHZ9AQ8fUvnxbHCs2kJl3hSXqb7lufwrKk8VN93.png",
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "04bce1db-64a6-47ea-bca0-f9abe4711bb5",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/pAzFry93aXsQNMN9aempC7FaM8OkPxxEr1spkpkvMPcQ1qDb7G.png",
+                        "/question_images/48L8hJ3jOGrFHZ9AQ8fUvnxbHCs2kJl3hSXqb7lufwrKk8VN93.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "    "
+                    ],
+                    "course": {
+                        "id": 104,
+                        "course_name": "AES",
+                        "course_code": "AES",
+                        "created_at": "2025-04-17T15:54:19.000000Z",
+                        "updated_at": "2025-04-17T15:54:19.000000Z",
+                        "program_id": 2,
+                        "uuid": "22927823-fc89-45a4-87ef-f60de2d33506"
+                    },
+                    "options": [
+                        {
+                            "id": 220074,
+                            "question_id": 82169,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "20.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181368,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 220075,
+                            "question_id": 82169,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181369,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 82170,
+                    "exam_id": 3,
+                    "question_paper_id": 259,
+                    "question_number": 273,
+                    "question_text_1": "  ",
+                    "question_image_1": "2dMZ2pNYY96ip0y1VfzaAqA9P5FnV58icj6PJEIXXdu3BsVGFR.png",
+                    "question_type": "MCQ",
+                    "total_mark": "30.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:54:29.000000Z",
+                    "updated_at": "2025-04-17T15:54:29.000000Z",
+                    "question_num_long": 6406531239120,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "4b4b1cd4154eebc91969350540794e8f",
+                    "course_id": 104,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "f50d5U1G5nnvcIPOi4bjecqN9jdzhBjiocDarGw6Qq6MuoXS6T.png",
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "7b29daec-1d59-478c-a927-cf6efcbeda19",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/2dMZ2pNYY96ip0y1VfzaAqA9P5FnV58icj6PJEIXXdu3BsVGFR.png",
+                        "/question_images/f50d5U1G5nnvcIPOi4bjecqN9jdzhBjiocDarGw6Qq6MuoXS6T.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 104,
+                        "course_name": "AES",
+                        "course_code": "AES",
+                        "created_at": "2025-04-17T15:54:19.000000Z",
+                        "updated_at": "2025-04-17T15:54:19.000000Z",
+                        "program_id": 2,
+                        "uuid": "22927823-fc89-45a4-87ef-f60de2d33506"
+                    },
+                    "options": [
+                        {
+                            "id": 220076,
+                            "question_id": 82170,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "30.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181370,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 220077,
+                            "question_id": 82170,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:54:29.000000Z",
+                            "updated_at": "2025-04-17T15:54:29.000000Z",
+                            "option_number": 6406534181371,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Here\u2019s a structured **summary of core topics, concepts, principles, and equations** for the **Analog Electronic Systems** exam, along with **Mermaid knowledge graphs** to visualize relationships.\n\n---\n\n## **Core Topics & Concepts**\n### **1. Operational Amplifiers (Op-Amps)**\n#### **Key Concepts:**\n- **Ideal Op-Amp Assumptions**:\n  - Infinite input impedance (no input current).\n  - Zero output impedance.\n  - Infinite open-loop gain (voltagage difference between inputs is zero in negative feedback).\n  - Infinite bandwidth.\n- **Negative Feedback**:\n  - Stabilizes gain, reduces distortion, and improves linearity.\n- **Virtual Ground**:\n  - In negative feedback, the inverting (-) and non-inverting (+) inputs are at the same potential (for ideal op-amps).\n\n#### **Essential Equations:**\n1. **Non-Inverting Amplifier**:\n   \\[\n   \\frac{V_o}{V_i} = 1 + \\frac{R_2}{R_1}\n   \\]\n2. **Inverting Amplifier**:\n   \\[\n   \\frac{V_o}{V_i} = -\\frac{R_2}{R_1}\n   \\]\n3. **Voltage Follower (Buffer)**:\n   \\[\n   V_o = V_i\n   \\]\n4. **Summing Amplifier**:\n   \\[\n   V_o = -R_f \\left( \\frac{V_1}{R_1} + \\frac{V_2}{R_2} + \\dots + \\frac{V_n}{R_n} \\right)\n   \\]\n5. **Differential Amplifier**:\n   \\[\n   V_o = \\frac{R_2}{R_1} (V_2 - V_1) \\quad \\text{(if } R_1 = R_3, R_2 = R_4\\text{)}\n   \\]\n6. **Op-Amp Gain with Finite Open-Loop Gain (A)**:\n   \\[\n   V_o = \\frac{A}{1 + \\beta A} V_i \\quad \\text{(where } \\beta = \\text{feedback factor)}\n   \\]\n7. **Output Voltage with Load Current (Non-Ideal Op-Amp)**:\n   \\[\n   \\Delta V_o = I_{Load} \\times R_{out}\n   \\]\n   (For ideal op-amps, \\( R_{out} = 0 \\), so no change.)\n\n---\n\n### **2. Battery Charging Circuits (BQ24040/BQ24045 IC)**\n#### **Key Concepts:**\n- **Fast Charge Current (\\( I_{OUT} \\))**:\n  - Programmed via \\( R_{SET} \\) (current-sense resistor).\n- **Termination Current (\\( I_{TERM} \\))**:\n  - Typically \\( \\frac{1}{10} \\) of fast charge current.\n- **Pre-Charge Current**:\n  - Applied when battery voltage is below a threshold (\\( V_{LOW} \\)).\n- **Charging Time Calculation**:\n  \\[\n  T_{charge} = \\frac{C_{battery}}{I_{charge}} \\times (1 + \\text{overhead})\n  \\]\n  (Overhead accounts for inefficiencies, typically ~20-30%.)\n\n#### **Essential Equations:**\n1. **Fast Charge Current Resistor (\\( R_{SET} \\))**:\n   \\[\n   R_{SET} = \\frac{K_{ISET}}{I_{OUT}}\n   \\]\n   (Where \\( K_{ISET} \\) is from the datasheet, typically **510\u2013570 A\u03a9** for \\( 50 < I_{OUT} < 1000 \\) mA.)\n2. **Termination Current Resistor (\\( R_{TERM} \\))**:\n   \\[\n   R_{TERM} = K_{TERM} \\times \\%_{TERM}\n   \\]\n   (Where \\( K_{TERM} \\) is **200 \u03a9/%** (typical), and \\( \\%_{TERM} \\) is **10%** of \\( I_{OUT} \\).)\n3. **Charging Time**:\n   \\[\n   T_{charge} \\approx \\frac{C_{battery}}{I_{charge}} \\times 1.2\n   \\]\n   (Example: For a **1200 mAh** battery and **900 mA** charge current, \\( T \\approx 1.6 \\) hours.)\n\n---\n\n### **3. Op-Amp Circuit Analysis with Component Tolerances**\n#### **Key Concepts:**\n- **Resistor Tolerance Impact**:\n  - Variations in \\( R_1 \\) and \\( R_2 \\) affect gain.\n- **Worst-Case Analysis**:\n  - Maximum % variation in \\( V_{OUT} \\) due to resistor tolerances.\n- **Non-Ideal Op-Amp Effects**:\n  - Finite open-loop gain and output impedance cause deviations.\n\n#### **Essential Equations:**\n1. **Gain Variation Due to Resistor Tolerances**:\n   - For **non-inverting amplifier**:\n     \\[\n     \\frac{V_o}{V_i} = 1 + \\frac{R_2 (1 \\pm \\text{tol}_2)}{R_1 (1 \\pm \\text{tol}_1)}\n     \\]\n   - **Maximum % variation**:\n     \\[\n     \\% \\Delta V_o = \\left| \\frac{\\Delta R_1}{R_1} \\right| + \\left| \\frac{\\Delta R_2}{R_2} \\right|\n     \\]\n     (Example: \\( R_1 \\) has **4%** tolerance, \\( R_2 \\) has **2%** \u2192 Max \\( \\% \\Delta V_o = 6\\% \\).)\n2. **Output Voltage Change with Load Current**:\n   \\[\n   \\Delta V_o = I_{Load} \\times \\frac{R_o}{1 + A \\beta}\n   \\]\n   (Where \\( A \\) = open-loop gain, \\( \\beta \\) = feedback factor, \\( R_o \\) = output impedance.)\n\n---\n\n### **4. Transfer Functions of Op-Amp Circuits**\n#### **Key Concepts:**\n- **Laplace Domain Analysis**:\n  - Used for frequency-domain behavior (e.g., filters).\n- **First-Order Low-Pass/High-Pass Filters**:\n  - Defined by cutoff frequency \\( f_c = \\frac{1}{2 \\pi RC} \\).\n\n#### **Essential Equations:**\n1. **Inverting Amplifier Transfer Function**:\n   \\[\n   \\frac{V_o(s)}{V_i(s)} = -\\frac{R_2}{R_1}\n   \\]\n2. **Non-Inverting Amplifier Transfer Function**:\n   \\[\n   \\frac{V_o(s)}{V_i(s)} = 1 + \\frac{R_2}{R_1}\n   \\]\n3. **First-Order Low-Pass Filter**:\n   \\[\n   \\frac{V_o(s)}{V_i(s)} = \\frac{1}{1 + sRC}\n   \\]\n4. **First-Order High-Pass Filter**:\n   \\[\n   \\frac{V_o(s)}{V_i(s)} = \\frac{sRC}{1 + sRC}\n   \\]\n\n---\n\n### **5. Active Filters (Single-Supply Op-Amp Circuits)**\n#### **Key Concepts:**\n- **Sallen-Key Filter**:\n  - Common 2nd-order active filter topology.\n- **Cutoff Frequency**:\n  - Determined by \\( R \\) and \\( C \\) values.\n- **AC Analysis**:\n  - Input/output voltages in frequency domain.\n\n#### **Essential Equations:**\n1. **Sallen-Key Low-Pass Filter**:\n   \\[\n   f_c = \\frac{1}{2 \\pi \\sqrt{R_1 R_2 C_1 C_2}}\n   \\]\n   (For equal components, \\( R_1 = R_2 = R \\), \\( C_1 = C_2 = C \\):\n   \\[\n   f_c = \\frac{1}{2 \\pi RC}\n   \\]\n2. **Output Voltage for Sinusoidal Input**:\n   \\[\n   V_o(t) = A \\sin(\\omega t + \\phi)\n   \\]\n   Where \\( A = \\frac{V_{in}}{|1 + j \\omega RC|} \\), \\( \\phi = \\tan^{-1}(-\\omega RC) \\).\n\n---\n\n## **Mermaid Knowledge Graphs**\n### **Graph 1: Op-Amp Fundamentals**\n```mermaid\ngraph TD\n    A[Operational Amplifier] --> B[Ideal Assumptions]\n    A --> C[Negative Feedback]\n    B --> D[Infinite Input Impedance]\n    B --> E[Zero Output Impedance]\n    B --> F[Infinite Gain]\n    C --> G[Virtual Ground]\n    C --> H[Stable Gain]\n    A --> I[Basic Configurations]\n    I --> J[Non-Inverting Amplifier]\n    I --> K[Inverting Amplifier]\n    I --> L[Voltage Follower]\n    I --> M[Summing Amplifier]\n    I --> N[Differential Amplifier]\n```\n\n### **Graph 2: Battery Charging Circuit (BQ24040/5)**\n```mermaid\ngraph TD\n    A[Battery Charger IC] --> B[Fast Charge Current]\n    A --> C[Termination Current]\n    A --> D[Pre-Charge Current]\n    B --> E[R_SET Calculation]\n    C --> F[R_TERM Calculation]\n    D --> G[Pre-Charge Threshold]\n    A --> H[Charging Time]\n    H --> I[Battery Capacity]\n    H --> J[Charge Current]\n```\n\n### **Graph 3: Op-Amp Circuit Analysis with Tolerances**\n```mermaid\ngraph TD\n    A[Op-Amp Circuit] --> B[Resistor Tolerances]\n    A --> C[Non-Ideal Effects]\n    B --> D[R1 Variation]\n    B --> E[R2 Variation]\n    D --> F[Gain Error Calculation]\n    E --> F\n    C --> G[Finite Open-Loop Gain]\n    C --> H[Output Impedance]\n    G --> I[Closed-Loop Gain]\n    H --> J[Load Current Effect]\n```\n\n### **Graph 4: Transfer Functions & Filters**\n```mermaid\ngraph TD\n    A[Op-Amp Circuits] --> B[Transfer Functions]\n    A --> C[Active Filters]\n    B --> D[Inverting Amplifier]\n    B --> E[Non-Inverting Amplifier]\n    C --> F[Low-Pass Filter]\n    C --> G[High-Pass Filter]\n    F --> H[Cutoff Frequency]\n    G --> H\n    H --> I[RC Network]\n```\n\n---\n\n## **Exam Preparation Checklist**\n| **Topic**               | **Key Equations**                                                                 | **Concepts to Master**                                                                 |\n|-------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|\n| **Op-Amp Basics**       | \\( \\frac{V_o}{V_i} = 1 + \\frac{R_2}{R_1} \\), \\( \\frac{V_o}{V_i} = -\\frac{R_2}{R_1} \\) | Ideal assumptions, negative feedback, virtual ground.                              |\n| **Battery Charging**    | \\( R_{SET} = \\frac{K_{ISET}}{I_{OUT}} \\), \\( T_{charge} = \\frac{C}{I} \\times 1.2 \\) | Datasheet interpretation, \\( R_{SET} \\), \\( R_{TERM} \\), charging time.             |\n| **Tolerance Analysis** | \\( \\% \\Delta V_o = \\% \\Delta R_1 + \\% \\Delta R_2 \\)                              | Worst-case gain variation, resistor tolerances.                                       |\n| **Transfer Functions**  | \\( \\frac{V_o}{V_i} = \\frac{1}{1 + sRC} \\) (Low-Pass)                               | Laplace transforms, frequency response, filter design.                              |\n| **Active Filters**      | \\( f_c = \\frac{1}{2 \\pi RC} \\)                                                   | Sallen-Key topology, cutoff frequency, AC analysis.                                   |\n\n---\n### **Final Tips:**\n1. **For Op-Amp Circuits**:\n   - Always assume **ideal op-amp** unless specified otherwise.\n   - Use **virtual ground** for negative feedback circuits.\n2. **For Battery Charging**:\n   - **Cross-check datasheet values** (e.g., \\( K_{ISET} \\), \\( K_{TERM} \\)).\n   - Termination current is **10% of fast charge current**.\n3. **For Tolerance Analysis**:\n   - **Add absolute tolerances** for worst-case variation.\n4. **For Filters**:\n   - Remember \\( f_c = \\frac{1}{2 \\pi RC} \\) for **1st-order filters**.\n   - For **2nd-order filters**, use Sallen-Key equations.",
+        "total_score": "50.00"
+    },
+    "url": "/question-paper/practise/104/1418cd52-e91",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

@@ -1,0 +1,95 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 215,
+            "group_id": 21,
+            "exam_id": 3,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-12-23T09:11:18.000000Z",
+            "updated_at": "2024-12-23T09:11:18.000000Z",
+            "question_paper_name": "IIT M IMPROVEMENT AN EXAM QDD4 22",
+            "question_paper_description": "2024 Dec22: IIT M AN EXAM QDD4",
+            "uuid": "eaf0a9c6-9fe",
+            "year": 2024,
+            "is_new": 0,
+            "exam": {
+                "id": 3,
+                "exam_name": "End Term Quiz",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "7a6ff569-f50c-40e7-a08b-f5c334392600",
+                "en_id": "eyJpdiI6InNpQkJHOEhGd1QvNHorREtnTjNhWEE9PSIsInZhbHVlIjoieW9iSFluMWZKYnI5TXk0THd6Z20rUT09IiwibWFjIjoiYmUyZTlmNjg4NzFhNTAyYzk3YmI3ODYyY2I3YmFhZmJiOTdiMzE1ZDM0NzU5OTFhNjFiYmYxNWFhYzAzMDE0YyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 67732,
+                    "exam_id": 3,
+                    "question_paper_id": 215,
+                    "question_number": 356,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : INTRODUCTION TO BIG DATA </b><b>(COMPUTER BASED EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-12-23T09:11:21.000000Z",
+                    "updated_at": "2024-12-23T09:11:21.000000Z",
+                    "question_num_long": 6406531046996,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "6a98a889c1e793b15260c943cce77b5e",
+                    "course_id": 94,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "67a6e543-046a-4284-a82b-e3ab3186e1f7",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : INTRODUCTION TO BIG DATA </b><b>(COMPUTER BASED EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b>"
+                    ],
+                    "course": {
+                        "id": 94,
+                        "course_name": "Intro to Big Data",
+                        "course_code": "Intro to Big Data",
+                        "created_at": "2024-11-27T07:27:23.000000Z",
+                        "updated_at": "2024-11-27T07:27:23.000000Z",
+                        "program_id": 1,
+                        "uuid": "44039058-a2ca-424f-a748-bbc56b22992a"
+                    },
+                    "options": [],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Here\u2019s a structured **summary of core topics, concepts, principles, and equations** for **\"Introduction to Big Data\"** (Degree Level, Computer-Based Exam), along with **Mermaid knowledge graphs** to visualize relationships.\n\n---\n\n### **Core Topics & Key Concepts**\n#### **1. Fundamentals of Big Data**\n   - **Definition**: High-volume, high-velocity, and/or high-variety data requiring scalable tools.\n   - **5 Vs of Big Data**:\n     - Volume (size), Velocity (speed), Variety (types), Veracity (quality), Value (usefulness).\n   - **Sources**: Social media, IoT, logs, transactions, sensors.\n   - **Challenges**: Storage, processing, analysis, privacy.\n\n#### **2. Big Data Technologies & Ecosystem**\n   - **Hadoop Ecosystem**:\n     - **HDFS** (Hadoop Distributed File System): Distributed storage.\n     - **MapReduce**: Batch processing (parallel computation).\n     - **YARN**: Resource management.\n     - **Hive** (SQL-like queries), **Pig** (ETL), **HBase** (NoSQL database).\n   - **Spark**:\n     - In-memory processing (faster than MapReduce).\n     - Components: Spark Core, Spark SQL, MLlib, GraphX, Streaming.\n   - **NoSQL Databases**:\n     - Types: Key-Value (Redis), Document (MongoDB), Columnar (Cassandra), Graph (Neo4j).\n   - **Stream Processing**:\n     - Tools: Kafka, Flink, Storm.\n\n#### **3. Data Storage & Processing**\n   - **Distributed Storage**:\n     - Replication (e.g., HDFS\u2019s 3x replication).\n     - Partitioning (sharding in HBase).\n   - **Batch vs. Real-Time Processing**:\n     - Batch: MapReduce, Hive.\n     - Real-Time: Spark Streaming, Flink.\n   - **Data Lakes vs. Data Warehouses**:\n     - **Data Lake**: Raw data (schema-on-read), e.g., HDFS.\n     - **Data Warehouse**: Structured data (schema-on-write), e.g., Redshift.\n\n#### **4. Big Data Analytics**\n   - **Descriptive Analytics**: What happened? (e.g., dashboards).\n   - **Predictive Analytics**: What will happen? (e.g., ML models).\n   - **Prescriptive Analytics**: What should we do? (e.g., optimization).\n   - **Tools**: Spark MLlib, TensorFlow, H2O.ai.\n\n#### **5. Machine Learning for Big Data**\n   - **Scalable ML Algorithms**:\n     - Linear Regression, Logistic Regression, Decision Trees, Clustering (K-Means).\n   - **Feature Engineering**:\n     - Dimensionality reduction (PCA), normalization.\n   - **Model Evaluation**:\n     - Accuracy, Precision, Recall, F1-Score, ROC-AUC.\n\n#### **6. Data Privacy & Security**\n   - **GDPR/CCPA Compliance**: Data anonymization, encryption.\n   - **Techniques**:\n     - Tokenization, Differential Privacy, Homomorphic Encryption.\n   - **Access Control**: Role-based (RBAC), Attribute-based (ABAC).\n\n#### **7. Cloud & Big Data**\n   - **Cloud Platforms**:\n     - AWS (EMR, Redshift), Azure (HDInsight), GCP (BigQuery, Dataproc).\n   - **Serverless Computing**: AWS Lambda, Azure Functions.\n\n#### **8. Case Studies & Applications**\n   - **Use Cases**:\n     - Fraud detection (finance), recommendation systems (Netflix), predictive maintenance (IoT).\n\n---\n\n### **Key Equations (Mathematics/ML)**\n1. **MapReduce Word Count (Pseudo-Code)**:\n   ```python\n   # Mapper: (key, value) \u2192 [(word, 1)]\n   # Reducer: (word, [1,1,1]) \u2192 (word, sum)\n   ```\n\n2. **K-Means Clustering Objective**:\n   \\[\n   \\text{Minimize } \\sum_{i=1}^{n} \\sum_{j=1}^{k} ||x_i - c_j||^2\n   \\]\n   - \\(x_i\\): Data point, \\(c_j\\): Cluster centroid.\n\n3. **Linear Regression (Gradient Descent Update)**:\n   \\[\n   \\theta_j := \\theta_j - \\alpha \\frac{1}{m} \\sum_{i=1}^{m} (h_\\theta(x_i) - y_i) x_{ij}\n   \\]\n   - \\(\\alpha\\): Learning rate, \\(h_\\theta\\): Hypothesis function.\n\n4. **Logistic Regression (Sigmoid Function)**:\n   \\[\n   h_\\theta(x) = \\frac{1}{1 + e^{-\\theta^T x}}\n   \\]\n\n5. **Precision & Recall**:\n   \\[\n   \\text{Precision} = \\frac{TP}{TP + FP}, \\quad \\text{Recall} = \\frac{TP}{TP + FN}\n   \\]\n   - TP: True Positive, FP: False Positive, FN: False Negative.\n\n6. **Entropy (Decision Trees)**:\n   \\[\n   H(S) = -\\sum_{i=1}^{c} p_i \\log_2 p_i\n   \\]\n   - \\(p_i\\): Proportion of class \\(i\\).\n\n---\n\n### **Mermaid Knowledge Graphs**\n#### **Graph 1: Big Data Ecosystem**\n```mermaid\ngraph TD\n    A[Big Data] --> B[Storage]\n    A --> C[Processing]\n    A --> D[Analytics]\n    A --> E[Security]\n\n    B --> B1[HDFS]\n    B --> B2[NoSQL]\n    B --> B3[Data Lakes]\n\n    C --> C1[MapReduce]\n    C --> C2[Spark]\n    C --> C3[Streaming]\n\n    D --> D1[Descriptive]\n    D --> D2[Predictive]\n    D --> D3[Prescriptive]\n\n    E --> E1[Encryption]\n    E --> E2[Access Control]\n    E --> E3[GDPR]\n```\n\n#### **Graph 2: Hadoop vs. Spark**\n```mermaid\ngraph LR\n    X[Hadoop] --> X1[HDFS]\n    X --> X2[MapReduce]\n    X --> X3[Batch Processing]\n\n    Y[Spark] --> Y1[In-Memory]\n    Y --> Y2[Real-Time]\n    Y --> Y3[MLlib]\n    Y --> Y4[GraphX]\n\n    X -- Slower --> Y\n    Y -- Faster --> X\n```\n\n#### **Graph 3: Machine Learning Workflow**\n```mermaid\ngraph TD\n    M[Data] --> N[Preprocessing]\n    N --> O[Feature Engineering]\n    O --> P[Model Training]\n    P --> Q[Evaluation]\n    Q --> R[Deployment]\n\n    P --> P1[Supervised]\n    P --> P2[Unsupervised]\n    P --> P3[Reinforcement]\n\n    Q --> Q1[Accuracy]\n    Q --> Q2[Precision/Recall]\n    Q --> Q3[ROC-AUC]\n```\n\n#### **Graph 4: Cloud & Big Data**\n```mermaid\ngraph TD\n    Cloud[Cloud Platforms] --> AWS[AWS]\n    Cloud --> Azure[Azure]\n    Cloud --> GCP[GCP]\n\n    AWS --> AWS1[EMR]\n    AWS --> AWS2[Redshift]\n    AWS --> AWS3[Lambda]\n\n    Azure --> Azure1[HDInsight]\n    Azure --> Azure2[Synapse]\n\n    GCP --> GCP1[BigQuery]\n    GCP --> GCP2[Dataproc]\n```\n\n---\n### **Exam Preparation Tips**\n1. **Focus Areas**:\n   - Hadoop/Spark architectures (e.g., how YARN allocates resources).\n   - Differences between batch vs. real-time processing.\n   - NoSQL database types and when to use them.\n   - ML algorithms scalable for big data (e.g., K-Means in Spark).\n   - GDPR/privacy techniques.\n\n2. **Practice**:\n   - Write MapReduce/Spark pseudo-code for word count, sorting.\n   - Solve ML problems using Spark MLlib (e.g., linear regression on large datasets).\n   - Design a big data pipeline (e.g., Kafka \u2192 Spark \u2192 HBase).\n\n3. **Equations to Remember**:\n   - K-Means objective, logistic regression sigmoid, precision/recall, entropy.\n\n4. **Case Studies**:\n   - Be ready to explain how companies like Netflix or Uber use big data.",
+        "total_score": "0.00"
+    },
+    "url": "/question-paper/practise/94/eaf0a9c6-9fe",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

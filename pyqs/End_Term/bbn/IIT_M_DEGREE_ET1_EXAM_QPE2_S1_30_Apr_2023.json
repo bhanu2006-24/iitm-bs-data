@@ -1,0 +1,120 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 204,
+            "group_id": 22,
+            "exam_id": 3,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-12-19T21:08:55.000000Z",
+            "updated_at": "2024-12-19T21:08:55.000000Z",
+            "question_paper_name": "IIT M DEGREE ET1 EXAM QPE2 S1 30 Apr 2023",
+            "question_paper_description": "2023 Apr30: IIT M DEGREE ET1 EXAM QPE2",
+            "uuid": "04e274ff-ef4",
+            "year": 2023,
+            "is_new": 0,
+            "exam": {
+                "id": 3,
+                "exam_name": "End Term Quiz",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "7a6ff569-f50c-40e7-a08b-f5c334392600",
+                "en_id": "eyJpdiI6ImdkK3kyQW84aW5vSFRhVUlTQ0pHcmc9PSIsInZhbHVlIjoidXc5dnZUV1IyQXU5Z0hzT2tnbUZ5UT09IiwibWFjIjoiMmViNTNjODlmYmFiM2U0NTAwMjEyODE4NTZkYzkxNWZkOWZiMmYxNjMwZmY1YmUwMWQ3M2ZhYWJhMDRmOTk2OCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 63441,
+                    "exam_id": 3,
+                    "question_paper_id": 204,
+                    "question_number": 146,
+                    "question_text_1": "THERE IS NO BIG DATA AND BIOLOGICAL NETWORKS QP IN FORENOON SESSION",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "100.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-12-19T21:08:56.000000Z",
+                    "updated_at": "2024-12-19T21:08:56.000000Z",
+                    "question_num_long": 640653565104,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "461598fd2977e9dd5fd18c8a1444ab57",
+                    "course_id": 89,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "61e747ca-53a6-4734-8115-1aea2e223751",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THERE IS NO BIG DATA AND BIOLOGICAL NETWORKS QP IN FORENOON SESSION"
+                    ],
+                    "course": {
+                        "id": 89,
+                        "course_name": "BBN",
+                        "course_code": "BBN",
+                        "created_at": "2024-11-26T13:58:47.000000Z",
+                        "updated_at": "2024-11-26T13:58:47.000000Z",
+                        "program_id": 1,
+                        "uuid": "241c92f3-13af-4cb2-b4bb-1b9914dfc676"
+                    },
+                    "options": [
+                        {
+                            "id": 170566,
+                            "question_id": 63441,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "100.000",
+                            "is_correct": 1,
+                            "created_at": "2024-12-19T21:08:56.000000Z",
+                            "updated_at": "2024-12-19T21:08:56.000000Z",
+                            "option_number": 6406531888944,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 170567,
+                            "question_id": 63441,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-12-19T21:08:56.000000Z",
+                            "updated_at": "2024-12-19T21:08:56.000000Z",
+                            "option_number": 6406531888945,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "This question is administrative and does **not** require technical or conceptual analysis. It simply confirms whether a specific exam (Big Data and Biological Networks) is scheduled for the forenoon session.\n\n---\n### **Summary of Core Takeaway**\n- **Purpose**: Administrative notification (no technical content).\n- **Key Point**: The exam for \"Big Data and Biological Networks\" is **not** in the forenoon session.\n- **Action**: Verify exam schedules independently (e.g., university portal, timetable).\n\n---\n### **Mermaid Knowledge Graph**\n```mermaid\ngraph TD\n    A[Exam: Big Data and Biological Networks] -->|Not Scheduled| B[Forenoon Session]\n    A -->|Check Alternative| C[Afternoon/Other Sessions]\n    A -->|Verify Via| D[Official Timetable]\n```\n\n---\n### **Notes**\n- No equations, theories, or technical concepts apply here.\n- If this is part of a larger exam paper, focus on **other questions** for technical preparation.",
+        "total_score": "100.00"
+    },
+    "url": "/question-paper/practise/89/04e274ff-ef4",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

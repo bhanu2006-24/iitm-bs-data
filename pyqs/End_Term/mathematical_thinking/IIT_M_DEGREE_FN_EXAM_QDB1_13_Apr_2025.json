@@ -1,0 +1,201 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 249,
+            "group_id": 27,
+            "exam_id": 3,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-04-17T15:52:06.000000Z",
+            "updated_at": "2025-04-17T15:52:06.000000Z",
+            "question_paper_name": "IIT M DEGREE FN EXAM QDB1 13 Apr 2025",
+            "question_paper_description": "2025 Apr13: IIT M FN EXAM QDB1",
+            "uuid": "2282af9a-8bf",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 3,
+                "exam_name": "End Term Quiz",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "7a6ff569-f50c-40e7-a08b-f5c334392600",
+                "en_id": "eyJpdiI6Ind6Mm1DYkhYcy96SVRBQUxNTzBPUlE9PSIsInZhbHVlIjoiZUNvaDdPcm5EYThuT2lITHpHK013UT09IiwibWFjIjoiZTQ1ZGZiNjNiNDA3YTg2ZTAzZWRhMTAyNjVkOWRkODI4ZjYzZjRhNjhmNDMxNWNkMWVlNjI1NTE5MDY0YmNkNiIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 78054,
+                    "exam_id": 3,
+                    "question_paper_id": 249,
+                    "question_number": 105,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : MATHEMATICAL THINKING (PEN </b><b>AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:52:07.000000Z",
+                    "updated_at": "2025-04-17T15:52:07.000000Z",
+                    "question_num_long": 6406531245262,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "e8b118f708e5e91a548dec5b973d955e",
+                    "course_id": 51,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "d402404a-8ab4-4974-9cc7-fa6017966de6",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : MATHEMATICAL THINKING (PEN </b><b>AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 51,
+                        "course_name": "Mathematical Thinking",
+                        "course_code": "Mathematical Thinking",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "4459db7b-c07a-41a2-adc8-9c8331893853"
+                    },
+                    "options": [
+                        {
+                            "id": 209462,
+                            "question_id": 78054,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198894,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 209463,
+                            "question_id": 78054,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198895,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 78055,
+                    "exam_id": 3,
+                    "question_paper_id": 249,
+                    "question_number": 106,
+                    "question_text_1": "  ",
+                    "question_image_1": "JiE9ylXESzrCeyJO1YJuQrLPbgSaCERblLfHeGWcQfyzAOx4sj.png",
+                    "question_type": "MCQ",
+                    "total_mark": "40.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:52:07.000000Z",
+                    "updated_at": "2025-04-17T15:52:07.000000Z",
+                    "question_num_long": 6406531245263,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "0aa3faf425c761759b66c59ef89d6bd6",
+                    "course_id": 51,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "AkDWSeP5ktvikF3Wi0vOubLreg28zyME2pGiyNwkFRaOpNidDx.png",
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "bf28110c-e10e-492e-82cd-4888897fac03",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/JiE9ylXESzrCeyJO1YJuQrLPbgSaCERblLfHeGWcQfyzAOx4sj.png",
+                        "/question_images/AkDWSeP5ktvikF3Wi0vOubLreg28zyME2pGiyNwkFRaOpNidDx.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 51,
+                        "course_name": "Mathematical Thinking",
+                        "course_code": "Mathematical Thinking",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "4459db7b-c07a-41a2-adc8-9c8331893853"
+                    },
+                    "options": [
+                        {
+                            "id": 209464,
+                            "question_id": 78055,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "40.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198896,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 209465,
+                            "question_id": 78055,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198897,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Here\u2019s a structured **summary of core topics, concepts, principles, and equations** for the **\"Mathematical Thinking\"** exam, followed by **Mermaid knowledge graphs** to visualize relationships.\n\n---\n\n### **Core Topics & Key Concepts**\n#### **1. Number Theory & Euler Totient Function**\n- **Euler Totient Function (\u03c6(n))**:\n  - Counts integers \\(1 \\leq r \\leq n\\) where \\(\\gcd(r, n) = 1\\).\n  - **Properties**:\n    - Multiplicative: \\(\\phi(ab) = \\phi(a)\\phi(b)\\) if \\(\\gcd(a, b) = 1\\).\n    - For prime \\(p\\): \\(\\phi(p) = p-1\\).\n    - For \\(p^k\\): \\(\\phi(p^k) = p^k - p^{k-1}\\).\n  - **Key Equation**:\n    \\[\n    \\phi(n) = n \\prod_{p | n} \\left(1 - \\frac{1}{p}\\right)\n    \\]\n  - **Claim in Question**: \\(\\phi(n+1) \\geq \\phi(n)\\) is **not always true** (e.g., \\(\\phi(5) = 4 > \\phi(6) = 2\\)).\n\n- **Modular Arithmetic**:\n  - **Fermat\u2019s Little Theorem**: If \\(p\\) is prime and \\(\\gcd(a, p) = 1\\), then \\(a^{p-1} \\equiv 1 \\mod p\\).\n  - **Example**: \\(3^{50} \\mod 7\\):\n    - \\(3^6 \\equiv 1 \\mod 7\\) (by Fermat\u2019s Little Theorem).\n    - \\(3^{50} = 3^{48} \\cdot 3^2 \\equiv 1 \\cdot 2 \\equiv 2 \\mod 7\\).\n    - **Correction**: The question claims remainder is 4, but the correct remainder is **2**.\n\n- **Arithmetic Series**:\n  - Sum of \\(1 + 4 + 7 + \\cdots + (3n-2)\\):\n    \\[\n    S_n = \\frac{n}{2} \\times (\\text{first term} + \\text{last term}) = \\frac{n(3n - 1)}{2}\n    \\]\n\n- **Permutations & Inversions**:\n  - **Inversion**: A pair \\((i, j)\\) where \\(i < j\\) but \\(a_i > a_j\\) in a permutation.\n  - **Number of permutations of \\(n\\) elements with 1 inversion**: \\(n-1\\) (e.g., for \\(n=5\\), it\u2019s 4).\n\n---\n\n#### **2. Continued Fractions**\n- **Infinite Continued Fraction for \\(\\sqrt{2}\\)**:\n  - Derived from its recursive relationship: \\(\\sqrt{2} = 1 + (\\sqrt{2} - 1) = 1 + \\frac{1}{1 + \\sqrt{2}}\\).\n  - **Standard Form**:\n    \\[\n    \\sqrt{2} = 1 + \\cfrac{1}{2 + \\cfrac{1}{2 + \\cfrac{1}{2 + \\ddots}}}\n    \\]\n  - **Key Observation**: The pattern \\([2; 2, 2, \\dots]\\) repeats infinitely.\n\n---\n\n#### **3. Sequences & Series**\n- **Recursive Sequence**: \\(a_{n+1} = \\sqrt{3a_n}\\), \\(a_1 = 1\\).\n  - **Behavior**:\n    - If \\(a_n \\to L\\), then \\(L = \\sqrt{3L} \\implies L = 0\\) or \\(L = 3\\).\n    - Since \\(a_1 = 1\\) and the sequence is increasing, it converges to **3**.\n  - **Cauchy Sequence**: A sequence is Cauchy if \\(\\forall \\epsilon > 0, \\exists N\\) such that \\(|a_n - a_m| < \\epsilon\\) for all \\(n, m \\geq N\\).\n    - **Claim**: \\(\\{a_n\\}\\) is Cauchy (since it converges).\n  - **Series Convergence**:\n    - \\(\\sum (-1)^n b_n\\) where \\(b_n = \\frac{1}{a_n}\\).\n    - **Alternating Series Test**: Converges if \\(b_n\\) is decreasing and \\(\\lim b_n = 0\\).\n    - Here, \\(b_n \\to \\frac{1}{3}\\), so the series **diverges** (since \\(\\lim (-1)^n b_n \\neq 0\\)).\n\n- **Combined Sequence**: \\(\\{a_n + b_n\\}\\) converges to \\(3 + \\frac{1}{3} = \\frac{10}{3}\\).\n\n---\n\n#### **4. Riemann Sums & Integrals**\n- **Upper/Lower Riemann Sums** for \\(f(x) = e^x\\) on \\([0, 1]\\) with partition \\(P\\) (10 equal subintervals):\n  - **Partition**: \\(x_i = \\frac{i}{10}\\) for \\(i = 0, \\dots, 10\\).\n  - **Upper Sum (\\(U(f, P)\\))**: \\(\\sum_{i=1}^{10} e^{x_i} \\cdot \\frac{1}{10}\\).\n  - **Lower Sum (\\(L(f, P)\\))**: \\(\\sum_{i=1}^{10} e^{x_{i-1}} \\cdot \\frac{1}{10}\\).\n  - **Difference**:\n    \\[\n    U(f, P) - L(f, P) = \\frac{1}{10} \\sum_{i=1}^{10} (e^{x_i} - e^{x_{i-1}}) = \\frac{e^{1} - e^{0}}{10} = \\frac{e - 1}{10}\n    \\]\n\n---\n\n#### **5. Limits & Continuity**\n- **Function**:\n  \\[\n  f(x) = \\begin{cases}\n  \\frac{|x|}{x}, & x \\neq 0 \\\\\n  0, & x = 0\n  \\end{cases}\n  \\]\n  - **Discontinuity at \\(x = 0\\)**:\n    - \\(\\lim_{x \\to 0^+} f(x) = 1\\), \\(\\lim_{x \\to 0^-} f(x) = -1\\).\n    - **Sequences**:\n      - \\(x_n = \\frac{1}{n} \\to 0\\), \\(f(x_n) \\to 1\\).\n      - \\(y_n = -\\frac{1}{n} \\to 0\\), \\(f(y_n) \\to -1\\).\n\n- **Uniform Continuity vs. Continuity**:\n  - \\(f(x) = \\frac{1}{x}\\) is continuous on \\((0, \\infty)\\) but **not uniformly continuous** because \\(\\lim_{x \\to 0^+} f(x) = \\infty\\) (fails the \\(\\epsilon-\\delta\\) condition uniformly).\n  - **Proof of Non-Uniform Continuity**:\n    - For \\(\\epsilon = 1\\), any \\(\\delta > 0\\) fails for \\(x = \\delta\\) and \\(y = \\delta/2\\):\n      \\(|f(x) - f(y)| = \\left|\\frac{1}{\\delta} - \\frac{2}{\\delta}\\right| = \\frac{1}{\\delta} > 1\\).\n\n- **Local Minimum**:\n  - \\(f(x) = \\frac{1}{x}\\) has no local minima on \\((0, \\infty)\\) because its derivative \\(f'(x) = -\\frac{1}{x^2} < 0\\) (strictly decreasing).\n\n---\n\n#### **6. Derivatives**\n- **Third Derivative of \\(f(x) = \\sin(\\cos x)\\)**:\n  - First derivative: \\(f'(x) = -\\cos(\\cos x) \\cdot \\sin x\\).\n  - Second derivative: \\(f''(x) = -\\sin(\\cos x) \\cdot \\sin^2 x + \\cos(\\cos x) \\cdot \\cos x\\).\n  - Third derivative: \\(f'''(x) = -\\cos(\\cos x) \\cdot \\sin^3 x + 3\\sin(\\cos x) \\cdot \\sin x \\cos x + \\sin(\\cos x) \\cdot \\cos^2 x\\).\n\n---\n\n#### **7. Intermediate Value Theorem (IVT)**\n- **Polynomial**: \\(P(x) = 5a x^4 + 4b x^3 + 3c x^2 - (a + b + c)\\).\n  - Evaluate at \\(x = 0\\): \\(P(0) = -(a + b + c) < 0\\).\n  - Evaluate at \\(x = 1\\): \\(P(1) = 5a + 4b + 3c - (a + b + c) = 4a + 3b + 2c > 0\\).\n  - By IVT, \\(\\exists \\xi \\in (0, 1)\\) such that \\(P(\\xi) = 0\\).\n\n---\n\n### **Mermaid Knowledge Graphs**\n#### **Graph 1: Number Theory & Sequences**\n```mermaid\ngraph TD\n    A[Number Theory] --> B[Euler Totient Function \u03c6(n)]\n    A --> C[Modular Arithmetic]\n    C --> D[Fermat's Little Theorem]\n    B --> E[Properties of \u03c6(n)]\n    A --> F[Arithmetic Series]\n    F --> G[Sum Formula]\n\n    H[Sequences] --> I[Recursive Definition]\n    I --> J[a\u2099\u208a\u2081 = \u221a(3a\u2099)]\n    H --> K[Convergence]\n    K --> L[Cauchy Sequences]\n    H --> M[Series]\n    M --> N[Alternating Series Test]\n```\n\n#### **Graph 2: Continuity & Riemann Integration**\n```mermaid\ngraph TD\n    A[Continuity] --> B[Pointwise Continuity]\n    B --> C[f(x) = |x|/x at x=0]\n    A --> D[Uniform Continuity]\n    D --> E[f(x) = 1/x on (0,\u221e)]\n    A --> F[Intermediate Value Theorem]\n    F --> G[Polynomial Root in (0,1)]\n\n    H[Riemann Integration] --> I[Upper/Lower Sums]\n    I --> J[Partition P]\n    H --> K[Difference U(f,P) - L(f,P)]\n```\n\n#### **Graph 3: Derivatives & Continued Fractions**\n```mermaid\ngraph TD\n    A[Derivatives] --> B[Chain Rule]\n    B --> C[f(x) = sin(cos x)]\n    C --> D[Third Derivative]\n\n    E[Continued Fractions] --> F[Infinite CF for \u221a2]\n    F --> G[Pattern [2; 2, 2, ...]]\n```\n\n---\n### **Key Equations Summary**\n| **Topic**               | **Equation**                                                                 |\n|-------------------------|-----------------------------------------------------------------------------|\n| Euler Totient Function  | \\(\\phi(n) = n \\prod_{p | n} \\left(1 - \\frac{1}{p}\\right)\\)                            |\n| Arithmetic Series Sum   | \\(S_n = \\frac{n(3n - 1)}{2}\\)                                              |\n| Modular Arithmetic      | \\(3^{50} \\mod 7 = 2\\) (via Fermat\u2019s Little Theorem)                        |\n| Recursive Sequence      | \\(a_{n+1} = \\sqrt{3a_n}\\), converges to 3                                  |\n| Riemann Sum Difference  | \\(U(f, P) - L(f, P) = \\frac{e - 1}{10}\\)                                   |\n| Third Derivative        | \\(f'''(x) = -\\cos(\\cos x) \\sin^3 x + 3\\sin(\\cos x) \\sin x \\cos x + \\sin(\\cos x) \\cos^2 x\\) |\n| IVT Application         | \\(P(0) < 0\\), \\(P(1) > 0 \\implies \\exists \\xi \\in (0,1)\\) with \\(P(\\xi) = 0\\) |",
+        "total_score": "40.00"
+    },
+    "url": "/question-paper/practise/51/2282af9a-8bf",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

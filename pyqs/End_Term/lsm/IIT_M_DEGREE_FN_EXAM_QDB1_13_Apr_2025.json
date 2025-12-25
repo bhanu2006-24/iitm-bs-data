@@ -1,0 +1,282 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 249,
+            "group_id": 27,
+            "exam_id": 3,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-04-17T15:52:06.000000Z",
+            "updated_at": "2025-04-17T15:52:06.000000Z",
+            "question_paper_name": "IIT M DEGREE FN EXAM QDB1 13 Apr 2025",
+            "question_paper_description": "2025 Apr13: IIT M FN EXAM QDB1",
+            "uuid": "2282af9a-8bf",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 3,
+                "exam_name": "End Term Quiz",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "7a6ff569-f50c-40e7-a08b-f5c334392600",
+                "en_id": "eyJpdiI6IkFmb3Fsc2VhWWZ1c3lRRURNVlcyR3c9PSIsInZhbHVlIjoiZTl1SWRBTDhlMUMvazBLMUpxMytZdz09IiwibWFjIjoiN2RlZGY0ZWY5MTkzMmU3OTk5NDk3OTkwMmJiMmZhYWU3ODIyMjFkN2M5ZWNkMDUxYjYyOGM5NGQ4MDQwNDNmZCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 78056,
+                    "exam_id": 3,
+                    "question_paper_id": 249,
+                    "question_number": 107,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:52:07.000000Z",
+                    "updated_at": "2025-04-17T15:52:07.000000Z",
+                    "question_num_long": 6406531245264,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "bd138d84c4305082d6d3479e4f10d160",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "6bc4dbc8-3682-476c-8f08-e0ba6af0f957",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 209466,
+                            "question_id": 78056,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198898,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 209467,
+                            "question_id": 78056,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198899,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 78057,
+                    "exam_id": 3,
+                    "question_paper_id": 249,
+                    "question_number": 108,
+                    "question_text_1": "  ",
+                    "question_image_1": "OurlvX90ildBmeD5OIio8dPPwjxyya9XSw3xPbzGuh1bmmafRW.png",
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:52:07.000000Z",
+                    "updated_at": "2025-04-17T15:52:07.000000Z",
+                    "question_num_long": 6406531245265,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "10dae948c3ae06431c2d94b0c1d69e5f",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "a8f645a2-31bd-422e-8b73-e5067c5d82e9",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/OurlvX90ildBmeD5OIio8dPPwjxyya9XSw3xPbzGuh1bmmafRW.png"
+                    ],
+                    "question_texts": [
+                        "  "
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 209468,
+                            "question_id": 78057,
+                            "option_text": "Useful Data has been mentioned above.",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198900,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 209469,
+                            "question_id": 78057,
+                            "option_text": "This data attachment is just for a reference & not for an evaluation.",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198901,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 78058,
+                    "exam_id": 3,
+                    "question_paper_id": 249,
+                    "question_number": 109,
+                    "question_text_1": "  ",
+                    "question_image_1": "Vp2EqIEhGmLqYyrVgxYJLJJihCOcICgPmHSrDo3FplxFbaqCUh.png",
+                    "question_type": "MCQ",
+                    "total_mark": "50.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-04-17T15:52:07.000000Z",
+                    "updated_at": "2025-04-17T15:52:07.000000Z",
+                    "question_num_long": 6406531245266,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "14c7d13ce8377eade8b11b7df0b7334b",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": "    ",
+                    "question_image_2": "gda31XnBlgjsQdwEqPyYPWjLDZa2GrrwbmK6Txh4P0XqTuBFRJ.png",
+                    "question_image_3": "oiX975E9LdSaj17xBi5EoFwWwB4Vyt5bUhC0N0ybKQyrlfSdEd.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "    ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "65698dd1-352d-4bdc-976a-6cc12cb158ed",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/Vp2EqIEhGmLqYyrVgxYJLJJihCOcICgPmHSrDo3FplxFbaqCUh.png",
+                        "/question_images/gda31XnBlgjsQdwEqPyYPWjLDZa2GrrwbmK6Txh4P0XqTuBFRJ.png",
+                        "/question_images/oiX975E9LdSaj17xBi5EoFwWwB4Vyt5bUhC0N0ybKQyrlfSdEd.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "    ",
+                        "    "
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 209470,
+                            "question_id": 78058,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "50.000",
+                            "is_correct": 1,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198902,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 209471,
+                            "question_id": 78058,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-04-17T15:52:07.000000Z",
+                            "updated_at": "2025-04-17T15:52:07.000000Z",
+                            "option_number": 6406534198903,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Here\u2019s a structured **summary of core topics, concepts, principles, and equations** for the **Linear Statistical Models** exam, followed by **Mermaid knowledge graphs** to visualize relationships.\n\n---\n\n---\n\n### **Core Topics & Key Concepts**\n#### **1. One-Way ANOVA (Analysis of Variance)**\n- **Purpose**: Compare means of **3+ groups** (not variances or 2 groups).\n- **Assumptions**:\n  - Observations within groups are **independent**.\n  - Groups are **normally distributed** with equal variance (homoscedasticity).\n  - Sample sizes **need not be equal** (unbalanced designs are allowed).\n- **Hypotheses**:\n  - Null (\\(H_0\\)): \\(\\mu_1 = \\mu_2 = \\dots = \\mu_k\\) (all group means are equal).\n  - Alternative (\\(H_1\\)): At least one \\(\\mu_i\\) differs.\n\n---\n#### **2. Sum of Squares (SS) Decomposition**\n- **Total Sum of Squares (TSS)**:\n  \\[\n  TSS = \\sum_{i=1}^{k} \\sum_{j=1}^{n_i} (Y_{ij} - \\overline{Y}_{\\bullet\\bullet})^2\n  \\]\n  - Measures **total variability** in the data.\n\n- **Sum of Squares Between (SSB)**:\n  \\[\n  SSB = \\sum_{i=1}^{k} n_i (\\overline{Y}_{i\\bullet} - \\overline{Y}_{\\bullet\\bullet})^2\n  \\]\n  - Measures variability **between group means**.\n\n- **Sum of Squares Within (SSW)**:\n  \\[\n  SSW = \\sum_{i=1}^{k} \\sum_{j=1}^{n_i} (Y_{ij} - \\overline{Y}_{i\\bullet})^2\n  \\]\n  - Measures variability **within groups** (error).\n\n- **Relationship**:\n  \\[\n  TSS = SSB + SSW\n  \\]\n\n---\n#### **3. ANOVA Table & F-Statistic**\n| Source       | Degrees of Freedom (df) | Sum of Squares (SS) | Mean Square (MS)       | F-Statistic          |\n|--------------|-------------------------|--------------------|------------------------|----------------------|\n| Between      | \\(k-1\\)                 | SSB                | \\(MSB = \\frac{SSB}{k-1}\\) | \\(F = \\frac{MSB}{MSW}\\) |\n| Within (Error)| \\(n-k\\)                 | SSW                | \\(MSW = \\frac{SSW}{n-k}\\) |                      |\n| **Total**    | \\(n-1\\)                 | TSS                |                        |                      |\n\n- **F-Statistic**:\n  \\[\n  F = \\frac{MSB}{MSW} \\sim F_{(k-1, \\, n-k)} \\quad \\text{under } H_0\n  \\]\n  - **Decision Rule**: Reject \\(H_0\\) if \\(F > F_{\\alpha,(k-1,n-k)}\\) (tabulated critical value).\n\n---\n#### **4. Linear Regression Models**\n- **Simple Linear Model**:\n  \\[\n  Y_i = \\beta x_i + \\epsilon_i, \\quad \\epsilon_i \\sim N(0, \\sigma^2)\n  \\]\n  - **Estimators**:\n    - \\(\\hat{\\beta}_1 = \\frac{\\sum x_i y_i}{\\sum x_i^2}\\) (Least Squares, **unbiased**).\n    - \\(\\hat{\\beta}_2 = \\frac{\\sum y_i}{\\sum x_i}\\) (Alternative, **unbiased but less efficient**).\n  - **Variance Comparison**:\n    \\[\n    \\text{Var}(\\hat{\\beta}_1) = \\frac{\\sigma^2}{\\sum x_i^2}, \\quad \\text{Var}(\\hat{\\beta}_2) = \\frac{\\sigma^2 (\\sum x_i^2)}{(\\sum x_i)^2}\n    \\]\n    - \\(\\hat{\\beta}_1\\) is **better** (lower variance) unless \\(x_i\\) are identical.\n\n- **Residual Standard Error (RSE)**:\n  \\[\n  RSE = \\sqrt{\\frac{RSS}{n-2}} = \\sqrt{\\frac{\\sum (y_i - \\hat{y}_i)^2}{n-2}}\n  \\]\n  - Measures **average deviation of observations from the fitted line**.\n\n- **R-squared (\\(R^2\\))**:\n  \\[\n  R^2 = 1 - \\frac{RSS}{TSS} = \\frac{SSR}{TSS}\n  \\]\n  - Proportion of variance in \\(Y\\) **explained by the model** (0 to 1).\n\n---\n#### **5. Estimability & Least Squares**\n- **Estimable Functions**:\n  - A linear function \\(p^T \\beta\\) is **estimable** if its least squares estimate \\(p^T \\hat{\\beta}\\) is **unique**.\n  - Equivalent to \\(p^T\\) being in the **row space of \\(X\\)** (i.e., \\(p^T = a^T X\\) for some \\(a\\)).\n\n- **Residual Sum of Squares (RSS)**:\n  \\[\n  RSS = \\min_{\\beta} \\|Y - X\\beta\\|_2^2 \\sim \\sigma^2 \\chi^2_{n-p}, \\quad p = \\text{rank}(X)\n  \\]\n\n---\n#### **6. Hypothesis Testing Workflow**\n1. **State \\(H_0\\) and \\(H_1\\)** (e.g., equality of means).\n2. **Compute SSB, SSW, MSB, MSW**.\n3. **Calculate F-statistic** and compare to critical \\(F_{\\alpha,(k-1,n-k)}\\).\n4. **Reject \\(H_0\\)** if \\(F > F_{\\text{critical}}\\) (or p-value < \\(\\alpha\\)).\n5. **Conclude**: Significant differences exist if \\(H_0\\) is rejected.\n\n---\n\n---\n\n### **Mermaid Knowledge Graphs**\n#### **Graph 1: ANOVA Core Concepts**\n```mermaid\ngraph TD\n    A[One-Way ANOVA] --> B[Purpose: Compare Group Means]\n    A --> C[Assumptions]\n    C --> C1[Independent Observations]\n    C --> C2[Normality]\n    C --> C3[Homoscedasticity]\n    A --> D[Hypotheses]\n    D --> D1[Null: All Means Equal]\n    D --> D2[Alternative: At Least One Differs]\n    A --> E[Sum of Squares]\n    E --> E1[TSS: Total Variability]\n    E --> E2[SSB: Between-Group Variability]\n    E --> E3[SSW: Within-Group Variability]\n    E --> E4[TSS = SSB + SSW]\n    A --> F[ANOVA Table]\n    F --> F1[F-Statistic = MSB/MSW]\n    F --> F2[Decision: Compare to F_critical]\n```\n\n#### **Graph 2: Linear Regression Relationships**\n```mermaid\ngraph TD\n    G[Linear Regression] --> H[Model: Y = \u03b2x + \u03b5]\n    H --> H1[Assumptions]\n    H1 --> H1a[\u03b5 ~ N(0, \u03c3\u00b2)]\n    H1 --> H1b[Independent Errors]\n    G --> I[Estimators]\n    I --> I1[\u03b2\u0302\u2081 = \u03a3x\u1d62y\u1d62 / \u03a3x\u1d62\u00b2]\n    I --> I2[\u03b2\u0302\u2082 = \u03a3y\u1d62 / \u03a3x\u1d62]\n    G --> J[Variance Comparison]\n    J --> J1[Var(\u03b2\u0302\u2081) < Var(\u03b2\u0302\u2082) Typically]\n    G --> K[Goodness-of-Fit]\n    K --> K1[RSE: Residual Standard Error]\n    K --> K2[R\u00b2: Proportion of Variance Explained]\n```\n\n#### **Graph 3: Hypothesis Testing in ANOVA**\n```mermaid\ngraph TD\n    L[Hypothesis Testing] --> M[Step 1: State H\u2080/H\u2081]\n    L --> N[Step 2: Compute SSB/SSW]\n    N --> N1[Calculate MSB/MSW]\n    L --> O[Step 3: F-Statistic]\n    O --> O1[F = MSB/MSW]\n    L --> P[Step 4: Compare to F_critical]\n    P --> P1[Reject H\u2080 if F > F_critical]\n    P --> P2[Fail to Reject Otherwise]\n    L --> Q[Step 5: Conclusion]\n    Q --> Q1[Significant Differences if H\u2080 Rejected]\n```\n\n#### **Graph 4: Estimability & Least Squares**\n```mermaid\ngraph TD\n    R[Estimability] --> S[p\u1d40\u03b2 is Estimable]\n    S --> S1[Unique Least Squares Estimate]\n    S --> S2[p\u1d40 in Row Space of X]\n    R --> T[Residual Sum of Squares]\n    T --> T1[RSS ~ \u03c3\u00b2\u03c7\u00b2_{n-p}]\n    T --> T2[p = rank(X)]\n```\n\n---\n\n---\n### **Key Equations Summary**\n| **Concept**               | **Equation**                                                                 |\n|---------------------------|-----------------------------------------------------------------------------|\n| **One-Way ANOVA Model**   | \\(y_{ij} = \\mu + \\alpha_i + \\epsilon_{ij}\\)                                |\n| **SSB**                   | \\(\\sum_{i=1}^{k} n_i (\\overline{Y}_{i\\bullet} - \\overline{Y}_{\\bullet\\bullet})^2\\) |\n| **SSW**                   | \\(\\sum_{i=1}^{k} \\sum_{j=1}^{n_i} (Y_{ij} - \\overline{Y}_{i\\bullet})^2\\) |\n| **F-Statistic**           | \\(F = \\frac{MSB}{MSW} = \\frac{SSB/(k-1)}{SSW/(n-k)}\\)                      |\n| **Linear Regression**     | \\(Y_i = \\beta x_i + \\epsilon_i\\)                                           |\n| **Unbiased Estimator**    | \\(E[\\hat{\\beta}_1] = \\beta\\)                                               |\n| **Variance of \\(\\hat{\\beta}_1\\)** | \\(\\text{Var}(\\hat{\\beta}_1) = \\frac{\\sigma^2}{\\sum x_i^2}\\)               |\n| **RSE**                   | \\(\\sqrt{\\frac{RSS}{n-2}}\\)                                                  |\n| **R\u00b2**                    | \\(1 - \\frac{RSS}{TSS}\\)                                                     |\n| **RSS Distribution**      | \\(\\frac{RSS}{\\sigma^2} \\sim \\chi^2_{n-p}\\)                                |",
+        "total_score": "50.00"
+    },
+    "url": "/question-paper/practise/52/2282af9a-8bf",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}
