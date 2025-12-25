@@ -20,6 +20,36 @@ PORT = 8000
 SERVER_URL = f"http://localhost:{PORT}"
 
 class BackendHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/api/subjects':
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            
+            subjects = []
+            if os.path.exists("subjects"):
+                for f in glob.glob("subjects/*.json"):
+                    try:
+                        with open(f, 'r') as file:
+                            data = json.load(file)
+                            meta = data.get('meta', {})
+                            # Infer ID from filename if missing
+                            file_id = os.path.basename(f).replace('.json', '')
+                            subj = {
+                                "id": file_id,
+                                "name": meta.get('name', file_id),
+                                "level": meta.get('level', 'Unknown'),
+                                "code": meta.get('code', file_id.upper()),
+                                "color": meta.get('color', 'text-gray-400')
+                            }
+                            subjects.append(subj)
+                    except: pass
+            
+            self.wfile.write(json.dumps(subjects).encode())
+        else:
+            # Serve static files
+            super().do_GET()
+
     def do_POST(self):
         if self.path == '/api/save':
             content_length = int(self.headers['Content-Length'])
@@ -323,6 +353,11 @@ class App(tk.Tk):
             
             # Retouch the saved file to fix paths
             self._fix_image_paths(chosen_file, practice_exam['id'])
+
+            # CLEANUP: Remove temporary scrape data
+            if raw_dir and os.path.exists(raw_dir):
+                shutil.rmtree(raw_dir)
+                self.log("Cleaned up temporary files.")
 
             self.log("Success! Paper added.")
             self.root.after(0, self.load_subjects)

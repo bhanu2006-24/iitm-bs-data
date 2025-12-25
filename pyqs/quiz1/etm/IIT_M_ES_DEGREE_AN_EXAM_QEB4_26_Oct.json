@@ -1,0 +1,205 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 354,
+            "group_id": 31,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-11-16T14:09:57.000000Z",
+            "updated_at": "2025-11-16T14:09:57.000000Z",
+            "question_paper_name": "IIT M ES DEGREE AN EXAM QEB4 26 Oct",
+            "question_paper_description": "2025 Oct26: IIT M AN EXAM QEB4",
+            "uuid": "30d9e605-032",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6Im1KRjBnRTRZVWxOUThGQzY5ZXZGSGc9PSIsInZhbHVlIjoiVFRldHJ1aEVUbFd5TjQ2S0haUTJRUT09IiwibWFjIjoiMmMwODA4NmJhOGVkYzQ1ZGM0MTllMGU0OGYwYWQ5ZDI5ZWZjMTMyYzYzYzdkODM4NWQ4MzdhMTVjOTAxODBjNyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 111022,
+                    "exam_id": 1,
+                    "question_paper_id": 354,
+                    "question_number": 12,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : ELECTRONIC TESTING AND </b><b>MEASUREMENT (PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:09:57.000000Z",
+                    "updated_at": "2025-11-16T14:09:57.000000Z",
+                    "question_num_long": 6406531538781,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "eef7afaf10d8ec4488a4a409fbfa98b9",
+                    "course_id": 113,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "8d638773-03f0-4b6d-8cb5-e9ae49c76b1a",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : ELECTRONIC TESTING AND </b><b>MEASUREMENT (PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 113,
+                        "course_name": "ETM",
+                        "course_code": "ETM",
+                        "created_at": "2025-11-16T14:09:47.000000Z",
+                        "updated_at": "2025-11-16T14:09:47.000000Z",
+                        "program_id": 2,
+                        "uuid": "64c57619-6b57-4616-85d6-c8d36632e3e2"
+                    },
+                    "options": [
+                        {
+                            "id": 290328,
+                            "question_id": 111022,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:09:57.000000Z",
+                            "updated_at": "2025-11-16T14:09:57.000000Z",
+                            "option_number": 6406535147096,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 290329,
+                            "question_id": 111022,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:09:57.000000Z",
+                            "updated_at": "2025-11-16T14:09:57.000000Z",
+                            "option_number": 6406535147097,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 111023,
+                    "exam_id": 1,
+                    "question_paper_id": 354,
+                    "question_number": 13,
+                    "question_text_1": " ",
+                    "question_image_1": "wSkPnutKtw2K4fACdZntBvmXDm2GNeeo30pHhRMD8MltfzpD74.png",
+                    "question_type": "MCQ",
+                    "total_mark": "20.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:09:57.000000Z",
+                    "updated_at": "2025-11-16T14:09:57.000000Z",
+                    "question_num_long": 6406531538782,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "addc4d89affb1928aeb3ba209623a802",
+                    "course_id": 113,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "zkQShLOwnhk2VDW9jpOUquTmPykvST0bTIBoHMQ7yecBXoAwKv.png",
+                    "question_image_3": "Ws5srJ7al41SSmFkZIxgsRkQlmAlP0s2lXTJBL3Iy29QlCViTd.png",
+                    "question_image_4": "qtAOJPIseWx3CCb9XNWNHld8YueR1XzKgrCs0fkYWascqlI0CG.png",
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "   ",
+                    "question_text_4": "   ",
+                    "question_text_5": null,
+                    "uuid": "5845d403-af5a-43da-8f44-98dd64d20342",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/wSkPnutKtw2K4fACdZntBvmXDm2GNeeo30pHhRMD8MltfzpD74.png",
+                        "/question_images/zkQShLOwnhk2VDW9jpOUquTmPykvST0bTIBoHMQ7yecBXoAwKv.png",
+                        "/question_images/Ws5srJ7al41SSmFkZIxgsRkQlmAlP0s2lXTJBL3Iy29QlCViTd.png",
+                        "/question_images/qtAOJPIseWx3CCb9XNWNHld8YueR1XzKgrCs0fkYWascqlI0CG.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        "  ",
+                        "   ",
+                        "   "
+                    ],
+                    "course": {
+                        "id": 113,
+                        "course_name": "ETM",
+                        "course_code": "ETM",
+                        "created_at": "2025-11-16T14:09:47.000000Z",
+                        "updated_at": "2025-11-16T14:09:47.000000Z",
+                        "program_id": 2,
+                        "uuid": "64c57619-6b57-4616-85d6-c8d36632e3e2"
+                    },
+                    "options": [
+                        {
+                            "id": 290330,
+                            "question_id": 111023,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "20.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:09:57.000000Z",
+                            "updated_at": "2025-11-16T14:09:57.000000Z",
+                            "option_number": 6406535147098,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 290331,
+                            "question_id": 111023,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:09:57.000000Z",
+                            "updated_at": "2025-11-16T14:09:57.000000Z",
+                            "option_number": 6406535147099,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "",
+        "total_score": "20.00"
+    },
+    "url": "/question-paper/practise/113/30d9e605-032",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

@@ -1,0 +1,203 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 359,
+            "group_id": 31,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-11-16T14:10:36.000000Z",
+            "updated_at": "2025-11-16T14:10:36.000000Z",
+            "question_paper_name": "IIT M ES FOUNDATION AN EXAM QEF3 26",
+            "question_paper_description": "2025 Oct26: IIT M AN EXAM QEF3",
+            "uuid": "01d756b7-062",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6IlQ0cC9qa3VZQnZoc3U0cnZaWjBiSWc9PSIsInZhbHVlIjoiN1ovcTZDQzNiekNmUmh4Y2J5a212Zz09IiwibWFjIjoiMTIxMWI3YmFhZGI4Y2UwMDM5ZGU4OTUwNjg2NDU2NDgwYjczNGQwNWRkZTM4ODIwZDNmZDg3ZjJlYmYzMTdkZCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 112327,
+                    "exam_id": 1,
+                    "question_paper_id": 359,
+                    "question_number": 44,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : ANALOG ELECTRONIC SYSTEMS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:10:37.000000Z",
+                    "updated_at": "2025-11-16T14:10:37.000000Z",
+                    "question_num_long": 6406531531979,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "cb29dc85cb45336067d6ace66b3e1696",
+                    "course_id": 104,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "32e036c8-8937-42e3-a15a-f61a9432e1c0",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : ANALOG ELECTRONIC SYSTEMS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 104,
+                        "course_name": "AES",
+                        "course_code": "AES",
+                        "created_at": "2025-04-17T15:54:19.000000Z",
+                        "updated_at": "2025-04-17T15:54:19.000000Z",
+                        "program_id": 2,
+                        "uuid": "22927823-fc89-45a4-87ef-f60de2d33506"
+                    },
+                    "options": [
+                        {
+                            "id": 293798,
+                            "question_id": 112327,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:10:37.000000Z",
+                            "updated_at": "2025-11-16T14:10:37.000000Z",
+                            "option_number": 6406535127370,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 293799,
+                            "question_id": 112327,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:10:37.000000Z",
+                            "updated_at": "2025-11-16T14:10:37.000000Z",
+                            "option_number": 6406535127371,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 112328,
+                    "exam_id": 1,
+                    "question_paper_id": 359,
+                    "question_number": 45,
+                    "question_text_1": "  ",
+                    "question_image_1": "OXMXTXwc4Ffq9hTZSv2QjTbHHY2gz7G7Jyh6kYzHPuVnoPoDBN.png",
+                    "question_type": "MCQ",
+                    "total_mark": "30.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:10:37.000000Z",
+                    "updated_at": "2025-11-16T14:10:37.000000Z",
+                    "question_num_long": 6406531531980,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "bd6e0698933ae55d1698e0c4ca2f027b",
+                    "course_id": 104,
+                    "is_markdown": 0,
+                    "question_text_2": "    ",
+                    "question_image_2": "CMwRpChQsrrdS1XB8W4BwM4ZA6Nia7cVeTNvjZbjfMEHKtbY5m.png",
+                    "question_image_3": "MwDuC2bQ3ov3LBCwnFWy1O6AsvZ8UYZj0j65vPm2w877GL1aSO.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "    ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "284b355c-b3c2-4291-a714-735e57ed2a0b",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/OXMXTXwc4Ffq9hTZSv2QjTbHHY2gz7G7Jyh6kYzHPuVnoPoDBN.png",
+                        "/question_images/CMwRpChQsrrdS1XB8W4BwM4ZA6Nia7cVeTNvjZbjfMEHKtbY5m.png",
+                        "/question_images/MwDuC2bQ3ov3LBCwnFWy1O6AsvZ8UYZj0j65vPm2w877GL1aSO.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "    ",
+                        "    "
+                    ],
+                    "course": {
+                        "id": 104,
+                        "course_name": "AES",
+                        "course_code": "AES",
+                        "created_at": "2025-04-17T15:54:19.000000Z",
+                        "updated_at": "2025-04-17T15:54:19.000000Z",
+                        "program_id": 2,
+                        "uuid": "22927823-fc89-45a4-87ef-f60de2d33506"
+                    },
+                    "options": [
+                        {
+                            "id": 293800,
+                            "question_id": 112328,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "30.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:10:37.000000Z",
+                            "updated_at": "2025-11-16T14:10:37.000000Z",
+                            "option_number": 6406535127372,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 293801,
+                            "question_id": 112328,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:10:37.000000Z",
+                            "updated_at": "2025-11-16T14:10:37.000000Z",
+                            "option_number": 6406535127373,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "",
+        "total_score": "30.00"
+    },
+    "url": "/question-paper/practise/104/01d756b7-062",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

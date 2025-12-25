@@ -1,0 +1,203 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 278,
+            "group_id": 28,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-07-09T15:11:45.000000Z",
+            "updated_at": "2025-07-09T15:11:45.000000Z",
+            "question_paper_name": "IIT M DEGREE AN4 EXAM QPE4 26 Feb 2023",
+            "question_paper_description": "2023 Feb: IIT M DEGREE AN4 EXAM QPE4",
+            "uuid": "aff7206a-f03",
+            "year": 2023,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6Imt4QXMwdzgwaGV3NjlDN05RaXZYTVE9PSIsInZhbHVlIjoiVllVWlZNQXRkQUN4SWpYS1d0K3JaUT09IiwibWFjIjoiNjQ4OGM2NWEzMTczYjU5MTMyZWUyZmI4OGE5NWExMzg0YzVlZmIwMWM5NjhlMGFjNmVmMjg0ZTQ5NTYxN2ZiMyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 88174,
+                    "exam_id": 1,
+                    "question_paper_id": 278,
+                    "question_number": 1,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:45.000000Z",
+                    "updated_at": "2025-07-09T15:11:45.000000Z",
+                    "question_num_long": 640653471287,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "90abae877d5a7e4975812ec130ec861f",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "ef103042-99d6-4a9f-9675-b98ceded8ffd",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)"
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 234657,
+                            "question_id": 88174,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:45.000000Z",
+                            "updated_at": "2025-07-09T15:11:45.000000Z",
+                            "option_number": 6406531565884,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 234658,
+                            "question_id": 88174,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:45.000000Z",
+                            "updated_at": "2025-07-09T15:11:45.000000Z",
+                            "option_number": 6406531565885,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 88175,
+                    "exam_id": 1,
+                    "question_paper_id": 278,
+                    "question_number": 2,
+                    "question_text_1": " ",
+                    "question_image_1": "4KF62up2dVUABv3hfIIVB0SCFAah78Gvwo9yp5Uzw63cETFDs1.png",
+                    "question_type": "MCQ",
+                    "total_mark": "25.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:45.000000Z",
+                    "updated_at": "2025-07-09T15:11:45.000000Z",
+                    "question_num_long": 640653471288,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "b3503dd25293d37fd81c7d9c47d6010f",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "SUCZzPGgLI8HAmmm1WBa1ob9qq9ojEeIWBOLjp4KUUDpLabU4T.png",
+                    "question_image_3": "mN68G69j45ZUsoydOqX8w2m0rq585exzA5zwXGKE2Gkd026TEn.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "  ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "1fb0c3b1-ad3d-4978-967d-94efc84a9685",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/4KF62up2dVUABv3hfIIVB0SCFAah78Gvwo9yp5Uzw63cETFDs1.png",
+                        "/question_images/SUCZzPGgLI8HAmmm1WBa1ob9qq9ojEeIWBOLjp4KUUDpLabU4T.png",
+                        "/question_images/mN68G69j45ZUsoydOqX8w2m0rq585exzA5zwXGKE2Gkd026TEn.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 234659,
+                            "question_id": 88175,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "25.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:45.000000Z",
+                            "updated_at": "2025-07-09T15:11:45.000000Z",
+                            "option_number": 6406531565886,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 234660,
+                            "question_id": 88175,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:45.000000Z",
+                            "updated_at": "2025-07-09T15:11:45.000000Z",
+                            "option_number": 6406531565887,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Based on the provided questions, it seems that the core topic for this exam is \"Speech Technology.\" However, the questions provided do not contain specific technical content related to the subject. Here's a general summary of core topics, concepts, principles, and equations that are essential to study for a Speech Technology exam:\n\n### Core Topics and Concepts\n\n1. **Fundamentals of Speech Technology**\n   - Introduction to Speech Technology\n   - Applications of Speech Technology\n\n2. **Speech Production and Perception**\n   - Anatomy and Physiology of Speech Production\n   - Acoustic Phonetics\n   - Auditory Perception\n\n3. **Digital Signal Processing for Speech**\n   - Sampling and Quantization\n   - Fourier Transform and Spectral Analysis\n   - Filtering Techniques\n\n4. **Speech Analysis**\n   - Time-Domain Analysis\n   - Frequency-Domain Analysis\n   - Cepstral Analysis\n\n5. **Speech Recognition**\n   - Feature Extraction (MFCC, PLP)\n   - Hidden Markov Models (HMMs)\n   - Deep Learning Approaches (RNNs, CNNs)\n\n6. **Speech Synthesis**\n   - Text-to-Speech (TTS) Systems\n   - Concatenative Synthesis\n   - Parametric Synthesis\n\n7. **Natural Language Processing (NLP) for Speech**\n   - Language Modeling\n   - Part-of-Speech Tagging\n   - Named Entity Recognition\n\n### Important Equations\n\n1. **Fourier Transform**\n   \\[ X(k) = \\sum_{n=0}^{N-1} x(n) e^{-j 2 \\pi k n / N} \\]\n\n2. **Mel-Frequency Cepstral Coefficients (MFCC)**\n   \\[ \\text{MFCC} = DCT(\\log(\\text{Mel Filterbank Energies})) \\]\n\n3. **Hidden Markov Model (HMM) Probability**\n   \\[ P(O|\\lambda) = \\sum_{q} P(O|q, \\lambda) P(q|\\lambda) \\]\n\n4. **Discrete-Time Fourier Transform (DTFT)**\n   \\[ X(e^{j\\omega}) = \\sum_{n=-\\infty}^{\\infty} x[n] e^{-j \\omega n} \\]\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Speech Technology] --> B[Speech Production and Perception];\n    A --> C[Digital Signal Processing for Speech];\n    A --> D[Speech Analysis];\n    A --> E[Speech Recognition];\n    A --> F[Speech Synthesis];\n    A --> G[Natural Language Processing for Speech];\n\n    B --> B1[Anatomy and Physiology of Speech Production];\n    B --> B2[Acoustic Phonetics];\n    B --> B3[Auditory Perception];\n\n    C --> C1[Sampling and Quantization];\n    C --> C2[Fourier Transform and Spectral Analysis];\n    C --> C3[Filtering Techniques];\n\n    D --> D1[Time-Domain Analysis];\n    D --> D2[Frequency-Domain Analysis];\n    D --> D3[Cepstral Analysis];\n\n    E --> E1[Feature Extraction];\n    E --> E2[Hidden Markov Models];\n    E --> E3[Deep Learning Approaches];\n\n    F --> F1[Text-to-Speech Systems];\n    F --> F2[Concatenative Synthesis];\n    F --> F3[Parametric Synthesis];\n\n    G --> G1[Language Modeling];\n    G --> G2[Part-of-Speech Tagging];\n    G --> G3[Named Entity Recognition];\n```\n\nThis knowledge graph provides a visual representation of the relationships between the core topics in Speech Technology. Each main topic branches out into more specific subtopics, helping to organize and understand the subject matter more effectively.",
+        "total_score": "25.00"
+    },
+    "url": "/question-paper/practise/22/aff7206a-f03",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

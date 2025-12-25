@@ -1,0 +1,201 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 228,
+            "group_id": 25,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-03-23T01:08:41.000000Z",
+            "updated_at": "2025-03-23T01:08:41.000000Z",
+            "question_paper_name": "IIT M IMPROVEMENT AN EXAM QIM2 23 Feb",
+            "question_paper_description": "2025 Feb23: IIT M AN EXAM QIM2",
+            "uuid": "e564d99d-be7",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6InhTYUxDY0hpLzdCN3VIYVJISnh5d2c9PSIsInZhbHVlIjoiVWp2bmZaYUwzZWh2YWt5ZmNIMnUzdz09IiwibWFjIjoiYjU1ZTVhMjRmYThmY2E1ZjczZjQxZjg0YTc3MzQ2YzEzM2QzNGM5OTUxODU0N2Q5ZTNkZTI0OTA0YmU3ZjcyNyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 71452,
+                    "exam_id": 1,
+                    "question_paper_id": 228,
+                    "question_number": 5,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-03-23T01:08:41.000000Z",
+                    "updated_at": "2025-03-23T01:08:41.000000Z",
+                    "question_num_long": 6406531112502,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "cee0fe740cf4b782d59e643c0c1d8379",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "9be574cc-98b4-4e54-bb7e-756e4e020691",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 192596,
+                            "question_id": 71452,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-03-23T01:08:41.000000Z",
+                            "updated_at": "2025-03-23T01:08:41.000000Z",
+                            "option_number": 6406533770866,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 192597,
+                            "question_id": 71452,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-03-23T01:08:41.000000Z",
+                            "updated_at": "2025-03-23T01:08:41.000000Z",
+                            "option_number": 6406533770867,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 71453,
+                    "exam_id": 1,
+                    "question_paper_id": 228,
+                    "question_number": 6,
+                    "question_text_1": " ",
+                    "question_image_1": "Pa9WFL0aEW4DUdEZApBykpRMlvZu8b6ZaMuK1udZrTO2o1J2Ns.png",
+                    "question_type": "MCQ",
+                    "total_mark": "30.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-03-23T01:08:41.000000Z",
+                    "updated_at": "2025-03-23T01:08:41.000000Z",
+                    "question_num_long": 6406531112503,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "b1133c3515852b6a7a5a4e4bbe09f9af",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": " ",
+                    "question_image_2": "4gwFXm2TGI1MxCPmh4mXHg7e79376QhdubqY1eWSwFY6gQxgGL.png",
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "8e7eb7d9-1eb9-4c95-929c-7d7d23fc22c6",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/Pa9WFL0aEW4DUdEZApBykpRMlvZu8b6ZaMuK1udZrTO2o1J2Ns.png",
+                        "/question_images/4gwFXm2TGI1MxCPmh4mXHg7e79376QhdubqY1eWSwFY6gQxgGL.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        " "
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 192598,
+                            "question_id": 71453,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "30.000",
+                            "is_correct": 1,
+                            "created_at": "2025-03-23T01:08:41.000000Z",
+                            "updated_at": "2025-03-23T01:08:41.000000Z",
+                            "option_number": 6406533770868,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 192599,
+                            "question_id": 71453,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-03-23T01:08:41.000000Z",
+                            "updated_at": "2025-03-23T01:08:41.000000Z",
+                            "option_number": 6406533770869,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\n#### 1. Linear Regression Model\n- **Best Fit Line**: The equation of the best fit line in a linear regression model is given by:\n  \\[\n  \\hat{y} = a_0 + a_1 x\n  \\]\n  where \\( a_0 \\) is the intercept and \\( a_1 \\) is the slope.\n\n- **Residuals**: The residual for a data point \\( (x, y) \\) is calculated as:\n  \\[\n  \\text{Residual} = y - \\hat{y}\n  \\]\n\n#### 2. Sample Mean and Sample Variance\n- **Sample Mean**:\n  \\[\n  \\bar{X} = \\frac{1}{n} \\sum_{i=1}^{n} X_i\n  \\]\n\n- **Sample Variance**:\n  \\[\n  S^2 = \\frac{1}{(n-1)} \\sum_{i=1}^{n} (X_i - \\bar{X})^2\n  \\]\n\n- **Distributions**:\n  - \\( \\bar{X} \\sim \\text{Normal}(\\mu, \\sigma^2 / n) \\)\n  - \\( \\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2_{n-1} \\)\n  - \\( \\frac{\\sqrt{n}(\\bar{X} - \\mu)}{S} \\sim t_{n-1} \\)\n\n#### 3. Data Manipulation in R\n- **Subsetting Data**: Understanding how to subset data in R using indices and column names.\n- **Variance Calculation**: Calculating the sample variance and understanding the relationship between sample variance and population variance.\n\n#### 4. Linear Mixed Models\n- **Random Effects**: Understanding the distribution of random effects and their inclusion in linear models.\n  \\[\n  y_{ij} = \\alpha + \\beta x_{ij} + \\gamma_i + \\epsilon_{ij}\n  \\]\n  where \\( \\gamma_i \\sim N(0, \\sigma^2_\\gamma) \\) and \\( \\epsilon_{ij} \\sim N(0, \\sigma^2_\\epsilon) \\).\n\n#### 5. Prediction Errors\n- **Calculation of Prediction Errors**: Understanding how to calculate prediction errors and their sum of squares.\n  \\[\n  \\hat{e_i} = \\hat{y_i} - \\bar{y_i}\n  \\]\n  \\[\n  \\sum_{i=1}^{n} (\\hat{e_i})^2\n  \\]\n\n#### 6. Estimability in Linear Models\n- **Estimability Condition**: Understanding the condition for estimability in linear models.\n  \\[\n  p^T \\vec{\\beta} \\text{ is estimable } \\Leftrightarrow p \\in C(X^T)\n  \\]\n\n#### 7. Normal Equations\n- **Normal Equations**: Understanding the formulation and solution of normal equations for least squares estimation.\n  \\[\n  X^T X \\vec{\\beta} = X^T \\vec{Y}\n  \\]\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Linear Regression Model] --> B[Best Fit Line];\n    A --> C[Residuals];\n    B --> D[Equation: y\u0302 = a\u2080 + a\u2081x];\n    C --> E[Calculation: y - y\u0302];\n    F[Sample Mean and Variance] --> G[Sample Mean];\n    F --> H[Sample Variance];\n    G --> I[Equation: X\u0304 = (1/n) \u03a3X\u1d62];\n    H --> J[Equation: S\u00b2 = (1/(n-1)) \u03a3(X\u1d62 - X\u0304)\u00b2];\n    F --> K[Distributions];\n    K --> L[Normal Distribution];\n    K --> M[Chi-Square Distribution];\n    K --> N[t-Distribution];\n    O[Data Manipulation in R] --> P[Subsetting Data];\n    O --> Q[Variance Calculation];\n    R[Linear Mixed Models] --> S[Random Effects];\n    S --> T[Equation: y\u1d62\u2c7c = \u03b1 + \u03b2x\u1d62\u2c7c + \u03b3\u1d62 + \u03b5\u1d62\u2c7c];\n    U[Prediction Errors] --> V[Calculation of Prediction Errors];\n    V --> W[Equation: e\u0302\u1d62 = \u0233\u1d62 - \u0233];\n    V --> X[Sum of Squares: \u03a3(e\u0302\u1d62)\u00b2];\n    Y[Estimability in Linear Models] --> Z[Estimability Condition];\n    Z --> AA[Equation: p\u1d40\u03b2 is estimable \u2194 p \u2208 C(X\u1d40)];\n    AB[Normal Equations] --> AC[Formulation];\n    AB --> AD[Solution];\n    AC --> AE[Equation: X\u1d40X\u03b2 = X\u1d40Y];\n```\n\nThis summary and knowledge graph should help you focus on the essential topics and their relationships for your exam preparation.",
+        "total_score": "30.00"
+    },
+    "url": "/question-paper/practise/52/e564d99d-be7",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

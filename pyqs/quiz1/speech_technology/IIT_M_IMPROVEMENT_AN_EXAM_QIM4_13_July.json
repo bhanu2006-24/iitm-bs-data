@@ -1,0 +1,203 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 301,
+            "group_id": 29,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-07-15T13:57:27.000000Z",
+            "updated_at": "2025-07-15T13:57:27.000000Z",
+            "question_paper_name": "IIT M IMPROVEMENT AN EXAM QIM4 13 July",
+            "question_paper_description": "2025 Jul13: IIT M AN EXAM QIM4",
+            "uuid": "7560befc-f7a",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6ImVoRXpCdGdxb0hTTUEyTnM0UGVXNGc9PSIsInZhbHVlIjoiYm5Ic0VmYzNaakJXdlJKZEsxZndXZz09IiwibWFjIjoiY2E5ZjU4NmMzZGMyMzQ5YWNkZGU3OGM2ZWE4MzZlODVhNmNmYmE4NDQ0ODVjMWUxYTJmZjM2ZGVmYjk4MzcwMyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 93913,
+                    "exam_id": 1,
+                    "question_paper_id": 301,
+                    "question_number": 168,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY (PEN AND </b><b>PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-15T13:57:28.000000Z",
+                    "updated_at": "2025-07-15T13:57:28.000000Z",
+                    "question_num_long": 6406531292412,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "8a9e7a9f4a841a473e551e8a70ff21e1",
+                    "course_id": 90,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "c298c98e-8f2f-44d2-ae40-b2bbd5a05158",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY (PEN AND </b><b>PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 90,
+                        "course_name": "Speech Technology",
+                        "course_code": "Speech Technology",
+                        "created_at": "2024-11-26T14:01:18.000000Z",
+                        "updated_at": "2024-11-26T14:01:18.000000Z",
+                        "program_id": 1,
+                        "uuid": "33ae4cf3-9680-4007-8396-79818ba682b9"
+                    },
+                    "options": [
+                        {
+                            "id": 249213,
+                            "question_id": 93913,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-15T13:57:28.000000Z",
+                            "updated_at": "2025-07-15T13:57:28.000000Z",
+                            "option_number": 6406534349624,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 249214,
+                            "question_id": 93913,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-15T13:57:28.000000Z",
+                            "updated_at": "2025-07-15T13:57:28.000000Z",
+                            "option_number": 6406534349625,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 93914,
+                    "exam_id": 1,
+                    "question_paper_id": 301,
+                    "question_number": 169,
+                    "question_text_1": "  ",
+                    "question_image_1": "dlnlHm7jYKqi3fxOvu0eFe9y68FZbTjv37XCmAxE4bWKCPaffv.png",
+                    "question_type": "MCQ",
+                    "total_mark": "25.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-15T13:57:28.000000Z",
+                    "updated_at": "2025-07-15T13:57:28.000000Z",
+                    "question_num_long": 6406531292413,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "f78c8a1174c9ee01497c7bc57d59797c",
+                    "course_id": 90,
+                    "is_markdown": 0,
+                    "question_text_2": "    ",
+                    "question_image_2": "AdS7AjdRWqVb2mTGnMsL1mShrnIRhNuFYhGtCKt7BzWvJ1ukKL.png",
+                    "question_image_3": "W0mJKuoL1YB3wXzNXxVN0AdopSTQF2DYI7sU2NNZ3YfGseZyC2.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "    ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "4cdb8a86-9259-4f55-9b9f-1fbaca7f7534",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/dlnlHm7jYKqi3fxOvu0eFe9y68FZbTjv37XCmAxE4bWKCPaffv.png",
+                        "/question_images/AdS7AjdRWqVb2mTGnMsL1mShrnIRhNuFYhGtCKt7BzWvJ1ukKL.png",
+                        "/question_images/W0mJKuoL1YB3wXzNXxVN0AdopSTQF2DYI7sU2NNZ3YfGseZyC2.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "    ",
+                        "    "
+                    ],
+                    "course": {
+                        "id": 90,
+                        "course_name": "Speech Technology",
+                        "course_code": "Speech Technology",
+                        "created_at": "2024-11-26T14:01:18.000000Z",
+                        "updated_at": "2024-11-26T14:01:18.000000Z",
+                        "program_id": 1,
+                        "uuid": "33ae4cf3-9680-4007-8396-79818ba682b9"
+                    },
+                    "options": [
+                        {
+                            "id": 249215,
+                            "question_id": 93914,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "25.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-15T13:57:28.000000Z",
+                            "updated_at": "2025-07-15T13:57:28.000000Z",
+                            "option_number": 6406534349626,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 249216,
+                            "question_id": 93914,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-15T13:57:28.000000Z",
+                            "updated_at": "2025-07-15T13:57:28.000000Z",
+                            "option_number": 6406534349627,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\n#### 1. Speech Signal Analysis\n- **Short Time Fourier Transform (STFT)**: Used because speech is quasi-stationary.\n- **Voiced Sounds**: Result in periodic speech signals.\n- **Sampling Frequency**: For perfect reconstruction of a bandlimited signal, the sampling frequency must be greater than or equal to twice the maximum frequency (Nyquist theorem).\n\n#### 2. Speech Processing Techniques\n- **Mel-Frequency Cepstral Coefficients (MFCC)**: Represent the short-term power spectrum on a perceptual scale.\n- **Linearity and Time-Invariance**: Understanding of linear and time-invariant systems is crucial.\n  - \\( y[n] = 2x[n] + 3 \\) (Non-linear due to the constant term)\n  - \\( y[n] = x[n]^2 \\) (Non-linear)\n  - \\( y[n] = x[2n] \\) (Time-variant)\n\n#### 3. Clustering and Vector Quantization\n- **KMeans Clustering**: Algorithm for clustering data points.\n  - Steps: Initialize centroids, assign data points to the nearest cluster, compute new centroids.\n- **Linde-Buzo-Gray (LBG) Algorithm**: Used for vector quantization.\n  - Steps: Initialize with a single centroid, split centroids, reassign data points, compute new centroids.\n\n#### 4. Probability Models\n- **Gaussian Mixture Models (GMM)**: Used to model the probability distribution of feature vectors.\n  - Probability Density Function (PDF) of a Gaussian:\n    \\[\n    \\mathcal{N}(x; \\mu, \\sigma^2) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} \\exp\\left( -\\frac{(x - \\mu)^2}{2\\sigma^2} \\right)\n    \\]\n  - Posterior Probability: Calculated using Bayes' theorem.\n\n#### 5. Hidden Markov Models (HMM)\n- **Decoding Approaches**: Greedy approach and Viterbi algorithm.\n  - **Greedy Approach**: Selects the most probable tag at each step without considering future steps.\n  - **Viterbi Algorithm**: Finds the most probable sequence of tags considering the entire sequence.\n\n### Mermaid Knowledge Graph\n\n```mermaid\ngraph TD;\n    A[Speech Signal Analysis] --> B[STFT]\n    A --> C[Voiced Sounds]\n    A --> D[Sampling Frequency]\n    E[Speech Processing Techniques] --> F[MFCC]\n    E --> G[Linearity and Time-Invariance]\n    H[Clustering and Vector Quantization] --> I[KMeans Clustering]\n    H --> J[LBG Algorithm]\n    K[Probability Models] --> L[Gaussian Mixture Models]\n    M[Hidden Markov Models] --> N[Greedy Approach]\n    M --> O[Viterbi Algorithm]\n```\n\n```mermaid\ngraph TD;\n    B[STFT] --> P[Quasi-stationary]\n    C[Voiced Sounds] --> Q[Periodic]\n    D[Sampling Frequency] --> R[Nyquist Theorem]\n    F[MFCC] --> S[Short-term Power Spectrum]\n    G[Linearity and Time-Invariance] --> T[Linear Systems]\n    G --> U[Time-Invariant Systems]\n    I[KMeans Clustering] --> V[Initialize Centroids]\n    I --> W[Assign Data Points]\n    I --> X[Compute New Centroids]\n    J[LBG Algorithm] --> Y[Initialize Single Centroid]\n    J --> Z[Split Centroids]\n    J --> AA[Reassign Data Points]\n    J --> AB[Compute New Centroids]\n    L[Gaussian Mixture Models] --> AC[Probability Density Function]\n    L --> AD[Posterior Probability]\n    N[Greedy Approach] --> AE[Most Probable Tag]\n    O[Viterbi Algorithm] --> AF[Most Probable Sequence]\n```\n\nThis summary and the knowledge graphs should help you understand the core topics and their relationships, making it easier to prepare for the exam.",
+        "total_score": "25.00"
+    },
+    "url": "/question-paper/practise/90/7560befc-f7a",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

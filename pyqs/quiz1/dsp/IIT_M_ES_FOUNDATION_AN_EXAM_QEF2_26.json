@@ -1,0 +1,205 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 358,
+            "group_id": 31,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-11-16T14:10:29.000000Z",
+            "updated_at": "2025-11-16T14:10:29.000000Z",
+            "question_paper_name": "IIT M ES FOUNDATION AN EXAM QEF2 26",
+            "question_paper_description": "2025 Oct26: IIT M AN EXAM QEF2",
+            "uuid": "84059be1-37b",
+            "year": 2025,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6ImxscElYL2pJV1dGZUxLajBmNlhLR1E9PSIsInZhbHVlIjoiVmhhakJlc0QvaVBjQkc3RUhmaGhQdz09IiwibWFjIjoiNjA3ZjAyY2JiN2FlNGY1MTQ1NzM1N2ZmYzMzMGE1ZWEwOWViODgwNTkzM2I3NmJhMDNhNjhjNWYzZThmYjU1ZSIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 112005,
+                    "exam_id": 1,
+                    "question_paper_id": 358,
+                    "question_number": 42,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : DIGITAL SIGNAL PROCESSING </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b> <b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:10:29.000000Z",
+                    "updated_at": "2025-11-16T14:10:29.000000Z",
+                    "question_num_long": 6406531531657,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "fdba47d84ab8071709935b3f6ff8afc5",
+                    "course_id": 102,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "14cd5162-361c-4f5d-8c9b-9e7bd5c26a9f",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DIPLOMA LEVEL : DIGITAL SIGNAL PROCESSING </b><b>(PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b> <b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 102,
+                        "course_name": "DSP",
+                        "course_code": "DSP",
+                        "created_at": "2025-04-17T15:54:18.000000Z",
+                        "updated_at": "2025-04-17T15:54:18.000000Z",
+                        "program_id": 2,
+                        "uuid": "d97b1c3e-3790-4597-95e9-8a3351f2881c"
+                    },
+                    "options": [
+                        {
+                            "id": 292917,
+                            "question_id": 112005,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:10:29.000000Z",
+                            "updated_at": "2025-11-16T14:10:29.000000Z",
+                            "option_number": 6406535126444,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 292918,
+                            "question_id": 112005,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:10:29.000000Z",
+                            "updated_at": "2025-11-16T14:10:29.000000Z",
+                            "option_number": 6406535126445,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 112006,
+                    "exam_id": 1,
+                    "question_paper_id": 358,
+                    "question_number": 43,
+                    "question_text_1": " ",
+                    "question_image_1": "RJJivn6JClO19hjY6tjMxGwIorYLRtHD0anH5klrYtb4NkpGCD.png",
+                    "question_type": "MCQ",
+                    "total_mark": "40.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-11-16T14:10:29.000000Z",
+                    "updated_at": "2025-11-16T14:10:29.000000Z",
+                    "question_num_long": 6406531531658,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "cee96ffbfcbb86e355b4442b1a790c4c",
+                    "course_id": 102,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "6SElE9lxcVHyKRkUbrLVjMvgrwJe9NmfUJMWzlWL5A3MT9FdUg.png",
+                    "question_image_3": "NFRgREzWFoXAFaR4tBkwrlckLt11LD6zDqyoTiPdEoTA81fp9k.png",
+                    "question_image_4": "GAL9gDl59MxzjTa1L77u4c9rYzULpkZielH8VD1K1C2FNUHK4s.png",
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "   ",
+                    "question_text_4": "   ",
+                    "question_text_5": null,
+                    "uuid": "fd85a793-f8cd-4f9c-afb2-fc40449c7100",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/RJJivn6JClO19hjY6tjMxGwIorYLRtHD0anH5klrYtb4NkpGCD.png",
+                        "/question_images/6SElE9lxcVHyKRkUbrLVjMvgrwJe9NmfUJMWzlWL5A3MT9FdUg.png",
+                        "/question_images/NFRgREzWFoXAFaR4tBkwrlckLt11LD6zDqyoTiPdEoTA81fp9k.png",
+                        "/question_images/GAL9gDl59MxzjTa1L77u4c9rYzULpkZielH8VD1K1C2FNUHK4s.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        "  ",
+                        "   ",
+                        "   "
+                    ],
+                    "course": {
+                        "id": 102,
+                        "course_name": "DSP",
+                        "course_code": "DSP",
+                        "created_at": "2025-04-17T15:54:18.000000Z",
+                        "updated_at": "2025-04-17T15:54:18.000000Z",
+                        "program_id": 2,
+                        "uuid": "d97b1c3e-3790-4597-95e9-8a3351f2881c"
+                    },
+                    "options": [
+                        {
+                            "id": 292919,
+                            "question_id": 112006,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "40.000",
+                            "is_correct": 1,
+                            "created_at": "2025-11-16T14:10:29.000000Z",
+                            "updated_at": "2025-11-16T14:10:29.000000Z",
+                            "option_number": 6406535126446,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 292920,
+                            "question_id": 112006,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-11-16T14:10:29.000000Z",
+                            "updated_at": "2025-11-16T14:10:29.000000Z",
+                            "option_number": 6406535126447,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "",
+        "total_score": "40.00"
+    },
+    "url": "/question-paper/practise/102/84059be1-37b",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

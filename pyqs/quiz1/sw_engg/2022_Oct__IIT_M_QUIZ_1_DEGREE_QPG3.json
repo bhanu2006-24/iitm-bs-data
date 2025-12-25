@@ -1,0 +1,120 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 15,
+            "group_id": 5,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-10-16T08:11:29.000000Z",
+            "updated_at": "2024-10-18T09:22:06.000000Z",
+            "question_paper_name": "2022 Oct: IIT M QUIZ 1 DEGREE QPG3",
+            "question_paper_description": "2022 Oct: IIT M QUIZ 1 DEGREE QPG3",
+            "uuid": "ba03450d-8101-45ca-a1de-ee321f854422",
+            "year": 2022,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6Ikl3d0JZb2o5dlRzQkwwZ1l3U1lDeXc9PSIsInZhbHVlIjoiRjdTSExLd3ZRakF1RGlvcFVGRnJ5QT09IiwibWFjIjoiNGNkZTM5YWYyNmEzOTVhODBhMDRlNjUzMThjOWRkYzBlYjI3MzUwYTQ5NmY4ZTQ3Mzk1OTRkMWEzZjAxNjYwMSIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 3019,
+                    "exam_id": 1,
+                    "question_paper_id": 15,
+                    "question_number": 78,
+                    "question_text_1": "Note : No Quiz1 for Software Engineering",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-10-16T08:11:29.000000Z",
+                    "updated_at": "2024-10-16T08:11:29.000000Z",
+                    "question_num_long": 640653389040,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "db5bad140e49375d809c24c80acdefec",
+                    "course_id": 26,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "c5406bee-f9fd-464c-90da-50c46310576a",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "Note : No Quiz1 for Software Engineering"
+                    ],
+                    "course": {
+                        "id": 26,
+                        "course_name": "Sw Engg",
+                        "course_code": "Sw Engg",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "c07edc83-5790-43d4-ba44-257e6e7eaab0"
+                    },
+                    "options": [
+                        {
+                            "id": 8246,
+                            "question_id": 3019,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2024-10-16T08:11:29.000000Z",
+                            "updated_at": "2024-10-16T08:11:29.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 8247,
+                            "question_id": 3019,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-10-16T08:11:29.000000Z",
+                            "updated_at": "2024-10-16T08:11:29.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics and Concepts\n\nSince the provided question does not pertain to specific topics in Data Science, Software Engineering, or Mathematics, I will provide a general summary of essential topics and concepts for each of these fields.\n\n#### Data Science\n1. **Statistics and Probability**\n   - Descriptive Statistics: Mean, Median, Mode, Variance, Standard Deviation\n   - Probability Distributions: Normal Distribution, Binomial Distribution, Poisson Distribution\n   - Bayesian Theorem: \\( P(A|B) = \\frac{P(B|A)P(A)}{P(B)} \\)\n   - Hypothesis Testing: Null Hypothesis, Alternative Hypothesis, p-value, Type I and Type II Errors\n\n2. **Machine Learning**\n   - Supervised Learning: Regression, Classification\n   - Unsupervised Learning: Clustering, Dimensionality Reduction\n   - Model Evaluation: Accuracy, Precision, Recall, F1 Score, ROC Curve\n   - Algorithms: Linear Regression, Logistic Regression, Decision Trees, Random Forest, SVM, K-Means, Neural Networks\n\n3. **Data Wrangling and Visualization**\n   - Data Cleaning: Handling Missing Values, Outliers\n   - Data Transformation: Normalization, Standardization\n   - Data Visualization: Matplotlib, Seaborn, Plotly\n\n#### Software Engineering\n1. **Software Development Lifecycle (SDLC)**\n   - Requirements Gathering\n   - Design\n   - Implementation\n   - Testing\n   - Deployment\n   - Maintenance\n\n2. **Programming Concepts**\n   - Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs\n   - Algorithms: Sorting, Searching, Graph Algorithms\n   - Object-Oriented Programming: Classes, Objects, Inheritance, Polymorphism\n\n3. **Software Testing**\n   - Unit Testing\n   - Integration Testing\n   - System Testing\n   - Acceptance Testing\n\n#### Mathematics\n1. **Linear Algebra**\n   - Vectors and Matrices\n   - Matrix Operations: Addition, Multiplication, Transpose, Inverse\n   - Eigenvalues and Eigenvectors\n\n2. **Calculus**\n   - Limits and Continuity\n   - Derivatives: \\( \\frac{df}{dx} \\)\n   - Integrals: \\( \\int f(x) \\,dx \\)\n\n3. **Discrete Mathematics**\n   - Set Theory\n   - Graph Theory\n   - Logic and Proof Techniques\n\n### Knowledge Graph \n\n#### Data Science Knowledge Graph\n```mermaid\ngraph TD;\n    A[Data Science] --> B[Statistics and Probability];\n    A --> C[Machine Learning];\n    A --> D[Data Wrangling and Visualization];\n    B --> E[Descriptive Statistics];\n    B --> F[Probability Distributions];\n    B --> G[Bayesian Theorem];\n    B --> H[Hypothesis Testing];\n    C --> I[Supervised Learning];\n    C --> J[Unsupervised Learning];\n    C --> K[Model Evaluation];\n    C --> L[Algorithms];\n    D --> M[Data Cleaning];\n    D --> N[Data Transformation];\n    D --> O[Data Visualization];\n```\n\n#### Software Engineering Knowledge Graph\n```mermaid\ngraph TD;\n    A[Software Engineering] --> B[Software Development Lifecycle];\n    A --> C[Programming Concepts];\n    A --> D[Software Testing];\n    B --> E[Requirements Gathering];\n    B --> F[Design];\n    B --> G[Implementation];\n    B --> H[Testing];\n    B --> I[Deployment];\n    B --> J[Maintenance];\n    C --> K[Data Structures];\n    C --> L[Algorithms];\n    C --> M[Object-Oriented Programming];\n    D --> N[Unit Testing];\n    D --> O[Integration Testing];\n    D --> P[System Testing];\n    D --> Q[Acceptance Testing];\n```\n\n#### Mathematics Knowledge Graph\n```mermaid\ngraph TD;\n    A[Mathematics] --> B[Linear Algebra];\n    A --> C[Calculus];\n    A --> D[Discrete Mathematics];\n    B --> E[Vectors and Matrices];\n    B --> F[Matrix Operations];\n    B --> G[Eigenvalues and Eigenvectors];\n    C --> H[Limits and Continuity];\n    C --> I[Derivatives];\n    C --> J[Integrals];\n    D --> K[Set Theory];\n    D --> L[Graph Theory];\n    D --> M[Logic and Proof Techniques];\n```\n\nThese summaries and knowledge graphs should help you understand the core topics and their relationships in Data Science, Software Engineering, and Mathematics.",
+        "total_score": "0.00"
+    },
+    "url": "/question-paper/practise/26/ba03450d-8101-45ca-a1de-ee321f854422",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

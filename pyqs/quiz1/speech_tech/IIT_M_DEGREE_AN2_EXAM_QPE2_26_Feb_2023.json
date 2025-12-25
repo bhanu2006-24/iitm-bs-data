@@ -1,0 +1,203 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 275,
+            "group_id": 28,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-07-09T15:11:24.000000Z",
+            "updated_at": "2025-07-09T15:11:24.000000Z",
+            "question_paper_name": "IIT M DEGREE AN2 EXAM QPE2 26 Feb 2023",
+            "question_paper_description": "2023 Feb: IIT M DEGREE AN2 EXAM QPE2",
+            "uuid": "494c45aa-7fa",
+            "year": 2023,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6IlV2THZWcUEvNk1kd0RQTkdkUXh5a0E9PSIsInZhbHVlIjoiaU5uTENsZ21mMFh0cldwU3I3QnNIQT09IiwibWFjIjoiNzA1MWRmNDUxZDVkZmRiYTVlZWQ4ZThmZmUyY2U4OGJiNTQ1YWI0NDg0NGVlYWUwMDI5NTAzNzdiMjUwOTk1YyIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 87401,
+                    "exam_id": 1,
+                    "question_paper_id": 275,
+                    "question_number": 1,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:24.000000Z",
+                    "updated_at": "2025-07-09T15:11:24.000000Z",
+                    "question_num_long": 640653470753,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "04b099e6368f3fdf5b8f0573b59e9fee",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "4bebd4ae-68b6-48c4-a8f7-bf6e4441d04c",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : SPEECH TECHNOLOGY\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)"
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 232617,
+                            "question_id": 87401,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:24.000000Z",
+                            "updated_at": "2025-07-09T15:11:24.000000Z",
+                            "option_number": 6406531564240,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 232618,
+                            "question_id": 87401,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:24.000000Z",
+                            "updated_at": "2025-07-09T15:11:24.000000Z",
+                            "option_number": 6406531564241,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 87402,
+                    "exam_id": 1,
+                    "question_paper_id": 275,
+                    "question_number": 2,
+                    "question_text_1": " ",
+                    "question_image_1": "TB7VgFQoNh5HmMCDInEwNQ5U7XNNRMDwTDCGsh85YuSQmuDMc5.png",
+                    "question_type": "MCQ",
+                    "total_mark": "25.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:24.000000Z",
+                    "updated_at": "2025-07-09T15:11:24.000000Z",
+                    "question_num_long": 640653470754,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "9cd970f04c6a2cce32af92c516674b7a",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "0MVmul5hg7vPquShIfdgDxH1rrNys6QKGGJxVC2jT2p8l7VcSE.png",
+                    "question_image_3": "kmzj8CyPfCXscB8qQYEDZJ7pjSXOFe8gn3XYY2EUdQe3XUiPUe.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "  ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "524da3c7-3ed7-482e-905c-59ed2bd9e9a6",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/TB7VgFQoNh5HmMCDInEwNQ5U7XNNRMDwTDCGsh85YuSQmuDMc5.png",
+                        "/question_images/0MVmul5hg7vPquShIfdgDxH1rrNys6QKGGJxVC2jT2p8l7VcSE.png",
+                        "/question_images/kmzj8CyPfCXscB8qQYEDZJ7pjSXOFe8gn3XYY2EUdQe3XUiPUe.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 232619,
+                            "question_id": 87402,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "25.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:24.000000Z",
+                            "updated_at": "2025-07-09T15:11:24.000000Z",
+                            "option_number": 6406531564242,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 232620,
+                            "question_id": 87402,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:24.000000Z",
+                            "updated_at": "2025-07-09T15:11:24.000000Z",
+                            "option_number": 6406531564243,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\n#### 1. K-Means Clustering\n- **Concepts**:\n  - **K-Means Algorithm**: Iterative algorithm that partitions data into K clusters.\n  - **Convergence**: The algorithm converges when the assignments of data points to clusters no longer change.\n  - **Global Minimum**: K-Means does not guarantee finding the global minimum; it often finds a local minimum.\n- **Key Points**:\n  - The number of clusters (K) is fixed and does not change during the algorithm.\n  - K-Means is sensitive to the initial placement of centroids.\n\n#### 2. Gaussian Distribution\n- **Concepts**:\n  - **Uni-variate Gaussian Distribution**: Defined by mean (\\(\\mu\\)) and variance (\\(\\sigma^2\\)).\n  - **Parameters**: Mean and variance completely define a uni-variate Gaussian distribution.\n- **Equations**:\n  \\[\n  p(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n  \\]\n\n#### 3. Gaussian Mixture Model (GMM)\n- **Concepts**:\n  - **GMM**: A probabilistic model that assumes all the data points are generated from a mixture of a finite number of Gaussian distributions.\n  - **EM Algorithm**: Used to estimate the parameters of the GMM (means, variances, and mixture proportions).\n- **Equations**:\n  \\[\n  p(x) = \\sum_{i=1}^{K} \\pi_i N(\\mu_i, \\sigma_i)\n  \\]\n  where \\(\\pi_i\\) are the mixture proportions, \\(\\mu_i\\) are the means, and \\(\\sigma_i\\) are the variances of the Gaussian components.\n\n#### 4. Sequence Prediction\n- **Concepts**:\n  - **Greedy Approach**: Makes the locally optimal choice at each stage with the intent of finding a global optimum.\n  - **Viterbi Algorithm**: Finds the most likely sequence of hidden states (the Viterbi path) that results in a sequence of observed events.\n- **Key Points**:\n  - **First-order Markov Chain**: The probability of moving to the next state depends only on the current state.\n  - **Transition Probabilities**: Used to predict the next state in the sequence.\n\n#### 5. Vector Quantization\n- **Concepts**:\n  - **K-Means for Vector Quantization**: Partitions data into K clusters and uses the centroids as codewords.\n  - **Linde-Buzo-Gray (LBG) Algorithm**: A variant of K-Means specifically designed for vector quantization, often used in speech and image compression.\n- **Key Points**:\n  - **Clustering Mechanism**: Both algorithms aim to minimize the distortion between the data points and the codewords.\n  - **Differences**: LBG algorithm typically starts with a single cluster and iteratively splits the clusters, whereas K-Means starts with a predefined number of clusters.\n\n#### 6. Sampling Theorem\n- **Concepts**:\n  - **Nyquist-Shannon Sampling Theorem**: For perfect reconstruction of a bandlimited signal, the sampling frequency must be at least twice the highest frequency component of the signal.\n- **Equations**:\n  \\[\n  f_s \\geq 2B\n  \\]\n  where \\(f_s\\) is the sampling frequency and \\(B\\) is the bandwidth of the signal.\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[K-Means Clustering] --> B[Fixed K]\n    A --> C[Convergence]\n    A --> D[Local Minimum]\n    E[Gaussian Distribution] --> F[Mean and Variance]\n    G[Gaussian Mixture Model] --> H[EM Algorithm]\n    G --> I[Mixture Proportions]\n    J[Sequence Prediction] --> K[Greedy Approach]\n    J --> L[Viterbi Algorithm]\n    M[Vector Quantization] --> N[K-Means]\n    M --> O[LBG Algorithm]\n    P[Sampling Theorem] --> Q[Nyquist-Shannon]\n```\n\n```mermaid\ngraph TD;\n    A[Clustering] --> B[K-Means]\n    A --> C[GMM]\n    B --> D[Fixed K]\n    B --> E[Convergence]\n    C --> F[EM Algorithm]\n    C --> G[Mixture Proportions]\n    H[Sequence Prediction] --> I[Greedy Approach]\n    H --> J[Viterbi Algorithm]\n    K[Vector Quantization] --> L[K-Means]\n    K --> M[LBG Algorithm]\n    N[Sampling] --> O[Nyquist-Shannon]\n```\n\nThis summary and the knowledge graphs should help you understand the core topics and their relationships for the exam.",
+        "total_score": "25.00"
+    },
+    "url": "/question-paper/practise/22/494c45aa-7fa",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

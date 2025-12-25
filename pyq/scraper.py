@@ -248,6 +248,14 @@ class QuizScraper:
             'url': url
         }
         
+        # Capture extra context from props
+        if 'exam' in props:
+            output_data['metadata']['exam_context'] = props['exam']
+        if 'course' in props:
+            output_data['metadata']['course_context'] = props['course']
+        if 'group' in props:
+            output_data['metadata']['group_context'] = props['group']
+
         if save_to_disk and save_dir:
             filename = "paper.json"
             if path_parts:
@@ -264,3 +272,33 @@ class QuizScraper:
             # print(f"        [ok] Saved {len(questions)} Qs to {filename}")
         
         return output_data
+
+if __name__ == "__main__":
+    print("[-] QuizPractice Scraper Standalone Mode")
+    print("[-] Use dashboard.py for the full GUI experience.")
+    
+    import sys
+    
+    if len(sys.argv) > 1:
+        # User passed arguments (e.g. url)
+        # Check if it looks like a URL
+        arg = sys.argv[1]
+        if "quizpractice.space" in arg:
+            print(f"[*] Scraping URL: {arg}")
+            scr = QuizScraper()
+            data = scr.scrape_paper(arg)
+            if data:
+                print(f"[+] Success! Saved to: {data.get('local_file_path')}")
+            else:
+                print("[!] Failed to scrape.")
+        else:
+            # Assume keyword for discovery
+            print(f"[*] Search Mode: {arg}")
+            scr = QuizScraper()
+            scr.discover_and_scrape(limit=10, target_exam_keyword=arg)
+    else:
+        # Default behavior
+        print("[-] Usage: python scraper.py [URL or Keyword]")
+        print("[-] Defaulting to 'Quiz 1' discovery...")
+        scr = QuizScraper()
+        scr.discover_and_scrape(limit=3, target_exam_keyword="Quiz 1")

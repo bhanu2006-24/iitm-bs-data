@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const subjectTitle = document.getElementById('subject-title');
     const subjectBadge = document.getElementById('subject-code-badge');
 
-    // Fetch Manifest
+    // Fetch Subjects Dynamically
     try {
-        const response = await fetch('manifest.json');
-        if (!response.ok) throw new Error('Manifest not found');
+        const response = await fetch('/api/subjects');
+        if (!response.ok) throw new Error('API request failed');
         const subjects = await response.json();
         renderSubjects(subjects);
     } catch (e) {

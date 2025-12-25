@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "id": "statistics2",
+    "name": "Statistics2",
+    "code": "STAT"
+  },
+  "exams": [
+    {
+      "id": "exam-1766649401",
+      "title": "IIT M IMPROVEMENT AN EXAM QIM4 26 Oct",
+      "subject": "Statistics2",
+      "year": "2025",
+      "duration": 4,
+      "marks": "1.00",
+      "questions": [
+        {
+          "id": "exam-1766649401-q1",
+          "type": "MCQ",
+          "marks": "0.00",
+          "text": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"FOUNDATION LEVEL : STATISTICS FOR DATA </b><b>SCIENCE II (COMPUTER BASED EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+          "options": [
+            "YES",
+            "NO"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "exam-1766649401-q2",
+          "type": "MCQ",
+          "marks": "0.00",
+          "text": "",
+          "options": [
+            "Useful Data has been mentioned above.",
+            "This data attachment is just for a reference & not for an evaluation."
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "exam-1766649401-q3",
+          "type": "MCQ",
+          "marks": "3.00",
+          "text": "",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "exam-1766649401-q4",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q5",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q6",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q7",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q8",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q9",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q10",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q11",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q12",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q13",
+          "type": "SA",
+          "marks": "0.50",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q14",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "Based on the above data, answer the given subquestions.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q15",
+          "type": "MCQ",
+          "marks": "2.00",
+          "text": "Find the value of k.",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "exam-1766649401-q16",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q17",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "Based on the above data, answer the given subquestions.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q18",
+          "type": "MCQ",
+          "marks": "3.00",
+          "text": "",
+          "options": [
+            "0.20",
+            "0.30",
+            "0.45",
+            "0.25"
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "exam-1766649401-q19",
+          "type": "SA",
+          "marks": "2.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q20",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "Based on the above data, answer the given subquestions.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q21",
+          "type": "MCQ",
+          "marks": "2.00",
+          "text": "Using Markov\u2019s inequality, find an upper bound on the probability that the processing time is at least 1.3 times its expected value.",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "exam-1766649401-q22",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "Using Chebyshev\u2019s inequality, find a lower bound on the probability that the processing time lies between 480 milliseconds and 520 milliseconds. Enter the answer correct to two decimal places.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q23",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "Based on the above data, answer the given subquestions.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q24",
+          "type": "MCQ",
+          "marks": "2.00",
+          "text": "What is the range of Y ?",
+          "options": [
+            "{0, 1, 2, 3, 4, 5, 6}",
+            "{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}",
+            "{1, 2, 3, 4, 5, 6 }",
+            "{ 2, 3, 4, 5, 6, 7, 8, 9}"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "exam-1766649401-q25",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q26",
+          "type": "COMPREHENSION",
+          "marks": "0.00",
+          "text": "Based on the above data, answer the given subquestions.",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q27",
+          "type": "SA",
+          "marks": "3.00",
+          "text": "",
+          "options": []
+        },
+        {
+          "id": "exam-1766649401-q28",
+          "type": "MCQ",
+          "marks": "2.00",
+          "text": "",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctIndex": 1
+        }
+      ]
+    }
+  ]
+}

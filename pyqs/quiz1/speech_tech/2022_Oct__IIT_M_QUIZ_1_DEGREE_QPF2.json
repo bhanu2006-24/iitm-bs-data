@@ -1,0 +1,120 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 12,
+            "group_id": 5,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-10-16T08:11:23.000000Z",
+            "updated_at": "2024-10-18T09:22:06.000000Z",
+            "question_paper_name": "2022 Oct: IIT M QUIZ 1 DEGREE QPF2",
+            "question_paper_description": "2022 Oct: IIT M QUIZ 1 DEGREE QPF2",
+            "uuid": "7d12f015-67b9-4523-934f-7df26976d650",
+            "year": 2022,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6InZEc3RwcFZGdFZVb0ViL25qOFhzc2c9PSIsInZhbHVlIjoiWnB4dmRYelpCQy9mM1gxRk9SQXJRZz09IiwibWFjIjoiMmVmODczMjIxOTZmYzNlZDY4OWFlOWMyZTAzMzk5NjkxYWE5ZTIxODM4ZTU1MWU2YTE5MTQ1ODI4ZDU3MjQzNCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 2570,
+                    "exam_id": 1,
+                    "question_paper_id": 12,
+                    "question_number": 1,
+                    "question_text_1": "THERE IS NO SPEECH TECHNOLOGY QP IN FORENOON SESSION",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "25.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-10-16T08:11:23.000000Z",
+                    "updated_at": "2024-10-16T08:11:23.000000Z",
+                    "question_num_long": 640653387044,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "c109e2efa7ab174760e18bae208545fe",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "cbd4f93b-1b93-408a-be68-6527950dceaa",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THERE IS NO SPEECH TECHNOLOGY QP IN FORENOON SESSION"
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 7019,
+                            "question_id": 2570,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "25.000",
+                            "is_correct": 1,
+                            "created_at": "2024-10-16T08:11:23.000000Z",
+                            "updated_at": "2024-10-16T08:11:23.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 7020,
+                            "question_id": 2570,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-10-16T08:11:23.000000Z",
+                            "updated_at": "2024-10-16T08:11:23.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\nGiven the question provided, it seems to be a straightforward informational question rather than one that requires deep analysis or understanding of complex topics. However, I will provide a summary of the core topics and concepts that might be relevant if this question were part of a larger exam on speech technology or related fields.\n\n#### Core Topics and Concepts\n\n1. **Speech Technology**\n   - **Definition**: Speech technology encompasses various technologies that enable machines to understand, interpret, and generate human speech.\n   - **Applications**: Speech recognition, speech synthesis, speaker identification, and voice assistants.\n\n2. **Speech Recognition**\n   - **Definition**: The process of converting spoken language into text.\n   - **Techniques**: Hidden Markov Models (HMMs), Deep Neural Networks (DNNs), Recurrent Neural Networks (RNNs).\n\n3. **Speech Synthesis**\n   - **Definition**: The artificial production of human speech.\n   - **Techniques**: Concatenative synthesis, formant synthesis, articulatory synthesis.\n\n4. **Natural Language Processing (NLP)**\n   - **Definition**: The field of study that focuses on the interaction between computers and human language.\n   - **Techniques**: Tokenization, part-of-speech tagging, named entity recognition, sentiment analysis.\n\n5. **Machine Learning**\n   - **Definition**: A subset of artificial intelligence that involves the use of algorithms and statistical models to enable machines to improve their performance on a task with experience.\n   - **Techniques**: Supervised learning, unsupervised learning, reinforcement learning.\n\n#### Important Equations\n\n1. **Bayes' Theorem**\n   \\[\n   P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}\n   \\]\n   - Used in various machine learning algorithms and probabilistic models.\n\n2. **Softmax Function**\n   \\[\n   \\sigma(\\mathbf{z})_i = \\frac{e^{z_i}}{\\sum_{j=1}^K e^{z_j}} \\quad \\text{for } i = 1, \\ldots, K\n   \\]\n   - Used in classification tasks to convert a vector of real numbers into a probability distribution.\n\n3. **Cross-Entropy Loss**\n   \\[\n   H(p, q) = -\\sum_{i} p(i) \\log q(i)\n   \\]\n   - Used as a loss function in classification tasks to measure the difference between the predicted probability distribution and the true distribution.\n\n#### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Speech Technology] --> B[Speech Recognition];\n    A --> C[Speech Synthesis];\n    A --> D[Natural Language Processing];\n    A --> E[Machine Learning];\n    B --> F[Hidden Markov Models];\n    B --> G[Deep Neural Networks];\n    C --> H[Concatenative Synthesis];\n    C --> I[Formant Synthesis];\n    D --> J[Tokenization];\n    D --> K[Part-of-Speech Tagging];\n    E --> L[Supervised Learning];\n    E --> M[Unsupervised Learning];\n    E --> N[Reinforcement Learning];\n```\n\nThis knowledge graph visually maps the relationships between the core topics in speech technology and related fields. Each node represents a topic or concept, and the edges represent the relationships between them.",
+        "total_score": "25.00"
+    },
+    "url": "/question-paper/practise/22/7d12f015-67b9-4523-934f-7df26976d650",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

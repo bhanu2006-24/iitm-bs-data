@@ -1,0 +1,197 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 270,
+            "group_id": 2,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-07-09T14:38:28.000000Z",
+            "updated_at": "2025-07-09T14:38:28.000000Z",
+            "question_paper_name": "IIT M DEGREE AN2 EXAM QPE2 29 Oct 2023",
+            "question_paper_description": "2023 Oct: IIT M DEGREE AN2 EXAM QPE2",
+            "uuid": "8913eaf6-4f8",
+            "year": 2023,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6ImxLMDM4QlNpdDA3S1hGT0o0dUpJV0E9PSIsInZhbHVlIjoiODJ4WTdxLzlkZVVVc25rM3lmRWtJZz09IiwibWFjIjoiMzJlYTRjZjk4MDBmMjJiZDFlNTFmYjEzYTczM2ViZDY4OWVjYjI0MWQ2MWZlNmIwYzA4ZTM1ZTZhYmNkMDExZiIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 86226,
+                    "exam_id": 1,
+                    "question_paper_id": 270,
+                    "question_number": 121,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b>(PEN AND PAPER EXAM)\"<b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T14:38:29.000000Z",
+                    "updated_at": "2025-07-09T14:38:29.000000Z",
+                    "question_num_long": 640653676901,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "9bf62d7aa30cf3acdf24b59d49cfae20",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "7c6c14f8-86ac-4b5e-be5e-fe5a2dd5a9b8",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS </b>(PEN AND PAPER EXAM)\"<b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)"
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 230158,
+                            "question_id": 86226,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T14:38:29.000000Z",
+                            "updated_at": "2025-07-09T14:38:29.000000Z",
+                            "option_number": 6406532266812,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 230159,
+                            "question_id": 86226,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T14:38:29.000000Z",
+                            "updated_at": "2025-07-09T14:38:29.000000Z",
+                            "option_number": 6406532266813,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 86227,
+                    "exam_id": 1,
+                    "question_paper_id": 270,
+                    "question_number": 122,
+                    "question_text_1": null,
+                    "question_image_1": "U50I5mVP7cUVSSsX7jiMC2obS37bH3UjizZyQfmh551cXRuxf8.png",
+                    "question_type": "MCQ",
+                    "total_mark": "30.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T14:38:29.000000Z",
+                    "updated_at": "2025-07-09T14:38:29.000000Z",
+                    "question_num_long": 640653676902,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "1bbc05e3cd1e3fb6a2030e8ad9046815",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "718253ab-b649-4a5c-9746-dca5ae4d055e",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/U50I5mVP7cUVSSsX7jiMC2obS37bH3UjizZyQfmh551cXRuxf8.png"
+                    ],
+                    "question_texts": null,
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 230160,
+                            "question_id": 86227,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "30.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T14:38:29.000000Z",
+                            "updated_at": "2025-07-09T14:38:29.000000Z",
+                            "option_number": 6406532266814,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 230161,
+                            "question_id": 86227,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T14:38:29.000000Z",
+                            "updated_at": "2025-07-09T14:38:29.000000Z",
+                            "option_number": 6406532266815,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Based on the provided questions, it seems that the exam is for the subject \"Degree Level: Linear Statistical Models.\" Here is a summary of the core topics, concepts, principles, and equations that are essential to study for such an exam:\n\n### Core Topics and Concepts\n\n1. **Linear Regression Models**\n   - Simple Linear Regression\n   - Multiple Linear Regression\n   - Assumptions of Linear Regression\n\n2. **Matrix Algebra**\n   - Vectors and Matrices\n   - Matrix Operations\n   - Eigenvalues and Eigenvectors\n\n3. **Statistical Inference**\n   - Hypothesis Testing\n   - Confidence Intervals\n   - p-values and Significance Levels\n\n4. **Model Diagnostics**\n   - Residual Analysis\n   - Outlier Detection\n   - Multicollinearity\n\n5. **Model Selection and Validation**\n   - Akaike Information Criterion (AIC)\n   - Bayesian Information Criterion (BIC)\n   - Cross-Validation\n\n6. **Generalized Linear Models (GLMs)**\n   - Logistic Regression\n   - Poisson Regression\n   - Link Functions\n\n### Principles\n\n1. **Least Squares Estimation**\n   - Minimizing the sum of squared residuals\n   - Ordinary Least Squares (OLS) method\n\n2. **Maximum Likelihood Estimation (MLE)**\n   - Likelihood Function\n   - Log-Likelihood Function\n\n3. **Gauss-Markov Theorem**\n   - Best Linear Unbiased Estimator (BLUE)\n\n### Essential Equations\n\n1. **Simple Linear Regression Model**\n   \\[\n   y = \\beta_0 + \\beta_1 x + \\epsilon\n   \\]\n   where \\( y \\) is the dependent variable, \\( x \\) is the independent variable, \\( \\beta_0 \\) and \\( \\beta_1 \\) are the regression coefficients, and \\( \\epsilon \\) is the error term.\n\n2. **Multiple Linear Regression Model**\n   \\[\n   y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_p x_p + \\epsilon\n   \\]\n   where \\( y \\) is the dependent variable, \\( x_1, x_2, \\dots, x_p \\) are the independent variables, \\( \\beta_0, \\beta_1, \\dots, \\beta_p \\) are the regression coefficients, and \\( \\epsilon \\) is the error term.\n\n3. **Ordinary Least Squares (OLS) Estimators**\n   \\[\n   \\hat{\\beta} = (X^T X)^{-1} X^T y\n   \\]\n   where \\( X \\) is the design matrix, and \\( y \\) is the vector of observed values.\n\n4. **Likelihood Function for Linear Regression**\n   \\[\n   L(\\beta, \\sigma^2) = \\prod_{i=1}^n \\frac{1}{\\sqrt{2\\pi\\sigma^2}} \\exp\\left(-\\frac{(y_i - x_i^T \\beta)^2}{2\\sigma^2}\\right)\n   \\]\n\n5. **Log-Likelihood Function**\n   \\[\n   \\ell(\\beta, \\sigma^2) = -\\frac{n}{2} \\log(2\\pi\\sigma^2) - \\frac{1}{2\\sigma^2} \\sum_{i=1}^n (y_i - x_i^T \\beta)^2\n   \\]\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Linear Statistical Models] --> B[Linear Regression Models];\n    A --> C[Matrix Algebra];\n    A --> D[Statistical Inference];\n    A --> E[Model Diagnostics];\n    A --> F[Model Selection and Validation];\n    A --> G[Generalized Linear Models];\n\n    B --> B1[Simple Linear Regression];\n    B --> B2[Multiple Linear Regression];\n    B --> B3[Assumptions of Linear Regression];\n\n    C --> C1[Vectors and Matrices];\n    C --> C2[Matrix Operations];\n    C --> C3[Eigenvalues and Eigenvectors];\n\n    D --> D1[Hypothesis Testing];\n    D --> D2[Confidence Intervals];\n    D --> D3[p-values and Significance Levels];\n\n    E --> E1[Residual Analysis];\n    E --> E2[Outlier Detection];\n    E --> E3[Multicollinearity];\n\n    F --> F1[Akaike Information Criterion];\n    F --> F2[Bayesian Information Criterion];\n    F --> F3[Cross-Validation];\n\n    G --> G1[Logistic Regression];\n    G --> G2[Poisson Regression];\n    G --> G3[Link Functions];\n```\n\nThis summary and knowledge graph should help you understand the core topics and their relationships for the exam on Linear Statistical Models.",
+        "total_score": "30.00"
+    },
+    "url": "/question-paper/practise/52/8913eaf6-4f8",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

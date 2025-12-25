@@ -1,0 +1,120 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 11,
+            "group_id": 5,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-10-16T08:11:21.000000Z",
+            "updated_at": "2024-10-18T09:22:06.000000Z",
+            "question_paper_name": "2022 Oct: IIT M QUIZ 1 DEGREE QPF1",
+            "question_paper_description": "2022 Oct: IIT M QUIZ 1 DEGREE QPF1",
+            "uuid": "282a059a-8771-4aeb-8af0-9f382793fd6e",
+            "year": 2022,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6IlNIYm93RjNBaElsdzRXc1FVMmVMWXc9PSIsInZhbHVlIjoiOFpJakdpcG9Va0dDOXJyWkoxaEdEdz09IiwibWFjIjoiNjE3Mjk4YTZjMTk3MDBlZTg0ZmE3ZTZiMzQ1ZjNjMDU3Y2I1ZWZkMzcyYWQ5NTc2YmYyMGU2MzMyM2QwODFlYSIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 2451,
+                    "exam_id": 1,
+                    "question_paper_id": 11,
+                    "question_number": 1,
+                    "question_text_1": "THERE IS NO SPEECH TECHNOLOGY QP IN FORENOON SESSION",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "25.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-10-16T08:11:21.000000Z",
+                    "updated_at": "2024-10-16T08:11:21.000000Z",
+                    "question_num_long": 640653386919,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "e6fb3cc619230819227739ff4e6c03dc",
+                    "course_id": 22,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "562d5e00-83a2-4c7b-958a-c9922be49d3f",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THERE IS NO SPEECH TECHNOLOGY QP IN FORENOON SESSION"
+                    ],
+                    "course": {
+                        "id": 22,
+                        "course_name": "Speech Tech",
+                        "course_code": "Speech Tech",
+                        "created_at": "2024-10-16T08:11:21.000000Z",
+                        "updated_at": "2024-10-16T08:11:21.000000Z",
+                        "program_id": 1,
+                        "uuid": "da429646-afda-4b42-a776-3f49d43322a7"
+                    },
+                    "options": [
+                        {
+                            "id": 6703,
+                            "question_id": 2451,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "25.000",
+                            "is_correct": 1,
+                            "created_at": "2024-10-16T08:11:21.000000Z",
+                            "updated_at": "2024-10-16T08:11:21.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 6704,
+                            "question_id": 2451,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-10-16T08:11:21.000000Z",
+                            "updated_at": "2024-10-16T08:11:21.000000Z",
+                            "option_number": null,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\nGiven the question provided, it seems to be a straightforward administrative or logistical query rather than a technical or mathematical one. Therefore, there are no core topics, concepts, principles, or equations to summarize for this specific question.\n\nHowever, if we consider the broader context of speech technology, here are some core topics and concepts that might be relevant for an exam:\n\n#### Core Topics and Concepts:\n1. **Speech Recognition**:\n   - Acoustic Modeling\n   - Language Modeling\n   - Hidden Markov Models (HMMs)\n   - Deep Learning Approaches (e.g., RNNs, CNNs, Transformers)\n\n2. **Natural Language Processing (NLP)**:\n   - Tokenization\n   - Part-of-Speech Tagging\n   - Named Entity Recognition\n   - Sentiment Analysis\n\n3. **Signal Processing**:\n   - Fourier Transform\n   - Spectrograms\n   - Mel-Frequency Cepstral Coefficients (MFCCs)\n\n4. **Machine Learning**:\n   - Supervised Learning\n   - Unsupervised Learning\n   - Reinforcement Learning\n\n5. **Mathematical Foundations**:\n   - Probability and Statistics\n   - Linear Algebra\n   - Calculus\n\n#### Important Equations:\n1. **Fourier Transform**:\n   \\[\n   X(f) = \\int_{-\\infty}^{\\infty} x(t) e^{-j2\\pi ft} dt\n   \\]\n\n2. **Bayes' Theorem**:\n   \\[\n   P(A|B) = \\frac{P(B|A) P(A)}{P(B)}\n   \\]\n\n3. **Hidden Markov Model Probability**:\n   \\[\n   P(O|\\lambda) = \\sum_{q_1, q_2, ..., q_T} P(O|Q, \\lambda) P(Q|\\lambda)\n   \\]\n\n4. **Cross-Entropy Loss**:\n   \\[\n   H(p, q) = -\\sum_{i} p(i) \\log q(i)\n   \\]\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Speech Technology] --> B[Speech Recognition];\n    A --> C[Natural Language Processing];\n    A --> D[Signal Processing];\n    A --> E[Machine Learning];\n\n    B --> B1[Acoustic Modeling];\n    B --> B2[Language Modeling];\n    B --> B3[Hidden Markov Models];\n    B --> B4[Deep Learning Approaches];\n\n    C --> C1[Tokenization];\n    C --> C2[Part-of-Speech Tagging];\n    C --> C3[Named Entity Recognition];\n    C --> C4[Sentiment Analysis];\n\n    D --> D1[Fourier Transform];\n    D --> D2[Spectrograms];\n    D --> D3[Mel-Frequency Cepstral Coefficients];\n\n    E --> E1[Supervised Learning];\n    E --> E2[Unsupervised Learning];\n    E --> E3[Reinforcement Learning];\n\n    A --> F[Mathematical Foundations];\n    F --> F1[Probability and Statistics];\n    F --> F2[Linear Algebra];\n    F --> F3[Calculus];\n```\n\nThis knowledge graph provides a visual representation of the relationships between the core topics in speech technology.",
+        "total_score": "25.00"
+    },
+    "url": "/question-paper/practise/22/282a059a-8771-4aeb-8af0-9f382793fd6e",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

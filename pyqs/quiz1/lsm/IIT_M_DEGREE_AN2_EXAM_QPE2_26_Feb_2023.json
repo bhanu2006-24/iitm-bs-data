@@ -1,0 +1,203 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 275,
+            "group_id": 28,
+            "exam_id": 1,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2025-07-09T15:11:24.000000Z",
+            "updated_at": "2025-07-09T15:11:24.000000Z",
+            "question_paper_name": "IIT M DEGREE AN2 EXAM QPE2 26 Feb 2023",
+            "question_paper_description": "2023 Feb: IIT M DEGREE AN2 EXAM QPE2",
+            "uuid": "494c45aa-7fa",
+            "year": 2023,
+            "is_new": 0,
+            "exam": {
+                "id": 1,
+                "exam_name": "Quiz 1",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "9251bc3a-e33e-45e0-bcf0-b16a0ea5b5fa",
+                "en_id": "eyJpdiI6IktKNXQveWk4anBCTWVhWllyZE1aZ2c9PSIsInZhbHVlIjoiT0tGRTF1Tlp2UzFRUFB2ZDFhU0I2Zz09IiwibWFjIjoiMWJjOTM0ZDhjOTc5ZDYzMjk5ZWFlNTEyZjhkMWNlZGQwMjU5MDZlNmVjMjVhYTgzMzM0NjE5ZTBiZmVkZjQ5NCIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 87666,
+                    "exam_id": 1,
+                    "question_paper_id": 275,
+                    "question_number": 249,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:26.000000Z",
+                    "updated_at": "2025-07-09T15:11:26.000000Z",
+                    "question_num_long": 640653471018,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "8d538088228aa8e211ef074c62f8159a",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "f3702959-90d1-44bc-a70f-38f33e71f72b",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : LINEAR STATISTICAL MODELS\"</b><b> </b> ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN.  (IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS REGISTERED BY YOU)"
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 233405,
+                            "question_id": 87666,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:26.000000Z",
+                            "updated_at": "2025-07-09T15:11:26.000000Z",
+                            "option_number": 6406531565058,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 233406,
+                            "question_id": 87666,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:26.000000Z",
+                            "updated_at": "2025-07-09T15:11:26.000000Z",
+                            "option_number": 6406531565059,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 87667,
+                    "exam_id": 1,
+                    "question_paper_id": 275,
+                    "question_number": 250,
+                    "question_text_1": " ",
+                    "question_image_1": "cvmHPfvRjAHLfaqGRBAOEiP3QuKJt1OO5lveqfmIh1OLd7GHAX.png",
+                    "question_type": "MCQ",
+                    "total_mark": "30.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2025-07-09T15:11:26.000000Z",
+                    "updated_at": "2025-07-09T15:11:26.000000Z",
+                    "question_num_long": 640653471019,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "fd3a4688385a79efefba763100b156cb",
+                    "course_id": 52,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "zc8BIbEtuwhB3DItrjJOTvpj61e7jTcJawaB40PQzfSgCwlUaA.png",
+                    "question_image_3": "LuNn08GpHiUW7lP1I8xWN7eTQZMgOZg9jZkqybQghlCb22c2Yq.png",
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": "  ",
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "64bb77e6-4c04-4577-8188-376be5dd1325",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/cvmHPfvRjAHLfaqGRBAOEiP3QuKJt1OO5lveqfmIh1OLd7GHAX.png",
+                        "/question_images/zc8BIbEtuwhB3DItrjJOTvpj61e7jTcJawaB40PQzfSgCwlUaA.png",
+                        "/question_images/LuNn08GpHiUW7lP1I8xWN7eTQZMgOZg9jZkqybQghlCb22c2Yq.png"
+                    ],
+                    "question_texts": [
+                        " ",
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 52,
+                        "course_name": "LSM",
+                        "course_code": "LSM",
+                        "created_at": "2024-10-16T08:15:41.000000Z",
+                        "updated_at": "2024-10-16T08:15:41.000000Z",
+                        "program_id": 1,
+                        "uuid": "a2fdccfa-aa1f-4525-95b2-ef2e77e5fbdd"
+                    },
+                    "options": [
+                        {
+                            "id": 233407,
+                            "question_id": 87667,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "30.000",
+                            "is_correct": 1,
+                            "created_at": "2025-07-09T15:11:26.000000Z",
+                            "updated_at": "2025-07-09T15:11:26.000000Z",
+                            "option_number": 6406531565060,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 233408,
+                            "question_id": 87667,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2025-07-09T15:11:26.000000Z",
+                            "updated_at": "2025-07-09T15:11:26.000000Z",
+                            "option_number": 6406531565061,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "### Summary of Core Topics, Concepts, Principles, and Equations\n\n#### 1. **R Programming Basics**\n- **Vector Operations**: Understanding how to manipulate vectors in R.\n  - `length(x)`: Finds the dimension of the vector \\( x \\).\n  - `sum(x^2)`: Computes the sum of squares of the elements of \\( x \\).\n  - `x[x > 0]`: Extracts all the positive integer elements of \\( x \\).\n\n#### 2. **Linear Statistical Models**\n- **Model Definition**: Understanding the linear model \\(\\vec{Y} = X \\vec{\\beta} + \\vec{\\epsilon}\\).\n  - \\(\\vec{Y}\\): Response vector.\n  - \\(X\\): Design matrix.\n  - \\(\\vec{\\beta}\\): Parameter vector.\n  - \\(\\vec{\\epsilon}\\): Error vector with mean \\(\\vec{0}\\) and variance-covariance matrix \\(\\sigma^2 I_{n \\times n}\\).\n\n- **Estimability**: A linear combination \\(\\vec{p}^T \\vec{\\beta}\\) is estimable if there exists a vector \\(\\vec{l}\\) such that \\(E[\\vec{l}^T \\vec{Y}] = \\vec{p}^T \\vec{\\beta}\\) for all \\(\\vec{\\beta}\\).\n\n- **Least Squares Estimation**: Finding the least square estimate for \\(\\vec{\\beta}\\) in the linear model.\n  - The normal equations are given by \\(X^T X \\vec{\\beta} = X^T \\vec{Y}\\).\n  - The solution is \\(\\hat{\\vec{\\beta}} = (X^T X)^{-1} X^T \\vec{Y}\\).\n\n#### 3. **Data Analysis and Visualization**\n- **Scatter Plots**: Creating scatter plots to visualize the relationship between two variables.\n- **Prediction and Error Calculation**: Calculating predicted values \\(\\hat{\\vec{y}}\\) and prediction errors \\(d_i = \\hat{\\vec{y}}_i - \\vec{y}_i\\).\n\n#### 4. **Key Equations**\n- **Linear Model**: \\(\\vec{Y} = X \\vec{\\beta} + \\vec{\\epsilon}\\)\n- **Estimability Condition**: \\(E[\\vec{l}^T \\vec{Y}] = \\vec{p}^T \\vec{\\beta}\\)\n- **Normal Equations**: \\(X^T X \\vec{\\beta} = X^T \\vec{Y}\\)\n- **Least Squares Estimate**: \\(\\hat{\\vec{\\beta}} = (X^T X)^{-1} X^T \\vec{Y}\\)\n- **Prediction Errors**: \\(d_i = \\hat{\\vec{y}}_i - \\vec{y}_i\\)\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[R Programming Basics] --> B[Vector Operations];\n    A --> C[Sum of Squares];\n    A --> D[Extracting Positive Elements];\n\n    E[Linear Statistical Models] --> F[Model Definition];\n    E --> G[Estimability];\n    E --> H[Least Squares Estimation];\n\n    I[Data Analysis and Visualization] --> J[Scatter Plots];\n    I --> K[Prediction and Error Calculation];\n\n    F --> L[Response Vector];\n    F --> M[Design Matrix];\n    F --> N[Parameter Vector];\n    F --> O[Error Vector];\n\n    G --> P[Estimability Condition];\n\n    H --> Q[Normal Equations];\n    H --> R[Least Squares Estimate];\n\n    K --> S[Prediction Errors];\n```\n\n```mermaid\ngraph TD;\n    B[Vector Operations] --> C[Sum of Squares];\n    C --> D[Extracting Positive Elements];\n\n    L[Response Vector] --> M[Design Matrix];\n    M --> N[Parameter Vector];\n    N --> O[Error Vector];\n\n    P[Estimability Condition] --> Q[Normal Equations];\n    Q --> R[Least Squares Estimate];\n\n    J[Scatter Plots] --> K[Prediction and Error Calculation];\n    K --> S[Prediction Errors];\n```\n\nThis summary and knowledge graph should help you understand the core topics and their relationships, making it easier to prepare for the exam.",
+        "total_score": "30.00"
+    },
+    "url": "/question-paper/practise/52/494c45aa-7fa",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}

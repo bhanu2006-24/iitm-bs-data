@@ -23,18 +23,24 @@ def clean_image_url(path, source_dir, copy_ops, type='question'):
         copy_ops.append((local_source, filename))
         return f"images/{filename}"
 
-    # Fallback to CDN
+    # Fallback to CDN (Disabled due to 403)
     if path.startswith('http'):
         return path
-    path = path.lstrip('/')
-    if path.startswith('question_images') or path.startswith('option_images'):
-        return f"{CDN_BASE}/{path}"
-    if '/' not in path:
-        if type == 'question': return f"{CDN_BASE}/question_images/{path}"
-        else: return f"{CDN_BASE}/option_images/{path}"
-    if path.startswith('app/'):
-        return f"{CDN_BASE}/{path.replace('app/', '')}"
-    return f"{CDN_BASE}/{path}"
+        
+    # Valid local file not found, and not an absolute URL. 
+    # Return None to avoid broken images.
+    return None
+    
+    # Path construction was:
+    # path = path.lstrip('/')
+    # if path.startswith('question_images') or path.startswith('option_images'):
+    #     return f"{CDN_BASE}/{path}"
+    # if '/' not in path:
+    #     if type == 'question': return f"{CDN_BASE}/question_images/{path}"
+    #     else: return f"{CDN_BASE}/option_images/{path}"
+    # if path.startswith('app/'):
+    #     return f"{CDN_BASE}/{path.replace('app/', '')}"
+    # return f"{CDN_BASE}/{path}"
 
 def process_data(data, source_dir):
     copy_ops = [] # List of (src, dest_filename)
@@ -45,21 +51,29 @@ def process_data(data, source_dir):
         
     # Extract Metadata
     clean_meta = {
-        "exam": meta.get('exam', {}).get('exam_name'),
+        "exam": meta.get('exam', {}).get('exam_name') or meta.get('exam_context', {}).get('exam_name'),
         "paper_name": meta.get('question_paper_name'),
-        # Ensure subject is defaulted
         "subject": "Unknown",
         "total_marks": meta.get('total_score'),
         "duration": meta.get('duration'),
         "year": meta.get('year')
     }
 
+    # Attempt to detect subject from Course Context (added by scraper)
+    if meta.get('course_context'):
+        clean_meta['subject'] = meta['course_context'].get('course_name', 'Unknown')
+    
+    # Fallback to Exam name if it looks like a subject (often Exam Name IS the Subject in this system)
+    if clean_meta['subject'] == 'Unknown' and clean_meta['exam']:
+        # But Exam might be "Term 1". Risk.
+        pass
+
     # Extract Questions
     questions_raw = data.get('questions', [])
     clean_questions = []
 
     for q in questions_raw:
-        # Determine Subject
+        # Determine Subject from Question if still unknown
         if clean_meta['subject'] == "Unknown" and q.get('course'):
             clean_meta['subject'] = q['course'].get('course_name')
 
