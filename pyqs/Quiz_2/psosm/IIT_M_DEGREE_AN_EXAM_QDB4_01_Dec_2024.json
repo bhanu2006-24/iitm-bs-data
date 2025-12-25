@@ -1,0 +1,201 @@
+{
+    "component": "Quizpractise/PractiseQuestionPaper",
+    "props": {
+        "errors": {},
+        "auth": {
+            "user": null
+        },
+        "flash": {
+            "error": []
+        },
+        "banner": null,
+        "file_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "file_do_url": "https://saram.blr1.cdn.digitaloceanspaces.com",
+        "question_paper": {
+            "id": 187,
+            "group_id": 23,
+            "exam_id": 2,
+            "total_score": "1.00",
+            "duration": 4,
+            "created_at": "2024-12-02T20:43:55.000000Z",
+            "updated_at": "2024-12-02T20:43:55.000000Z",
+            "question_paper_name": "IIT M DEGREE AN EXAM QDB4 01 Dec 2024",
+            "question_paper_description": "2024 Dec01: IIT M AN EXAM QDB4",
+            "uuid": "0a5d8d17-174",
+            "year": 2024,
+            "is_new": 0,
+            "exam": {
+                "id": 2,
+                "exam_name": "Quiz 2",
+                "created_at": "2024-10-16T08:08:51.000000Z",
+                "updated_at": "2024-10-16T08:08:51.000000Z",
+                "uuid": "1948ee72-5c62-4816-97c8-7d662330a220",
+                "en_id": "eyJpdiI6ImprN0ZVZitXMm5MaGt2VVpUcnppTFE9PSIsInZhbHVlIjoicm1QY0UyRWJCSDNleVRtTHI3Wnprdz09IiwibWFjIjoiYWUzZTE0MjJhYTdjMGU2OGUwNTJmN2QwYWQ0YWYwN2Y5YzMzYWYyZDRlNzFjMTE4YmM5N2M3ZjMwOGM4MGQ5NSIsInRhZyI6IiJ9"
+            },
+            "questions": [
+                {
+                    "id": 57567,
+                    "exam_id": 2,
+                    "question_paper_id": 187,
+                    "question_number": 109,
+                    "question_text_1": "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : PRIVACY & SECURITY IN ONLINE </b><b>SOCIAL MEDIA (PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>",
+                    "question_image_1": null,
+                    "question_type": "MCQ",
+                    "total_mark": "0.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-12-02T20:43:56.000000Z",
+                    "updated_at": "2024-12-02T20:43:56.000000Z",
+                    "question_num_long": 6406531030684,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "00c110af60947571a0b3900c3d927ace",
+                    "course_id": 81,
+                    "is_markdown": 0,
+                    "question_text_2": null,
+                    "question_image_2": null,
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "85821c1e-64a2-479e-a3bd-7ebca9547e1d",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": null,
+                    "question_texts": [
+                        "THIS IS QUESTION PAPER FOR THE SUBJECT <b>\"DEGREE LEVEL : PRIVACY & SECURITY IN ONLINE </b><b>SOCIAL MEDIA (PEN AND PAPER EXAM)\"</b><b> </b><b> </b><b>ARE YOU SURE YOU HAVE TO WRITE EXAM FOR THIS SUBJECT? </b><b>CROSS CHECK YOUR HALL TICKET TO CONFIRM THE SUBJECTS TO BE WRITTEN. </b><b> </b><b>(IF IT IS NOT THE CORRECT SUBJECT, PLS CHECK THE SECTION AT THE TOP FOR THE SUBJECTS </b><b>REGISTERED BY YOU)</b>"
+                    ],
+                    "course": {
+                        "id": 81,
+                        "course_name": "PSOSM",
+                        "course_code": "PSOSM",
+                        "created_at": "2024-10-29T12:29:16.000000Z",
+                        "updated_at": "2024-10-29T12:29:16.000000Z",
+                        "program_id": 1,
+                        "uuid": "a66acbf9-f84a-4857-bea9-1d16c78c7132"
+                    },
+                    "options": [
+                        {
+                            "id": 154137,
+                            "question_id": 57567,
+                            "option_text": "YES",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 1,
+                            "created_at": "2024-12-02T20:43:56.000000Z",
+                            "updated_at": "2024-12-02T20:43:56.000000Z",
+                            "option_number": 6406533486098,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 154138,
+                            "question_id": 57567,
+                            "option_text": "NO",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-12-02T20:43:56.000000Z",
+                            "updated_at": "2024-12-02T20:43:56.000000Z",
+                            "option_number": 6406533486099,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                },
+                {
+                    "id": 57568,
+                    "exam_id": 2,
+                    "question_paper_id": 187,
+                    "question_number": 110,
+                    "question_text_1": "  ",
+                    "question_image_1": "SHJqRR3tG12mtAIgxR6U1RXicrcwdqE5GwSFlYjp9bCFbvA7q3.png",
+                    "question_type": "MCQ",
+                    "total_mark": "50.00",
+                    "value_start": null,
+                    "value_end": null,
+                    "created_at": "2024-12-02T20:43:56.000000Z",
+                    "updated_at": "2024-12-02T20:43:56.000000Z",
+                    "question_num_long": 6406531030685,
+                    "answer_type": null,
+                    "response_type": null,
+                    "have_answers": 1,
+                    "hash": "e7341c672283cb2111fc6c64d29be8fc",
+                    "course_id": 81,
+                    "is_markdown": 0,
+                    "question_text_2": "  ",
+                    "question_image_2": "sn6Rz7unV1YCpjIUFGQFq52oTjC9cyITP0lzal5Hnumeg5Y9MQ.png",
+                    "question_image_3": null,
+                    "question_image_4": null,
+                    "question_image_5": null,
+                    "question_image_7": null,
+                    "question_image_8": null,
+                    "question_image_9": null,
+                    "question_image_10": null,
+                    "parent_question_id": null,
+                    "question_text_3": null,
+                    "question_text_4": null,
+                    "question_text_5": null,
+                    "uuid": "12d102ee-39d1-4f53-ab45-730848fbae97",
+                    "solutions_count": 0,
+                    "comments_count": 0,
+                    "question_image_url": [
+                        "/question_images/SHJqRR3tG12mtAIgxR6U1RXicrcwdqE5GwSFlYjp9bCFbvA7q3.png",
+                        "/question_images/sn6Rz7unV1YCpjIUFGQFq52oTjC9cyITP0lzal5Hnumeg5Y9MQ.png"
+                    ],
+                    "question_texts": [
+                        "  ",
+                        "  "
+                    ],
+                    "course": {
+                        "id": 81,
+                        "course_name": "PSOSM",
+                        "course_code": "PSOSM",
+                        "created_at": "2024-10-29T12:29:16.000000Z",
+                        "updated_at": "2024-10-29T12:29:16.000000Z",
+                        "program_id": 1,
+                        "uuid": "a66acbf9-f84a-4857-bea9-1d16c78c7132"
+                    },
+                    "options": [
+                        {
+                            "id": 154139,
+                            "question_id": 57568,
+                            "option_text": "I have written answers on the answer sheets",
+                            "option_image": "",
+                            "score": "50.000",
+                            "is_correct": 1,
+                            "created_at": "2024-12-02T20:43:56.000000Z",
+                            "updated_at": "2024-12-02T20:43:56.000000Z",
+                            "option_number": 6406533486100,
+                            "option_image_url": null
+                        },
+                        {
+                            "id": 154140,
+                            "question_id": 57568,
+                            "option_text": "Not applicable",
+                            "option_image": "",
+                            "score": "0.000",
+                            "is_correct": 0,
+                            "created_at": "2024-12-02T20:43:56.000000Z",
+                            "updated_at": "2024-12-02T20:43:56.000000Z",
+                            "option_number": 6406533486101,
+                            "option_image_url": null
+                        }
+                    ],
+                    "parent_question": null
+                }
+            ]
+        },
+        "summary": "Based on the provided question paper for the subject \"Privacy & Security in Online Social Media,\" here is a summary of the core topics, concepts, principles, and equations that are essential to study for the exam:\n\n### Core Topics and Concepts\n\n1. **Privacy and Utility**\n   - Relationship between privacy and utility\n   - Balancing privacy and data utility\n\n2. **Identity Resolution**\n   - Definition and importance\n   - Techniques and applications\n   - Cross-posting behavior\n   - Linkability scores and architecture\n\n3. **Privacy Enhancing Technologies (PETs)**\n   - Definition and examples\n   - Tools and methods to enhance privacy\n\n4. **Fake News Detection**\n   - Machine learning approaches (e.g., Decision Trees, Neural Networks, Naive Bayes Classifier, K-Means Clustering)\n   - Feature extraction from fake news content\n   - Applications and tools (e.g., CredEye, SpotFake)\n   - MVAE (Multi-view Variational Autoencoder) and its objective\n\n5. **Social Media Analysis**\n   - Network graph analysis for identifying hate videos and hidden communities\n   - Sentiment analysis, facial recognition analysis, and content summarization\n\n6. **Location-Based Social Networks (LBSNs)**\n   - Examples and characteristics\n\n7. **Westin's States of Privacy**\n   - Solitude, intimacy, anonymity, and reserve\n\n8. **Cyberbullying**\n   - Definition and types\n   - Examples and impacts\n\n9. **Nudges in Online Social Media (OSM)**\n   - Definition and types (e.g., informational, social, and structural nudges)\n   - Examples with reference to Facebook posts\n\n10. **Tiplines**\n    - Effectiveness in identifying misleading content on encrypted social media platforms\n\n### Important Principles and Equations\n\n1. **Linkability Scores**\n   - Calculation and components\n   - Architecture diagram for identity resolution algorithms\n\n2. **Machine Learning Models**\n   - Understanding different models used in fake news detection and their applications\n\n3. **Privacy Metrics**\n   - Methods to quantify privacy and utility\n\n### Knowledge Graph \n\n```mermaid\ngraph TD;\n    A[Privacy & Security in Online Social Media] --> B[Privacy and Utility]\n    A --> C[Identity Resolution]\n    A --> D[Privacy Enhancing Technologies]\n    A --> E[Fake News Detection]\n    A --> F[Social Media Analysis]\n    A --> G[Location-Based Social Networks]\n    A --> H[Westin's States of Privacy]\n    A --> I[Cyberbullying]\n    A --> J[Nudges in OSM]\n    A --> K[Tiplines]\n\n    B --> B1[Relationship between Privacy and Utility]\n    B --> B2[Balancing Privacy and Data Utility]\n\n    C --> C1[Definition and Importance]\n    C --> C2[Techniques and Applications]\n    C --> C3[Cross-posting Behavior]\n    C --> C4[Linkability Scores and Architecture]\n\n    D --> D1[Definition and Examples]\n    D --> D2[Tools and Methods]\n\n    E --> E1[Machine Learning Approaches]\n    E --> E2[Feature Extraction]\n    E --> E3[Applications and Tools]\n    E --> E4[MVAE and its Objective]\n\n    F --> F1[Network Graph Analysis]\n    F --> F2[Sentiment Analysis]\n    F --> F3[Facial Recognition Analysis]\n    F --> F4[Content Summarization]\n\n    G --> G1[Examples and Characteristics]\n\n    H --> H1[Solitude]\n    H --> H2[Intimacy]\n    H --> H3[Anonymity]\n    H --> H4[Reserve]\n\n    I --> I1[Definition and Types]\n    I --> I2[Examples and Impacts]\n\n    J --> J1[Definition and Types]\n    J --> J2[Examples with Reference to Facebook Posts]\n\n    K --> K1[Effectiveness in Identifying Misleading Content]\n```\n\nThis knowledge graph provides a visual representation of the relationships between the core topics in the subject \"Privacy & Security in Online Social Media.\"",
+        "total_score": "50.00"
+    },
+    "url": "/question-paper/practise/81/0a5d8d17-174",
+    "version": "ee3d5d44299e610bd137ea6200db5ac2"
+}
