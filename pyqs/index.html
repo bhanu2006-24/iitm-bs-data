@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PYQ Practice - IITM BS Data</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles -->
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
-  <body>
-    <!-- Sidebar -->
-    <aside id="sidebar">
-      <div class="brand">Genz PYQ</div>
-      <ul class="subject-list" id="subject-list">
-        <!-- Populated by JS -->
-        <li class="loading">Loading subjects...</li>
-      </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genz PYQ - Premium Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="dark"> <!-- Default to Dark Mode as per screenshot 1 -->
+
+    <!-- Sidebar (Visible only in Exam Mode) -->
+    <aside id="sidebar" style="display: none;">
+        <div class="brand-area">
+            <span class="logo-box">QP</span>
+            <span>Genz PYQ</span>
+        </div>
+
+        <div class="exam-meta">
+            <div class="meta-row">
+                <span class="meta-label">Exam:</span>
+                <span class="meta-val" id="meta-exam">-</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">Subject:</span>
+                <span class="meta-val" id="meta-subject">-</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">Total Marks:</span>
+                <span class="meta-val" id="meta-marks">--</span>
+            </div>
+        </div>
+
+        <div class="timer-box">
+            <div class="palette-label">TIMER</div>
+            <div class="timer-val" id="timer-val">00:00</div>
+            <div class="timer-controls">
+                <i class="fa-solid fa-pause" style="padding:8px; background:white; color:black; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer;"></i>
+                <i class="fa-solid fa-rotate-right" style="padding:8px; background:#ef4444; color:white; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer;"></i>
+            </div>
+        </div>
+
+        <div class="palette-area">
+            <div class="palette-label">QUESTION MENU</div>
+            <div class="palette-grid" id="palette-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="submit-btn"><i class="fa-solid fa-check"></i> SUBMIT EXAM</button>
+        </div>
     </aside>
 
     <!-- Main Content -->
-    <main id="main-content">
-      <header>
-        <div class="current-subject" id="current-subject-title">
-          Select a Subject
-        </div>
+    <div id="main">
+        <!-- Top Nav (Home View) -->
+        <nav class="top-nav">
+            <div style="font-weight:800; font-size:1.5rem; display:flex; align-items:center; gap:0.5rem;">
+                <span class="logo-box">QP</span> Genz PYQ
+            </div>
+            <div class="nav-links">
+                <span class="nav-link">Home</span>
+                <span class="nav-link">About</span>
+                <span class="nav-link">Contributors</span>
+            </div>
+            <div style="cursor:pointer;" id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></div>
+        </nav>
 
-        <div class="filters">
-          <select id="exam-filter">
-            <option value="all">All Exams</option>
-          </select>
-          <select id="year-filter">
-            <option value="all">All Years</option>
-          </select>
-          <div
-            id="q-count"
-            style="
-              display: flex;
-              align-items: center;
-              font-weight: 600;
-              font-size: 0.9rem;
-              color: var(--text-secondary);
-            "
-          >
-            0 Questions
-          </div>
+        <div class="content-area" id="view-area">
+            <!-- Dynamic Content -->
         </div>
-      </header>
+    </div>
 
-      <div id="questions-container">
-        <div class="empty-state">
-          <h2>Welcome to PYQ Practice</h2>
-          <p>Select a subject from the sidebar to start practicing.</p>
-          <br />
-          <p style="font-size: 0.9rem">Powered by Clean Data Engine</p>
-        </div>
-      </div>
-    </main>
-
-    <!-- Script -->
     <script src="src/script.js"></script>
-  </body>
+</body>
 </html>
