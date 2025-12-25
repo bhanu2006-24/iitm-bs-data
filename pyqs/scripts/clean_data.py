@@ -14,32 +14,52 @@ OUTPUT_DIR = '../subjects'
 BASE_IMAGE_URL = "https://saram.blr1.cdn.digitaloceanspaces.com"
 
 # Subject normalization mapping
+# Foundation: Maths1, Stats1, CT, English1, Maths2, Stats2, Python, English2
+# Diploma: DBMS, PDSA, AppDev1, System Commands, AppDev2, Java, MLF, BDM, MLT, MLP, TDS, Business Analytics
+
 SUBJECT_MAPPING = {
-    'maths1': 'maths1', 'math1': 'maths1', 'mathematics1': 'maths1',
-    'maths2': 'maths2', 'math2': 'maths2', 'mathematics2': 'maths2',
-    'stats1': 'stats1', 'statistics1': 'stats1',
-    'stats2': 'stats2', 'statistics2': 'stats2',
+    # Foundation
+    'maths1': 'maths1', 'math1': 'maths1', 'mathematics1': 'maths1', 'mathematics_for_data_science_1': 'maths1',
+    'stats1': 'stats1', 'statistics1': 'stats1', 'statistics_for_data_science_1': 'stats1',
     'ct': 'ct', 'computational_thinking': 'ct',
     'english1': 'english1', 'english_1': 'english1',
+    'maths2': 'maths2', 'math2': 'maths2', 'mathematics2': 'maths2', 'mathematics_for_data_science_2': 'maths2',
+    'stats2': 'stats2', 'statistics2': 'stats2', 'statistics_for_data_science_2': 'stats2',
+    'python': 'python', 'python_programming': 'python', 'intro_to_python': 'python',
     'english2': 'english2', 'english_2': 'english2',
-    'python': 'python', 'python_programming': 'python',
-    'intro_to_python': 'python',
-    'mlf': 'mlf', 'machine_learning_foundations': 'mlf',
-    'mlt': 'mlt', 'machine_learning_techniques': 'mlt',
-    'mlp': 'mlp', 'machine_learning_practice': 'mlp',
-    'dl': 'dl', 'deep_learning': 'dl',
-    'java': 'java', 'java_programming': 'java',
+    
+    # Diploma
     'dbms': 'dbms', 'database_management_systems': 'dbms',
     'pdsa': 'pdsa', 'programming_data_structures_algorithms': 'pdsa',
-    'appdev1': 'appdev1', 'application_development_1': 'appdev1',
-    'appdev2': 'appdev2', 'application_development_2': 'appdev2',
+    'appdev1': 'appdev1', 'application_development_1': 'appdev1', 'app_dev1': 'appdev1',
+    'sc': 'system_commands', 'system_commands': 'system_commands', 'intro_to_linux': 'system_commands',
+    'appdev2': 'appdev2', 'application_development_2': 'appdev2', 'app_dev2': 'appdev2',
+    'java': 'java', 'java_programming': 'java',
+    'mlf': 'mlf', 'machine_learning_foundations': 'mlf',
+    'bdm': 'bdm', 'business_data_management': 'bdm',
+    'mlt': 'mlt', 'machine_learning_techniques': 'mlt',
+    'mlp': 'mlp', 'machine_learning_practice': 'mlp',
     'tds': 'tds', 'tools_in_data_science': 'tds',
-    'sc': 'sc', 'system_commands': 'sc', 'intro_to_linux': 'sc'
+    'ba': 'business_analytics', 'business_analytics': 'business_analytics', 'market_research': 'business_analytics' # approximate
+}
+
+ALLOWED_SUBJECTS = {
+    'maths1', 'stats1', 'ct', 'english1', 'maths2', 'stats2', 'python', 'english2',
+    'dbms', 'pdsa', 'appdev1', 'system_commands', 'appdev2', 'java',
+    'mlf', 'bdm', 'mlt', 'mlp', 'tds', 'business_analytics'
 }
 
 def normalize_subject(folder_name):
     lower_name = folder_name.lower().replace(' ', '_')
-    return SUBJECT_MAPPING.get(lower_name, lower_name)
+    mapped = SUBJECT_MAPPING.get(lower_name)
+    if mapped:
+        return mapped
+    # Attempt to catch variations if not explicitly mapped
+    if 'math' in lower_name and '1' in lower_name: return 'maths1'
+    if 'math' in lower_name and '2' in lower_name: return 'maths2'
+    if 'stat' in lower_name and '1' in lower_name: return 'stats1'
+    if 'stat' in lower_name and '2' in lower_name: return 'stats2'
+    return None # Return None if not a recognized subject
 
 def get_full_image_url(path):
     if not path:
@@ -138,9 +158,6 @@ def main():
         print(f"Processing {exam_type} from {abs_source_dir}")
         
         # Iterate subject folders
-        if not os.listdir(abs_source_dir):
-            print(f"  No files in {abs_source_dir}")
-
         for subject_folder in os.listdir(abs_source_dir):
             subject_path = os.path.join(abs_source_dir, subject_folder)
             if not os.path.isdir(subject_path):
@@ -151,15 +168,13 @@ def main():
 
             norm_subject = normalize_subject(subject_folder)
             
-            # Find JSON files
+            if not norm_subject or norm_subject not in ALLOWED_SUBJECTS:
+                continue
             json_files = glob.glob(os.path.join(subject_path, "*.json"))
             if not json_files:
                  # Try case insensitive match manually if glob fails (standard glob is usually case sensitive on linux/mac? actually mac is case insensitive mostly)
                  pass
 
-            if len(json_files) > 0:
-                print(f"    Found {len(json_files)} JSON files in {subject_folder}")
-            
             for json_file in json_files:
                 try:
                     with open(json_file, 'r', encoding='utf-8') as f:
@@ -170,10 +185,17 @@ def main():
                     
                     # Extract questions
                     questions = []
-                    if 'question_paper' in data and 'questions' in data['question_paper']:
+                    if 'props' in data and 'question_paper' in data['props'] and 'questions' in data['props']['question_paper']:
+                        questions = data['props']['question_paper']['questions']
+                    elif 'question_paper' in data and 'questions' in data['question_paper']:
                         questions = data['question_paper']['questions']
                     elif 'questions' in data:
                         questions = data['questions']
+                    
+                    if len(questions) == 0:
+                        # Debug why empty
+                        # print(f"    No questions found in {json_file}. Keys: {list(data.keys())}")
+                        pass
                     
                     for q in questions:
                         cleaned_q = clean_question(q, exam_type, paper_name, year)
@@ -183,6 +205,7 @@ def main():
                     print(f"Error processing {json_file}: {e}")
 
     # Write to output
+    print(f"Total subjects collected: {len(questions_by_subject)}")
     for subject, questions in questions_by_subject.items():
         output_file = os.path.join(abs_output_dir, f"{subject}.json")
         with open(output_file, 'w', encoding='utf-8') as f:
