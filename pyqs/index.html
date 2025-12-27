@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="src/style.css">
 </head>
-<body class="dark"> <!-- Default to Dark Mode as per screenshot 1 -->
+<body class="dark">
 
     <!-- Sidebar (Visible only in Exam Mode) -->
     <aside id="sidebar" style="display: none;">
@@ -28,30 +28,27 @@
                 <span class="meta-label">Subject:</span>
                 <span class="meta-val" id="meta-subject">-</span>
             </div>
-            <div class="meta-row">
-                <span class="meta-label">Total Marks:</span>
-                <span class="meta-val" id="meta-marks">--</span>
-            </div>
         </div>
 
         <div class="timer-box">
-            <div class="palette-label">TIMER</div>
+            <div class="palette-label">TIME ELAPSED</div>
             <div class="timer-val" id="timer-val">00:00</div>
-            <div class="timer-controls">
-                <i class="fa-solid fa-pause" style="padding:8px; background:white; color:black; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer;"></i>
-                <i class="fa-solid fa-rotate-right" style="padding:8px; background:#ef4444; color:white; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; cursor:pointer;"></i>
-            </div>
         </div>
 
         <div class="palette-area">
-            <div class="palette-label">QUESTION MENU</div>
+            <div class="palette-header">
+                <div class="palette-label">QUESTION PALETTE</div>
+                <div style="font-size:0.75rem; color:var(--text-secondary);"><i class="fa-solid fa-flag text-warning"></i> Review</div>
+            </div>
             <div class="palette-grid" id="palette-grid">
                 <!-- Populated by JS -->
             </div>
         </div>
 
         <div class="sidebar-footer">
-            <button class="submit-btn"><i class="fa-solid fa-check"></i> SUBMIT EXAM</button>
+            <button class="submit-btn" onclick="window.submitExam()">
+                <i class="fa-solid fa-check-circle"></i> SUBMIT EXAM
+            </button>
         </div>
     </aside>
 
@@ -59,19 +56,26 @@
     <div id="main">
         <!-- Top Nav (Home View) -->
         <nav class="top-nav">
-            <div style="font-weight:800; font-size:1.5rem; display:flex; align-items:center; gap:0.5rem;">
+            <div class="nav-logo">
                 <span class="logo-box">QP</span> Genz PYQ
             </div>
             <div class="nav-links">
-                <span class="nav-link">Home</span>
-                <span class="nav-link">About</span>
-                <span class="nav-link">Contributors</span>
+                <span class="nav-link" onclick="window.goHome()">Home</span>
             </div>
-            <div style="cursor:pointer;" id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div style="cursor:pointer; font-size:1.2rem;" id="theme-toggle">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
         </nav>
 
         <div class="content-area" id="view-area">
             <!-- Dynamic Content -->
+        </div>
+
+        <!-- Modal Overlay -->
+        <div class="modal-overlay hidden" id="modal-overlay">
+            <div class="modal-card" id="modal-content">
+                <!-- Dynamic Modal Content -->
+            </div>
         </div>
     </div>
 

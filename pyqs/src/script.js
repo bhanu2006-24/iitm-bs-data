@@ -1,113 +1,97 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Elements
+    // --- Elements ---
     const sidebar = document.getElementById('sidebar');
     const mainView = document.getElementById('view-area');
     const timerDisplay = document.getElementById('timer-val');
     const paletteGrid = document.getElementById('palette-grid');
-    const examMeta = document.getElementById('exam-meta');
-
-    // State
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalContent = document.getElementById('modal-content');
+    
+    // --- State ---
     const state = {
-        view: 'HOME', // HOME, PAPER
+        view: 'HOME',
         subjects: [],
         currentPaper: null,
-        userAnswers: {}, // { qId: { val: ..., status: 'answered'|'visited' } }
+        currentQuestions: [],
+        userAnswers: {}, // { qId: { selected: [], val:'', status: 'visited'|'answered'|'review' } }
         timer: 0,
         timerInterval: null,
-        mode: 'EXAM', // EXAM | LEARNING
+        mode: 'EXAM',
         currentQIndex: 0
     };
 
-    // Init
+    // --- Init ---
     init();
 
     async function init() {
         setupTheme();
+        setupKeyboard();
+        
+        // Restore recent session?
+        // const saved = localStorage.getItem('pyq_last_session');
+        // if(saved) { ... }
+
         await fetchSubjects();
         renderHome();
     }
 
     // --- Data ---
-    
     async function fetchSubjects() {
         try {
             const resp = await fetch('subjects/subjects_index.json');
-            if (resp.ok) {
-                state.subjects = await resp.json();
-            }
+            if (resp.ok) state.subjects = await resp.json();
         } catch (e) {
-            console.error("Values fetch error", e);
+            console.error(e);
         }
     }
 
-    // --- Logic ---
-
-    // Automatically grouping questions into "Papers"
-    // Since we have huge subject JSONs, we filter on the fly.
     async function loadPapers(subject) {
-        // Fetch Subject Data
         try {
+            renderLoading();
             const resp = await fetch(`subjects/${subject}.json`);
             const allQs = await resp.json();
             
-            // Group by Paper Name / Year
+            // Group papers logic
             const grouped = {};
             allQs.forEach(q => {
-                const key = `${q.exam} ${q.year}`; // e.g. "Quiz 1 2024"
+                const key = `${q.exam} ${q.year}`;
                 if (!grouped[key]) {
                     grouped[key] = {
-                        id: key,
-                        title: key,
-                        exam: q.exam,
-                        year: q.year,
-                        subject: subject,
+                        id: key, title: key, exam: q.exam, year: q.year, subject: subject,
                         questions: [],
-                        totalMarks: 0
                     };
                 }
                 grouped[key].questions.push(q);
-                // Simple mark logic if not present
-                // Assuming 1 mark if missing? Or 0.
-                // q.mark usually isn't in clean data explicitly unless we kept it?
-                // clean_data.py didn't keep 'mark', but might be in future.
-                // Let's assume grouping is enough.
             });
-
+            
             renderPaperList(Object.values(grouped), subject);
-        } catch (e) {
+        } catch(e) {
             console.error(e);
-            mainView.innerHTML = `Error loading ${subject}`;
         }
     }
 
     function startPaper(paper) {
         state.currentPaper = paper;
-        state.view = 'PAPER';
-        state.questions = paper.questions; // Ordered list
+        state.currentQuestions = paper.questions;
         state.currentQIndex = 0;
         state.userAnswers = {};
+        state.view = 'PAPER';
         state.timer = 0;
         
-        // Start Timer
-        if (state.timerInterval) clearInterval(state.timerInterval);
-        state.timerInterval = setInterval(() => {
-            state.timer++;
-            updateTimerDisplay();
-        }, 1000);
+        // Initial Visited
+        markVisited(state.currentQIndex);
 
+        startTimer();
         renderExamInterface();
     }
-    
-    // --- Rendering ---
 
+    // --- Rendering ---
     function renderHome() {
-        state.view = 'HOME';
-        toggleSidebar(false); // Hide exam sidebar
-        
+        toggleSidebar(false);
         mainView.innerHTML = `
             <div style="padding: 2rem;">
-                <h1 style="margin-bottom:2rem;">Dashboard</h1>
+                <h1 style="margin-bottom:2rem; font-size:2.5rem;">Dashboard</h1>
                 <div class="grid-view" id="subjects-grid"></div>
             </div>
         `;
@@ -117,10 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'paper-card';
             card.innerHTML = `
-                <div style="font-weight:700; font-size:1.2rem; margin-bottom:0.5rem;">${formatName(sub)}</div>
-                <div style="color:var(--text-secondary); font-size:0.9rem;">Click to view papers</div>
+                <div style="font-weight:700; font-size:1.4rem; margin-bottom:0.5rem; color:var(--primary-blue);">${formatName(sub)}</div>
+                <div style="color:var(--text-secondary);">Browse Papers <i class="fa-solid fa-arrow-right"></i></div>
             `;
-            card.onclick = () => loadPapers(sub); // Loads list of papers
+            card.onclick = () => loadPapers(sub);
             grid.appendChild(card);
         });
     }
@@ -128,16 +112,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderPaperList(papers, subject) {
         mainView.innerHTML = `
             <div style="padding: 2rem;">
-                <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
-                    <button class="nav-link" id="home-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                    <h1>${formatName(subject)} Papers</h1>
+                <div class="flex items-center gap-2 mb-4">
+                    <button class="nav-btn" onclick="window.goHome()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    <h1>${formatName(subject)}</h1>
                 </div>
-                <div class="grid-view">
+                <div class="grid-view" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
                     ${papers.map(p => `
                         <div class="paper-card" onclick="window.startPaperId('${p.id}')">
-                            <div style="font-weight:700;">${p.title}</div>
-                            <div style="font-size:0.9rem; color:var(--text-secondary); margin-top:0.5rem;">
-                                ${p.questions.length} Questions
+                            <div style="font-weight:700; font-size:1.1rem; margin-bottom:0.5rem;">${p.title}</div>
+                            <div class="flex justify-between text-secondary">
+                                <span><i class="fa-solid fa-list-ol"></i> ${p.questions.length} Qs</span>
+                                <span><i class="fa-regular fa-clock"></i> Practice</span>
                             </div>
                         </div>
                     `).join('')}
@@ -145,13 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         
-        document.getElementById('home-btn').onclick = renderHome;
-        
-        // Expose helper to global scope for the inline onclick string
-        window.startPaperId = (id) => {
-            const p = papers.find(x => x.id === id);
-            if (p) startPaper(p);
-        };
+        window.startPaperId = (id) => startPaper(papers.find(x => x.id === id));
+        window.goHome = renderHome;
     }
 
     function renderExamInterface() {
@@ -162,102 +142,124 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderActiveQuestion() {
-        const q = state.questions[state.currentQIndex];
-        
-        // Mode Check: In Learning Mode, we show answers immediately? 
-        // User wants toggle.
-        
+        const q = state.currentQuestions[state.currentQIndex];
+        const ans = state.userAnswers[q.id] || {};
+        const isReview = ans.status === 'review';
+
         let html = `
             <div class="q-container">
-                <!-- Mode Toggle -->
-                <div class="mode-toggle">
+                 <div class="mode-toggle">
                     <div class="mode-btn ${state.mode === 'EXAM' ? 'active' : ''}" onclick="window.setMode('EXAM')">Exam Mode</div>
-                    <div class="mode-btn ${state.mode === 'LEARNING' ? 'active' : ''}" onclick="window.setMode('LEARNING')">Learning Mode</div>
+                    <div class="mode-btn ${state.mode === 'LEARNING' ? 'active' : ''}" onclick="window.setMode('LEARNING')">Learning</div>
                 </div>
 
                 <div class="q-header">
-                    <div class="q-title">Question ${state.currentQIndex + 1} : <span style="font-weight:400; font-size:0.9rem; color:var(--text-secondary);">${q.id}</span></div>
-                    <div class="q-badge">Type: ${q.type || 'MCQ'}</div>
+                    <div class="q-title">Question ${state.currentQIndex + 1}</div>
+                    <div class="q-type-badge">${q.type || 'MCQ'}</div>
                 </div>
                 
                 ${q.context ? `<div class="q-context">${q.context}</div>` : ''}
 
                 <div class="q-body">
-                    <div style="margin-bottom:1.5rem;">${q.question || ''}</div>
-                    ${(q.images || []).map(img => `<img src="${img}" style="max-width:100%; border-radius:8px; margin-bottom:1rem; display:block;" />`).join('')}
+                    <div class="q-text">${q.question || ''}</div>
+                    ${(q.images || []).map(img => `<img src="${img}" class="q-img" onclick="window.open(this.src)" style="cursor:zoom-in"/>`).join('')}
                 </div>
 
                 <div class="opt-group">
-                    ${renderOptions(q)}
+                    ${renderOptions(q, ans)}
                 </div>
 
-                <!-- Nav Controls -->
-                <div style="display:flex; justify-content:space-between; margin-top:3rem;">
-                    <button class="nav-link" onclick="window.navQ(-1)" ${state.currentQIndex === 0 ? 'disabled' : ''}>
-                        <i class="fa-solid fa-chevron-left"></i> Prev
+                <div class="q-footer">
+                    <button class="review-btn ${isReview ? 'active' : ''}" onclick="window.toggleReview()">
+                        <i class="fa-solid fa-flag"></i> ${isReview ? 'Marked' : 'Review'}
                     </button>
-                    <button class="nav-link" onclick="window.navQ(1)" ${state.currentQIndex === state.questions.length - 1 ? 'disabled' : ''}>
-                        Next <i class="fa-solid fa-chevron-right"></i>
-                    </button>
+                    
+                    <div class="flex gap-2">
+                        <button class="nav-btn" onclick="window.navQ(-1)" ${state.currentQIndex === 0 ? 'disabled' : ''}>Prev</button>
+                        <button class="nav-btn" style="background:var(--text-primary); color:var(--bg-color);" onclick="window.navQ(1)" ${state.currentQIndex === state.currentQuestions.length - 1 ? 'disabled' : ''}>
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
-                
-                <!-- Feedback (Learning Mode) -->
+
                 ${state.mode === 'LEARNING' ? renderFeedback(q) : ''}
             </div>
         `;
-        
         mainView.innerHTML = html;
-        updatePalette(); // Highlight current
+        updatePalette();
+        markVisited(state.currentQIndex);
     }
 
-    function renderOptions(q) {
-        if (q.options && q.options.length > 0) {
-            return q.options.map((opt, idx) => {
-                const isSelected = isOptSelected(q.id, opt.id);
-                // In learning mode, show if correct
-                let extraClass = '';
-                if (state.mode === 'LEARNING' && isSelected) {
-                     extraClass = opt.is_correct ? 'color:var(--accent-color); font-weight:bold;' : 'color:var(--danger-color);';
+    function renderOptions(q, ans) {
+        if (q.options?.length) {
+            return q.options.map((opt) => {
+                const isSelected = ans.selected?.includes(String(opt.id));
+                let style = '';
+                if(state.mode === 'LEARNING' && isSelected) {
+                    style = opt.is_correct ? 'border-color:var(--accent-color); background:rgba(16,185,129,0.1);' 
+                                           : 'border-color:var(--danger-color); background:rgba(239,68,68,0.1);';
                 }
 
                 return `
-                <div class="opt-row" onclick="window.selectOpt('${q.id}', '${opt.id}')">
-                    <div class="opt-radio ${isSelected ? 'selected' : ''}"></div>
-                    <div class="opt-text" style="${extraClass}">
+                <div class="opt-row ${isSelected ? 'selected' : ''}" style="${style}" onclick="window.selectOpt('${q.id}', '${opt.id}')">
+                    <div class="opt-radio"></div>
+                    <div style="flex:1;">
                         ${opt.text || ''}
-                        ${opt.image ? `<img src="${opt.image}" style="max-width:150px; display:block; margin-top:0.5rem;" />` : ''}
+                        ${opt.image ? `<img src="${opt.image}" style="max-width:200px; display:block; margin-top:8px; border-radius:4px" />` : ''}
                     </div>
                 </div>`;
             }).join('');
-        } else if (q.answer) {
-            // NAT
-            const val = state.userAnswers[q.id]?.val || '';
-            return `<input class="nat-input" value="${val}" oninput="window.inputNat('${q.id}', this.value)" placeholder="Enter numeric value..." />`;
+        }
+        else if(q.answer) {
+             return `<input class="nat-input" value="${ans.val || ''}" oninput="window.inputNat('${q.id}', this.value)" placeholder="Enter numeric value" />`;
         }
         return '';
     }
 
-    function renderFeedback(q) {
-        // Show correct answer immediately
-        if (q.options) {
-             const correct = q.options.filter(o => o.is_correct).map(o => o.text || 'Image').join(', ');
-             return `<div style="margin-top:2rem; padding:1rem; background:rgba(16,185,129,0.1); color:var(--accent-color); border-radius:8px;">
-                <strong>Correct Answer:</strong> ${correct}
-             </div>`;
-        } else if (q.answer) {
-             return `<div style="margin-top:2rem; padding:1rem; background:rgba(16,185,129,0.1); color:var(--accent-color); border-radius:8px;">
-                <strong>Range:</strong> ${q.answer.value_start} - ${q.answer.value_end || q.answer.value_start}
-             </div>`;
+    // --- Core Logic ---
+
+    function markVisited(idx) {
+        const qId = state.currentQuestions[idx].id;
+        if (!state.userAnswers[qId]) {
+            state.userAnswers[qId] = { status: 'visited', selected: [] };
         }
+        updatePalette();
     }
 
-    // --- State Helpers ---
-    
-    function isOptSelected(qId, optId) {
-        const ans = state.userAnswers[qId];
-        if (!ans || !ans.selected) return false;
-        return ans.selected.includes(String(optId));
-    }
+    window.selectOpt = (qId, optId) => {
+        const q = state.currentQuestions.find(x => x.id === qId);
+        const type = q.type || 'MCQ';
+        let ans = state.userAnswers[qId] || { selected: [], status:'visited' };
+        
+        let sel = ans.selected || [];
+        if(type === 'MSQ') {
+            sel.includes(String(optId)) ? sel=sel.filter(x=>x!=String(optId)) : sel.push(String(optId));
+        } else {
+            sel = [String(optId)];
+        }
+        
+        ans.selected = sel;
+        if(ans.status !== 'review') ans.status = sel.length ? 'answered' : 'visited';
+        
+        state.userAnswers[qId] = ans;
+        renderActiveQuestion();
+    };
+
+    window.inputNat = (qId, val) => {
+        let ans = state.userAnswers[qId] || { status:'visited' };
+        ans.val = val;
+        if(ans.status !== 'review') ans.status = val ? 'answered' : 'visited';
+        state.userAnswers[qId] = ans;
+        updatePalette();
+    };
+
+    window.toggleReview = () => {
+        const qId = state.currentQuestions[state.currentQIndex].id;
+        let ans = state.userAnswers[qId] || { selected:[], status:'visited' };
+        ans.status = ans.status === 'review' ? (ans.selected?.length ? 'answered' : 'visited') : 'review';
+        state.userAnswers[qId] = ans;
+        renderActiveQuestion();
+    };
 
     window.navQ = (dir) => {
         state.currentQIndex += dir;
@@ -266,94 +268,147 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.setMode = (m) => {
         state.mode = m;
-        // Re-render
         renderActiveQuestion();
     };
 
-    window.selectOpt = (qId, optId) => {
-        // Assume MCQ for now logic, unless type MSQ check
-        // Grouping: "MCQ" single, "MSQ" multi
-        const q = state.questions[state.currentQIndex];
-        const type = q.type || 'MCQ';
+    window.submitExam = () => {
+        showModal('submit');
+    };
+
+    function calculateResult() {
+        let score = 0;
+        let correct = 0;
+        let wrong = 0;
+        let unattempted = 0;
+
+        state.currentQuestions.forEach(q => {
+            const ans = state.userAnswers[q.id];
+            if (!ans || (!ans.selected?.length && !ans.val)) {
+                unattempted++;
+                return;
+            }
+
+            // Check correctness
+            let isCorrect = false;
+            
+            if (q.options) {
+                const correctIds = q.options.filter(o => o.is_correct).map(o => String(o.id));
+                const userIds = ans.selected || [];
+                
+                // Exact match for MSQ/MCQ logic for simplicity
+                if (correctIds.length === userIds.length && correctIds.every(id => userIds.includes(id))) {
+                    isCorrect = true;
+                }
+            } else if (q.answer) {
+                 const v = parseFloat(ans.val);
+                 const min = parseFloat(q.answer.value_start);
+                 const max = q.answer.value_end ? parseFloat(q.answer.value_end) : min;
+                 if(!isNaN(v) && v >= min && v <= max) isCorrect = true;
+            }
+
+            if (isCorrect) { correct++; score += 1; /* Assign typical marks? */ }
+            else { wrong++; }
+        });
+
+        return { score, correct, wrong, unattempted, total: state.currentQuestions.length };
+    }
+
+    // --- Modal Logic ---
+    function showModal(type) {
+        modalOverlay.classList.remove('hidden');
+        modalOverlay.classList.add('open');
         
-        if (!state.userAnswers[qId]) state.userAnswers[qId] = { selected: [], status: 'visited' };
-        
-        let sel = state.userAnswers[qId].selected;
-        
-        if (type === 'MSQ') {
-            if (sel.includes(String(optId))) sel = sel.filter(x => x !== String(optId));
-            else sel.push(String(optId));
-        } else {
-            sel = [String(optId)];
+        if (type === 'submit') {
+            const answered = Object.values(state.userAnswers).filter(x => x.selected?.length || x.val).length;
+            const review = Object.values(state.userAnswers).filter(x => x.status === 'review').length;
+            
+            modalContent.innerHTML = `
+                <h2 style="margin-bottom:1rem; font-size:1.5rem;">Submit Exam?</h2>
+                <div class="stat-grid">
+                    <div class="stat-box"><div class="stat-val text-success">${answered}</div><div class="stat-label">Answered</div></div>
+                    <div class="stat-box"><div class="stat-val text-warning" style="color:var(--warning-color)">${review}</div><div class="stat-label">Review</div></div>
+                </div>
+                <div style="text-align:center; color:var(--text-secondary); margin-bottom:2rem;">
+                    Are you sure you want to end this session?
+                </div>
+                <div class="flex gap-2">
+                    <button class="submit-btn" style="background:var(--bg-color); color:var(--text-primary);" onclick="window.closeModal()">Cancel</button>
+                    <button class="submit-btn" onclick="window.confirmSubmit()">Submit</button>
+                </div>
+            `;
+        } else if (type === 'result') {
+            const res = calculateResult();
+            modalContent.innerHTML = `
+                <h2 style="text-align:center; margin-bottom:1rem;">Result Summary</h2>
+                <div class="timer-box" style="margin-bottom:1rem; background:transparent;">
+                    <div class="timer-val">${res.score} / ${res.total}</div>
+                    <div class="meta-label">Total Score</div>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-box"><div class="stat-val text-success">${res.correct}</div><div class="stat-label">Correct</div></div>
+                    <div class="stat-box"><div class="stat-val text-danger">${res.wrong}</div><div class="stat-label">Wrong</div></div>
+                </div>
+                <button class="submit-btn" onclick="window.closeModal(); window.goHome()">Back to Home</button>
+            `;
         }
-        
-        state.userAnswers[qId].selected = sel;
-        state.userAnswers[qId].status = 'answered';
-        
-        renderActiveQuestion();
-        updatePalette();
+    }
+
+    window.closeModal = () => {
+        modalOverlay.classList.remove('open');
+        setTimeout(() => modalOverlay.classList.add('hidden'), 200);
     };
 
-    window.inputNat = (qId, val) => {
-        if (!state.userAnswers[qId]) state.userAnswers[qId] = { val: '', status: 'visited' };
-        state.userAnswers[qId].val = val;
-        state.userAnswers[qId].status = val ? 'answered' : 'visited';
-        updatePalette();
+    window.confirmSubmit = () => {
+        clearInterval(state.timerInterval);
+        showModal('result');
     };
 
-    // --- Sidebar Helpers ---
+    // --- Helpers ---
+    function startTimer() {
+        if(state.timerInterval) clearInterval(state.timerInterval);
+        state.timerInterval = setInterval(() => {
+            state.timer++;
+            updateTimerDisplay();
+        }, 1000);
+    }
+    function updateTimerDisplay() {
+        const m = Math.floor(state.timer / 60).toString().padStart(2, '0');
+        const s = (state.timer % 60).toString().padStart(2, '0');
+        if(timerDisplay) timerDisplay.textContent = `${m}:${s}`;
+    }
+    
+    function updatePalette() {
+        paletteGrid.innerHTML = '';
+        state.currentQuestions.forEach((q, idx) => {
+            const st = state.userAnswers[q.id]?.status;
+            const btn = document.createElement('div');
+            btn.className = `p-btn ${idx===state.currentQIndex?'active':''} ${st||''}`;
+            btn.textContent = idx+1;
+            btn.onclick = () => { state.currentQIndex=idx; renderActiveQuestion(); };
+            paletteGrid.appendChild(btn);
+        });
+    }
 
+    function renderLoading() { mainView.innerHTML = '<div style="display:flex;height:100%;justify-content:center;align-items:center;">Loading...</div>'; }
+    function renderFeedback(q) {
+        // Feedback HTML helper
+        return `<div style="margin-top:2rem; padding:1rem; background:rgba(0,0,0,0.03); border-radius:12px;">Ans: ...</div>`;
+    }
+    function updateMeta() {
+        document.getElementById('meta-exam').textContent = state.currentPaper?.exam || '';
+        document.getElementById('meta-subject').textContent = formatName(state.currentPaper?.subject || '');
+    }
     function toggleSidebar(show) {
         sidebar.style.display = show ? 'flex' : 'none';
         document.querySelector('.top-nav').style.display = show ? 'none' : 'flex';
     }
-
-    function updateMeta() {
-        if (!state.currentPaper) return;
-        const examName = document.getElementById('meta-exam');
-        const subName = document.getElementById('meta-subject');
-        
-        examName.textContent = state.currentPaper.exam;
-        subName.textContent = formatName(state.currentPaper.subject);
-    }
-    
-    function updateTimerDisplay() {
-        if (!timerDisplay) return;
-        const m = Math.floor(state.timer / 60).toString().padStart(2, '0');
-        const s = (state.timer % 60).toString().padStart(2, '0');
-        timerDisplay.textContent = `${m}:${s}`;
-    }
-
-    function updatePalette() {
-        const grid = document.getElementById('palette-grid');
-        grid.innerHTML = '';
-        state.questions.forEach((q, idx) => {
-            const btn = document.createElement('div');
-            btn.className = 'p-btn';
-            
-            if (idx === state.currentQIndex) btn.classList.add('active');
-            
-            // Check status
-            const status = state.userAnswers[q.id]?.status;
-            if (status === 'answered') btn.classList.add('answered');
-            
-            btn.textContent = idx + 1;
-            btn.onclick = () => {
-                state.currentQIndex = idx;
-                renderActiveQuestion();
-            };
-            grid.appendChild(btn);
+    function setupKeyboard() {
+        document.addEventListener('keydown', (e) => {
+            if(state.view !== 'PAPER') return;
+            if(e.key === 'ArrowRight') window.navQ(1);
+            if(e.key === 'ArrowLeft') window.navQ(-1);
         });
     }
-
-    // --- Utils ---
-    function formatName(str) {
-        return str.replace(/_/g, ' ').toUpperCase();
-    }
-    
-    function setupTheme() {
-        document.getElementById('theme-toggle').onclick = () => {
-            document.body.classList.toggle('dark');
-        };
-    }
+    function formatName(s) { return s.replace(/_/g, ' ').toUpperCase(); }
+    function setupTheme() { document.getElementById('theme-toggle').onclick = () => document.body.classList.toggle('dark'); }
 });
